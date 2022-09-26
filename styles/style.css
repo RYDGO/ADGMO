@@ -1,4 +1,5 @@
-/*----------------------------- Base Color----------------- */
+/* --------------- Styles For Colors ----------------- */
+/*----------------------------- ROOT FOR COLORS ----------------- */
 :root {
   --base-color: #ef3f43;
 
@@ -9,7 +10,7 @@
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
 
-  /*-----------------------------Gray Color----------------- */
+  /*----------------------------- GRAY COLORS ----------------- */
 
   --grayshade-100: #eceff1;
   --grayshade-200: #b0b0b0;
@@ -19,7 +20,7 @@
   --bg-blackbase: #000;
   --bg-whitebase: #fff;
 
-  /*-----------------------------Typography Colors----------------- */
+  /*----------------------------- TYPOGRAPHY COLORS ----------------- */
 
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -43,10 +44,9 @@
 --btn-bg-selected:#b0b0b0;
 --btn-bg-disabled:#eceff1;
 
-
 }
 
-/* Colors */
+/* ------------------- PRIMARY BUTTONS ------------------- */
 
 .tb-primary {
   color: var(--base-color);
@@ -56,37 +56,42 @@
   color: var(--base-color);
 }
 
+
 /* Status-Colors */
 
 .tb-bg-green {
   background-color: var(--status-color-green);
 }
 .tb-bg-blue {
-  background-color: #11a6ff;
+  background-color: var(--status-color-blue);
 }
 .tb-bg-yellow {
-  background-color: #dab70a;
+  background-color:var(--status-color-yellow);
 }
 .tb-bg-orange {
-  background-color: #ffa800;
+  background-color: var(--status-color-orange);
 }
 .tb-bg-purple {
-  background-color: #8129c7;
+  background-color: var(--status-color-purple);
 }
 .tb-bg-pink {
-  background-color: #f11d9c;
+  background-color: var(--status-color-pink);
 }
 
-/* Border-Radius */
+
+/* ------------------- BORDERS-RADIUS ------------------- */
+
+
 .tb-rounded {
   border-radius: 8px !important;
 }
-
 .tb-rounded-pill {
   border-radius: 64px;
 }
 
-/* Buttons  - primary */
+
+/* ----------------- BUTTONS ------------------- */
+
 
 .btn-lg {
   padding: 11px 26px !important;
@@ -104,45 +109,45 @@
   padding: 2px 26px !important ;
 }
 
+
+/* ------------------- PRIMARY BUTTONS ------------------- */
+
+
 .tb-btn-primary {
-  background-color: #37474f;
-  color: #fff;
+  background-color: var(--btn-bg-default);
+  color: var(--text-base-white);
 }
 
 .tb-btn-primary:hover {
-  background-color: #8c8c8c !important;
-  color: #fff !important;
+  background-color: var(--btn-bg-hover);
 }
 
 .tb-btn-primary:active {
-  background-color: #b0b0b0 !important;
-  color: #fff !important;
+  background-color: var(--btn-bg-selected);
 }
 
 .tb-btn-primary:disabled {
-  background-color: #eceff1 !important;
-  color: #fff !important;
+  background-color: var(--btn-bg-disabled);
 }
 
-/* Buttons  - secondary */
+
+/* ------------------- SECONDARY BUTTONS ------------------- */
+
 
 .tb-btn-secondary {
-  background-color: #fff !important;
-  border: 1px solid #37474f !important ;
-  color: #37474f !important;
+  background-color: var(--btn-bg-default);
+  color: var(--text-base-white);
 }
 
 .tb-btn-secondary:hover {
-  border: 1px solid #8c8c8c !important;
-  color: #8c8c8c !important;
+  background-color: var(--btn-bg-hover);
 }
 
 .tb-btn-secondary:active {
-  border: 1px solid #b0b0b0 !important;
-  color: #b0b0b0 !important;
+  background-color: var(--btn-bg-selected);
 }
 
 .tb-btn-secondary:disabled {
-  border: 1px solid #eceff1 !important;
-  color: #eceff1 !important;
+  background-color: var(--btn-bg-disabled);
 }
+

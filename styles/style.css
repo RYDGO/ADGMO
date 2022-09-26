@@ -1,0 +1,79 @@
+/* Colors */
+
+.tb-primary {
+  color: #ef3f43;
+}
+
+.tb-bg-primary {
+  color: #ef3f43;
+}
+
+/* Border-Radius */
+.tb-rounded {
+  border-radius: 8px !important;
+}
+
+.tb-rounded-pill {
+  border-radius: 64px;
+}
+
+/* Buttons  - primary */
+
+.btn-lg {
+  padding: 11px 26px !important;
+}
+
+.btn-md {
+  padding: 8px 26px !important ;
+}
+
+.btn-sm {
+  padding: 2px 26px !important ;
+}
+
+.btn-xs {
+  padding: 2px 26px !important ;
+}
+
+.tb-btn-primary {
+  background-color: #37474f;
+  color: #fff;
+}
+
+.tb-btn-primary:hover {
+  background-color: #8c8c8c !important;
+  color: #fff !important;
+}
+
+.tb-btn-primary:disabled {
+  background-color: #eceff1 !important;
+  color: #fff !important;
+}
+
+.tb-btn-primary:active {
+  background-color: #b0b0b0 !important;
+  color: #fff !important;
+}
+
+/* Buttons  - secondary */
+
+.tb-btn-secondary {
+  background-color: #fff !important;
+  border: 1px solid #37474f !important ;
+  color: #37474f !important;
+}
+
+.tb-btn-secondary:hover {
+  border: 1px solid #8c8c8c !important;
+  color: #8c8c8c !important;
+}
+
+.tb-btn-secondary:active {
+  border: 1px solid #b0b0b0 !important;
+  color: #b0b0b0 !important;
+}
+
+.tb-btn-secondary:disabled {
+  border: 1px solid #eceff1 !important;
+  color: #eceff1 !important;
+}

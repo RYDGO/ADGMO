@@ -127,27 +127,30 @@
 }
 
 .tb-btn-primary:disabled {
-  background-color: var(--btn-bg-disabled);
+  background-color: var(--btn-bg-disabled) !important;
 }
+
 
 
 /* ------------------- SECONDARY BUTTONS ------------------- */
 
-
 .tb-btn-secondary {
-  background-color: var(--btn-bg-default);
-  color: var(--text-base-white);
+  background-color: #fff !important;
+  border: 1px solid var(--btn-bg-default)  !important;
+  color: var(--btn-bg-default) !important;
 }
 
 .tb-btn-secondary:hover {
-  background-color: var(--btn-bg-hover);
+  border: 1px solid var(--btn-bg-hover) !important;
+  color: var(--btn-bg-hover)  !important;
 }
 
 .tb-btn-secondary:active {
-  background-color: var(--btn-bg-selected);
+  border: 1px solid var(--btn-bg-selected) !important;
+  color: var(--btn-bg-selected)  !important;
 }
 
 .tb-btn-secondary:disabled {
-  background-color: var(--btn-bg-disabled);
+  border: 1px solid var(--btn-bg-disabled) !important;
+  color: var(--btn-bg-disabled) !important;
 }
-

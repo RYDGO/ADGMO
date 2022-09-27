@@ -65,6 +65,20 @@
   border: 1px solid var(--grayshade-500);
 }
 
+/* -------Icon-border----------- */
+
+.border-gray-500:hover{
+  border: 1px solid var(--btn-bg-hover) !important;
+  color: var(--btn-bg-hover);
+}
+.border-gray-500:active{
+  border: 1px solid var(--btn-bg-selected) !important;
+  color: var(--btn-bg-selected);
+}
+.border-gray-500:disabled{
+  border: 1px solid var(--btn-bg-disabled) !important;
+  color: var(--btn-bg-disabled);
+}
 
 /*----------------------------- GRAY COLORS SHADE----------------- */
 .gray-100{
@@ -82,6 +96,7 @@
 .gray-500{
   background-color: var(--grayshade-500);
 }
+
 
 
 /*------------- Grayshades-hover -------------*/
@@ -219,3 +234,4 @@
   padding: 8px 12px;
 
 }
+

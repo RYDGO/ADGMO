@@ -2,7 +2,6 @@
 /*----------------------------- ROOT FOR COLORS ----------------- */
 :root {
   --base-color: #ef3f43;
-
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
@@ -44,6 +43,19 @@
 --btn-bg-selected:#b0b0b0;
 --btn-bg-disabled:#eceff1;
 
+/*-----------------------------Font-Family----------------- */
+
+  --font-family: sans-serif;
+
+
+
+
+}
+
+
+/*----------------------------- GRAY COLORS SHADE----------------- */
+.gray-shade-100{
+  background-color: var(--grayshade-100);
 }
 
 /* ------------------- PRIMARY BUTTONS ------------------- */
@@ -153,4 +165,10 @@
 .tb-btn-secondary:disabled {
   border: 1px solid var(--btn-bg-disabled) !important;
   color: var(--btn-bg-disabled) !important;
+}
+
+
+/*-----------------------------Border-Styles---------------- */
+.border-primary{
+  border: 1px solid var(--grayshade-500);
 }

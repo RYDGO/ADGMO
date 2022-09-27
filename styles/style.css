@@ -119,15 +119,18 @@
 }
 
 .tb-btn-primary:hover {
-  background-color: var(--btn-bg-hover);
+  background-color: var(--btn-bg-hover) !important;
 }
 
 .tb-btn-primary:active {
-  background-color: var(--btn-bg-selected);
+  background-color: var(--btn-bg-selected) !important;
+  border: 1px solid var(--btn-bg-selected) !important;
 }
 
 .tb-btn-primary:disabled {
   background-color: var(--btn-bg-disabled) !important;
+  border: 1px solid var(--btn-bg-disabled) !important;
+
 }
 
 

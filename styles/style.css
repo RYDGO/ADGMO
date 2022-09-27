@@ -111,12 +111,88 @@ body{
 }
 
 /* ------------------- TYPOGRAPHY COLORS ------------------- */
+
 .text-base-black{
 color: var(--text-base-black);
 }
+
 .text-base-white{
  color: var(--text-base-white);
 }
+
+/*---------Headings-------*/
+
+.tb-h1,.tb-h2,.tb-h3,.tb-h4,.tb-h5,
+.tb-heading-1,
+.tb-heading-2 {
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tb-heading-1 {
+  font-size: 3.813rem;
+  line-height: 1.2;
+}
+.tb-heading-2 {
+  font-size: 3.125rem;
+  line-height: 1.2;
+} 
+
+.tb-h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+.tb-h2 {
+  font-size: 1.938rem;
+  line-height: 1.2;
+}
+.tb-h3 {
+  font-size: 1.563rem;
+  line-height: 1.2;
+}
+.tb-h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.tb-h5 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.lead-paragraph,
+.regular-paragraph,
+.bold-paragraph,
+.small-paragraph,
+.caption-paragraph
+ {
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 400;
+}
+
+.lead-paragraph{
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.regular-paragraph {
+  font-size: 1rem;
+  line-height: 2.1;
+}
+.bold-paragraph {
+  font-weight: 700;
+  font-size: 1;
+  line-height: 1.6;
+}
+.small-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+.caption-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
 /* -------------------- Icon-border ------------------- */
 
 .border-gray-500:hover {
@@ -218,7 +294,7 @@ color: var(--text-base-black);
 
 .tb-btn-primary {
   background-color: var(--btn-bg-default);
-  color: var(--text-base-white);
+  color: var(--text-base-white) !important;
 }
 
 .tb-btn-primary:hover {

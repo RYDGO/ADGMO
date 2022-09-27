@@ -17,7 +17,6 @@
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
 
-
   /*----------------------------- TYPOGRAPHY COLORS ----------------- */
 
   --text-base-black: #393939;
@@ -35,17 +34,16 @@
   --font-weight-900: "900";
   --font-ft-size: 1.563rem;
 
-/*----------------------------- BUTTON COLORS ----------------- */
+  /*----------------------------- BUTTON COLORS ----------------- */
 
---btn-bg-default:#37474f;
---btn-bg-hover:#8c8c8c;
---btn-bg-selected:#b0b0b0;
---btn-bg-disabled:#eceff1;
+  --btn-bg-default: #37474f;
+  --btn-bg-hover: #8c8c8c;
+  --btn-bg-selected: #b0b0b0;
+  --btn-bg-disabled: #eceff1;
 
-/*----------------------------- FONT FAMILY ----------------- */
+  /*----------------------------- FONT FAMILY ----------------- */
 
   --font-family: sans-serif;
-
 }
 
 /* ------------------- PRIMARY COLORS ------------------- */
@@ -69,7 +67,7 @@
   background-color: var(--status-color-blue);
 }
 .tb-bg-yellow {
-  background-color:var(--status-color-yellow);
+  background-color: var(--status-color-yellow);
 }
 .tb-bg-orange {
   background-color: var(--status-color-orange);
@@ -91,7 +89,7 @@
   color: var(--status-color-blue);
 }
 .tb-yellow {
-  color:var(--status-color-yellow);
+  color: var(--status-color-yellow);
 }
 .tb-orange {
   color: var(--status-color-orange);
@@ -102,48 +100,69 @@
 .tb-pink {
   color: var(--status-color-pink);
 }
+/* -------Icon-border----------- */
+
+.border-gray-500:hover {
+  border: 1px solid var(--btn-bg-hover) !important;
+  color: var(--btn-bg-hover);
+}
+
+.border-gray-500:active {
+  border: 1px solid var(--btn-bg-selected) !important;
+  color: var(--btn-bg-selected);
+}
+.border-gray-500:disabled {
+  border: 1px solid var(--btn-bg-disabled) !important;
+  color: var(--btn-bg-disabled);
+}
 
 /*----------------------------- GRAY COLORS SHADE----------------- */
-.gray-100{
+.gray-100 {
   background-color: var(--grayshade-100);
 }
-.gray-200{
+.gray-200 {
   background-color: var(--grayshade-200);
 }
-.gray-300{
+.gray-300 {
   background-color: var(--grayshade-300);
 }
-.gray-400{
+.gray-400 {
   background-color: var(--grayshade-400);
 }
-.gray-500{
+.gray-500 {
   background-color: var(--grayshade-500);
 }
 
 /* -------------------------- GRAY BORDER COLORS ----------------- */
 
-.border-gray-100{
+.border-gray-100 {
   border: 1px solid var(--grayshade-100);
 }
-.border-gray-200{
+
+/*------------- Grayshades-hover -------------*/
+
+.gray-300-hover:hover {
+  background-color: var(--grayshade-300);
+}
+.border-gray-200 {
   border: 1px solid var(--grayshade-200);
 }
-.border-gray-300{
+.border-gray-300 {
   border: 1px solid var(--grayshade-300);
 }
-.border-gray-400{
+.border-gray-400 {
   border: 1px solid var(--grayshade-400);
 }
-.border-gray-500{
+.border-gray-500 {
   border: 1px solid var(--grayshade-500);
 }
 
 /*------------- GRAYSHADES HOVER COLORS -------------*/
 
-.gray-300-hover:hover{
+.gray-300-hover:hover {
   background-color: var(--grayshade-300);
 }
-.gray-300-hover:hover{
+.gray-300-hover:hover {
   background-color: var(--grayshade-300);
 }
 
@@ -158,7 +177,6 @@
 }
 
 /* ----------------- BUTTONS ------------------- */
-
 
 .btn-lg {
   padding: 11px 26px !important;
@@ -178,7 +196,6 @@
 
 /* ------------------- PRIMARY BUTTONS ------------------- */
 
-
 .tb-btn-primary {
   background-color: var(--btn-bg-default);
   color: var(--text-base-white);
@@ -196,27 +213,24 @@
 .tb-btn-primary:disabled {
   background-color: var(--btn-bg-disabled) !important;
   border: 1px solid var(--btn-bg-disabled) !important;
-
 }
-
-
 
 /* ------------------- SECONDARY BUTTONS ------------------- */
 
 .tb-btn-secondary {
   background-color: #fff !important;
-  border: 1px solid var(--btn-bg-default)  !important;
+  border: 1px solid var(--btn-bg-default) !important;
   color: var(--btn-bg-default) !important;
 }
 
 .tb-btn-secondary:hover {
   border: 1px solid var(--btn-bg-hover) !important;
-  color: var(--btn-bg-hover)  !important;
+  color: var(--btn-bg-hover) !important;
 }
 
 .tb-btn-secondary:active {
   border: 1px solid var(--btn-bg-selected) !important;
-  color: var(--btn-bg-selected)  !important;
+  color: var(--btn-bg-selected) !important;
 }
 
 .tb-btn-secondary:disabled {
@@ -224,15 +238,13 @@
   color: var(--btn-bg-disabled) !important;
 }
 
-
 /*-----------------------------Border-Styles---------------- */
-.border-primary{
+.border-primary {
   border: 1px solid var(--grayshade-500);
 }
 
-
 /* --------------------- Paddings --------------------- */
 
-.pad-8-12{
+.pad-8-12 {
   padding: 8px 12px;
 }

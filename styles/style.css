@@ -35,36 +35,73 @@
   --font-weight-900: "900";
   --font-ft-size: 1.563rem;
 
-/*-----------------------------Button Colors----------------- */
+/*----------------------------- BUTTON COLORS ----------------- */
 
 --btn-bg-default:#37474f;
 --btn-bg-hover:#8c8c8c;
 --btn-bg-selected:#b0b0b0;
 --btn-bg-disabled:#eceff1;
 
-/*-----------------------------Font-Family----------------- */
+/*----------------------------- FONT FAMILY ----------------- */
 
   --font-family: sans-serif;
 
 }
 
-/* --------------------------Gray-Border-colors----------------- */
-.border-gray-100{
-  border: 1px solid var(--grayshade-100);
-}
-.border-gray-200{
-  border: 1px solid var(--grayshade-200);
-}
-.border-gray-300{
-  border: 1px solid var(--grayshade-300);
-}
-.border-gray-400{
-  border: 1px solid var(--grayshade-400);
-}
-.border-gray-500{
-  border: 1px solid var(--grayshade-500);
+/* ------------------- PRIMARY COLORS ------------------- */
+
+.tb-primary {
+  color: var(--base-color);
 }
 
+.tb-bg-primary {
+  color: var(--base-color);
+}
+
+/*----------------------------- STATUS COLORS ------------------ */
+
+/* ------- BG STATUS COLORS ---- */
+.tb-bg-green {
+  background-color: var(--status-color-green);
+}
+
+.tb-bg-blue {
+  background-color: var(--status-color-blue);
+}
+.tb-bg-yellow {
+  background-color:var(--status-color-yellow);
+}
+.tb-bg-orange {
+  background-color: var(--status-color-orange);
+}
+.tb-bg-purple {
+  background-color: var(--status-color-purple);
+}
+.tb-bg-pink {
+  background-color: var(--status-color-pink);
+}
+
+/* ------- CONTENT STATUS COLORS ---- */
+
+.tb-green {
+  color: var(--status-color-green);
+}
+
+.tb-blue {
+  color: var(--status-color-blue);
+}
+.tb-yellow {
+  color:var(--status-color-yellow);
+}
+.tb-orange {
+  color: var(--status-color-orange);
+}
+.tb-purple {
+  color: var(--status-color-purple);
+}
+.tb-pink {
+  color: var(--status-color-pink);
+}
 
 /*----------------------------- GRAY COLORS SHADE----------------- */
 .gray-100{
@@ -83,8 +120,25 @@
   background-color: var(--grayshade-500);
 }
 
+/* -------------------------- GRAY BORDER COLORS ----------------- */
 
-/*------------- Grayshades-hover -------------*/
+.border-gray-100{
+  border: 1px solid var(--grayshade-100);
+}
+.border-gray-200{
+  border: 1px solid var(--grayshade-200);
+}
+.border-gray-300{
+  border: 1px solid var(--grayshade-300);
+}
+.border-gray-400{
+  border: 1px solid var(--grayshade-400);
+}
+.border-gray-500{
+  border: 1px solid var(--grayshade-500);
+}
+
+/*------------- GRAYSHADES HOVER COLORS -------------*/
 
 .gray-300-hover:hover{
   background-color: var(--grayshade-300);
@@ -92,51 +146,16 @@
 .gray-300-hover:hover{
   background-color: var(--grayshade-300);
 }
-
-/* ------------------- PRIMARY BUTTONS ------------------- */
-
-.tb-primary {
-  color: var(--base-color);
-}
-
-.tb-bg-primary {
-  color: var(--base-color);
-}
-
-
-/* Status-Colors */
-
-.tb-bg-green {
-  background-color: var(--status-color-green);
-}
-.tb-bg-blue {
-  background-color: var(--status-color-blue);
-}
-.tb-bg-yellow {
-  background-color:var(--status-color-yellow);
-}
-.tb-bg-orange {
-  background-color: var(--status-color-orange);
-}
-.tb-bg-purple {
-  background-color: var(--status-color-purple);
-}
-.tb-bg-pink {
-  background-color: var(--status-color-pink);
-}
-
 
 /* ------------------- BORDERS-RADIUS ------------------- */
-
 
 .tb-rounded {
   border-radius: 8px !important;
 }
+
 .tb-rounded-pill {
   border-radius: 64px;
 }
-
-
 
 /* ----------------- BUTTONS ------------------- */
 
@@ -156,7 +175,6 @@
 .btn-xs {
   padding: 2px 26px !important ;
 }
-
 
 /* ------------------- PRIMARY BUTTONS ------------------- */
 
@@ -217,5 +235,4 @@
 
 .pad-8-12{
   padding: 8px 12px;
-
 }

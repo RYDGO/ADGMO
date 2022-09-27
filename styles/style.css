@@ -53,7 +53,7 @@
 }
 
 .tb-bg-primary {
-  color: var(--base-color);
+  background-color: var(--base-color);
 }
 
 /*----------------------------- STATUS COLORS ------------------ */
@@ -100,7 +100,15 @@
 .tb-pink {
   color: var(--status-color-pink);
 }
-/* -------Icon-border----------- */
+
+/* ------------------- TYPOGRAPHY COLORS ------------------- */
+.text-base-black{
+color: var(--text-base-black);
+}
+.text-base-white{
+ color: var(--text-base-white);
+}
+/* -------------------- Icon-border ------------------- */
 
 .border-gray-500:hover {
   border: 1px solid var(--btn-bg-hover) !important;
@@ -239,6 +247,7 @@
 }
 
 /*-----------------------------Border-Styles---------------- */
+
 .border-primary {
   border: 1px solid var(--grayshade-500);
 }

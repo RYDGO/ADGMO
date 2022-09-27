@@ -16,8 +16,7 @@
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
   --grayshade-500: #393939;
-  --bg-blackbase: #000;
-  --bg-whitebase: #fff;
+
 
   /*----------------------------- TYPOGRAPHY COLORS ----------------- */
 
@@ -54,8 +53,30 @@
 
 
 /*----------------------------- GRAY COLORS SHADE----------------- */
-.gray-shade-100{
+.gray-100{
   background-color: var(--grayshade-100);
+}
+.gray-200{
+  background-color: var(--grayshade-200);
+}
+.gray-300{
+  background-color: var(--grayshade-300);
+}
+.gray-400{
+  background-color: var(--grayshade-400);
+}
+.gray-500{
+  background-color: var(--grayshade-500);
+}
+
+
+/*------------- Grayshades-hover -------------*/
+
+.gray-300-hover:hover{
+  background-color: var(--grayshade-300);
+}
+.gray-300-hover:hover{
+  background-color: var(--grayshade-300);
 }
 
 /* ------------------- PRIMARY BUTTONS ------------------- */
@@ -171,4 +192,16 @@
 /*-----------------------------Border-Styles---------------- */
 .border-primary{
   border: 1px solid var(--grayshade-500);
+}
+
+
+
+
+
+
+/* --------------------- Paddings --------------------- */
+
+.pad-8-12{
+  padding: 8px 12px;
+
 }

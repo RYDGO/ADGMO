@@ -25,18 +25,42 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    background-color: var(--grayshade-600);
     transition: var(--tran-05);
 }
+
+/* navbar */
+.userImg-container{
+    width: 50px; 
+    height:50px;
+  }
+  .user-nameline{
+    font-size:14px;
+    color: var(--grayshade-200);
+  }
+  .vartical-line{
+    height: 45px;
+    width: 2.5px;
+    background-color: var(--grayshade-100);
+  }
+  .img-containerbox{
+    width: 256px;
+    height: 56px;
+  }
+  .img-responsive{
+    width: 100%;
+    height: 100%;
+  }
+
 
 
 /* ===== Sidebar ===== */
  .sidebar{
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 0;
     height: 100%;
-    width: 354px;
+    width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -130,9 +154,8 @@ header .image-text .profession{
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
-    background-color: var(--primary-color);
-    color: var(--sidebar-color);
-    border-radius: 50%;
+    background-color: #eceff1;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,9 +164,7 @@ header .image-text .profession{
     transition: var(--tran-05);
 }
 
-body.dark .sidebar header .toggle{
-    color: var(--text-color);
-}
+
 
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
@@ -192,10 +213,6 @@ body.dark .sidebar header .toggle{
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
-body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text{
-    color: var(--text-color);
-}
 
 .sidebar .menu-bar{
     height: calc(100% - 55px);
@@ -218,19 +235,10 @@ body.dark .sidebar li a:hover .text{
     height: 50px;
     width: 60px;
 }
+.menu-links{
+    padding: 0;
+}
 
-.mode .sun-moon i{
-    position: absolute;
-}
-.mode .sun-moon i.sun{
-    opacity: 0;
-}
-body.dark .mode .sun-moon i.sun{
-    opacity: 1;
-}
-body.dark .mode .sun-moon i.moon{
-    opacity: 0;
-}
 
 .menu-bar .bottom-content .toggle-switch{
     position: absolute;
@@ -265,9 +273,6 @@ body.dark .mode .sun-moon i.moon{
     transition: var(--tran-04);
 }
 
-body.dark .switch::before{
-    left: 20px;
-}
 
 .home{
     position: absolute;
@@ -291,6 +296,4 @@ body.dark .switch::before{
     height: 100vh;
     width: calc(100% - 78px);
 }
-body.dark .home .text{
-    color: var(--text-color);
-}
+

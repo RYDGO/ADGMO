@@ -1,3 +1,9 @@
+body{
+  background-color: #dfdfdf;
+}
+
+
+
 /* ------ Styles For Colors ------ */
 /*----- ROOT FOR COLORS ------ */
 :root {
@@ -222,10 +228,14 @@ color: var(--text-base-black);
   background-color: var(--grayshade-600);
 }
 
-/* ---------- GRAY BORDER COLORS - */
+/* ---- GRAY BORDER COLORS ---- */
 
 .border-gray-100 {
   border: 1px solid var(--grayshade-100);
+}
+
+.border-gray-100 {
+  border: 1px solid var(--grayshade-500);
 }
 
 /*------------- Grayshades-hover -------------*/
@@ -327,22 +337,11 @@ color: var(--text-base-black);
   color: var(--btn-bg-disabled) !important;
 }
 
-/*-------------Border-Styles */
-
-.border-primary {
-  border: 1px solid var(--grayshade-500);
-}
-
 /* ----- Paddings ----- */
 
 .pad-8-12 {
   padding: 8px 12px;
 }
 
-.table-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
 
 

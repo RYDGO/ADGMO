@@ -16,6 +16,7 @@
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
+  --grayshade-600:#fbfbfb;
 
   /*----- TYPOGRAPHY COLORS ----- */
 
@@ -216,6 +217,9 @@ color: var(--text-base-black);
 .gray-500 {
   background-color: var(--grayshade-500);
 }
+.gray-600 {
+  background-color: var(--grayshade-600);
+}
 
 /* ---------- GRAY BORDER COLORS - */
 
@@ -333,3 +337,11 @@ color: var(--text-base-black);
 .pad-8-12 {
   padding: 8px 12px;
 }
+
+.table-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+

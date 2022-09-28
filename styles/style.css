@@ -2,6 +2,7 @@
 /*----- ROOT FOR COLORS ------ */
 :root {
   --base-color: #ef3f43;
+  
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
@@ -18,7 +19,7 @@
   --grayshade-500: #37474f;
   --grayshade-600:#fbfbfb;
 
-  /*----- TYPOGRAPHY COLORS ----- */
+  /*----- TYPOGRAPHY ----- */
 
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -42,7 +43,7 @@
   --btn-bg-selected: #b0b0b0;
   --btn-bg-disabled: #eceff1;
 
-  /*----- FONT FAMILY ----- */
+  /*----- FONT-FAMILY ----- */
 
   --font-family: sans-serif;
 }

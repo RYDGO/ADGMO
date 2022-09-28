@@ -2,12 +2,21 @@
 /*----- ROOT FOR COLORS ------ */
 :root {
   --base-color: #ef3f43;
+  --base-black-color:#000;
+  --base-white-color:#fff;
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
   --status-color-orange: #ffa800;
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
+
+  /* overview-boxes colors */
+
+  --first-box-color:#E99293;
+  --two-box-color:#D9F4ED;
+  --three-box-color:#D2EEFF;
+  --four-box-color:#EDEDED;
 
   /*----- GRAY COLORS ------ */
 

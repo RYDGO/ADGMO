@@ -1,5 +1,5 @@
-/* --------------- Styles For Colors ----------------- */
-/*----------------------------- ROOT FOR COLORS ----------------- */
+/* ------ Styles For Colors ------ */
+/*----- ROOT FOR COLORS ------ */
 :root {
   --base-color: #ef3f43;
   --status-color-green: #37c3a1;
@@ -9,7 +9,7 @@
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
 
-  /*----------------------------- GRAY COLORS ----------------- */
+  /*----- GRAY COLORS ------ */
 
   --grayshade-100: #eceff1;
   --grayshade-200: #b0b0b0;
@@ -17,7 +17,7 @@
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
 
-  /*----------------------------- TYPOGRAPHY COLORS ----------------- */
+  /*----- TYPOGRAPHY COLORS ----- */
 
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -34,19 +34,19 @@
   --font-weight-900: "900";
   --font-ft-size: 1.563rem;
 
-  /*----------------------------- BUTTON COLORS ----------------- */
+  /*------ BUTTON COLORS ----- */
 
   --btn-bg-default: #37474f;
   --btn-bg-hover: #8c8c8c;
   --btn-bg-selected: #b0b0b0;
   --btn-bg-disabled: #eceff1;
 
-  /*----------------------------- FONT FAMILY ----------------- */
+  /*----- FONT FAMILY ----- */
 
   --font-family: sans-serif;
 }
 
-/* ------------------- PRIMARY COLORS ------------------- */
+/* --- PRIMARY COLORS --- */
 
 .tb-primary {
   color: var(--base-color);
@@ -56,7 +56,7 @@
   background-color: var(--base-color);
 }
 
-/*----------------------------- STATUS COLORS ------------------ */
+/*-------- STATUS COLORS ------ */
 
 /* ------- BG STATUS COLORS ---- */
 .tb-bg-green {
@@ -101,7 +101,7 @@
   color: var(--status-color-pink);
 }
 
-/* ------------------- TYPOGRAPHY COLORS ------------------- */
+/* --- TYPOGRAPHY COLORS --- */
 
 .text-base-black{
 color: var(--text-base-black);
@@ -111,7 +111,7 @@ color: var(--text-base-black);
  color: var(--text-base-white);
 }
 
-/*---------Headings-------*/
+/*-------- Headings ------*/
 
 .tb-h1,.tb-h2,.tb-h3,.tb-h4,.tb-h5,
 .tb-heading-1,
@@ -184,7 +184,7 @@ color: var(--text-base-black);
   line-height: 1.9;
 }
 
-/* -------------------- Icon-border ------------------- */
+/* ---- Icon-border --- */
 
 .border-gray-500:hover {
   border: 1px solid var(--btn-bg-hover) !important;
@@ -200,7 +200,7 @@ color: var(--text-base-black);
   color: var(--btn-bg-disabled);
 }
 
-/*----------------------------- GRAY COLORS SHADE----------------- */
+/*----- GRAY COLORS SHADE ----- */
 .gray-100 {
   background-color: var(--grayshade-100);
 }
@@ -217,7 +217,7 @@ color: var(--text-base-black);
   background-color: var(--grayshade-500);
 }
 
-/* -------------------------- GRAY BORDER COLORS ----------------- */
+/* ---------- GRAY BORDER COLORS - */
 
 .border-gray-100 {
   border: 1px solid var(--grayshade-100);
@@ -241,7 +241,7 @@ color: var(--text-base-black);
   border: 1px solid var(--grayshade-500);
 }
 
-/*------------- GRAYSHADES HOVER COLORS -------------*/
+/*----- GRAYSHADES HOVER COLORS -----*/
 
 .gray-300-hover:hover {
   background-color: var(--grayshade-300);
@@ -250,7 +250,7 @@ color: var(--text-base-black);
   background-color: var(--grayshade-300);
 }
 
-/* ------------------- BORDERS-RADIUS ------------------- */
+/* --- BORDERS-RADIUS --- */
 
 .tb-rounded {
   border-radius: 8px !important;
@@ -260,7 +260,7 @@ color: var(--text-base-black);
   border-radius: 64px;
 }
 
-/* ----------------- BUTTONS ------------------- */
+/* - BUTTONS --- */
 
 .btn-lg {
   padding: 11px 26px !important;
@@ -278,7 +278,7 @@ color: var(--text-base-black);
   padding: 2px 26px !important ;
 }
 
-/* ------------------- PRIMARY BUTTONS ------------------- */
+/* --- PRIMARY BUTTONS --- */
 
 .tb-btn-primary {
   background-color: var(--btn-bg-default);
@@ -299,7 +299,7 @@ color: var(--text-base-black);
   border: 1px solid var(--btn-bg-disabled) !important;
 }
 
-/* ------------------- SECONDARY BUTTONS ------------------- */
+/* --- SECONDARY BUTTONS --- */
 
 .tb-btn-secondary {
   background-color: #fff !important;
@@ -322,13 +322,13 @@ color: var(--text-base-black);
   color: var(--btn-bg-disabled) !important;
 }
 
-/*-----------------------------Border-Styles---------------- */
+/*-------------Border-Styles */
 
 .border-primary {
   border: 1px solid var(--grayshade-500);
 }
 
-/* --------------------- Paddings --------------------- */
+/* ----- Paddings ----- */
 
 .pad-8-12 {
   padding: 8px 12px;

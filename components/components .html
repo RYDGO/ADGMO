@@ -1,65 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  <div  class="text-center p-3">
-    <button class="btn btn-lg tb-btn-primary tb-rounded"  type="button"><i class="fa-solid fa-chart-simple fa-xs p-1"></i> primary hover!</button>
-    <button class="btn btn-md tb-btn-primary tb-rounded"  type="button">primary hover!</button>
-    <button class="btn btn-sm tb-btn-primary tb-rounded"  type="button">Edit</button>
-
+  <div class="container">
+    <h1>Primary Color</h1>
+    <div class="row g-2">
+      <div class="col-md-2 p-4 tb-bg-primary tb-rounded"></div>
+    </div>
+    <h1>Status Colors</h1>
+    <div class="row gx-5">
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-green"></div>
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-blue"></div>
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-yellow"></div>
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-orange"></div>
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-purple"></div>
+      <div class="col-md-2 p-4 tb-rounded  tb-bg-pink"></div>
+    </div>
   </div>
-  <div class="text-center p-3">
-    <button class="btn btn-lg tb-btn-primary tb-rounded-pill"  type="button">primary hover!</button>
-    <button class="btn btn-md tb-btn-primary tb-rounded-pill"  type="button">primary hover!</button>
-    <button class="btn btn-sm tb-btn-primary tb-rounded-pill"  type="button">Edit</button>
-  </div>
+  <div class="container">
+    <h1>Gray Base Colors</h1>
+    <div class="row gx-5">
+      <div class="col-md-2 p-4 tb-rounded  gray-100 "></div>
+      <div class="col-md-2 p-4 tb-rounded  gray-200 "></div>
+      <div class="col-md-2 p-4 tb-rounded  gray-300 "></div>
+      <div class="col-md-2 p-4 tb-rounded  gray-400 "></div>
+      <div class="col-md-2 p-4 tb-rounded  gray-500 "></div>
 
-  <div  class="text-center p-3">
-    <button class="btn btn-lg tb-btn-primary tb-rounded"  type="button" disabled>primary hover!</button>
-    <button class="btn btn-md tb-btn-primary tb-rounded"  type= "button" disabled>primary hover!</button>
-    <button class="btn btn-sm tb-btn-primary tb-rounded"  type="button" disabled>Edit</button>
+    </div>
 
-  </div>
-
-  <div  class="text-center p-3">
-    <button class="btn btn-lg tb-btn-secondary tb-rounded"  type="button"><i class="fa-solid fa-chart-simple fa-xs p-1"></i> primary hover!</button>
-    <button class="btn btn-md tb-btn-secondary tb-rounded"  type="button">primary hover!</button>
-    <button class="btn btn-sm tb-btn-secondary tb-rounded"  type="button">Edit</button>
-    <input type="date">
-  </div>
-
-  <div  class="text-center p-3">
-    <button class="btn btn-lg tb-btn-secondary tb-rounded-pill"  type="button"><i class="fa-solid fa-chart-simple fa-xs p-1"></i> primary hover!</button>
-    <button class="btn btn-md tb-btn-secondary tb-rounded-pill"  type="button">primary hover!</button>
-    <button class="btn btn-sm tb-btn-secondary tb-rounded-pill"  type="button">Edit</button>
-  </div>
-
-
-  <div class="prev-next">
-    <div class="prev-i">
-  <div class="d-flex justify-content-between">
-    <span class="gray-100 pad-8-12 gray-300-hover">
-        <i class="fa-solid fa-chevron-left"></i>
-    </span>
-    <span class="gray-100 pad-8-12 gray-300-hover">
-        <i class="fa-solid fa-chevron-right"></i>
-    </span>
-  </div>
-
-  
-
-
-
-
+    <h1>Typgraphy Colors</h1>
+    <div class="row gx-5">
+      <div class="col-md-2 p-4 tb-rounded  text-base-white  gray-500">hello</div>
+      <div class="col-md-2 p-4 tb-rounded  text-base-black ">hello</div>
+    </div>
  
+
+
+  <div class="text-center">
+    <h1 class="tb-heading-1">Display heading 1</h1>
+    <h1 class="tb-heading-2">Display heading 2</h1>
+    <h1 class="tb-h1">heading 1</h1>
+    <h1 class="tb-h2">heading 1</h1>
+    <h1 class="tb-h3">heading 1</h1>
+    <h1 class="tb-h4">heading 1</h1>
+    <h1 class="tb-h5">heading 1</h1>
+  </div>
+ 
+  <div class="my-5">
+    <p class="lead-paragraph">In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.</p>
+    <p class="regular-paragraph">In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.</p>
+    <p class="bold-paragraph">In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.</p>
+    <p class="small-paragraph">In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.</p>
+    <p class="caption-paragraph">In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.</p>
+  </div>
+
+
+
+</div>
+
+
+  <div class="text-center p-3">
+    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><i
+        class="fa-solid fa-chart-simple fa-xs p-1 "></i> primary hover!</button>
+    <div class="text-center p-3">
+      <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><i
+          class="fa-solid fa-chart-simple fa-xs p-1"></i> primary hover!</button>
+      <button class="btn btn-md tb-btn-primary tb-rounded" type="button">primary hover!</button>
+      <button class="btn btn-sm tb-btn-primary tb-rounded" type="button">Edit</button>
+
+    </div>
+    <div class="text-center p-3">
+      <button class="btn btn-lg tb-btn-primary tb-rounded-pill" type="button">primary hover!</button>
+      <button class="btn btn-md tb-btn-primary tb-rounded-pill" type="button">primary hover!</button>
+      <button class="btn btn-sm tb-btn-primary tb-rounded-pill" type="button">Edit</button>
+    </div>
+
+    <div class="text-center p-3">
+      <button class="btn btn-lg tb-btn-primary tb-rounded" type="button" disabled>primary hover!</button>
+      <button class="btn btn-md tb-btn-primary tb-rounded" type="button" disabled>primary hover!</button>
+      <button class="btn btn-sm tb-btn-primary tb-rounded" type="button" disabled>Edit</button>
+
+    </div>
+
+    <div class="text-center p-3">
+      <button class="btn btn-lg tb-btn-secondary tb-rounded" type="button"><i
+          class="fa-solid fa-chart-simple fa-xs p-1 "></i> primary hover!</button>
+      <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">primary hover!</button>
+      <button class="btn btn-sm tb-btn-secondary tb-rounded" type="button">Edit</button>
+    </div>
+
+    <div class="text-center p-3">
+      <button class="btn btn-lg tb-btn-secondary tb-rounded-pill" type="button"><i
+          class="fa-solid fa-chart-simple fa-xs p-1 "></i> primary hover!</button>
+      <button class="btn btn-md tb-btn-secondary tb-rounded-pill" type="button">primary hover!</button>
+      <button class="btn btn-sm tb-btn-secondary tb-rounded-pill" type="button">Edit</button>
+    </div>
+
+    <!----------ICONS-COMPONENTS------------->
+
+
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-between">
+          <span class="gray-100 pad-8-12 gray-300-hover">
+            <i class="fa-solid fa-chevron-left"></i>
+          </span>
+          <span class="gray-100 pad-8-12 gray-300-hover">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="mb-3">
+
+      </div>
+
+      <!-- ------------Search-iicon------------ -->
+      <div class="d-flex justify-content-center">
+        <span class="rounded-circle pad-8-12 border-gray-500">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </div>
+
+      <div class="mb-3">
+
+      </div>
+      <div class="d-flex justify-content-center">
+
+        <span class="rounded-circle pad-8-12 border-gray-500">
+          <i class="fa-solid fa-filter"></i>
+        </span>
+      </div>
+
+      <div class="mb-3">
+
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="rounded-circle pad-8-12 border-gray-500">
+          <i class="fa-regular fa-bell"></i>
+        </span>
+      </div>
+
+      <div class="mb-3">
+
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="rounded-circle pad-8-12 border-gray-500">
+          <i class="fa-solid fa-globe"></i>
+        </span>
+      </div>
+      <div class="mb-3">
+
+      </div>
+      <div class="d-flex justify-content-center">
+        <i class="fa-regular fa-circle-check"></i>
+      </div>
+
+
+      <div class="mb-3">
+
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <span class="pad-8-12 gray-100 rounded-circle">
+          <i class="fa-solid fa-rocket"></i>
+        </span>
+      </div>
+
+    </div>
+    <div class="mb-5">
+
+    </div>
+
+     
+
+
+    <div class="container bg-white p-4 tb-rounded">
+      <div class="col-12 d-flex justify-content-around mb-5">
+        <div class="col-10 text-start">
+          <h1 class="fs-4 fw-bold">Select type of request</h1>
+        </div>
+        <div class="col-2 text-end">
+          <span class="rounded-circle pad-8-12 border-gray-500">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+      </div>  
+
+        <div class="col-12 table-grid">
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>News</b>
+            </div>
+            <div class="col-2 ">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Circulars</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Communication Plan</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Media Consultation</b>
+            </div>
+            <div class="col-2 ">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Media Opportunities</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Media Assets Enquiries</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Petronage</b>
+            </div>
+            <div class="col-2 ">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>AD Brand Consultation</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Brand Consultation</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>New Brand Approval</b>
+            </div>
+            <div class="col-2 ">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Re-Branding Approval</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Brand Assets Enquiries</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>Media Assets Archiving </b>
+            </div>
+            <div class="col-2 ">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+  
+  
+          <div class="d-flex gray-600 justify-content-between p-3">
+            <div class="col-2">
+                <img src="../assets/images/Ellipse 732.png" alt="" width="40">
+            </div>
+            <div class="col-8 text-start">
+                <p class="m-0">TYPE OF TASK</p>
+                <b>International Media Opportunities</b>
+            </div>
+            <div class="col-2">
+              <a href="#" class="text-dark"> View</a>
+            </div>
+          </div>
+
+        </div>
+
+
+    </div>
+
+
 </body>
 <link rel="stylesheet" href="../styles/bootstrap/js/bootstrap.bundle.min.js">
+
 </html>

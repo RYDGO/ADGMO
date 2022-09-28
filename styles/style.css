@@ -1,5 +1,5 @@
-/* --------------- Styles For Colors ----------------- */
-/*----------------------------- ROOT FOR COLORS ----------------- */
+/* ------ Styles For Colors ------ */
+/*----- ROOT FOR COLORS ------ */
 :root {
   --base-color: #ef3f43;
   --status-color-green: #37c3a1;
@@ -9,16 +9,16 @@
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
 
-  /*----------------------------- GRAY COLORS ----------------- */
+  /*----- GRAY COLORS ------ */
 
   --grayshade-100: #eceff1;
   --grayshade-200: #b0b0b0;
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
-  --grayshade-500: #393939;
+  --grayshade-500: #37474f;
+  --grayshade-600:#fbfbfb;
 
-
-  /*----------------------------- TYPOGRAPHY COLORS ----------------- */
+  /*----- TYPOGRAPHY COLORS ----- */
 
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -35,71 +35,40 @@
   --font-weight-900: "900";
   --font-ft-size: 1.563rem;
 
-/*-----------------------------Button Colors----------------- */
+  /*------ BUTTON COLORS ----- */
 
---btn-bg-default:#37474f;
---btn-bg-hover:#8c8c8c;
---btn-bg-selected:#b0b0b0;
---btn-bg-disabled:#eceff1;
+  --btn-bg-default: #37474f;
+  --btn-bg-hover: #8c8c8c;
+  --btn-bg-selected: #b0b0b0;
+  --btn-bg-disabled: #eceff1;
 
-/*-----------------------------Font-Family----------------- */
+  /*----- FONT FAMILY ----- */
 
   --font-family: sans-serif;
-
-
-
-
 }
 
-
-/*----------------------------- GRAY COLORS SHADE----------------- */
-.gray-100{
-  background-color: var(--grayshade-100);
-}
-.gray-200{
-  background-color: var(--grayshade-200);
-}
-.gray-300{
-  background-color: var(--grayshade-300);
-}
-.gray-400{
-  background-color: var(--grayshade-400);
-}
-.gray-500{
-  background-color: var(--grayshade-500);
-}
-
-
-/*------------- Grayshades-hover -------------*/
-
-.gray-300-hover:hover{
-  background-color: var(--grayshade-300);
-}
-.gray-300-hover:hover{
-  background-color: var(--grayshade-300);
-}
-
-/* ------------------- PRIMARY BUTTONS ------------------- */
+/* --- PRIMARY COLORS --- */
 
 .tb-primary {
   color: var(--base-color);
 }
 
 .tb-bg-primary {
-  color: var(--base-color);
+  background-color: var(--base-color);
 }
 
+/*-------- STATUS COLORS ------ */
 
-/* Status-Colors */
-
+/* ------- BG STATUS COLORS ---- */
 .tb-bg-green {
   background-color: var(--status-color-green);
 }
+
 .tb-bg-blue {
   background-color: var(--status-color-blue);
 }
 .tb-bg-yellow {
-  background-color:var(--status-color-yellow);
+  background-color: var(--status-color-yellow);
 }
 .tb-bg-orange {
   background-color: var(--status-color-orange);
@@ -111,20 +80,191 @@
   background-color: var(--status-color-pink);
 }
 
+/* ------- CONTENT STATUS COLORS ---- */
 
-/* ------------------- BORDERS-RADIUS ------------------- */
+.tb-green {
+  color: var(--status-color-green);
+}
 
+.tb-blue {
+  color: var(--status-color-blue);
+}
+.tb-yellow {
+  color: var(--status-color-yellow);
+}
+.tb-orange {
+  color: var(--status-color-orange);
+}
+.tb-purple {
+  color: var(--status-color-purple);
+}
+.tb-pink {
+  color: var(--status-color-pink);
+}
+
+/* --- TYPOGRAPHY COLORS --- */
+
+.text-base-black{
+color: var(--text-base-black);
+}
+
+.text-base-white{
+ color: var(--text-base-white);
+}
+
+/*-------- Headings ------*/
+
+.tb-h1,.tb-h2,.tb-h3,.tb-h4,.tb-h5,
+.tb-heading-1,
+.tb-heading-2 {
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tb-heading-1 {
+  font-size: 3.813rem;
+  line-height: 1.2;
+}
+.tb-heading-2 {
+  font-size: 3.125rem;
+  line-height: 1.2;
+} 
+
+.tb-h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+.tb-h2 {
+  font-size: 1.938rem;
+  line-height: 1.2;
+}
+.tb-h3 {
+  font-size: 1.563rem;
+  line-height: 1.2;
+}
+.tb-h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.tb-h5 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.lead-paragraph,
+.regular-paragraph,
+.bold-paragraph,
+.small-paragraph,
+.caption-paragraph
+ {
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 400;
+}
+
+.lead-paragraph{
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.regular-paragraph {
+  font-size: 1rem;
+  line-height: 2.1;
+}
+.bold-paragraph {
+  font-weight: 700;
+  font-size: 1;
+  line-height: 1.6;
+}
+.small-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+.caption-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
+/* ---- Icon-border --- */
+
+.border-gray-500:hover {
+  border: 1px solid var(--btn-bg-hover) !important;
+  color: var(--btn-bg-hover);
+}
+
+.border-gray-500:active {
+  border: 1px solid var(--btn-bg-selected) !important;
+  color: var(--btn-bg-selected);
+}
+.border-gray-500:disabled {
+  border: 1px solid var(--btn-bg-disabled) !important;
+  color: var(--btn-bg-disabled);
+}
+
+/*----- GRAY COLORS SHADE ----- */
+.gray-100 {
+  background-color: var(--grayshade-100);
+}
+.gray-200 {
+  background-color: var(--grayshade-200);
+}
+.gray-300 {
+  background-color: var(--grayshade-300);
+}
+.gray-400 {
+  background-color: var(--grayshade-400);
+}
+.gray-500 {
+  background-color: var(--grayshade-500);
+}
+.gray-600 {
+  background-color: var(--grayshade-600);
+}
+
+/* ---------- GRAY BORDER COLORS - */
+
+.border-gray-100 {
+  border: 1px solid var(--grayshade-100);
+}
+
+/*------------- Grayshades-hover -------------*/
+
+.gray-300-hover:hover {
+  background-color: var(--grayshade-300);
+}
+.border-gray-200 {
+  border: 1px solid var(--grayshade-200);
+}
+.border-gray-300 {
+  border: 1px solid var(--grayshade-300);
+}
+.border-gray-400 {
+  border: 1px solid var(--grayshade-400);
+}
+.border-gray-500 {
+  border: 1px solid var(--grayshade-500);
+}
+
+/*----- GRAYSHADES HOVER COLORS -----*/
+
+.gray-300-hover:hover {
+  background-color: var(--grayshade-300);
+}
+.gray-300-hover:hover {
+  background-color: var(--grayshade-300);
+}
+
+/* --- BORDERS-RADIUS --- */
 
 .tb-rounded {
   border-radius: 8px !important;
 }
+
 .tb-rounded-pill {
   border-radius: 64px;
 }
 
-
-/* ----------------- BUTTONS ------------------- */
-
+/* - BUTTONS --- */
 
 .btn-lg {
   padding: 11px 26px !important;
@@ -142,13 +282,11 @@
   padding: 2px 26px !important ;
 }
 
-
-/* ------------------- PRIMARY BUTTONS ------------------- */
-
+/* --- PRIMARY BUTTONS --- */
 
 .tb-btn-primary {
   background-color: var(--btn-bg-default);
-  color: var(--text-base-white);
+  color: var(--text-base-white) !important;
 }
 
 .tb-btn-primary:hover {
@@ -163,27 +301,24 @@
 .tb-btn-primary:disabled {
   background-color: var(--btn-bg-disabled) !important;
   border: 1px solid var(--btn-bg-disabled) !important;
-
 }
 
-
-
-/* ------------------- SECONDARY BUTTONS ------------------- */
+/* --- SECONDARY BUTTONS --- */
 
 .tb-btn-secondary {
   background-color: #fff !important;
-  border: 1px solid var(--btn-bg-default)  !important;
+  border: 1px solid var(--btn-bg-default) !important;
   color: var(--btn-bg-default) !important;
 }
 
 .tb-btn-secondary:hover {
   border: 1px solid var(--btn-bg-hover) !important;
-  color: var(--btn-bg-hover)  !important;
+  color: var(--btn-bg-hover) !important;
 }
 
 .tb-btn-secondary:active {
   border: 1px solid var(--btn-bg-selected) !important;
-  color: var(--btn-bg-selected)  !important;
+  color: var(--btn-bg-selected) !important;
 }
 
 .tb-btn-secondary:disabled {
@@ -191,20 +326,22 @@
   color: var(--btn-bg-disabled) !important;
 }
 
+/*-------------Border-Styles */
 
-/*-----------------------------Border-Styles---------------- */
-.border-primary{
+.border-primary {
   border: 1px solid var(--grayshade-500);
 }
 
+/* ----- Paddings ----- */
 
-
-
-
-
-/* --------------------- Paddings --------------------- */
-
-.pad-8-12{
+.pad-8-12 {
   padding: 8px 12px;
-
 }
+
+.table-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+

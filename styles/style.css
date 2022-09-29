@@ -199,7 +199,7 @@ body {
   width: 6%;
 }
 .common-width-label-3{
-  width: 3%;
+ width: 3%;
 }
 
 
@@ -372,6 +372,26 @@ body {
   border: 1px solid var(--grayshade-500);
 }
 
+/* Gray shades text color  */
+.tb-gray-400{
+  color: var(--grayshade-400);
+}
+.tb-base-black-hover:hover{
+  color: var(--base-black-color);
+}
+
+/* PAGINATION HOVER AND ACTIVE */
+
+.base-color-hover:hover {
+  background-color: var(--base-color);
+  color: var(--base-white-color);
+}
+.base-color-active:active {
+  background: rgba(239, 63, 67, 0.5);
+  color: var(--base-white-color);
+}
+
+
 /*----- GRAYSHADES HOVER COLORS -----*/
 
 .gray-300-hover:hover {
@@ -503,3 +523,10 @@ option:hover,
 }
 
 /* -------- Dropdowns ends here --------- */
+
+
+
+/* breadcrumbs dropshadow css*/
+.breadcrumbs-shadow{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
+}

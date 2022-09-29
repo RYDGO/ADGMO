@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -532,20 +533,18 @@
         </div>
       </div>
 
-      <div class="col-md-3">
-        <div class="tb-input-group p-2 mt-3 border">
-          <label class="col-12 input-label" for="input">Choose File<sup>*</sup></label>
-          <div class="d-flex ">
-            <input type="text" class="col" id="uploadFile" placeholder="Choose File" class="" />
+
+      <div class="col-md-4">
+        <div class="tb-input-group d-flex p-3 mt-3 border">
+          <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
+            <input type="text" class="col-5" id="uploadFile" placeholder="Choose File" />
             <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
               <span class="tb-fs-14">browse</span>
               <input id="uploadBtn" type="file" class="upload" />
             </div>
-          </div>
         </div>
       </div>
-
-
+    
 
       <div class="col-md-3">
         <div class="tb-input-group d-flex align-items-center p-2 mt-3 border">
@@ -554,7 +553,7 @@
           </div>
           <div>
             <label class="col-12 input-label" for="input2">Select Label<sup>*</sup></label>
-            <input class="col-11 " autocomplete="off" role="combobox" id="input2" name="browsers"
+            <input class="col-11 dropdown-input " autocomplete="off" role="combobox" id="input2" name="browsers"
               placeholder="placeholder..">
             <i class="fa fa-solid fa-angle-down"></i>
 
@@ -595,6 +594,27 @@
           <input class="col-12 text-end" id="" name="" placeholder="پلیس ہولڈر">
         </div>
       </div>
+
+        
+      <div class="col-md-4">
+        <div class="tb-input-group d-flex p-3 mt-3 border">
+          <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
+            <input type="text" class="col-5" id="uploadFile" placeholder="پلیس ہولڈر" />
+            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+              <span class="tb-fs-14">browse</span>
+              <input id="uploadBtn" type="file" class="upload" />
+            </div>
+        </div>
+        <div class="tb-input-group d-flex flex-row-reverse p-3 border">
+          <label class="col-4 input-label text-end" for="input"><sup>*</sup>لیبل</label>
+            <input type="text" class="col-5 text-end" id="uploadFile" placeholder="پلیس ہولڈر" />
+            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+              <span class="tb-fs-14">browse</span>
+              <input id="uploadBtn" type="file" class="upload" />
+            </div>
+        </div>
+      </div>
+
     </div>
     <div class="m-5 p-5">
     </div>
@@ -722,16 +742,16 @@
         <p class="m-0 text-base-black">Home</p>
       </div>
       <div class="bg-white py-2 breadcrumbs-shadow d-flex align-items-center">
-        <div class="">
+        <div>
           <a href="#" class="tb-gray-400 tb-base-black-hover me-2">Home</a>
           <i class="fa-solid fa-chevron-right fa-xs text-base-black"></i>
         </div>
-        <div class="">
+        <div>
           <a href="#" class="tb-gray-400 tb-base-black-hover ms-3">Requests</a>
         </div>
       </div>
       <div class="bg-white py-2 breadcrumbs-shadow d-flex align-items-center">
-        <div class="">
+        <div>
           <a href="#" class="tb-gray-400 tb-base-black-hover me-2">Home</a>
           <i class="fa-solid fa-chevron-right fa-xs text-base-black"></i>
         </div>
@@ -774,7 +794,7 @@
         <div class="modal-content box-shadow-popup">
           <div class="modal-header align-items-start">
             <img src="../assets/images/popup-img.png" class="me-2" alt="" width="80">
-            <div class="">
+            <div>
               <h5 class="modal-title" id="exampleModalLabel">Unanswered News request recieved</h5>
               <p class="m-0">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade gigaskapet. Daköktig fande. </p>
             </div>
@@ -805,7 +825,7 @@
         <div class="modal-content box-shadow-popup">
           <div class="modal-header align-items-start">
             <img src="../assets/images/popup-img.png" class="me-2" alt="" width="80">
-            <div class="">
+            <div>
               <h5 class="modal-title" id="exampleModalLabel">Unanswered News request recieved</h5>
               <p class="m-0">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade gigaskapet. Daköktig fande. </p>
             </div>
@@ -832,7 +852,7 @@
         <div class="modal-content box-shadow-popup">
           <div class="modal-header align-items-start">
             <img src="../assets/images/popup-img.png" class="me-2" alt="" width="80">
-            <div class="">
+            <div>
               <h5 class="modal-title" id="exampleModalLabel">Unanswered News request recieved</h5>
               <p class="m-0">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade gigaskapet. Daköktig fande. </p>
             </div>
@@ -903,12 +923,30 @@
     </div>
 
 
+    <button>Hide</button>
+
+    <p>This is a paragraph with little content.</p>
+    <p>This is another small paragraph.</p>
+    
   </div>
 </body>
 
-<script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- search input js -->
+
+
+<script>
+ $(document).ready(function(){
+  $(".dropdown-input").focus(function(){
+    $(".input-dropdown-list").show(1000);
+  });
+  $(".dropdown-input").blur(function(){
+    $(".input-dropdown-list").hide(1000);
+  });
+});
+
+  </script>
+
 <script>
   input.onfocus = function () {
     browsers.style.display = "block";
@@ -965,5 +1003,6 @@
   }
 
 </script>
+<script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </html>

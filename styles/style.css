@@ -541,9 +541,9 @@ input:focus + .fa {
 .tb-input-group:hover {
   border: 1px solid var(--btn-bg-hover) !important;
 }
-/* .input-dropdown-list{
+.input-dropdown-list{
   display: none;
-} */
+}
 .input:focus + i {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
@@ -593,7 +593,6 @@ option:hover,
   filter: alpha(opacity=0);
 }
 
-/* -------- Dropdowns ends here --------- */
 /* -------- Dropdowns ends here --------- */
 
 

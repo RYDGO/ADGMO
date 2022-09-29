@@ -33,8 +33,8 @@ body {
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
-  --grayshade-600: #fbfbfb;
-
+  --grayshade-600:#fbfbfb;
+  --para-disabled: #808191;
   /*----- TYPOGRAPHY ----- */
 
   --text-base-black: #393939;
@@ -173,9 +173,6 @@ body {
   background: #37c3a175;
 }
 
-
-
-
 /* COMMON WIDTH FOR STATUS COLOR LABELS */
 .common-width-label-11{
   width: 11%;
@@ -202,7 +199,6 @@ body {
   width: 3%;
 }
 
-
 /* --- TYPOGRAPHY COLORS --- */
 
 .text-base-black {
@@ -224,7 +220,7 @@ body {
 .tb-heading-2 {
   font-style: normal;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-base-black);
 }
 
 .tb-heading-1 {
@@ -296,6 +292,10 @@ body {
 .caption-paragraph {
   font-size: 0.875rem;
   line-height: 1.9;
+}
+
+.tb-disabled-para{
+  color: #808191;
 }
 
 /* ---- Icon-border --- */

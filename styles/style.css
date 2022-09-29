@@ -31,7 +31,7 @@ body{
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
-  --grayshade-600:#fbfbfb;
+  --grayshade-600: #fbfbfb;
 
   /*----- TYPOGRAPHY ----- */
 
@@ -357,11 +357,16 @@ color: var(--text-base-black);
   padding: 8px 12px;
 }
 
-.outline-0{
-outline: none;
+
+/* -------- Inputs and Dropdowns-starts here --------- */
+.input-label{
+font-size:12px ;
 }
 
-/* -------- Dropdowns  starts here --------- */
+input{
+  outline: none;
+  border: none;
+}
 
 .tb-input-group{
   position: relative;
@@ -369,8 +374,13 @@ outline: none;
 }
 
 .tb-input-group:hover , .tb-input-group:active{
-  
   border: 1px solid var(--btn-bg-hover) !important;
+}
+
+
+ .focus:focus + .tb-input-group:focus i{
+  transform: rotate(180deg);
+  transition: transform .8s ease;  
 }
 
 datalist {
@@ -383,7 +393,6 @@ datalist {
   overflow-y: auto;
   margin-top: 13px;
   margin-left: -8px;
-  
 }
 
 option {

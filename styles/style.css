@@ -1,10 +1,7 @@
-body {
-  background-color: #dfdfdf;
-}
-
 /* ------ Styles For Colors ------ */
 /*----- ROOT FOR COLORS ------ */
 :root {
+  --body-bg:#FBFBFB;
   --base-color: #ef3f43;
   --base-black-color: #000;
   --base-white-color: #fff;
@@ -14,7 +11,7 @@ body {
   --status-color-orange: #ffa800;
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
-
+ --sidebar-color-hover: #E4E9F7
   /* overview-boxes colors */
 
   --first-box-color: #e99293;
@@ -205,6 +202,14 @@ body {
 .common-width-label-14 {
   width: 14%;
 }
+.common-width-label-45 {
+  width: 45px;
+  height: 45px;
+}
+.common-width-label-30 {
+  width: 25px;
+  height: 25px;
+}
 .common-width-label-5 {
   width: 5%;
 }
@@ -273,7 +278,9 @@ body {
   font-size: 1rem;
   line-height: 1.4;
 }
-
+.tb-fs-14{
+  font-size: 14px;
+}
 .lead-paragraph,
 .regular-paragraph,
 .bold-paragraph,
@@ -293,7 +300,6 @@ body {
   font-size: 1rem;
   line-height: 2.1;
 }
-
 .bold-paragraph {
   font-weight: 700;
   font-size: 1;
@@ -450,6 +456,9 @@ font-size: 14px;
 .btn-xs {
   padding: 2px 26px !important;
 }
+.table-pd-top{
+  padding-top: 25px !important;
+}
 
 /* --- PRIMARY BUTTONS --- */
 
@@ -595,8 +604,6 @@ option:hover,
 
 /* -------- Dropdowns ends here --------- */
 
-
-
 .breadcrumbs-shadow{
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
 }
@@ -609,7 +616,6 @@ option:hover,
 .modal-footer{
   border-top: none;
 }
-
 
 /* dropshadow */
 .box-shadow-popup{
@@ -629,4 +635,13 @@ option:hover,
 }
 .notification-shadow{
   box-shadow: 0px 12px 25px 0px #00000021;
+}
+.flex-center {
+  display:flex;
+  justify-content: center;
+   align-items: center;
+}
+.flex-center-align {
+  display:flex;
+   align-items: center;
 }

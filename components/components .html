@@ -479,7 +479,7 @@
 
       <div class="col-md-3 mt-3">
         <div class="tb-input-group p-2 border">
-          <label class="col-12 input-label" for="dataList">Label</label>
+          <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
           <input class="col-12" id="" name="" placeholder="Placeholder">
         </div>
       </div>
@@ -488,7 +488,7 @@
       <div class="col-md-3 mt-3">
         <div class="tb-input-group p-2 border">
           <div>
-            <label class="col-12 input-label" for="dataList">Label</label>
+            <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
           </div>
           <input class="col-12" list="datalistOptions" id="dataList" placeholder="Placeholder">
           <datalist id="datalistOptions">
@@ -501,14 +501,14 @@
 
       <div class="col-md-3">
         <div class="tb-input-group p-2 mt-3 border">
-          <label class="col-12 input-label" for="date">Calendar</label>
+          <label class="col-12 input-label" for="date">Calendar<sup>*</sup></label>
           <input type="date" class="col-12" id="date">
         </div>
       </div>
 
       <div class="col-md-3">
         <div class="tb-input-group p-2 mt-3 border">
-          <label class="col-12 input-label" for="input">Select Label</label>
+          <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
           <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
             placeholder="placeholder..">
           <i class="fa fa-solid fa-angle-down"></i>
@@ -521,17 +521,32 @@
       </div>
 
       <div class="col-md-3">
+        <div class="tb-input-group p-2 mt-3 border">
+          <label class="col-12 input-label" for="input">Choose File<sup>*</sup></label>
+          <div class="d-flex ">
+            <input type="text" class="col" id="uploadFile" placeholder="Choose File" class="" />
+            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+              <span class="tb-fs-14">browse</span>
+              <input id="uploadBtn" type="file" class="upload" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
         <div class="tb-input-group d-flex align-items-center p-2 mt-3 border">
           <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
             <img src="../assets/images/nodata.png" alt="" class="img-100">
           </div>
           <div>
-            <label class="col-12 input-label" for="input2">Select Label</label>
+            <label class="col-12 input-label" for="input2">Select Label<sup>*</sup></label>
             <input class="col-11 " autocomplete="off" role="combobox" id="input2" name="browsers"
               placeholder="placeholder..">
             <i class="fa fa-solid fa-angle-down"></i>
 
-            <ul class="col-12 input-dropdown-list list-group">
+            <ul class="col-12 input-dropdown-list list-group rounded-0">
               <li class="list-group-item d-flex align-items-center ">
                 <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                   <img src="../assets/images/nodata.png" alt="" class="img-100">
@@ -554,7 +569,19 @@
             </ul>
           </div>
         </div>
+      </div>
 
+
+      <div class="col-md-3 mt-3">
+        <div class="tb-input-group p-2 border">
+          <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
+          <input class="col-12" id="" name="" placeholder="Placeholder">
+        </div>
+        <div class="tb-input-group p-2 border">
+          <label class="col-12 input-label text-end" for="dataList"><sup>*</sup>
+            لیبل</label>
+          <input class="col-12 text-end" id="" name="" placeholder="پلیس ہولڈر">
+        </div>
       </div>
     </div>
     <div class="m-5 p-5">

@@ -19,7 +19,6 @@ body {
 
 
 
-
   /* overview-boxes colors */
 
   --first-box-color: #E99293;
@@ -76,7 +75,7 @@ body {
 /* --- PRIMARY COLORS --- */
 
 .tb-primary {
-  color: var(--base-color);
+  color: var(--base-color) !important;
 }
 
 .tb-bg-primary {
@@ -113,39 +112,96 @@ body {
 /* ------- CONTENT STATUS COLORS ---- */
 
 .tb-green {
-  color: var(--status-color-green);
+  color: var(--status-color-green) !important;
 }
 
 .tb-blue {
-  color: var(--status-color-blue);
+  color: var(--status-color-blue) !important;
 }
 
 .tb-yellow {
-  color: var(--status-color-yellow);
+  color: var(--status-color-yellow) !important;
 }
 
 .tb-orange {
-  color: var(--status-color-orange);
+  color: var(--status-color-orange) !important;
 }
 
 .tb-purple {
-  color: var(--status-color-purple);
+  color: var(--status-color-purple) !important;
 }
 
 .tb-pink {
-  color: var(--status-color-pink);
+  color: var(--status-color-pink) !important;
 }
 
-/* STATUS COLOR OPACITY */
-.opacity-1 {
-  opacity: 0.1;
+
+/* STATUS COLOR OPACITY-BACKGROUNDS */
+
+.status-color-purple-op{
+  background: #8129c72e;
+
 }
-.opacity-2 {
-  opacity: 0.2;
+.status-color-gray-op{
+  background: #b0b0b069;
 }
-.opacity-3 {
-  opacity: 0.3;
+.status-color-pink-op{
+  background: #F11D9C1A;
 }
+.status-color-orange-op{
+  background: #FFA8001A;
+}
+.status-color-green-op{
+  background: #37C3A11A;
+}
+.status-color-yellow-op{
+  background: #FDFAE8;
+}
+.status-color-blue-op{
+  background: #2B93D11A;
+}
+.base-color-op{
+  background: #EF3F431A;
+}
+.base-color-op2{
+  background: #ef3f4385;
+}
+.status-color-yellow-op2{
+  background: #efcb197d;
+}
+.status-color-green-op2{
+  background: #37c3a175;
+}
+
+
+
+
+/* COMMON WIDTH FOR STATUS COLOR LABELS */
+.common-width-label-11{
+  width: 11%;
+}
+.common-width-label-12{
+  width: 12%;
+}
+.common-width-label-16{
+  width: 16%;
+}
+.common-width-label-13{
+  width: 13%;
+}
+.common-width-label-14{
+  width: 14%;
+}
+.common-width-label-5{
+  width: 5%;
+}
+.common-width-label-6{
+  width: 6%;
+}
+.common-width-label-3{
+  width: 3%;
+}
+
 
 /* --- TYPOGRAPHY COLORS --- */
 

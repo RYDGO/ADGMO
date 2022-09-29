@@ -491,10 +491,6 @@ input:focus + .fa {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
-input:focus + .tb-input-group {
-  transform: rotate(180deg);
-  transition: transform 0.8s ease;
-}
 
 .tb-input-group {
   position: relative;
@@ -504,15 +500,25 @@ input:focus + .tb-input-group {
   position: absolute;
   top: 40%;
 }
+
+ .input-dropdown-list{
+  position: absolute;
+  left: 0;
+  top: 107%;
+}
 .tb-input-group:hover {
   border: 1px solid var(--btn-bg-hover) !important;
 }
-
+.input-dropdown-list{
+  display: none;
+}
 .input:focus + i {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
-
+.input:focus + .input-dropdown-list {
+  display: block !important;
+}
 datalist {
   width: 100%;
   position: absolute;
@@ -536,5 +542,6 @@ option:hover,
 .tb-input-group .active {
   background-color: var(--grayshade-100);
 }
+
 
 /* -------- Dropdowns ends here --------- */

@@ -74,7 +74,7 @@
     </nav>
     <nav class="sidebar " id="sidebar">
         <header>
-            <i class='bx bx-chevron-right' id="sidebarToggle"></i>
+            <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
         </header>
         <div class="menu-bar">
             <div class="menu">
@@ -169,202 +169,167 @@
                         <div class="box-topic">Not Started</div>
                         <div class="number">5,732</div>
                     </div>
-                    <i class="fa-solid fa-circle-info cart"></i>
+                    <i class="fa-solid fa-circle-info cart first"></i>
                 </div>
                 <div class="box two">
                     <div class="right-side ">
                         <div class="box-topic">Total Sales</div>
                         <div class="number">38,876</div>
                     </div>
-                    <i class="fa-solid fa-circle-info cart"></i>
+                    <i class="fa-solid fa-circle-info cart two"></i>
                 </div>
                 <div class="box three">
                     <div class="right-side ">
                         <div class="box-topic">Total Profit</div>
                         <div class="number">12,876</div>
                     </div>
-                    <i class="fa-solid fa-circle-info cart"></i>
+                    <i class="fa-solid fa-circle-info cart three"></i>
                 </div>
                 <div class="box four">
                     <div class="right-side ">
                         <div class="box-topic">Total Return</div>
                         <div class="number">11,086</div>
                     </div>
-                    <i class="fa-solid fa-circle-info cart"></i>
+                    <i class="fa-solid fa-circle-info cart four"></i>
                 </div>
-                
+
             </div>
-             <!-- Table -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <!-- column -->
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- title -->
-                                <div class="d-md-flex">
-                                    <div>
-                                        <h4 class="card-title">Upcoming tasks</h4>
+            <!-- Table -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- title -->
+                            <div class="d-md-flex align-items-center">
+                                <div>
+                                    <h4 class="card-title tb-h3">Upcoming tasks</h4>
+                                </div>
+                                <div class="ms-auto d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-center mx-5">
+                                        <span class="rounded-circle pad-8-12 border-gray-500">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </span>
                                     </div>
-                                    <div class="ms-auto d-flex justify-content-between align-items-center">
-                                        <div class="d-flex justify-content-center mx-5">
-                                            <span class="rounded-circle pad-8-12 border-gray-500">
-                                              <i class="fa-solid fa-magnifying-glass"></i>
-                                            </span>
-                                          </div>
-                                        <div class="dl">
-                                            <button class="btn btn-dark tb-rounded" type="button"><i
-                                                class="fa-solid fa-chart-simple"></i> View All</button>
-                                        </div>
+                                    <div class="dl">
+                                        <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><i
+                                                class="fa-solid fa-chart-simple fa-xs px-1"></i> View All</button>
                                     </div>
                                 </div>
-                                <!-- title -->
                             </div>
-                            <div class="table-responsive">
-                                <table class="table v-middle">
-                                    <thead>
-                                        <tr class="bg-light">
-                                            <th class="border-top-0">Products</th>
-                                            <th class="border-top-0">License</th>
-                                            <th class="border-top-0">Support Agent</th>
-                                            <th class="border-top-0">Technology</th>
-                                            <th class="border-top-0">Tickets</th>
-                                            <th class="border-top-0">Sales</th>
-                                            <th class="border-top-0">Earnings</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
+                            <!-- title -->
+                        </div>
+                        <div class="table-responsive rounded-3 mx-3">
+                            <table class="table v-middle align-items-center">
+                                <thead class="">
+                                    <tr class="gray-500 text-white text-center">
+                                        <th class="fw-light">ID <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Due Date <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Entity <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Type <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Initator <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Status <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                        <th class="fw-light">Time Remaining <i class="fa-solid fa-caret-down mx-1"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center fw-light">
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-2 text-white">16
+                                                </h6>
+                                                <h6>16312</h6>
+                                            </div>
+                                        </td>
+                                        <td>16/12/22</td>
+                                        <td class="text-info">EWAA</td>
+                                        <td>News</td>
+                                        <td>46</td>
+                                        <td>356</td>
+                                        <td><i class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a
-                                                            class="btn btn-circle d-flex btn-info text-white">EA</a>
-                                                    </div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Elite Admin</h4>
-                                                    </div>
+                                                    <h6
+                                                        class="bg-primary align-self-center  rounded-pill p-1 text-white">
+                                                        16</h6>
+                                                    <h6>16312</h6>
                                                 </div>
-                                            </td>
-                                            <td>Single Use</td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <label class="label label-danger">Angular</label>
-                                            </td>
-                                            <td>46</td>
-                                            <td>356</td>
-                                            <td>
-                                                <h5 class="m-b-0">$2850.06</h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                            </div>
+                                        </td>
+                                        <td>16/12/22</td>
+                                        <td>Energy</td>
+                                        <td>
+                                            Media Relations
+                                        </td>
+                                        <td>46</td>
+                                        <td>356</td>
+                                        <td><i class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a
-                                                            class="btn btn-circle d-flex btn-orange text-white">MA</a>
-                                                    </div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Monster Admin</h4>
-                                                    </div>
+                                                    <h6
+                                                        class="bg-primary align-self-center  rounded-pill p-1 text-white">
+                                                        16</h6>
+                                                    <h6>16312</h6>
                                                 </div>
-                                            </td>
-                                            <td>Single Use</td>
-                                            <td>Venessa Fern</td>
-                                            <td>
-                                                <label class="label label-info">Vue Js</label>
-                                            </td>
-                                            <td>46</td>
-                                            <td>356</td>
-                                            <td>
-                                                <h5 class="m-b-0">$2850.06</h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                            </div>
+                                        </td>
+                                        <td>16/12/22</td>
+                                        <td>Energy</td>
+                                        <td>News
+                                        </td>
+                                        <td>46</td>
+                                        <td>356</td>
+                                        <td><i class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a
-                                                            class="btn btn-circle d-flex btn-success text-white">MP</a>
-                                                    </div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Material Pro Admin</h4>
-                                                    </div>
+                                                    <h6
+                                                        class="bg-primary align-self-center  rounded-pill p-1 text-white">
+                                                        16</h6>
+                                                    <h6>16312</h6>
                                                 </div>
-                                            </td>
-                                            <td>Single Use</td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <label class="label label-success">Bootstrap</label>
-                                            </td>
-                                            <td>46</td>
-                                            <td>356</td>
-                                            <td>
-                                                <h5 class="m-b-0">$2850.06</h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a
-                                                            class="btn btn-circle d-flex btn-purple text-white">AA</a>
-                                                    </div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Ample Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Single Use</td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <label class="label label-purple">React</label>
-                                            </td>
-                                            <td>46</td>
-                                            <td>356</td>
-                                            <td>
-                                                <h5 class="m-b-0">$2850.06</h5>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                            </div>
+                                        </td>
+                                        <td>16/12/22</td>
+                                        <td>Energy</td>
+                                        <td>Content</td>
+                                        <td>46</td>
+                                        <td>356</td>
+                                        <td><i class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
     </section>
 
 
-    <!-- <script>
-        const body = document.querySelector('body'),
-            sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
-
-
+    <script>
+        const sidebar = document.querySelector('#sidebar'),
+            toggle = document.querySelector("#sidebarToggle")
         toggle.addEventListener("click", () => {
             sidebar.classList.toggle("close");
         })
 
-        searchBtn.addEventListener("click", () => {
-            sidebar.classList.remove("close");
-        })
-
-        modeSwitch.addEventListener("click", () => {
-            body.classList.toggle("dark");
-
-            if (body.classList.contains("dark")) {
-                modeText.innerText = "Light mode";
-            } else {
-                modeText.innerText = "Dark mode";
-
-            }
-        });
-    </script> -->
-    <script>
-        let sidebarBtn = document.getElementById("sidebarToggle")
-        let sidebar = document.getElementById("sidebar")
-        sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close")
-        })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -32,7 +32,7 @@ body{
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
   --grayshade-600:#fbfbfb;
-
+  --para-disabled: #808191;
   /*----- TYPOGRAPHY ----- */
 
   --text-base-black: #393939;
@@ -122,7 +122,9 @@ body{
 .tb-pink {
   color: var(--status-color-pink);
 }
-
+.tb-disabled-para{
+  color: #808191;
+}
 /* --- TYPOGRAPHY COLORS --- */
 
 .text-base-black{
@@ -140,7 +142,7 @@ color: var(--text-base-black);
 .tb-heading-2 {
   font-style: normal;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--text-base-black);
 }
 
 .tb-heading-1 {

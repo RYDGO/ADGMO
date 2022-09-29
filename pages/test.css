@@ -1,5 +1,4 @@
 /* Google Font Import - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -343,44 +342,74 @@ header .image-text .profession{
     padding: 20px 20px;
     border-radius: 12px;
     background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(108, 108, 108, 0.2);
   }
   .overview-boxes .box-topic {
     font-size: 16px;
     font-weight: 400;
+    color:var(--para-disabled);
   }
   .home-content .box .number {
     display: inline-block;
     font-size: 25px;
     font-weight: bold;
+    color:var(--base-black-color);
   }
   .home-content .box .cart {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
     background: var(--text-base-white);
     color: var(--base-white-color);
     line-height: 50px;
     text-align: center;
-    color: var(--base-black-color);
+    padding: 10px;
+    width: 36.96px;
+    height: 38.5px;
+    background: #FFFFFF;
   }
   .overview-boxes .first {
     color: var(--base-white-color);
     background-color: var(--first-box-color);
   }
+  .overview-boxes .first .box-topic {
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--base-white-color);
+  }
+  .overview-boxes .first .number {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color:var(--base-white-color);
+  }
   .overview-boxes .two {
-    color: var(--base-white-color);
+    color:var(--para-disabled);
     background-color: var(--two-box-color);
   }
   .overview-boxes .three {
-    color: var(--base-white-color);
+    color:var(--para-disabled);
     background-color: var(--three-box-color);
   }
   .overview-boxes .four {
-    color: var(--base-white-color);
+    color:var(--para-disabled);
     background-color: var(--four-box-color);
   }
-  
+  .home-content .box .first{
+    color: var(--first-box-color);
+    background-color: var(--base-white-color);
+  }
+  .home-content .box .two{
+    color: var(--two-box-color);
+    background-color: var(--base-white-color);
+  }
+  .home-content .box .three{
+    color: var(--three-box-color);
+    background-color: var(--base-white-color);
+  }
+  .home-content .box .four{
+    color: var(--four-box-color);
+    background-color: var(--base-white-color);
+  }

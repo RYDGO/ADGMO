@@ -2,8 +2,6 @@ body {
   background-color: #dfdfdf;
 }
 
-
-
 /* ------ Styles For Colors ------ */
 /*----- ROOT FOR COLORS ------ */
 :root {
@@ -17,14 +15,12 @@ body {
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
 
-
-
   /* overview-boxes colors */
 
-  --first-box-color: #E99293;
-  --two-box-color: #D9F4ED;
-  --three-box-color: #D2EEFF;
-  --four-box-color: #EDEDED;
+  --first-box-color: #e99293;
+  --two-box-color: #d9f4ed;
+  --three-box-color: #d2eeff;
+  --four-box-color: #ededed;
 
   /*----- GRAY COLORS ------ */
 
@@ -33,7 +29,7 @@ body {
   --grayshade-300: #b8b8b8;
   --grayshade-400: #8c8c8c;
   --grayshade-500: #37474f;
-  --grayshade-600:#fbfbfb;
+  --grayshade-600: #fbfbfb;
   --para-disabled: #808191;
   /*----- TYPOGRAPHY ----- */
 
@@ -69,8 +65,6 @@ body {
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
 }
-
-
 
 /* --- PRIMARY COLORS --- */
 
@@ -135,67 +129,65 @@ body {
   color: var(--status-color-pink) !important;
 }
 
-
 /* STATUS COLOR OPACITY-BACKGROUNDS */
 
-.status-color-purple-op{
+.status-color-purple-op {
   background: #8129c72e;
-
 }
-.status-color-gray-op{
+.status-color-gray-op {
   background: #b0b0b069;
 }
-.status-color-pink-op{
-  background: #F11D9C1A;
+.status-color-pink-op {
+  background: #f11d9c1a;
 }
-.status-color-orange-op{
-  background: #FFA8001A;
+.status-color-orange-op {
+  background: #ffa8001a;
 }
-.status-color-green-op{
-  background: #37C3A11A;
+.status-color-green-op {
+  background: #37c3a11a;
 }
-.status-color-yellow-op{
-  background: #FDFAE8;
+.status-color-yellow-op {
+  background: #fdfae8;
 }
-.status-color-blue-op{
-  background: #2B93D11A;
+.status-color-blue-op {
+  background: #2b93d11a;
 }
-.base-color-op{
-  background: #EF3F431A;
+.base-color-op {
+  background: #ef3f431a;
 }
-.base-color-op2{
+.base-color-op2 {
   background: #ef3f4385;
 }
-.status-color-yellow-op2{
+.status-color-yellow-op2 {
   background: #efcb197d;
 }
-.status-color-green-op2{
+.status-color-green-op2 {
   background: #37c3a175;
 }
 
 /* COMMON WIDTH FOR STATUS COLOR LABELS */
-.common-width-label-11{
+.common-width-label-11 {
   width: 11%;
 }
-.common-width-label-12{
+.common-width-label-12 {
   width: 12%;
 }
-.common-width-label-16{
+.common-width-label-16 {
   width: 16%;
 }
-.common-width-label-13{
+.common-width-label-13 {
   width: 13%;
 }
-.common-width-label-14{
+.common-width-label-14 {
   width: 14%;
 }
-.common-width-label-5{
+.common-width-label-5 {
   width: 5%;
 }
-.common-width-label-6{
+.common-width-label-6 {
   width: 6%;
 }
-.common-width-label-3{
+.common-width-label-3 {
   width: 3%;
 }
 
@@ -294,7 +286,7 @@ body {
   line-height: 1.9;
 }
 
-.tb-disabled-para{
+.tb-disabled-para {
   color: #808191;
 }
 
@@ -460,13 +452,12 @@ body {
   padding: 8px 12px;
 }
 
-
 /* -------- Inputs and Dropdowns-starts here --------- */
-.input-label{
-font-size:12px ;
+.input-label {
+  font-size: 12px;
 }
 
-input{
+input {
   outline: none;
   border: none;
 }
@@ -476,14 +467,14 @@ input{
   background-color: var(--base-white-color);
 }
 
-.tb-input-group:hover , .tb-input-group:active{
+.tb-input-group:hover,
+.tb-input-group:active {
   border: 1px solid var(--btn-bg-hover) !important;
 }
 
-
- .focus:focus + .tb-input-group:focus i{
+.focus:focus + .tb-input-group:focus i {
   transform: rotate(180deg);
-  transition: transform .8s ease;  
+  transition: transform 0.8s ease;
 }
 
 datalist {

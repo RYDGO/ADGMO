@@ -1,13 +1,28 @@
+body{
+  background-color: #dfdfdf;
+}
+
+
+
 /* ------ Styles For Colors ------ */
 /*----- ROOT FOR COLORS ------ */
 :root {
   --base-color: #ef3f43;
+  --base-black-color:#000;
+  --base-white-color:#fff;
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
   --status-color-orange: #ffa800;
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
+
+  /* overview-boxes colors */
+
+  --first-box-color:#E99293;
+  --two-box-color:#D9F4ED;
+  --three-box-color:#D2EEFF;
+  --four-box-color:#EDEDED;
 
   /*----- GRAY COLORS ------ */
 
@@ -18,7 +33,7 @@
   --grayshade-500: #37474f;
   --grayshade-600:#fbfbfb;
 
-  /*----- TYPOGRAPHY COLORS ----- */
+  /*----- TYPOGRAPHY ----- */
 
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -42,9 +57,15 @@
   --btn-bg-selected: #b0b0b0;
   --btn-bg-disabled: #eceff1;
 
-  /*----- FONT FAMILY ----- */
+  /*----- FONT-FAMILY ----- */
 
   --font-family: sans-serif;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
 }
 
 /* --- PRIMARY COLORS --- */
@@ -221,10 +242,14 @@ color: var(--text-base-black);
   background-color: var(--grayshade-600);
 }
 
-/* ---------- GRAY BORDER COLORS - */
+/* ---- GRAY BORDER COLORS ---- */
 
 .border-gray-100 {
   border: 1px solid var(--grayshade-100);
+}
+
+.border-gray-100 {
+  border: 1px solid var(--grayshade-500);
 }
 
 /*------------- Grayshades-hover -------------*/
@@ -326,22 +351,54 @@ color: var(--text-base-black);
   color: var(--btn-bg-disabled) !important;
 }
 
-/*-------------Border-Styles */
-
-.border-primary {
-  border: 1px solid var(--grayshade-500);
-}
-
 /* ----- Paddings ----- */
 
 .pad-8-12 {
   padding: 8px 12px;
 }
 
-.table-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+.outline-0{
+outline: none;
 }
+
+/* -------- Dropdowns  starts here --------- */
+
+.tb-input-group{
+  position: relative;
+  background-color: var(--base-white-color);
+}
+
+.tb-input-group:hover , .tb-input-group:active{
+  
+  border: 1px solid var(--btn-bg-hover) !important;
+}
+
+datalist {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-top: none;
+  padding: 5px;
+  max-height: 10rem;
+  overflow-y: auto;
+  margin-top: 13px;
+  margin-left: -8px;
+  
+}
+
+option {
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 1px;
+ cursor: pointer;
+}
+
+option:hover, 
+.active{
+  background-color: var(--grayshade-100);
+}
+
+/* -------- Dropdowns ends here --------- */
+
 
 

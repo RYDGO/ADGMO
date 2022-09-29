@@ -357,5 +357,48 @@ color: var(--text-base-black);
   padding: 8px 12px;
 }
 
+.outline-0{
+outline: none;
+}
+
+/* -------- Dropdowns  starts here --------- */
+
+.tb-input-group{
+  position: relative;
+  background-color: var(--base-white-color);
+}
+
+.tb-input-group:hover , .tb-input-group:active{
+  
+  border: 1px solid var(--btn-bg-hover) !important;
+}
+
+datalist {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-top: none;
+  padding: 5px;
+  max-height: 10rem;
+  overflow-y: auto;
+  margin-top: 13px;
+  margin-left: -8px;
+  
+}
+
+option {
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 1px;
+ cursor: pointer;
+}
+
+option:hover, 
+.active{
+  background-color: var(--grayshade-100);
+}
+
+/* -------- Dropdowns ends here --------- */
+
 
 

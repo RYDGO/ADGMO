@@ -166,6 +166,31 @@ body {
 }
 
 /* COMMON WIDTH FOR STATUS COLOR LABELS */
+
+.w-h-35 {
+  width: 35px;
+  height: 35px;
+}
+
+.w-h-45 {
+  width: 45px;
+  height: 45px;
+}
+
+.w-h-25 {
+  width: 25px;
+  height: 25px;
+} 
+
+.img-cover{
+  object-fit: cover;
+}
+
+.img-100{
+  width: 100%;
+}
+
+
 .common-width-label-11 {
   width: 11%;
 }
@@ -462,17 +487,28 @@ input {
   border: none;
 }
 
+input:focus + .fa {
+  transform: rotate(180deg);
+  transition: transform 0.8s ease;
+}
+input:focus + .tb-input-group {
+  transform: rotate(180deg);
+  transition: transform 0.8s ease;
+}
+
 .tb-input-group {
   position: relative;
   background-color: var(--base-white-color);
 }
-
-.tb-input-group:hover,
-.tb-input-group:active {
+.tb-input-group i {
+  position: absolute;
+  top: 40%;
+}
+.tb-input-group:hover {
   border: 1px solid var(--btn-bg-hover) !important;
 }
 
-.focus:focus + .tb-input-group:focus i {
+.input:focus + i {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
@@ -497,7 +533,7 @@ option {
 }
 
 option:hover,
-.active {
+.tb-input-group .active {
   background-color: var(--grayshade-100);
 }
 

@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.tab-content-form{
+    left: 0 !important;
+    bottom: -20px !important;
+    }

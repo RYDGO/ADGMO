@@ -1,4 +1,7 @@
+//input dropdown hide/show
+
 // -------------Dashboard toggle-------------- 
+
 const sidebar = document.querySelector('#sidebar'),
 toggle = document.querySelector("#sidebarToggle")
 toggle.addEventListener("click", () => {

@@ -223,11 +223,11 @@
 /* --- TYPOGRAPHY COLORS --- */
 
 .text-base-black {
-  color: var(--text-base-black);
+  color: var(--text-base-black) !important;
 }
 
 .text-base-white {
-  color: var(--text-base-white);
+  color: var(--text-base-white) !important;
 }
 
 /*-------- Headings ------*/
@@ -644,4 +644,23 @@ option:hover,
 .flex-center-align {
   display:flex;
    align-items: center;
+}
+
+/* Request popup */
+
+.close-dark{
+  opacity: 1 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.inner-modal-content{
+  width: 580px !important;
+}
+.main-modal{
+  margin-left: 29% !important;
+}
+
+
+.font-weight-400{
+  font-weight: var(--font-weight-400);
 }

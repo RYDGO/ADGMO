@@ -288,9 +288,6 @@ font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.4;
 }
-.tb-fs-14{
-  font-size: 14px;
-}
 .lead-paragraph,
 .regular-paragraph,
 .bold-paragraph,
@@ -333,8 +330,29 @@ font-family: var(--font-family);
 
 
 
+.tb-fs-10{
+font-size: 10px;
+}
+.tb-fs-12{
+  font-size: 12px;
+}
 .tb-fs-14{
-font-size: 14px;
+  font-size: 14px;
+}
+.tb-fs-16{
+  font-size: 16px;
+}
+.tb-fs-18{
+  font-size: 18px;
+}
+.tb-fs-20{
+  font-size: 20px;
+}
+.tb-fs-22{
+  font-size: 22px;
+}
+.tb-fs-24{
+  font-size: 24px;
 }
 /* ---- Icon-border --- */
 
@@ -641,6 +659,15 @@ option:hover,
 /* Notification styles*/
 .notification-dot{
   color: red;
+  font-size: 10px !important;
+}
+.red-dot-circle{
+  top: -3px;
+  left: 2px;
+}
+.notification-dot:before{
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
 
 .radius-image{
@@ -649,6 +676,7 @@ option:hover,
   border-radius: 50%;
   object-fit: cover;
 }
+
 .notification-shadow{
   box-shadow: 0px 12px 25px 0px #00000021;
 }

@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Dashboard</title>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
     <link rel="stylesheet" href="../Dashboard.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <!-- <link href="./style.min.css" rel="stylesheet"> -->
-
-    <title>Dashboard</title>
 
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <!----===== font-awesome CSS ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-lg p-2 position-sticky top-0 start-0"
@@ -73,6 +67,9 @@
                 </div>
             </div>
         </nav>
+
+                    <!--navbar ends here ----->
+
         <nav class="sidebar " id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
@@ -122,12 +119,13 @@
                         </li>
                         <li class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0">
                             <a href="#" class="" class="align-self-center">
-                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Create</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Create <span>Request</span></button>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+                    <!--sidebar ends here ----->
 
         </nav>
         <section class="home-section ">
@@ -385,6 +383,7 @@
                 </div>
         </section>
 
+                    <!--dashboard ends here ----->
 
     </div>
     <script src="../javascript/script.js"></script>

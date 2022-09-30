@@ -60,7 +60,7 @@ body{
     left: 0;
     height: 100%;
     width: 250px;
-    padding: 10px 14px;
+    padding: 10px 0px;
     background: var(--base-white-color);
     transition: var(--tran-05);
     z-index: 100;  
@@ -192,10 +192,7 @@ header .image-text .profession{
 .sidebar li a:hover{
     background-color: var(--grayshade-100);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
-    color: var(--sidebar-color);
-}
+
 .sidebar .menu-bar{
     height: calc(100% - 55px);
     display: flex;
@@ -225,10 +222,13 @@ header .image-text .profession{
 }
 .nav-link button{
   margin: 0 0 0 20px;
-  white-space: nowrap
+  width: 210px;
+  white-space: nowrap;
+  padding: 0px 30px;
 }
 .sidebar.close .nav-link button{
-  margin: 0;
+  margin: 0 0 0 10px;
+  width: 102px;
   transition: all 0.3s ease;
 }
 .sidebar.close .nav-link button span{
@@ -261,6 +261,12 @@ header .image-text .profession{
     width: calc(100% - 60px);
     left: 60px;
   }
+  .sidebar.close ~ .home-section{
+    left: 143px;
+    height: 100vh;
+    width: calc(100% - 143px);
+  }
+  
   .home-section .home-content {
     position: relative;
   }

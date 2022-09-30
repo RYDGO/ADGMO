@@ -196,7 +196,6 @@ header .image-text .profession{
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
-
 .sidebar .menu-bar{
     height: calc(100% - 55px);
     display: flex;
@@ -223,6 +222,18 @@ header .image-text .profession{
 }
 .menu-links-m0{
     margin-left: -20px;
+}
+.nav-link button{
+  margin: 0 0 0 20px;
+  white-space: nowrap
+}
+.sidebar.close .nav-link button{
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.sidebar.close .nav-link button span{
+  opacity: 0;
+   transition: all 0.3s ease;
 }
 
 .menu-bar .bottom-content .toggle-switch{

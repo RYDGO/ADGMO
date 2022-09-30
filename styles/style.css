@@ -1,11 +1,11 @@
 @font-face {
   font-family: graphik;
-  src: url('../assets/fonts/Graphik-Font-Family/GraphikRegular.otf');
+  src: url("../assets/fonts/Graphik-Font-Family/GraphikRegular.otf");
 }
 /* ------ Styles For Colors ------ */
 /*----- ROOT FOR COLORS ------ */
 :root {
-  --body-bg:#FBFBFB;
+  --body-bg: #fbfbfb;
   --base-color: #ef3f43;
   --base-black-color: #000;
   --base-white-color: #fff;
@@ -15,16 +15,13 @@
   --status-color-orange: #ffa800;
   --status-color-purple: #8129c7;
   --status-color-pink: #f11d9c;
- --sidebar-color-hover: #E4E9F7;
+  --sidebar-color-hover: #e4e9f7;
   /* overview-boxes colors */
-
   --first-box-color: #e99293;
   --two-box-color: #d9f4ed;
   --three-box-color: #d2eeff;
   --four-box-color: #ededed;
-
   /*----- GRAY COLORS ------ */
-
   --grayshade-100: #eceff1;
   --grayshade-200: #b0b0b0;
   --grayshade-300: #b8b8b8;
@@ -33,7 +30,6 @@
   --grayshade-600: #fbfbfb;
   --para-disabled: #808191;
   /*----- TYPOGRAPHY ----- */
-
   --text-base-black: #393939;
   --text-base-white: #ffffff;
   --selected-text: "Graphik";
@@ -48,29 +44,25 @@
   --font-weight-800: "800";
   --font-weight-900: "900";
   --font-ft-size: 1.563rem;
-
   /*------ BUTTON COLORS ----- */
   --btn-bg-default: #37474f;
   --btn-bg-hover: #8c8c8c;
   --btn-bg-selected: #b0b0b0;
   --btn-bg-disabled: #eceff1;
-
   /*----- FONT-FAMILY ----- */
-
   --font-family: graphik;
-
-  /* ====== Transition ====== */
+  /*-----Transition-------*/
   --tran-03: all 0.2s ease;
   --tran-03: all 0.3s ease;
   --tran-04: all 0.3s ease;
   --tran-05: all 0.3s ease;
 }
 
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: var(--font-family);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 /* --- PRIMARY COLORS --- */
@@ -187,16 +179,15 @@ font-family: var(--font-family);
 .w-h-25 {
   width: 25px;
   height: 25px;
-} 
+}
 
-.img-cover{
+.img-cover {
   object-fit: cover;
 }
 
-.img-100{
+.img-100 {
   width: 100%;
 }
-
 
 .common-width-label-11 {
   width: 11%;
@@ -227,8 +218,8 @@ font-family: var(--font-family);
 .common-width-label-6 {
   width: 6%;
 }
-.common-width-label-3{
- width: 3%;
+.common-width-label-3 {
+  width: 3%;
 }
 
 /* --- TYPOGRAPHY COLORS --- */
@@ -289,7 +280,7 @@ font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.4;
 }
-.tb-fs-14{
+.tb-fs-14 {
   font-size: 14px;
 }
 .lead-paragraph,
@@ -331,10 +322,8 @@ font-family: var(--font-family);
   color: #808191;
 }
 
-
-
-.tb-fs-14{
-font-size: 14px;
+.tb-fs-14 {
+  font-size: 14px;
 }
 /* ---- Icon-border --- */
 
@@ -411,10 +400,10 @@ font-size: 14px;
 }
 
 /* Gray shades text color  */
-.tb-gray-400{
+.tb-gray-400 {
   color: var(--grayshade-400);
 }
-.tb-base-black-hover:hover{
+.tb-base-black-hover:hover {
   color: var(--base-black-color);
 }
 
@@ -428,7 +417,6 @@ font-size: 14px;
   background: rgba(239, 63, 67, 0.5);
   color: var(--base-white-color);
 }
-
 
 /*----- GRAYSHADES HOVER COLORS -----*/
 
@@ -467,7 +455,7 @@ font-size: 14px;
 .btn-xs {
   padding: 2px 26px !important;
 }
-.table-pd-top{
+.table-pd-top {
   padding-top: 25px !important;
 }
 
@@ -528,7 +516,7 @@ font-size: 14px;
 .pad-8-12 {
   padding: 8px 12px;
 }
-.pad-2-9{
+.pad-2-9 {
   padding: 2px 9px;
 }
 
@@ -556,7 +544,7 @@ input:focus + .fa {
   top: 40%;
 }
 
- .input-dropdown-list{
+.input-dropdown-list {
   position: absolute;
   left: 0;
   top: 107%;
@@ -564,7 +552,7 @@ input:focus + .fa {
 .tb-input-group:hover {
   border: 1px solid var(--btn-bg-hover) !important;
 }
-.input-dropdown-list{
+.input-dropdown-list {
   display: none;
 }
 .input:focus + i {
@@ -616,63 +604,78 @@ option:hover,
   filter: alpha(opacity=0);
 }
 
+input[type='date']{
+  position:relative;
+}
+::-webkit-datetime-edit, ::-webkit-clear-button, ::-webkit-calendar-picker-indicator{
+  position:absolute;
+}
+::-webkit-clear-button{
+  right:1.54em;
+}
+::-webkit-inner-spin-button{
+  -webkit-appearance:none; margin:0;
+}
+::-webkit-calendar-picker-indicator{
+  right:0; padding:.539em .34em;
+}
 /* -------- Dropdowns ends here --------- */
 
-.breadcrumbs-shadow{
+.breadcrumbs-shadow {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.04);
 }
 
 /* breadcrumbs dropshadow css*/
 
-.modal-header{
+.modal-header {
   border-bottom: none;
 }
-.modal-footer{
+.modal-footer {
   border-top: none;
 }
 
 /* dropshadow */
-.box-shadow-popup{
+.box-shadow-popup {
   box-shadow: 0px 12px 25px 0px #00000021;
 }
 
 /* Notification styles*/
-.notification-dot{
+.notification-dot {
   color: red;
 }
 
-.radius-image{
+.radius-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
-.notification-shadow{
+.notification-shadow {
   box-shadow: 0px 12px 25px 0px #00000021;
 }
 .flex-center {
-  display:flex;
+  display: flex;
   justify-content: center;
-   align-items: center;
+  align-items: center;
 }
 .flex-center-align {
-  display:flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Request popup */
 
-.close-dark{
+.close-dark {
   opacity: 1 !important;
   border: none !important;
   box-shadow: none !important;
 }
-.inner-modal-content{
+.inner-modal-content {
   width: 565px !important;
 }
-.main-modal{
+.main-modal {
   margin-left: 29.4% !important;
 }
-.font-weight-400{
+.font-weight-400 {
   font-weight: var(--font-weight-400);
 }

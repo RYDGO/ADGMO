@@ -302,6 +302,7 @@
   color: rgba(0, 0, 0, 0.65);
   font-weight: 400;
 }
+
 .lead-paragraph {
   font-size: 1.125rem;
   line-height: 1.5;
@@ -414,6 +415,10 @@
   background-color: var(--grayshade-600);
 }
 
+.collapse-inner-bg {
+  background-color: #f9f9f9;
+}
+
 /* ---- GRAY BORDER COLORS ---- */
 
 .border-gray-100 {
@@ -478,6 +483,11 @@
 /* --- BORDERS-RADIUS --- */
 .tb-rounded {
   border-radius: 8px !important;
+}
+
+.tb-rounded-top-lr {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .tb-rounded-pill {
@@ -580,7 +590,7 @@ input {
   border: none;
 }
 
-input:focus + .fa {
+input:focus+.fa {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
@@ -609,12 +619,12 @@ input:focus + .fa {
   display: none;
 }
 
-.input:focus + i {
+.input:focus+i {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
 
-.input:focus + .input-dropdown-list {
+.input:focus+.input-dropdown-list {
   display: block !important;
 }
 
@@ -735,6 +745,7 @@ option:hover,
 .font-weight-400 {
   font-weight: var(--font-weight-400);
 }
+
 /* conversation styles */
 .conv-radius-img {
   width: 35px;
@@ -749,6 +760,7 @@ body {
   background-color: var(--body-bg) !important;
   transition: var(--tran-05);
 }
+
 /* table */
 
 .th-pd {
@@ -758,6 +770,7 @@ body {
 .border-bottom-0 {
   border-bottom-width: 0 !important;
 }
+
 /* navbar */
 
 .navbar-style {
@@ -809,6 +822,7 @@ body {
 .sidebar.close {
   width: 143px;
 }
+
 /* ===== Reusable code - Here ===== */
 .sidebar li {
   height: 50px;
@@ -817,11 +831,13 @@ body {
   align-items: center;
   margin-top: 10px;
 }
+
 .sidebar header .image,
 .sidebar .icon {
   min-width: 60px;
   border-radius: 6px;
 }
+
 .sidebar .icon {
   min-width: 60px;
   border-radius: 6px;
@@ -831,11 +847,13 @@ body {
   justify-content: center;
   font-size: 20px;
 }
+
 .sidebar .text,
 .sidebar .icon {
   color: var(--text-color);
   transition: var(--tran-03);
 }
+
 .sidebar .text {
   font-size: 17px;
   font-weight: 500;
@@ -851,6 +869,7 @@ body {
 .sidebar header {
   position: relative;
 }
+
 .sidebar header .image-text {
   display: flex;
   align-items: center;
@@ -866,20 +885,24 @@ header .image-text .name {
   font-size: 18px;
   font-weight: 600;
 }
+
 header .image-text .profession {
   font-size: 16px;
   margin-top: -2px;
   display: block;
 }
+
 .sidebar header .image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .sidebar header .image img {
   width: 40px;
   border-radius: 6px;
 }
+
 .sidebar header .toggle {
   position: absolute;
   top: 50%;
@@ -897,9 +920,11 @@ header .image-text .profession {
   cursor: pointer;
   transition: var(--tran-05);
 }
+
 .sidebar.close .toggle {
   transform: translateY(-50%) rotate(0deg);
 }
+
 .sidebar.close .flex-center-align {
   padding: 0;
 }
@@ -921,6 +946,7 @@ header .image-text .profession {
   text-decoration: none;
   transition: var(--tran-03);
 }
+
 .sidebar li a:hover {
   background-color: var(--grayshade-100);
 }
@@ -928,6 +954,7 @@ header .image-text .profession {
 .sidebar li .hover-remove:hover {
   background-color: transparent;
 }
+
 .sidebar .menu-bar {
   height: calc(100% - 55px);
   display: flex;
@@ -946,6 +973,7 @@ header .image-text .profession {
   position: relative;
   transition: var(--tran-05);
 }
+
 .menu-bar .mode .sun-moon {
   height: 50px;
   width: 60px;
@@ -999,12 +1027,12 @@ header .image-text .profession {
   transition: all 0.5s ease;
 }
 
-.sidebar.active ~ .home-section {
+.sidebar.active~.home-section {
   width: calc(100% - 60px);
   left: 60px;
 }
 
-.sidebar.close ~ .home-section {
+.sidebar.close~.home-section {
   left: 143px;
   height: 100vh;
   width: calc(100% - 143px);
@@ -1109,12 +1137,12 @@ header .image-text .profession {
   transition: all 0.5s ease;
 }
 
-.sidebar.active ~ .main-section {
+.sidebar.active~.main-section {
   width: calc(100% - 60px);
   left: 60px;
 }
 
-.sidebar.close ~ .main-section {
+.sidebar.close~.main-section {
   left: 143px;
   height: 100vh;
   width: calc(100% - 143px);
@@ -1130,6 +1158,21 @@ header .image-text .profession {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
   transform: scale(.7) !important;
 }
+
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+/* CUSTOM GRID STYLES */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+/* radio button styles */
+#SpecifyColor {
+  accent-color: red;
+  width: 17px;
+  height: 17px;
 }

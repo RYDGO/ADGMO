@@ -934,7 +934,6 @@ header .image-text .profession{
 .conversation-dot-circle{
   top: -7px;
 }
-=======
 .main-section {
     position: relative;
     background: var(--body-bg);
@@ -957,4 +956,3 @@ header .image-text .profession{
   .main-section .home-content {
     position: relative;
   }
->>>>>>> 319c4d24e907698498aead9d1da1dda3f9a6cafb

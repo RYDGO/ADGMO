@@ -21,6 +21,13 @@ body{
 }
 
 /* navbar */
+
+.navbar-style{
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  background-color: #FFF;
+}
 .userImg-container{
     width: 50px; 
     height:50px;
@@ -141,7 +148,8 @@ header .image-text .profession{
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
-    right: -25px;
+    margin-top: 25px;
+    right: -5%;
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
@@ -243,26 +251,26 @@ header .image-text .profession{
     cursor: pointer;
 }
 
-.home-section {
+.main-section {
     position: relative;
     background: var(--body-bg);
     min-height: 100vh;
     width: calc(100% - 250px);
-    padding: 0px 50px;
+    padding: 85px 40px 0px 40px;
     left: 250px;
     transition: all 0.5s ease;
   }
-  .sidebar.active ~ .home-section {
+  .sidebar.active ~ .main-section {
     width: calc(100% - 60px);
     left: 60px;
   }
-  .sidebar.close ~ .home-section{
+  .sidebar.close ~ .main-section{
     left: 143px;
     height: 100vh;
     width: calc(100% - 143px);
   }
   
-  .home-section .home-content {
+  .main-section .home-content {
     position: relative;
   }
   .heading-section {
@@ -299,7 +307,7 @@ header .image-text .profession{
   .active{
     border: none;
     background-color: var(--base-white-color);
-    box-shadow: 0px 25px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.06);
   }
   .active .nav-link {
     color: var(--base-black-color);
@@ -381,7 +389,7 @@ header .image-text .profession{
   }
   .home-content .box .first{
     color: var(--first-box-color);
-    /* background-color: var(--base-white-color); */
+    background-color: var(--base-white-color);
   }
   .home-content .box .two{
     color: var(--two-box-color);
@@ -394,4 +402,13 @@ header .image-text .profession{
   .home-content .box .four{
     color: var(--four-box-color);
     background-color: var(--base-white-color);
+  }
+
+  /* table */
+
+  .th-pd{
+    padding: 14px 24px !important;
+  }
+  .border-bottom-0{
+    border-bottom-width: 0 !important;
   }

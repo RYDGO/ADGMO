@@ -205,6 +205,7 @@
   font-style: normal;
   font-weight: 900;
   color: var(--text-base-black);
+  font-family: var(--font-family);
 }
 .tb-heading-1 {
   font-size: 3.813rem;
@@ -805,25 +806,28 @@ header .image-text .profession{
     width: 60px;
 }
 .menu-links{
-    padding: 0 0 0 20px;
+    padding: 0 0 0 30px;
 }
 .menu-links-m0{
-    margin-left: -20px;
+    margin-left: -45px;
 }
 .nav-link button{
-  margin: 0 0 0 20px;
+  margin: 15px 0 0 20px;
   width: 210px;
   white-space: nowrap;
   padding: 0px 30px;
 }
 .sidebar.close .nav-link button{
-  margin: 0 0 0 10px;
+  margin: 15px 0 0 -45px;
   width: 102px;
   transition: all 0.3s ease;
 }
 .sidebar.close .nav-link button span{
-  opacity: 0;
+   opacity: 0 !important;
    transition: all 0.3s ease;
+}
+.sidebar.close .menu-links{
+  padding: 0 0 0 40px;
 }
 
 .menu-bar .bottom-content .toggle-switch{
@@ -857,6 +861,3 @@ header .image-text .profession{
     width: calc(100% - 143px);
   }
   
-  .main-section .home-content {
-    position: relative;
-  }

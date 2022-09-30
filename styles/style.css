@@ -517,6 +517,9 @@ font-size: 14px;
 .pad-8-12 {
   padding: 8px 12px;
 }
+.pad-2-9{
+  padding: 2px 9px;
+}
 
 /* -------- Inputs and Dropdowns-starts here --------- */
 .input-label {
@@ -654,10 +657,10 @@ option:hover,
   box-shadow: none !important;
 }
 .inner-modal-content{
-  width: 580px !important;
+  width: 565px !important;
 }
 .main-modal{
-  margin-left: 29% !important;
+  margin-left: 29.4% !important;
 }
 .font-weight-400{
   font-weight: var(--font-weight-400);

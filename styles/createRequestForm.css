@@ -1,11 +1,11 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.tab-content-form{
-  
-    left: 0 !important;
-    top: 60px !important;
-    }
+.tab-content-form {
+  position: absolute;
+  left: 0 !important;
+  top: 60px !important;
+}

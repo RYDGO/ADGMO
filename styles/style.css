@@ -256,6 +256,7 @@
   font-style: normal;
   font-weight: 900;
   color: var(--text-base-black);
+  font-family: var(--font-family);
 }
 
 .tb-heading-1 {
@@ -978,31 +979,29 @@ header .image-text .profession {
   height: 50px;
   width: 60px;
 }
-
-.menu-links {
-  padding: 0 0 0 20px;
+.menu-links{
+    padding: 0 0 0 30px;
 }
-
-.menu-links-m0 {
-  margin-left: -20px;
+.menu-links-m0{
+    margin-left: -40px;
 }
-
-.nav-link button {
-  margin: 0 0 0 20px;
+.nav-link button{
+  margin: 15px 0 0 20px;
   width: 210px;
   white-space: nowrap;
   padding: 0px 30px;
 }
-
-.sidebar.close .nav-link button {
-  margin: 0 0 0 10px;
+.sidebar.close .nav-link button{
+  margin: 15px 0 0 25px;
   width: 102px;
   transition: all 0.3s ease;
 }
-
-.sidebar.close .nav-link button span {
-  opacity: 0;
-  transition: all 0.3s ease;
+.sidebar.close .nav-link button span{
+   opacity: 0 !important;
+   transition: all 0.3s ease;
+}
+.sidebar.close .menu-links{
+  padding: 0 0 0 40px;
 }
 
 .menu-bar .bottom-content .toggle-switch {
@@ -1176,3 +1175,21 @@ header .image-text .profession {
   width: 17px;
   height: 17px;
 }
+    position: relative;
+    background: var(--body-bg);
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 85px 40px 0px 40px;
+    left: 250px;
+    transition: all 0.5s ease;
+  }
+  .sidebar.active ~ .main-section {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.close ~ .main-section{
+    left: 143px;
+    height: 100vh;
+    width: calc(100% - 143px);
+  }
+  

@@ -809,7 +809,7 @@ header .image-text .profession{
     padding: 0 0 0 30px;
 }
 .menu-links-m0{
-    margin-left: -45px;
+    margin-left: -40px;
 }
 .nav-link button{
   margin: 15px 0 0 20px;
@@ -818,7 +818,7 @@ header .image-text .profession{
   padding: 0px 30px;
 }
 .sidebar.close .nav-link button{
-  margin: 15px 0 0 -45px;
+  margin: 15px 0 0 25px;
   width: 102px;
   transition: all 0.3s ease;
 }

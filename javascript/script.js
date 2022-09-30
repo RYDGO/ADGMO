@@ -1,4 +1,14 @@
 //input dropdown hide/show
+
+// -------------Dashboard toggle-------------- 
+
+const sidebar = document.querySelector('#sidebar'),
+toggle = document.querySelector("#sidebarToggle")
+toggle.addEventListener("click", () => {
+sidebar.classList.toggle("close");
+})
+
+
 input.onfocus = function () {
     browsers.style.display = "block";
     input.style.borderRadius = "5px 5px 0 0";
@@ -59,11 +69,3 @@ $(document).ready(function(){
       $(".input-dropdown-list").hide(1000);
     });
   });
-
-// -------------Dashboard toggle-------------- 
-
-const sidebar = document.querySelector('#sidebar'),
-toggle = document.querySelector("#sidebarToggle")
-toggle.addEventListener("click", () => {
-sidebar.classList.toggle("close");
-})

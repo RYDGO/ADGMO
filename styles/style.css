@@ -143,6 +143,12 @@
   background: #37c3a175;
 }
 /* square-boxes width and height  */
+.width-80{
+  width: 80%;
+}
+.width-77{
+  width: 77%;
+}
 .w-h-35 {
   width: 35px;
   height: 35px;
@@ -187,6 +193,7 @@
 .common-width-label-3 {
   width: 3%;
 }
+
 /* --- TYPOGRAPHY COLORS --- */
 .text-base-black {
   color: var(--text-base-black) !important;
@@ -911,4 +918,27 @@ opacity: 0;
 
   .nav-link:focus, .nav-link:hover {
    color: var(--base-black-color); 
+}
+
+/* conversation styles */
+.conv-radius-img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.conversation-red-dot{
+  color: red;
+  font-size: 8px !important;
+}
+.conversation-red-dot::before{
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.conversation-red-dot-circle{
+  top: -3px;
+  left: 2px;
+}
+.conversation-dot-circle{
+  top: -7px;
 }

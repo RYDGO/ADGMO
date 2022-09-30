@@ -592,6 +592,7 @@ option:hover,
   position: relative;
   overflow: hidden;
 }
+
 .fileUpload input.upload {
   position: absolute;
   top: 0;
@@ -604,21 +605,6 @@ option:hover,
   filter: alpha(opacity=0);
 }
 
-input[type='date']{
-  position:relative;
-}
-::-webkit-datetime-edit, ::-webkit-clear-button, ::-webkit-calendar-picker-indicator{
-  position:absolute;
-}
-::-webkit-clear-button{
-  right:1.54em;
-}
-::-webkit-inner-spin-button{
-  -webkit-appearance:none; margin:0;
-}
-::-webkit-calendar-picker-indicator{
-  right:0; padding:.539em .34em;
-}
 /* -------- Dropdowns ends here --------- */
 
 .breadcrumbs-shadow {

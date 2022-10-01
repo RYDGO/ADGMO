@@ -14,6 +14,7 @@
   --base-color: #ef3f43;
   --base-black-color: #000;
   --base-white-color: #fff;
+  --color-yellow-dark: #EFCC46;
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
@@ -100,7 +101,9 @@
 .tb-bg-yellow {
     background-color: var(--status-color-yellow);
 }
-
+.tb-bg-yellow-dark{
+  background-color: var(--color-yellow-dark) !important;
+}
 .tb-bg-orange {
     background-color: var(--status-color-orange);
 }
@@ -149,6 +152,9 @@
 
 .status-color-gray-op {
     background: #b0b0b069;
+}
+.bg-color-gray {
+  background: var(--grayshade-100);
 }
 
 .status-color-pink-op {
@@ -1135,9 +1141,15 @@ header .image-text .profession {
   height: 50px;
   width: 60px;
 }
+
 .menu-links {
   padding: 0 0 0 30px;
 }
+
+.menu-links-m0 {
+  margin-left: -40px;
+}
+
 .nav-link button {
   width: 210px;
   white-space: nowrap;
@@ -1416,4 +1428,25 @@ header .image-text .profession {
 .sub-menu{
   display: none;
   background-color: var(--grayshade-100);
+}
+
+.unselected {
+  background: #ECEFF1;
+  border: 1px solid #8C8C8C;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.unselected:hover{
+  color: red;
+}
+.tb-bg-primary-checked:checked{
+  background-color: var(--base-color);
+  border: none !important;
+}
+
+.tb-bg-primary-checked{
+  border: 1px solid var(--grayshade-300);
+}
+.tb-bg-primary-checked:focus{
+  border: 1px solid var(--grayshade-300);
 }

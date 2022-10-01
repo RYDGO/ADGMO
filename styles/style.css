@@ -458,8 +458,20 @@ font-size: 10px;
 .pad-8-12 {
   padding: 8px 12px;
 }
+.pad-12-12 {
+  padding: 12px 12px;
+}
+
+.pad-6-8 {
+  padding: 6px 8px;
+}
+
 .pad-2-9 {
   padding: 2px 9px;
+}
+
+.pad-8-9 {
+  padding: 8px 9px;
 }
 /* -------- Inputs and Dropdowns-starts here --------- */
 .input-label {

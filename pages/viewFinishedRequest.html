@@ -128,9 +128,9 @@
                 </div>
             </div>
         </nav>
-         <!--sidebar ends here -->
-         <section class="main-section ">
-            <div class="py-2 d-flex align-items-center justify-content-between">
+        <!--sidebar ends here -->
+        <section class="main-section ">
+            <div class="py-4 d-flex align-items-center justify-content-between">
                 <div class="col-2">
                     <i class="fa-solid fa-arrow-left"></i>
                     <a href="#" class="text-decoration-none text-dark">Back</a>
@@ -150,9 +150,20 @@
                 </div>
             </div>
 
-            <div class=" d-flex justify-content-between position-relative my-4">
+            <div class=" d-flex justify-content-between align-items-center  position-relative mt-4 mb-2 px-1">
                 <h1 class="tb-h1 col-6 text-black">#89349</h1>
                 <ul class="nav mb-3 align-items-center" id="pills-tab" role="tablist">
+                    <ul class="nav  align-items-center me-4">
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img src="../assets/images/Icons/icon-comment.svg" alt="" ></button>
+                    </li>
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                    </li>
+                </ul>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active btn btn-sm tb-btn-light tb-rounded" id="pills-home-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
@@ -173,33 +184,652 @@
             <div class="header-container">
                 <div class="card border-0">
                     <div class="card-body">
-                      <div class="card-title d-flex">
-                        <span class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
-                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                            <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
-                          </span>
-                          <span class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
-                            <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
-                            <h4 class="tb-h5 mb-0 text-white">L2</h4>
-                          </span>
+                        <div class="card-title d-flex align-items-center pb-2">
+                            <span
+                                class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
+                            </span>
+                            <span
+                                class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                                <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                                <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex justify-content-between align-items-center border-bottom">
+                            <div class="col-4 d-flex align-items-center">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                                <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                            </div>
+                            <div class="col-4 d-flex align-items-center me-5">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="col-4 d-flex align-items-center">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                    <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                                </div>
+                                <div class="col-4 d-flex align-items-center ps-2">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                                </div>
+                                <div class="col-4 d-flex align-items-center ps-3">
+                                    <!-- <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h6 class="fw-lighter">Type</h6>
-                            <h5 class="fw-bold">News</h5>
-                        </div>    
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h6 class="fw-lighter">Type</h6>
-                            <h5 class="fw-bold">News</h5>
-                        </div>    
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h6 class="fw-lighter">Type</h6>
-                            <h5 class="fw-bold">News</h5>
-                        </div>    
+                </div>
+                </div>
+                <!-- card ends here -- -->
+
+                <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
+                    <div class="accordion" id="myAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button type="button" class="shadow-none accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse7">Title</button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse show"
+                                data-bs-parent="#myAccordion">
+                                <div class="collapse-inner-bg p-5">
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="p-2">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h6>Fill in if this request relates to international participation*
+                                        </h6>
+                                    </div>
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="tb-input-group p-2 border">
+                                            <label class="col-12 input-label"
+                                                for="dataList">Label<sup>*</sup></label>
+                                            <input class="col-12" id="" name="" placeholder="Placeholder">
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <h6>Will this have an impact on Abu Dhabi?</h6>
+                                        <div class="d-flex align-items-center">
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="tb-input-group p-2 border">
+                                            <label class="col-12 input-label"
+                                                for="dataList">Label<sup>*</sup></label>
+                                            <input class="col-12" id="" name="" placeholder="Placeholder">
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <h6>Announcement is related to a member of the Royal Family (HH)*
+                                        </h6>
+                                        <div class="d-flex align-items-center">
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse8">Title</button>
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse show"
+                                data-bs-parent="#myAccordion">
+                                <div class="collapse-inner-bg p-5">
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h6>Fill in if this request relates to international participation*
+                                        </h6>
+                                    </div>
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="tb-input-group p-2 border">
+                                            <label class="col-12 input-label"
+                                                for="dataList">Label<sup>*</sup></label>
+                                            <input class="col-12" id="" name="" placeholder="Placeholder">
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <h6>Will this have an impact on Abu Dhabi?</h6>
+                                        <div class="d-flex align-items-center">
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="tb-input-group grid-container mb-4">
+                                        <div class="tb-input-group p-2 border">
+                                            <label class="col-12 input-label"
+                                                for="dataList">Label<sup>*</sup></label>
+                                            <input class="col-12" id="" name="" placeholder="Placeholder">
+                                        </div>
+                                        <div class="p-2 border">
+                                            <label class="col-12 input-label" for="input2">Select
+                                                Label<sup>*</sup></label>
+                                            <input class="col-11 dropdown-input " autocomplete="off" role="combobox"
+                                                id="input2" name="browsers" placeholder="placeholder..">
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                            <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal </span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center ">
+                                                    <div
+                                                        class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                        <img src="../assets/images/nodata.png" alt=""
+                                                            class="img-100">
+                                                    </div>
+                                                    <span class="ms-3">Avashesh Jaiswal</span>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <h6>Announcement is related to a member of the Royal Family (HH)*
+                                        </h6>
+                                        <div class="d-flex align-items-center">
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                value="HTML">
+                                            <label for="html">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button type="button" class="shadow-none accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse9">Title</button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse show"
+                                data-bs-parent="#myAccordion">
+                                <div id="collapseThree" class="accordion-collapse collapse show"
+                                    data-bs-parent="#myAccordion">
+                                    <div class="collapse-inner-bg p-5">
+                                        <div class="tb-input-group grid-container mb-4">
+                                            <div class="p-2 border">
+                                                <label class="col-12 input-label" for="input2">Select
+                                                    Label<sup>*</sup></label>
+                                                <input class="col-11 dropdown-input " autocomplete="off"
+                                                    role="combobox" id="input2" name="browsers"
+                                                    placeholder="placeholder..">
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal </span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="p-2 border">
+                                                <label class="col-12 input-label" for="input2">Select
+                                                    Label<sup>*</sup></label>
+                                                <input class="col-11 dropdown-input " autocomplete="off"
+                                                    role="combobox" id="input2" name="browsers"
+                                                    placeholder="placeholder..">
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal </span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <h6>Fill in if this request relates to international participation*
+                                            </h6>
+                                        </div>
+                                        <div class="tb-input-group grid-container mb-4">
+                                            <div class="tb-input-group p-2 border">
+                                                <label class="col-12 input-label"
+                                                    for="dataList">Label<sup>*</sup></label>
+                                                <input class="col-12" id="" name="" placeholder="Placeholder">
+                                            </div>
+                                            <div class="p-2 border">
+                                                <label class="col-12 input-label" for="input2">Select
+                                                    Label<sup>*</sup></label>
+                                                <input class="col-11 dropdown-input " autocomplete="off"
+                                                    role="combobox" id="input2" name="browsers"
+                                                    placeholder="placeholder..">
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal </span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <h6>Will this have an impact on Abu Dhabi?</h6>
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="SpecifyColor"
+                                                    name="fav_language" value="HTML">
+                                                <label for="html">Yes</label>
+                                            </div>
+                                            <div>
+                                                <input class="me-3" type="radio" id="SpecifyColor"
+                                                    name="fav_language" value="HTML">
+                                                <label for="html">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="tb-input-group grid-container mb-4">
+                                            <div class="tb-input-group p-2 border">
+                                                <label class="col-12 input-label"
+                                                    for="dataList">Label<sup>*</sup></label>
+                                                <input class="col-12" id="" name="" placeholder="Placeholder">
+                                            </div>
+                                            <div class="p-2 border">
+                                                <label class="col-12 input-label" for="input2">Select
+                                                    Label<sup>*</sup></label>
+                                                <input class="col-11 dropdown-input " autocomplete="off"
+                                                    role="combobox" id="input2" name="browsers"
+                                                    placeholder="placeholder..">
+                                                <i class="fa fa-solid fa-angle-down"></i>
+                                                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal </span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex align-items-center ">
+                                                        <div
+                                                            class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                            <img src="../assets/images/nodata.png" alt=""
+                                                                class="img-100">
+                                                        </div>
+                                                        <span class="ms-3">Avashesh Jaiswal</span>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <h6>Announcement is related to a member of the Royal Family (HH)*
+                                            </h6>
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="SpecifyColor"
+                                                    name="fav_language" value="HTML">
+                                                <label for="html">Yes</label>
+                                            </div>
+                                            <div>
+                                                <input class="me-3" type="radio" id="SpecifyColor"
+                                                    name="fav_language" value="HTML">
+                                                <label for="html">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                  </div>
+                </div>
             </div>
+            
         </section>
         <!--view finished request ends here ------>
     </div>

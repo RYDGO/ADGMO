@@ -139,6 +139,9 @@
 .status-color-gray-op {
   background: #b0b0b069;
 }
+.bg-color-gray {
+  background: var(--grayshade-100);
+}
 
 .status-color-pink-op {
   background: #f11d9c1a;

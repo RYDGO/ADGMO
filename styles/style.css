@@ -1182,15 +1182,6 @@ header .image-text .profession {
   height: 17px;
 }
 
-position: relative;
-background: var(--body-bg);
-min-height: 100vh;
-width: calc(100% - 250px);
-padding: 85px 40px 0px 40px;
-left: 250px;
-transition: all 0.5s ease;
-}
-
 .sidebar.active~.main-section {
   width: calc(100% - 60px);
   left: 60px;

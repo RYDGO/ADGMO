@@ -10,6 +10,7 @@
   --base-color: #ef3f43;
   --base-black-color: #000;
   --base-white-color: #fff;
+  --color-yellow-dark: #EFCC46;
   --status-color-green: #37c3a1;
   --status-color-blue: #11a6ff;
   --status-color-yellow: #dab70a;
@@ -90,7 +91,9 @@
 .tb-bg-yellow {
   background-color: var(--status-color-yellow);
 }
-
+.tb-bg-yellow-dark{
+  background-color: var(--color-yellow-dark) !important;
+}
 .tb-bg-orange {
   background-color: var(--status-color-orange);
 }

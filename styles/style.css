@@ -32,6 +32,8 @@
   /*----- TYPOGRAPHY ----- */
   --text-base-black: #393939;
   --text-base-white: #ffffff;
+  --text-base-gary: #8C8C8C;
+  --text-dark-black: #000000;
   --font-style: "bold";
   --font-weight-100: "100";
   --font-weight-200: "200";
@@ -191,6 +193,13 @@
 .text-base-black {
   color: var(--text-base-black) !important;
 }
+
+.text-dark-black {
+  color: var(--text-dark-black) !important;
+}
+.text-base-gray {
+  color: var(--text-base-gary) !important;
+}
 .text-base-white {
   color: var(--text-base-white) !important;
 }
@@ -290,7 +299,8 @@ font-size: 10px;
 .tb-fs-22{
   font-size: 22px;
 }
-.tb-fs-24{
+.
+{
   font-size: 24px;
 }
 /* ---- images-cover  --- */
@@ -336,6 +346,9 @@ font-size: 10px;
 
 .gray-600 {
   background-color: var(--grayshade-600);
+}
+.gray-100-hover:hover {
+  background-color: var(--grayshade-100);
 }
 
 /* ---- GRAY BORDER COLORS ---- */
@@ -610,6 +623,14 @@ option:hover,
   font-weight: var(--font-weight-400);
 }
 
+.font-weight-500 {
+  font-weight: var(--font-weight-500);
+}
+
+.comment-popup-icon {
+  padding-left: 8px;
+  margin-top: -8px;
+}
 
 
     /* ------------ navbar & sidebar styles ------------------------ */

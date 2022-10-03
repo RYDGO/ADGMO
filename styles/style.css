@@ -730,6 +730,10 @@ input:focus+.fa {
     background-color: var(--base-white-color);
     border: 1px solid #fff;
 }
+.tb-input-group-duel {
+    position: relative;
+    border-bottom: 1px solid var(--grayshade-300);
+}
 
 .tb-input-group i {
     position: absolute;
@@ -1420,7 +1424,7 @@ header .image-text .profession {
 
 /* radio button styles */
 
-#SpecifyColor {
+input[type='radio']{
     accent-color: red;
     width: 17px;
     height: 17px;

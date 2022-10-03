@@ -38,6 +38,8 @@
   /*----- TYPOGRAPHY ----- */
   --text-base-black: #393939;
   --text-base-white: #ffffff;
+  --text-base-gary: #8C8C8C;
+  --text-dark-black: #000000;
   --font-style: "bold";
   --font-weight-100: "100";
   --font-weight-200: "200";
@@ -268,6 +270,12 @@
     color: var(--text-base-black) !important;
 }
 
+.text-dark-black {
+  color: var(--text-dark-black) !important;
+}
+.text-base-gray {
+  color: var(--text-base-gary) !important;
+}
 .text-base-white {
     color: var(--text-base-white) !important;
 }
@@ -449,6 +457,9 @@
 
 .gray-600 {
     background-color: var(--grayshade-600);
+}
+.gray-100-hover:hover {
+  background-color: var(--grayshade-100);
 }
 
 .collapse-inner-bg {
@@ -683,12 +694,21 @@ padding:7rem;
 .pad-8-12 {
     padding: 8px 12px;
 }
+.pad-12-12 {
+  padding: 12px 12px;
+}
+
+.pad-6-8 {
+  padding: 6px 8px;
+}
 
 .pad-2-9 {
     padding: 2px 9px;
 }
 
-
+.pad-8-9 {
+  padding: 8px 9px;
+}
 /* -------- Inputs and Dropdowns-starts here --------- */
 
 .input-label {
@@ -869,6 +889,14 @@ option:hover,
     font-weight: var(--font-weight-400);
 }
 
+.font-weight-500 {
+  font-weight: var(--font-weight-500);
+}
+
+.comment-popup-icon {
+  padding-left: 8px;
+  margin-top: -8px;
+}
 
 /* conversation styles */
 

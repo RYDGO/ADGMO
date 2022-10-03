@@ -8,6 +8,7 @@
   <title>Global Components</title>
 
   <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -628,8 +629,8 @@
         <i class="text-white fa-solid fa-arrow-down"></i>
         <h4 class="tb-h5 mb-0 text-white">L4</h4>
       </span>
-      <span class="common-width-label-3 gray-100 tb-rounded-pill d-flex justify-content-center align-items-center">
-        <p class="mb-0">SK</p>
+      <span class="common-width-label-45 gray-100 rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+        <p class="mb-0 bold-paragraph mt-1">SK</p>
       </span>
     </div>
     <!-- Priority Status Labels ends here -->
@@ -1359,16 +1360,16 @@
             <!-- title -->
           </div>
           <div class="table-responsive rounded-3 mx-3 mt-1">
-            <table class="table v-middle ">
+            <table id="exampletable" class="table v-middle">
               <thead class="">
                 <tr class="gray-500 text-white text-left">
-                  <th class="fw-light th-pd">ID <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Due Date <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Entity <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Type <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Initator <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Status <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Time Remaining <i class="fa-solid fa-caret-down mx-1"></i>
+                  <th class="fw-light th-pd">ID </th>
+                  <th class="fw-light th-pd">Due Date</th>
+                  <th class="fw-light th-pd">Entity</th>
+                  <th class="fw-light th-pd">Type</th>
+                  <th class="fw-light th-pd">Initator</th>
+                  <th class="fw-light th-pd">Status</th>
+                  <th class="fw-light th-pd">Time Remaining
                   </th>
                 </tr>
               </thead>
@@ -2331,10 +2332,164 @@
     <div class="modal-dialog modal-dialog-scrollable">
     </div>
 
+                <!-- Cards tabs English and urdu -->
+                <div class="py-4 d-flex align-items-center justify-content-between">
+                  <div class="col-2">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <a href="#" class="text-decoration-none text-dark">Back</a>
+                  </div>
+                  <div class="d-flex">
+                      <div>
+                          <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Overview</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class=" d-flex justify-content-between align-items-center  position-relative mt-4 mb-2 px-1">
+                  <h1 class="tb-h1 col-6 text-black">#89349</h1>
+                  <ul class="nav mb-3 align-items-center" id="pills-tab" role="tablist">
+                      <ul class="nav  align-items-center me-4">
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img src="../assets/images/Icons/icon-comment.svg" alt="" ></button>
+                      </li>
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                      </li>
+                  </ul>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active btn btn-sm tb-btn-light tb-rounded" id="pills-home-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                              aria-selected="true">English</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-profile-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                              aria-controls="pills-profile" aria-selected="false">urdu</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-contact-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                              aria-controls="pills-contact" aria-selected="false">dual</button>
+                      </li>
+                  </ul>
+              </div>
+
+                <!--under reverse normal cards -->
+
+                <div class="card border-0">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2">
+                          <span
+                              class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                              <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                              <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
+                          </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
 
 
+                <!--under reverse normal cards -->
 
-
+                <div class="card border-0 my-5">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2 align-items-center">
+                        <h4 class="me-1 mb-0 tb-fs-22 text-light">#89349843</h4>
+                        <span class="common-width-label-12 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                          <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                          <h4 class="tb-h5 mb-0 tb-orange">IN PROGRESS</h4>
+                        </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                          <span class="common-width-label-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                            <p class="mb-0 bold-paragraph mt-1">SK</p>
+                          </span>
+                          <h6 class="mb-0">Assignee</h6>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                                <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
+                               <img src="../assets/images/Icons/timer-icon.svg" alt="timer-icon" class="me-1 mb-1">
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
 
 
 
@@ -2349,6 +2504,9 @@
 </body>
 <!-- Javascript-files -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/script.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 

@@ -145,6 +145,9 @@
     color: var(--status-color-pink) !important;
 }
 
+.tb-light-pink{
+    color: var(--first-box-color) !important;
+}
 
 /* STATUS COLOR OPACITY-BACKGROUNDS */
 
@@ -244,6 +247,10 @@
 .common-width-label-45 {
     width: 45px;
     height: 45px;
+}
+.common-width-label-40 {
+    width: 40px;
+    height: 40px;
 }
 
 .common-width-label-30 {
@@ -540,6 +547,9 @@
 
 .tb-rounded {
     border-radius: 8px !important;
+}
+.tb-rounded-10 {
+    border-radius: 10px !important;
 }
 
 .tb-rounded-top-lr {
@@ -1510,3 +1520,33 @@ header .image-text .profession {
   outline: none !important;
 }
 /*popup style ends  */
+
+#exampletable_length{
+    display:none !important;
+}
+#exampletable_filter{
+    position: absolute !important;
+    top: 5% !important;
+    right: 22%;
+    display: none;
+}
+
+#exampletable_info , #exampletable_paginate{
+    display:none !important;
+}
+#exampletable{
+    margin:0 !important;
+    padding:0 !important;
+    box-sizing: border-box;
+}
+
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:before{
+    content:"";
+    color: var(--text-base-white);
+    opacity: 1;
+}
+table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:after{
+    top: 40%;
+    color: var(--text-base-white);
+    opacity: 1;
+}

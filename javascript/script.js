@@ -29,7 +29,6 @@ $(document).ready(function () {
   });
 });
 
-//  input dropdown hide / show
 $('.input').focus(function () {
   $(this).parent().children('datalist').css("display", "block")
   $(this).css("border-radius", "5px 5px 0 0")
@@ -44,6 +43,20 @@ $('.input').focus(function () {
   })
 
 })
+
+//  input dropdown hide / show
+// input.onfocus = function () {
+//   browsers.style.display = "block";
+//   input.style.borderRadius = "5px 5px 0 0";
+// };
+
+// for (let option of browsers.options) {
+//   option.onclick = function () {
+//     input.value = option.value;
+//     browsers.style.display = "none";
+//     input.style.borderRadius = "5px";
+//   };
+// }
 
 
 // input.oninput = function () {

@@ -463,7 +463,7 @@
 }
 
 .collapse-inner-bg {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
 }
 
 
@@ -746,6 +746,10 @@ input:focus+.fa {
     border: 1px solid var(--btn-bg-hover) !important;
 }
 
+.tb-inp:hover {
+  border: 0px !important;
+}
+
 .input-dropdown-list {
     display: none;
 }
@@ -879,6 +883,10 @@ option:hover,
 
 .inner-modal-content {
     width: 565px !important;
+}
+
+.inner-modal-content-box {
+  width: 650px !important;
 }
 
 .main-modal {
@@ -1461,7 +1469,8 @@ header .image-text .profession {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-.unselected:hover{
+
+.unselected:hover {
   color: red;
 }
 .tb-bg-primary-checked:checked{
@@ -1475,3 +1484,28 @@ header .image-text .profession {
 .tb-bg-primary-checked:focus{
   border: 1px solid var(--grayshade-300);
 }
+
+
+
+/*popup style starts  */
+.info-icon {
+  width: 30px;
+  height: 48px;
+}
+
+.info-outer {
+  border: 1px solid #D9D9D9 !important;
+  border-radius: 14px;
+  padding: 17px 20px;
+}
+
+.due-date-outer {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.decline-request:focus {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  outline: none !important;
+}
+/*popup style ends  */

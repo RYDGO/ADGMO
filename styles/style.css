@@ -38,6 +38,8 @@
   /*----- TYPOGRAPHY ----- */
   --text-base-black: #393939;
   --text-base-white: #ffffff;
+  --text-base-gary: #8C8C8C;
+  --text-dark-black: #000000;
   --font-style: "bold";
   --font-weight-100: "100";
   --font-weight-200: "200";
@@ -268,6 +270,12 @@
     color: var(--text-base-black) !important;
 }
 
+.text-dark-black {
+  color: var(--text-dark-black) !important;
+}
+.text-base-gray {
+  color: var(--text-base-gary) !important;
+}
 .text-base-white {
     color: var(--text-base-white) !important;
 }
@@ -450,9 +458,12 @@
 .gray-600 {
     background-color: var(--grayshade-600);
 }
+.gray-100-hover:hover {
+  background-color: var(--grayshade-100);
+}
 
 .collapse-inner-bg {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
 }
 
 
@@ -683,12 +694,21 @@ padding:7rem;
 .pad-8-12 {
     padding: 8px 12px;
 }
+.pad-12-12 {
+  padding: 12px 12px;
+}
+
+.pad-6-8 {
+  padding: 6px 8px;
+}
 
 .pad-2-9 {
     padding: 2px 9px;
 }
 
-
+.pad-8-9 {
+  padding: 8px 9px;
+}
 /* -------- Inputs and Dropdowns-starts here --------- */
 
 .input-label {
@@ -724,6 +744,10 @@ input:focus+.fa {
 
 .tb-input-group:hover {
     border: 1px solid var(--btn-bg-hover) !important;
+}
+
+.tb-inp:hover {
+  border: 0px !important;
 }
 
 .input-dropdown-list {
@@ -861,6 +885,10 @@ option:hover,
     width: 565px !important;
 }
 
+.inner-modal-content-box {
+  width: 650px !important;
+}
+
 .main-modal {
     margin-left: 29.4% !important;
 }
@@ -869,6 +897,14 @@ option:hover,
     font-weight: var(--font-weight-400);
 }
 
+.font-weight-500 {
+  font-weight: var(--font-weight-500);
+}
+
+.comment-popup-icon {
+  padding-left: 8px;
+  margin-top: -8px;
+}
 
 /* conversation styles */
 
@@ -1433,7 +1469,8 @@ header .image-text .profession {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-.unselected:hover{
+
+.unselected:hover {
   color: red;
 }
 .tb-bg-primary-checked:checked{
@@ -1447,3 +1484,28 @@ header .image-text .profession {
 .tb-bg-primary-checked:focus{
   border: 1px solid var(--grayshade-300);
 }
+
+
+
+/*popup style starts  */
+.info-icon {
+  width: 30px;
+  height: 48px;
+}
+
+.info-outer {
+  border: 1px solid #D9D9D9 !important;
+  border-radius: 14px;
+  padding: 17px 20px;
+}
+
+.due-date-outer {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.decline-request:focus {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  outline: none !important;
+}
+/*popup style ends  */

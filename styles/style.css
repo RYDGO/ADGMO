@@ -773,6 +773,7 @@ datalist {
     overflow-y: auto;
     margin-top: 13px;
     margin-left: -8px;
+    z-index: 999;
 }
 
 option {

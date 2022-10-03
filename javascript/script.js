@@ -87,3 +87,12 @@ function removeActive(x) {
 
 
 
+
+// ----------- richtext editor js starts -----------
+tinymce.init({
+  selector: 'mytextarea'
+});
+// ----------- richtext editor js ends -----------
+
+
+

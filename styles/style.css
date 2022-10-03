@@ -708,6 +708,7 @@ input:focus+.fa {
 .tb-input-group {
     position: relative;
     background-color: var(--base-white-color);
+    border: 1px solid #fff;
 }
 
 .tb-input-group i {
@@ -1144,10 +1145,6 @@ header .image-text .profession {
 
 .menu-links {
   padding: 0 0 0 30px;
-}
-
-.menu-links-m0 {
-  margin-left: -40px;
 }
 
 .nav-link button {

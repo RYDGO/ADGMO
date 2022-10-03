@@ -8,6 +8,7 @@
   <title>Global Components</title>
 
   <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -255,7 +256,7 @@
                 </div>
                 <div class="pt-2">
                   <h4>
-                    Circulars</h3>
+                    Circulars</h4>
                 </div>
               </div>
             </div>
@@ -300,7 +301,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     Media Assets Enquiries
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -322,7 +323,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     AD Brand Consultation
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -334,7 +335,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     Brand Consultation
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -346,7 +347,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     New Brand Approval
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -358,7 +359,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     Re-Branding Approval
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -381,7 +382,7 @@
                 <div class="pt-2">
                   <h4 class="text-nowrap">
                     Media Assets Archiving
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
@@ -427,6 +428,7 @@
           <input type="date" class="col-12" id="date">
         </div>
       </div>
+
       <div class="col-md-3">
         <div class="tb-input-group p-2 mt-3 border">
           <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
@@ -440,6 +442,21 @@
           </datalist>
         </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="tb-input-group p-2 mt-3 border">
+          <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
+          <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
+            placeholder="placeholder..">
+          <i class="fa fa-solid fa-angle-down"></i>
+          <datalist id="browsers" role="listbox">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </datalist>
+        </div>
+      </div>
+       
       <div class="col-md-3">
         <div class="tb-input-group d-flex align-items-center p-2 mt-3 border">
           <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
@@ -468,7 +485,6 @@
                   <img src="../assets/images/nodata.png" alt="" class="img-100">
                 </div>
                 <span class="ms-3">Avashesh Jaiswal</span>
-              </li>
               </li>
             </ul>
           </div>
@@ -613,8 +629,8 @@
         <i class="text-white fa-solid fa-arrow-down"></i>
         <h4 class="tb-h5 mb-0 text-white">L4</h4>
       </span>
-      <span class="common-width-label-3 gray-100 tb-rounded-pill d-flex justify-content-center align-items-center">
-        <p class="mb-0">SK</p>
+      <span class="common-width-label-45 gray-100 rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+        <p class="mb-0 bold-paragraph mt-1">SK</p>
       </span>
     </div>
     <!-- Priority Status Labels ends here -->
@@ -792,22 +808,38 @@
         </div>
       </div>
     </div>
-    <div class="m-2 p-2">
-    </div>
-    <!-- notification modal ends here -->
-    <div class="row pb-4">
-      <div class="col-4 border-bottom">
-        <div class="d-flex">
-          <div class="me-2 position-relative d-flex align-items-center">
-            <div class="position-absolute conversation-red-dot-circle">
-              <i class="fa-sharp fa-solid fa-circle conversation-red-dot fa-xs "></i>
+
+
+    <div class="row my-4">
+      <div class="col-4  ">
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4> Darrell Steward</h4>
+              <p class=" tb-fs-14 text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
             </div>
             <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
               class="conv-radius-img" width="20">
           </div>
           <div class="width-80 text-start">
-            <p class="m-0"><span class="fw-bold tb-fs-14">Darrell Steward</p>
-            <p class="m-0"><span class="tb-fs-14">010204 | Title</p>
+            <p class="m-0"><span class="fw-bold tb-fs-14">Darrell Steward </span></p>
+            <p class="m-0"><span class="tb-fs-14">010204 | Title </span></p>
           </div>
           <span class="gray-100 pad-2-9 gray-300-hover h-100">
             <i class="fa-solid fa-chevron-right"></i>
@@ -832,7 +864,7 @@
               class="conv-radius-img" width="20">
           </div>
           <div class="width-77 conversation-title text-start d-flex align-items-center">
-            <p class="m-0"><span class="fw-bold">Darrell Steward</p>
+            <p class="m-0"><span class="fw-bold">Darrell Steward </span></p>
           </div>
           <span class="text-end">
             <p class="tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</p>
@@ -847,6 +879,460 @@
         </div>
       </div>
     </div>
+
+    <div class="row my-4">
+      <div class="col-4  ">
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4> Darrell Steward</h4>
+              <p class=" tb-fs-14 text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+              Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/Vector.svg" alt="">
+            </div>
+            <div class="mb-3 border-bottom">
+              <p class=" tb-fs-12  ms-2 text-base-black">28 min ago</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4>Floyd Miles</h4>
+              <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-base-gray mb-0 ms-2 tb-fs-12 ">
+              Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/Vector.svg" alt="">
+            </div>
+            <div class="mb-3 border-bottom">
+              <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4>Esther Howard</h4>
+              <p class=" tb-fs-12 text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+              Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/Vector.svg" alt="">
+            </div>
+            <div class="mb-3 border-bottom">
+              <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4>Cody Fisher</h4>
+              <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+              Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/Vector.svg" alt="">
+            </div>
+            <div class="mb-3 border-bottom ms-2">
+              <p class=" tb-fs-12 text-base-black ">28 min ago</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4>Kristin Watson</h4>
+              <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+              Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/Vector.svg" alt="">
+            </div>
+            <div class="mb-3 border-bottom ms-2">
+              <p class=" tb-fs-12 text-base-black ">28 min ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 ">
+        <div class="row p-3">
+          <div class="gray-100-hover">
+            <div class="d-flex ">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div class="border-bottom">
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="gray-100-hover">
+            <div class="d-flex">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div class="border-bottom">
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="gray-100-hover">
+            <div class="d-flex">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4 ">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div class="border-bottom">
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="gray-100-hover">
+            <div class="d-flex">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div class="border-bottom">
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="gray-100-hover">
+            <div class="d-flex">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div class="border-bottom">
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="gray-100-hover">
+            <div class="d-flex">
+              <div class="py-2 px-0">
+                <div class="d-flex  justify-content-between py-2 px-3 ">
+                  <div class="col-2 position-relative">
+                    <div class="position-absolute red-dot-circle">
+                      <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                    </div>
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 mt-4">
+                <h6>Esther Howard</h6>
+              </div>
+              <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</div>
+            </div>
+            <div>
+              <p class="text-start tb-fs-12 ms-3">
+                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov. Hey, del metanomi,
+                och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 m-0 p-0">
+            <div class=" p-2 border">
+              <label class="col-12 input-label" for="dataList">Send a message </label>
+              <input class="col-12" id="" name="">
+              <div class="d-flex mt-3">
+
+                <div class=" ms-auto py-2 px-3 mx-1 ">
+                  <span class="pad-12-12 gray-100 rounded-circle">
+                    <i class="fa-sharp fa-solid fa-paperclip"></i>
+                  </span>
+                </div>
+                <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- conversations ends here -->
+
+    <div class="row my-4">
+      <div class="bg-white w-50 notification-shadow tb-rounded pb-3 mt-4">
+        <div>
+          <div>
+            <div>
+              <h4 class="p-2 tb-fs-24 mt-3 text-dark-black font-weight-500">Comments</h4>
+            </div>
+            <div class="d-flex mb-3 mt-3">
+              <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Show All</div>
+              <div class="py-2 px-3 mx-1 tb-rounded gray-300 text-white">Show New</div>
+              <div class="ms-auto p-2">
+                <span class="pad-8-9 gray-100 rounded-circle">
+                  <i class="fa-solid fa-search"></i>
+                </span>
+              </div>
+              <div class="pt-1 ">
+                <span class=" ">
+                  <img src="../assets/images/Frame 34003.svg">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-12 my-2 mx-0">
+              <div class=" p-2 border">
+                <label class="col-12 input-label" for="dataList">Type @ to mention someone </label>
+                <input class="col-12" id="" name="">
+                <div class="d-flex mt-3">
+                  <div class="p-2">
+                    <span class="pad-8-9 gray-100 rounded-circle">
+                      <i class="fa-sharp fa-solid fa-lock"></i>
+                    </span>
+                  </div>
+                  <div class=" p-2">
+                    <span class="pad-8-9 gray-100 rounded-circle">
+                      <i class="fa-sharp fa-solid fa-paperclip"></i>
+                    </span>
+                  </div>
+                  <div class=" ms-auto py-2 px-3 mx-1 tb-rounded  gray-100 text-white">Cancel</div>
+                  <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mb-3 mt-4">
+            <div class="p-2">
+              <div class="col-2 position-relative">
+                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+              </div>
+            </div>
+            <div class="p-2 fw-bold tb-fs-14 position-relative"> Mark Anthony
+              <span class=" position-absolute comment-popup-icon">
+                <img src="../assets/images/Frame 1368.svg" alt="" class="m-0">
+              </span>
+              <p class=" tb-fs-12 tb-gray-400">28 min ago</p>
+            </div>
+            <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span></div>
+          </div>
+          <div class="ms-3">
+            <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+              ante iaculis, faucibus
+              velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+          </div>
+          <div>
+            <img src="../assets/images/Container.svg" alt="" width="100%">
+          </div>
+        </div>
+        <div class="d-flex mb-3 mt-4">
+          <div class="p-2">
+            <div class="col-2 position-relative">
+              <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+            </div>
+          </div>
+          <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+            <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+          </div>
+          <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+              <i class="fa-solid fa-ellipsis"></i>
+            </span></div>
+        </div>
+        <div class="ms-3">
+          <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+            ante
+            iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+          <p class="tb-fs-12 tb-gray-400 border-bottom mt-3">3 Replies</p>
+        </div>
+        <div class="d-flex mb-3 mt-4 ">
+          <div class="p-2">
+            <div class="col-2 position-relative">
+              <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+            </div>
+          </div>
+          <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+            <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+          </div>
+          <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+              <i class="fa-solid fa-ellipsis"></i>
+            </span></div>
+        </div>
+        <div class="ms-3 text-base-black tb-fs-14">
+          <p class="m-0 border-bottom"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante
+            iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+        </div>
+      </div>
+    </div>
+    <!-- comments ends here -->
+
     <!-- table -->
     <div class="row">
       <!-- column -->
@@ -874,24 +1360,26 @@
             <!-- title -->
           </div>
           <div class="table-responsive rounded-3 mx-3 mt-1">
-            <table class="table v-middle ">
+            <table id="exampletable" class="table v-middle">
               <thead class="">
                 <tr class="gray-500 text-white text-left">
-                  <th class="fw-light th-pd">ID <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Due Date <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Entity <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Type <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Initator <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Status <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Time Remaining <i class="fa-solid fa-caret-down mx-1"></i>
+                  <th class="fw-light th-pd">ID </th>
+                  <th class="fw-light th-pd">Due Date</th>
+                  <th class="fw-light th-pd">Entity</th>
+                  <th class="fw-light th-pd">Type</th>
+                  <th class="fw-light th-pd">Initator</th>
+                  <th class="fw-light th-pd">Status</th>
+                  <th class="fw-light th-pd">Time Remaining
                   </th>
                 </tr>
               </thead>
               <tbody class="text-left fw-light ">
                 <tr>
-                  <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                  <td
+                    class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                     <div class="form-check mb-2">
-                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                        id="flexCheckDefault">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                       <h6
@@ -917,9 +1405,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                  <td
+                    class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                     <div class="form-check mb-2">
-                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                        id="flexCheckDefault">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                       <h6
@@ -947,9 +1437,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                  <td
+                    class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                     <div class="form-check mb-2">
-                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                        id="flexCheckDefault">
                     </div>
                     <div class="d-flex align-items-center justify-content-center ">
                       <h6
@@ -977,9 +1469,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                  <td
+                    class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                     <div class="form-check mb-2">
-                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                        id="flexCheckDefault">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                       <h6
@@ -1007,7 +1501,8 @@
                 <tr>
                   <td class="py-2 table-pd-top border-bottom-0  d-flex justify-content-center align-items-center">
                     <div class="form-check mb-2">
-                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                        id="flexCheckDefault">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                       <h6
@@ -1074,7 +1569,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1101,7 +1595,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1139,7 +1632,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1184,7 +1676,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1238,7 +1729,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1265,7 +1755,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1303,7 +1792,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1348,7 +1836,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1402,7 +1889,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1429,7 +1915,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1467,7 +1952,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1513,7 +1997,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -1547,20 +2030,869 @@
         <input class="unselected" type="checkbox" id="SpecifyColor" name="vehicle1" value="Bike">
       </div>
       <div class="form-check">
-        <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault">
+        <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+          id="flexCheckDefault">
       </div>
     </form>
     <!-- checkbox ends here -->
 
     <div class="m-2 p-2">
     </div>
+    <!--Request Modal starts here -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+      Click popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog main-modal">
+        <div class="modal-content inner-modal-content-box box-shadow-popup">
+          <div class="modal-header align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Accept Request</h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer collapse-inner-bg py-4 px-5">
+            <div class="col-12">
+              <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Priority</label>
+                  <input class="col-11" autocomplete="off" role="combobox" id="input2" name="browsers"
+                    placeholder="L2 - Important">
+                  <i class="fa fa-solid fa-angle-down"></i>
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3 due-date-outer">
+              <div class="p-2 border-0">
+                <div>
+                  <label class="col-12 fs-6" for="dataList">Due Date*</label>
+                </div>
+                <input class="col-12 bg-transparent" list="datalistOptions" id="dataList"
+                  placeholder="Placeholder text">
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Confidentiality</label>
+                  <input class="col-11 dropdown-input" autocomplete="off" role="combobox" id="input2" name="browsers"
+                    placeholder="Select option">
+                  <i class="fa fa-solid fa-angle-down"></i>
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="border-0 info-outer tb-input-group">
+                <div class="d-flex">
+                  <div>
+                    <img class="info-icon" src="../assets/images/info-icon1.svg" alt="">
+                  </div>
+                  <p class="px-3 m-0">
+                    You are about accept this request, please note the due date is automatically defined by the Priority
+                    of the request.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-4">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd modal ends here -->
+
+
+
+    <div class="m-2 p-2">
+    </div>
+    <!--Request Modal starts here -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+      Click popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog main-modal">
+        <div class="modal-content inner-modal-content-box box-shadow-popup">
+          <div class="modal-header align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Decline Request</h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer collapse-inner-bg py-4 px-5">
+            <div class="col-12">
+              <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                  <textarea class="decline-request border-0 ps-0" rows="4" cols="59"
+                    placeholder="Placeholder text"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-4">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4th modal ends here -->
+
+
+
+    <!--Request Modal starts here -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+      Click popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog main-modal">
+        <div class="modal-content inner-modal-content-box box-shadow-popup">
+          <div class="modal-header align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Request more information </h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer collapse-inner-bg py-4 px-5">
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                  <textarea class="decline-request border-0 ps-0" rows="4" cols="55"
+                    placeholder="Placeholder text"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white px-4 py-3  mt-3">
+              <div class="col-12 d-flex">
+                <label class="input-label fs-6" for="input2">Attach File</label>
+              </div>
+              <div class="col-12 d-flex justify-content-between">
+                <div class="col-6 me-1">
+                  <div class=" mt-3">
+                    <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                      <span class="tb-fs-14">Select from attachment</span>
+                      <input id="uploadBtn" type="file" class="upload">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 ms-1">
+                  <div class=" mt-3">
+                    <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                      <span class="tb-fs-14 mx-3">Upload from device</span>
+                      <img src="../assets/images/right-arrow.svg" alt="">
+                      <input id="uploadBtn" type="file" class="upload">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-4 d-flex justify-content-center">
+                <p class="tb-gray-400 mb-0">
+                  Document must be in the following formats xxxxxx
+                </p>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="collapse-inner-bg tb-input-group tb-inp px-2 py-2  align-items-center border-0">
+                <div class="d-flex">
+                  <div>
+                    <img src="../assets/images/Ellipse.png" alt="">
+                  </div>
+                  <div class="w-100 px-2">
+                    <label class="col-12 input-label fs-6" for="input2">Select Assignee</label>
+                    <label class="col-12 input-label fs-6" for="input2">Cameron Williamson</label>
+                    <label class="col-12 input-label fs-6" for="input2">Content</label>
+                    <i class="fa fa-solid fa-angle-down"></i>
+                  </div>
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-4">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5th modal ends here -->
+
+
+
+    <div class="m-2 p-2">
+    </div>
+    <!--Request Modal starts here -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+      Click popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog main-modal">
+        <div class="modal-content inner-modal-content-box box-shadow-popup">
+          <div class="modal-header align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send Request</h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer collapse-inner-bg px-4 py-3">
+            <div class="col-12">
+              <div class="border-0 info-outer tb-input-group">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <img class="info-icon" src="../assets/images/info-icon1.svg" alt="">
+                  </div>
+                  <p class="ps-3 m-0">
+                    You are about Send this request, sending this request will submit <br> it to the media office.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 6th modal ends here -->
+
+
 
     <!-- Scrollable modal -->
-    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="m-2 p-2">
     </div>
 
-    
+                <!-- Cards tabs English and urdu -->
+                <div class="py-4 d-flex align-items-center justify-content-between">
+                  <div class="col-2">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <a href="#" class="text-decoration-none text-dark">Back</a>
+                  </div>
+                  <div class="d-flex">
+                      <div>
+                          <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Overview</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class=" d-flex justify-content-between align-items-center  position-relative mt-4 mb-2 px-1">
+                  <h1 class="tb-h1 col-6 text-black">#89349</h1>
+                  <ul class="nav mb-3 align-items-center" id="pills-tab" role="tablist">
+                      <ul class="nav  align-items-center me-4">
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img src="../assets/images/Icons/icon-comment.svg" alt="" ></button>
+                      </li>
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                      </li>
+                  </ul>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active btn btn-sm tb-btn-light tb-rounded" id="pills-home-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                              aria-selected="true">English</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-profile-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                              aria-controls="pills-profile" aria-selected="false">urdu</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-contact-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                              aria-controls="pills-contact" aria-selected="false">dual</button>
+                      </li>
+                  </ul>
+              </div>
 
+                <!--under reverse normal cards -->
+
+                <div class="card border-0">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2">
+                          <span
+                              class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                              <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                              <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
+                          </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+
+                <!--under reverse normal cards -->
+
+                <div class="card border-0 my-5">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2 align-items-center">
+                        <h4 class="me-1 mb-0 tb-fs-22 text-light">#89349843</h4>
+                        <span class="common-width-label-12 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                          <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                          <h4 class="tb-h5 mb-0 tb-orange">IN PROGRESS</h4>
+                        </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                          <span class="common-width-label-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                            <p class="mb-0 bold-paragraph mt-1">SK</p>
+                          </span>
+                          <h6 class="mb-0">Assignee</h6>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                                <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
+                               <img src="../assets/images/Icons/timer-icon.svg" alt="timer-icon" class="me-1 mb-1">
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+    <!-- Request Modal starts here -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Comments Popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-white align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN)</h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body collapse-inner-bg px-4 py-3">
+            <div class="col-12 mt-3">
+              <div class="collapse-inner-bg tb-input-group tb-inp px-2 py-2  align-items-center border-0">
+                <div class="d-flex">
+                  <div>
+                    <img src="../assets/images/Ellipse.png" alt="">
+                  </div>
+                  <div class="w-100 px-2">
+                    <label class="col-12 input-label fs-6 text-uppercase fw-semibold" for="input2">Assignee</label>
+                    <input class="col-11 collapse-inner-bg opacity-25" autocomplete="off" role="combobox" id="input2"
+                      name="browsers" placeholder="Placeholder Text">
+                    <label class="col-12 input-label fs-5 opacity-50" for="input2">Content</label>
+                    <i class="fa fa-solid fa-angle-down"></i>
+                  </div>
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/nodata.png" alt="" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                  <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+                    placeholder="Placeholder"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Subheading</label>
+                  <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                    placeholder="Placeholder text"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <form method="post">
+                    <label class="col-12 input-label fs-6" for="input2">Body</label>
+                    <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
+                      placeholder="Placeholder"></textarea>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 7th modal ends here -->
+
+
+
+
+
+
+    <!-- Global Search popup -->
+    <div class="m-2 p-2">
+    </div>
+    <!-- Request Modal starts here -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+      Global search popup
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
+      role="dialog">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content modal-dialog-scrollable">
+          <div class="modal-header collapse-inner-bg align-items-start px-4 pt-4 pb-1">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Global Search</h5>
+            </div>
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body collapse-inner-bg px-4 py-3">
+            <div class="col-12">
+              <div class="tb-input-group tb-rounded-md tb-inp align-items-center px-4 py-3 border-0">
+                <div class="col-12 d-flex">
+                  <div class="col-6">
+                    <div class="topnav p-2">
+                      <div class="search-container col-12">
+                        <form>
+                          <img src="../assets/images/Icons/Vector (1).svg" alt="">
+                          <input class="bg-transparent w-75 ps-3 me-5" type="text" placeholder="Today" name="search">
+                          <img src="../assets/images/Icons/Vector.svg" alt="">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn-sm tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                    Save search
+                  </button>
+                  <div class="col-4 d-flex justify-content-end">
+                    <button class="btn btn-sm tb-btn-secondary tb-rounded me-3" type="button">English</button>
+                    <button class="btn btn-sm tb-btn-secondary tb-rounded" type="button">يبرع</button>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <label class="col-12 input-label fs-6" for="input2">Filters</label>
+                </div>
+                <div class="col-12 mt-3 d-flex">
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Request ID
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Sector
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Entity
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Request
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Type
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Saved Searches
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 mt-3 d-flex">
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Task
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Unpublished Asset
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Published Asset
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" href="#"
+                      class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Created date
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div>
+                <h5 class="modal-title tb-h4 text-black " id="exampleModalLabel">Today</h5>
+              </div>
+            </div>
+
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex align-items-center justify-content-center">
+                    <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes ago</span>
+                    <button type="button" class="btn-md collapse-inner-bg tb-rounded ms-3 tb-fs-16 border-0">
+                      View
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex align-items-center justify-content-center">
+                    <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes ago</span>
+                    <button type="button" class="btn-md collapse-inner-bg tb-rounded ms-3 tb-fs-16 border-0">
+                      View
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/person1.jpg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex align-items-center justify-content-start">
+                    <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes ago</span>
+                    <img class="px-3" src="../assets/images/download.png" alt="">
+                    <button type="button" class="btn-md collapse-inner-bg tb-rounded ms-3 tb-fs-16 border-0">
+                      View
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/movie.jpg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex align-items-center justify-content-start">
+                    <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes ago</span>
+                    <img class="px-3" src="../assets/images/download.png" alt="">
+                    <button type="button" class="btn-md collapse-inner-bg tb-rounded ms-2 tb-fs-16 border-0">
+                      View
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-4 d-flex">
+                    <div>
+                      <img src="../assets/images/L1.png" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
+                      <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex align-items-center justify-content-center">
+                    <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes ago</span>
+                    <button type="button" class="btn-md collapse-inner-bg tb-rounded ms-3 tb-fs-16 border-0">
+                      View
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 8th modal ends here -->
 
 
 
@@ -1568,10 +2900,20 @@
 
 
   </div>
+
+
+
+  <!-- table -->
+
+
 </body>
 <!-- Javascript-files -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/script.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
 
 </html>

@@ -13,7 +13,9 @@ if (sidebar) {
 
 // Jquery: dropdown functionality
 $(document).ready(function () {
-
+  $(document).ready(function () {
+    $('#exampletable').DataTable();
+});
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
     $(this).toggleClass('active');
@@ -28,62 +30,40 @@ $(document).ready(function () {
     $(".input-dropdown-list").hide(1000);
   });
 });
+var selectedin = ''
+$('.input').focus(function () {
+  $(this).parent().children('datalist').css("display", "block")
+  $(this).css("border-radius", "5px 5px 0 0")
+  let input = this
+  let datalist = $(this).parent().children('datalist')
+  $(this).parent().children('datalist').find('option').each(function () {
+    $(this).click(() => {
+      input.value = this.value
+      $(input).css("border-radius", "5px")
+      $(datalist).css("display", "none")
+    })
+  })
+})
 
-//  input dropdown hide / show
-input.onfocus = function () {
-  browsers.style.display = "block";
-  input.style.borderRadius = "5px 5px 0 0";
-};
+$('.input').on('blur', function () {
+  let input = this
+  input.value = selectedin
+  let datalist = $(this).parent().children('datalist')
+  setTimeout(() => {
+    $(datalist).css("display", "none")
+  }, 300)
+})
 
-for (let option of browsers.options) {
-  option.onclick = function () {
-    input.value = option.value;
-    browsers.style.display = "none";
-    input.style.borderRadius = "5px";
-  };
-}
-
-
-input.oninput = function () {
+$('.input').on('input', function () {
   currentFocus = -1;
-  var text = input.value.toUpperCase();
-  for (let option of browsers.options) {
-    if (option.value.toUpperCase().indexOf(text) > -1) {
-      option.style.display = "block";
+  var text = this.value.toUpperCase();
+  let option = $(this).parent().children('datalist').find('option')
+  option.each(function () {
+    if (this.value.toUpperCase().indexOf(text) > -1) {
+      $(this).css("display", "block")
+
     } else {
-      option.style.display = "none";
+      $(this).css("display", "none")
     }
-  }
-};
-var currentFocus = -1;
-input.onkeydown = function (e) {
-  if (e.keyCode == 40) {
-    currentFocus++;
-    addActive(browsers.options);
-  } else if (e.keyCode == 38) {
-    currentFocus--;
-    addActive(browsers.options);
-  } else if (e.keyCode == 13) {
-    e.preventDefault();
-    if (currentFocus > -1) {
-      /*and simulate a click on the "active" item:*/
-      if (browsers.options) browsers.options[currentFocus].click();
-    }
-  }
-};
-
-function addActive(x) {
-  if (!x) return false;
-  removeActive(x);
-  if (currentFocus >= x.length) currentFocus = 0;
-  if (currentFocus < 0) currentFocus = x.length - 1;
-  x[currentFocus].classList.add("active");
-}
-function removeActive(x) {
-  for (var i = 0; i < x.length; i++) {
-    x[i].classList.remove("active");
-  }
-}
-
-
-
+  })
+})

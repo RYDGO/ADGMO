@@ -97,15 +97,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     border-radius: 50%;
-    /* background: var(--text-base-white);
-    color: var(--base-white-color); */
+    background: var(--text-base-white);
     line-height: 50px;
     text-align: center;
-    padding: 10px;
-    width: 36.96px;
-    height: 38.5px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
   }
   .overview-boxes .first {
     color: var(--base-white-color);

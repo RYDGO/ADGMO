@@ -1100,7 +1100,7 @@ header .image-text .profession {
     width: 100%;
     border-radius: 6px;
     text-decoration: none;
-    transition: var(--tran-03);
+    /* transition: var(--tran-03); */
     white-space: nowrap;
 }
 

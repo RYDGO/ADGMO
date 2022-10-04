@@ -16,12 +16,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('#exampletable').DataTable();
 });
-  //jquery for toggle sub menus
-  $('.sub-btn').click(function () {
-    $(this).toggleClass('active');
-    $(this).next('.sub-menu').slideToggle();
-    $(this).find('.dropdown').toggleClass('rotate');
-  });
+
 
     //jquery for toggle sub menus
     $('.sub-btn').click(function () {

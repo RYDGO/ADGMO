@@ -21,7 +21,6 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
@@ -216,6 +215,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
@@ -232,6 +232,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -244,10 +245,10 @@
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="links">Related Links /
                                                             Website<sup>*</sup></label>
-                                                        <input class="col-12" id="links" name="links"
+                                                        <input class="col-12 input" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
-
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
@@ -262,12 +263,13 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row gy-2 my-2">
                                                 <h6 class="h6 my-3">Will this have an impact on Abu Dhabi?</h6>
                                                 <div class="d-flex align-items-center">
-                                                    <input class="me-3" type="radio" id="impact1" name="impacts"
+                                                    <input class="me-3 impact" type="radio" id="impact1" name="impacts"
                                                         value="yes">
                                                     <label for="impact1">Yes</label>
                                                 </div>
@@ -276,15 +278,17 @@
                                                         value="no">
                                                     <label for="impact2">No</label>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
-                                            <div class="row">
+                                            <div class="row impact-show">
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="impact">Select
                                                             Impact</label>
-                                                        <input class="col-12" id="impact" name="impact"
+                                                        <input class="col-12 input" id="impact" name="impact"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <!-- <p class="error-message">• Error Message</p> -->
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
@@ -300,6 +304,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -321,7 +326,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -346,14 +350,18 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="published-date">Published
                                                             Date<sup>*</sup></label>
-                                                        <input type="date" class="col-12" name="published-date"
+                                                        <input type="date" class="col-12 input" name="published-date"
                                                             id="published-date">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="col-12 mb-4">
@@ -376,9 +384,10 @@
                                                         <label class="col-12 input-label"
                                                             for="published-news">Previously
                                                             Published News<sup>*</sup></label>
-                                                        <input class="col-12" id="published-news" name="published-news"
-                                                            placeholder="Placeholder..">
+                                                        <input class="col-12 input" id="published-news"
+                                                            name="published-news" placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                                 <div class="col-md-6">
@@ -387,9 +396,11 @@
                                                             for="target-published-date">Target
                                                             Published
                                                             Date<sup>*</sup></label>
-                                                        <input type="date" class="col-12" id="target-published-date"
-                                                            name="target-published-date">
+                                                        <input type="date" class="col-12 input"
+                                                            id="target-published-date" name="target-published-date">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -409,16 +420,20 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label" for="headline">Main Proposed
                                                             Headline<sup></sup></label>
-                                                        <input class="col-12" id="headline" name="headline"
+                                                        <input class="col-12 input" id="headline" name="headline"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label text-end"
                                                             for="headline-arabic"><sup>*</sup>
                                                             لیبل</label>
-                                                        <input class="col-12 text-end" id="headline-arabic"
+                                                        <input class="col-12 input text-end" id="headline-arabic"
                                                             name="headline-arabic" placeholder="پلیس ہولڈر">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -426,16 +441,20 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="subheading">Subheading<sup>*</sup></label>
-                                                        <input class="col-12" id="subheading" name="subheading"
+                                                        <input class="col-12 input" id="subheading" name="subheading"
                                                             placeholder="Placeholder">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label text-end"
                                                             for="subheading-arabic"><sup>*</sup>
                                                             لیبل</label>
-                                                        <input class="col-12 text-end" id="subheading-arabic"
+                                                        <input class="col-12 text-end input" id="subheading-arabic"
                                                             name="subheading-arabic" placeholder="پلیس ہولڈر">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -443,16 +462,20 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label" for="messages">Key
                                                             Messages<sup>*</sup></label>
-                                                        <input class="col-12" id="messages" name="messages"
+                                                        <input class="col-12 input" id="messages" name="messages"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label text-end"
+                                                        <label class="col-12  input-label text-end"
                                                             for="messages-arabic"><sup>*</sup>
                                                             لیبل</label>
-                                                        <input class="col-12 text-end" id="messages-arabic"
+                                                        <input class="col-12 text-end input" id="messages-arabic"
                                                             name="messages-arabic" placeholder="پلیس ہولڈر">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -461,9 +484,10 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label" for="quotes">Quotes (if
                                                             any)</label>
-                                                        <input class="col-12" id="quotes" name="quotes"
+                                                        <input class="col-12 input" id="quotes" name="quotes"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                                 <div class="col-md-6">
@@ -471,9 +495,10 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label" for="quotesby">Quotes
                                                             by<sup>*</sup></label>
-                                                        <input class="col-12" id="quotesby" name="quotesby"
+                                                        <input class="col-12 input" id="quotesby" name="quotesby"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                             </div>
@@ -483,7 +508,7 @@
                                                     <div class="tb-input-group d-flex p-3 ">
                                                         <div class="col-9">
                                                             <label class="col-12" for="prl-en">PRL (en)</label>
-                                                            <input class="col-12" type="text" id="prl-en"
+                                                            <input class="col-12 input" type="text" id="prl-en"
                                                                 placeholder="Upload PRL (en) Attachments" />
                                                         </div>
                                                         <div
@@ -570,10 +595,10 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="website">Website<sup>*</sup></label>
-                                                        <input class="col-12" id="website" name="website"
+                                                        <input class="col-12 input" id="website" name="website"
                                                             placeholder="Placeholder text">
                                                     </div>
-
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -582,9 +607,10 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="remarks">Remarks<sup>*</sup></label>
-                                                        <input class="col-12" id="remarks" name="remarks"
+                                                        <input class="col-12 input" id="remarks" name="remarks"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                             </div>
@@ -595,52 +621,62 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="facebook">Facebook<sup>*</sup></label>
-                                                        <input class="col-12" id="facebook" name="facebook"
+                                                        <input class="col-12  input" id="facebook" name="facebook"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="youtube">Youtube<sup>*</sup></label>
-                                                        <input class="col-12" id="youtube" name="youtube"
+                                                        <input class="col-12 input" id="youtube" name="youtube"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="instagram">Instagram<sup>*</sup></label>
-                                                        <input class="col-12" id="instagram" name="instagram"
+                                                        <input class="col-12 input" id="instagram" name="instagram"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                                 <div class="col-md-6">
 
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="twitter">Twitter<sup>*</sup></label>
-                                                        <input class="col-12" id="twitter" name="twitter"
+                                                        <input class="col-12 input" id="twitter" name="twitter"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="linkedin">Linkedin<sup>*</sup></label>
-                                                        <input class="col-12" id="linkedin" name="linkedin"
+                                                        <input class="col-12 input" id="linkedin" name="linkedin"
                                                             placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label"
                                                             for="social-others">Other<sup>*</sup></label>
-                                                        <input class="col-12" id="social-others" name="social-others"
-                                                            placeholder="Placeholder text">
+                                                        <input class="col-12 input" id="social-others"
+                                                            name="social-others" placeholder="Placeholder text">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -674,9 +710,11 @@
                                                         <label class="col-12 input-label" for="Patronage">Patronage
                                                             Request
                                                             Reference</label>
-                                                        <input class="col-12" id="Patronage" name="Patronage"
+                                                        <input class="col-12 input" id="Patronage" name="Patronage"
                                                             placeholder="Placeholder">
                                                     </div>
+                                                    <!-- <p class="error-message">• Error Message</p> -->
+
                                                 </div>
                                             </div>
                                             <div class="row my-4">
@@ -727,6 +765,7 @@
                                                         <option value="3">3</option>
                                                     </datalist>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2">
@@ -742,6 +781,7 @@
                                                         <option value="3">3</option>
                                                     </datalist>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -755,9 +795,10 @@
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2">
@@ -773,6 +814,7 @@
                                                         <option value="3">3</option>
                                                     </datalist>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                         </div>
                                         <div class="col-12 mb-4">
@@ -792,9 +834,11 @@
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2">
@@ -810,6 +854,8 @@
                                                         <option value="3">3</option>
                                                     </datalist>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                         <div class="row">
@@ -854,14 +900,17 @@
                                                         <option value="3">3</option>
                                                     </datalist>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="date"><sup>*</sup>عنوان</label>
-                                                    <input type="date" class="col-12 d-flex flex-row-reverse text-end"
-                                                        id="date">
+                                                    <input type="date"
+                                                        class="col-12 input d-flex flex-row-reverse text-end" id="date">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                         </div>
                                         <div class="col-12 mb-4">
@@ -883,17 +932,21 @@
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="date"><sup>*</sup>عنوان</label>
-                                                    <input type="date" class="col-12 d-flex flex-row-reverse text-end"
-                                                        id="date">
+                                                    <input type="date"
+                                                        class="col-12 input d-flex flex-row-reverse text-end" id="date">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -910,17 +963,21 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="tb-input-group p-2 ">
-                                                    <label class="col-12 input-label"
+                                                    <label class="col-12 input input-label"
                                                         for="dataList">Main<sup>*</sup></label>
-                                                    <input class="col-12" id="" name="" placeholder="Placeholder">
+                                                    <input class="col-12 input" id="" name="" placeholder="Placeholder">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -928,31 +985,39 @@
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label"
                                                         for="dataList">Main<sup>*</sup></label>
-                                                    <input class="col-12" id="" name="" placeholder="Placeholder">
+                                                    <input class="col-12 input" id="" name="" placeholder="Placeholder">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-12">
                                                 <div class="tb-input-group p-2 ">
-                                                    <label class="col-12 input-label"
+                                                    <label class="col-12  input-label"
                                                         for="dataList">Main<sup>*</sup></label>
-                                                    <input class="col-12" id="" name="" placeholder="Placeholder">
+                                                    <input class="col-12 input" id="" name="" placeholder="Placeholder">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -962,9 +1027,10 @@
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
 
                                             </div>
                                             <div class="col-md-6">
@@ -973,9 +1039,10 @@
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="پلیس ہولڈر">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
 
                                             </div>
                                         </div>
@@ -985,7 +1052,7 @@
                                                 <div class="tb-input-group d-flex flex-row-reverse p-3 ">
                                                     <div class="col-9 text-end">
                                                         <label class="col-12" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
                                                             placeholder="نص العنصر النائب" />
                                                     </div>
                                                     <div
@@ -1001,7 +1068,7 @@
                                                 <div class="tb-input-group d-flex flex-row-reverse p-3 ">
                                                     <div class="col-9 text-end">
                                                         <label class="col-12" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
                                                             placeholder="نص العنصر النائب" />
                                                     </div>
                                                     <div
@@ -1017,7 +1084,25 @@
                                                 <div class="tb-input-group d-flex flex-row-reverse p-3 ">
                                                     <div class="col-9 text-end">
                                                         <label class="col-12" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
+                                                            placeholder="نص العنصر النائب" />
+                                                    </div>
+                                                    <div
+                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                        <span class="tb-fs-18">Upload</span>
+                                                        <input id="uploadBtn" type="file" class="upload" />
+                                                    </div>
+                                                </div>
+                                                <p class="error-message">• Error Message</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-12">
+                                                <div class="tb-input-group d-flex flex-row-reverse p-3 ">
+                                                    <div class="col-9 text-end">
+                                                        <label class="col-12" for="input">عنوان*</label>
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
                                                             placeholder="نص العنصر النائب" />
                                                     </div>
                                                     <div
@@ -1033,7 +1118,7 @@
                                                 <div class="tb-input-group d-flex flex-row-reverse p-3 ">
                                                     <div class="col-9 text-end">
                                                         <label class="col-12" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
                                                             placeholder="نص العنصر النائب" />
                                                     </div>
                                                     <div
@@ -1042,22 +1127,7 @@
                                                         <input id="uploadBtn" type="file" class="upload" />
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row my-4">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex flex-row-reverse p-3 ">
-                                                    <div class="col-9 text-end">
-                                                        <label class="col-12" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
-                                                            placeholder="نص العنصر النائب" />
-                                                    </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="uploadBtn" type="file" class="upload" />
-                                                    </div>
-                                                </div>
+                                                نص العنصر النائب
                                             </div>
                                         </div>
                                         <div class="row mt-4">
@@ -1065,20 +1135,26 @@
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان<sup>*</sup></label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
+
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-md-12">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان<sup>*</sup></label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
+
                                         </div>
                                         <h6 class="tb-h4 my-4 text-end">نص العنصر النائب</h6>
                                         <div class="row g-4">
@@ -1086,49 +1162,61 @@
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group p-2 ">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -1161,9 +1249,10 @@
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="dataList">عنوان*</label>
-                                                    <input class="col-12 text-end" id="" name=""
+                                                    <input class="col-12 input text-end" id="" name=""
                                                         placeholder="نص العنصر النائب">
                                                 </div>
+                                                <!-- <p class="error-message">• Error Message</p> -->
 
                                             </div>
                                         </div>
@@ -1172,7 +1261,7 @@
                                                 <div class="tb-input-group d-flex p-3 flex-row-reverse">
                                                     <div class="col-9">
                                                         <label class="col-12 text-end" for="input">عنوان*</label>
-                                                        <input class="col-12 text-end" type="text" id="uploadFile"
+                                                        <input class="col-12 input text-end" type="text" id="uploadFile"
                                                             placeholder="نص العنصر النائب" />
                                                     </div>
                                                     <div
@@ -1511,84 +1600,110 @@
                                             </div>
                                         </div>
                                         <h6 class="tb-h4 my-4">Attachments</h6>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="prl-en">PRL (en)</label>
-                                                        <input class="col-12" type="text" id="prl-en"
-                                                            placeholder="Upload PRL (en) Attachments" />
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">PRL (en)</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-prl-en" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row my-4">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="input">PRL (ar)</label>
-                                                        <input class="col-12" type="text" id="prl-ar"
-                                                            placeholder="Upload PRL (ar) Attachments" />
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">PRL (ar)</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-prl-ar" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row my-4">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="entities-logo">Logos Of all entities
-                                                            (high-res)<sup>*</sup></label>
-                                                        <input class="col-12" type="text" id="entities-logo"
-                                                            placeholder="Upload Imagery (photography, video) Attachments" />
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">Logos of all Entities (high res)*</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-entities-logo" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row my-4">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="imagery">Imagery (photography,
-                                                            videos)</label>
-                                                        <input class="col-12" type="text" id="imagery"
-                                                            placeholder="Upload Imagery (photography, video) Attachments" />
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">Imagery (Photography, Videos)</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-imagery" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row my-4">
-                                            <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="infographics">Infographics</label>
-                                                        <input class="col-12" type="text" id="infographics"
-                                                            placeholder="Upload infographics Attachments" />
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">Infographics</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-infographics" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-12 px-4">
+                                                <div class="col-12">
+                                                    <h5 class="tb-h4">Marketing materials</h5>
+                                                </div>
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1726,19 +1841,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row my-4">
+                                        <div class="row mt-4">
                                             <div class="col-12">
-                                                <div class="tb-input-group d-flex p-3 ">
-                                                    <div class="col-9">
-                                                        <label class="col-12" for="patronage-file">Patronage
-                                                            Request<sup>*</sup></label>
-                                                        <input class="col-12" type="text" id="patronage-file"
-                                                            placeholder="Upload Patronage Request attachment" />
+                                                <div class="pdf-editor d-flex p-3 ">
+                                                    <div class="col-6 d-flex align-items-center">
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
-                                                    <div
-                                                        class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                        <span class="tb-fs-18">Upload</span>
-                                                        <input id="upload-patronage-file" type="file" class="upload" />
+                                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2">
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1749,6 +1862,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
+                    <div class="col-md-6">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send Request</button>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!--create request ends here ------>

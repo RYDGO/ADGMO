@@ -1,5 +1,4 @@
 //input dropdown hide/show
-
 // -------------Dashboard toggle-------------- 
 
 const sidebar = document.querySelector('#sidebar');
@@ -10,33 +9,27 @@ if (sidebar) {
   })
 }
 
-
 // Jquery: dropdown functionality
 $(document).ready(function () {
   $(document).ready(function () {
     $('#exampletable').DataTable();
   });
+
+
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
     $(this).toggleClass('active');
-    $(this).next('.sub-menu').slideToggle();
+    // $(this).next('.sub-menu').toggleClass('show-menu');
+    $(this).next('.sub-menu').toggleClass('show-menu');
     $(this).find('.dropdown').toggleClass('rotate');
+    if ($(this).find('.fa-solid').hasClass('fa-plus')) {
+      $(this).find('.fa-solid').removeClass('fa-plus')
+      $(this).find('.fa-solid').addClass('fa-minus')
+    } else {
+      $(this).find('.fa-solid').addClass('fa-plus')
+    }
   });
 
-    //jquery for toggle sub menus
-    $('.sub-btn').click(function () {
-      $(this).toggleClass('active');
-      // $(this).next('.sub-menu').toggleClass('show-menu');
-      $(this).next('.sub-menu').toggleClass('show-menu');
-      $(this).find('.dropdown').toggleClass('rotate');
-      if ($(this).find('.fa-solid').hasClass('fa-plus')) {
-        $(this).find('.fa-solid').removeClass('fa-plus')
-        $(this).find('.fa-solid').addClass('fa-minus')
-      } else {
-        $(this).find('.fa-solid').addClass('fa-plus')
-  
-      }
-    });
 
   $(".dropdown-input").focus(function () {
     $(".input-dropdown-list").show(1000);
@@ -45,6 +38,20 @@ $(document).ready(function () {
     $(".input-dropdown-list").hide(1000);
   });
 });
+
+$(document).ready(function() {
+  $("input[name$='impacts']").click(function() {
+      var test = $(this).val();
+      if(test=='no'){
+        $(".impact-show").hide();
+      }else{
+        $(".impact-show").show();
+      }
+  });
+});
+
+
+
 var selectedin = ''
 $('.input').focus(function () {
   $(this).parent().children('datalist').css("display", "block")

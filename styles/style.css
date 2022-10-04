@@ -220,6 +220,11 @@
   height: 35px;
 }
 
+.w-h-40 {
+  width: 40px;
+  height: 40px;
+}
+
 .w-h-45 {
   width: 45px;
   height: 45px;
@@ -1677,4 +1682,10 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
 
 .topnav .search-container button:hover {
   background: #ccc;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 0em;
 }

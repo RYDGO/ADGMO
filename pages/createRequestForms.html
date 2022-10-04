@@ -151,13 +151,28 @@
                     </div>
                 </div>
             </div>
-
-            <div class=" d-flex justify-content-between position-relative my-4">
-                <h1 class="tb-h1 col-6">Create Request</h1>
+            <div class="row position-relative">
                 <ul class="nav mb-3" id="pills-tab" role="tablist">
+                    <h1 class="tb-h1 col-6">Create Request</h1>
+                    <li>
+                        <ul class="nav  align-items-center me-4">
+                            <li class="nav-item mx-2" role="presentation">
+                                <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
+                                        src="../assets/images/Icons/icon-comment.svg" alt=""></button>
+                            </li>
+                            <li class="nav-item mx-2" role="presentation">
+                                <button class="btn bg-color-gray  border-0 rounded-pill"><img
+                                        src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn bg-color-gray  border-0 rounded-pill"><img
+                                        src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active btn btn-sm tb-btn-light tb-rounded tb-fs-12" id="pills-english-button"
-                            data-bs-toggle="pill" data-bs-target="#pills-english" role="tab"
+                        <button class="nav-link active btn btn-sm tb-btn-light tb-rounded tb-fs-12"
+                            id="pills-english-button" data-bs-toggle="pill" data-bs-target="#pills-english" role="tab"
                             aria-controls="pills-english" aria-selected="true">English</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -171,9 +186,10 @@
                             aria-controls="pills-dual" aria-selected="false">dual</button>
                     </li>
                 </ul>
+
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
-                    <div class="tab-pane fade show active tb-rounded overflow-hidden" id="pills-english" role="tabpanel"
-                        aria-labelledby="pills-english-tab">
+                    <div class="tab-pane fade show active" id="pills-english" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
                         <div class="accordion" id="accordion-english">
                             <form action="">
                                 <div class="accordion-item">
@@ -182,8 +198,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapse-english-1">Title</button>
                                     </h2>
-                                    <div id="collapse-english-1" class="accordion-collapse collapse show"
-                                        >
+                                    <div id="collapse-english-1" class="accordion-collapse collapse show">
                                         <div class="collapse-inner-bg p-5">
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -315,8 +330,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapse-english-2">Title</button>
                                     </h2>
-                                    <div id="collapse-english-2" class="accordion-collapse collapse show"
-                                        >
+                                    <div id="collapse-english-2" class="accordion-collapse collapse show">
                                         <div class="collapse-inner-bg p-5">
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -388,8 +402,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapse-english-3">Title</button>
                                     </h2>
-                                    <div id="collapse-english-3" class="accordion-collapse collapse show"
-                                        >
+                                    <div id="collapse-english-3" class="accordion-collapse collapse show">
                                         <div class="collapse-inner-bg p-5">
                                             <div class="row">
                                                 <div class="col-12">
@@ -639,8 +652,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapse-english-4">Title</button>
                                     </h2>
-                                    <div id="collapse-english-4" class="accordion-collapse collapse show"
-                                        >
+                                    <div id="collapse-english-4" class="accordion-collapse collapse show">
                                         <div class="collapse-inner-bg p-5">
                                             <div class="col-12 mb-4">
                                                 <h6 class="h6 my-3">Additional relevant information<sup>*</sup></h6>
@@ -691,17 +703,14 @@
                             </form>
                         </div>
                     </div>
-                    <!-- ENGLISH FORM ENDS HERE -->
-                    <div class="tab-pane fade show active tb-rounded overflow-hidden" id="pills-arabic" role="tabpanel"
-                        aria-labelledby="pills-arabic-tab">
+                    <div class="tab-pane fade" id="pills-arabic" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <div class="accordion" id="accordion-arabic">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading-arabic-1">
                                     <button type="button" class="shadow-none accordion-button collapsed"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-arabic-1">Title</button>
                                 </h2>
-                                <div id="collapse-arabic-1" class="accordion-collapse collapse show"
-                                    >
+                                <div id="collapse-arabic-1" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -828,8 +837,7 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-arabic-2">Title</button>
                                 </h2>
-                                <div id="collapse-arabic-2" class="accordion-collapse collapse show"
-                                    >
+                                <div id="collapse-arabic-2" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -897,8 +905,7 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-arabic-3">Title</button>
                                 </h2>
-                                <div id="collapse-arabic-3" class="accordion-collapse collapse show"
-                                    >
+                                <div id="collapse-arabic-3" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="row">
                                             <div class="col-12">
@@ -1132,8 +1139,7 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-arabic-4">Title</button>
                                 </h2>
-                                <div id="collapse-arabic-4" class="accordion-collapse collapse show"
-                                    >
+                                <div id="collapse-arabic-4" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="col-12 mb-4">
                                             <h6 class="h6 my-3 text-end">نص العنصر النائب</h6>
@@ -1183,9 +1189,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ARABIC FORM ENDS HERE -->
-                    <div class="tab-pane fade show active tb-rounded overflow-hidden" id="pills-dual" role="tabpanel"
-                        aria-labelledby="pills-dual-tab">
+                    <div class="tab-pane fade" id="pills-dual" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="accordion" id="accordion-dual">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading-duel-1">
@@ -1198,14 +1202,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Type of Announcement<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Type of
+                                                            Announcement<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1214,34 +1220,39 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Category of Announcement<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Category of
+                                                            Announcement<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="international participation">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <h6 class="h6 my-3">Fill in if this request relates to international participation*<sup>*</sup>
+                                            <h6 class="h6 my-3">Fill in if this request relates to international
+                                                participation*<sup>*</sup>
                                             </h6>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Related Link/Website<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Related
+                                                            Link/Website<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1250,14 +1261,17 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Other EntitiRelated Link/ Website<sup>*</sup>es<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Other
+                                                            EntitiRelated Link/
+                                                            Website<sup>*</sup>es<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="international participation">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1278,7 +1292,8 @@
                                             <div class="col-md-6">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Select Impact</label>
+                                                        <label class="col-12 input-label" for="links">Select
+                                                            Impact</label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
@@ -1287,7 +1302,8 @@
                                             <div class="col-md-6">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Strategic relevance to Abu Dhabi*</label>
+                                                        <label class="col-12 input-label" for="links">Strategic
+                                                            relevance to Abu Dhabi*</label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
@@ -1320,21 +1336,22 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-duel-2">Title</button>
                                 </h2>
-                                <div id="collapse-duel-2" class="accordion-collapse collapse show"
-                                   >
+                                <div id="collapse-duel-2" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Coverage Occurance<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Coverage
+                                                            Occurance<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1343,14 +1360,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Published Date<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Published
+                                                            Date<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1372,14 +1391,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Previously Published News<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Previously
+                                                            Published News<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1388,14 +1409,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Target Published Date<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Target Published
+                                                            Date<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1409,55 +1432,59 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-duel-3">Title</button>
                                 </h2>
-                                <div id="collapse-duel-3" class="accordion-collapse collapse show"
-                                   >
+                                <div id="collapse-duel-3" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="tb-input-group-duel-full p-2">
                                                     <label class="col-12 input-label" for="headline">Main Proposed
                                                         Headline<sup></sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="headline" name="headline"
-                                                        placeholder="Placeholder..">
+                                                    <input class="col-12 collapse-inner-bg" id="headline"
+                                                        name="headline" placeholder="Placeholder..">
                                                 </div>
                                                 <div class="tb-input-group-duel p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="headline-arabic"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end collapse-inner-bg" id="headline-arabic"
-                                                        name="headline-arabic" placeholder="پلیس ہولڈر">
+                                                    <input class="col-12 text-end collapse-inner-bg"
+                                                        id="headline-arabic" name="headline-arabic"
+                                                        placeholder="پلیس ہولڈر">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="tb-input-group-duel-full p-2">
-                                                    <label class="col-12 input-label" for="headline">Subheading<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="headline" name="headline"
-                                                        placeholder="Placeholder..">
+                                                    <label class="col-12 input-label"
+                                                        for="headline">Subheading<sup>*</sup></label>
+                                                    <input class="col-12 collapse-inner-bg" id="headline"
+                                                        name="headline" placeholder="Placeholder..">
                                                 </div>
                                                 <div class="tb-input-group-duel p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="headline-arabic"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end collapse-inner-bg" id="headline-arabic"
-                                                        name="headline-arabic" placeholder="پلیس ہولڈر">
+                                                    <input class="col-12 text-end collapse-inner-bg"
+                                                        id="headline-arabic" name="headline-arabic"
+                                                        placeholder="پلیس ہولڈر">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="tb-input-group-duel-full p-2">
-                                                    <label class="col-12 input-label" for="headline">Key Messages<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="headline" name="headline"
-                                                        placeholder="Placeholder..">
+                                                    <label class="col-12 input-label" for="headline">Key
+                                                        Messages<sup>*</sup></label>
+                                                    <input class="col-12 collapse-inner-bg" id="headline"
+                                                        name="headline" placeholder="Placeholder..">
                                                 </div>
                                                 <div class="tb-input-group-duel p-2">
                                                     <label class="col-12 input-label text-end"
                                                         for="headline-arabic"><sup>*</sup>
                                                         لیبل</label>
-                                                    <input class="col-12 text-end collapse-inner-bg" id="headline-arabic"
-                                                        name="headline-arabic" placeholder="پلیس ہولڈر">
+                                                    <input class="col-12 text-end collapse-inner-bg"
+                                                        id="headline-arabic" name="headline-arabic"
+                                                        placeholder="پلیس ہولڈر">
                                                 </div>
                                             </div>
                                         </div>
@@ -1465,7 +1492,8 @@
                                             <div class="col-md-6">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Select Impact</label>
+                                                        <label class="col-12 input-label" for="links">Select
+                                                            Impact</label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
@@ -1474,7 +1502,8 @@
                                             <div class="col-md-6">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Strategic relevance to Abu Dhabi*</label>
+                                                        <label class="col-12 input-label" for="links">Strategic
+                                                            relevance to Abu Dhabi*</label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
@@ -1568,14 +1597,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Website Link<sup>*</sup></label>
+                                                        <label class="col-12 input-label" for="links">Website
+                                                            Link<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1584,14 +1615,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Remarks<sup>*</sup></label>
+                                                        <label class="col-12 input-label"
+                                                            for="links">Remarks<sup>*</sup></label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1603,8 +1636,8 @@
                                                 <div class="tb-input-group-duel p-2 ">
                                                     <label class="col-12 input-label"
                                                         for="facebook">Facebook<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="facebook" name="facebook"
-                                                        placeholder="Placeholder text">
+                                                    <input class="col-12 collapse-inner-bg" id="facebook"
+                                                        name="facebook" placeholder="Placeholder text">
                                                 </div>
 
                                             </div>
@@ -1620,8 +1653,8 @@
                                                 <div class="tb-input-group-duel p-2 ">
                                                     <label class="col-12 input-label"
                                                         for="instagram">Instagram<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="instagram" name="instagram"
-                                                        placeholder="Placeholder text">
+                                                    <input class="col-12 collapse-inner-bg" id="instagram"
+                                                        name="instagram" placeholder="Placeholder text">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -1638,16 +1671,16 @@
                                                 <div class="tb-input-group-duel p-2 ">
                                                     <label class="col-12 input-label"
                                                         for="linkedin">Linkedin<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="linkedin" name="linkedin"
-                                                        placeholder="Placeholder text">
+                                                    <input class="col-12 collapse-inner-bg" id="linkedin"
+                                                        name="linkedin" placeholder="Placeholder text">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="tb-input-group-duel p-2 ">
                                                     <label class="col-12 input-label"
                                                         for="social-others">Other<sup>*</sup></label>
-                                                    <input class="col-12 collapse-inner-bg" id="social-others" name="social-others"
-                                                        placeholder="Placeholder text">
+                                                    <input class="col-12 collapse-inner-bg" id="social-others"
+                                                        name="social-others" placeholder="Placeholder text">
                                                 </div>
                                             </div>
                                         </div>
@@ -1659,8 +1692,7 @@
                                     <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-duel-4">Title</button>
                                 </h2>
-                                <div id="collapse-duel-4" class="accordion-collapse collapse show"
-                                   >
+                                <div id="collapse-duel-4" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <div class="col-12 mb-4">
                                             <h6 class="h6 my-3">Additional relevant information<sup>*</sup></h6>
@@ -1680,14 +1712,16 @@
                                             <div class="col-md-12">
                                                 <div class="tb-input-group-duel p-2 d-flex justify-content-between">
                                                     <div class="">
-                                                        <label class="col-12 input-label" for="links">Patronage Request Reference</label>
+                                                        <label class="col-12 input-label" for="links">Patronage Request
+                                                            Reference</label>
                                                         <input class="col-12 collapse-inner-bg" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="">
-                                                        <label class="col-12 input-label text-end" for="links"><sup>*</sup>عنوان</label>
-                                                        <input class="col-12 text-end collapse-inner-bg" id="links" name="links"
-                                                            placeholder="نص العنصر النائب">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="links"><sup>*</sup>عنوان</label>
+                                                        <input class="col-12 text-end collapse-inner-bg" id="links"
+                                                            name="links" placeholder="نص العنصر النائب">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1714,7 +1748,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- DUEL FROM ENDS HERE -->
                 </div>
             </div>
         </section>
@@ -1723,9 +1756,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

@@ -122,6 +122,9 @@
 .tb-bg-pink {
   background-color: var(--status-color-pink);
 }
+.tb-bg-body{
+  background-color: var(--body-bg);
+}
 
 
 /* ------- CONTENT STATUS COLORS ---- */
@@ -293,6 +296,24 @@
 
 .text-base-white {
   color: var(--text-base-white) !important;
+}
+.text-gray-100{
+  color: var(--grayshade-100);
+}
+.text-gray-200{
+  color: var(--grayshade-200);
+}
+.text-gray-300{
+  color: var(--grayshade-300);
+}
+.text-gray-400{
+  color: var(--grayshade-400);
+}
+.text-gray-500{
+  color: var(--grayshade-500);
+}
+.text-gray-600{
+  color: var(--grayshade-600);
 }
 
 
@@ -761,6 +782,15 @@ input:focus+.fa {
   background-color: var(--base-white-color);
   border: 1px solid #fff !important;
 }
+.tb-input-group-damn-popup {
+  position: relative;
+  background-color: var(--base-white-color);
+}
+.tb-input-group-damn-popup i {
+  position: absolute;
+  top: 30%;
+}
+
 .pdf-editor{
   border: 1px solid var(--grayshade-100);
   padding: 8px !important;

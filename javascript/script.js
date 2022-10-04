@@ -39,6 +39,19 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+  $("input[name$='impacts']").click(function() {
+      var test = $(this).val();
+      if(test=='no'){
+        $(".impact-show").hide();
+      }else{
+        $(".impact-show").show();
+      }
+  });
+});
+
+
+
 var selectedin = ''
 $('.input').focus(function () {
   $(this).parent().children('datalist').css("display", "block")

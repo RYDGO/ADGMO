@@ -1,5 +1,4 @@
 //input dropdown hide/show
-
 // -------------Dashboard toggle-------------- 
 
 const sidebar = document.querySelector('#sidebar');
@@ -10,33 +9,17 @@ if (sidebar) {
   })
 }
 
-
 // Jquery: dropdown functionality
 $(document).ready(function () {
   $(document).ready(function () {
     $('#exampletable').DataTable();
-});
+  });
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
     $(this).toggleClass('active');
     $(this).next('.sub-menu').slideToggle();
     $(this).find('.dropdown').toggleClass('rotate');
   });
-
-    //jquery for toggle sub menus
-    $('.sub-btn').click(function () {
-      $(this).toggleClass('active');
-      // $(this).next('.sub-menu').toggleClass('show-menu');
-      $(this).next('.sub-menu').toggleClass('show-menu');
-      $(this).find('.dropdown').toggleClass('rotate');
-      if ($(this).find('.fa-solid').hasClass('fa-plus')) {
-        $(this).find('.fa-solid').removeClass('fa-plus')
-        $(this).find('.fa-solid').addClass('fa-minus')
-      } else {
-        $(this).find('.fa-solid').addClass('fa-plus')
-  
-      }
-    });
 
   $(".dropdown-input").focus(function () {
     $(".input-dropdown-list").show(1000);
@@ -45,9 +28,11 @@ $(document).ready(function () {
     $(".input-dropdown-list").hide(1000);
   });
 });
+
 var selectedin = ''
 $('.input').focus(function () {
   $(this).parent().children('datalist').css("display", "block")
+  $(this).parent().addClass('border-dark')
   $(this).css("border-radius", "5px 5px 0 0")
   let input = this
   let datalist = $(this).parent().children('datalist')
@@ -56,6 +41,8 @@ $('.input').focus(function () {
       input.value = this.value
       $(input).css("border-radius", "5px")
       $(datalist).css("display", "none")
+      $(this).parent().removeClass('border-danger')
+      $(this).parent().next().css("display", "none")
     })
   })
 })
@@ -65,6 +52,15 @@ $('.input').on('blur', function () {
   input.value = selectedin
   let datalist = $(this).parent().children('datalist')
   setTimeout(() => {
+    let error = $(this).parent().next()
+    if (!input.value) {
+      $(error).css("display", "block")
+      $(this).parent().removeClass('border-dark')
+      $(this).parent().addClass('border-danger')
+    } else if (input.value) {
+      $(error).css("display", "none")
+      $(this).parent().removeClass('border-danger')
+    }
     $(datalist).css("display", "none")
   }, 300)
 })

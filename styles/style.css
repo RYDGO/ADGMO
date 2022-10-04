@@ -765,6 +765,9 @@ input:focus+.fa {
     position: relative;
     border-bottom: 1px solid var(--grayshade-300);
 }
+.tb-input-group-duel-full {
+    position: relative;
+}
 
 .tb-input-group i {
   position: absolute;

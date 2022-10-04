@@ -8,6 +8,7 @@
   <title>Global Components</title>
 
   <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -195,11 +196,6 @@
           <i class="fa-solid fa-rocket"></i>
         </span>
       </div>
-      <div class="d-flex justify-content-center">
-        <span class="pad-8-12 gray-100 rounded-circle">
-          <i class="fa-sharp fa-solid fa-lock"></i>
-        </span>
-      </div>
     </div>
     <!-------------- Icon Ends Here ------------ -->
     <h1>Grid</h1>
@@ -260,7 +256,7 @@
                 </div>
                 <div class="pt-2">
                   <h4>
-                    Circulars</h3>
+                    Circulars</h4>
                 </div>
               </div>
             </div>
@@ -432,6 +428,7 @@
           <input type="date" class="col-12" id="date">
         </div>
       </div>
+
       <div class="col-md-3">
         <div class="tb-input-group p-2 mt-3 border">
           <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
@@ -445,6 +442,21 @@
           </datalist>
         </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="tb-input-group p-2 mt-3 border">
+          <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
+          <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
+            placeholder="placeholder..">
+          <i class="fa fa-solid fa-angle-down"></i>
+          <datalist id="browsers" role="listbox">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </datalist>
+        </div>
+      </div>
+       
       <div class="col-md-3">
         <div class="tb-input-group d-flex align-items-center p-2 mt-3 border">
           <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
@@ -473,7 +485,6 @@
                   <img src="../assets/images/nodata.png" alt="" class="img-100">
                 </div>
                 <span class="ms-3">Avashesh Jaiswal</span>
-              </li>
               </li>
             </ul>
           </div>
@@ -618,8 +629,8 @@
         <i class="text-white fa-solid fa-arrow-down"></i>
         <h4 class="tb-h5 mb-0 text-white">L4</h4>
       </span>
-      <span class="common-width-label-3 gray-100 tb-rounded-pill d-flex justify-content-center align-items-center">
-        <p class="mb-0">SK</p>
+      <span class="common-width-label-45 gray-100 rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+        <p class="mb-0 bold-paragraph mt-1">SK</p>
       </span>
     </div>
     <!-- Priority Status Labels ends here -->
@@ -799,7 +810,77 @@
     </div>
 
 
-    <div class="row mt-4">
+    <div class="row my-4">
+      <div class="col-4  ">
+        <div>
+          <div class="d-flex">
+            <div class="p-1">
+              <div class="d-flex  justify-content-between py-3 px-1 ">
+                <div class="col-2 position-relative">
+                  <div class="position-absolute red-dot-circle">
+                    <i class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                  </div>
+                  <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+                    class="radius-image">
+                </div>
+              </div>
+            </div>
+            <div class="p-0 mt-3 fw-bold tb-fs-14">
+              <h4> Darrell Steward</h4>
+              <p class=" tb-fs-14 text-base-black">010204 | Title</p>
+            </div>
+            <div class="ms-auto p-0 mt-4">
+              <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+            <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+              class="conv-radius-img" width="20">
+          </div>
+          <div class="width-80 text-start">
+            <p class="m-0"><span class="fw-bold tb-fs-14">Darrell Steward </span></p>
+            <p class="m-0"><span class="tb-fs-14">010204 | Title </span></p>
+          </div>
+          <span class="gray-100 pad-2-9 gray-300-hover h-100">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-between pt-2">
+          <div class="col-11">
+            <p class="tb-fs-12 mb-2 tb-gray-400">Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+              Bokstav fov. </p>
+            <p class="tb-fs-12 tb-gray-400">5 mins ago</p>
+          </div>
+          <img src="../assets/images/akar-icons_double-check.svg" alt="" width="25">
+        </div>
+      </div>
+      <div class="col-8 border-bottom h-100 pb-3 pe-0">
+        <div class="d-flex">
+          <div class="me-2 position-relative">
+            <div class="position-absolute conversation-dot-circle">
+              <i class="fa-sharp fa-solid fa-circle conversation-red-dot fa-xs "></i>
+            </div>
+            <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt=""
+              class="conv-radius-img" width="20">
+          </div>
+          <div class="width-77 conversation-title text-start d-flex align-items-center">
+            <p class="m-0"><span class="fw-bold">Darrell Steward </span></p>
+          </div>
+          <span class="text-end">
+            <p class="tb-fs-12 tb-gray-400">06/25/2019 02:13 AM</p>
+          </span>
+        </div>
+        <div class="pt-3">
+          <div class="col-11">
+            <p class="tb-fs-12 mb-0 text-base-black">Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+              jinade. Bokstav fov. Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-4">
       <div class="col-4  ">
         <div>
           <div class="d-flex">
@@ -829,7 +910,7 @@
               Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
             </p>
             <div class="d-flex justify-content-end">
-              <img src="../assets/images/Vector.svg" alt="" />
+              <img src="../assets/images/Vector.svg" alt="">
             </div>
             <div class="mb-3 border-bottom">
               <p class=" tb-fs-12  ms-2 text-base-black">28 min ago</p>
@@ -864,7 +945,7 @@
               Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
             </p>
             <div class="d-flex justify-content-end">
-              <img src="../assets/images/Vector.svg" alt="" />
+              <img src="../assets/images/Vector.svg" alt="">
             </div>
             <div class="mb-3 border-bottom">
               <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
@@ -899,7 +980,7 @@
               Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
             </p>
             <div class="d-flex justify-content-end">
-              <img src="../assets/images/Vector.svg" alt="" />
+              <img src="../assets/images/Vector.svg" alt="">
             </div>
             <div class="mb-3 border-bottom">
               <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
@@ -934,7 +1015,7 @@
               Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
             </p>
             <div class="d-flex justify-content-end">
-              <img src="../assets/images/Vector.svg" alt="" />
+              <img src="../assets/images/Vector.svg" alt="">
             </div>
             <div class="mb-3 border-bottom ms-2">
               <p class=" tb-fs-12 text-base-black ">28 min ago</p>
@@ -969,7 +1050,7 @@
               Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
             </p>
             <div class="d-flex justify-content-end">
-              <img src="../assets/images/Vector.svg" alt="" />
+              <img src="../assets/images/Vector.svg" alt="">
             </div>
             <div class="mb-3 border-bottom ms-2">
               <p class=" tb-fs-12 text-base-black ">28 min ago</p>
@@ -1142,72 +1223,49 @@
           </div>
         </div>
       </div>
-      <!-- notification modal ends here -->
-      <div class="row">
-        <div class="bg-white w-50 notification-shadow tb-rounded pb-3 mt-4">
+    </div>
+    <!-- conversations ends here -->
+
+    <div class="row my-4">
+      <div class="bg-white w-50 notification-shadow tb-rounded pb-3 mt-4">
+        <div>
           <div>
             <div>
-              <div>
-                <h4 class="p-2 tb-fs-24 mt-3 text-dark-black font-weight-500">Comments</h4>
-              </div>
-              <div class="d-flex mb-3 mt-3">
-                <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Show All</div>
-                <div class="py-2 px-3 mx-1 tb-rounded gray-300 text-white">Show New</div>
-                <div class="ms-auto p-2">
-                  <span class="pad-8-9 gray-100 rounded-circle">
-                    <i class="fa-solid fa-search"></i>
-                  </span>
-                </div>
-                <div class="pt-1 ">
-                  <span class=" ">
-                    <img src="../assets/images/Frame 34003.svg" />
-                  </span>
-                </div>
-              </div>
-              <div class="col-md-12 my-2 mx-0">
-                <div class=" p-2 border">
-                  <label class="col-12 input-label" for="dataList">Type @ to mention someone </label>
-                  <input class="col-12" id="" name="">
-                  <div class="d-flex mt-3">
-                    <div class="p-2">
-                      <span class="pad-8-9 gray-100 rounded-circle">
-                        <i class="fa-sharp fa-solid fa-lock"></i>
-                      </span>
-                    </div>
-                    <div class=" p-2">
-                      <span class="pad-8-9 gray-100 rounded-circle">
-                        <i class="fa-sharp fa-solid fa-paperclip"></i>
-                      </span>
-                    </div>
-                    <div class=" ms-auto py-2 px-3 mx-1 tb-rounded  gray-100 text-white">Cancel</div>
-                    <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
-                  </div>
-                </div>
-              </div>
+              <h4 class="p-2 tb-fs-24 mt-3 text-dark-black font-weight-500">Comments</h4>
             </div>
-            <div class="d-flex mb-3 mt-4">
-              <div class="p-2">
-                <div class="col-2 position-relative">
-                  <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-                </div>
-              </div>
-              <div class="p-2 fw-bold tb-fs-14 position-relative"> Mark Anthony
-                <span class=" position-absolute comment-popup-icon">
-                  <img src="../assets/images/Frame 1368.svg" alt="" class="m-0" />
+            <div class="d-flex mb-3 mt-3">
+              <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Show All</div>
+              <div class="py-2 px-3 mx-1 tb-rounded gray-300 text-white">Show New</div>
+              <div class="ms-auto p-2">
+                <span class="pad-8-9 gray-100 rounded-circle">
+                  <i class="fa-solid fa-search"></i>
                 </span>
-                <p class=" tb-fs-12 tb-gray-400">28 min ago</p>
               </div>
-              <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </span></div>
+              <div class="pt-1 ">
+                <span class=" ">
+                  <img src="../assets/images/Frame 34003.svg">
+                </span>
+              </div>
             </div>
-            <div class="ms-3">
-              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
-                ante iaculis, faucibus
-                velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
-            </div>
-            <div>
-              <img src="../assets/images/Container.svg" alt="" width="100%" />
+            <div class="col-md-12 my-2 mx-0">
+              <div class=" p-2 border">
+                <label class="col-12 input-label" for="dataList">Type @ to mention someone </label>
+                <input class="col-12" id="" name="">
+                <div class="d-flex mt-3">
+                  <div class="p-2">
+                    <span class="pad-8-9 gray-100 rounded-circle">
+                      <i class="fa-sharp fa-solid fa-lock"></i>
+                    </span>
+                  </div>
+                  <div class=" p-2">
+                    <span class="pad-8-9 gray-100 rounded-circle">
+                      <i class="fa-sharp fa-solid fa-paperclip"></i>
+                    </span>
+                  </div>
+                  <div class=" ms-auto py-2 px-3 mx-1 tb-rounded  gray-100 text-white">Cancel</div>
+                  <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="d-flex mb-3 mt-4">
@@ -1216,8 +1274,11 @@
                 <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
               </div>
             </div>
-            <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
-              <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+            <div class="p-2 fw-bold tb-fs-14 position-relative"> Mark Anthony
+              <span class=" position-absolute comment-popup-icon">
+                <img src="../assets/images/Frame 1368.svg" alt="" class="m-0">
+              </span>
+              <p class=" tb-fs-12 tb-gray-400">28 min ago</p>
             </div>
             <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
                 <i class="fa-solid fa-ellipsis"></i>
@@ -1225,30 +1286,53 @@
           </div>
           <div class="ms-3">
             <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
-              ante
-              iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
-            <p class="tb-fs-12 tb-gray-400 border-bottom mt-3">3 Replies</p>
+              ante iaculis, faucibus
+              velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
           </div>
-          <div class="d-flex mb-3 mt-4 ">
-            <div class="p-2">
-              <div class="col-2 position-relative">
-                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-              </div>
+          <div>
+            <img src="../assets/images/Container.svg" alt="" width="100%">
+          </div>
+        </div>
+        <div class="d-flex mb-3 mt-4">
+          <div class="p-2">
+            <div class="col-2 position-relative">
+              <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
             </div>
-            <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
-              <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+          </div>
+          <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+            <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+          </div>
+          <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+              <i class="fa-solid fa-ellipsis"></i>
+            </span></div>
+        </div>
+        <div class="ms-3">
+          <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+            ante
+            iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+          <p class="tb-fs-12 tb-gray-400 border-bottom mt-3">3 Replies</p>
+        </div>
+        <div class="d-flex mb-3 mt-4 ">
+          <div class="p-2">
+            <div class="col-2 position-relative">
+              <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
             </div>
-            <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
-                <i class="fa-solid fa-ellipsis"></i>
-              </span></div>
           </div>
-          <div class="ms-3 text-base-black tb-fs-14">
-            <p class="m-0 border-bottom"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante
-              iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+          <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+            <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
           </div>
+          <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+              <i class="fa-solid fa-ellipsis"></i>
+            </span></div>
+        </div>
+        <div class="ms-3 text-base-black tb-fs-14">
+          <p class="m-0 border-bottom"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante
+            iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
         </div>
       </div>
     </div>
+    <!-- comments ends here -->
+
     <!-- table -->
     <div class="row">
       <!-- column -->
@@ -1276,16 +1360,16 @@
             <!-- title -->
           </div>
           <div class="table-responsive rounded-3 mx-3 mt-1">
-            <table class="table v-middle ">
+            <table id="exampletable" class="table v-middle">
               <thead class="">
                 <tr class="gray-500 text-white text-left">
-                  <th class="fw-light th-pd">ID <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Due Date <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Entity <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Type <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Initator <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Status <i class="fa-solid fa-caret-down mx-1"></i></th>
-                  <th class="fw-light th-pd">Time Remaining <i class="fa-solid fa-caret-down mx-1"></i>
+                  <th class="fw-light th-pd">ID </th>
+                  <th class="fw-light th-pd">Due Date</th>
+                  <th class="fw-light th-pd">Entity</th>
+                  <th class="fw-light th-pd">Type</th>
+                  <th class="fw-light th-pd">Initator</th>
+                  <th class="fw-light th-pd">Status</th>
+                  <th class="fw-light th-pd">Time Remaining
                   </th>
                 </tr>
               </thead>
@@ -1485,7 +1569,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1512,7 +1595,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1550,7 +1632,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1595,7 +1676,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1649,7 +1729,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1676,7 +1755,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1714,7 +1792,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1759,7 +1836,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1813,7 +1889,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
                 <div class="p-2 border">
@@ -1840,7 +1915,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1878,7 +1952,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -1923,7 +1996,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -2008,7 +2080,6 @@
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
                     </li>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -2047,7 +2118,6 @@
                         <img src="../assets/images/nodata.png" alt="" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal</span>
-                    </li>
                     </li>
                   </ul>
                 </div>
@@ -2263,6 +2333,165 @@
     <!-- Scrollable modal -->
     <div class="m-2 p-2">
     </div>
+
+                <!-- Cards tabs English and urdu -->
+                <div class="py-4 d-flex align-items-center justify-content-between">
+                  <div class="col-2">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <a href="#" class="text-decoration-none text-dark">Back</a>
+                  </div>
+                  <div class="d-flex">
+                      <div>
+                          <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                      </div>
+                      <div>
+                          <a href="#" class="text-base-black text-decoration-none">Overview</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class=" d-flex justify-content-between align-items-center  position-relative mt-4 mb-2 px-1">
+                  <h1 class="tb-h1 col-6 text-black">#89349</h1>
+                  <ul class="nav mb-3 align-items-center" id="pills-tab" role="tablist">
+                      <ul class="nav  align-items-center me-4">
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img src="../assets/images/Icons/icon-comment.svg" alt="" ></button>
+                      </li>
+                      <li class="nav-item mx-2" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="btn bg-color-gray  border-0 rounded-pill"><img src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                      </li>
+                  </ul>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active btn btn-sm tb-btn-light tb-rounded" id="pills-home-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                              aria-selected="true">English</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-profile-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                              aria-controls="pills-profile" aria-selected="false">urdu</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-sm tb-btn-light tb-rounded" id="pills-contact-tab"
+                              data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                              aria-controls="pills-contact" aria-selected="false">dual</button>
+                      </li>
+                  </ul>
+              </div>
+
+                <!--under reverse normal cards -->
+
+                <div class="card border-0">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2">
+                          <span
+                              class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                              <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                              <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
+                          </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+
+                <!--under reverse normal cards -->
+
+                <div class="card border-0 my-5">
+                  <div class="card-body">
+                      <div class="card-title d-flex align-items-center pb-2 align-items-center">
+                        <h4 class="me-1 mb-0 tb-fs-22 text-light">#89349843</h4>
+                        <span class="common-width-label-12 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                          <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                          <h4 class="tb-h5 mb-0 tb-orange">IN PROGRESS</h4>
+                        </span>
+                          <span
+                              class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                              <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                              <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                          <span class="common-width-label-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                            <p class="mb-0 bold-paragraph mt-1">SK</p>
+                          </span>
+                          <h6 class="mb-0">Assignee</h6>
+                      </div>
+                      <div class="row">
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                          </div>
+                          <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                          <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                          </div>
+                      </div>
+                          <div class="row">
+                              <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                  <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                  <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                                <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
+                               <img src="../assets/images/Icons/timer-icon.svg" alt="timer-icon" class="me-1 mb-1">
+                                  <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
     <!-- Request Modal starts here -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       Comments Popup
@@ -2392,12 +2621,8 @@
                     Save search
                   </button>
                   <div class="col-4 d-flex justify-content-end">
-                    <button type="button" class="btn-xxs collapse-inner-bg tb-rounded ms-2 tb-fs-12 border-0">
-                      English
-                    </button>
-                    <button type="button" class="btn-xxs bg-white tb-rounded ms-2 tb-fs-12">
-                      يبرع
-                    </button>
+                    <button class="btn btn-sm tb-btn-secondary tb-rounded me-3" type="button">English</button>
+                    <button class="btn btn-sm tb-btn-secondary tb-rounded" type="button">يبرع</button>
                   </div>
                 </div>
                 <div class="col-12 mt-3">
@@ -2676,9 +2901,6 @@
 
   </div>
 
-  </div>
-
-
 
 
   <!-- table -->
@@ -2687,6 +2909,9 @@
 </body>
 <!-- Javascript-files -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/script.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>

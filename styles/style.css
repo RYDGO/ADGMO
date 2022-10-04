@@ -761,6 +761,10 @@ input:focus+.fa {
   background-color: var(--base-white-color);
   border: 1px solid #fff;
 }
+.tb-input-group-duel {
+    position: relative;
+    border-bottom: 1px solid var(--grayshade-300);
+}
 
 .tb-input-group i {
   position: absolute;
@@ -1065,11 +1069,31 @@ body {
 .sidebar-btn {
   width: 215px;
 }
-
-.dropdown-content {
-  padding: 10px 15px;
+.dropdown-content{
   border-bottom: 1px solid #fff;
-  flex-direction: inherit !important;
+  flex-direction: column !important;
+}
+.dropdown-content a{
+  padding: 2px 15px;
+  padding-right: 10px;
+}
+.submenu-inner li:hover, .submenu-inner li a:hover{
+    background-color: #fff !important;
+}
+.nav-link li:hover, .nav-link li a:hover{
+    background-color: #fff !important;
+}
+.dropdown-content-inner{
+  border-bottom: 1px solid #fff;
+}
+.dropdown-content-inner a{
+  padding: 2px 15px;
+}
+.sub-menu .submenu-inner li:last-child{
+    border-bottom: none !important;
+}
+.submenu-inner{
+    padding-bottom: 0 !important;
 }
 
 .dropdown-main .active {
@@ -1185,6 +1209,8 @@ header .image-text .profession {
     text-decoration: none;
     /* transition: var(--tran-03); */
     white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .sidebar li a:hover {
@@ -1443,10 +1469,10 @@ header .image-text .profession {
 
 /* radio button styles */
 
-#SpecifyColor {
-  accent-color: red;
-  width: 17px;
-  height: 17px;
+input[type='radio']{
+    accent-color: red;
+    width: 17px;
+    height: 17px;
 }
 
 .sidebar.active~.main-section {
@@ -1509,6 +1535,23 @@ header .image-text .profession {
 .sub-menu {
   display: none;
   background-color: var(--grayshade-100);
+}
+
+.show-menu {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .unselected {

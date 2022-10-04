@@ -14,13 +14,22 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('#exampletable').DataTable();
   });
-  
+
+
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
     $(this).toggleClass('active');
-    $(this).next('.sub-menu').slideToggle();
+    // $(this).next('.sub-menu').toggleClass('show-menu');
+    $(this).next('.sub-menu').toggleClass('show-menu');
     $(this).find('.dropdown').toggleClass('rotate');
+    if ($(this).find('.fa-solid').hasClass('fa-plus')) {
+      $(this).find('.fa-solid').removeClass('fa-plus')
+      $(this).find('.fa-solid').addClass('fa-minus')
+    } else {
+      $(this).find('.fa-solid').addClass('fa-plus')
+    }
   });
+
 
   $(".dropdown-input").focus(function () {
     $(".input-dropdown-list").show(1000);

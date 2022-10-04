@@ -216,6 +216,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
@@ -232,6 +233,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -244,10 +246,10 @@
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="links">Related Links /
                                                             Website<sup>*</sup></label>
-                                                        <input class="col-12" id="links" name="links"
+                                                        <input class="col-12 input" id="links" name="links"
                                                             placeholder="Placeholder..">
                                                     </div>
-
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
@@ -262,6 +264,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row gy-2 my-2">
@@ -276,15 +279,17 @@
                                                         value="no">
                                                     <label for="impact2">No</label>
                                                 </div>
+                                                <p class="error-message">• Error Message</p>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="impact">Select
                                                             Impact</label>
-                                                        <input class="col-12" id="impact" name="impact"
+                                                        <input class="col-12 input" id="impact" name="impact"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <!-- <p class="error-message">• Error Message</p> -->
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2 ">
@@ -300,6 +305,7 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -321,7 +327,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -346,14 +351,18 @@
                                                             <option value="3">3</option>
                                                         </datalist>
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label" for="published-date">Published
                                                             Date<sup>*</sup></label>
-                                                        <input type="date" class="col-12" name="published-date"
+                                                        <input type="date" class="col-12 input" name="published-date"
                                                             id="published-date">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="col-12 mb-4">
@@ -376,9 +385,10 @@
                                                         <label class="col-12 input-label"
                                                             for="published-news">Previously
                                                             Published News<sup>*</sup></label>
-                                                        <input class="col-12" id="published-news" name="published-news"
+                                                        <input class="col-12 input" id="published-news" name="published-news"
                                                             placeholder="Placeholder..">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
 
                                                 </div>
                                                 <div class="col-md-6">
@@ -387,9 +397,11 @@
                                                             for="target-published-date">Target
                                                             Published
                                                             Date<sup>*</sup></label>
-                                                        <input type="date" class="col-12" id="target-published-date"
+                                                        <input type="date" class="col-12 input" id="target-published-date"
                                                             name="target-published-date">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -409,7 +421,7 @@
                                                     <div class="tb-input-group p-2 ">
                                                         <label class="col-12 input-label" for="headline">Main Proposed
                                                             Headline<sup></sup></label>
-                                                        <input class="col-12" id="headline" name="headline"
+                                                        <input class="col-12 input" id="headline" name="headline"
                                                             placeholder="Placeholder..">
                                                     </div>
                                                     <div class="tb-input-group p-2">
@@ -419,6 +431,8 @@
                                                         <input class="col-12 text-end" id="headline-arabic"
                                                             name="headline-arabic" placeholder="پلیس ہولڈر">
                                                     </div>
+                                                    <p class="error-message">• Error Message</p>
+
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -1779,7 +1793,7 @@
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send Request</button>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <!--create request ends here ------>

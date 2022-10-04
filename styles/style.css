@@ -35,6 +35,7 @@
   --para-disabled: #808191;
   --grayshade-700: #EAEEF3;
   /*----- TYPOGRAPHY ----- */
+  --text-copyright: #EA3F47;
   --text-base-black: #393939;
   --text-base-white: #ffffff;
   --text-base-gary: #8c8c8c;
@@ -75,7 +76,9 @@
 }
 
 /* --- PRIMARY COLORS --- */
-
+.tb-copyright{
+  color: var(--text-copyright);
+}
 .tb-primary {
   color: var(--base-color) !important;
 }

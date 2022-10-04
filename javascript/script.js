@@ -14,6 +14,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('#exampletable').DataTable();
   });
+  
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
     $(this).toggleClass('active');

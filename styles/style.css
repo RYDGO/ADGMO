@@ -33,6 +33,7 @@
   --grayshade-500: #37474f;
   --grayshade-600: #fbfbfb;
   --para-disabled: #808191;
+  --grayshade-700: #EAEEF3;
   /*----- TYPOGRAPHY ----- */
   --text-base-black: #393939;
   --text-base-white: #ffffff;
@@ -210,6 +211,11 @@
   height: 35px;
 }
 
+.w-h-40 {
+  width: 40px;
+  height: 40px;
+}
+
 .w-h-45 {
   width: 45px;
   height: 45px;
@@ -244,6 +250,7 @@
   width: 45px;
   height: 45px;
 }
+
 .common-width-label-40 {
   width: 40px;
   height: 40px;
@@ -467,6 +474,11 @@
   background-color: #f9f9f9 !important;
 }
 
+.gray-700 {
+  background-color: var(--grayshade-700);
+}
+
+
 /* ---- GRAY BORDER COLORS ---- */
 
 .border-gray-100 {
@@ -536,6 +548,7 @@
 .tb-rounded {
   border-radius: 8px !important;
 }
+
 .tb-rounded-10 {
   border-radius: 10px !important;
 }
@@ -1592,30 +1605,31 @@ input[type="radio"] {
   box-sizing: border-box;
 }
 
-table.dataTable thead > tr > th.sorting:before,
-table.dataTable thead > tr > th.sorting_asc:before,
-table.dataTable thead > tr > th.sorting_desc:before,
-table.dataTable thead > tr > th.sorting_asc_disabled:before,
-table.dataTable thead > tr > th.sorting_desc_disabled:before,
-table.dataTable thead > tr > td.sorting:before,
-table.dataTable thead > tr > td.sorting_asc:before,
-table.dataTable thead > tr > td.sorting_desc:before,
-table.dataTable thead > tr > td.sorting_asc_disabled:before,
-table.dataTable thead > tr > td.sorting_desc_disabled:before {
+table.dataTable thead>tr>th.sorting:before,
+table.dataTable thead>tr>th.sorting_asc:before,
+table.dataTable thead>tr>th.sorting_desc:before,
+table.dataTable thead>tr>th.sorting_asc_disabled:before,
+table.dataTable thead>tr>th.sorting_desc_disabled:before,
+table.dataTable thead>tr>td.sorting:before,
+table.dataTable thead>tr>td.sorting_asc:before,
+table.dataTable thead>tr>td.sorting_desc:before,
+table.dataTable thead>tr>td.sorting_asc_disabled:before,
+table.dataTable thead>tr>td.sorting_desc_disabled:before {
   content: "";
   color: var(--text-base-white);
   opacity: 1;
 }
-table.dataTable thead > tr > th.sorting:after,
-table.dataTable thead > tr > th.sorting_asc:after,
-table.dataTable thead > tr > th.sorting_desc:after,
-table.dataTable thead > tr > th.sorting_asc_disabled:after,
-table.dataTable thead > tr > th.sorting_desc_disabled:after,
-table.dataTable thead > tr > td.sorting:after,
-table.dataTable thead > tr > td.sorting_asc:after,
-table.dataTable thead > tr > td.sorting_desc:after,
-table.dataTable thead > tr > td.sorting_asc_disabled:after,
-table.dataTable thead > tr > td.sorting_desc_disabled:after {
+
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting_asc:after,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>th.sorting_asc_disabled:after,
+table.dataTable thead>tr>th.sorting_desc_disabled:after,
+table.dataTable thead>tr>td.sorting:after,
+table.dataTable thead>tr>td.sorting_asc:after,
+table.dataTable thead>tr>td.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc_disabled:after,
+table.dataTable thead>tr>td.sorting_desc_disabled:after {
   top: 40%;
   color: var(--text-base-white);
   opacity: 1;
@@ -1667,4 +1681,12 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
   color: var(--base-color);
   margin-left: 5px;
   display: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+/* DAM View styles starts  */
+}
+.view-card-border {
+  border: 2px solid #EDEDED;
 }

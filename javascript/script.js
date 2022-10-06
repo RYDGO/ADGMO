@@ -1,81 +1,108 @@
 //input dropdown hide/show
+// -------------Dashboard toggle--------------
 
-// -------------Dashboard toggle-------------- 
-
-const sidebar = document.querySelector('#sidebar');
-if(sidebar) {
+const sidebar = document.querySelector("#sidebar");
+if (sidebar) {
   const toggle = document.querySelector("#sidebarToggle");
-    toggle.addEventListener("click", () => {
+  toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
-  })
+  });
 }
 
-
 // Jquery: dropdown functionality
-$(document).ready(function(){
-  $(".dropdown-input").focus(function(){
+$(document).ready(function () {
+    $("#exampletable").DataTable({
+      "pagingType": "simple",
+      oLanguage: {
+        oPaginate: {
+            sNext: "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-right'></i> </span>",
+            sPrevious: "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-left'></i> </span>"
+        }
+    }
+  });
+
+  //jquery for toggle sub menus
+  $(".sub-btn").click(function () {
+    $(this).toggleClass("active");
+    // $(this).next('.sub-menu').toggleClass('show-menu');
+    $(this).next(".sub-menu").toggleClass("show-menu");
+    $(this).find(".dropdown").toggleClass("rotate");
+    if ($(this).find(".fa-solid").hasClass("fa-plus")) {
+      $(this).find(".fa-solid").removeClass("fa-plus");
+      $(this).find(".fa-solid").addClass("fa-minus");
+    } else {
+      $(this).find(".fa-solid").addClass("fa-plus");
+    }
+  });
+
+  $(".dropdown-input").focus(function () {
     $(".input-dropdown-list").show(1000);
   });
-  $(".dropdown-input").blur(function(){
+  $(".dropdown-input").blur(function () {
     $(".input-dropdown-list").hide(1000);
   });
 });
 
-//  input dropdown hide / show
-input.onfocus = function () {
-    browsers.style.display = "block";
-    input.style.borderRadius = "5px 5px 0 0";
-  };
-
-  for (let option of browsers.options) {
-    option.onclick = function () {
-      input.value = option.value;
-      browsers.style.display = "none";
-      input.style.borderRadius = "5px";
-    };
-  }
-
-
-  input.oninput = function () {
-    currentFocus = -1;
-    var text = input.value.toUpperCase();
-    for (let option of browsers.options) {
-      if (option.value.toUpperCase().indexOf(text) > -1) {
-        option.style.display = "block";
-      } else {
-        option.style.display = "none";
-      }
+$(document).ready(function () {
+  $("input[name$='impacts']").click(function () {
+    var test = $(this).val();
+    if (test == "no") {
+      $(".impact-show").hide();
+    } else {
+      $(".impact-show").show();
     }
-  };
-  var currentFocus = -1;
-  input.onkeydown = function (e) {
-    if (e.keyCode == 40) {
-      currentFocus++;
-      addActive(browsers.options);
-    } else if (e.keyCode == 38) {
-      currentFocus--;
-      addActive(browsers.options);
-    } else if (e.keyCode == 13) {
-      e.preventDefault();
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (browsers.options) browsers.options[currentFocus].click();
-      }
+  });
+});
+
+var selectedin = "";
+$(".input").focus(function () {
+  $(this).parent().children("datalist").css("display", "block");
+  $(this).parent().addClass("border-dark");
+  $(this).css("border-radius", "5px 5px 0 0");
+  let input = this;
+  let datalist = $(this).parent().children("datalist");
+  $(this)
+    .parent()
+    .children("datalist")
+    .find("option")
+    .each(function () {
+      $(this).click(() => {
+        input.value = this.value;
+        $(input).css("border-radius", "5px");
+        $(datalist).css("display", "none");
+        $(this).parent().removeClass("border-danger");
+        $(this).parent().next().css("display", "none");
+      });
+    });
+});
+
+$(".input").on("blur", function () {
+  let input = this;
+  input.value = selectedin;
+  let datalist = $(this).parent().children("datalist");
+  setTimeout(() => {
+    let error = $(this).parent().next();
+    if (!input.value) {
+      $(error).css("display", "block");
+      $(this).parent().removeClass("border-dark");
+      $(this).parent().addClass("border-danger");
+    } else if (input.value) {
+      $(error).css("display", "none");
+      $(this).parent().removeClass("border-danger");
     }
-  };
+    $(datalist).css("display", "none");
+  }, 300);
+});
 
-  function addActive(x) {
-    if (!x) return false;
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = x.length - 1;
-    x[currentFocus].classList.add("active");
-  }
-  function removeActive(x) {
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("active");
+$(".input").on("input", function () {
+  currentFocus = -1;
+  var text = this.value.toUpperCase();
+  let option = $(this).parent().children("datalist").find("option");
+  option.each(function () {
+    if (this.value.toUpperCase().indexOf(text) > -1) {
+      $(this).css("display", "block");
+    } else {
+      $(this).css("display", "none");
     }
-  }
-
-
-
+  });
+});

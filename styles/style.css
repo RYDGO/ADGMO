@@ -689,21 +689,29 @@
 .tb-btn-light {
     background-color: var(--btn-bg-light) !important;
     color: var(--btn-bg-default) !important;
+    border: 1px solid #fff;
+
 }
 
 .tb-btn-light:hover {
     background-color: var(--btn-bg-disabled) !important;
     color: var(--btn-bg-hover) !important;
+    border: 1px solid var(--btn-bg-disabled);
+
 }
 
 .tb-btn-light:active {
     background-color: var(--btn-bg-black) !important;
     color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-black) !important;
+
 }
 
 .tb-btn-light.active {
     background-color: var(--base-black-color) !important;
     color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-black);
+
 }
 
 .tb-btn-light:disabled {

@@ -1645,10 +1645,7 @@ input[type="radio"] {
   display: none;
 }
 
-#exampletable_info,
-#exampletable_paginate {
-  display: none !important;
-}
+
 #exampletable {
   margin: 0 !important;
   padding: 0 !important;
@@ -1740,4 +1737,12 @@ body::-webkit-scrollbar {
 }
 .view-card-border {
   border: 2px solid #EDEDED;
+}
+
+.table-pagination-style{
+    background: var(--grayshade-100);
+    padding:var(--pad-8-12);
+}
+.table-pagination-style:hover{
+    background: var(--gray-300-hover);
 }

@@ -171,3 +171,7 @@
   background-color: transparent;
 }
 
+#exampletable_info,
+#exampletable_paginate {
+  display: none !important;
+}

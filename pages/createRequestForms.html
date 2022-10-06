@@ -21,6 +21,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
@@ -131,7 +132,7 @@
         </nav>
         <!--sidebar ends here -->
         <section class="main-section ">
-            <div class="py-2 d-flex align-items-center justify-content-between">
+            <div class="py-4 d-flex align-items-center justify-content-between">
                 <div class="col-2">
                     <i class="fa-solid fa-arrow-left"></i>
                     <a href="#" class="text-decoration-none text-dark">Back</a>
@@ -150,47 +151,47 @@
                     </div>
                 </div>
             </div>
-            <div class="row position-relative">
-                <ul class="nav mb-3" id="pills-tab" role="tablist">
-                    <h1 class="tb-h1 col-6">Create Request</h1>
-                    <li>
-                        <ul class="nav  align-items-center me-4">
-                            <li class="nav-item mx-2" role="presentation">
-                                <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-comment.svg" alt=""></button>
-                            </li>
-                            <li class="nav-item mx-2" role="presentation">
-                                <button class="btn bg-color-gray  border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-time.svg" alt=""></button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn bg-color-gray  border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-albums.svg" alt=""></button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active btn btn-sm tb-btn-light tb-rounded tb-fs-12"
-                            id="pills-english-button" data-bs-toggle="pill" data-bs-target="#pills-english" role="tab"
-                            aria-controls="pills-english" aria-selected="true">English</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12" id="pills-arabic-button"
-                            data-bs-toggle="pill" data-bs-target="#pills-arabic" type="button" role="tab"
-                            aria-controls="pills-arabic" aria-selected="false">urdu</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12" id="pills-dual-button"
-                            data-bs-toggle="pill" data-bs-target="#pills-dual" type="button" role="tab"
-                            aria-controls="pills-dual" aria-selected="false">dual</button>
-                    </li>
-                </ul>
+            <div class="row position-relative my-3">
+                    <ul class="nav ps-2" id="pills-tab" role="tablist">
+                        <ul class="tb-h1 col-7 p-0">Create Request</ul>
+                        <li class="col-2">
+                            <ul class="nav  align-items-center me-4">
+                                <li class="nav-item mx-2" role="presentation">
+                                    <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
+                                            src="../assets/images/Icons/icon-comment.svg" alt=""></button>
+                                </li>
+                                <li class="nav-item mx-2" role="presentation">
+                                    <button class="btn bg-color-gray  border-0 rounded-pill"><img
+                                            src="../assets/images/Icons/icon-time.svg" alt=""></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn bg-color-gray  border-0 rounded-pill"><img
+                                            src="../assets/images/Icons/icon-albums.svg" alt=""></button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active btn btn-md tb-btn-light tb-rounded tb-fs-12"
+                                id="pills-english-button" data-bs-toggle="pill" data-bs-target="#pills-english"
+                                role="tab" aria-controls="pills-english" aria-selected="true">English</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12"
+                                id="pills-arabic-button" data-bs-toggle="pill" data-bs-target="#pills-arabic"
+                                type="button" role="tab" aria-controls="pills-arabic"
+                                aria-selected="false">urdu</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12" id="pills-dual-button"
+                                data-bs-toggle="pill" data-bs-target="#pills-dual" type="button" role="tab"
+                                aria-controls="pills-dual" aria-selected="false">dual</button>
+                        </li>
+                    </ul>
 
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-english" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        <div class="accordion" id="accordion-english">
-                            <form action="">
+                        <div class="accordion" id="accordion-english-1">                         
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading-english-1">
                                         <button type="button" class="shadow-none accordion-button collapsed"
@@ -327,7 +328,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                                          
+                        </div>
+                        <div class="accordion pt-4" id="accordion-english-2">
+                           
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading-english-2">
                                         <button type="button" class="shadow-none accordion-button"
@@ -407,6 +411,10 @@
 
                                     </div>
                                 </div>
+                               
+                        </div>
+                        <div class="accordion" id="accordion-english-3">
+                           
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading-english-3">
                                         <button type="button" class="shadow-none accordion-button"
@@ -589,6 +597,24 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="row my-4">
+                                                <div class="col-12">
+                                                    <div class="tb-input-group d-flex p-3 ">
+                                                        <div class="col-9">
+                                                            <label class="col-12"
+                                                                for="infographics">Marketing Materials</label>
+                                                            <input class="col-12" type="text" id="infographics"
+                                                                placeholder="Upload Marketing materials Attachments" />
+                                                        </div>
+                                                        <div
+                                                            class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                            <span class="tb-fs-18">Upload</span>
+                                                            <input id="upload-infographics" type="file"
+                                                                class="upload" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="row mt-4">
                                                 <div class="col-md-12">
 
@@ -682,6 +708,10 @@
                                         </div>
                                     </div>
                                 </div>
+                              
+                        </div>
+                        <div class="accordion" id="accordion-english-4">
+                           
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading-english-4">
                                         <button type="button" class="shadow-none accordion-button"
@@ -738,7 +768,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                           
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-arabic" role="tabpanel" aria-labelledby="pills-profile-tab">

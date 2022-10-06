@@ -689,21 +689,29 @@
 .tb-btn-light {
     background-color: var(--btn-bg-light) !important;
     color: var(--btn-bg-default) !important;
+    border: 1px solid #fff;
+
 }
 
 .tb-btn-light:hover {
     background-color: var(--btn-bg-disabled) !important;
     color: var(--btn-bg-hover) !important;
+    border: 1px solid var(--btn-bg-disabled);
+
 }
 
 .tb-btn-light:active {
     background-color: var(--btn-bg-black) !important;
     color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-black) !important;
+
 }
 
 .tb-btn-light.active {
     background-color: var(--base-black-color) !important;
     color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-black);
+
 }
 
 .tb-btn-light:disabled {
@@ -1645,10 +1653,7 @@ input[type="radio"] {
   display: none;
 }
 
-#exampletable_info,
-#exampletable_paginate {
-  display: none !important;
-}
+
 #exampletable {
   margin: 0 !important;
   padding: 0 !important;
@@ -1740,4 +1745,12 @@ body::-webkit-scrollbar {
 }
 .view-card-border {
   border: 2px solid #EDEDED;
+}
+
+.table-pagination-style{
+    background: var(--grayshade-100);
+    padding:var(--pad-8-12);
+}
+.table-pagination-style:hover{
+    background: var(--gray-300-hover);
 }

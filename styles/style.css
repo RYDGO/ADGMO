@@ -236,6 +236,11 @@
     height: 25px;
 }
 
+.w-h-20 {
+    width: 20px;
+    height: 20px;
+}
+
 .common-width-label-11 {
     width: 11%;
 }
@@ -451,10 +456,6 @@
 
 .img-cover {
     object-fit: cover;
-}
-
-.img-100 {
-    width: 100%;
 }
 
 /* ---- Icon-border --- */

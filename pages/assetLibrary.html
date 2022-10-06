@@ -280,14 +280,14 @@
         <form class="col-6">
           <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white">
 
-            <button type="button" class="btn btn-light" data-bs-toggle="modal"
+            <button type="button" class="btn btn-light border-0 bg-transparent" data-bs-toggle="modal"
               data-bs-target="#exampleModal-attachment-pdf" data-bs-whatever="@mdo"><img
                 src="../assets/images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
 
             <div class="modal modal-lg fade" id="exampleModal-attachment-pdf" tabindex="-1"
               aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content tb-bg-body border-0">
+              <div class="modal-dialog me-5">
+                <div class="modal-content tb-bg-body input-modal-box">
                   <div class="modal-body py-0">
                     <div class="row mb-4 pt-3">
                       <div class="col-5 d-flex align-items-start pe-0">
@@ -342,12 +342,12 @@
               </div>
             </div>
             <input class="bg-transparent input-group w-100 fs-5" type="text" placeholder="Requests" name="search">
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal-damn"
-              data-bs-whatever="@mdo"><i class="fa-solid fa-sliders"></i></button>
+            <button type="button" class="btn btn-light bg-white border-0" data-bs-toggle="modal" data-bs-target="#exampleModal-damn"
+              data-bs-whatever="@mdo"><img src="../assets/images/Icons/sliders-horizontal.svg" alt=""></button>
             <div class="modal fade" id="exampleModal-damn" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content tb-bg-body">
+              <div class="modal-dialog me-5">
+                <div class="modal-content tb-bg-body input-modal-box">
                   <div class="modal-header">
                     <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
                       aria-label="Close"></button>
@@ -457,8 +457,8 @@
           <div class="d-flex">
             <div class=" d-flex align-items-center">
               <h6 class="fw-light mx-2 m-0 p-0">View:</h6>
-              <div class="form-floating px-1 collapse-inner-bg ">
-                <select class="tb-input-group ps-2 pe-5 py-1 collapse-inner-bg" id="floatingSelectGrid">
+              <div class="form-floating gray-800">
+                <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
                   <option selected>5</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -469,8 +469,8 @@
             </div>
             <div class=" d-flex align-items-center">
               <h6 class="fw-light mx-2 m-0 p-0">Filter by:</h6>
-              <div class="form-floating px-1 collapse-inner-bg ">
-                <select class="tb-input-group ps-2 pe-5 py-1 collapse-inner-bg" id="floatingSelectGrid">
+              <div class="form-floating gray-800 ">
+                <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
                   <option selected>All</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -481,15 +481,15 @@
             </div>
             <div class="vartical-line mx-3"></div>
             <div class=" d-flex align-items-center">
-              <ul class="nav nav-pills " id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active btn btn-secondary border text-black" id="pills-home-tab"
+              <ul class="nav nav-pills p-1 gray-800" id="pills-tab" role="tablist">
+                <li class="" role="presentation">
+                  <button class="nav-link active btn btn-secondary text-black" id="pills-home-tab"
                     data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
                     aria-controls="pills-home" aria-selected="true"><img src="../assets/images/Icons/list-icon.svg"
                       alt="list-icon" class="me-2">list</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link btn btn-secondary border text-black" id="pills-profile-tab"
+                <li class="" role="presentation">
+                  <button class="nav-link btn btn-secondary text-black" id="pills-profile-tab"
                     data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
                     aria-controls="pills-profile" aria-selected="false"><img src="../assets/images/Icons/grid-icon.svg"
                       alt="grid-icon" class="me-2">Grid</button>
@@ -497,7 +497,7 @@
               </ul>
             </div>
             <div class=" d-flex align-items-center">
-              <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white"><img src="../assets/images/Icons/Chart-icon.svg"
+              <div class="py-2 px-3 mx-1 tb-rounded tb-btn-primary text-white"><img src="../assets/images/Icons/Chart-icon.svg"
                   alt="grid-icon" class="me-2">Upload</div>
             </div>
           </div>
@@ -569,7 +569,7 @@
                           <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-xl">
-                              <div class="modal-content box-shadow-popup mx-5">
+                              <div class="modal-content tb-bg-body input-modal-box border-0">
                                 <div class="row modal-header p-4 pb-0 d-flex pe-5">
                                   <div class="col-9 text-end pe-0">
                                     <h5 class="modal-title tb-h3 text-black me-2" id="exampleModalLabel">Properties</h5>

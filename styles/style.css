@@ -1683,8 +1683,7 @@ input[type="radio"] {
     display: none;
 }
 
-#exampletable_info,
-#exampletable_paginate {
+#exampletable_info{
     display: none !important;
 }
 

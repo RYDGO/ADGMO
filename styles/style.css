@@ -1683,13 +1683,10 @@ input[type="radio"] {
     display: none;
 }
 
-<<<<<<< HEAD
 #exampletable_info,
 #exampletable_paginate {
     display: none !important;
 }
-=======
->>>>>>> a0b592c3e316ac627cb131b829bc02a8a763ab39
 
 #exampletable {
     margin: 0 !important;
@@ -1782,7 +1779,6 @@ body::-webkit-scrollbar {
 }
 
 .view-card-border {
-<<<<<<< HEAD
     border: 2px solid #EDEDED;
 }
 
@@ -1793,7 +1789,6 @@ body::-webkit-scrollbar {
     position: absolute !important;
     right: 17% !important;
     top: 200px !important;
-=======
   border: 2px solid #EDEDED;
 }
 
@@ -1803,5 +1798,4 @@ body::-webkit-scrollbar {
 }
 .table-pagination-style:hover{
     background: var(--gray-300-hover);
->>>>>>> a0b592c3e316ac627cb131b829bc02a8a763ab39
 }

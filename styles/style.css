@@ -597,6 +597,10 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+.tb-rounded-bottom-lr {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 
 .tb-rounded-pill {
     border-radius: 64px;
@@ -998,6 +1002,10 @@ option:hover,
     font-weight: var(--font-weight-500);
 }
 
+.font-weight-800 {
+    font-weight: var(--font-weight-800);
+}
+
 .comment-popup-icon {
     padding-left: 8px;
     margin-top: -8px;
@@ -1150,6 +1158,12 @@ body {
 
 .dropdown-content-inner {
     border-bottom: 1px solid #fff;
+}
+.dropdown-content-inner-box {
+    border-bottom: 2px solid #F4F4F4;
+}
+.border-bottom-5{
+    border-bottom: 1px solid #8a8282;
 }
 
 .dropdown-content-inner a {
@@ -1797,4 +1811,11 @@ body::-webkit-scrollbar {
 }
 .table-pagination-style:hover{
     background: var(--gray-300-hover);
+}
+
+
+
+.text-cover-onimage{
+    bottom: 8px;
+    color: white;
 }

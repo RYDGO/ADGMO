@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>workload</title>
+    <title>workload2</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -318,17 +318,17 @@
                 </div>
             </div>
             <div class="home-content pb-3">
-                <h1 class="tb-h1">Requests</h1>
+                <h1 class="tb-h1">Deliverables</h1>
                 <ul class="nav my-3 border" id="pills-tab" role="tablist">
                     <li class="nav-item m-0 " role="presentation">
                         <button class="nav-link active  tab-btn-btn" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Department Request</button>
+                            aria-selected="false">Deliverables In Progress</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link  tab-btn-btn" id="pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">Assigned to me</button>
+                            aria-selected="true">Approval Required</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link tab-btn-btn" id="pills-contact-tab" data-bs-toggle="pill"
@@ -340,9 +340,14 @@
                             data-bs-target="#pills-contact-2" type="button" role="tab" aria-controls="pills-contact-2"
                             aria-selected="false">Conversations</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-btn-btn" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact-3" type="button" role="tab" aria-controls="pills-contact-3"
+                            aria-selected="false">Drafts</button>
+                    </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    <div class="tab-pane fade" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
                         <div class="container text-center">
                             <div class="row align-items-center">
@@ -1009,13 +1014,13 @@
                         </div>
                         <!-- table ends here -- -->
                     </div>
-
-
                     <!-- department request tab end -->
 
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <!-- table -->
 
+
+
+                    <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <!-- table -->
                         <div class="row">
                             <!-- column -->
                             <div class="col-12">
@@ -1024,41 +1029,20 @@
                                         <!-- title -->
                                         <div class="d-md-flex align-items-center px-1">
                                             <div>
-                                                <h4 class="card-title tb-h3 pt-3 tb-bold">Department Requests</h4>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="w-h-40  rounded-circle flex-center img-cover">
-                                                        <img src="../../assets/images/Icons/rocket.svg"
-                                                            alt="icon-warning" class="w-100">
-                                                    </div>
-                                                    <h6 class="tb-h6 m-0 ms-2">
-                                                        200 in progress
-                                                    </h6>
-                                                    <div class="w-h-40  rounded-circle flex-center img-cover  ms-2">
-                                                        <img src="../../assets/images/Icons/rocket.svg"
-                                                            alt="icon-warning" class="w-100">
-                                                    </div>
-                                                    <h6 class="tb-h6 m-0 ms-2">
-                                                        67 Not Started
-                                                    </h6>
-                                                </div>
+                                                <h4 class="card-title tb-h3 pt-3 tb-bold">All Approvals</h4>
+
                                             </div>
                                             <div class="ms-auto d-flex justify-content-between align-items-center">
                                                 <div class="d-flex justify-content-center">
-                                                    <div class="w-h-40  rounded-circle flex-center img-cover me-2">
-                                                        <img src="../../assets/images/Icons/filter.svg"
-                                                            alt="icon-warning" class="w-100">
-                                                    </div>
+
                                                     <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                         <img src="../../assets/images/Icons/search.svg"
                                                             alt="icon-warning" class="w-100">
                                                     </div>
                                                 </div>
-
-
                                             </div>
                                             <div class="dl mx-3">
-                                                <button class="btn btn-lg tb-btn-secondary tb-rounded"
-                                                    type="button">Edit Assignee</button>
+
                                             </div>
                                             <div class="dl">
                                                 <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
@@ -1904,86 +1888,92 @@
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable modal-dialog-position-right">
-                  <div class="modal-content">
-                    <div class="modal-header bg-white align-items-start p-4">
-                      <div>
-                        <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN)</h5>
-                      </div>
-                      <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body collapse-inner-bg px-4 py-3">
-                        <div class="col-12">
-                            <div class="tb-input-group d-flex align-items-center  p-2">
-                              <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
-                                <img src="../../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
-                              </div>
-                             <div class="col-11 ms-2">
-                              <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
-                              <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
-                                placeholder="placeholder..">
-                              <i class="fa fa-solid fa-angle-down"></i>
-                            
-                              <ul class="col-12 input-dropdown-list list-group rounded-0">
-                                <li class="list-group-item d-flex align-items-center " value="Avashesh" >
-                                    <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
-                                  <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                    <img src="../../assets/images/ProfileImage.png" alt="Avashesh Jaiswal" class="img-100">
-                                  </div>
-                                  <span class="ms-3">Avashesh Jaiswal </span>
-                                  <span class="text-danger ms-2">• Default</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center " value="2" >
-                                    <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
-                                  <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                    <img src="../../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
-                                  </div>
-                                  <span class="ms-3">Sadish Madtha</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center "  value="3" >
-                                    <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
-                                  <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                    <img src="../../assets/images/ProfileImage.png" alt="Shubham Handargule" class="img-100">
-                                  </div>
-                                  <span class="ms-3">Shubham Handargule</span>
-                                </li>
-                              </ul>
+                    <div class="modal-content">
+                        <div class="modal-header bg-white align-items-start p-4">
+                            <div>
+                                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN)</h5>
                             </div>
+                            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body collapse-inner-bg px-4 py-3">
+                            <div class="col-12 mt-3">
+                                <div
+                                    class="collapse-inner-bg tb-input-group tb-inp px-2 py-2  align-items-center border-0">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/images/Ellipse.png" alt="">
+                                        </div>
+                                        <div class="w-100 px-2">
+                                            <label class="col-12 input-label fs-6 text-uppercase fw-semibold"
+                                                for="input2">Assignee</label>
+                                            <input class="col-11 collapse-inner-bg opacity-25" autocomplete="off"
+                                                role="combobox" id="input2" name="browsers"
+                                                placeholder="Placeholder Text">
+                                            <label class="col-12 input-label fs-5 opacity-50"
+                                                for="input2">Content</label>
+                                            <i class="fa fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                            <li class="list-group-item d-flex align-items-center ">
+                                                <div
+                                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                    <img src="../assets/images/nodata.png" alt="" class="img-100">
+                                                </div>
+                                                <span class="ms-3">Avashesh Jaiswal </span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center ">
+                                                <div
+                                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                    <img src="../assets/images/nodata.png" alt="" class="img-100">
+                                                </div>
+                                                <span class="ms-3">Avashesh Jaiswal</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center ">
+                                                <div
+                                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                    <img src="../assets/images/nodata.png" alt="" class="img-100">
+                                                </div>
+                                                <span class="ms-3">Avashesh Jaiswal</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="error-message">• Error message</p>
-                          </div>
-                      <div class="col-12 mt-3">
-                        <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                          <div>
-                            <label class="col-12 input-label fs-6" for="input2">Heading</label>
-                            <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
-                              placeholder="Placeholder"></textarea>
-                          </div>
+                            <div class="col-12 mt-3">
+                                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                    <div>
+                                        <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                                        <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+                                            placeholder="Placeholder"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                    <div>
+                                        <label class="col-12 input-label fs-6" for="input2">Subheading</label>
+                                        <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                                            placeholder="Placeholder text"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                    <div>
+                                        <form method="post">
+                                            <label class="col-12 input-label fs-6" for="input2">Body</label>
+                                            <textarea class="mytextarea decline-request border-0 ps-0" rows="4"
+                                                cols="44" placeholder="Placeholder"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-12 mt-3">
-                        <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                          <div>
-                            <label class="col-12 input-label fs-6" for="input2">Subheading</label>
-                            <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
-                              placeholder="Placeholder text"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 mt-3">
-                        <div class="tb-input-group tb-inp align-items-center px-1 py-3 border-0">
-                          <div>
-                            <label class="col-12 input-label fs-6" for="input2">Body</label>
-                            <textarea id="editor" placeholder="Placeholder" class="mytextarea decline-request border-0 ps-0"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 mt-3">
-                        <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                          <div>
-                            <label class="col-12 input-label fs-6" for="input2">Quote</label>
-                            <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
-                              placeholder="Placeholder text"></textarea>
-                          </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">View Request</button>
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
+                            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -2316,7 +2306,6 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../javascript/inputs&dropdowns.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
@@ -2327,16 +2316,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
-        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-  tinymce.init({
-      selector: 'textarea#editor',
-      skin: 'bootstrap',
-      plugins: 'lists, link, image, media',
-      toolbar: 'fontsize bold italic underline strikethrough alignleft aligncentre alignright alignjustify bullist numlist backcolor forecolor save',
-      menubar: false
-  });
-</script>
 </body>
 
 </html>

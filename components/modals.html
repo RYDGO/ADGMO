@@ -354,48 +354,48 @@
       </div>
     </div>
 
-      <!-- edit prl deliverables -->
-      <!-- 8th modal ends here -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditPRLDeliverables">
-        Edit PRL (EN) Deliverables
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="EditPRLDeliverables" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header bg-white align-items-start p-4">
-              <div>
-                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN) Deliverables</h5>
-              </div>
-              <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- edit prl deliverables -->
+    <!-- 8th modal ends here -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditPRLDeliverables">
+      Edit PRL (EN) Deliverables
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="EditPRLDeliverables" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-white align-items-start p-4">
+            <div>
+              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN) Deliverables</h5>
             </div>
-            <div class="modal-body collapse-inner-bg px-4 py-3">
-              <div class="col-12">
-                <div class="tb-input-group d-flex align-items-center  p-2">
-                  <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
-                    <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
-                  </div>
-                 <div class="col-11 ms-2">
+            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body collapse-inner-bg px-4 py-3">
+            <div class="col-12">
+              <div class="tb-input-group d-flex align-items-center  p-2">
+                <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
+                  <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
+                </div>
+                <div class="col-11 ms-2">
                   <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
                   <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
                     placeholder="placeholder..">
                   <i class="fa fa-solid fa-angle-down"></i>
-                
+
                   <ul class="col-12 input-dropdown-list list-group rounded-0">
-                    <li class="list-group-item d-flex align-items-center " value="Avashesh" >
+                    <li class="list-group-item d-flex align-items-center " value="Avashesh">
                       <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                         <img src="../assets/images/Profile image.svg" alt="Avashesh Jaiswal" class="img-100">
                       </div>
                       <span class="ms-3">Avashesh Jaiswal </span>
                     </li>
-                    <li class="list-group-item d-flex align-items-center " value="2" >
+                    <li class="list-group-item d-flex align-items-center " value="2">
                       <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                         <img src="../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
                       </div>
                       <span class="ms-3">Sadish Madtha</span>
                     </li>
-                    <li class="list-group-item d-flex align-items-center "  value="3" >
+                    <li class="list-group-item d-flex align-items-center " value="3">
                       <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                         <img src="../assets/images/Profile image.svg" alt="Shubham Handargule" class="img-100">
                       </div>
@@ -403,53 +403,168 @@
                     </li>
                   </ul>
                 </div>
-                </div>
-                <p class="error-message">• Error message</p>
               </div>
-              <div class="col-12 mt-3">
-                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                  <div>
-                    <label class="col-12 input-label fs-6" for="input2">Heading</label>
-                    <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+              <p class="error-message">• Error message</p>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                  <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+                    placeholder="Placeholder"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label" for="input2">Subheading</label>
+                  <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                    placeholder="Placeholder text"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <form method="post">
+                    <label class="col-12 input-label" for="input2">Body</label>
+                    <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
                       placeholder="Placeholder"></textarea>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="tb-input-group p-2">
+                <label class="col-12 input-label" for="dataList">Tags<sup></sup></label>
+                <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+              </div>
+            </div>
+            <!-- photo Upload attachment -->
+            <div class="row g-0 bg-white mt-3">
+              <div class="row g-2">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload Attachment</label>
+                  <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2"
+                    placeholder="Upload Attachment">Upload Attachment</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center">
+                  <div class="fileUpload btn-md tb-btn-primary tb-rounded">
+                    <span class="tb-fs-14 px-3 py-2">Upload</span>
+                    <input id="uploadBtn" type="file" class="upload">
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-3">
-                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                  <div>
-                    <label class="col-12 input-label fs-6" for="input2">Subheading</label>
-                    <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
-                      placeholder="Placeholder text"></textarea>
+              <div class="row g-2">
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../assets/images/attached1.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg</div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../assets/images/Icons/pen.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../assets/images/attached2.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg</div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../assets/images/Icons/pen.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../assets/images/attached3.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg</div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../assets/images/Icons/pen.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../assets/images/attached3.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg</div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../assets/images/Icons/pen.svg" alt="">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-3">
-                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
-                  <div>
-                    <form method="post">
-                      <label class="col-12 input-label fs-6" for="input2">Body</label>
-                      <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
-                        placeholder="Placeholder"></textarea>
-                    </form>
-                  </div>
+            </div>
+            <!-- photo Upload attachment -->
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">View Request</button>
+            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
+            <button type="button" class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+              data-bs-target="#submitPrlDeliverablese">Accept Request</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal modal-md fade" id="submitPrlDeliverablese" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog main-modal">
+      <div class="modal-content inner-modal-content-box box-shadow-popup">
+        <div class="modal-header align-items-start p-4">
+          <div>
+            <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Accept Request</h5>
+          </div>
+          <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body collapse-inner-bg py-4 px-5">
+          <div class="col-12 mt-3">
+            <div class="border-0 info-outer tb-input-group">
+              <div class="d-flex">
+                <div>
+                  <img class="info-icon" src="../assets/images/info-icon1.svg" alt="">
                 </div>
-              </div>
-              <div class="col-12 mt-3">
-                
-                  <div class="tb-input-group p-2">
-                    <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
-                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
-                  </div>
-                  <p class="error-message">• Error message</p>
-                
+                <p class="px-3 m-0">
+                  You are about accept this request, please note the due date is automatically defined by the
+                  Priority
+                  of the request.
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <div class="modal-footer">
+          <div class="">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- 7th modal ends here -->
-  
+    </div>
+  </div>
+  <!-- 3rd modal ends here -->
+    <!-- 7th modal ends here -->
+
     <!-- 6th modal ends here -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       Edit PRL (EN)
@@ -531,14 +646,14 @@
                 </div>
               </div>
             </div>
-           
+
           </div>
         </div>
       </div>
     </div>
     <!-- 7th modal ends here -->
 
-  
+
 
     <div class="m-2 p-2">
     </div>

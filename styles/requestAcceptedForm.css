@@ -9,5 +9,10 @@
     right: 40px;
     position: absolute;
 }
+#socialMedia .main-modal{
+    right: 40px !important;
+    position: absolute !important;
+}
+
     
 /* CUSTOM POPUP CSS */

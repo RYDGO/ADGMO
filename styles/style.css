@@ -848,6 +848,7 @@ input:focus+.fa {
     position: absolute;
     left: 0;
     top: 107%;
+    z-index: 99;
 }
 
 .tb-input-group:hover {

@@ -18,6 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/Dashboard.css">
+    <link rel="stylesheet" href="../../styles/requestAcceptedForm.css">
 </head>
 
 <body>
@@ -325,8 +326,8 @@
                     <ul class="tb-h1 col-7 p-0 text-black">#89349</ul>
                     <li class="col-2">
                         <ul class="nav  align-items-center me-4">
-                            <li class="nav-item mx-2" role="presentation">
-                                <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
+                            <li class="nav-item mx-2" data-bs-toggle="modal"  href="#commentsModal" role="button">
+                                <button class="btn bg-color-gray pb-2   border-0 rounded-pill" ><img
                                         src="../../assets/images/Icons/icon-comment.svg" alt=""></button>
                             </li>
                             <li class="nav-item mx-2" role="presentation">
@@ -358,56 +359,153 @@
 
                 <div class="card border-0">
                     <div class="card-body">
-                        <div class="card-title d-flex align-items-center pb-2">
-                            <span
-                                class="common-width-label-16 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
-                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
-                            </span>
-                            <span
-                                class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
-                                <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
-                                <h4 class="tb-h5 mb-0 text-white">L2</h4>
-                            </span>
+                        <div class="card-title d-flex align-items-center pb-4 align-items-center">
+                          <h4 class="me-1 mb-0 tb-fs-22">#89349843</h4>
+                          <span class="common-width-label-12 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                            <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                            <h4 class="tb-h5 mb-0 tb-orange">IN PROGRESS</h4>
+                          </span>
+                          <span class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                            <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                          </span>
+                          <span class="common-width-label-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                            <p class="mb-0 bold-paragraph mt-1">SK</p>
+                          </span>
+                          <h6 class="mb-0">Assignee</h6>
+                          <div class="col-7 d-flex justify-content-end align-items-center image-overflow">
+                            <img id="img-overflow1" src="../../assets/images/Ellipse 1.svg" alt="">
+                            <img id="img-overflow2" src="../../assets/images/Ellipse 2.svg" alt="">
+                            <img id="img-overflow3" src="../../assets/images/Ellipse 3.svg" alt="">
+                            <img id="img-overflow4" src="../../assets/images/Ellipse 4.svg" alt="">
+                            <h5 class="m-0">Contributors</h5>
+                          </div>
                         </div>
                         <div class="row">
-                            <div class="d-flex justify-content-between align-items-center border-bottom">
-                                <div class="col-4 d-flex align-items-center">
-                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
-                                    <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
-                                </div>
-                                <div class="col-4 d-flex align-items-center">
-                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
-                                    <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
-                                </div>
-                                <div class="col-4 d-flex align-items-center me-5">
-                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
-                                    <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
-                                </div>
+                          <div class="d-flex justify-content-between align-items-center border-bottom">
+                            <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                              <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
                             </div>
-                            <div class="row">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="col-4 d-flex align-items-center">
-                                        <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
-                                        <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
-                                    </div>
-                                    <div class="col-4 d-flex align-items-center ps-2">
-                                        <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
-                                        <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
-                                    </div>
-                                    <div class="col-4 d-flex align-items-center ps-3">
-                                        <!-- <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
-                                        <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6> -->
-                                    </div>
-                                </div>
+                            <div class="col-4 d-flex align-items-center">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
                             </div>
+                            <div class="col-4 d-flex align-items-center me-5">
+                              <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                              <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="col-4 d-flex align-items-center">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-2">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                              </div>
+                              <div class="col-4 d-flex align-items-center ps-3">
+                                <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
+                                <img src="../../assets/images/Icons/timer-icon.svg" alt="timer-icon" class="me-1 mb-1">
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>
 
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
                     <div class="tab-pane fade show active shadow-none" id="pills-english" role="tabpanel"
                         aria-labelledby="pills-home-tab">
+                        <div class="accordion accordion-bottom-border" id="accordion-english-0">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-english-0">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-english-0">Deliverables</button>
+                                </h2>
+                                <div id="collapse-english-0" class="accordion-collapse collapse show">
+                                    <div class="collapse-inner-bg p-5 position-relative">
+                                        <div class="pdf-editor d-flex p-3 bg-white mb-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                              <h4 class="card-title tb-fs-18 tb-bold">PRL (EN)</h4>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center justify-content-end gap-1">
+                                              <div>
+                                                <span class="common-width-label-22 px-5  d-flex align-items-center justify-content-evenly p-2 ">
+                                                  <img class="me-1" src="../../assets/images/Icons/Greenish-blue-flag.svg" width="25">
+                                                  <p class="mb-0 text-base-black">Primary</p>
+                                                </span>
+                                              </div>
+                              
+                                              <span class="common-width-label-22 px-2 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-2"></i>
+                                                <h4 class="tb-h5 mb-0 text-base-black">NOT STARTED</h4>
+                                              </span>
+                                              <img src="../../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
+                                              <button data-bs-toggle="modal" data-bs-target="#exampleModal7" class="border-0 tb-rounded-pill"><img src="../../assets/images/Icons/edit.svg" alt="" width="30" ></button>
+                                            </div>
+                                            <div class="modal fade position-absolute popup-absolute" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog main-modal  modal-xxl d-flex align-items-start">
+                                                  <img src="../../assets/images/Icons/edit-black-icon.svg" alt="">
+                                                  <div class="modal-content  box-shadow-popup">
+                                                    <div class="modal-header align-items-center p-4">
+                                                      <div>
+                                                        <h5 class="modal-title tb-h5 text-black tb-fs-16" id="exampleModalLabel"> <span class="text-base-color">@EstherHoward</span> I think...  </h5>
+                                                      </div>
+                                                      <div class="d-flex ">
+                                                        <div class="p-2 pe-0 ">
+                                                          <span class="pad-8-9 gray-100 rounded-circle bg-white">
+                                                            <img src="../../assets/images/Icons/draw-icon.svg" width="25"/>
+                                                          </span>
+                                                        </div>
+                                                        <div class="ps-0 mt-2 pt-1">
+                                                          <span class="pad-8-9 gray-100 rounded-circle bg-white">
+                                                            <i class="fa-sharp fa-solid fa-paperclip tb-fs-20 "></i>
+                                                          </span>
+                                                        </div>
+                                                       
+                                                      </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button class="  btn-md text-black border-0 tb-fw-600" data-bs-dismiss="modal" type="button">Cancel</button>
+                                                      <button class=" btn-md tb-btn-primary border-0 " type="button">Send</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                        <div class="pdf-editor d-flex p-3 bg-white mb-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                              <h4 class="card-title tb-fs-18 tb-bold">PRL (EN)</h4>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center justify-content-end gap-1">
+                                              <div>
+                                                <span class="common-width-label-22 px-5  d-flex align-items-center justify-content-evenly p-2 ">
+                                                  <img class="me-1" src="../../assets/images/Icons/Greenish-blue-flag.svg" width="25">
+                                                  <p class="mb-0 text-base-black">Primary</p>
+                                                </span>
+                                              </div>
+                              
+                                              <span class="common-width-label-22 px-2 tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-2"></i>
+                                                <h4 class="tb-h5 mb-0 text-base-black">NOT STARTED</h4>
+                                              </span>
+                                              <img src="../../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
+                                              <img src="../../assets/images/Icons/edit.svg" alt="" width="30">
+                                            </div>
+                                          </div>
+                                          <div class="row justify-content-center" >
+                                            <div class="col-2">
+                                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-add-new">Add New</button>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="accordion accordion-bottom-border" id="accordion-english-1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading-english-1">
@@ -539,14 +637,7 @@
                                         <div class="col-12 mb-4">
                                             <h6 class="h6 my-3">Already Published Before?<sup>*</sup></h6>
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="published1" name="published"
-                                                    value="yes">
-                                                <label for="published1">Yes</label>
-                                            </div>
-                                            <div>
-                                                <input class="me-3" type="radio" id="published2" name="published"
-                                                    value="no">
-                                                <label for="published2">No</label>
+                                                <p>Yes</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -893,14 +984,7 @@
                                             <h6 class="h6 my-3">Additional relevant information<sup>*</sup></h6>
                                             <h6 class="h6 my-3">Is the news under sponsorship / patronage.</h6>
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="sponsorship1" name="sponsorship"
-                                                    value="no">
-                                                <label for="sponsorship1">Yes</label>
-                                            </div>
-                                            <div>
-                                                <input class="me-3" type="radio" id="sponsorship2" name="sponsorship"
-                                                    value="yes">
-                                                <label for="sponsorship2">No</label>
+                                                <p>Yes</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -1993,14 +2077,9 @@
                     
                 </div>
                 <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
-                    <div class="col-md-8">
-                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Accept</button>
-                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button"data-bs-toggle="modal" data-bs-target="#exampleModal4">Decline</button>
-                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button">Submit For
-                        Approvals</button>
-                      <button class="btn btn-md tb-rounded bg-color-gray " type="button">Complete</button>
-                      <button class="btn btn-md tb-rounded bg-color-gray " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">Request More
-                        information</button>
+                    <div class="col-md-5">
+                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button">Submit</button>
+                      <button class="btn btn-md tb-rounded bg-color-gray " type="button">Request More information</button>
                     </div>
                   </div>
 
@@ -2523,6 +2602,607 @@
             </div>
         </div>
         <!--  modal ends here -->
+
+
+        <div class="modal fade" id="commentsModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
+              Comments
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="d-flex mb-3">
+                <div class="p-2">
+                  <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Show All</button>
+                  <button class="btn btn-md tb-rounded bg-color-gray " type="button">Show New</button>
+                </div>
+                <div class="ms-auto p-2 mt-2">
+                  <span class="pad-8-9 gray-100 rounded-circle">
+                    <i class="fa-solid fa-search"></i>
+                  </span>
+                </div>
+                <div class="pt-1 mt-2 ">
+                  <span class=" ">
+                    <img src="../../assets/images/Frame 34003.svg" />
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-12 my-2 mx-0">
+                <div class=" p-2 border">
+                  <label class="col-12 input-label" for="dataList">Type @ to mention someone </label>
+                  <input class="col-12" id="" name="">
+                  <div class="d-flex mt-3">
+                    <div class="p-2">
+                      <span class="pad-8-9 gray-100 rounded-circle">
+                        <i class="fa-sharp fa-solid fa-lock"></i>
+                      </span>
+                    </div>
+                    <div class=" p-2">
+                      <span class="pad-8-9 gray-100 rounded-circle">
+                        <i class="fa-sharp fa-solid fa-paperclip"></i>
+                      </span>
+                    </div>
+                    <div class=" ms-auto">
+                      <button class="btn btn-md tb-btn-light tb-rounded" type="button" data-bs-dismiss="modal">Cancle</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex mb-3 mt-4">
+              <div class="p-2">
+                <div class="col-2 position-relative">
+                  <img src="../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                </div>
+              </div>
+              <div class="p-2 fw-bold tb-fs-14 position-relative"> Mark Anthony
+                <span class=" position-absolute comment-popup-icon">
+                  <img src="../../assets/images/Frame 1368.svg" alt="" class="m-0" />
+                </span>
+                <p class=" tb-fs-12 tb-gray-400">28 min ago</p>
+              </div>
+              <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span></div>
+            </div>
+            <div class="ms-3">
+              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Etiam
+                et
+                ante iaculis, faucibus
+                velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+            </div>
+            <div>
+              <img src="../../assets/images/Container.svg" alt="" width="100%" />
+            </div>
+            <div class="d-flex mb-3 mt-4">
+              <div class="p-2">
+                <div class="col-2 position-relative">
+                  <img src="../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                </div>
+              </div>
+              <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+                <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+              </div>
+              <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span></div>
+            </div>
+            <div class="ms-3">
+              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Etiam
+                et
+                ante
+                iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+              <p class="tb-fs-12 tb-gray-400 border-bottom mt-3">3 Replies</p>
+            </div>
+            <div class="d-flex mb-3 mt-4 ">
+              <div class="p-2">
+                <div class="col-2 position-relative">
+                  <img src="../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                </div>
+              </div>
+              <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+                <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+              </div>
+              <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span></div>
+            </div>
+            <div class="ms-3 text-base-black tb-fs-14">
+              <p class="m-0 border-bottom"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+                ante
+                iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMENTS MODAL POPUP ENDS HERE -->
+    <div class="modal fade" id="exampleModal-add-new" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog main-modal modal-dialog-scrollable">
+            <div class="modal-content box-shadow-popup">
+                <div class="modal-header align-items-start p-4">
+                    <div>
+                        <h5 class="modal-title tb-fs-24 font-weight-400 text-black" id="exampleModalLabel">Select
+                            Deliverables </h5>
+                    </div>
+                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body collapse-inner-bg py-4 px-4">
+                    <table class="table align-middle">
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2 ">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="prl"> PRL
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Social Media Posts
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id=" socialMediaPosts "> Circulars
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="internalCirculars"> Events Schedule
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="questionnaire"> Brand Assets
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="prlsWriting"> New Logo
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="factSheets"> Brand Proposal
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="questionsAndSurveys"> Brand Recommendations
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="carousels"> Media Recommendations
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="outAndAbout"> Brand Brief
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="galleries"> Media Plan
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="weekendContent"> Light Up Video
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="contentPlan"> Others
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="videoExhibitions"> Video Captions
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="lightupVidoes">Questionnaire, Surveys
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="lightupVidoes">Fact Sheets
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="lightupVidoes">Carousels
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tb-fs-18 font-weight-400">
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="lightupVidoes">Out & About (new article)
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> English
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault"> Arabic
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" href="#prlDeliverableModal" role="button" data-bs-dismiss="modal">Next</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REQUEST OVERVIEW DELIVERABLE POPUP ENDS HERE -->
+
+            <div class="modal fade" id="prlDeliverableModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog main-modal modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">PRL
+                            (En/Ar)
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="col-12 mb-4 p-3">
+                            <h6 class="tb-fs-16 font-weight-400 ">Are the deliverables due as part of the service level
+                                agreement (SLA)?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Yes <span class="user-nameline">(8th, November 2021)</span></label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">No</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-2">
+                            <p>When is the ADGMO team deadline lorem?</p>
+                            <div class="tb-input-group p-2 mt-3 ">
+                                <label class="col-12 input-label user-nameline" for="date">Created Date</label>
+                                <input type="date" class="col-12 user-nameline" id="date">
+                            </div>
+                        </div>
+    
+                        <div class="p-2 mt-3">
+                            <p class="tb-fs-16 font-weight-400">
+                                Are there any additional needs with this deliverable?
+                            </p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">
+                                Image
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">
+                                Video
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">Carousel
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex justify-content-between">
+                            <div>
+                                <p class="p-0">
+                                    Select the deliverables publishing date
+                                </p>
+                            </div>
+                            <div>
+                                <img src="../assets/images/Billed Monthly.svg" alt="calender img" />
+                                <span class=" tb-primary">Calender</span>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline" for="date">Select Date Due</label>
+                                    <input type="date" class="col-12 user-nameline" id="date">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline" for="time">Select time Due</label>
+                                    <input class="col-12 user-nameline" id="time" placeholder="placeholder text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
+                            <div class="p-2 ">
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WORKLOAD PRL (En/Ar) ENDS HERE -->
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

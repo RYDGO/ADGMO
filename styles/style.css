@@ -1912,3 +1912,8 @@ body::-webkit-scrollbar {
     background-color: transparent;
     border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
+
+.end-40{
+position: absolute;
+right: 40px;
+}

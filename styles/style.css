@@ -9,6 +9,7 @@
 
 :root {
     --body-bg: #fbfbfb;
+    --base-card-color: #E7F5F2
     --base-color: #ef3f43;
     --base-black-color: #000;
     --base-white-color: #fff;
@@ -196,6 +197,9 @@
 
 .base-color-op2 {
     background: #ef3f4385;
+}
+.base-card-color{
+    background-color: var(--base-card-color);
 }
 
 .status-color-yellow-op2 {
@@ -1825,7 +1829,8 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
 }
 
 body::-webkit-scrollbar {
-    width: 0em;
+    /* width: 0em; */
+    /* DAM View styles starts  */
 }
 
 .view-card-border {
@@ -1906,4 +1911,9 @@ body::-webkit-scrollbar {
     text-decoration: none;
     background-color: transparent;
     border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+
+.end-40{
+position: absolute;
+right: 40px;
 }

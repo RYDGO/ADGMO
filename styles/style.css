@@ -42,15 +42,15 @@
     --text-base-gary: #8c8c8c;
     --text-dark-black: #000000;
     --font-style: "bold";
-    --font-weight-100: "100";
-    --font-weight-200: "200";
-    --font-weight-300: "300";
-    --font-weight-400: "400";
-    --font-weight-500: "500";
-    --font-weight-600: "600";
-    --font-weight-700: "700";
-    --font-weight-800: "800";
-    --font-weight-900: "900";
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
     --font-ft-size: 1.563rem;
     /*------ BUTTON COLORS ----- */
     --btn-bg-default: #37474f;
@@ -206,6 +206,7 @@
     background: #37c3a175;
 }
 
+
 /* square-boxes width and height  */
 
 .width-80 {
@@ -290,6 +291,9 @@
 
 /* --- TYPOGRAPHY COLORS --- */
 
+.text-base-color {
+    color: var(--base-color) !important;
+}
 .text-base-black {
     color: var(--text-base-black) !important;
 }
@@ -450,6 +454,36 @@
 
 .tb-fs-24 {
     font-size: 24px;
+}
+/* font weight  */
+
+
+.tb-fw-100 {
+    font-weight: var(--font-weight-100) !important;
+}
+.tb-fw-200 {
+    font-weight: var(--font-weight-200) !important;
+}
+.tb-fw-300 {
+    font-weight: var(--font-weight-300) !important;
+}
+.tb-fw-400 {
+    font-weight: var(--font-weight-400) !important;
+}
+.tb-fw-500 {
+    font-weight: var(--font-weight-500) !important;
+}
+.tb-fw-600 {
+    font-weight: var(--font-weight-600) !important;
+}
+.tb-fw-700 {
+    font-weight: var(--font-weight-700) !important;
+}
+.tb-fw-800 {
+    font-weight: var(--font-weight-800) !important;
+}
+.tb-fw-900 {
+    font-weight: var(--font-weight-900) !important;
 }
 
 /* ---- images-cover  --- */

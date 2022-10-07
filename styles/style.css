@@ -1856,3 +1856,14 @@ body::-webkit-scrollbar {
 }
 
 /*  search styles ends */
+
+
+.accordion-bottom-border{
+    border-bottom: 30px solid var(--body-bg);
+}
+
+/* ACCORDION FORM STYLES ENDS  */
+
+.background-dim{
+    background-color: rgba(0, 0, 0, 0.5);
+}

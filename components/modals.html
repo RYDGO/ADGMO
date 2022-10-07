@@ -353,6 +353,103 @@
         </div>
       </div>
     </div>
+
+      <!-- edit prl deliverables -->
+      <!-- 8th modal ends here -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditPRLDeliverables">
+        Edit PRL (EN) Deliverables
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="EditPRLDeliverables" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header bg-white align-items-start p-4">
+              <div>
+                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN) Deliverables</h5>
+              </div>
+              <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body collapse-inner-bg px-4 py-3">
+              <div class="col-12">
+                <div class="tb-input-group d-flex align-items-center  p-2">
+                  <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
+                    <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
+                  </div>
+                 <div class="col-11 ms-2">
+                  <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
+                  <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
+                    placeholder="placeholder..">
+                  <i class="fa fa-solid fa-angle-down"></i>
+                
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center " value="Avashesh" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/Profile image.svg" alt="Avashesh Jaiswal" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center " value="2" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
+                      </div>
+                      <span class="ms-3">Sadish Madtha</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center "  value="3" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/Profile image.svg" alt="Shubham Handargule" class="img-100">
+                      </div>
+                      <span class="ms-3">Shubham Handargule</span>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <p class="error-message">• Error message</p>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                    <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+                      placeholder="Placeholder"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <label class="col-12 input-label fs-6" for="input2">Subheading</label>
+                    <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                      placeholder="Placeholder text"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <form method="post">
+                      <label class="col-12 input-label fs-6" for="input2">Body</label>
+                      <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
+                        placeholder="Placeholder"></textarea>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                
+                  <div class="tb-input-group p-2">
+                    <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
+                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+                  </div>
+                  <p class="error-message">• Error message</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7th modal ends here -->
+  
     <!-- 6th modal ends here -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       Edit PRL (EN)
@@ -434,11 +531,14 @@
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
       </div>
     </div>
     <!-- 7th modal ends here -->
+
+  
 
     <div class="m-2 p-2">
     </div>
@@ -1787,7 +1887,7 @@
                     <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
                       data-bs-target="#collapse1" aria-expanded="false">Title</button>
                   </h2>
-                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="collapse-inner-bg p-5">
                     </div>
                   </div>
@@ -1902,6 +2002,7 @@
 "></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/script.js"></script>
+<script src="../javascript/inputs&dropdowns.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
 

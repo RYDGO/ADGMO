@@ -597,6 +597,7 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
 .tb-rounded-bottom-lr {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -1159,10 +1160,12 @@ body {
 .dropdown-content-inner {
     border-bottom: 1px solid #fff;
 }
+
 .dropdown-content-inner-box {
     border-bottom: 2px solid #F4F4F4;
 }
-.border-bottom-5{
+
+.border-bottom-5 {
     border-bottom: 1px solid #8a8282;
 }
 
@@ -1519,7 +1522,6 @@ header .image-text .profession {
 
 
 /* Accordion styles */
-
 .accordion-item {
     border: none;
 }
@@ -1697,7 +1699,7 @@ input[type="radio"] {
     display: none;
 }
 
-#exampletable_info{
+#exampletable_info {
     display: none !important;
 }
 
@@ -1802,20 +1804,50 @@ body::-webkit-scrollbar {
     position: absolute !important;
     right: 17% !important;
     top: 200px !important;
-  border: 2px solid #EDEDED;
+    border: 2px solid #EDEDED;
 }
 
-.table-pagination-style{
+.table-pagination-style {
     background: var(--grayshade-100);
-    padding:var(--pad-8-12);
+    padding: var(--pad-8-12);
 }
-.table-pagination-style:hover{
+
+.table-pagination-style:hover {
     background: var(--gray-300-hover);
 }
 
 
-
-.text-cover-onimage{
+/* Search  styles added  */
+.text-cover-onimage {
     bottom: 8px;
     color: white;
 }
+
+.image-overflow {
+    position: relative;
+}
+
+#img-overflow1 {
+    position: absolute;
+    left: 66%;
+    z-index: 999;
+}
+
+#img-overflow2 {
+    position: absolute;
+    left: 69%;
+    z-index: 900;
+}
+
+#img-overflow3 {
+    position: absolute;
+    left: 72%;
+    z-index: 800;
+}
+
+#img-overflow4 {
+    position: absolute;
+    left: 75%;
+}
+
+/*  search styles ends */

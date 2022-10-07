@@ -1911,42 +1911,40 @@
                       <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body collapse-inner-bg px-4 py-3">
-                      <div class="col-12 mt-3">
-                        <div class="collapse-inner-bg tb-input-group tb-inp px-2 py-2  align-items-center border-0">
-                          <div class="d-flex">
-                            <div>
-                              <img src="../assets/images/Ellipse.png" alt="">
-                            </div>
-                            <div class="w-100 px-2">
-                              <label class="col-12 input-label fs-6 text-uppercase fw-semibold" for="input2">Assignee</label>
-                              <input class="col-11 collapse-inner-bg opacity-25" autocomplete="off" role="combobox" id="input2"
-                                name="browsers" placeholder="Placeholder Text">
-                              <label class="col-12 input-label fs-5 opacity-50" for="input2">Content</label>
+                        <div class="col-12 mt-3">
+                            <div class="tb-input-group d-flex align-items-center  p-2 mt-3 w-100">
+                              <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+                                <img src="../../assets/images/ProfileImage.png" alt="" class="img-100 selected-dropdown-image">
+                              </div>
+                             <div class="border-dark">
+                              <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
+                              <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers" placeholder="placeholder.." style="border-radius: 5px;">
                               <i class="fa fa-solid fa-angle-down"></i>
+                            
+                              <ul class="col-12 input-dropdown-list list-group rounded-0" style="display: none; z-index: 1000;">
+                                <li class="list-group-item d-flex align-items-center " value="Avashesh">
+                                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                    <img src="../../assets/images/Profile image.svg" alt="Avashesh Jaiswal" class="img-100">
+                                  </div>
+                                  <span class="ms-3">Avashesh Jaiswal </span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center " value="2">
+                                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                    <img src="../../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
+                                  </div>
+                                  <span class="ms-3">Sadish Madtha</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center " value="3">
+                                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                    <img src="../../assets/images/Profile image.svg" alt="Shubham Handargule" class="img-100">
+                                  </div>
+                                  <span class="ms-3">Shubham Handargule</span>
+                                </li>
+                              </ul>
                             </div>
-                            <ul class="col-12 input-dropdown-list list-group rounded-0">
-                              <li class="list-group-item d-flex align-items-center ">
-                                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                  <img src="../assets/images/nodata.png" alt="" class="img-100">
-                                </div>
-                                <span class="ms-3">Avashesh Jaiswal </span>
-                              </li>
-                              <li class="list-group-item d-flex align-items-center ">
-                                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                  <img src="../assets/images/nodata.png" alt="" class="img-100">
-                                </div>
-                                <span class="ms-3">Avashesh Jaiswal</span>
-                              </li>
-                              <li class="list-group-item d-flex align-items-center ">
-                                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                  <img src="../assets/images/nodata.png" alt="" class="img-100">
-                                </div>
-                                <span class="ms-3">Avashesh Jaiswal</span>
-                              </li>
-                            </ul>
+                            </div>
+                            <p class="error-message">• Error message</p>
                           </div>
-                        </div>
-                      </div>
                       <div class="col-12 mt-3">
                         <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
                           <div>
@@ -1966,13 +1964,19 @@
                         </div>
                       </div>
                       <div class="col-12 mt-3">
+                        <div class="tb-input-group tb-inp align-items-center px-1 py-3 border-0">
+                          <div>
+                            <label class="col-12 input-label fs-6" for="input2">Body</label>
+                            <textarea id="editor" placeholder="Placeholder" class="mytextarea decline-request border-0 ps-0"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3">
                         <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
                           <div>
-                            <form method="post">
-                              <label class="col-12 input-label fs-6" for="input2">Body</label>
-                              <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
-                                placeholder="Placeholder"></textarea>
-                            </form>
+                            <label class="col-12 input-label fs-6" for="input2">Quote</label>
+                            <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                              placeholder="Placeholder text"></textarea>
                           </div>
                         </div>
                       </div>
@@ -2313,6 +2317,7 @@
         
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../javascript/inputs&dropdowns.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
@@ -2323,6 +2328,16 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+      selector: 'textarea#editor',
+      skin: 'bootstrap',
+      plugins: 'lists, link, image, media',
+      toolbar: 'fontsize bold italic underline strikethrough alignleft aligncentre alignright alignjustify bullist numlist backcolor forecolor save',
+      menubar: false
+  });
+</script>
 </body>
 
 </html>

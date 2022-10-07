@@ -99,3 +99,48 @@
     border-radius: 8px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1) !important;
 }
+
+.tox-tinymce {
+    border: none !important;
+}
+
+.tox .tox-toolbar__group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 30px;
+}
+
+.tox-statusbar{
+    display: none !important;
+}
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: none !important;
+    padding: 4px 0;
+    transition: box-shadow .5s;
+}
+.tox .tox-editor-header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    z-index: 1;
+    position:absolute;
+    bottom: 0;
+}
+.tox .tox-tbtn--select {
+    width: 20% !important;
+}
+
+.tox .tox-tbtn {
+    margin: 0 !important;
+    width: 31px !important;
+}
+.tox-editor-container{
+    position: relative;
+}
+.tox .tox-tinymce{
+    height: 200px !important;
+}

@@ -1863,3 +1863,13 @@ body::-webkit-scrollbar {
 .background-dim{
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.list-group-child {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}

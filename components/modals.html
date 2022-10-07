@@ -1983,7 +1983,58 @@
       </div>
     </div>
     <!-- Add Deliverable last modal ends here -->
-
+ <!-- Select Assignee Popup Code End Here -->
+ <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#SelectAssignee" role="button">Select Assignee </a>
+<div class="modal fade" id="SelectAssignee" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">Select Assignee</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body collapse-inner-bg">
+        <div class="p-2 bg-white rounded-1">
+          <div class="search-container col-12">
+            <form>
+              <img src="../assets/images/Icons/Vector (1).svg" alt="">
+              <input class="bg-transparent w-75 ps-3 me-5" type="text" placeholder="Today" name="search">
+              <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg" alt="">
+            </form>
+          </div>
+        </div>
+        <ul class="col-12  list-group rounded-0">
+          <li class="list-group-child d-flex align-items-center " value="Avashesh" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/ProfileImage.png" alt="Avashesh Jaiswal" class="img-100">
+            </div>
+            <span class="ms-3">Avashesh Jaiswal </span>
+            <span class="text-danger ms-2">• Default</span>
+          </li>
+          <li class="list-group-child d-flex align-items-center " value="2" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
+            </div>
+            <span class="ms-3">Sadish Madtha</span>
+          </li>
+          <li class="list-group-child d-flex align-items-center "  value="3" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/ProfileImage.png" alt="Shubham Handargule" class="img-100">
+            </div>
+            <span class="ms-3">Shubham Handargule</span>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-md bg-black tb-rounded text-white" type="button">PROCEED</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------Add Deliverables first end Here-------------------->
 
   </div>
 

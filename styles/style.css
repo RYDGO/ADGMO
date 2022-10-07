@@ -880,7 +880,7 @@ datalist {
     max-height: 10rem;
     overflow-y: auto;
     margin-top: 13px;
-    margin-left: -8px;
+   left:0;
     z-index: 999;
 }
 

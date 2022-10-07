@@ -105,6 +105,9 @@
     width: 40px;
     height: 40px;
   }
+  .right-side{
+    text-align: left;
+  }
   .overview-boxes .first {
     color: var(--base-white-color);
     background-color: #e99293 ;
@@ -112,6 +115,17 @@
   .overview-boxes .first .box-topic {
     font-size: 16px;
     font-weight: 400;
+    color:var(--base-white-color);
+  }
+  .overview-boxes .box-topic {
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--para-disabled);
+  }
+  .overview-boxes  .number {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
     color:var(--base-white-color);
   }
   .overview-boxes .first .number {

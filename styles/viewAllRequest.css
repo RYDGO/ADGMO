@@ -1,0 +1,5 @@
+.vertical-line-2 {
+    height: 95px ;
+    width: 1px;
+    background-color: var(--grayshade-100);
+}

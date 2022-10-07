@@ -1,6 +1,5 @@
 //input dropdown hide/show
 // -------------Dashboard toggle--------------
-
 const sidebar = document.querySelector("#sidebar");
 if (sidebar) {
   const toggle = document.querySelector("#sidebarToggle");
@@ -11,14 +10,16 @@ if (sidebar) {
 
 // Jquery: dropdown functionality
 $(document).ready(function () {
-    $("#exampletable").DataTable({
-      "pagingType": "simple",
-      oLanguage: {
-        oPaginate: {
-            sNext: "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-right'></i> </span>",
-            sPrevious: "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-left'></i> </span>"
-        }
-    }
+  $("#exampletable").DataTable({
+    pagingType: "simple",
+    oLanguage: {
+      oPaginate: {
+        sNext:
+          "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-right'></i> </span>",
+        sPrevious:
+          "<span class='gray-100 pad-8-12 gray-300-hover'><i class='fa-solid fa-chevron-left'></i> </span>",
+      },
+    },
   });
 
   //jquery for toggle sub menus

@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     padding:10px 0px 0px 0px;
-    z-index: 1000000;
+    z-index: 10;
     width: 200px ;
     overflow-y: hidden;
     border: none !important;
@@ -60,4 +60,8 @@
     font-weight: bolder !important;
     padding: 0;
     margin: 0;
+}
+
+.input-modal-box{
+    z-index: 101;
 }

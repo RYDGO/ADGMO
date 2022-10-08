@@ -1849,12 +1849,6 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
 
 
 /* input modal box style Asset Library2 */
-.input-modal-box {
-    position: absolute !important;
-    right: 17% !important;
-    top: 200px !important;
-    border: 2px solid #EDEDED;
-}
 
 .table-pagination-style {
     background: var(--grayshade-100);

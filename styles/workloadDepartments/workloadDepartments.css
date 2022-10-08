@@ -54,39 +54,33 @@
   width: auto !important;
 }
 .box .cart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: var(--text-base-white);
-  line-height: 50px;
-  text-align: center;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-}
-.box .number {
-  display: inline-block;
-  font-size: 25px;
-  font-weight: bold;
-  color: var(--base-black-color);
-}
-.task-box {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
-  background-color: var(--btn-bg-disabled);
-}
-.right-heading-task {
-  text-align: left;
-}
-
-.active {
-  border: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--text-base-white);
+    line-height: 50px;
+    text-align: center;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+ .box .number {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color:var(--base-black-color);
+  }
+  .task-box{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: var(--btn-bg-disabled);
+  }
+  .right-heading-task{
+    text-align: left;
+  }
 
 .modal-backdrop {
   background-color: rgba(0, 0, 0);

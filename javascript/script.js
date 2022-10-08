@@ -107,3 +107,7 @@ $(".input").on("input", function () {
     }
   });
 });
+      // assets three dots card popup 
+$('.ellipsis-btn').on("click", function () {
+  $(this).next().toggle('d-block');
+})

@@ -212,7 +212,14 @@
 
 
 /* square-boxes width and height  */
-
+.w-h-200{
+width: 200px;
+height: 200px;
+}
+.w-h-150{
+    width: 150px;
+    height: 150px;
+    }
 .width-80 {
     width: 80%;
 }
@@ -564,7 +571,7 @@
     border: 1px solid var(--grayshade-100);
 }
 
-.border-gray-100 {
+.border-gray-500 {
     border: 1px solid var(--grayshade-500);
 }
 
@@ -837,12 +844,12 @@
     font-size: 12px;
 }
 
-input {
-    outline: none;
-    border: none;
+.input {
+    outline: none !important;
+    border: none !important;
 }
 
-input:focus+.fa {
+.input:focus+.fa {
     transform: rotate(180deg);
     transition: transform 0.8s ease;
 }
@@ -1597,6 +1604,9 @@ input[type="radio"] {
     width: 17px;
     height: 17px;
 }
+input[type="checkbox"]:checked {
+    background-color: red !important;
+}
 
 .sidebar.active~.main-section {
     width: calc(100% - 60px);
@@ -1906,6 +1916,7 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
     border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
 
+/* modal popup position */
 .end-40{
 position: absolute;
 right: 40px;

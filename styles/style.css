@@ -844,12 +844,12 @@ height: 200px;
     font-size: 12px;
 }
 
-input {
-    outline: none;
-    border: none;
+.input {
+    outline: none !important;
+    border: none !important;
 }
 
-input:focus+.fa {
+.input:focus+.fa {
     transform: rotate(180deg);
     transition: transform 0.8s ease;
 }
@@ -1603,6 +1603,9 @@ input[type="radio"] {
     accent-color: red;
     width: 17px;
     height: 17px;
+}
+input[type="checkbox"]:checked {
+    background-color: red !important;
 }
 
 .sidebar.active~.main-section {

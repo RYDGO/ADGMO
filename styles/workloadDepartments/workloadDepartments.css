@@ -138,3 +138,6 @@
 .tox .tox-tinymce {
   height: 200px !important;
 }
+.modal-backdrop {
+    background-color: transparent;
+  }

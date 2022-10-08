@@ -2,16 +2,16 @@
     left: -350px;
 }
 #exampleModal-add-new .main-modal{
-    right: 40px;
     position: absolute;
+    right: 40px;
 }
 #prlDeliverableModal .main-modal{
-    right: 40px;
     position: absolute;
+    right: 40px;
 }
-#socialMedia .main-modal{
-    right: 40px !important;
+.social-media-modal .main-modal{
     position: absolute !important;
+    right: 40px !important;
 }
 
     

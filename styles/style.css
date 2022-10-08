@@ -1,7 +1,4 @@
-@font-face {
-    font-family: graphik;
-    src: url("../assets/fonts/Graphik-Font-Family/GraphikRegular.otf");
-}
+
 @font-face {
     font-family: graphic-bold;
     src: url("../assets/fonts/Graphik - English/Graphik-Bold.otf");
@@ -134,7 +131,6 @@
     --btn-bg-black: #000;
 
     /*----- FONT-FAMILY ----- */
-    --font-family: graphik;
     --font-graphic-bold: graphic-bold;
     --font-graphic-black: graphic-black;
     --font-graphic-black-italic: graphic-black-italic;
@@ -167,7 +163,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-graphic-regular);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .tb-h1, h1{
@@ -180,11 +176,10 @@
     font-size: 12px;
 }
 
-.left-banner{
+.nav-text{
     font-family: var(--font-graphic-medium);
-    font-size: 22px;
+    font-size: 16px;
 }
-
 /* --- PRIMARY COLORS --- */
 .tb-copyright {
     color: var(--text-copyright);

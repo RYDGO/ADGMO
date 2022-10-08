@@ -125,6 +125,10 @@
 .tb-bg-body {
     background-color: var(--body-bg);
 }
+.tb-box-hover:hover {
+    background-color: var(--grayshade-100);
+    cursor: pointer;
+}
 
 /* ------- CONTENT STATUS COLORS ---- */
 
@@ -1078,7 +1082,10 @@ body {
 }
 
 /* table */
-
+tbody tr:hover{
+    background-color: var(--body-bg) !important;
+    cursor: pointer;
+}
 .th-pd {
     padding: 14px 24px !important;
 }

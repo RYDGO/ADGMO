@@ -212,7 +212,14 @@
 
 
 /* square-boxes width and height  */
-
+.w-h-200{
+width: 200px;
+height: 200px;
+}
+.w-h-150{
+    width: 150px;
+    height: 150px;
+    }
 .width-80 {
     width: 80%;
 }

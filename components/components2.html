@@ -1137,8 +1137,11 @@
                         <tr class="tb-fs-18 font-weight-400">
                             <td>
                                 <div class="form-check mb-2 ">
+                                    <label id="prl">
+                                        Prl
+                                    </label>
                                     <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
-                                        value="" id="prl"> PRL
+                                        value="" id="prl">
                                 </div>
                             </td>
                             <td>
@@ -1755,7 +1758,8 @@
                         <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
                         <div class="p-2 ">
                             <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
-                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#prlDeliverableModal" data-bs-dismiss="modal">Back</button>
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal"
+                                data-bs-target="#prlDeliverableModal" data-bs-dismiss="modal">Back</button>
                         </div>
                     </div>
                 </div>
@@ -1765,70 +1769,208 @@
     <a class="btn btn-primary  m-4 w-25" data-bs-toggle="modal" href="#socialMedia" role="button">Social Media Modal
     </a>
     <!---------------Social Media Modal end---------------------->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-        Profile modal
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal5">
+        Upload popup
     </button>
     <!-- Modal -->
-    <div class="modal fade modal-width" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog  modal-sm">
+    <div class="modal fade" id="uploadModal5" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog main-modal">
             <div class="modal-content inner-modal-content-box box-shadow-popup">
-                <div class="modal-body collapse-inner-bg py-0 px-0 bg-white">
-                    <div class=" p-2 bg-white">
-                        <label class="col-12 input-label" for="links">
-                            <div class="d-flex col-md-8">
-                                <div class="p-2 tb-primary font-weight-400 tb-fs-16">@EstherHoward</div>
-                                <div class="p-2 tb-gray-400 tb-fs-16"> I think...</div>
-                                <div class="ms-auto p-2">
-                                    <img src="../assets/images/Vector (1).svg" alt="edit icon"/>
-                                </div>
-                                <div class="p-2">
-                                    <i class="fa-sharp fa-solid fa-paperclip"></i>
-                                </div>
-                                <div class="d-flex align-items-start">
-                                </div>
-                            </div>
-                        </label>
-                        <input class="col-12  bg-white" id="links" name="links">
+                <div class="modal-header align-items-start p-4">
+                    <div>
+                        <h5 class="modal-title tb-h3 text-black" id="uploadModalLabel">Upload </h5>
                     </div>
-                    <div class="bg-white">
-                        <div class="d-flex gray-100-hover border-bottom">
-                            <div class="p-2">
-                                <img  src="../assets/images/Profile image.svg"/>
+                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-footer collapse-inner-bg py-4 px-5">
+                    <div class="bg-white col-12">
+                        <div class="col-12 bg-white px-4 py-3  mt-3">
+                            <div class="col-12 d-flex">
+                                <label class="input-label fs-6" for="input2">Attach File</label>
                             </div>
-                            <div class="p-2">
-                                <p>Esther, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                            <div class="col-12 d-flex justify-content-between">
+                                <div class="col-6 me-1">
+                                    <div class=" mt-3">
+                                        <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                            <span class="tb-fs-14">Select from attachment</span>
+                                            <input id="uploadBtn" type="file" class="upload">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ms-1">
+                                    <div class=" mt-3">
+                                        <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                            <span class="tb-fs-14 mx-3">Upload from device</span>
+                                            <img src="../assets/images/right-arrow.svg" alt="">
+                                            <input id="uploadBtn" type="file" class="upload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 d-flex justify-content-center">
+                                <p class="tb-gray-400 mb-0">
+                                    Document must be in the following formats xxxxxx
+                                </p>
                             </div>
                         </div>
-                        <div class="d-flex gray-100-hover border-bottom">
-                            <div class="p-2">
-                                <img  src="../assets/images/Profile image (3).svg"/>
-                            </div>
-                            <div class="p-2">
-                                <p>Luci, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                            </div>
-                        </div>
-                        <div class="d-flex gray-100-hover border-bottom">
-                            <div class="p-2">
-                                <img  src="../assets/images/Profile image (1).svg"/>
-                            </div>
-                            <div class="p-2">
-                                <p>Josef, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                            </div>
-                        </div>
-                        <div class="d-flex gray-100-hover border-bottom">
-                            <div class="p-2">
-                                <img  src="../assets/images/Profile image (2).svg"/>
-                            </div>
-                            <div class="p-2">
-                                <p>Ahmed, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                        <div class="col-12 p-3">
+                            <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
+                                <div class="col-12 ">
+                                    <h6>Upload CSV</h6>
+                                </div>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="p-2 col-1">
+                                        <p>75%</p>
+                                    </div>
+                                    <div class="p-2 col-7">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                    </div>
+                                    <div class="p-0 col-3">
+                                        <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancle</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-12 p-4">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!------ Profile user end here------------>
+    </div>
+    <!---- upload modal end here--->
+    <div class="modal fade" id="prlDeliverableModal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel2">Upload
+                    
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body collapse-inner-bg">
+                <div class="bg-white p-3">
+                    <h6>Assign attachment</h6>
+                    <div>
+                        <div class="tb-input-group m-0">
+                            <div class="p-2 border">
+                                <label class="col-12 input-label" for="input2">PRL (en)
+                                    </label>
+                                <input class="col-11 dropdown-input input" autocomplete="off" role="combobox" id="input2"
+                                    name="browsers" placeholder="Upload  PRL (en) attachment">
+                                <i class="fa fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="tb-input-group mt-3">
+                            <div class="p-2 border">
+                                <label class="col-12 input-label" for="input2">PRL (en)
+                                    </label>
+                                <input class="col-11 dropdown-input input " autocomplete="off" role="combobox" id="input2"
+                                    name="browsers" placeholder="Upload  PRL (en) attachment">
+                                <i class="fa fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="mt-2">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"  data-bs-dismiss="modal">Video.mp4</button>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"  data-bs-dismiss="modal">Image.jpg</button>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"  data-bs-dismiss="modal">Audio.wav</button>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"  data-bs-dismiss="modal">File.pdf</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center w-100">
+                    <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="btn btn-primary  m-4 w-25" data-bs-toggle="modal" href="#prlDeliverableModal2" role="button"> Upload Modal 2
+</a>
+        <!------------upload2---------------->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            Profile modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade modal-width" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog  modal-sm">
+                <div class="modal-content inner-modal-content-box box-shadow-popup">
+                    <div class="modal-body collapse-inner-bg py-0 px-0 bg-white">
+                        <div class=" p-2 bg-white">
+                            <label class="col-12 input-label" for="links">
+                                <div class="d-flex col-md-8">
+                                    <div class="p-2 tb-primary font-weight-400 tb-fs-16">@EstherHoward</div>
+                                    <div class="p-2 tb-gray-400 tb-fs-16"> I think...</div>
+                                    <div class="ms-auto p-2">
+                                        <img src="../assets/images/Vector (1).svg" alt="edit icon" />
+                                    </div>
+                                    <div class="p-2">
+                                        <i class="fa-sharp fa-solid fa-paperclip"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                    </div>
+                                </div>
+                            </label>
+                            <input class="col-12  bg-white" id="links" name="links">
+                        </div>
+                        <div class="bg-white">
+                            <div class="d-flex gray-100-hover border-bottom">
+                                <div class="p-2">
+                                    <img src="../assets/images/Profile image.svg" />
+                                </div>
+                                <div class="p-2">
+                                    <p>Esther, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                                </div>
+                            </div>
+                            <div class="d-flex gray-100-hover border-bottom">
+                                <div class="p-2">
+                                    <img src="../assets/images/Profile image (3).svg" />
+                                </div>
+                                <div class="p-2">
+                                    <p>Luci, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                                </div>
+                            </div>
+                            <div class="d-flex gray-100-hover border-bottom">
+                                <div class="p-2">
+                                    <img src="../assets/images/Profile image (1).svg" />
+                                </div>
+                                <div class="p-2">
+                                    <p>Josef, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                                </div>
+                            </div>
+                            <div class="d-flex gray-100-hover border-bottom">
+                                <div class="p-2">
+                                    <img src="../assets/images/Profile image (2).svg" />
+                                </div>
+                                <div class="p-2">
+                                    <p>Ahmed, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!------ Profile user end here------------>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

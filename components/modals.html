@@ -346,6 +346,103 @@
         </div>
       </div>
     </div>
+
+      <!-- edit prl deliverables -->
+      <!-- 8th modal ends here -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditPRLDeliverables">
+        Edit PRL (EN) Deliverables
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="EditPRLDeliverables" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header bg-white align-items-start p-4">
+              <div>
+                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Edit PRL (EN) Deliverables</h5>
+              </div>
+              <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body collapse-inner-bg px-4 py-3">
+              <div class="col-12">
+                <div class="tb-input-group d-flex align-items-center  p-2">
+                  <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
+                    <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
+                  </div>
+                 <div class="col-11 ms-2">
+                  <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
+                  <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
+                    placeholder="placeholder..">
+                  <i class="fa fa-solid fa-angle-down"></i>
+                
+                  <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center " value="Avashesh" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/Profile image.svg" alt="Avashesh Jaiswal" class="img-100">
+                      </div>
+                      <span class="ms-3">Avashesh Jaiswal </span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center " value="2" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
+                      </div>
+                      <span class="ms-3">Sadish Madtha</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center "  value="3" >
+                      <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                        <img src="../assets/images/Profile image.svg" alt="Shubham Handargule" class="img-100">
+                      </div>
+                      <span class="ms-3">Shubham Handargule</span>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <p class="error-message">• Error message</p>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                    <textarea class="decline-request border-0 ps-0" rows="4" cols="44"
+                      placeholder="Placeholder"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <label class="col-12 input-label fs-6" for="input2">Subheading</label>
+                    <textarea class="decline-request border-0 ps-0" rows="1" cols="44"
+                      placeholder="Placeholder text"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                  <div>
+                    <form method="post">
+                      <label class="col-12 input-label fs-6" for="input2">Body</label>
+                      <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
+                        placeholder="Placeholder"></textarea>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                
+                  <div class="tb-input-group p-2">
+                    <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
+                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+                  </div>
+                  <p class="error-message">• Error message</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7th modal ends here -->
+  
     <!-- 6th modal ends here -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       Edit PRL (EN)
@@ -427,11 +524,14 @@
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
       </div>
     </div>
     <!-- 7th modal ends here -->
+
+  
 
     <div class="m-2 p-2">
     </div>
@@ -1508,7 +1608,7 @@
                     <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
                       data-bs-target="#collapse1" aria-expanded="false">Title</button>
                   </h2>
-                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" >
                     <div class="collapse-inner-bg p-5">
                     </div>
                   </div>
@@ -1595,7 +1695,7 @@
                     <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
                       data-bs-target="#collapse1" aria-expanded="false">Title</button>
                   </h2>
-                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" >
                     <div class="collapse-inner-bg p-5">
                     </div>
                   </div>
@@ -1779,7 +1879,7 @@
                     <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
                       data-bs-target="#collapse1" aria-expanded="false">Title</button>
                   </h2>
-                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="collapse-inner-bg p-5">
                     </div>
                   </div>
@@ -1882,7 +1982,58 @@
       </div>
     </div>
     <!-- Add Deliverable last modal ends here -->
-
+ <!-- Select Assignee Popup Code End Here -->
+ <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#SelectAssignee" role="button">Select Assignee </a>
+<div class="modal fade" id="SelectAssignee" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">Select Assignee</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body collapse-inner-bg">
+        <div class="p-2 bg-white rounded-1">
+          <div class="search-container col-12">
+            <form>
+              <img src="../assets/images/Icons/Vector (1).svg" alt="">
+              <input class="bg-transparent w-75 ps-3 me-5" type="text" placeholder="Today" name="search">
+              <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg" alt="">
+            </form>
+          </div>
+        </div>
+        <ul class="col-12  list-group rounded-0">
+          <li class="list-group-child d-flex align-items-center " value="Avashesh" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/ProfileImage.png" alt="Avashesh Jaiswal" class="img-100">
+            </div>
+            <span class="ms-3">Avashesh Jaiswal </span>
+            <span class="text-danger ms-2">• Default</span>
+          </li>
+          <li class="list-group-child d-flex align-items-center " value="2" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/person1.jpg" alt="Sadish Madtha" class="img-100">
+            </div>
+            <span class="ms-3">Sadish Madtha</span>
+          </li>
+          <li class="list-group-child d-flex align-items-center "  value="3" >
+              <input class="me-3 impact" type="radio" id="impact1" name="impacts" value="yes">
+            <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/ProfileImage.png" alt="Shubham Handargule" class="img-100">
+            </div>
+            <span class="ms-3">Shubham Handargule</span>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-md bg-black tb-rounded text-white" type="button">PROCEED</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------Add Deliverables first end Here-------------------->
 
 
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
@@ -1929,6 +2080,7 @@
 "></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/script.js"></script>
+<script src="../javascript/inputs&dropdowns.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
 

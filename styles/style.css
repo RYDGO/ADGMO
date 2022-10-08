@@ -882,6 +882,7 @@ input:focus+.fa {
     position: absolute;
     left: 0;
     top: 107%;
+    z-index: 99;
 }
 
 .tb-input-group:hover {
@@ -914,7 +915,7 @@ datalist {
     max-height: 10rem;
     overflow-y: auto;
     margin-top: 13px;
-    margin-left: -8px;
+   left:0;
     z-index: 999;
 }
 
@@ -1897,3 +1898,12 @@ body::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.list-group-child {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}

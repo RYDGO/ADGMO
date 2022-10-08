@@ -1604,6 +1604,9 @@ input[type="radio"] {
     width: 17px;
     height: 17px;
 }
+input[type="checkbox"]{
+    border: 1px solid var(--grayshade-400) !important;
+}
 input[type="checkbox"]:checked {
     background-color: red !important;
 }

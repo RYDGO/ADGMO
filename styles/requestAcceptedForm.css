@@ -2,7 +2,12 @@
     left: -350px;
 }
 #exampleModal-add-new .main-modal{
-    right: 0;
+    right: 40px;
+    position: absolute;
+}
+#prlDeliverableModal .main-modal{
+    right: 40px;
+    position: absolute;
 }
     
 /* CUSTOM POPUP CSS */

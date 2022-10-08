@@ -3103,16 +3103,105 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
-                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" href="#prlDeliverableModal" role="button" data-bs-dismiss="modal">Next</button>
 
                 </div>
             </div>
         </div>
     </div>
+    <!-- REQUEST OVERVIEW DELIVERABLE POPUP ENDS HERE -->
 
-   
-      
-            <!-- REQUEST OVERVIEW DELIVERABLE POPUP ENDS HERE -->
+            <div class="modal fade" id="prlDeliverableModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog main-modal modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">PRL
+                            (En/Ar)
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="col-12 mb-4 p-3">
+                            <h6 class="tb-fs-16 font-weight-400 ">Are the deliverables due as part of the service level
+                                agreement (SLA)?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Yes <span class="user-nameline">(8th, November 2021)</span></label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">No</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-2">
+                            <p>When is the ADGMO team deadline lorem?</p>
+                            <div class="tb-input-group p-2 mt-3 ">
+                                <label class="col-12 input-label user-nameline" for="date">Created Date</label>
+                                <input type="date" class="col-12 user-nameline" id="date">
+                            </div>
+                        </div>
+    
+                        <div class="p-2 mt-3">
+                            <p class="tb-fs-16 font-weight-400">
+                                Are there any additional needs with this deliverable?
+                            </p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">
+                                Image
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">
+                                Video
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value=""
+                                    id="prl">Carousel
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex justify-content-between">
+                            <div>
+                                <p class="p-0">
+                                    Select the deliverables publishing date
+                                </p>
+                            </div>
+                            <div>
+                                <img src="../assets/images/Billed Monthly.svg" alt="calender img" />
+                                <span class=" tb-primary">Calender</span>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline" for="date">Select Date Due</label>
+                                    <input type="date" class="col-12 user-nameline" id="date">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline" for="time">Select time Due</label>
+                                    <input class="col-12 user-nameline" id="time" placeholder="placeholder text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
+                            <div class="p-2 ">
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WORKLOAD PRL (En/Ar) ENDS HERE -->
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

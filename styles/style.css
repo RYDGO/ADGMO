@@ -564,7 +564,7 @@
     border: 1px solid var(--grayshade-100);
 }
 
-.border-gray-100 {
+.border-gray-500 {
     border: 1px solid var(--grayshade-500);
 }
 
@@ -1913,6 +1913,7 @@ body::-webkit-scrollbar {
     border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
 
+/* modal popup position */
 .end-40{
 position: absolute;
 right: 40px;

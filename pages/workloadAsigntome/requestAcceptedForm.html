@@ -2078,7 +2078,7 @@
                 </div>
                 <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
                     <div class="col-md-5">
-                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button">Submit</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-submit">Submit</button>
                       <button class="btn btn-md tb-rounded bg-color-gray " type="button">Request More information</button>
                     </div>
                   </div>
@@ -3370,6 +3370,34 @@
         </div>
 
         <!-- WORKLOAD Social Media (En/Ar) MODAL ENDS HERE -->
+        <div class="modal fade" id="exampleModal-submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal">
+              <div class="modal-content inner-modal-content-box box-shadow-popup">
+                <div class="modal-header align-items-start p-4">
+                  <div>
+                    <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Submit</h5>
+                  </div>
+                  <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer collapse-inner-bg py-4 px-5">
+                  <div class="col-12">
+                    <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+                      <div>
+                        <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                        <textarea class="input col-12 border-0 ps-0" rows="4" cols="59"
+                          placeholder="Placeholder text"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 p-4">
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
     </div>

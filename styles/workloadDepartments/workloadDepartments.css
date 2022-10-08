@@ -107,10 +107,10 @@
 .tox .tox-toolbar__group {
     align-items: center;
     display: flex;
+    align-self: center;
     flex-wrap: wrap;
     margin: 0 !important;
     padding: 0 !important;
-    margin-bottom: 30px;
 }
 
 .tox-statusbar{

@@ -36,17 +36,16 @@ var table = $("#dropdownTable").DataTable({
   ajax: "../../objects.txt",
   columns: [
     {
-      className: "dt-control",
-      orderable: false,
       data: "id",
-      defaultContent: "",
     },
     { data: "type" },
     { data: "assignee" },
     { data: "due_date" },
     { data: "last_updated" },
     { data: "status" },
-    { data: "time_remainig" },
+    { className: "dt-control",
+      data: "time_remainig",
+    defaultContent:"" },
   ],
   order: [[1, "asc"]],
   columnDefs: [
@@ -55,7 +54,7 @@ var table = $("#dropdownTable").DataTable({
       data: "13765",
       render: function (data, type, row, meta) {
         return (
-          '<td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center"><div class="form-check mb-2"><input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"></div><div class="d-flex align-items-center justify-content-center"><h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">16</h6><h6 class="fs-6 fw-light">' +
+          '<td class="py-2 table-pd-top border-bottom-0 border-bottom-0 "><div class="d-flex justify-content-center align-items-center"><div class="form-check mb-2"><input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"></div><div class="d-flex align-items-center justify-content-center"><h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">16</h6><h6 class="fs-6 fw-light">' +
           data +
           "</h6></div></td>"
         );
@@ -121,7 +120,7 @@ var table = $("#dropdownTable").DataTable({
       data: "2:05:00",
       render: function (data, type, row, meta) {
         return (
-          '<td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i>' +
+          '<td class="py-2 table-pd-top border-bottom-0  table-pd-left"><i class="fa-regular fa-clock"></i> ' +
           data +
           "</td > "
         );

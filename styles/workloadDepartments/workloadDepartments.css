@@ -83,11 +83,6 @@
   .right-heading-task{
     text-align: left;
   }
-.active {
-    border: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
 
 .modal-backdrop {
     background-color:rgba(0,0,0)

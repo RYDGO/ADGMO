@@ -1828,10 +1828,9 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
     display: none;
 }
 
-body::-webkit-scrollbar {
-    /* width: 0em; */
-    /* DAM View styles starts  */
-}
+/* body::-webkit-scrollbar {
+    width: 0em;
+} */
 
 .view-card-border {
     border: 2px solid #EDEDED;
@@ -1917,4 +1916,34 @@ body::-webkit-scrollbar {
 .end-40{
 position: absolute;
 right: 40px;
+}
+.tab-remove-bg{
+    border: none;
+    background-color: transparent!important;
+    box-shadow: none !important;
+}
+table.dataTable td.dt-control {
+    text-align: left !important;
+    padding-left: 20px;
+}
+table.dataTable td.dt-control:before {
+   display: none;
+}
+table.dataTable td.dt-control::after {
+    height: 1em;
+    width: 1em;
+    margin-top: -9px;
+    margin-left: 40px;
+    display: inline-block;
+    color: white;
+    border: 0.15em solid white;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: "Courier New",Courier,monospace;
+    line-height: 1em;
+    content: "+";
+    background-color: #31b131;
 }

@@ -111,4 +111,12 @@ $(".input").on("input", function () {
 $('.ellipsis-btn').on("click", function () {
   $(this).next().toggle('d-block');
 })
+$('#redirectToViewAll').on("click", function () {
+  window.location.href = "../workloadAsigntome/requestOverviewForm.html";
+})
+$('#requestAccepted').on("click", function () {
+  window.location.href = "../workloadAsigntome/requestAcceptedForm.html";
+})
+
+
 

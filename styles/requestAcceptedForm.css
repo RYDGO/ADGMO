@@ -1,18 +1,10 @@
 .popup-absolute{
     left: -350px;
 }
+#socialMedia .main-modal,
+#prlDeliverableModal .main-modal,
 #exampleModal-add-new .main-modal{
     position: absolute;
     right: 40px;
 }
-#prlDeliverableModal .main-modal{
-    position: absolute;
-    right: 40px;
-}
-.social-media-modal .main-modal{
-    position: absolute !important;
-    right: 40px !important;
-}
-
-    
 /* CUSTOM POPUP CSS */

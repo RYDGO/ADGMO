@@ -1859,7 +1859,7 @@
             <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">
               Cancel
             </button>
-            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">
+            <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"  data-bs-target="#submitRequestNotification">
               Send Request
             </button>
           </div>
@@ -1928,7 +1928,7 @@
                       </div>
                       <div class="p-0 col-3">
                         <button class="btn btn-md tb-rounded bg-color-gray" type="button">
-                          Cancle
+                          Cancel
                         </button>
                       </div>
                     </div>
@@ -1938,7 +1938,7 @@
             </div>
             <div class="col-12 p-4">
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#prlDeliverableModal2">
+                <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#submitRequestNotification">
                   Submit
                 </button>
               </div>
@@ -2017,6 +2017,31 @@
       <!------------upload2---------------->
     </section>
     <!--create request ends here ------>
+       <!-- Modal -->
+      <div class="modal fade modal-backdrop-op" id="submitRequestNotification" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog main-modal modal-dialog-position">
+            <div class="modal-content inner-modal-content box-shadow-popup p-4">
+                <div class="modal-header align-items-start p-0">
+                    <img src="../assets/images/popup-img.png" class="me-4" alt="" width="70">
+                    <div>
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">News request recieved #89349</h5>
+                        <p class="m-0 lead-paragraph">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade gigaskapet. Daköktig fande.</p>
+                    </div>
+                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-footer p-0 pt-3">
+                    <!-- <button type="button" class="btn" data-bs-dismiss="modal">Go to Requests</button> -->
+                    <a href="#" class="text-decoration-none text-base-black fw-bold fs-5">Go to Requests</a>
+                    <button
+                        class="btn tb-btn-popup tb-btn-popup-hover tb-rounded fw-bold fs-5 py-2 px-3 ms-4 text-base-black m-0 border-0"
+                        type="button">View All
+                        Requests</button>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

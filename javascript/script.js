@@ -117,6 +117,9 @@ $('#redirectToViewAll').on("click", function () {
 $('#requestAccepted').on("click", function () {
   window.location.href = "../workloadAsigntome/requestAcceptedForm.html";
 })
+$('#redirectToViewAllRequests').on("click", function () {
+  window.location.href = "../pages/workloadAsigntome/viewAllRequest.html";
+})
 
 
 

@@ -3352,23 +3352,23 @@
               </div>
               <p class="error-message">• Error message</p>
             </div>
-            <div class="tb-input-group p-2 mt-3 input">
-              <label class="col-12 input-label" for="input">Number of Frames<sup>*</sup></label>
-              <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
-                placeholder="Select option">
+            <div class="tb-input-group p-2 mt-3 input border-danger">
+              <label class="col-12 input-label" for="input2">Select Deliverable</label>
+              <input class="col-11 input" autocomplete="off" role="combobox" id="input2" name="browsers"
+                placeholder="Placeholder text..." style="border-radius: 5px 5px 0px 0px;">
               <i class="fa fa-solid fa-angle-down"></i>
-              <datalist id="browsers" role="listbox">
+              <datalist id="browsers" role="listbox" style="display: none;">
                 <option value="Avashesh Jaiswal">Avashesh Jaiswal</option>
                 <option value="Sadish Madtha">Sadish Madtha</option>
                 <option value="Shubham Handargule">Shubham Handargule</option>
               </datalist>
             </div>
-            <div class="tb-input-group p-2 mt-3 input">
-              <label class="col-12 input-label" for="input">Type of Content<sup>*</sup></label>
-              <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
-                placeholder="Select option">
+            <div class="tb-input-group p-2 mt-3 input border-danger">
+              <label class="col-12 input-label" for="input3">Select Deliverable</label>
+              <input class="col-11 input" autocomplete="off" role="combobox" id="input3" name="browsers"
+                placeholder="Placeholder text..." style="border-radius: 5px 5px 0px 0px;">
               <i class="fa fa-solid fa-angle-down"></i>
-              <datalist id="browsers" role="listbox">
+              <datalist id="browsers" role="listbox" style="display: none;">
                 <option value="Avashesh Jaiswal">Avashesh Jaiswal</option>
                 <option value="Sadish Madtha">Sadish Madtha</option>
                 <option value="Shubham Handargule">Shubham Handargule</option>
@@ -3469,74 +3469,75 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body collapse-inner-bg">
-              <div class="col-12 d-flex align-items-start pe-0">
-                <img src="../assets/images/Ellipse.png" alt="" width="40" class="me-3">
-                <div class="">
-                  <p class="mb-0 text-gray-500">Assignee</p>
-                  <p class="mb-0 text-gray-300">Cameron Williamson</p>
-                  <p class="mb-0 text-gray-400">Content</p>
+            <div class="col-12 d-flex align-items-start pe-0">
+              <img src="../assets/images/Ellipse.png" alt="" width="40" class="me-3">
+              <div class="">
+                <p class="mb-0 text-gray-500">Assignee</p>
+                <p class="mb-0 text-gray-300">Cameron Williamson</p>
+                <p class="mb-0 text-gray-400">Content</p>
+              </div>
+            </div>
+            <div class="col-12 bg-white mt-3">
+              <div class="row g-2 px-3 pb-3">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 px-2">
+                  <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload
+                    Attachment</label>
+                  <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2"
+                    placeholder="Upload Attachment">Upload
+                    Attachment</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center px-2">
+                  <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+                    <span class="tb-fs-14 py-2">Upload</span>
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
                 </div>
               </div>
-              <div class="col-12 bg-white mt-3">
-                <div class="row g-2 px-3 pb-3">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 px-2">
-                        <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload
-                            Attachment</label>
-                        <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2" placeholder="Upload Attachment">Upload
-                            Attachment</span>
+              <div class="row g-2 py-4 px-3">
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached1.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center px-2">
-                        <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
-                            <span class="tb-fs-14 py-2">Upload</span>
-                            <input id="uploadBtn" type="file" class="upload">
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="row g-2 py-4 px-3">
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached1.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached2.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached2.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached3.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached3.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                </div>
 
-                </div>
+              </div>
             </div>
             <div class="col-12 mb-4 p-3">
               <h6 class="tb-fs-16 font-weight-400 mt-3">Require Creative Support</h6>
@@ -3574,78 +3575,80 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body collapse-inner-bg">
-              <div class="col-12 d-flex align-items-start pe-0">
-                <img src="../assets/images/Ellipse.png" alt="" width="40" class="me-3">
-                <div class="">
-                  <p class="mb-0 text-gray-500">Assignee</p>
-                  <p class="mb-0 text-gray-300">Cameron Williamson</p>
-                  <p class="mb-0 text-gray-400">Content</p>
+            <div class="col-12 d-flex align-items-start pe-0">
+              <img src="../assets/images/Ellipse.png" alt="" width="40" class="me-3">
+              <div class="">
+                <p class="mb-0 text-gray-500">Assignee</p>
+                <p class="mb-0 text-gray-300">Cameron Williamson</p>
+                <p class="mb-0 text-gray-400">Content</p>
+              </div>
+            </div>
+            <div class="col-12 bg-white mt-3">
+              <div class="row g-2 px-3 pb-3">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 px-2">
+                  <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload
+                    Attachment</label>
+                  <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2"
+                    placeholder="Upload Attachment">Upload
+                    Attachment</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center px-2">
+                  <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+                    <span class="tb-fs-14 py-2">Upload</span>
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
                 </div>
               </div>
-              <div class="col-12 bg-white mt-3">
-                <div class="row g-2 px-3 pb-3">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 px-2">
-                        <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload
-                            Attachment</label>
-                        <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2" placeholder="Upload Attachment">Upload
-                            Attachment</span>
+              <div class="row g-2 py-4 px-3">
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached1.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end align-items-center px-2">
-                        <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
-                            <span class="tb-fs-14 py-2">Upload</span>
-                            <input id="uploadBtn" type="file" class="upload">
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="row g-2 py-4 px-3">
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached1.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached2.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached2.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img class="position-relative w-100" src="../../assets/images/attached3.svg">
+                    <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                      <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                        Sky.jpg
+                      </div>
+                      <div class="col-4 d-flex justify-content-evenly">
+                        <img src="../../assets/images/Icons/eye-icon.svg" alt="">
+                        <img src="../../assets/images/Icons/pen.svg" alt="">
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="position-relative">
-                            <img class="position-relative w-100" src="../../assets/images/attached3.svg">
-                            <div class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
-                                <div class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
-                                    Sky.jpg
-                                </div>
-                                <div class="col-4 d-flex justify-content-evenly">
-                                    <img src="../../assets/images/Icons/eye-icon.svg" alt="">
-                                    <img src="../../assets/images/Icons/pen.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                </div>
 
-                </div>
+              </div>
             </div>
             <div class="bg-white mt-3 p-3">
               <p class="mb-0 tb-fs-14">Notes</p>
-              <p class="mb-0 text-gray-300">Facts content received from content team through active collaboration or ‘request for more information’</p>
+              <p class="mb-0 text-gray-300">Facts content received from content team through active collaboration or
+                ‘request for more information’</p>
             </div>
           </div>
           <div class="modal-footer">
@@ -3657,6 +3660,111 @@
       </div>
     </div>
     <!-- IG Carousal, Creative modal ends here -->
+    <a class="btn btn-primary w-25 mt-4" data-bs-toggle="modal" href="#approveDeliverables3" role="button">Approve Deliverables
+    </a>
+    <div class="modal fade" id="approveDeliverables3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">Approve Deliverables</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body collapse-inner-bg">
+            <div class="col-12 mt-3">
+              <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                <div>
+                  <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                  <textarea class="decline-request border-0 ps-0" rows="4" cols="44" placeholder="Placeholder text"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <p class="mb-0">Confirm Scheduling</p>
+            </div>
+            <div class="mt-4 mb-4">
+              <div class="accordion" id="myAccordion">
+                <div class="accordion-item mb-4">
+                  <h2 class="accordion-header" id="heading1">
+                    <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1-popup" aria-expanded="false">PRL (En)</button>
+                  </h2>
+                  <div id="collapse1-popup" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="collapse-inner-bg p-3">
+                      <div class="col-12">
+                        <h6 class="tb-fs-16 font-weight-400 mt-3">Confirm Publishing date?</h6>
+                        <div class="d-flex align-items-center mb-3">
+                          <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                          <label for="html">Yes as per set <span class="user-nameline">(8th, November 2021)</span></label>
+                        </div>
+                        <div>
+                          <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                          <label for="html">No</label>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="col-md-6 p-2 ps-0">
+                          <div class="tb-input-group p-2 mt-3 ">
+                            <label class="col-12 input-label user-nameline" for="date">Select Date Due</label>
+                            <input type="date" class="col-12 user-nameline" id="date">
+                          </div>
+                        </div>
+                        <div class="col-md-6 p-2 pe-0">
+                          <div class="tb-input-group p-2 mt-3 ">
+                            <label class="col-12 input-label user-nameline" for="time">Select time Due</label>
+                            <input class="col-12 user-nameline" id="time" placeholder="placeholder text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading1">
+                    <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2-popup" aria-expanded="false">PRL (En)</button>
+                  </h2>
+                  <div id="collapse2-popup" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="collapse-inner-bg p-3">
+                      <div class="col-12">
+                        <h6 class="tb-fs-16 font-weight-400 mt-3">Confirm Publishing date?</h6>
+                        <div class="d-flex align-items-center mb-3">
+                          <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                          <label for="html">Yes as per set <span class="user-nameline">(8th, November 2021)</span></label>
+                        </div>
+                        <div>
+                          <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                          <label for="html">No</label>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="col-md-6 p-2 ps-0">
+                          <div class="tb-input-group p-2 mt-3 ">
+                            <label class="col-12 input-label user-nameline" for="date">Select Date Due</label>
+                            <input type="date" class="col-12 user-nameline" id="date">
+                          </div>
+                        </div>
+                        <div class="col-md-6 p-2 pe-0">
+                          <div class="tb-input-group p-2 mt-3 ">
+                            <label class="col-12 input-label user-nameline" for="time">Select time Due</label>
+                            <input class="col-12 user-nameline" id="time" placeholder="placeholder text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
+            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Request Overview Approve Deliverables ends here -->
 
 
 

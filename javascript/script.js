@@ -107,7 +107,7 @@ $(".input").on("input", function () {
     }
   });
 });
-      // assets three dots card popup 
+// assets three dots card popup 
 $('.ellipsis-btn').on("click", function () {
   $(this).next().toggle('d-block');
 })
@@ -121,5 +121,27 @@ $('#redirectToViewAllRequests').on("click", function () {
   window.location.href = "../pages/workloadAsigntome/viewAllRequest.html";
 })
 
+
+$("#prl-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#prlDeliverableModal")
+  }
+})
+
+
+$("#social-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#socialMedia")
+  }
+})
+
+$("input[name$='due_date']").click(function () {
+  var test = $(this).val();
+  if (test == "yes") {
+    $(".impact-show").hide();
+  } else {
+    $(".impact-show").show();
+  }
+});
 
 

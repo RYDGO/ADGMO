@@ -2801,10 +2801,10 @@
                                 Are there any additional needs with this deliverable?
                             </p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl"> Image
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl-image"> Image
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl"> Video
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl-video"> Video
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl">Carousel
@@ -2840,8 +2840,8 @@
                         <div class="d-flex justify-content-between w-100">
                             <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
                             <div class="p-2 ">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-add-new" data-bs-dismiss="modal">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#socialMedia" data-bs-dismiss="modal">Next</button>
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" href="#exampleModal-add-new" data-bs-dismiss="modal">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" href="#socialMedia" data-bs-dismiss="modal" id="prlNextBtn">Next</button>
                             </div>
                         </div>
                     </div>
@@ -2945,13 +2945,13 @@
                                 Which formats do you require on Twitter?
                             </p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl"> Single Image
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="social-image"> Single Image
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl"> Carousel
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl">Video Post
+                                <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="social-video">Video Post
                             </div>
                         </div>
                         <div class="p-2 d-flex justify-content-between">
@@ -2984,8 +2984,8 @@
                         <div class="d-flex justify-content-between w-100">
                             <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
                             <div class="p-2 ">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-add-new" data-bs-dismiss="modal">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" href="#exampleModal-add-new" data-bs-dismiss="modal">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" id="socialNextBtn">Next</button>
                             </div>
                         </div>
                     </div>
@@ -2994,6 +2994,228 @@
         </div>
 
         <!-- WORKLOAD Social Media (En/Ar) MODAL ENDS HERE -->
+
+        <div class="modal fade background-dim" id="additionalModal" aria-hidden="true" aria-labelledby="newsModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog main-modal modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="newsModalToggleLabel">
+                            Additional Information
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="col-12 mb-4 p-3">
+                            <h6 class="tb-fs-16 font-weight-400 "> Does it require any creative support?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Yes</label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">No</label>
+                            </div>
+                        </div>
+                        <div class="ms-3">
+                            <h6 class="tb-fs-16 font-weight-400">
+                                Shooting / Filming / Recording Details
+                            </h6>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline" for="date">Select Date Due</label>
+                                    <input type="date" class="col-12 user-nameline input" id="date">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="tb-input-group p-2  ">
+                                    <label class="col-12 input-label user-nameline " for="time">Select time Due</label>
+                                    <input class="col-12 user-nameline input" id="time" placeholder="placeholder text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-2 my-3 p-2 bg-white border-danger">
+                            <label class="col-12 input-label tb-fs-12" for="links">Location</label>
+                            <input class="col-12  bg-white input" id="links" name="links" placeholder="Placeholder text" style="border-radius: 5px 5px 0px 0px;">
+                        </div>
+                        <div class="col-12 mb-4 p-3">
+                            <h6 class="tb-fs-16 font-weight-400 ">Which type of video is required?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Interview Video</label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Scripted Video</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 p-3">
+                            <h6 class="tb-fs-16 font-weight-400 "> Does it require any creative support?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">Yes</label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
+                                <label for="html">No</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="ms-3">
+                                <h6 class="font-weight-400">Entity Contact Details</h6>
+                            </div>
+
+                            <div class="mx-2 my-3 p-2 bg-white border-danger">
+                                <label class="col-12 input-label tb-fs-12" for="links">Name</label>
+                                <input class="col-12  bg-white input" id="links" name="links" placeholder="Placeholder text" style="border-radius: 5px 5px 0px 0px;">
+                            </div>
+                            <div class="mx-2 my-3 p-2 bg-white border-danger">
+                                <label class="col-12 input-label tb-fs-12" for="links">Position</label>
+                                <input class="col-12  bg-white input" id="links" name="links" placeholder="Placeholder text" style="border-radius: 5px 5px 0px 0px;">
+                            </div>
+                            <div class="mx-2 my-3 p-2 bg-white border-danger">
+                                <label class="col-12 input-label tb-fs-12" for="links">Mobile Number</label>
+                                <input class="col-12  bg-white input" id="links" name="links" placeholder="Placeholder text" style="border-radius: 5px 5px 0px 0px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" modal-footer">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
+                            <div class="p-2 ">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" href="#prlDeliverableModal" data-bs-dismiss="modal" id="addBackBtn">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-dismiss="modal" data-bs-toggle="modal" href="#reviewModal">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information Modal Ends here -->
+
+        <div class="modal fade background-dim" id="reviewModal" aria-hidden="true" aria-labelledby="newsModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog main-modal modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="newsModalToggleLabel2">
+                            Review
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="mt-4 mb-4">
+                            <div class="accordion accordion-tab-width" id="myAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button type="button" class="shadow-none accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">PRL(En)</button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse" data-bs-parent="#myAccordion">
+                                        <div class="collapse-inner-bg p-2">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-gray-500 tb-fs-14">
+                                                    Language(s)
+                                                </div>
+                                                <div class="tb-fs-14 font-weight-400">
+                                                    English, Arabic
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-gray-500 tb-fs-14">
+                                                    Are the deliverables due as part of the service level agreement (SLA)?
+                                                </div>
+                                                <div class="tb-ts-14 font-weight-400">
+                                                    yes
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-gray-500 tb-fs-14">
+                                                    When is the ADGMO team deadline lorem?
+                                                </div>
+                                                <div class="tb-fs-14 font-weight-400">
+                                                    20/02/2022
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-gray-500 tb-fs-14">
+                                                    Are there any additional needs with this deliverable?
+                                                </div>
+                                                <div class="tb-fs-14 font-weight-400">
+                                                    Image, Video
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-gray-500 tb-fs-14">
+                                                    Publishing date
+                                                </div>
+                                                <div class=" tb-fs-14 font-weight-400">
+                                                    20/02/2022 - 9:00am
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 mb-4">
+                                                <div class="accordion" id="myAccordion">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading1">
+                                                            <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">Social Media</button>
+                                                        </h2>
+                                                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                                                            <div class="collapse-inner-bg p-2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 mb-4">
+                                                <div class="accordion" id="myAccordion">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading1">
+                                                            <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">Others</button>
+                                                        </h2>
+                                                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                                                            <div class="collapse-inner-bg p-2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 mb-4">
+                                                <div class="accordion" id="myAccordion">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading1">
+                                                            <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">Addtional Information</button>
+                                                        </h2>
+                                                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion" style="">
+                                                            <div class="collapse-inner-bg p-2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" modal-footer">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
+                            <div class="p-2 ">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-toggle="modal" data-bs-target="#additionalModal" data-bs-dismiss="modal">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Modal Ends Here -->
+
         <div class="modal fade background-dim" id="exampleModal-submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal">
                 <div class="modal-content inner-modal-content-box box-shadow-popup">

@@ -1073,6 +1073,7 @@ option:hover,
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
+    height: 100%;
 }
 
 /* -------- Dropdowns ends here --------- */

@@ -107,7 +107,7 @@ $(".input").on("input", function () {
     }
   });
 });
-      // assets three dots card popup 
+// assets three dots card popup 
 $('.ellipsis-btn').on("click", function () {
   $(this).next().toggle('d-block');
 })
@@ -122,36 +122,41 @@ $('#redirectToViewAllRequests').on("click", function () {
 })
 
 
-$("body").on("click", ".dropdown-menu", function (e) {
-  $(this).parent().is(".open") && e.stopPropagation();
-});
+$("#prl-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#prlDeliverableModal")
+  }
+})
 
-$(".selectall").click(function () {
-  if ($(this).is(":checked")) {
-    $(".option").prop("checked", true);
-    var total = $('input[name="options[]"]:checked').length;
-    $(".dropdown-text").html("(" + total + ") Selected");
-    $(".select-text").html(" Deselect");
+$("#social-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#socialMedia")
+  }
+})
+
+$("#prl-image,#prl-video").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#prlNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#prlDeliverableModal")
+
+  }
+})
+
+$("#social-video,#social-image").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#socialNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#socialMedia")
+  }
+})
+
+$("input[name$='due_date']").click(function () {
+  var test = $(this).val();
+  if (test == "yes") {
+    $(".impact-show").hide();
   } else {
-    $(".option").prop("checked", false);
-    $(".dropdown-text").html("(0) Selected");
-    $(".select-text").html(" Select");
+    $(".impact-show").show();
   }
 });
-
-$("input[type='checkbox'].justone").change(function () {
-  var a = $("input[type='checkbox'].justone");
-  if (a.length == a.filter(":checked").length) {
-    $(".selectall").prop("checked", true);
-    $(".select-text").html(" Deselect");
-  } else {
-    $(".selectall").prop("checked", false);
-    $(".select-text").html(" Select");
-  }
-  var total = $('input[name="options[]"]:checked').length;
-  $(".dropdown-text").html("(" + total + ") Selected");
-});
-
 
 
 

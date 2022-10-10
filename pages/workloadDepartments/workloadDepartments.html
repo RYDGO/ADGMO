@@ -47,10 +47,98 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </span>
+                            <div class="modal notification-shadow fade" id="notification-modal" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content notification-position">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title font-weight-700 text-dark-black "
+                                                id="exampleModalToggleLabel">
+                                                Notifications</h5>
+                                            <a href="#" class="text-decoration-none">See all</a>
+                                        </div>
+                                        <div class="modal-body collapse-inner-bg px-0 ">
+                                            <div class="bg-white  tb-rounded pb-3">
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"> <span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och
+                                                            presyrade. Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification popup modal ends here -->
                         </div>
-                        <div class="d-flex justify-content-center me-3">
+                        <div class="d-flex justify-content-center me-3 position-relative">
                             <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-regular fa-bell"></i>
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#notification-modal">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a>
                             </span>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -71,7 +159,6 @@
             </div>
         </nav>
         <!--navbar ends here -->
-
         <nav class="sidebar " id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
@@ -80,13 +167,14 @@
                 <div class="menu">
                     <ul class="menu-links flex-center flex-column align-items-start">
                         <li class="nav-link sidebarTabsToggle">
-                            <a href="#" class="flex-center-align mb-2">
+                            <a href="../Dashboard.html" class="flex-center-align mb-2">
                                 <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                 <span class="text-dark nav-text">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <a href="#"
+                                class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
                                     <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Workload</span>
@@ -95,7 +183,7 @@
                             </a>
                             <ul class="nav-link sub-menu">
                                 <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
+                                        href="../workloadDeliverables/EditDeliverables.html">Overview</a>
                                 </li>
                                 <li class="dropdown-content flex-center"><a
                                         class="text-black justify-content-between sub-btn" href="#">Attachments <i
@@ -110,7 +198,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="">Deliverables <i
+                                        class="text-black justify-content-between sub-btn" href="../workloadDeliverables/DeliverablesInProgress.html">Deliverables <i
                                             class="fa-solid fa-plus gray-100 p-2"></i></a>
                                     <ul class="nav-link sub-menu submenu-inner">
                                         <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
@@ -287,7 +375,7 @@
                         </li>
                         <li
                             class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <a href="../../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                            <a href="../CreateRequest.html" class="hover-remove" class="align-self-center">
                                 <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
                                     <span>Request</span></button>
                             </a>
@@ -297,6 +385,327 @@
             </div>
             <!--sidebar ends here -->
         </nav>
+        <!--dashboard ends here ------>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
+            role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content modal-dialog-scrollable">
+                    <div class="modal-header collapse-inner-bg align-items-start px-4 pt-4 pb-1">
+                        <div>
+                            <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Global Search</h5>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg px-4 py-3">
+                        <div class="col-12">
+                            <div class="tb-input-group tb-rounded-md tb-inp align-items-center px-4 py-3 border-0">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <div class="topnav p-2">
+                                            <div class="search-container col-12">
+                                                <form>
+                                                    <img src="../assets/images/Icons/Vector (1).svg" alt="">
+                                                    <input class="bg-transparent w-75 ps-3 me-5" type="text"
+                                                        placeholder="Today" name="search">
+                                                    <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg"
+                                                        alt="">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="../pages/globalSearchResult.html" class="text-decoration-none">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            Save search
+                                        </button>
+                                    </a>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded me-3"
+                                            type="button">English</button>
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded"
+                                            type="button">يبرع</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label class="col-12 input-label fs-6" for="input2">Filters</label>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request ID
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sector
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Entity
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Type
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Saved Searches
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Task
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Unpublished Asset
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Published Asset
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Created date
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div>
+                                <h5 class="modal-title tb-h4 text-black " id="exampleModalLabel">Today</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/person1.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/movie.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-2 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../assets/images/Icons/L1.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            View All Results
+                                        </button>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  px-4">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>`
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  modal ends here -->
 
 
 
@@ -539,10 +948,6 @@
                                                     <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                         <img src="../../assets/images/Icons/filter.svg"
                                                             alt="icon-warning" class="w-100">
-                                                    </div>
-                                                    <div class="w-h-40  rounded-circle flex-center img-cover me-2">
-                                                        <a  data-bs-toggle="modal" href="#SelectAssignee" ><img src="../../assets/images/Icons/search.svg"
-                                                            alt="icon-warning" class="w-100"></a>
                                                     </div>
                                                 </div>
 
@@ -1050,10 +1455,10 @@
                                                         <img src="../../assets/images/Icons/filter.svg"
                                                             alt="icon-warning" class="w-100">
                                                     </div>
-                                                    <div class="w-h-40  rounded-circle flex-center img-cover me-2">
+                                                    <!-- <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                         <img src="../../assets/images/Icons/search.svg"
                                                             alt="icon-warning" class="w-100">
-                                                    </div>
+                                                    </div> -->
                                                 </div>
 
 
@@ -2015,10 +2420,10 @@
                                         <div class="topnav p-2">
                                             <div class="search-container col-12">
                                                 <form>
-                                                    <img src="../assets/images/Icons/Vector (1).svg" alt="">
+                                                    <img src="../../assets/images/Icons/Vector (1).svg" alt="">
                                                     <input class="bg-transparent w-75 ps-3 me-5" type="text"
                                                         placeholder="Today" name="search">
-                                                    <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg"
+                                                    <img class="ms-3 ps-1" src="../../assets/images/Icons/Vector.svg"
                                                         alt="">
                                                 </form>
                                             </div>
@@ -2177,7 +2582,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
@@ -2193,7 +2598,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
@@ -2216,7 +2621,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
@@ -2239,7 +2644,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/person1.jpg" alt="">
+                                            <img src="../../assets/images/person1.jpg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
@@ -2249,7 +2654,7 @@
                                     <div class="col-5 d-flex align-items-center justify-content-end  me-3">
                                         <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
                                             ago</span>
-                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
                                         <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
                                             View
                                         </button>
@@ -2263,7 +2668,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/movie.jpg" alt="">
+                                            <img src="../../assets/images/movie.jpg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
@@ -2273,7 +2678,7 @@
                                     <div class="col-5 d-flex align-items-center justify-content-end  me-3">
                                         <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
                                             ago</span>
-                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
                                         <button type="button" class="btn-md gray-700 tb-rounded ms-2 tb-fs-16 border-0">
                                             View
                                         </button>
@@ -2287,7 +2692,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/L1.svg" alt="">
+                                            <img src="../../assets/images/Icons/L1.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
@@ -2330,10 +2735,10 @@
            <div class="search-container col-12 align-items-center">
              <form class="d-flex justify-content-between align-items-center">
                <div>
-                 <img src="../assets/images/Icons/Vector (1).svg" alt="">
+                 <img src="../../assets/images/Icons/Vector (1).svg" alt="">
                  <input class="bg-transparent w-75 ps-3" type="text" placeholder="Today" name="search">
                </div>
-               <img class="float-end me-2" src="../assets/images/Icons/Vector.svg" alt="">
+               <img class="float-end me-2" src="../../assets/images/Icons/Vector.svg" alt="">
              </form>
            </div>
          </div>

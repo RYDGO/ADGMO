@@ -128,10 +128,38 @@ $("#prl-checkbox").on("change", function () {
   }
 })
 
-
 $("#social-checkbox").on("change", function () {
   if ($(this).is(':checked')) {
     $("#nextBtnAddDel").attr("href", "#socialMedia")
+  }
+})
+
+$("#prl-image").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#prlNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#prlDeliverableModal")
+
+  }
+})
+
+$("#prl-video").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#prlNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#prlDeliverableModal")
+  }
+})
+
+$("#social-video").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#socialNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#socialMedia")
+  }
+})
+
+$("#social-image").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#socialNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#socialMedia")
   }
 })
 
@@ -143,5 +171,7 @@ $("input[name$='due_date']").click(function () {
     $(".impact-show").show();
   }
 });
+
+prlNextBtn
 
 

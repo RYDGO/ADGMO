@@ -1074,6 +1074,7 @@ option:hover,
     opacity: 0;
     filter: alpha(opacity=0);
     height: 100%;
+    width: 100%;
 }
 
 /* -------- Dropdowns ends here --------- */

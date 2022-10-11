@@ -121,6 +121,9 @@ $('#redirectToViewAllRequests').on("click", function () {
   window.location.href = "../pages/workloadAsigntome/viewAllRequest.html";
 })
 
+$('#redirectToViewAllSearchResults').on("click", function () {
+  window.location.href = "../pages/globalSearchResult.html";
+})
 
 $("#prl-checkbox").on("change", function () {
   if ($(this).is(':checked')) {

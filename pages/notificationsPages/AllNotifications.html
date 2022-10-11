@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Search Popup</title>
+    <title>notification</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/dashboard.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                     <div class="col-3 navbar-brand" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../assets/images/user.png" alt="user profile" class="img-responsive">
+                                <img src="../../assets/images/user.png" alt="user profile" class="img-responsive">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -61,7 +61,7 @@
                     <div class="col-4 d-flex justify-content-end">
                         <a href="#" rel="noopener noreferrer">
                             <div class="img-containerbox">
-                                <img src="../assets/images/HorizontalLogos/LogoRedFilled.png" alt="logo"
+                                <img src="../../assets/images/HorizontalLogos/LogoRedFilled.png" alt="logo"
                                     class="img-responsive" />
                             </div>
                         </a>
@@ -71,7 +71,6 @@
         </nav>
         <!--navbar ends here -->
 
-        
         <nav class="sidebar " id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
@@ -81,14 +80,14 @@
                     <ul class="menu-links flex-center flex-column align-items-start">
                         <li class="nav-link sidebarTabsToggle">
                             <a href="#" class="flex-center-align mb-2">
-                                <img src="../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                 <span class="text-dark nav-text">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
-                                    <img src="../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Workload</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -128,7 +127,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
-                                    <img src="../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <img src="../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Schedule</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -168,7 +167,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <img src="../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Asset Library</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -208,7 +207,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <img src="../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Reporting</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -248,7 +247,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <img src="../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Our Standards</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -298,8 +297,488 @@
             <!--sidebar ends here -->
         </nav>
         <!--dashboard ends here ------>
+        <section class="main-section">
+            <div class="container mx-3">
+                <div class="row mt-3 d-flex">
+                    <div class="col-4">
+                        <h2 class="notification-heading-style">Notifications</h2>
+                    </div>
+                    <div class="col-8 d-flex  align-items-center justify-content-end">
+                        <div class="d-flex align-items-center float-end">
+                            <div class=" d-flex align-items-center mx-3">
+                                <h5 class="mx-2 m-0 p-0 text-black">Filter by:</h5>
+                                <div class="form-floating gray-800 ">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-md collapse-inner-bg fw-semibold tb-rounded border-0 dropdown-toggle gray-800 border-0 fs-5"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            All
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-5"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6"
+                                                    type="button">
+                                                    Apply All</button></li>
 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mx-3">
+                                <span class="rounded-circle border-gray-500">
+                                    <i class="fa-solid fa-magnifying-glass p-3 fs-5"></i>
+                                </span>
+                            </div>
+                            <div class="vartical-line ms-2"></div>
+                            <div class="ms-4">
+                                <button class="btn btn-lg bg-white border border-dark tb-rounded ba nav-text"
+                                    type="button">
+                                    Mark All As Read</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav mb-3 border mt-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-5 m-0" role="presentation">
+                        <button class="nav-link active tab-btn-btn fs-5" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Deliverables In
+                            Progress</button>
+                    </li>
+                    <li class="nav-item ms-5 m-0" role="presentation">
+                        <button class="nav-link tab-btn-btn fs-5" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Settings</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active tab-remove-bg" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="notification-box-cards">
+                            <div class="notification-card">
+                                <h5 class="pt-4 pb-2 ps-2">Today</h5>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Comments</h6>
+                                                <h6 class="text-secondary">2 minutes ago</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-2 position-relative">
+                                                        <div class="position-absolute conversation-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle conversation-red-dot fa-xs "></i>
+                                                        </div>
+                                                        <span
+                                                            class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-1">
+                                                            <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                        </span>
+                                                    </div>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">3 hours ago</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489440</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">3 hours ago</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notification-card">
+                                <h5 class="pt-4 pb-2 ps-2">Yesterday</h5>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Asset</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-2 position-relative">
+                                                        <div class="position-absolute conversation-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle conversation-red-dot fa-xs "></i>
+                                                        </div>
+                                                        <span
+                                                            class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-1">
+                                                            <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                        </span>
+                                                    </div>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489440</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notification-card">
+                                <h5 class="pt-4 pb-2 ps-2">11/10/22</h5>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Comments</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-2 position-relative">
+                                                        <div class="position-absolute conversation-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle conversation-red-dot fa-xs "></i>
+                                                        </div>
+                                                        <span
+                                                            class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-1">
+                                                            <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                        </span>
+                                                    </div>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489440</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mb-4">
+                                    <div class="card-body">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h6 class="text-secondary">Request</h6>
+                                                <h6 class="text-secondary">12/10/22 10:00am</h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <span
+                                                        class="common-width-label-40 collapse-inner-bg  rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <p class="mb-0 bold-paragraph text-base-black">SA</p>
+                                                    </span>
+                                                    <h5 class="pt-1">
+                                                        <span class="nav-text fs-5">Sandra Ken</span>
+                                                        tagged you on a
+                                                        comment
+                                                        on
+                                                        <span class="nav-text fs-5">#2489430</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                                        type="button">View</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade tab-remove-bg" id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <div class="card border-0 mt-4 shadow-sm pt-4 px-3  pb-4  bg-body rounded">
+                            <div class="card-body py-4 px-3">
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom pb-4 mt-3 px-3">
+                                    <h5 class="">Recieve Notifications for Requests</h5>
+                                    <div class="switcher">
+                                        <label for="toggle-1">
+                                            <span class="fs-5 me-2">Yes</span>
+                                            <input type="checkbox" id="toggle-1" /><span><small></small></span><small>
+                                                <span class="fs-5 me-2">No</span></small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom pb-4 mt-3 pt-4 px-3">
+                                    <h5 class="">Recieve Notification Request Updates</h5>
+                                    <div class="switcher">
+                                        <label for="toggle-2">
+                                            <span class="fs-5 me-2">Yes</span>
+                                            <input type="checkbox" id="toggle-2" /><span><small></small></span><small>
+                                                <span class="fs-5 me-2">No</span></small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom pb-4 mt-3 pt-4 px-3">
+                                    <h5 class="">Recieve Notifications for Comments & Annotations </h5>
+                                    <div class="switcher">
+                                        <label for="toggle-3">
+                                            <span class="fs-5 me-2">Yes</span>
+                                            <input type="checkbox" id="toggle-3" /><span><small></small></span><small>
+                                                <span class="fs-5 me-2">No</span></small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom pb-4 mt-3 pt-4 px-3">
+                                    <h5 class="">Recieve Notifications for replies to Comments & Annotations</h5>
+                                    <div class="switcher">
+                                        <label for="toggle-4">
+                                            <span class="fs-5 me-2">Yes</span>
+                                            <input type="checkbox" id="toggle-4" /><span><small></small></span><small>
+                                                <span class="fs-5 me-2">No</span></small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom pb-4 mt-3 pt-4 px-3">
+                                    <h5 class="">Recieve Notifications for Request Approvals</h5>
+                                    <div class="switcher">
+                                        <label for="toggle-5">
+                                            <span class="fs-5 me-2">Yes</span>
+                                            <input type="checkbox" id="toggle-5" /><span><small></small></span><small>
+                                                <span class="fs-5 me-2">No</span></small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="main-box">
+                <div class=" d-flex justify-content-end my-2 align-items-center ">
+                    <div class="row">
+                    <div class="col-4">
+                        <h3>Notifications</h3>
+                    </div>
+                   
+                    <form class="col-8 py-1 align-items-center d-flex justify-content-end">
+                      <div class="d-flex">
+                        <div class=" d-flex align-items-center">
+                          <h6 class="fw-light mx-2 m-0 p-0">View:</h6>
+                          <div class="form-floating gray-800">
+                            <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
+                              <option selected>5</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class=" d-flex align-items-center">
+                          <h6 class="fw-light mx-2 m-0 p-0">Filter by:</h6>
+                          <div class="form-floating gray-800 ">
+                            <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
+                              <option selected>All</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="vartical-line mx-3"></div>
+                        <div class=" d-flex align-items-center">
+                          <ul class="nav nav-pills p-1 gray-800" id="pills-tab" role="tablist">
+                            <li class="" role="presentation">
+                              <button class="nav-link active btn btn-secondary text-black" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true"><img src="../assets/images/Icons/list-icon.svg" alt="list-icon"
+                                  class="me-2">list</button>
+                            </li>
+                            <li class="" role="presentation">
+                              <button class="nav-link btn btn-secondary text-black" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false"><img src="../assets/images/Icons/grid-icon.svg" alt="grid-icon"
+                                  class="me-2">Grid</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class=" d-flex align-items-center">
+                          <div class="py-2 px-3 mx-1 tb-rounded tb-btn-primary text-white"><img
+                              src="../assets/images/Icons/Chart-icon.svg" alt="grid-icon" class="me-2">Upload</div>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+                  </div>
+            </div> -->
+        </section>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
             role="dialog">
@@ -320,15 +799,21 @@
                                         <div class="topnav p-2">
                                             <div class="search-container col-12">
                                                 <form>
-                                                    <img src="../assets/images/Icons/Vector (1).svg" alt="">
+                                                    <img src="../../assets/images/Icons/Vector (1).svg" alt="">
                                                     <input class="bg-transparent w-75 ps-3 me-5" type="text"
                                                         placeholder="Today" name="search">
-                                                    <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg"
+                                                    <img class="ms-3 ps-1" src="../../assets/images/Icons/Vector.svg"
                                                         alt="">
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
+                                    <a href="../pages/searchResult.html" target="_blank" class="text-decoration-none">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            Save search
+                                        </button>
+                                    </a>
                                     <div class="col-4 d-flex justify-content-end">
                                         <button class="btn btn-sm tb-btn-secondary tb-rounded me-3"
                                             type="button">English</button>
@@ -400,6 +885,18 @@
                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         </ul>
                                     </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Saved Searches
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="col-12 mt-3 d-flex">
                                     <div class="dropdown">
@@ -464,7 +961,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
@@ -480,7 +977,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
@@ -503,7 +1000,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/clipboard-list.svg" alt="">
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
@@ -526,7 +1023,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/person1.jpg" alt="">
+                                            <img src="../../assets/images/person1.jpg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
@@ -536,7 +1033,7 @@
                                     <div class="col-5 d-flex align-items-center justify-content-end  me-3">
                                         <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
                                             ago</span>
-                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
                                         <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
                                             View
                                         </button>
@@ -550,7 +1047,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/movie.jpg" alt="">
+                                            <img src="../../assets/images/movie.jpg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
@@ -560,7 +1057,7 @@
                                     <div class="col-5 d-flex align-items-center justify-content-end  me-3">
                                         <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
                                             ago</span>
-                                        <img class="px-3" src="../assets/images/download.png" alt="">
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
                                         <button type="button" class="btn-md gray-700 tb-rounded ms-2 tb-fs-16 border-0">
                                             View
                                         </button>
@@ -574,7 +1071,7 @@
                                 <div class="col-12 d-flex justify-content-between">
                                     <div class="col-4 d-flex ms-2">
                                         <div>
-                                            <img src="../assets/images/Icons/L1.svg" alt="">
+                                            <img src="../../assets/images/Icons/L1.svg" alt="">
                                         </div>
                                         <div class="ps-3">
                                             <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
@@ -604,10 +1101,9 @@
         <!--  modal ends here -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
-"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-    <script src="../javascript/script.js"></script>
+    <script src="../../javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

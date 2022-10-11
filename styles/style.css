@@ -2072,7 +2072,61 @@ table.dataTable td.dt-control::after {
     content: "+";
     background-color: #31b131;
 }
+.notification-heading-style{
+    font-family: var(--font-graphic-bold);
+    font-size: 2.3rem;
+    font-weight: "600";
+}
 
+
+div.switcher + div.switcher {
+  margin-top: 10px;
+}
+div.switcher label {
+  padding: 0;
+}
+div.switcher label * {
+  vertical-align: middle;
+}
+div.switcher label input {
+  display: none;
+}
+div.switcher label input + span {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 50px;
+  height: 26px;
+  background: var(--base-white-color);
+  border: 1px solid var(--bs-gray);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+div.switcher label input + span small {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: red;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid #fff;
+  left: 0;
+}
+div.switcher label input:checked + span {
+    background: #fff;
+    border: 1px solid var(--grayshade-200);
+    color: red;
+}
+div.switcher label input:checked + span small {
+  left: 50%;
+  border: 3px solid var(--text-base-white);
+}
+
+.dropdown-menu-style{
+    position: absolute; top:5px; margin: 0px; transform: translate(0px, 45px); padding: 10px
+}
 .notification-position{
     position: absolute;
     top: 35px;
@@ -2143,3 +2197,42 @@ input:checked + .slider:before {
   }
   
 /* switch buttons yes no style  ends */
+/* modal xl */
+.modal-xl {
+    max-width: 96%;
+}
+/* site modal tab */
+.site-modal-tab {
+    margin-bottom: 24px;
+    border : none;
+}
+.site-modal-tab .nav-item{
+    margin:0px;
+    display:flex;
+}
+.site-modal-tab .nav-link{
+    font-size: 14px;
+    line-height:15.4px;
+    color:#263238 !important;
+    background-color:transparent !important;
+    border-radius:5px;
+    padding:12px 16px;
+}
+.site-modal-tab .nav-link.active{
+    color:#FBFBFB !important;
+    background-color:#000000 !important;
+}
+.site-modal-tab-content .inner-tab {
+    border-bottom: 1px solid #ECEFF1;
+}
+.site-modal-tab-content .inner-tab .nav-link {
+    border: none;
+    background-color: transparent !important;
+    color : #B0B0B0;
+    font-size: 14px;
+}
+.site-modal-tab-content .inner-tab .nav-link.active {
+    color : #000000;
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+}

@@ -2132,3 +2132,42 @@ div.switcher label input:checked + span small {
     top: 35px;
     left: -80px;
 }
+/* modal xl */
+.modal-xl {
+    max-width: 96%;
+}
+/* site modal tab */
+.site-modal-tab {
+    margin-bottom: 24px;
+    border : none;
+}
+.site-modal-tab .nav-item{
+    margin:0px;
+    display:flex;
+}
+.site-modal-tab .nav-link{
+    font-size: 14px;
+    line-height:15.4px;
+    color:#263238 !important;
+    background-color:transparent !important;
+    border-radius:5px;
+    padding:12px 16px;
+}
+.site-modal-tab .nav-link.active{
+    color:#FBFBFB !important;
+    background-color:#000000 !important;
+}
+.site-modal-tab-content .inner-tab {
+    border-bottom: 1px solid #ECEFF1;
+}
+.site-modal-tab-content .inner-tab .nav-link {
+    border: none;
+    background-color: transparent !important;
+    color : #B0B0B0;
+    font-size: 14px;
+}
+.site-modal-tab-content .inner-tab .nav-link.active {
+    color : #000000;
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+}

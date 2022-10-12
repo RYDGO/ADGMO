@@ -1716,7 +1716,7 @@ header .image-text .profession {
     grid-gap: 1.5rem;
 }
 
-/* radio button styles */
+/* Input field styles */
 
 input[type="radio"] {
     accent-color: red;
@@ -1728,6 +1728,10 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:checked {
     background-color: red !important;
+}
+
+textarea{
+    width: 100%;
 }
 
 .sidebar.active~.main-section {

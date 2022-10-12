@@ -5,7 +5,7 @@
  */
 
 
-.fc {
+ .fc {
 	direction: ltr;
 	text-align: left;
 	}
@@ -33,9 +33,9 @@ html .fc,
 /* Header
 ------------------------------------------------------------------------*/
 
-.fc-header{
+/* .fc-header{
 	
-}
+} */
 
 .fc-header td {
 	white-space: nowrap;
@@ -259,24 +259,15 @@ html .fc,
 	}
 	 
 .fc-event {
-	border: 1px solid #FFF; /* default BORDER color */
-	background-color: #FFF; /* default BACKGROUND color */
-	color: #919191;               /* default TEXT color */
-	font-size: 12px;
+	background: rgba(55, 195, 161, 0.2);
+	color: #37C3A1;               /* default TEXT color */
 	cursor: default;
 }
-.fc-event.chill{
-    background-color: #f3dcf8;
-}
 .fc-event.info{
-    background-color: #c6ebfe;
+	background: rgba(17, 166, 255, 0.2);
+	color: #11A6FF;      
 }
-.fc-event.important{
-    background-color: #FFBEBE;
-}
-.fc-event.success{
-    background-color: #BEFFBF;
-}
+
 .fc-event:hover{
     opacity: 0.7;
 }
@@ -297,13 +288,18 @@ a.fc-event,
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	line-height: 15px;
 	}
-	
+.fc-event-time{
+		display:none;
+	}
 .fc-event-time,
 .fc-event-title {
-	padding: 0 1px;
+	padding: 0px 1px;
 	}
+.fc-event-title {
+	padding: 20px 1px;
+	font-size: 16px !important;
+}
 	
 .fc .ui-resizable-handle {
 	display: block;
@@ -382,16 +378,11 @@ table.fc-border-separate {
 .fc-border-separate th.fc-last,
 .fc-border-separate td.fc-last {
 	border-right-width: 1px;
-	border-color: #B0B0B0;
+	border-color: #B0B0B0
 	}
 	
-
-/* .fc-border-separate tr.fc-last td {
-	
-} */
-
 .fc-border-separate tr.fc-last th{
-    border-bottom-width: 1px;
+	border-bottom-width: 1px;
     border-color: #B0B0B0;
     font-size: 16px;
 }
@@ -400,14 +391,12 @@ table.fc-border-separate {
 	border-top-width: 0;
 	}
 	
-	
 .fc-border-separate tbody tr.fc-last td,
 .fc-border-separate tbody tr.fc-last th {
-	border-bottom-width: 1px;
-	border-color: #B0B0B0;
-	}
-	
-	
+		border-bottom-width: 1px;
+		border-color: #B0B0B0;
+		}
+		
 
 /* Month View, Basic Week View, Basic Day View
 ------------------------------------------------------------------------*/
@@ -440,7 +429,7 @@ table.fc-border-separate {
 	
 .fc-grid .fc-day-content {
 	clear: both;
-	padding: 2px 2px 1px; /* distance between events and day edges */
+	padding: 2px 2px 1px 1px; /* distance between events and day edges */
 	}
 	
 /* event styles */
@@ -567,8 +556,7 @@ table.fc-border-separate {
 	}
 	
 .fc-event-vert .fc-event-time {
-	white-space: nowrap;
-	font-size: 10px;
+	font-size: 14px;
 	}
 
 .fc-event-vert .fc-event-inner {
@@ -617,27 +605,18 @@ thead tr.fc-first{
 	border-color: #B0B0B0 !important;
 }
 table.fc-header{
-    border-radius: 6px 6px 0 0;
-}
-.fc-week .fc-day {
-	position: relative;
+   border-radius: 6px 6px 0 0;
 }
 
 .fc-week .fc-day > div .fc-day-number{
-	position:absolute;
-	bottom: 0%;
-	right: 0%;
-    font-size: 18px;
-	font-weight: 800;
+	color: var(--grayshade-200);
+	font-size: 16px;
     margin: 2px;
-    min-width: 19px;
+    height: 38px;
+    min-width: 20px;
     padding: 6px;
     text-align: center;
-	color: #a7a7a7;
 }
-/* .fc-sun, .fc-sat{
-    color: #b8b8b8;
-} */
 
 .fc-week .fc-day:hover{
     background-color: var(--grayshade-100);

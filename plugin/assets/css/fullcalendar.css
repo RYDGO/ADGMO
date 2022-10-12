@@ -161,7 +161,7 @@ html .fc,
 	margin: 0px 14px;
 	cursor: pointer;
 	font-size: 14px;
-	box-shadow:  0 1.5rem 3rem rgba(0,0,0,0.2);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 	}
 	
 .fc-state-default { /* non-theme */

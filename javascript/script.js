@@ -1,3 +1,9 @@
+// // header Sidebar template
+// const headSide = document.getElementById('headerSidebar');
+// fetch('../components/headerSidebar.html').then(res=>res.text()).then(data=>{
+//   headSide.innerHTML=data;
+// })
+
 //input dropdown hide/show
 // -------------Dashboard toggle--------------
 const sidebar = document.querySelector("#sidebar");

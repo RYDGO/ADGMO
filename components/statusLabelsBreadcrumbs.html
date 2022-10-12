@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lstatus-labels & breadcrumb</title>
+  <title>Status-labels & breadcrumb</title>
   <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -16,6 +16,8 @@
 
 <body>
   <div class="container">
+    <h1>Status Labels</h1>
+
     <div class="row d-flex flex-row flex-wrap g-3">
       <span
         class="common-width-label-12 tb-bg-purple d-flex align-items-center justify-content-evenly p-2  status-color-purple-op">
@@ -107,7 +109,7 @@
       </span>
     </div>
         <!-- Request & task Status Labels ends here -->
-
+    <h1>BreadCrumbs</h1>
     <div class="row gy-3">
       <div class="bg-white py-2 breadcrumbs-shadow">
         <p class="m-0 text-base-black">Home</p>
@@ -143,6 +145,26 @@
         </div>
         <div class="text-end">
           <a href="#" class="tb-gray-400 tb-base-black-hover ">Requests</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4 d-flex align-items-center justify-content-between">
+      <div class="col-2">
+        <i class="fa-solid fa-arrow-left"></i>
+        <a href="#" class="text-decoration-none text-dark">Back</a>
+      </div>
+      <div class="d-flex">
+        <div>
+          <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+        </div>
+        <div>
+          <a href="#" class="text-base-black text-decoration-none">Requests</a>
+          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+        </div>
+        <div>
+          <a href="#" class="text-base-black text-decoration-none">Overview</a>
         </div>
       </div>
     </div>

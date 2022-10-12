@@ -1,75 +1,75 @@
 
 @font-face {
     font-family: graphic-bold;
-    src: url("../assets/fonts/Graphik - English/Graphik-Bold.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Bold.otf");
 }
 @font-face {
     font-family: graphic-black;
-    src: url("../assets/fonts/Graphik - English/Graphik-Black.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Black.otf");
 }
 @font-face {
     font-family: graphic-black-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-BlackItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-BlackItalic.otf");
 }
 @font-face {
     font-family: graphic-bold-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-BoldItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-BoldItalic.otf");
 }
 @font-face {
     font-family: graphic-extra-light;
-    src: url("../assets/fonts/Graphik - English/Graphik-Extralight.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Extralight.otf");
 }
 @font-face {
     font-family: graphic-extra-light-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-ExtralightItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-ExtralightItalic.otf");
 }
 @font-face {
     font-family: graphic-light;
-    src: url("../assets/fonts/Graphik - English/Graphik-Light.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Light.otf");
 }
 @font-face {
     font-family: graphic-light-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-LightItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-LightItalic.otf");
 }
 @font-face {
     font-family: graphic-medium;
-    src: url("../assets/fonts/Graphik - English/Graphik-Medium.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Medium.otf");
 }
 @font-face {
     font-family: graphic-medium-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-MediumItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-MediumItalic.otf");
 }
 @font-face {
     font-family: graphic-regular;
-    src: url("../assets/fonts/Graphik - English/Graphik-Regular.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Regular.otf");
 }
 @font-face {
     font-family: graphic-regular-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-RegularItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-RegularItalic.otf");
 }
 @font-face {
     font-family: graphic-semi-bold;
-    src: url("../assets/fonts/Graphik - English/Graphik-Semibold.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Semibold.otf");
 }
 @font-face {
     font-family: graphic-semi-bold-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-SemiboldItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-SemiboldItalic.otf");
 }
 @font-face {
     font-family: graphic-super;
-    src: url("../assets/fonts/Graphik - English/Graphik-Super.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Super.otf");
 }
 @font-face {
     font-family: graphic-super-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-SuperItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-SuperItalic.otf");
 }
 @font-face {
     font-family: graphic-thin;
-    src: url("../assets/fonts/Graphik - English/Graphik-Thin.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-Thin.otf");
 }
 @font-face {
     font-family: graphic-thin-italic;
-    src: url("../assets/fonts/Graphik - English/Graphik-ThinItalic.otf");
+    src: url("../assets/fonts/graphik(en)/Graphik-ThinItalic.otf");
 }
 
 /* ------ Styles For Colors ------ */
@@ -78,7 +78,7 @@
 
 :root {
     --body-bg: #fbfbfb;
-    --base-card-color: #E7F5F2
+    --base-card-color: #E7F5F2;
     --base-color: #ef3f43;
     --base-black-color: #000;
     --base-white-color: #fff;
@@ -1074,6 +1074,7 @@ option:hover,
     opacity: 0;
     filter: alpha(opacity=0);
     height: 100%;
+    width: 100%;
 }
 
 /* -------- Dropdowns ends here --------- */
@@ -1715,7 +1716,7 @@ header .image-text .profession {
     grid-gap: 1.5rem;
 }
 
-/* radio button styles */
+/* Input field styles */
 
 input[type="radio"] {
     accent-color: red;
@@ -1727,6 +1728,10 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:checked {
     background-color: red !important;
+}
+
+textarea{
+    width: 100%;
 }
 
 .sidebar.active~.main-section {
@@ -1959,9 +1964,9 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
     display: none;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 0em;
-} 
+}  */
 
 .view-card-border {
     border: 2px solid #EDEDED;
@@ -2132,6 +2137,71 @@ div.switcher label input:checked + span small {
     top: 35px;
     left: -80px;
 }
+
+
+
+/* switch buttons yes no style  */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: red;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+  
+input:checked + .slider {
+    background-color: white;  
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(96, 90, 90);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+/* switch buttons yes no style  ends */
 /* modal xl */
 .modal-xl {
     max-width: 96%;

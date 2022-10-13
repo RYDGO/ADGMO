@@ -81,7 +81,11 @@ $(document).ready(function () {
 		select: function (start, end, allDay) {
 			for (let data of eventData) {
 				if (data.start.toDateString() == start.toDateString()) {
-					prompt('New Entry:');
+					// prompt('New Entry:');
+					// $("#newEntry").addClass("show")
+					// $("#newEntry").css("display", "block");
+					// $("#newEntry").attr("aria-modal", "true");
+					// $("#newEntry").attr("role", "dialog")
 				}
 			}
 		},

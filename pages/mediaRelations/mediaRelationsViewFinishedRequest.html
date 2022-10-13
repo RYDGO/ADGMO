@@ -9,7 +9,6 @@
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     " />
-    
     <link rel="stylesheet" href="../../styles/style.css" />
     <link rel="stylesheet" href="../styles/createRequestForms.css" />
 
@@ -327,9 +326,9 @@
                 </div>
             </div>
             <div class="row position-relative my-3">
-                <ul class="nav ps-2" id="pills-tab" role="tablist">
+                <ul class="nav ps-2 pb-5" id="pills-tab" role="tablist">
                     <ul class="tb-h1 col-7 p-0">
-                        Create Request
+                        #89349
                     </ul>
                     <li class="col-2">
                         <ul class="nav align-items-center me-4">
@@ -372,6 +371,50 @@
                         </button>
                     </li>
                 </ul>
+                <div class="card border-0 mb-5">
+                    <div class="card-body">
+                        <div class="card-title d-flex align-items-center pb-2">
+                            <span class="tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-2"></i>
+                                <h4 class="tb-h5 mb-0 text-base-black">UNDER REVIEW</h4>
+                            </span>
+                            <span class="tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                                <i class="text-white fa-solid fa-up-right-and-down-left-from-center me-2"></i>
+                                <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex justify-content-between align-items-center border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                                    <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                                </div>
+                                <div class="col-4 d-flex align-items-center">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                                </div>
+                                <div class="col-4 d-flex align-items-center me-5">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                        <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center ps-2">
+                                        <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                        <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center ps-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
                     <div class="tab-pane fade show active shadow-none" id="pills-english" role="tabpanel"
@@ -1550,81 +1593,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
-                    <div class="col-md-6">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">
-                            Cancel
-                        </button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#mediaconsultation-sendrequest">
-                            Send Request
-                        </button>
-                    </div>
-                </div>
             </div>
         </section>
         <!--create request ends here ------>
-        <!-- Modal started-->
-        <div class="modal fade modal-backdrop-op" id="submitRequestNotification" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-position">
-                <div class="modal-content inner-modal-content box-shadow-popup p-4">
-                    <div class="modal-header align-items-start p-0">
-                        <img src="../assets/images/popup-img.png" class="me-4" alt="" width="70">
-                        <div>
-                            <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">News
-                                request submitted #89349</h5>
-                            <p class="m-0 lead-paragraph">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade
-                                gigaskapet. Daköktig fande.</p>
-                        </div>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-footer p-0 pt-3">
-                        <!-- <button type="button" class="btn" data-bs-dismiss="modal">Go to Requests</button> -->
-                        <a href="#" class="text-decoration-none text-base-black fw-bold fs-5">Go to Requests</a>
-                        <button
-                            class="btn tb-btn-popup tb-btn-popup-hover tb-rounded fw-bold fs-5 py-2 px-3 ms-4 text-base-black m-0 border-0"
-                            type="button">View All
-                            Requests</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-    <div class="modal fade" id="mediaconsultation-sendrequest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog main-modal">
-        <div class="modal-content inner-modal-content-box box-shadow-popup">
-          <div class="modal-header align-items-start p-4">
-            <div>
-              <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send Request</h5>
-            </div>
-            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-footer collapse-inner-bg py-4 px-5">
-            <div class="col-12 mt-3">
-              <div class="border-0 info-outer tb-input-group">
-                <div class="d-flex">
-                  <div>
-                    <img class="info-icon" src="../../assets/images/info-icon1.svg" alt="">
-                  </div>
-                  <p class="px-3 m-0">
-                    You are about accept this request, please note the due date is automatically defined by the Priority
-                    of the request.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 p-4">
-            <div class="d-flex justify-content-center">
-              <a type="button" href="mediaRelationsViewFinishedRequest.html" class="btn-md tb-btn-primary tb-rounded p-4 border-0 text-decoration-none">Submit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Send Request modal ends here -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

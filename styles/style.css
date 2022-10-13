@@ -166,11 +166,6 @@
     font-size: 12px;
 }
 
-.tb-h1, h1{
-    font-family: var(--font-graphic-medium);
-    font-size: 24px;
-}
-
 .input-label{
     font-family: var(--font-graphic-bold);
     font-size: 12px;
@@ -461,21 +456,11 @@ height: 200px;
 .tb-h5,
 .tb-heading-1,
 .tb-heading-2 {
-    font-style: normal;
+
     font-weight: 900;
     color: var(--text-base-black);
     font-family: var(--font-family);
     text-decoration: none;
-}
-
-.tb-h1:hover,
-.tb-h2:hover,
-.tb-h3:hover,
-.tb-h4:hover,
-.tb-h5:hover,
-.tb-heading-1:hover,
-.tb-heading-2:hover {
-    color: var(--text-base-black);
 }
 
 .tb-heading-1 {

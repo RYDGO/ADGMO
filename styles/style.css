@@ -196,15 +196,15 @@
 /* ------- BG STATUS COLORS ---- */
 
 .tb-bg-green {
-    background-color: var(--status-color-green);
+    background-color: var(--status-color-green) !important;
 }
 
 .tb-bg-blue {
-    background-color: var(--status-color-blue);
+    background-color: var(--status-color-blue)!important;
 }
 
 .tb-bg-yellow {
-    background-color: var(--status-color-yellow);
+    background-color: var(--status-color-yellow)!important;
 }
 
 .tb-bg-yellow-dark {
@@ -212,26 +212,26 @@
 }
 
 .tb-bg-orange {
-    background-color: var(--status-color-orange);
+    background-color: var(--status-color-orange)!important;
 }
 
 .tb-bg-purple {
-    background-color: var(--status-color-purple);
+    background-color: var(--status-color-purple)!important;
 }
 
 .tb-bg-pink {
-    background-color: var(--status-color-pink);
+    background-color: var(--status-color-pink)!important;
 }
 .tb-bg-light {
     background-color: #eceff1;
-    background-color: var(--btn-bg-disabled);
+    background-color: var(--btn-bg-disabled)!important;
 }
 
 .tb-bg-body {
-    background-color: var(--body-bg);
+    background-color: var(--body-bg)!important;
 }
 .tb-box-hover:hover {
-    background-color: var(--grayshade-100);
+    background-color: var(--grayshade-100)!important;
     cursor: pointer;
 }
 
@@ -317,6 +317,9 @@
 
 .status-color-green-op2 {
     background: #37c3a175;
+}
+.status-color-green-light-op {
+    background: rgba(55, 195, 161, 0.2);
 }
 
 

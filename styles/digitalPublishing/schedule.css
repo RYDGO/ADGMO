@@ -83,3 +83,26 @@
 .schedule-inputs input::placeholder{
     color: var(--grayshade-400)
 }
+.Published{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 12px;
+    color: var(--grayshade-400);
+}
+.Published .box{
+    width: 15px;
+    height: 15px;
+    margin-right: .8rem !important;
+    border-radius: 3px;
+}
+.Published .one{
+    background-color: var(--text-base-black);
+}
+.Published .two{
+    background-color: var(--grayshade-100);
+    border: 1px solid var(--text-base-black);
+}
+.Published .three{
+    background-color: var(--grayshade-100);
+}

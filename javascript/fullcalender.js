@@ -55,9 +55,9 @@ $(document).ready(function () {
 
 	var calendar = $('#calendar').fullCalendar({
 		header: {
-			left: 'title',
+			left: 'prev,title,next',
 			center: 'agendaDay,agendaWeek,month',
-			right: 'prev,next today'
+			right: 'agendaDay,agendaWeek,month'
 		},
 		editable: true,
 		firstDay: 0, //  1(Monday) this can be changed to 0(Sunday) for the USA system

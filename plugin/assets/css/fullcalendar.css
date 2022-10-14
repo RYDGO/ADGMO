@@ -5,7 +5,7 @@
  */
 
 
- .fc {
+.fc {
 	direction: ltr;
 	text-align: left;
 	}
@@ -18,7 +18,7 @@
 html .fc,
 .fc table {
 	font-size: 1em;
-	font-family: var(--font-family);
+	font-family: "Helvetica Neue",Helvetica;
 
 	}
 	
@@ -33,38 +33,31 @@ html .fc,
 /* Header
 ------------------------------------------------------------------------*/
 
-/* .fc-header{
-	
-} */
-
 .fc-header td {
 	white-space: nowrap;
+	padding: 20px 0px 30px 0px;
 }
 
 .fc-header-left {
-	display: none;
+	display:flex;
+	justify-content:space-between;
+	align-items: center!important;
 }
 	
 .fc-header-center {
-	position:absolute;
-	top: 17.5%;
-	left: 43%;
-}
+	text-align: center;
+	}
 	
 .fc-header-right {
-	display: none;
+	
 	}
 	
 .fc-header-title {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: -5px;
 }
 	
 .fc-header-title h2 {
-	margin-top: 0;
 	white-space: nowrap;
-	font-size: 32px;
+	font-size: 20px;
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -127,22 +120,20 @@ html .fc,
 
     /* <th>, usually */
 .fc-widget-content {  /* <td>, usually */
-	border: 2px solid #B0B0B0;
+	border: 1px solid #e5e5e5;
 	}
 .fc-widget-header{
     border-bottom: 1px solid #EEE; 
 }	
-/* .fc-state-highlight { 
-	background: #fcf8e3;
-} */
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	/* background: #fcf8e3; */
+}
 
 .fc-state-highlight > div > div.fc-day-number{
-	background-color: var(--grayshade-500);
-    color: #fff !important;
+    background-color: #ff3b30;
+    color: #FFFFFF;
     border-radius: 50%;
-	width: 25%;
-	height: auto;
-	font-weight: bold !important;
+    margin: 4px;
 }
 	
 .fc-cell-overlay { /* semi-transparent rectangle while dragging */
@@ -156,22 +147,15 @@ html .fc,
 /* Buttons
 ------------------------------------------------------------------------*/
 
-.fc-button {
-	padding: 10px 20px;
-	margin: 0px 14px;
-	cursor: pointer;
-	font-size: 14px;
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-	}
-	
-.fc-state-default { /* non-theme */
-	border: 1px solid var(--text-base-black);
-	border-radius: 30px;
-	}
-	
+
+/*
+	Our default prev/next buttons use HTML entities like &lsaquo; &rsaquo; &laquo; &raquo;
+	and we'll try to make them look good cross-browser.
+*/
+
 .fc-text-arrow {
 	margin: 0 .4em;
-	font-size: 2em;
+	font-size: 3em;
 	line-height: 23px;
 	vertical-align: baseline; /* for IE7 */
 	}
@@ -199,12 +183,15 @@ html .fc,
 
 
 .fc-state-default {
-	border-color: var(--text-base-black);
 	color: var(--text-base-black);	
-	font-family: var(--font-graphic-bold);
 }
 .fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default{
+    min-width: 67px;
 	text-align: center;
+	background-color:var(--text-base-black);	
+	color: #fff;
+	margin: 0px 20px;
+	padding :30px;
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 }
@@ -212,13 +199,11 @@ html .fc,
 .fc-state-down,
 .fc-state-active,
 .fc-state-disabled {
-	color: #fff;
-	background-color: var(--text-base-black);
+	color: #333333;
+	transition: all 0.4s;
 	}
 
 .fc-state-hover {
-	color: var(--text-base-black);
-	color: #fff;
 	text-decoration: none;
 	background-position: 0 -15px;
 	-webkit-transition: background-position 0.1s linear;
@@ -229,19 +214,17 @@ html .fc,
 
 .fc-state-down,
 .fc-state-active {
-	background-color: var(--text-base-black);
+	background-image: none;
 	outline: 0;
-	color: #FFFFFF;
+	color: var(--text-base-black);	
 }
 
 .fc-state-disabled {
 	cursor: default;
 	background-image: none;
-	background-color: var(--text-base-black);
+	background-color: var(--text-base-black);	
 	filter: alpha(opacity=65);
 	box-shadow: none;
-	border:1px solid #FFE3E3;
-	color: #ff3b30;
 	}
 
 	

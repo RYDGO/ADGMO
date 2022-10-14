@@ -219,6 +219,10 @@
 .tb-bg-pink {
     background-color: var(--status-color-pink);
 }
+.tb-bg-light {
+    background-color: #eceff1;
+    background-color: var(--btn-bg-disabled);
+}
 
 .tb-bg-body {
     background-color: var(--body-bg);

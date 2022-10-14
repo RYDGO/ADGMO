@@ -740,7 +740,41 @@
 		var element = $([]);
 		var tm;
 
+		function renderCenter() {
+			return '<td class="fc-header-center"' +
+				'<div class="p-2 w-100 mb-5">' +
+				'<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0">' +
+				'<i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>' +
+				'<input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible team or sector" name="search">' +
+				'<i class="fa-solid fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500">' +
+				'<div class="span-box-one span-box">3</div>' +
+				'</i>' +
+				'</div>' +
+				'</div>' +
+				'</td>'
+		}
 
+		function renderRight() {
+			return '<td class="fc-header-right"' +
+				'<div class=" d-flex align-items-center mx-3">' +
+				'<div class="form-floating text-white ">' +
+				'<div class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">' +
+				'<i class="fa-regular fa-calendar fs-4 text-black mb-1"></i>' +
+				'<select class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light " aria-label="Default select example">' +
+				'<option selected>Month </option>' +
+				'<option value="1" class="fc-button fc-button-agendaWeek fc-state-default fc-state-down" unselectable="on">week</option>' +
+				'<option value="2">Day</option>' +
+				'</select>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'<div class="vartical-line ms-2"></div>' +
+				'<div class="ms-4">' +
+				'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button" id="eventBtn">' +
+				'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>' +
+				'</div>' +
+				'</td>'
+		}
 
 		function render() {
 			tm = options.theme ? 'ui' : 'fc';
@@ -750,8 +784,8 @@
 					.append(
 						$("<tr/>")
 							.append(renderSection('left'))
-							.append(renderSection('center'))
-							.append(renderSection('right'))
+							.append(renderCenter())
+							.append(renderRight())
 					);
 				return element;
 			}
@@ -766,10 +800,15 @@
 		function renderSection(position) {
 			var e = $("<td class='fc-header-" + position + "'/>");
 			var buttonStr = options.header[position];
+			var drop = "<ul>"
 			if (buttonStr) {
+
 				$.each(buttonStr.split(' '), function (i) {
 					if (i > 0) {
 						e.append("<span class='fc-header-space'/>");
+					}
+					if (i > 1) {
+						console.log("vdvdddfd");
 					}
 					var prevButton;
 					$.each(this.split(','), function (j, buttonName) {

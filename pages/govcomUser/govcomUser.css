@@ -1,0 +1,76 @@
+.createDeliverablesModal .modal-header .btn-close {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 16px;
+}
+.createDeliverablesModal .modal-content::before {
+    content: "";
+    width: 1px;
+    height: 450px;
+    position: absolute;
+    top: 60%;
+    left: 49.5%;
+    transform: translate(-49%, -50%);
+    background-color: #B0B0B0;
+    z-index: 1;
+}
+.createDeliverablesModal .head-5 {
+    font-size: 16px;
+}
+
+.createDeliverablesModal .desc {
+    width: 100%;
+    color: #B0B0B0;
+    background-color: #ffff !important;
+    padding: 12px 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.my-progress {
+    width: 100%;
+    height: 20px;
+}
+.side-modal-wrap {
+    background-color: #F9F9F9;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.side-modal-wrap .inner-wrapper {
+    background-color: #fff;
+    padding: 16px;
+    margin-top: 12px;
+}
+.side-modal-wrap  .cancel-btn {
+    background-color: #ECEFF1;
+    color: #37474F;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.side-modal-wrap .progress-wrapper {
+    margin-top: 16px;
+    border: 1px solid #ECEFF1;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+.side-modal-wrap .cancel-btn {
+    background-color: transparent;
+    color: #37474F;
+    border: 1px solid #37474F;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.side-modal-wrap .btn-primary {
+    background-color: #37474F;
+    color: #ffffff;
+    border: 1px solid #37474F;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.tb-input-group-internal {
+    background-color: #fff;
+}

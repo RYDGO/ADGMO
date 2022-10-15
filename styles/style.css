@@ -95,6 +95,9 @@
     --two-box-color: #d9f4ed;
     --three-box-color: #d2eeff;
     --four-box-color: #ededed;
+    --light-yellow-box-color:rgba(255, 168, 0, 0.2);
+    ;
+
     /*----- GRAY COLORS ------ */
     --grayshade-100: #eceff1;
     --grayshade-200: #b0b0b0;
@@ -680,6 +683,12 @@ height: 200px;
 .border-gray-100 {
     border: 1px solid var(--grayshade-100);
 }
+.border-gray-200 {
+    border: 1px solid var(--grayshade-200);
+}
+.border-gray-bottom-200 {
+    border-bottom : 2px solid var(--grayshade-200);
+}
 
 .border-gray-500 {
     border: 1px solid var(--grayshade-500);
@@ -1029,7 +1038,7 @@ datalist {
     background-color: white;
     border-top: none;
     padding: 5px;
-    max-height: 10rem;
+    max-height: 16rem;
     overflow-y: auto;
     margin-top: 13px;
    left:0;

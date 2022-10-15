@@ -302,22 +302,6 @@
                             class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
                             <div class="hover-remove" class="align-self-center">
                                 <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Decline
-                                    <span>Request</span></button>
-                                </a>
-                        </li>
-                        <li
-                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <div class="hover-remove" class="align-self-center">
-                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#requestModal">Request</button>
-                                </a>
-                        </li>
-
-                        <li
-                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <div class="hover-remove" class="align-self-center">
-                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button"
                                     data-bs-toggle="modal" data-bs-target="#deliverablesModal">Create
                                     Dependency</button>
                                 </a>
@@ -1720,207 +1704,6 @@
 
 
         <!-- Modal -->
-        <div class="modal fade modal-backdrop-op" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-position">
-                <div class="modal-content inner-modal-content box-shadow-popup p-0">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Decline Request</h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="p-4 side-modal-wrap h-100">
-                        <div class="tb-input-group tb-input-group-internal p-2 ">
-                            <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
-                            <input class="col-12" id="" name="" placeholder="Placeholder text">
-                        </div>
-                        <div class="inner-wrapper">
-                            <h6>Upload Media</h6>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="inner-desc">Document must be .mp4, .mov, .mkv format.</p>
-                            <div class="progress-wrapper">
-                                <h6>DAM-FB-Carousel.mp4</h6>
-                                <div class="row">
-                                    <div class="col-1 d-flex align-items-center">
-                                        <label>75%</label>
-                                    </div>
-                                    <div class="col-8 d-flex align-items-center">
-                                        <progress value="75" max="100" class="my-progress"> 32% </progress>
-                                    </div>
-                                    <div class="col-2 d-flex align-items-center">
-                                        <button class="cancel-btn">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-wrapper">
-                                <h6>DAM-FB-Carousel.mp4</h6>
-                                <div class="row">
-                                    <div class="col-1 d-flex align-items-center">
-                                        <label>75%</label>
-                                    </div>
-                                    <div class="col-8 d-flex align-items-center">
-                                        <progress value="75" max="100" class="my-progress"> 32% </progress>
-                                    </div>
-                                    <div class="col-2 d-flex align-items-center">
-                                        <button class="cancel-btn">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-end my-4 me-3 ">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Decline</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade modal-backdrop-op" id="requestModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-position ">
-                <div class="modal-content inner-modal-content box-shadow-popup p-0 ">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Request more informationt</h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="p-4 side-modal-wrap h-100">
-                        <div class="tb-input-group tb-input-group-internal p-2 ">
-                            <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
-                            <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
-                        </div>
-                        <div class="inner-wrapper">
-                            <h6>Upload Media</h6>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                        <div class="col-9 d-flex align-items-center">
-                                            <label class="col-12" for="prl-en">Use Attachment</label>
-                                            <input class="col-12 d-none" type="text" id="prl-en"
-                                                placeholder="Upload PRL (en) Attachments" />
-                                        </div>
-                                        <div class="fileUpload col-3 text-center btn btn-lg tb-btn-primary tb-rounded">
-                                            <span class="tb-fs-18">Upload</span>
-                                            <input id="upload-prl-en" type="file" class="upload" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="inner-desc">Document must be .mp4, .mov, .mkv format.</p>
-                            <div class="progress-wrapper">
-                                <h6>DAM-FB-Carousel.mp4</h6>
-                                <div class="row">
-                                    <div class="col-1 d-flex align-items-center">
-                                        <label>75%</label>
-                                    </div>
-                                    <div class="col-8 d-flex align-items-center">
-                                        <progress value="75" max="100" class="my-progress"> 32% </progress>
-                                    </div>
-                                    <div class="col-2 d-flex align-items-center">
-                                        <button class="cancel-btn">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-wrapper">
-                                <h6>DAM-FB-Carousel.mp4</h6>
-                                <div class="row">
-                                    <div class="col-1 d-flex align-items-center">
-                                        <label>75%</label>
-                                    </div>
-                                    <div class="col-8 d-flex align-items-center">
-                                        <progress value="75" max="100" class="my-progress"> 32% </progress>
-                                    </div>
-                                    <div class="col-2 d-flex align-items-center">
-                                        <button class="cancel-btn">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-end my-4 me-3 ">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Request</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="modal fade modal-backdrop-op priority-Modal background-dim" id="priorityModal" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2165,7 +1948,7 @@
         <div class="modal fade modal-backdrop-op select-deliverables background-dim" id="deliverablesModal"
             tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position h-100">
-                <div class="modal-content inner-modal-content box-shadow-popup p-0 h-75">
+                <div class="modal-content box-shadow-popup p-0 h-75">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
                             Create Dependency</h5>
@@ -2175,51 +1958,47 @@
                     <div class="p-4 side-modal-wrap h-100">
                         <div class="row-wrapper">
                             <div class="row mt-2 mb-2">
-                                <div class="col-8">
+                                <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input shadow-none tb-bg-primary-checked"
                                             type="checkbox" value="" id="flexCheckDefault">
                                         <label for="prl">Script</label>
                                     </div>
                                 </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault">
-                                        <label for="prl">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault">
-                                        <label for="prl">Arabic</label>
-                                    </div>
+                                <div class="col-6 d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">English</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Arabic</label>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row-wrapper border-bottom">
+                        <div class="row-wrapper">
                             <div class="row mt-2 mb-2">
-                                <div class="col-8">
+                                <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input shadow-none tb-bg-primary-checked"
                                             type="checkbox" value="" id="flexCheckDefault">
-                                        <label for="prl">Interview Questions</label>
+                                        <label for="prl">Script</label>
                                     </div>
                                 </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault">
-                                        <label for="prl">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault">
-                                        <label for="prl">Arabic</label>
-                                    </div>
+                                <div class="col-6 d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">English</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Arabic</label>
+                                        </div>
                                 </div>
                             </div>
                         </div>

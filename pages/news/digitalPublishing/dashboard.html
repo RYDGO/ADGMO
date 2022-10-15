@@ -1562,7 +1562,8 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content site-modal-tab-content" id="myTabContent">
-                                        <div class="tab-pane  fade show active bg-transparent shadow-none" id="overview-tab-pane">
+                                        <div class="tab-pane  fade show active bg-transparent shadow-none"
+                                            id="overview-tab-pane">
                                             <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
                                                 <li class="nav-item">
                                                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
@@ -1574,7 +1575,8 @@
                                                 </li>
                                             </ul>
                                             <div class="tab-content" id="myTabContent">
-                                                <div class="tab-pane fade show active shadow-none" id="request-tab-pane">
+                                                <div class="tab-pane fade show active shadow-none"
+                                                    id="request-tab-pane">
                                                     <div class="accordion" id="accordion-dual">
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="heading-duel-1">
@@ -2258,16 +2260,217 @@
                                 </div>
 
                             </div>
-                            
+
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Schedule</button>
+                            <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+                                href="#prlDeliverableModal2" type="button">Schedule</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--dashboard ends here ------>
+
+
+        <!-- section modal starts here -->
+        <div class="modal fade show" id="prlDeliverableModal2" aria-labelledby="exampleModalToggleLabel2" tabindex="-1"
+            aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel2">
+                            Schedule
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="col-12">
+                            <div class="tab-content site-modal-tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active bg-transparent shadow-none"
+                                    id="overview-tab-pane">
+                                    <ul class="nav nav-tabs inner-tab mb-4 d-flex justify-content-center" id="myTab"
+                                        role="tablist">
+                                        <li class="nav-item">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#website-tab-pane">Website</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#social-tab-pane">Social Media</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane bg-transparent fade shadow-none active show"
+                                            id="website-tab-pane">
+                                            <div class="p-2 d-flex justify-content-between">
+                                                <div>
+                                                    <p class="p-0">
+                                                        Do you want to change the target publishing date?
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <span class=" tb-primary">Calender</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center ps-3 mb-1">
+                                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                    value="HTML">
+                                                <label for="html">Yes</label>
+                                            </div>
+                                            <div class="d-flex align-items-center ps-3 my-2">
+                                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                    value="HTML">
+                                                <label for="html">No</label>
+                                            </div>
+                                            <div class="d-flex mt-2">
+                                                <div class="col-md-6 p-2">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 " for="date">Select
+                                                            Publishing Date</label>
+                                                        <input type="date" class="col-12 user-nameline" id="date"
+                                                            placeholder="placeholder text ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <div class="tb-input-group p-2  ">
+                                                        <label class="col-12" for="time">Select
+                                                            Publishing time</label>
+                                                        <input class="col-12 user-nameline" id="time"
+                                                            placeholder="placeholder text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tb-input-group  m-3">
+                                                <div class="p-2">
+                                                    <label class="col-12" for="input2">Notes</label>
+                                                    <input class="col-11 dropdown-input " autocomplete="off"
+                                                        role="combobox" id="input2" name="browsers"
+                                                        placeholder="placeholder..">
+                                                    <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons </span>
+                                                        </li>
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons</span>
+                                                        </li>
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-pane bg-transparent fade shadow-none" id="social-tab-pane">
+                                            <div class="p-2 d-flex justify-content-between bg-transparent">
+                                                <div>
+                                                    <p class="p-0">
+                                                        Do you want to change the target publishing date?
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <span class=" tb-primary">Calender</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center ps-3 mb-1 bg-transparent">
+                                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                    value="HTML">
+                                                <label for="html">Yes</label>
+                                            </div>
+                                            <div class="d-flex align-items-center ps-3 my-2">
+                                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language"
+                                                    value="HTML">
+                                                <label for="html">No</label>
+                                            </div>
+                                            <div class="d-flex mt-2">
+                                                <div class="col-md-6 p-2">
+                                                    <div class="tb-input-group p-2  ">
+                                                        <label class="col-12 " for="date">Select
+                                                            Publishing Date</label>
+                                                        <input type="date" class="col-12 user-nameline" id="date"
+                                                            placeholder="placeholder text ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <div class="tb-input-group p-2  ">
+                                                        <label class="col-12" for="time">Select
+                                                            Publishing time</label>
+                                                        <input class="col-12 user-nameline" id="time"
+                                                            placeholder="placeholder text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tb-input-group  m-3">
+                                                <div class="p-2">
+                                                    <label class="col-12" for="input2">Notes</label>
+                                                    <input class="col-11 dropdown-input " autocomplete="off"
+                                                        role="combobox" id="input2" name="browsers"
+                                                        placeholder="placeholder..">
+                                                    <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons </span>
+                                                        </li>
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons</span>
+                                                        </li>
+                                                        <li class="list-group-item d-flex align-items-center ">
+                                                            <div
+                                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                                <img src="../assets/images/nodata.png" alt=""
+                                                                    class="img-100">
+                                                            </div>
+                                                            <span class="ms-3">Brookyln Simmons</span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-center w-100">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded mx-1" type="button">Back</button>
+                            <button type="button"
+                                class="btn-md tb-btn-primary mx-1 tb-rounded p-4 border-0">Schedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section modal ends here -->
+
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

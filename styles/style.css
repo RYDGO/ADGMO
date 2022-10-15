@@ -344,6 +344,10 @@ height: 200px;
     width: 35px;
     height: 35px;
 }
+.w-h-30 {
+    width: 30px;
+    height: 30px;
+}
 
 .w-h-40 {
     width: 40px;
@@ -2241,4 +2245,7 @@ input:checked + .slider:before {
     color : #000000;
     background-color: transparent;
     border-bottom: 1px solid #000000;
+}
+.progress-bar-percentage{
+    width: 75%;
 }

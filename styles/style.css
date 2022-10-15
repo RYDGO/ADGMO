@@ -287,6 +287,9 @@
 .status-color-orange-op {
     background: #ffa8001a;
 }
+.status-color-purpal-op2 {
+    background: #5a5fc91a;
+}
 
 .status-color-green-op {
     background: #37c3a11a;
@@ -686,6 +689,9 @@ height: 200px;
 
 .border-gray-100 {
     border: 1px solid var(--grayshade-100);
+}
+.border-purpal {
+    border: 2px solid var(--status-color-purple);
 }
 .border-gray-200 {
     border: 1px solid var(--grayshade-200);
@@ -2246,6 +2252,9 @@ input:checked + .slider:before {
     background-color: transparent;
     border-bottom: 1px solid #000000;
 }
-.progress-bar-percentage{
-    width: 75%;
+
+
+#deliverablesModal .main-modal {
+    position: absolute;
+    right: 40px;
 }

@@ -71,9 +71,9 @@
     left: 50%;
     transform: translate(-50%,-50%) !important;
 }
-.modal-backdrop {
-    background-color: transparent !important;
- }
+/* .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+ } */
 .dropdown-toggle::after{
     display: none;
 }
@@ -105,4 +105,14 @@
 }
 .Published .three{
     background-color: var(--grayshade-100);
+}
+.modal-dialog-position-filter{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 1000000;
+    border-radius: 8px;
+}
+.inner-modal-content-filter{
+    width: 450px !important;
 }

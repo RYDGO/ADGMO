@@ -743,38 +743,16 @@
 		function renderCenter() {
 			return '<td class="fc-header-center"' +
 				'<div class="p-2 w-100 mb-5">' +
-				'<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0">' +
+				'<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0 light-box-shadow-btn ">' +
 				'<i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>' +
-				'<input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible team or sector" name="search">' +
-				'<i class="fa-solid fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500">' +
-				'<div class="span-box-one span-box">3</div>' +
-				'</i>' +
+				'<input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible" name="search">' +
+				'<span data-bs-toggle="modal" href="#addDeliverablesModal" role="button"><i class="fa-solid h fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500" id="calfilter"></i></span>' +
+				'<span><div class="span-box-one span-box">3</div></span>' +
 				'</div>' +
 				'</div>' +
 				'</td>'
 		}
 
-		function renderRight() {
-			return '<td class="fc-header-right"' +
-				'<div class=" d-flex align-items-center mx-3">' +
-				'<div class="form-floating text-white ">' +
-				'<div class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">' +
-				'<i class="fa-regular fa-calendar fs-4 text-black mb-1"></i>' +
-				'<select class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light " aria-label="Default select example">' +
-				'<option selected>Month </option>' +
-				'<option value="1" class="fc-button fc-button-agendaWeek fc-state-default fc-state-down" unselectable="on">week</option>' +
-				'<option value="2">Day</option>' +
-				'</select>' +
-				'</div>' +
-				'</div>' +
-				'</div>' +
-				'<div class="vartical-line ms-2"></div>' +
-				'<div class="ms-4">' +
-				'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button" id="eventBtn">' +
-				'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>' +
-				'</div>' +
-				'</td>'
-		}
 
 		function render() {
 			tm = options.theme ? 'ui' : 'fc';
@@ -782,10 +760,22 @@
 			if (sections) {
 				element = $("<table class='fc-header' style='width:100%'/>")
 					.append(
-						$("<tr/>")
+						$("<tr class='flex-center-align'/>")
 							.append(renderSection('left'))
 							.append(renderCenter())
-							.append(renderRight())
+							.append(renderSection('right'))
+					).append(
+						$("<tr class='flex-center-align'/>")
+							.append('<td><div class="d-flex mb-3">'+
+							'<div class="Published ">'+
+								'<div class="box one"></div>'+
+			'<span class="fs-5 mt-1 text-base-gray">Published</span></div>'+
+							'<div class="Published ">'+
+								'<div class="box two"></div>'+
+			'<span class="fs-5 mt-1 text-base-gray">Planned</span></div>'+
+							'<div class="Published ">'+
+								'<div class="box three"></div>'+
+'<span class="fs-5 mt-1 text-base-gray">Scheduled</span></div></div></td>')
 					);
 				return element;
 			}
@@ -807,9 +797,6 @@
 					if (i > 0) {
 						e.append("<span class='fc-header-space'/>");
 					}
-					if (i > 1) {
-						console.log("vdvdddfd");
-					}
 					var prevButton;
 					$.each(this.split(','), function (j, buttonName) {
 						if (buttonName == 'title') {
@@ -818,35 +805,6 @@
 								prevButton.addClass(tm + '-corner-right');
 							}
 							prevButton = null;
-						} else if (buttonName == 'agendaDay' || buttonName == 'agendaWeek' || buttonName == 'month') {
-							if (j == 0) {
-								e.append('<div class=" d-flex align-items-center mx-3">' +
-									'<div class="form-floating text-white ">' +
-									'<div class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">' +
-									'<i class="fa-regular fa-calendar fs-4 text-black mb-1"></i>' +
-									'<select class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light " aria-label="Default select example">')
-							}
-
-							if (buttonName == 'month') {
-								e.append('<option selected>Month </option>')
-							} else if (buttonName == 'agendaWeek') {
-								e.append('<option >Week </option>')
-							} else {
-								e.append('<option >Day </option>')
-
-							}
-
-							if (j == 2) {
-								e.append('</select>' +
-									'</div>' +
-									'</div>' +
-									'</div>' +
-									'<div class="vartical-line ms-2"></div>' +
-									'<div class="ms-4">' +
-									'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button" id="eventBtn">' +
-									'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>' +
-									'</div>')
-							}
 						} else {
 							var buttonClick;
 							if (calendar[buttonName]) {
@@ -899,6 +857,13 @@
 										}
 									)
 									.appendTo(e);
+
+									if(buttonName== 'month' && j==2){
+										e.append(
+										'<div class="ms-2">'+
+'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer light-box-shadow-btn " type="button" data-bs-toggle="modal" data-bs-target="#eventtarget" role="button">'+
+'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button></div>')
+									}
 								disableTextSelection(button);
 								if (!prevButton) {
 									button.addClass(tm + '-corner-left');
@@ -4056,6 +4021,8 @@
 				skinCss +
 				"'" +
 				">" +
+'<span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">'+
+'<h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5></span>'+
 				"<div class='fc-event-inner'>" +
 				"<div class='fc-event-time'>" +
 				htmlEscape(formatDates(event.start, event.end, opt('timeFormat'))) +

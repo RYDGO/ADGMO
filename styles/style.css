@@ -710,6 +710,9 @@ height: 200px;
 .border-gray-200 {
     border: 1px solid var(--grayshade-200);
 }
+.border-bottom-gray-200 {
+    border-bottom : 1px solid var(--grayshade-200);
+}
 .border-gray-bottom-200 {
     border-bottom : 2px solid var(--grayshade-200);
 }
@@ -931,19 +934,21 @@ height: 200px;
 
 /* --- Dark BUTTONS --- */
 
-.tb-btn-Dark {
-    background-color: var(--btn-bg-black) !important;
-    color: var(--btn-bg-default) !important;
+.tb-btn-dark {
+    background-color: var(--base-black-color) !important;
+    color: var(--base-white-color) !important;
 }
 
-.tb-btn-Dark:hover {
-    background-color: var(--btn-bg-disabled) !important;
-    color: var(--btn-bg-hover) !important;
+.tb-btn-dark:hover {
+    background-color: var(--btn-bg-default) !important;
+    color: var(--base-white-color) !important;
 }
 
 .tb-btn-dark:active {
-    background-color: var(--base-black-color) !important;
+    background-color: var(--btn-bg-hover) !important;
     color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-hover) !important;
+
 }
 
 .tb-btn-dark.active {
@@ -957,6 +962,73 @@ height: 200px;
     color: var(--btn-bg-disabled) !important;
 }
 
+/* --- Gray BUTTONS --- */
+
+.tb-btn-gray {
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+}
+
+.tb-btn-gray:hover {
+    background-color: var(--grayshade-200) !important;
+    color: var(--text-base-black) !important;
+}
+
+.tb-btn-gray:active {
+    background-color: var(--btn-bg-hover) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--btn-bg-hover) !important;
+
+}
+
+.tb-btn-gray.active {
+    background-color: var(--base-black-color) !important;
+    color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-selected) !important;
+}
+
+.tb-btn-gray:disabled {
+    border: 1px solid var(--btn-bg-disabled) !important;
+    color: var(--btn-bg-disabled) !important;
+}
+
+/* --- Gray BUTTONS --- */
+
+.tb-btn-underline {
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-100);
+    border-bottom: 2px solid var(--grayshade-100) !important;
+
+}
+
+.tb-btn-underline:hover {
+    background-color: var(--grayshade-200) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-200);
+    border-bottom: 2px solid var(--grayshade-200) !important;
+
+}
+
+.tb-btn-underline:active {
+    background-color: var(--btn-bg-hover) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--btn-bg-hover) !important;
+    border-bottom: 2px solid var(--base-black-color) !important;
+}
+
+.tb-btn-underline.active {
+    background-color: var(--grayshade-100) !important;
+    color: var(--base-white-color) !important;
+    border-bottom: 1px solid var(--btn-bg-selected) !important;
+    border: 1px solid var(--btn-bg-hover) !important;
+    border-bottom: 2px solid var(--base-black-color) !important;
+}
+
+.tb-btn-underline:disabled {
+    border: 1px solid var(--btn-bg-disabled) !important;
+    color: var(--btn-bg-disabled) !important;
+}
 
 /* ----- Paddings ----- */
 
@@ -2271,4 +2343,19 @@ input:checked + .slider:before {
 #deliverablesModal .main-modal {
     position: absolute;
     right: 40px;
+}
+
+.site-modal-tab-content-red .inner-tab {
+    border-bottom: 1px solid #ECEFF1;
+}
+.site-modal-tab-content-red .inner-tab .nav-link {
+    border: none;
+    background-color: transparent !important;
+    color : #B0B0B0;
+    font-size: 14px;
+}
+.site-modal-tab-content-red .inner-tab .nav-link.active {
+    color : var(--base-color);
+    background-color: transparent;
+    border-bottom: 1px solid var(--base-color);
 }

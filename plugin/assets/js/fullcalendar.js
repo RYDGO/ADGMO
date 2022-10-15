@@ -818,6 +818,35 @@
 								prevButton.addClass(tm + '-corner-right');
 							}
 							prevButton = null;
+						} else if (buttonName == 'agendaDay' || buttonName == 'agendaWeek' || buttonName == 'month') {
+							if (j == 0) {
+								e.append('<div class=" d-flex align-items-center mx-3">' +
+									'<div class="form-floating text-white ">' +
+									'<div class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">' +
+									'<i class="fa-regular fa-calendar fs-4 text-black mb-1"></i>' +
+									'<select class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light " aria-label="Default select example">')
+							}
+
+							if (buttonName == 'month') {
+								e.append('<option selected>Month </option>')
+							} else if (buttonName == 'agendaWeek') {
+								e.append('<option >Week </option>')
+							} else {
+								e.append('<option >Day </option>')
+
+							}
+
+							if (j == 2) {
+								e.append('</select>' +
+									'</div>' +
+									'</div>' +
+									'</div>' +
+									'<div class="vartical-line ms-2"></div>' +
+									'<div class="ms-4">' +
+									'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button" id="eventBtn">' +
+									'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>' +
+									'</div>')
+							}
 						} else {
 							var buttonClick;
 							if (calendar[buttonName]) {

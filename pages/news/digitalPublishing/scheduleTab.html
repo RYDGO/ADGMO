@@ -301,8 +301,6 @@
         </nav>
 
         <section class="main-section">
-            <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#addDeliverablesModal" role="button">
-                Deliverables</a>
             <div class="py-4 px-2 d-flex align-items-center justify-content-between">
                 <div class="col-2">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -345,7 +343,7 @@
                             <form class="mx-5 schedule-inputs">
                                 <div
                                     class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0">
-                                    <i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>
+                                    <i class="fa-solid fa-magnifying-glass fs-4 px-3 text-base-gray"></i>
                                     <input class="bg-transparent w-100 fs-4 pe-3" type="text"
                                         placeholder="Search by ref #, entity, responsible team or sector" name="search">
                                     <i class="fa-solid fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500">
@@ -365,21 +363,23 @@
                     <div class="d-flex">
                         <div class="Published ">
                             <div class="box one"></div>
-                            <span class="fs-5 mt-1 text-gray-200">Published</span>
+                            <span class="fs-5 mt-1 text-base-gray">Published</span>
                         </div>
                         <div class="Published ">
                             <div class="box two"></div>
-                            <span class="fs-5 mt-1 text-gray-200">Planned</span>
+                            <span class="fs-5 mt-1 text-base-gray">Planned</span>
                         </div>
                         <div class="Published ">
                             <div class="box three"></div>
-                            <span class="fs-5 mt-1 text-gray-200">Scheduled</span>
+                            <span class="fs-5 mt-1 text-base-gray">Scheduled</span>
                         </div>
                     </div>
                     <div id='calendar'>
                         <div class=""></div>
                     </div>
                     <div style='clear:both'></div>
+                    <div class="">
+
                     <div class="card w-25 border m-0 p-0 ">
                         <div class="card-body px-2 py-2 status-color-green-light-op">
                             <div class=" py-1 px-1">
@@ -404,7 +404,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="newEntry">
+                    <div class="card w-25 border-purpal m-0 p-0 my-3">
+                        <div class="card-body px-2 py-2 status-color-purpal-op2">
+                            <div class=" py-1 px-1">
+                                <div class="card-body-header d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box"><span
+                                            class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                            <h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5>
+                                        </span></div>
+                                    <div class="card-right">
+                                        <div class="span-box-one span-box tb-bg-purple">L1</div>
+                                    </div>
+                                </div>
+                                <h2 class="py-3 tb-purple m-0">Social Media</h2>
+                                <div
+                                    class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box">
+                                        <h5 class="fs-5 mb-0 tb-purple mt-1 text-center fw-bold">09:30</h5>
+                                    </div>
+                                    <div class="card-right-box"><i
+                                            class="tb-purple fa-solid fa-arrow-right me-1 fs-4"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <div class="modal fade" id="newEntry">
                         <div
                             class="modal-dialog modal-sm border-0 shadow mb-5 bg-body w-100 rounded-4  modals-card-position">
                             <img src="../../assets/images/calender-card-img.svg"
@@ -435,8 +460,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+                <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#addDeliverablesModal" role="button">
+                    Deliverables</a>
         </section>
         <!--scheduleTab ends here ------>
 
@@ -1033,31 +1060,230 @@
 
         <div class="modal fade" id="addDeliverablesModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
-            <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable">
+            <div class="modal-dialog inner-modal-content-filter modal-dialog-scrollable modal-dialog-position-filter">
                 <div class="modal-content">
                     <div class="modal-header bg-white">
-                        <h2 class="modal-title font-weight-400 text-dark-black" id="exampleModalToggleLabel">Filters
-                        </h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title font-weight-400 text-dark-black" id="exampleModalToggleLabel">Filters
+                        </h3>
+                        <button type="button" class="btn-close text-base-gray" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body collapse-inner-bg">
-                        <div class="body-header">
-                            <div class="status">
-                                <p>status</p>
+                        <div class="body-filters py-2 px-5 ">
+                            <div class="status-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Status</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Planned">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Planned">
+                                        Planned
+                                    </label>
+                                  </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Scheduled">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Scheduled">
+                                        Scheduled
+                                    </label>
+                                  </div>
+                                  <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Published">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Published">
+                                        Published
+                                    </label>
+                                  </div>
                             </div>
-                            <div class="selectbtn">
-                               <a href="#">select all</a>
+                            <div class="sector-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Sector</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Health">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Health">
+                                            Health
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Sports">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Sports">
+                                            Sports
+                                        </label>
+                                      </div>  <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Security">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Security">
+                                            Security
+                                        </label>
+                                      </div>  <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Youth">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Youth">
+                                            Youth
+                                        </label>
+                                      </div>  
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Tech">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Tech">
+                                            Tech
+                                        </label>
+                                      </div>
+                                </div>
+                                    <div class="col-7">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Culture">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Culture">
+                                            Culture
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Economy">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Economy">
+                                            Economy
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Education">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Education">
+                                            Education
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Energy-Sustainability">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Energy-Sustainability">
+                                            Energy Sustainability
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Transport-Planning">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Transport-Planning">
+                                            Transport Urban Planning
+                                        </label>
+                                      </div>
+                                </div>
+                                </div>
                             </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                    type="checkbox" value="" id="prl">
-                               Planned
+                            <div class="Entity-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Entity</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="KAZ">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="KAZ">
+                                            KAZ
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="AMAL">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="AMAL">
+                                            AMAL
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="EMIRF">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="EMIRF">
+                                            EMIRF
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="LOPI" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="LOPI">
+                                            LOPI
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="GINU">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="GINU">
+                                            GINU
+                                        </label>
+                                      </div>
+                                </div>
+                                    <div class="col-7">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="WWER">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="WWER">
+                                            WWER
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="ADGM" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="ADGM">
+                                            ADGM
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="IUY" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="IUY">
+                                            IUY
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="WQAS" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="WQAS">
+                                            WQAS
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="#TIAD" >
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="#TIAD">
+                                            #TIAD
+                                        </label>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="Responsible Team-filter pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Responsible Team</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="GovTeam">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="GovTeam">
+                                        GovTeam
+                                    </label>
+                                  </div> <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Strategy">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Strategy">
+                                        Strategy
+                                    </label>
+                                  </div> <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Digital-Publishing">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Digital-Publishing">
+                                        Digital Publishing
+                                    </label>
+                                  </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Clear Filters</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
                     </div>
                 </div>
             </div>

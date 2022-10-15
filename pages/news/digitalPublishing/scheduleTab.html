@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
-      <!--======== CSS ======== -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
       ">
-      <!--===== Boxicons CSS ===== -->
-      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-  
-      <!--===== font-awesome CSS ===== -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-      />
-      <link href='../../../plugin/assets/css/fullcalendar.css' rel='stylesheet' />
-      <link href='../../../plugin/assets/css/fullcalendar.print.css' rel='stylesheet' media='print' />
-      <link rel="stylesheet" href="../../../styles/style.css">
-      <link rel="stylesheet" href="../../../styles/digitalPublishing/schedule.css">
+    <!--===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='../../../plugin/assets/css/fullcalendar.css' rel='stylesheet' />
+    <link href='../../../plugin/assets/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="../../../styles/digitalPublishing/schedule.css">
 </head>
 
 <body>
@@ -29,7 +30,8 @@
                     <div class="col-3 navbar-brand" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../../assets/images/user.png" alt="user profile" class="img-responsive">
+                                <img src="../../../../../assets/images/user.png" alt="user profile"
+                                    class="img-responsive">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -296,117 +298,174 @@
                 </div>
             </div>
             <!--sidebar ends here -->
-        </nav>  
+        </nav>
 
-            <section class="main-section">
-                <div class="py-4 px-2 d-flex align-items-center justify-content-between">
-                    <div class="col-2">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <a href="#" class="text-decoration-none text-dark">Back</a>
+        <section class="main-section">
+            <div class="py-4 px-2 d-flex align-items-center justify-content-between">
+                <div class="col-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="#" class="text-decoration-none text-dark">Back</a>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
                     </div>
-                    <div class="d-flex">
-                        <div>
-                            <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
-                            <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
-                        </div>
-                        <div>
-                            <a href="#" class="text-base-black text-decoration-none">Requests</a>
-                            <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
-                        </div>
-                        <div>
-                            <a href="#" class="text-base-black text-decoration-none">Create Requests</a>
-                        </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Create Requests</a>
                     </div>
                 </div>
-                <div id='wrap' class="my-5 w-100">
-                    <div class="row m-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class=" d-flex align-items-center mx-3">
-                                <div class="form-floating text-white ">
-                                    <div class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">
-                                        <i class="fa-regular fa-calendar fs-4 text-black mb-1"></i> 
-                                        <select class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light " aria-label="Default select example">
-                                            <option selected>Month </option>
-                                            <option value="1">Week</option>
-                                            <option value="2">Day</option>
-                                          </select>
-                                    </div>
+            </div>
+            <div id='wrap' class="my-5 w-100">
+                <div class="row m-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class=" d-flex align-items-center mx-3">
+                            <div class="form-floating text-white ">
+                                <div
+                                    class="d-flex align-items-center justify-content-center tb-bg-light ps-3 pe-3 py-1">
+                                    <i class="fa-regular fa-calendar fs-4 text-black mb-1"></i>
+                                    <select
+                                        class="form-select  fw-semibold  border-0 dropdown-toggle shadow-none  fs-4 py-2 tb-bg-light "
+                                        aria-label="Default select example">
+                                        <option selected>Month </option>
+                                        <option value="1">Week</option>
+                                        <option value="2">Day</option>
+                                    </select>
                                 </div>
-                             </div>
-                             <!-- Search form -->
-                             <div class="p-2 w-75 mb-5">
-                                <form class="mx-5 schedule-inputs">
-                                    <div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0">
-                                        <i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>
-                                        <input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible team or sector" name="search">
-                                        <i class="fa-solid fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500">
-                                            <div class="span-box-one span-box">3</div>
-                                        </i>
-                                    </div>
-                                </form>
-                        </div>   
-                            <div class="vartical-line ms-2"></div>
-                            <div class="ms-4">
-                                <button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button" id="eventBtn">
-                                    <i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>
                             </div>
-                                
+                        </div>
+                        <!-- Search form -->
+                        <div class="p-2 w-75 mb-5">
+                            <form class="mx-5 schedule-inputs">
+                                <div
+                                    class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0">
+                                    <i class="fa-solid fa-magnifying-glass fs-4 px-3 text-base-gray"></i>
+                                    <input class="bg-transparent w-100 fs-4 pe-3" type="text"
+                                        placeholder="Search by ref #, entity, responsible team or sector" name="search">
+                                    <i class="fa-solid fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500">
+                                        <div class="span-box-one span-box">3</div>
+                                    </i>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="vartical-line ms-2"></div>
+                        <div class="ms-4">
+                            <button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer " type="button"
+                                id="eventBtn">
+                                <i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button>
+                        </div>
+
                     </div>
                     <div class="d-flex">
                         <div class="Published ">
                             <div class="box one"></div>
-                            <span class="fs-5 mt-1 text-gray-200">Published</span>
+                            <span class="fs-5 mt-1 text-base-gray">Published</span>
                         </div>
                         <div class="Published ">
                             <div class="box two"></div>
-                           <span class="fs-5 mt-1 text-gray-200">Planned</span> 
+                            <span class="fs-5 mt-1 text-base-gray">Planned</span>
                         </div>
                         <div class="Published ">
                             <div class="box three"></div>
-                           <span class="fs-5 mt-1 text-gray-200">Scheduled</span> 
+                            <span class="fs-5 mt-1 text-base-gray">Scheduled</span>
                         </div>
                     </div>
                     <div id='calendar'>
                         <div class=""></div>
                     </div>
                     <div style='clear:both'></div>
+                    <div class="">
+
                     <div class="card w-25 border m-0 p-0 ">
-                    <div class="card-body px-2 py-2 status-color-green-light-op">
-                        <div class=" py-1 px-1">
-                            <div class="card-body-header d-flex justify-content-between align-items-center">
-                                <div class="card-left-box"><span class=" tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op"><h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">DOH</h5></span></div>
-                                <div class="card-right"><div class="span-box-one span-box tb-bg-green">10</div></div>
-                            </div>
-                            <h2 class="py-3 tb-green m-0">Social Media</h2>
-                            <div class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
-                                <div class="card-left-box"><h5 class="fs-5 mb-0 tb-green mt-1 text-center fw-bold">09:30</h5></div>
-                                <div class="card-right-box"><i class="tb-green fa-solid fa-arrow-right me-1 fs-4"></i></div>
+                        <div class="card-body px-2 py-2 status-color-green-light-op">
+                            <div class=" py-1 px-1">
+                                <div class="card-body-header d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box"><span
+                                            class=" tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                            <h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">DOH</h5>
+                                        </span></div>
+                                    <div class="card-right">
+                                        <div class="span-box-one span-box tb-bg-green">10</div>
+                                    </div>
+                                </div>
+                                <h2 class="py-3 tb-green m-0">Social Media</h2>
+                                <div
+                                    class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box">
+                                        <h5 class="fs-5 mb-0 tb-green mt-1 text-center fw-bold">09:30</h5>
+                                    </div>
+                                    <div class="card-right-box"><i
+                                            class="tb-green fa-solid fa-arrow-right me-1 fs-4"></i></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                    <div class="modal fade" id="newEntry">
-                        <div class="modal-dialog modal-sm border-0 shadow mb-5 bg-body w-100 rounded-4  modals-card-position">
-                            <img src="../../assets/images/calender-card-img.svg" class="card-img-top img-responsive top-rounded" alt="calender-card-img">
-                            <div class="card-body">
-                                <div class="px-1 py-1">
-                                    <div class="card-body-header d-flex justify-content-between align-items-center">
-                                        <div class="card-left flex-center-align">
-                                            <div class="span-box-one span-box me-2">10</div><span class="fs-5 fw">13765</span></div>
-                                        <div class="card-right"><span class="fs-5">12/06/20</span> - <span class="fs-5">11:00am</span></div>
+                    <div class="card w-25 border-purpal m-0 p-0 my-3">
+                        <div class="card-body px-2 py-2 status-color-purpal-op2">
+                            <div class=" py-1 px-1">
+                                <div class="card-body-header d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box"><span
+                                            class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                            <h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5>
+                                        </span></div>
+                                    <div class="card-right">
+                                        <div class="span-box-one span-box tb-bg-purple">L1</div>
                                     </div>
-                                    <h2 class="py-3">PRL (En)</h2>
-                                    <div class="card-footer border-0 bg-white m-0 p-0  d-flex justify-content-between align-items-center">
-                                        <div class="card-left-box"><span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 px-4 status-color-blue-op"><h5 class="fs-5 mb-0 tb-blue mt-1 text-center fw-bold">HEALTH</h5></span></div>
-                                        <div class="card-right-box"><span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 px-4 status-color-blue-op"><i class="tb-blue fa-sm fa-sharp fa-solid fa-circle me-1"></i><h5 class="fs-5 mb-0 tb-blue mt-1 text-center fw-bold">PUBLISHED</h5></span></div>
+                                </div>
+                                <h2 class="py-3 tb-purple m-0">Social Media</h2>
+                                <div
+                                    class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                    <div class="card-left-box">
+                                        <h5 class="fs-5 mb-0 tb-purple mt-1 text-center fw-bold">09:30</h5>
                                     </div>
+                                    <div class="card-right-box"><i
+                                            class="tb-purple fa-solid fa-arrow-right me-1 fs-4"></i></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        <!--dashboard ends here ------>
+                    <!-- <div class="modal fade" id="newEntry">
+                        <div
+                            class="modal-dialog modal-sm border-0 shadow mb-5 bg-body w-100 rounded-4  modals-card-position">
+                            <img src="../../assets/images/calender-card-img.svg"
+                                class="card-img-top img-responsive top-rounded" alt="calender-card-img">
+                            <div class="card-body">
+                                <div class="px-1 py-1">
+                                    <div class="card-body-header d-flex justify-content-between align-items-center">
+                                        <div class="card-left flex-center-align">
+                                            <div class="span-box-one span-box me-2">10</div><span
+                                                class="fs-5 fw">13765</span>
+                                        </div>
+                                        <div class="card-right"><span class="fs-5">12/06/20</span> - <span
+                                                class="fs-5">11:00am</span></div>
+                                    </div>
+                                    <h2 class="py-3">PRL (En)</h2>
+                                    <div
+                                        class="card-footer border-0 bg-white m-0 p-0  d-flex justify-content-between align-items-center">
+                                        <div class="card-left-box"><span
+                                                class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 px-4 status-color-blue-op">
+                                                <h5 class="fs-5 mb-0 tb-blue mt-1 text-center fw-bold">HEALTH</h5>
+                                            </span></div>
+                                        <div class="card-right-box"><span
+                                                class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 px-4 status-color-blue-op"><i
+                                                    class="tb-blue fa-sm fa-sharp fa-solid fa-circle me-1"></i>
+                                                <h5 class="fs-5 mb-0 tb-blue mt-1 text-center fw-bold">PUBLISHED</h5>
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="btn btn-primary w-25" data-bs-toggle="modal" href="#addDeliverablesModal" role="button">
+                    Deliverables</a>
+        </section>
+        <!--scheduleTab ends here ------>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -460,14 +519,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Request ID
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -481,14 +558,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Sector
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -502,14 +597,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Entity
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -523,14 +636,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Request
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -544,14 +675,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Type
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -565,14 +714,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Saved Searches
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -588,14 +755,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Task
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -609,14 +794,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Unpublished Asset
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -630,14 +833,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Published Asset
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -651,14 +872,32 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Created date
                                         </button>
-                                          <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
                                             data-popper-placement="bottom-start">
-                                            <li class="pb-2 pt-1 border-bottom  "><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"><label class="fs-5"> All</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Requests</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Comments</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Schedule</label></li>
-                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center" type="checkbox" value="" id="flexCheckDefault"> Assets</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
                                             <li class="text-center"><button
                                                     class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
                                                     type="button">
@@ -818,6 +1057,237 @@
             </div>
         </div>
         <!--  modal ends here -->
+
+        <div class="modal fade" id="addDeliverablesModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog inner-modal-content-filter modal-dialog-scrollable modal-dialog-position-filter">
+                <div class="modal-content">
+                    <div class="modal-header bg-white">
+                        <h3 class="modal-title font-weight-400 text-dark-black" id="exampleModalToggleLabel">Filters
+                        </h3>
+                        <button type="button" class="btn-close text-base-gray" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="body-filters py-2 px-5 ">
+                            <div class="status-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Status</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Planned">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Planned">
+                                        Planned
+                                    </label>
+                                  </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Scheduled">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Scheduled">
+                                        Scheduled
+                                    </label>
+                                  </div>
+                                  <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Published">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Published">
+                                        Published
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="sector-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Sector</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Health">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Health">
+                                            Health
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Sports">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Sports">
+                                            Sports
+                                        </label>
+                                      </div>  <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Security">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Security">
+                                            Security
+                                        </label>
+                                      </div>  <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Youth">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Youth">
+                                            Youth
+                                        </label>
+                                      </div>  
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Tech">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Tech">
+                                            Tech
+                                        </label>
+                                      </div>
+                                </div>
+                                    <div class="col-7">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Culture">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Culture">
+                                            Culture
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Economy">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Economy">
+                                            Economy
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Education">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Education">
+                                            Education
+                                        </label>
+                                      </div> <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Energy-Sustainability">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Energy-Sustainability">
+                                            Energy Sustainability
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Transport-Planning">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Transport-Planning">
+                                            Transport Urban Planning
+                                        </label>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="Entity-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Entity</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="KAZ">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="KAZ">
+                                            KAZ
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="AMAL">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="AMAL">
+                                            AMAL
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="EMIRF">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="EMIRF">
+                                            EMIRF
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="LOPI" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="LOPI">
+                                            LOPI
+                                        </label>
+                                      </div>
+                                      <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="GINU">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="GINU">
+                                            GINU
+                                        </label>
+                                      </div>
+                                </div>
+                                    <div class="col-7">
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="WWER">
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="WWER">
+                                            WWER
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="ADGM" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="ADGM">
+                                            ADGM
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="IUY" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="IUY">
+                                            IUY
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="WQAS" disabled>
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap" for="WQAS">
+                                            WQAS
+                                        </label>
+                                      </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="#TIAD" >
+                                        <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="#TIAD">
+                                            #TIAD
+                                        </label>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="Responsible Team-filter pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Responsible Team</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="GovTeam">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="GovTeam">
+                                        GovTeam
+                                    </label>
+                                  </div> <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Strategy">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Strategy">
+                                        Strategy
+                                    </label>
+                                  </div> <div class="d-flex align-items-center mt-3">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent" type="checkbox" value="" id="Digital-Publishing">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap" for="Digital-Publishing">
+                                        Digital Publishing
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Clear Filters</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
@@ -827,7 +1297,9 @@
     <script src='../../../plugin/assets/js/fullcalendar.js' type="text/javascript"></script>
     <script src='../../../javascript/fullcalender.js' type="text/javascript"></script>
     <script src="../../../javascript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

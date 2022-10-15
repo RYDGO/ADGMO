@@ -1195,6 +1195,9 @@ option:hover,
 .box-shadow-popup {
     box-shadow: 0px 12px 25px 0px #00000021;
 }
+.light-box-shadow-btn {
+    box-shadow: 0px 3px 10px #00000021 !important;
+}
 
 /* Notification styles*/
 
@@ -1232,6 +1235,11 @@ option:hover,
 
 .flex-center-align {
     display: flex;
+    align-items: center;
+}
+.flex-center-justify {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

@@ -56,7 +56,7 @@ $(document).ready(function () {
 	var calendar = $('#calendar').fullCalendar({
 		header: {
 			left: 'prev,title,next',
-			center: 'agendaDay,agendaWeek,month',
+			center: '',
 			right: 'agendaDay,agendaWeek,month'
 		},
 		editable: true,

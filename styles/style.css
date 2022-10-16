@@ -2252,6 +2252,9 @@ input:checked + .slider:before {
     background-color: transparent;
     border-bottom: 1px solid #000000;
 }
-.progress-bar-percentage{
-    width: 75%;
+
+
+#deliverablesModal .main-modal {
+    position: absolute;
+    right: 40px;
 }

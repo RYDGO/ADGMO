@@ -735,9 +735,6 @@ a:hover {
   border: 1px solid var(--grayshade-400);
 }
 
-.border-gray-500 {
-  border: 1px solid var(--grayshade-500);
-}
 
 /* Gray shades text color  */
 
@@ -1011,12 +1008,12 @@ a:hover {
   border: 1px solid var(--btn-bg-disabled) !important;
   color: var(--btn-bg-disabled) !important;
 }
-*/
+
 
 /* ----- Paddings ----- */
 
 .pad-8-12 {
-  padding: 8px 12px;
+  padding: 8px 12px !important;
 }
 
 .pad-12-12 {

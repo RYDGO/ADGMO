@@ -981,38 +981,34 @@ a:hover {
 /* --- Gray BUTTONS --- */
 
 .tb-btn-underline {
-  background-color: var(--grayshade-100) !important;
-  color: var(--text-base-black) !important;
-  border: 1px solid var(--grayshade-100);
-  border-bottom: 2px solid var(--grayshade-100) !important;
-}
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-100) !important;
+    border-bottom: 2px solid var(--grayshade-100) !important;}
 
 .tb-btn-underline:hover {
-  background-color: var(--grayshade-200) !important;
-  color: var(--text-base-black) !important;
-  border: 1px solid var(--grayshade-200);
-  border-bottom: 2px solid var(--grayshade-200) !important;
-}
-
+    background-color: var(--grayshade-200) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-200) !important;
+    border-bottom: 2px solid var(--grayshade-200) !important;}
+ 
 .tb-btn-underline:active {
-  background-color: var(--btn-bg-hover) !important;
-  color: var(--text-base-black) !important;
-  border: 1px solid var(--btn-bg-hover) !important;
-  border-bottom: 2px solid var(--base-black-color) !important;
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-100) !important;
+    border-bottom: 2px solid var(--base-black-color) !important;
 }
 
 .tb-btn-underline.active {
-  background-color: var(--grayshade-100) !important;
-  color: var(--base-white-color) !important;
-  border-bottom: 1px solid var(--btn-bg-selected) !important;
-  border: 1px solid var(--btn-bg-hover) !important;
-  border-bottom: 2px solid var(--base-black-color) !important;
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+    border: 1px solid var(--grayshade-100) !important;
+    border-bottom: 2px solid var(--base-black-color) !important;
 }
-
 .tb-btn-underline:disabled {
-  border: 1px solid var(--btn-bg-disabled) !important;
-  color: var(--btn-bg-disabled) !important;
-}
+    border: 1px solid var(--btn-bg-disabled) !important;
+    color: var(--btn-bg-disabled) !important;
+} */
 
 /* ----- Paddings ----- */
 
@@ -2106,8 +2102,8 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
 
 /*  search styles ends */
 
-.accordion-bottom-border {
-  border-bottom: 30px solid var(--body-bg);
+.accordion-bottom-border{
+    border-bottom: 30px solid #f9f9f9;
 }
 
 /* ACCORDION FORM STYLES ENDS  */

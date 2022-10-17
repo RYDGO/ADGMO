@@ -218,7 +218,7 @@ html .fc,
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 	border-radius: 50px;
-    border: 1px solid var(--base-black);
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
     background-color: var(--text-base-white);
     padding: 10px 20px;
     cursor: pointer;
@@ -228,8 +228,8 @@ html .fc,
 .fc-button-month.fc-state-default:hover,
 .fc-button-agendaWeek.fc-state-default:hover,
 .fc-button-agendaDay.fc-state-default:hover{
-	background-color: var(--text-base-white);
-	color:var(--text-base-black);
+	background-color: var(--text-base-black);
+	color:var(--text-base-white);
 }
 
 .fc-state-hover,

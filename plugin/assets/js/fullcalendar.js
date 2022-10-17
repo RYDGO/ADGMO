@@ -745,7 +745,7 @@
 				'<div class="p-2 w-100 mb-5">' +
 				'<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0 light-box-shadow-btn ">' +
 				'<i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>' +
-				'<input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible" name="search">' +
+				'<input class="bg-transparent w-100 fs-4 pe-3 schedule-search" type="text" placeholder="Search by ref #, entity, responsible" name="search" autocomplete="off">' +
 				'<span data-bs-toggle="modal" href="#addDeliverablesModal" role="button"><i class="fa-solid h fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500" id="calfilter"></i></span>' +
 				'<span><div class="span-box-one span-box">3</div></span>' +
 				'</div>' +

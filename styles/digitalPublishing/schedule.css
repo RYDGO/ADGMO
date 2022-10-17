@@ -83,6 +83,7 @@
 .schedule-inputs input::placeholder{
     color: var(--grayshade-400)
 }
+
 .Published{
     display:flex;
     align-items: center;
@@ -116,51 +117,3 @@
 .inner-modal-content-filter{
     width: 450px !important;
 }
-/* Tooltip container */
-/* Tooltip container */
-
-.tooltips {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltips text */
-  .tooltips .tooltiptextt {
-    visibility: hidden;
-    width: 100%;
-    color: #fff;
-    padding: 5px 0;
-    border-radius: 6px;
-  
-    /* Position the tooltips text */
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    margin-left: -60px;
-  
-    /* Fade in tooltips */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .tooltips-right{
-    top: -118px !important;
-    left: 30% !important;
-} 
-  /* Tooltips arrow */
-  .tooltips .tooltiptextt::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
-  }
-  
-  /* Show the tooltips text when you mouse over the tooltips container */
-  .tooltips:hover .tooltiptextt {
-    visibility: visible;
-    opacity: 1;
-  }

@@ -33,7 +33,7 @@
     font-size: 40px;
     line-height: 53px;
   }
-  .nav-item{
+  /* .nav-item{
     margin: 0px 5px;
   }
   .nav-link:hover{
@@ -54,7 +54,7 @@
   .active{
     border: none;
     background-color: var(--base-white-color);
-    /* box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.06); */
+    box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.06);
   }
   .active .nav-link {
     color: var(--base-black-color);
@@ -63,7 +63,7 @@
     .nav-link:focus, .nav-link:hover {
      color: var(--base-black-color); 
 }
-  
+   */
   .home-content .overview-boxes {
     display: flex;
     align-items: center;

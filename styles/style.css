@@ -1172,6 +1172,11 @@ option:hover,
   border-top: none;
 }
 
+.modal-backdrop-0{
+  background-color: transparent;
+  z-index: 1;
+}
+
 /* dropshadow */
 
 .box-shadow-popup {
@@ -2352,3 +2357,5 @@ input:checked + .slider:before {
   background-color: transparent;
   border-bottom: 1px solid var(--base-color);
 }
+
+

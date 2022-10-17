@@ -77,6 +77,7 @@
 
 :root {
   --body-bg: #fbfbfb;
+  --collapse-bg:#f9f9f9;
   --base-card-color: #e7f5f2;
   --base-color: #ef3f43;
   --base-black-color: #000000;
@@ -166,12 +167,11 @@
   font-size: 12px;
 }
 a:hover {
-    color: initial;
+  color: initial;
 }
 *::-webkit-scrollbar {
-    width: 0em;
-} 
-
+  width: 0em;
+}
 
 .input-label {
   font-family: var(--font-graphic-bold);
@@ -684,7 +684,7 @@ a:hover {
 }
 
 .collapse-inner-bg {
-  background-color: #f9f9f9 !important;
+  background-color: var(--collapse-bg) !important;
 }
 
 .gray-700 {
@@ -978,34 +978,37 @@ a:hover {
 /* --- Gray BUTTONS --- */
 
 .tb-btn-underline {
-    background-color: var(--grayshade-100) !important;
-    color: var(--text-base-black) !important;
-    border: 1px solid var(--grayshade-100) !important;
-    border-bottom: 2px solid var(--grayshade-100) !important;}
+  background-color: var(--collapse-bg) !important;
+  color: var(--text-base-black) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--grayshade-100) !important;
+}
 
 .tb-btn-underline:hover {
-    background-color: var(--grayshade-200) !important;
-    color: var(--text-base-black) !important;
-    border: 1px solid var(--grayshade-200) !important;
-    border-bottom: 2px solid var(--grayshade-200) !important;}
- 
+  background-color: var(--collapse-bg) !important;
+  color: var(--text-base-black) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--grayshade-200) !important;
+}
+
 .tb-btn-underline:active {
-    background-color: var(--grayshade-100) !important;
-    color: var(--text-base-black) !important;
-    border: 1px solid var(--grayshade-100) !important;
-    border-bottom: 2px solid var(--base-black-color) !important;
+  background-color: var(--collapse-bg) !important;
+  color: var(--text-base-black) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--base-black-color) !important;
 }
 
 .tb-btn-underline.active {
-    background-color: var(--grayshade-100) !important;
-    color: var(--text-base-black) !important;
-    border: 1px solid var(--grayshade-100) !important;
-    border-bottom: 2px solid var(--base-black-color) !important;
+  background-color: var(--collapse-bg) !important;
+  color: var(--text-base-black) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--base-black-color) !important;
 }
 .tb-btn-underline:disabled {
-    border: 1px solid var(--btn-bg-disabled) !important;
-    color: var(--btn-bg-disabled) !important;
-} 
+  border: 1px solid var(--btn-bg-disabled) !important;
+  color: var(--btn-bg-disabled) !important;
+}
+
 
 /* ----- Paddings ----- */
 
@@ -1166,6 +1169,11 @@ option:hover,
   border-top: none;
 }
 
+.modal-backdrop-0{
+  background-color: transparent;
+  z-index: 1;
+}
+
 /* dropshadow */
 
 .box-shadow-popup {
@@ -1240,12 +1248,12 @@ option:hover,
 }
 
 /* Modal position right */
-.modal-dialog-position-right{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    z-index: 1000000;
-    border-radius: 8px;
+.modal-dialog-position-right {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  z-index: 1000000;
+  border-radius: 8px;
 }
 
 .font-weight-400 {
@@ -2099,8 +2107,8 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
 
 /*  search styles ends */
 
-.accordion-bottom-border{
-    border-bottom: 30px solid #f9f9f9;
+.accordion-bottom-border {
+  border-bottom: 30px solid var(--collapse-bg);
 }
 
 /* ACCORDION FORM STYLES ENDS  */
@@ -2308,7 +2316,7 @@ input:checked + .slider:before {
   background-color: #000000 !important;
 }
 .site-modal-tab-content .inner-tab {
-  border-bottom: 1px solid #eceff1;
+  border-bottom: 1px solid var(--grayshade-100);
 }
 .site-modal-tab-content .inner-tab .nav-link {
   border: none;
@@ -2333,7 +2341,7 @@ input:checked + .slider:before {
 }
 
 .site-modal-tab-content-red .inner-tab {
-  border-bottom: 1px solid #eceff1;
+  border-bottom: 1px solid var(--grayshade-100);
 }
 .site-modal-tab-content-red .inner-tab .nav-link {
   border: none;
@@ -2346,3 +2354,5 @@ input:checked + .slider:before {
   background-color: transparent;
   border-bottom: 1px solid var(--base-color);
 }
+
+

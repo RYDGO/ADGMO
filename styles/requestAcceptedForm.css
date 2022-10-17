@@ -2,15 +2,6 @@
     left: -350px;
 }
 
-#socialMedia .main-modal,
-#prlDeliverableModal .main-modal,
-#exampleModal-add-new .main-modal,
-#additionalModal .main-modal,
-#reviewModal .main-modal {
-    position: absolute;
-    right: 40px;
-}
-
 .accordion-tab-width {
     width: 470px;
 }

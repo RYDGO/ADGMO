@@ -5385,8 +5385,8 @@
 				skinCss +
 				"'" +
 				">" +
-				'<div class="card-left-box flex-center-align gap-1"><span data-bs-toggle="modal" data-bs-target="#scheduledetilesmodal" class="tb-bg-purple d-flex align-items-center justify-content-evenly py-2 px-4 status-color-blue-op w-25"><h5 class="fs-5 mb-0 text-white text-center">KIZ</h5>' +
-				'</span><span data-bs-toggle="modal" data-bs-target="#scheduledetilesmodal" class="tb-bg-purple d-flex align-items-center justify-content-evenly py-2 px-4 status-color-blue-op  w-25"><h5 class="fs-5 mb-0 text-white text-center">KIZ</h5></span></div>' +
+				'<div class="card-left-box flex-center-align gap-1"><span  data-bs-toggle="modal" data-bs-target="#scheduledetilesmodal" class="vija tb-bg-purple d-flex align-items-center justify-content-evenly py-2 px-4 status-color-blue-op w-25"><h5 class="fs-5 mb-0 text-white text-center">KIZ</h5>' +
+				'</span></div>' +
 				"<div class='fc-event-inner fc-event'>";
 			if (!event.allDay && segment.isStart) {
 				html +=

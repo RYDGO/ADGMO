@@ -2335,8 +2335,8 @@ input:checked + .slider:before {
 }
 
 .modal-dialog-position {
-  position: absolute;
-  right: 40px;
+  position: absolute !important;
+  right: 40px !important;
 }
 
 .site-modal-tab-content-red .inner-tab {

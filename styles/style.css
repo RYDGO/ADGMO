@@ -1008,7 +1008,7 @@ a:hover {
 .tb-btn-underline:disabled {
     border: 1px solid var(--btn-bg-disabled) !important;
     color: var(--btn-bg-disabled) !important;
-} */
+}
 
 /* ----- Paddings ----- */
 

@@ -68,14 +68,12 @@ html .fc,
     padding-left: 10px;
 }
 
-.fc-header .fc-button {
-    vertical-align: top;
-}
 
 
 /* buttons edges butting together */
 
 .fc-header .fc-button {
+    vertical-align: top;
     margin-right: -1px;
 }
 
@@ -216,17 +214,22 @@ html .fc,
 	padding: 10px 20px;
 	margin: 0px 10px;
     text-align: center;
-    background-color: var(--btn-bg-default);
-    color: #fff;
+    color: var(--text-base-black);
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 	border-radius: 50px;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    background-color: var(--text-base-white);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .fc-button-month.fc-state-default:hover,
 .fc-button-agendaWeek.fc-state-default:hover,
 .fc-button-agendaDay.fc-state-default:hover{
-	background-color: var(--text-base-white);
-	color:var(--text-base-black);
+	background-color: var(--text-base-black);
+	color:var(--text-base-white);
 }
 
 .fc-state-hover,

@@ -1453,7 +1453,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="text-end mt-3">
-                                                <button class="border-0 bg-white"><img
+                                                <button class="border-0 bg-white" data-bs-target="#selectDeliverablesModal" data-bs-toggle="modal"><img
                                                         src="../../assets/images/Icons/plus-icon.svg" alt=""></button>
                                             </div>
                                         </div>
@@ -1621,6 +1621,63 @@
                 </div>
             </div>
             <!-- Decline modal ends here -->
+            <!-- Select Deliverables Modal Starts Here -->
+            <div class="modal fade background-dim" id="selectDeliverablesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position-right">
+                    <div class="modal-content box-shadow-popup h-100">
+                        <div class="modal-header align-items-start p-4">
+                            <div>
+                                <h5 class="modal-title tb-fs-24 font-weight-400 text-black" id="exampleModalLabel">Create dependency </h5>
+                            </div>
+                            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body collapse-inner-bg py-4 px-4">
+                            <table class="table align-middle">
+                                <tr class="tb-fs-18 font-weight-400">
+                                    <td>
+                                        <div class="form-check mb-2 ">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="prl-checkbox"> Script
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"> English
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"> Arabic
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tb-fs-18 font-weight-400">
+                                    <td>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="social-checkbox"> Interview Questions
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"> English
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox" value="" id="flexCheckDefault"> Arabic
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                            <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal" href="#prlDeliverableModal" id="nextBtnAddDel" role="button" data-bs-dismiss="modal">Next</button>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Select Deliverables Modal Ends Here -->
 
         </section>
         <!--dashboard ends here ------>

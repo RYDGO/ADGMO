@@ -168,6 +168,10 @@
 a:hover {
     color: initial;
 }
+*::-webkit-scrollbar {
+    width: 0em;
+} 
+
 
 .input-label {
   font-family: var(--font-graphic-bold);
@@ -2042,10 +2046,6 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
   margin-left: 5px;
   display: none;
 }
-
-/* body::-webkit-scrollbar {
-    width: 0em;
-}  */
 
 .view-card-border {
   border: 2px solid #ededed;

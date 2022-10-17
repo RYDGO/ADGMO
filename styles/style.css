@@ -2128,7 +2128,7 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
 
 
 .accordion-bottom-border{
-    border-bottom: 30px solid var(--body-bg);
+    border-bottom: 30px solid #f9f9f9;
 }
 
 /* ACCORDION FORM STYLES ENDS  */

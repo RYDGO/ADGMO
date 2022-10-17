@@ -3,6 +3,7 @@ $(document).ready(function () {
 	var d = date.getDate();
 	var m = date.getMonth();
 	var y = date.getFullYear();
+	var title = '';
 	var eventData = [
 		{
 			title: 'PRL (En)',
@@ -50,6 +51,8 @@ $(document).ready(function () {
 	});
 
 
+
+
 	/* initialize the calendar
 	-----------------------------------------------------------------*/
 
@@ -79,15 +82,33 @@ $(document).ready(function () {
 		allDaySlot: false,
 		selectHelper: true,
 		select: function (start, end, allDay) {
-			for (let data of eventData) {
-				if (data.start.toDateString() == start.toDateString()) {
-					// prompt('New Entry:');
-					// $("#newEntry").addClass("show")
-					// $("#newEntry").css("display", "block");
-					// $("#newEntry").attr("aria-modal", "true");
-					// $("#newEntry").attr("role", "dialog")
-				}
-			}
+			$('#eventtarget').modal('show')
+			$('#eventName').on('change', function () {
+				title = this.value
+				$('#cancelAddEvent').on("click", function () {
+					title = ''
+					console.log("sadsadasd", title);
+					$('#eventName').value = '';
+
+				})
+				setTimeout(function () {
+					if (title) {
+						console.log("fdfdsfdsfd", title);
+						calendar.fullCalendar('renderEvent',
+							{
+								title: title,
+								start: start,
+								end: end,
+								allDay: allDay
+							},
+							true // make the event "stick"
+						);
+					}
+				}, 500)
+				this.value = ''
+			})
+
+			calendar.fullCalendar('unselect');
 		},
 		droppable: true, // this allows things to be dropped onto the calendar !!!
 		drop: function (date, allDay) { // this function is called when something is dropped
@@ -134,6 +155,4 @@ $(document).ready(function () {
 		}
 		calendar.fullCalendar('unselect');
 	})
-
-
 });

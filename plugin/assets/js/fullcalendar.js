@@ -745,7 +745,7 @@
 				'<div class="p-2 w-100 mb-5">' +
 				'<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0 light-box-shadow-btn ">' +
 				'<i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>' +
-				'<input class="bg-transparent w-100 fs-4 pe-3" type="text" placeholder="Search by ref #, entity, responsible" name="search">' +
+				'<input class="bg-transparent w-100 fs-4 pe-3 schedule-search" type="text" placeholder="Search by ref #, entity, responsible" name="search" autocomplete="off">' +
 				'<span data-bs-toggle="modal" href="#addDeliverablesModal" role="button"><i class="fa-solid h fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500" id="calfilter"></i></span>' +
 				'<span><div class="span-box-one span-box">3</div></span>' +
 				'</div>' +
@@ -766,16 +766,16 @@
 							.append(renderSection('right'))
 					).append(
 						$("<tr class='flex-center-align'/>")
-							.append('<td><div class="d-flex mb-3">'+
-							'<div class="Published ">'+
-								'<div class="box one"></div>'+
-			'<span class="fs-5 mt-1 text-base-gray">Published</span></div>'+
-							'<div class="Published ">'+
-								'<div class="box two"></div>'+
-			'<span class="fs-5 mt-1 text-base-gray">Planned</span></div>'+
-							'<div class="Published ">'+
-								'<div class="box three"></div>'+
-'<span class="fs-5 mt-1 text-base-gray">Scheduled</span></div></div></td>')
+							.append('<td><div class="d-flex mb-3">' +
+								'<div class="Published ">' +
+								'<div class="box one"></div>' +
+								'<span class="fs-5 mt-1 text-base-gray">Published</span></div>' +
+								'<div class="Published ">' +
+								'<div class="box two"></div>' +
+								'<span class="fs-5 mt-1 text-base-gray">Planned</span></div>' +
+								'<div class="Published ">' +
+								'<div class="box three"></div>' +
+								'<span class="fs-5 mt-1 text-base-gray">Scheduled</span></div></div></td>')
 					);
 				return element;
 			}
@@ -858,12 +858,12 @@
 									)
 									.appendTo(e);
 
-									if(buttonName== 'month' && j==2){
-										e.append(
-										'<div class="ms-2">'+
-'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer light-box-shadow-btn " type="button" data-bs-toggle="modal" data-bs-target="#eventtarget" role="button">'+
-'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button></div>')
-									}
+								if (buttonName == 'month' && j == 2) {
+									e.append(
+										'<div class="ms-2">' +
+										'<button class="btn btn-md tb-btn-primary tb-rounded nav-text cursor-pointer light-box-shadow-btn " type="button" data-bs-toggle="modal" data-bs-target="#eventtarget" role="button">' +
+										'<i class="fa-regular fa-plus fs-3 font-weight-700 mt-1"></i></button></div>')
+								}
 								disableTextSelection(button);
 								if (!prevButton) {
 									button.addClass(tm + '-corner-left');
@@ -4021,8 +4021,8 @@
 				skinCss +
 				"'" +
 				">" +
-'<span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">'+
-'<h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5></span>'+
+				'<span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">' +
+				'<h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5></span>' +
 				"<div class='fc-event-inner'>" +
 				"<div class='fc-event-time'>" +
 				htmlEscape(formatDates(event.start, event.end, opt('timeFormat'))) +
@@ -5349,7 +5349,7 @@
 			var url = event.url;
 
 			// generate the list of CSS classNames
-			var classNames = ['fc-event', 'fc-event-hori'];
+			var classNames = ['fc-event-hori',];
 			if (isEventDraggable(event)) {
 				classNames.push('fc-event-draggable');
 			}
@@ -5385,7 +5385,9 @@
 				skinCss +
 				"'" +
 				">" +
-				"<div class='fc-event-inner'>";
+				'<div class="card-left-box flex-center-align gap-1"><span data-bs-toggle="modal" data-bs-target="#scheduledetilesmodal" class="tb-bg-purple d-flex align-items-center justify-content-evenly py-2 px-4 status-color-blue-op w-25"><h5 class="fs-5 mb-0 text-white text-center">KIZ</h5>' +
+				'</span><span data-bs-toggle="modal" data-bs-target="#scheduledetilesmodal" class="tb-bg-purple d-flex align-items-center justify-content-evenly py-2 px-4 status-color-blue-op  w-25"><h5 class="fs-5 mb-0 text-white text-center">KIZ</h5></span></div>' +
+				"<div class='fc-event-inner fc-event'>";
 			if (!event.allDay && segment.isStart) {
 				html +=
 					"<span class='fc-event-time'>" +
@@ -5395,7 +5397,6 @@
 					"</span>";
 			}
 			html +=
-				"<span class='fc-event-title'>" +
 				htmlEscape(event.title || '') +
 				"</span>" +
 				"</div>";

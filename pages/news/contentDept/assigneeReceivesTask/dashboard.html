@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+
+
+    <!--===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../styles/govcomUser.css">
+    <link rel="stylesheet" href="../../../../styles/contentHead.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0 pb-5">
+        <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
+                    <div class="col-3 navbar-brand" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2">
+                            <div class="userImg-container mx-2">
+                                <img src="../../../../assets/images/user.png" alt="user profile" class="img-responsive">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi
+                                </h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                            <div class="vartical-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-regular fa-bell"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <a href="#" rel="noopener noreferrer">
+                            <div class="img-containerbox">
+                                <img src="../../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
+                                    class="img-responsive" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--navbar ends here -->
+
+        <nav class="sidebar " id="sidebar">
+            <header>
+                <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links flex-center flex-column align-items-start">
+                        <li class="nav-link sidebarTabsToggle">
+                            <a href="#" class="flex-center-align mb-2">
+                                <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Workload</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Schedule</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Asset Library</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Reporting</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Our Standards</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li
+                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                                    <span>Request</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--sidebar ends here -->
+        </nav>
+        <section class="main-section">
+            <div class="home-content pb-5">
+                <div class="heading-section">
+                    <h5>Tues, 19 July 2022 </h5>
+                    <h1>Good morning, Harrison</h1>
+                    <ul class="nav mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active tab-btn-btn" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Deliverables In
+                                Progress</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-btn-btn" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Approval Required</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-btn-btn" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Conversations</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <div class="row mb-4 mt-0">
+                                <div class="col-4">
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <div class="d-flex  justify-content-between py-3 px-1 ">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
+                                                <h4> Darrell Steward</h4>
+                                                <p class=" tb-fs-14 text-base-black">010204 | Title</p>
+                                            </div>
+                                            <div class="ms-auto p-0 mt-4">
+                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+                                                Bokstav fov.
+                                            </p>
+                                            <div class="d-flex justify-content-end">
+                                                <img src="../../../../../assets/images/Vector.svg" alt="">
+                                            </div>
+                                            <div class="mb-3 border-bottom">
+                                                <p class=" tb-fs-12  ms-2 text-base-black">28 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <div class="d-flex  justify-content-between py-3 px-1 ">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
+                                                <h4>Floyd Miles</h4>
+                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+                                            </div>
+                                            <div class="ms-auto p-0 mt-4">
+                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12 ">
+                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+                                                Bokstav fov.
+                                            </p>
+                                            <div class="d-flex justify-content-end">
+                                                <img src="../../../../../assets/images/Vector.svg" alt="">
+                                            </div>
+                                            <div class="mb-3 border-bottom">
+                                                <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <div class="d-flex  justify-content-between py-3 px-1 ">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
+                                                <h4>Esther Howard</h4>
+                                                <p class=" tb-fs-12 text-base-black">010204 | Title</p>
+                                            </div>
+                                            <div class="ms-auto p-0 mt-4">
+                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+                                                Bokstav fov.
+                                            </p>
+                                            <div class="d-flex justify-content-end">
+                                                <img src="../../../../../assets/images/Vector.svg" alt="">
+                                            </div>
+                                            <div class="mb-3 border-bottom">
+                                                <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <div class="d-flex  justify-content-between py-3 px-1 ">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
+                                                <h4>Cody Fisher</h4>
+                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+                                            </div>
+                                            <div class="ms-auto p-0 mt-4">
+                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+                                                Bokstav fov.
+                                            </p>
+                                            <div class="d-flex justify-content-end">
+                                                <img src="../../../../../assets/images/Vector.svg" alt="">
+                                            </div>
+                                            <div class="mb-3 border-bottom ms-2">
+                                                <p class=" tb-fs-12 text-base-black ">28 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <div class="d-flex  justify-content-between py-3 px-1 ">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
+                                                <h4>Kristin Watson</h4>
+                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
+                                            </div>
+                                            <div class="ms-auto p-0 mt-4">
+                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
+                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
+                                                Bokstav fov.
+                                            </p>
+                                            <div class="d-flex justify-content-end">
+                                                <img src="../../../../../assets/images/Vector.svg" alt="">
+                                            </div>
+                                            <div class="mb-3 border-bottom ms-2">
+                                                <p class=" tb-fs-12 text-base-black ">28 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 ">
+                                    <div class="row p-3">
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex ">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4 ">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="gray-100-hover">
+                                            <div class="d-flex">
+                                                <div class="py-2 px-0">
+                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
+                                                        <div class="col-2 position-relative">
+                                                            <div class="position-absolute red-dot-circle">
+                                                                <i
+                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                            </div>
+                                                            <img src="../../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                                alt="" class="radius-image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 mt-4">
+                                                    <h6>Esther Howard</h6>
+                                                </div>
+                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="text-start tb-fs-12 ms-3">
+                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
+                                                    jinade.
+                                                    Bokstav fov. Hey, del metanomi,
+                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 m-0 p-0">
+                                            <div class=" p-2 border">
+                                                <label class="col-12 input-label" for="dataList">Send a message </label>
+                                                <input class="col-12" id="" name="">
+                                                <div class="d-flex mt-3">
+
+                                                    <div class=" ms-auto py-2 px-3 mx-1 ">
+                                                        <span class="pad-12-12 gray-100 rounded-circle">
+                                                            <i class="fa-sharp fa-solid fa-paperclip"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-boxes">
+                    <div class="box four">
+                        <div class="right-side">
+                            <div class="box-topic">Not Started</div>
+                            <div class="number">5,732</div>
+                        </div>
+                        <img src="../../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning"
+                            class="cart" />
+                    </div>
+                    <div class="box three">
+                        <div class="right-side ">
+                            <div class="box-topic">In Progress
+                            </div>
+                            <div class="number">546</div>
+                        </div>
+                        <img src="../../../../assets/images/Icons/warning-icon-blue.svg" alt="icon-warning"
+                            class="cart" />
+                    </div>
+                    <div class="box two">
+                        <div class="right-side ">
+                            <div class="box-topic">Awaiting Feedback
+                            </div>
+                            <div class="number">90</div>
+                        </div>
+                        <img src="../../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning"
+                            class="cart">
+                    </div>
+                    <div class="box first">
+                        <div class="right-side ">
+                            <div class="box-topic">Delayed
+                            </div>
+                            <div class="number">90</div>
+                        </div>
+                        <img src="../../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning" class="cart"
+                            width="50" height="50">
+                    </div>
+                </div>
+            </div>
+            <!-- table -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- title -->
+                            <div class="d-md-flex align-items-center px-1">
+                                <div>
+                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Upcoming tasks</h4>
+                                </div>
+                                <div class="ms-auto d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-center me-4">
+                                        <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                            <i class="fa-solid fa-magnifying-glass "></i>
+                                        </span>
+                                    </div>
+                                    <div class="vartical-line me-4"></div>
+                                    <div class="dl">
+                                        <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#createDeliverablesModal"><i
+                                                class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                                            All</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- title -->
+                        </div>
+                        <div class="table-responsive rounded-3 mx-3 mt-1">
+                            <table id="exampletable" class="table v-middle">
+                                <thead class="">
+                                    <tr class="gray-500 text-white text-left">
+                                        <th class="fw-light th-pd">ID</th>
+                                        <th class="fw-light th-pd">Due Date</th>
+                                        <th class="fw-light th-pd">Entity</th>
+                                        <th class="fw-light th-pd">Type</th>
+                                        <th class="fw-light th-pd">Initator</th>
+                                        <th class="fw-light th-pd">Status</th>
+                                        <th class="fw-light th-pd">Time Remaining
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-left fw-light ">
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6
+                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                                    16
+                                                </h6>
+                                                <h6 class="fs-6 fw-light">16312</h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">EWAA</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
+                                        <td
+                                            class="d-flex justify-content-center align-items-center py-3 border-bottom-0">
+                                            <span
+                                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                                                <p class="mb-0 small-paragraph">SK</p>
+                                            </span>
+                                        </td>
+                                        <td class="py-3 border-bottom-0"><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                            </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6
+                                                    class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                    14
+                                                </h6>
+                                                <h6 class="fs-6 fw-light">16312</h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Media Relations
+                                        </td>
+                                        <td
+                                            class="d-flex justify-content-center align-items-center py-3 border-bottom-0">
+                                            <span
+                                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                                                <p class="mb-0 small-paragraph">TA</p>
+                                            </span>
+                                        </td>
+                                        <td class="py-3 border-bottom-0"><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                            </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0">
+                                            <div class="d-flex align-items-center justify-content-center ">
+                                                <h6
+                                                    class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                    10
+                                                </h6>
+                                                <h6 class="fs-6 fw-light">16312</h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                        </td>
+                                        <td
+                                            class="d-flex justify-content-center align-items-center py-3 border-bottom-0">
+                                            <span
+                                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                                                <p class="mb-0 small-paragraph">EF</p>
+                                            </span>
+                                        </td>
+                                        <td class="py-3 border-bottom-0"><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                            </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-primary"><i
+                                                class="fa-regular fa-clock "></i>
+                                            DELAYED
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 ">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6
+                                                    class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                    9
+                                                </h6>
+                                                <h6 class="fs-6 fw-light">16312</h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
+                                        <td
+                                            class="d-flex justify-content-center align-items-center py-3 border-bottom-0">
+                                            <span
+                                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                                                <p class="mb-0 small-paragraph">BN</p>
+                                            </span>
+                                        </td>
+                                        <td class="py-3 border-bottom-0"><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                            </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6
+                                                    class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                    16
+                                                </h6>
+                                                <h6 class="fs-6 fw-light">16312</h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
+                                        <td
+                                            class="d-flex justify-content-center align-items-center py-3 border-bottom-0">
+                                            <span
+                                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                                                <p class="mb-0 small-paragraph">SD</p>
+                                            </span>
+                                        </td>
+                                        <td class="py-3 border-bottom-0"><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                            </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                class="fa-regular fa-clock"></i>
+                                            5:05:24
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- table-ends here -- -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade createDeliverablesModal background-dim" id="createDeliverablesModal" aria-modal="true"
+        tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal-dialog-scrollable">
+                <div class="modal-header align-items-start p-4">
+                    <div class="model-top-wrapper w-100">
+                        <h5 class="modal-title tb-h3 text-black mt-2" id="exampleModalLabel">#112384739</h5>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="gray-100 pad-8-12 gray-300-hover circle-btn">
+                            <i class="fa-regular fa-comment"></i>
+                    </div>
+                    <div class="d-flex justify-content-between ps-2">
+                        <span class="gray-100 pad-8-12 gray-300-hover circle-btn">
+                            <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="d-flex justify-content-between ps-2">
+                        <span class="gray-100 pad-8-12 gray-300-hover circle-btn">
+                            <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-between ps-2">
+                        <img class="minimze" src="../../../../assets/images/minimize.svg" alt="">
+                    </div>
+                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </span>
+                </div>
+                <div class="modal-body collapse-inner-bg px-4 py-3 h-100 overflow-auto">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="px-3">
+                                <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#overview-tab-pane">Overview</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#attachments-tab-pane">Attachments</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#activities-tab-pane">Activities</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#dual-content-tab-pane">Dual Content</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#versions-tab-pane">Versions</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content site-modal-tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active bg-transparent" id="overview-tab-pane">
+                                        <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#request-tab-pane">Request</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#deliverables-tab-pane">Deliverables</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="request-tab-pane">
+                                                <div class="accordion" id="accordion-dual">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading-duel-1">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-duel-1">Title</button>
+                                                        </h2>
+                                                        <div id="collapse-duel-1"
+                                                            class="accordion-collapse collapse show">
+                                                            <div class="collapse-inner-bg p-5">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Type of
+                                                                                    Announcement<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder..">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Category of
+                                                                                    Announcement<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="international participation">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="h6 my-3">Fill in if this request relates
+                                                                        to international
+                                                                        participation<sup>*</sup>
+                                                                    </h6>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Related
+                                                                                    Link/Website<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Other EntitiRelated
+                                                                                    Link/Website<sup>*</sup>es<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row gy-2 my-2">
+                                                                    <h6 class="h6 my-3">Will this have an impact on Abu
+                                                                        Dhabi?</h6>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input class="me-3" type="radio" id="impact1"
+                                                                            name="impacts" value="yes">
+                                                                        <label for="impact1">Yes</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input class="me-3" type="radio" id="impact2"
+                                                                            name="impacts" value="no">
+                                                                        <label for="impact2">No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Select Impact</label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Strategic relevance to
+                                                                                    Abu
+                                                                                    Dhabi*</label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="h6 my-3">Announcement is related to a
+                                                                        member of the Royal Family
+                                                                        (HH)<sup>*</sup>
+                                                                    </h6>
+                                                                </div>
+                                                                <div class="row gy-2">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input class="me-3" type="radio"
+                                                                            id="royal-family-1" name="royal-family"
+                                                                            value="yes">
+                                                                        <label for="royal-family-1">Yes</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input class="me-3" type="radio"
+                                                                            id="royal-family-2" name="royal-family"
+                                                                            value="nno">
+                                                                        <label for="royal-family-2">No</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading-duel-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-duel-2">Title</button>
+                                                        </h2>
+                                                        <div id="collapse-duel-2" class="accordion-collapse collapse">
+                                                            <div class="collapse-inner-bg p-5">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Coverage
+                                                                                    Occurance<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder..">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <label
+                                                                                    class="col-12 input-label text-end"
+                                                                                    for="links"><sup>*</sup>عنوان</label>
+                                                                                <input
+                                                                                    class="col-12 text-end collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="نص العنصر النائب">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Published
+                                                                                    Date<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder..">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <label
+                                                                                    class="col-12 input-label text-end"
+                                                                                    for="links"><sup>*</sup>عنوان</label>
+                                                                                <input
+                                                                                    class="col-12 text-end collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="نص العنصر النائب">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 mb-4">
+                                                                    <h6 class="h6 my-3">Already Published
+                                                                        Before?<sup>*</sup></h6>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <input class="me-3" type="radio" id="published1"
+                                                                            name="published" value="yes">
+                                                                        <label for="published1">Yes</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input class="me-3" type="radio" id="published2"
+                                                                            name="published" value="no">
+                                                                        <label for="published2">No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Previously Published
+                                                                                    News<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder..">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <label
+                                                                                    class="col-12 input-label text-end"
+                                                                                    for="links"><sup>*</sup>عنوان</label>
+                                                                                <input
+                                                                                    class="col-12 text-end collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="نص العنصر النائب">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div
+                                                                            class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                                            <div class="">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="links">Target Published
+                                                                                    Date<sup>*</sup></label>
+                                                                                <input class="col-12 collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="Placeholder..">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <label
+                                                                                    class="col-12 input-label text-end"
+                                                                                    for="links"><sup>*</sup>عنوان</label>
+                                                                                <input
+                                                                                    class="col-12 text-end collapse-inner-bg"
+                                                                                    id="links" name="links"
+                                                                                    placeholder="نص العنصر النائب">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="deliverables-tab-pane">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="head-5"><b>7 Deliverable(s)</b></div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="text-end mt-3">
+                                                            <span class="gray-100 pad-8-12 gray-300-hover square-btn">
+                                                                <img src="../../../../assets/images/pen.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-12">
+                                                        <div class="accordion" id="accordion-dual">
+                                                            <div class="accordion-item mb-5">
+                                                                <h2 class="accordion-header" id="heading-duel-1">
+                                                                    <button type="button"
+                                                                        class="shadow-none accordion-button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapse-duel-1">PRL</button>
+                                                                </h2>
+                                                                <div id="collapse-duel-1"
+                                                                    class="accordion-collapse collapse show">
+                                                                    <div class="collapse-inner-bg p-5">
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Language(s)</div>
+                                                                            <div class="col-4 text-end">English, Arabic
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are the deliverables due
+                                                                                as part of the service level agreement
+                                                                                (SLA)?</div>
+                                                                            <div class="col-4 text-end">Yes</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">When is the ADGMO team
+                                                                                deadline lorem?</div>
+                                                                            <div class="col-4 text-end">20/02/2022</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are there any additional
+                                                                                needs with this deliverable?</div>
+                                                                            <div class="col-4 text-end">Image, Video
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Publishing date</div>
+                                                                            <div class="col-4 text-end">20/02/2022 -
+                                                                                9:00am</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item mb-5">
+                                                                <h2 class="accordion-header" id="heading-duel-2">
+                                                                    <button type="button"
+                                                                        class="shadow-none accordion-button collapsed"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapse-duel-2">Social
+                                                                        Media</button>
+                                                                </h2>
+                                                                <div id="collapse-duel-2"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="collapse-inner-bg p-5">
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Language(s)</div>
+                                                                            <div class="col-4 text-end">English, Arabic
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are the deliverables due
+                                                                                as part of the service level agreement
+                                                                                (SLA)?</div>
+                                                                            <div class="col-4 text-end">Yes</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">When is the ADGMO team
+                                                                                deadline lorem?</div>
+                                                                            <div class="col-4 text-end">20/02/2022</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are there any additional
+                                                                                needs with this deliverable?</div>
+                                                                            <div class="col-4 text-end">Image, Video
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Publishing date</div>
+                                                                            <div class="col-4 text-end">20/02/2022 -
+                                                                                9:00am</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item mb-5">
+                                                                <h2 class="accordion-header" id="heading-duel-3">
+                                                                    <button type="button"
+                                                                        class="shadow-none accordion-button collapsed"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapse-duel-3">Others</button>
+                                                                </h2>
+                                                                <div id="collapse-duel-3"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="collapse-inner-bg p-5">
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Language(s)</div>
+                                                                            <div class="col-4 text-end">English, Arabic
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are the deliverables due
+                                                                                as part of the service level agreement
+                                                                                (SLA)?</div>
+                                                                            <div class="col-4 text-end">Yes</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">When is the ADGMO team
+                                                                                deadline lorem?</div>
+                                                                            <div class="col-4 text-end">20/02/2022</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are there any additional
+                                                                                needs with this deliverable?</div>
+                                                                            <div class="col-4 text-end">Image, Video
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Publishing date</div>
+                                                                            <div class="col-4 text-end">20/02/2022 -
+                                                                                9:00am</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item mb-5">
+                                                                <h2 class="accordion-header" id="heading-duel-4">
+                                                                    <button type="button"
+                                                                        class="shadow-none accordion-button collapsed"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapse-duel-4">Addtional
+                                                                        Information</button>
+                                                                </h2>
+                                                                <div id="collapse-duel-4"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="collapse-inner-bg p-5">
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Language(s)</div>
+                                                                            <div class="col-4 text-end">English, Arabic
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are the deliverables due
+                                                                                as part of the service level agreement
+                                                                                (SLA)?</div>
+                                                                            <div class="col-4 text-end">Yes</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">When is the ADGMO team
+                                                                                deadline lorem?</div>
+                                                                            <div class="col-4 text-end">20/02/2022</div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Are there any additional
+                                                                                needs with this deliverable?</div>
+                                                                            <div class="col-4 text-end">Image, Video
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-4">
+                                                                            <div class="col-8">Publishing date</div>
+                                                                            <div class="col-4 text-end">20/02/2022 -
+                                                                                9:00am</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="attachments-tab-pane">2</div>
+                                    <div class="tab-pane fade" id="activities-tab-pane">3</div>
+                                    <div class="tab-pane fade" id="dual-content-tab-pane">
+                                        <div class="table-heading1 text-end">
+                                            <h6 class="table-heading-h6 text-end">عنوان*</h6>
+                                            <p class="table-heading-desc">نص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب
+                                            </p>
+                                            <hr>
+                                            <h6 class="table-heading-h6 text-end">عنوان*</h6>
+                                            <p class="table-heading-desc text-end"> نصنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائب</p>
+                                            <hr>
+                                            <h6 class="table-heading-h6 text-end">عنوان*</h6>
+                                            <p class="table-heading-desc text-end">
+                                                نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائب نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                            </p>
+                                            <hr>
+                                            <h6 class="table-heading-h6 text-end">عنوان*</h6>
+                                            <p class="table-heading-desc text-end"> نصنص , العنصرالعنصر
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="versions-tab-pane">
+                                        <div class="data-top">
+                                            <select name="" id="" class="dropdown">
+                                                <option value="">V1(Current)</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                            </select>
+                                            <h6 class="table-heading">John Luis . 22/02/2022 - 9:00am</h6>
+                                        </div>
+                                        <div class="table-heading1">
+                                            <h6 class="table-heading-h6">Notes</h6>
+                                            <p class="table-heading-desc">Could you please change : The Department of
+                                                Health – Abu Dhabi
+                                                Enters Into a Memorandum of Understanding (MOU) With a Prestigious
+                                                American Healthcare Body
+                                            </p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">Heading</h6>
+                                            <p class="table-heading-desc">The Department of Health – Abu Dhabi Enters
+                                                Into a Memorandum of
+                                                Understanding (MOU) With a Prestigious American Healthcare Body</p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">Sabheading</h6>
+                                            <p class="table-heading-desc">
+                                                The cooperation seeks to set a solid framework and establish regulatory
+                                                foundations to achieve
+                                                unified quality healthcare outcomes in Abu Dhabi and globally
+                                                | The MoU will focus on developing an integrated system that promotes
+                                                innovation and boosts
+                                                licensing, training, inspection and monitoring systems for healthcare
+                                                providers
+                                            </p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">Body</h6>
+                                            <p class="table-heading-desc">The Department of Health – Abu Dhabi (DoH),
+                                                the regulator of the
+                                                healthcare sector in the emirate, and the Institute for Health
+                                                Improvement (IHI), a
+                                                prestigious global not-for-profit organisation based in Boston, USA,
+                                                launched a strategic
+                                                cooperative agreement to advance and execute programs for continuous
+                                                improvement of the
+                                                quality of healthcare. The cooperation seeks to set a solid framework
+                                                and establish regulatory
+                                                foundations to achieve unified quality healthcare outcomes in Abu Dhabi
+                                                and globally.
+                                            </p>
+                                            <h6 class="table-heading-h6">Tage</h6>
+                                            <p class="table-heading-desc">Department of Health, Health</p>
+                                            <hr>
+                                        </div>
+                                        <div class="row g-0 mt-3">
+                                            <div class="col-md-12 border-bottom-5 p-3 pb-3">
+                                                <h4 class="tb-h4">Adam Saleh’s Note</h4>
+                                                <span class="col-12 opacity-75 bg-transparent pb-3">Could you please
+                                                    change : The Department of Health – Abu Dhabi Enters Into a
+                                                    Memorandum of Understanding (MOU) With a Prestigious American
+                                                    Healthcare Body<span>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2 mt-3">
+                                            <div class="col-4">
+                                                <div class="position-relative">
+                                                    <img class="position-relative w-100"
+                                                        src="../../../../assets/images/attached1.svg">
+                                                    <div class="position-absolute col-12 text-cover-onimage ">
+                                                        <div
+                                                            class="bottom-left d-flex justify-content-start col-6 ms-2 tb-fs-10">
+                                                            Media.mp4
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="position-relative">
+                                                    <img class="position-relative w-100"
+                                                        src="../../../../assets/images/attached1.svg">
+                                                    <div class="position-absolute col-12 text-cover-onimage ">
+                                                        <div
+                                                            class="bottom-left d-flex justify-content-start col-6 ms-2 tb-fs-10">
+                                                            Media.mp4
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 mt-3">
+                                            <div class="col-md-12 border-bottom-5 p-3 pb-3">
+                                                <h4 class="tb-h4">My Note</h4>
+                                                <input class="col-12 bg-transparent" id="" name=""
+                                                    placeholder="Placeholder text">
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                          >
+                                                        <div class="">
+                                                        <p class="text-danger m-0 ms-3 p-0">Current</p>
+                                                        <p class="mb-0 ms-3 p-0 ">Request_2021.pdf</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                           class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3"
+                                                           >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                          >
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                           class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3"
+                                                           >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                          >
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                           class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3"
+                                                           >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                          >
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                           class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3"
+                                                           >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                          >
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                           class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3"
+                                                           >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="px-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="head-5"><b>7 Deliverable(s)</b><img class="icon ml-10"
+                                                src="../../../../assets/images/Billed Monthly.png" alt=""></div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="text-end mt-3">
+                                            <span class="gray-100 pad-8-12 gray-300-hover square-btn">
+                                                <i class="fa-regular fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pb-4">
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl(en)" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl(ar)" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="prl(ar)" class="tb-fs-16 tb-fw-700">PRL (Ar)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="sm(en)" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="sm(en)" class="tb-fs-16 tb-fw-700">SM (En)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="sm(ar)" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="sm(ar)" class="tb-fs-16 tb-fw-700">SM (Ar)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-btn-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0  ms-3">Not started</h4>
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="position-relative rounded-circle w-h-40 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                                            <img src="../../../../assets/images/Icons/person-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl-media" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="prl-media" class="tb-fs-16 tb-fw-700">PRL Media</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">Assigned</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">PT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="sm-media" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="sm-media" class="tb-fs-16 tb-fw-700">SM Media</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="creative" name="prl(en)"
+                                                    value="HTML">
+                                                <label for="creative" class="tb-fs-16 tb-fw-700">Creative</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="../../../../assets/images/Icons/eye-slash.svg" alt="">
+                                        <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                        <div>
+                                            <label class="col-12 input-label fs-6" for="input2">Heading</label>
+                                            <textarea class="decline-request border-0 ps-0 w-100" rows="4" cols="55"
+                                                placeholder="Placeholder text"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                        <div>
+                                            <label class="col-12 input-label fs-6" for="input2">Subheading</label>
+                                            <input class="col-12 input-field" id="" name=""
+                                                placeholder="Placeholder text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="tb-input-group p-2 border">
+                                        <label class="col-12 input-label" for="dataList">Body</label>
+                                        <textarea id="editor" placeholder="Placeholder"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                                        <div>
+                                            <label class="col-12 input-label fs-6" for="input2">Tags</label>
+                                            <input class="col-12 input-field" id="" name=""
+                                                placeholder="Placeholder text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 bg-white px-4 py-3  mt-3">
+                                    <div class="row mb-4">
+                                        <label class="input-label tb-fw-400" for="input2">Upload Media</label>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14">Use Attachment</span>
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14 mx-3">Upload from DAM</span>
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14 mx-3">Upload from device</span>
+                                                <img src="../../../../assets/images/Icons/right.svg" alt="">
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4 d-flex justify-content-center">
+                                        <p class="tb-gray-400 mb-3">
+                                            Document must be .mp4, .mov, .mkv format.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
+                                        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                        <div class="">
+                                            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
+                                        <p class="mb-0 tb-fs-14">Instagram-Video.mov</p>
+                                        <p class="mb-0 tb-fs-12 text-gray-500">v2</p>
+                                        <div class="">
+                                            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-model-btn-wrapper text-end">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Mark As Blocked</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
+                        data-bs-target="#SelectAssignee" data-bs-toggle="modal" type="button">Complete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!--dashboard ends here ------>
+    <!-- Modal -->
+    <div class="modal fade modal-backdrop-op" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog main-modal modal-dialog-position">
+            <div class="modal-content inner-modal-content box-shadow-popup p-0">
+                <div class="modal-header align-items-start p-4">
+                    <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                        Decline Request</h5>
+                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="p-4 side-modal-wrap h-100">
+                    <div class="tb-input-group tb-input-group-internal p-2 ">
+                        <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
+                        <input class="col-12" id="" name="" placeholder="Placeholder text">
+                    </div>
+                    <div class="inner-wrapper">
+                        <h6>Upload Media</h6>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                    <div class="col-9 d-flex align-items-center">
+                                        <label class="col-12" for="prl-en">Use Attachment</label>
+                                        <input class="col-12 d-none" type="text" id="prl-en"
+                                            placeholder="Upload PRL (en) Attachments" />
+                                    </div>
+                                    <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                        <span class="tb-fs-18">Upload</span>
+                                        <input id="upload-prl-en" type="file" class="upload" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                    <div class="col-9 d-flex align-items-center">
+                                        <label class="col-12" for="prl-en">Use Attachment</label>
+                                        <input class="col-12 d-none" type="text" id="prl-en"
+                                            placeholder="Upload PRL (en) Attachments" />
+                                    </div>
+                                    <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                        <span class="tb-fs-18">Upload</span>
+                                        <input id="upload-prl-en" type="file" class="upload" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                    <div class="col-9 d-flex align-items-center">
+                                        <label class="col-12" for="prl-en">Use Attachment</label>
+                                        <input class="col-12 d-none" type="text" id="prl-en"
+                                            placeholder="Upload PRL (en) Attachments" />
+                                    </div>
+                                    <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                        <span class="tb-fs-18">Upload</span>
+                                        <input id="upload-prl-en" type="file" class="upload" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="inner-desc">Document must be .mp4, .mov, .mkv format.</p>
+                        <div class="progress-wrapper">
+                            <h6>DAM-FB-Carousel.mp4</h6>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <label>75%</label>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <progress value="75" max="100" class="my-progress"> 32% </progress>
+                                </div>
+                                <div class="col-2 d-flex align-items-center">
+                                    <button class="cancel-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <h6>DAM-FB-Carousel.mp4</h6>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <label>75%</label>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <progress value="75" max="100" class="my-progress"> 32% </progress>
+                                </div>
+                                <div class="col-2 d-flex align-items-center">
+                                    <button class="cancel-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end my-4 me-3 ">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show background-dim" id="SelectAssignee" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">Select
+                        Assignee for Revision (SM En)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body collapse-inner-bg">
+                    <div class="tb-input-group p-2 mt-3 mb-4">
+                        <div class="d-flex col-12">
+                            <div class="col-1">
+                                <img src="../../../../assets/images/person2.svg" alt="">
+                            </div>
+                            <div class="col-11 border-danger">
+                                <label class="col-12 input-label" for="input">Assignee</label>
+                                <input class="col-11 input" autocomplete="off" role="combobox" id="input"
+                                    name="browsers" placeholder="placeholder.." style="border-radius: 5px 5px 0px 0px;">
+                                <i class="fa fa-solid fa-angle-down"></i>
+                                <datalist id="browsers" role="listbox">
+                                    <div class="d-flex my-2">
+                                        <img src="../../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                        <img src="../../../../assets/images/person2.svg" class="mx-1" alt="">
+                                        <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
+                                        <span class="notification-dot align-items-center text-center m-0 p-0">.
+                                            Default</span>
+                                    </div>
+                                    <div class="d-flex my-2">
+                                        <img src="../../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                        <img src="../../../../assets/images/person2.svg" class="mx-1" alt="">
+                                        <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
+                                    </div>
+                                    <div class="d-flex my-2">
+                                        <img src="../../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                        <img src="../../../../assets/images/person2.svg" class="mx-1" alt="">
+                                        <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                    </div>
+                                    <div class="d-flex my-2">
+                                        <img src="../../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                        <img src="../../../../assets/images/person2.svg" class="mx-1" alt="">
+                                        <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                    </div>
+                                    <div class="d-flex my-2">
+                                        <img src="../../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                        <img src="../../../../assets/images/person2.svg" class="mx-1" alt="">
+                                        <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                    </div>
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tb-input-group p-2 border-0 mt-4">
+                        <label class="col-12 input-label" for="dataList">Notes</label>
+                        <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                    <button class="btn btn-md bg-black tb-rounded text-white" type="button">Assign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+    <script src="../../../../javascript/inputs&dropdowns.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../../../javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#editor',
+            skin: 'bootstrap',
+            plugins: 'lists, link, image, media',
+            toolbar: 'fontsize bold italic underline strikethrough alignleft aligncentre alignright alignjustify bullist numlist backcolor forecolor save',
+            menubar: false
+        });
+    </script>
+</body>
+
+</html>

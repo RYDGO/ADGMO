@@ -329,6 +329,9 @@ a:hover {
 .status-color-yellow-op2 {
   background: #efcb197d;
 }
+.tb-light-yellow {
+  background-color: var(--light-yellow-box-color) !important;
+}
 
 .status-color-green-op2 {
   background: #37c3a175;

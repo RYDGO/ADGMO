@@ -440,6 +440,10 @@ a:hover {
 .common-width-label-40 {
   width: 40%;
 }
+.common-width-status-box {
+  width: 300px !important;
+  height: 101px !important;
+}
 
 /* --- TYPOGRAPHY COLORS --- */
 
@@ -1231,6 +1235,9 @@ option:hover,
 
 .notification-shadow {
   box-shadow: 0px 12px 25px 0px #00000021;
+}
+.status-box-shadow {
+  box-shadow: 0px 1px 5px #6c6c6c33;
 }
 
 .flex-center {

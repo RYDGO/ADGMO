@@ -2349,15 +2349,7 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 .site-modal-tab-content-red .inner-tab .nav-link.active {
-<<<<<<< HEAD
-    color : var(--base-color);
-    background-color: transparent;
-    border-bottom: 1px solid var(--base-color);
-}
-
-=======
   color: var(--base-color);
   background-color: transparent;
   border-bottom: 1px solid var(--base-color);
 }
->>>>>>> 678bda098c02114530a471dcd71c441e6b80f4aa

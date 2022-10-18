@@ -1009,6 +1009,21 @@ a:hover {
   color: var(--btn-bg-disabled) !important;
 }
 
+/* --- Gray BUTTONS --- */
+
+.base.tb-btn-base-underline:active {
+  background-color: var(--collapse-bg) !important;
+  color: var(--text-base-black) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--base-color) !important;
+}
+
+.base.tb-btn-base-underline.active {
+  background-color: var(--collapse-bg) !important;
+  color: var(--base-color) !important;
+  border: 1px solid var(--collapse-bg) !important;
+  border-bottom: 1px solid var(--base-color) !important;
+}
 
 /* ----- Paddings ----- */
 

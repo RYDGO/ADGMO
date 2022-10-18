@@ -441,6 +441,9 @@ a:hover {
   width: 40%;
 }
 
+.vh-90{
+height: 90vh;
+}
 /* --- TYPOGRAPHY COLORS --- */
 
 .text-base-color {

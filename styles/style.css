@@ -437,6 +437,10 @@ a:hover {
   width: 3%;
 }
 
+.common-width-label-40 {
+  width: 40%;
+}
+
 /* --- TYPOGRAPHY COLORS --- */
 
 .text-base-color {
@@ -463,7 +467,7 @@ a:hover {
 }
 
 .text-gray-200 {
-  color: var(--grayshade-200);
+  color: var(--grayshade-200) !important;
 }
 
 .text-gray-300 {

@@ -140,7 +140,7 @@
   }
   .overview-boxes .three {
     color:var(--para-disabled);
-    background-color: var(--three-box-color);
+    background-color: var(--status-color-green);
   }
   .overview-boxes .four {
     color:var(--para-disabled);

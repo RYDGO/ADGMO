@@ -66,7 +66,7 @@
           <div class="col-4 d-flex justify-content-end">
             <a href="#" rel="noopener noreferrer">
               <div class="img-containerbox">
-                <img src="../../../assets/images/HorizontalLogos/LogoRedFilled.png" alt="logo" class="img-responsive" />
+                <img src="../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo" class="img-responsive" />
               </div>
             </a>
           </div>
@@ -93,7 +93,7 @@
               <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                 <div class="d-flex align-items-center">
                   <img src="../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
-                  <span class="text-dark nav-text">Workload</span>
+                  <span class="text-dark nav-text">Requests</span>
                 </div>
                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
               </a>
@@ -267,19 +267,13 @@
           <h1>Good morning, Harrison</h1>
           <ul class="nav mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active tab-btn-btn" id="pills-home-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Deliverables In
-                Progress</button>
+              <button class="nav-link active btn btn-md tb-btn-light tb-rounded" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Requests - In Progress</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link tab-btn-btn" id="pills-profile-tab" data-bs-toggle="pill"
+              <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-profile-tab" data-bs-toggle="pill"
                 data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                aria-selected="false">Approval Required</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link tab-btn-btn" id="pills-contact-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                aria-selected="false">Conversations</button>
+                aria-selected="false">Requests - Closed</button>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -655,24 +649,24 @@
         <div class="overview-boxes">
           <div class="box four">
             <div class="right-side">
-              <div class="box-topic">Not Started</div>
-              <div class="number">5,732</div>
+              <div class="box-topic">Under Review</div>
+              <div class="number">0</div>
             </div>
             <img src="../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning" class="cart" />
           </div>
-          <div class="box three">
+          <div class="box five-light-yellow">
             <div class="right-side ">
               <div class="box-topic">In Progress
               </div>
-              <div class="number">546</div>
+              <div class="number">0</div>
             </div>
-            <img src="../../../assets/images/Icons/warning-icon-blue.svg" alt="icon-warning" class="cart" />
+            <img src="../../../assets/images/Icons/warning-icon-yellow.svg" alt="icon-warning" class="cart" />
           </div>
           <div class="box two">
             <div class="right-side ">
               <div class="box-topic">Awaiting Feedback
               </div>
-              <div class="number">90</div>
+              <div class="number">0</div>
             </div>
             <img src="../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning" class="cart">
           </div>
@@ -680,7 +674,7 @@
             <div class="right-side ">
               <div class="box-topic">Delayed
               </div>
-              <div class="number">90</div>
+              <div class="number">0</div>
             </div>
             <img src="../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning" class="cart" width="50"
               height="50">
@@ -696,7 +690,7 @@
               <!-- title -->
               <div class="d-md-flex align-items-center px-1">
                 <div>
-                  <h4 class="card-title tb-h3 pt-3 tb-bold">Upcoming tasks</h4>
+                  <h4 class="card-title tb-h3 pt-3 tb-bold">Requests - In Progress</h4>
                 </div>
                 <div class="ms-auto d-flex justify-content-between align-items-center">
                   <div class="d-flex justify-content-center me-4">
@@ -716,154 +710,21 @@
             </div>
             <div class="table-responsive rounded-3 mx-3 mt-1">
               <table id="exampletable" class="table v-middle">
-                <thead class="">
+                <thead>
                   <tr class="gray-500 text-white text-left">
-                    <th class="fw-light th-pd">ID</th>
-                    <th class="fw-light th-pd">Due Date</th>
-                    <th class="fw-light th-pd">Entity</th>
-                    <th class="fw-light th-pd">Type</th>
-                    <th class="fw-light th-pd">Initator</th>
-                    <th class="fw-light th-pd">Status</th>
-                    <th class="fw-light th-pd">Time Remaining
-                    </th>
+                      <th class="fw-light th-pd">ID</th>
+                      <th class="fw-light th-pd">Type</th>
+                      <th class="fw-light th-pd">Creation Date</th>
+                      <th class="fw-light th-pd">Due Date</th>
+                      <th class="fw-light th-pd">Sector</th>
+                      <th class="fw-light th-pd">Status</th>
+                      <th class="fw-light th-pd">Time Remaining
+                      </th>
                   </tr>
-                </thead>
-                <tbody class="text-left fw-light ">
-                  <tr>
-                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <h6
-                          class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                          16
-                        </h6>
-                        <h6 class="fs-6 fw-light">16312</h6>
-                      </div>
-                    </td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                    <td class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">EWAA</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
-                    <td class="d-flex justify-content-center align-items-center py-3 border-bottom-0"><span
-                        class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                        <p class="mb-0 small-paragraph">SK</p>
-                      </span></td>
-                    <td class="py-3 border-bottom-0"><span
-                        class="d-flex align-items-center justify-content-evenly p-2 ">
-                        <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                        <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                      </span></td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i>
-                      5:05:24
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="py-2 table-pd-top border-bottom-0">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <h6
-                          class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                          14
-                        </h6>
-                        <h6 class="fs-6 fw-light">16312</h6>
-                      </div>
-                    </td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                      Media Relations
-                    </td>
-                    <td class="d-flex justify-content-center align-items-center py-3 border-bottom-0"><span
-                        class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                        <p class="mb-0 small-paragraph">TA</p>
-                      </span></td>
-                    <td class="py-3 border-bottom-0"><span
-                        class="d-flex align-items-center justify-content-evenly p-2 ">
-                        <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                        <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                      </span></td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i>
-                      5:05:24
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="py-2 table-pd-top border-bottom-0">
-                      <div class="d-flex align-items-center justify-content-center ">
-                        <h6
-                          class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                          10
-                        </h6>
-                        <h6 class="fs-6 fw-light">16312</h6>
-                      </div>
-                    </td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                    </td>
-                    <td class="d-flex justify-content-center align-items-center py-3 border-bottom-0"><span
-                        class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                        <p class="mb-0 small-paragraph">EF</p>
-                      </span></td>
-                    <td class="py-3 border-bottom-0"><span
-                        class="d-flex align-items-center justify-content-evenly p-2 ">
-                        <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                        <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                      </span></td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-primary"><i
-                        class="fa-regular fa-clock "></i>
-                      DELAYED
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="py-2 table-pd-top border-bottom-0 ">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <h6
-                          class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                          9
-                        </h6>
-                        <h6 class="fs-6 fw-light">16312</h6>
-                      </div>
-                    </td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
-                    <td class="d-flex justify-content-center align-items-center py-3 border-bottom-0"><span
-                        class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                        <p class="mb-0 small-paragraph">BN</p>
-                      </span></td>
-                    <td class="py-3 border-bottom-0"><span
-                        class="d-flex align-items-center justify-content-evenly p-2 ">
-                        <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                        <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                      </span></td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i>
-                      5:05:24
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="py-2 table-pd-top border-bottom-0">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <h6
-                          class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                          16
-                        </h6>
-                        <h6 class="fs-6 fw-light">16312</h6>
-                      </div>
-                    </td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
-                    <td class="d-flex justify-content-center align-items-center py-3 border-bottom-0"><span
-                        class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                        <p class="mb-0 small-paragraph">SD</p>
-                      </span></td>
-                    <td class="py-3 border-bottom-0"><span
-                        class="d-flex align-items-center justify-content-evenly p-2 ">
-                        <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                        <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                      </span></td>
-                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i>
-                      5:05:24
-                    </td>
-                  </tr>
-                </tbody>
+              </thead>
+              <tbody class="text-left fw-light ">
+                 
+              </tbody>
               </table>
             </div>
           </div>

@@ -22,7 +22,7 @@ $("#datepicker-div").datepicker({
   // altField: "#datepicker-input",
   // altFormat: "yy-mm-dd",
   // hideIfNoPrevNext = true,
-  showButtonPanel: true,
+  // showButtonPanel: true,
   dateFormat: "yy-mm-dd",
   changeMonth: true,
   changeYear: true,
@@ -30,7 +30,7 @@ $("#datepicker-div").datepicker({
   dayNamesMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
   defaultDate: +1,
   buttonImageOnly: true,
-  currentText: "Set",
+  // currentText: "Set",
   firstDay: 1,
   // defaultDate: +1,
 });

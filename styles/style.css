@@ -437,9 +437,6 @@ a:hover {
   width: 3%;
 }
 
-.common-width-label-40 {
-  width: 40%;
-}
 .common-width-status-box {
   width: 300px !important;
   height: 101px !important;
@@ -1281,11 +1278,11 @@ option:hover,
 
 /* Modal position right */
 .modal-dialog-position-right {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  z-index: 1000000;
-  border-radius: 8px;
+  position: absolute !important;
+  top: 10px !important;
+  right: 25px !important;
+  z-index: 1000000 !important;
+  border-radius: 8px !important;
 }
 
 .font-weight-400 {

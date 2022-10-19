@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../../../../styles/style.css">
-    <link rel="stylesheet" href="../../../../styles/dashboard.css">
-    <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../styles/govcomUser.css">
+    <!-- <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css"> -->
 </head>
 
 <body>
@@ -299,20 +302,20 @@
         </nav>
 
         <section class="main-section">
-            <div class="home-content pb-3">
+            <div class="home-content pb-5">
                 <div class="heading-section">
                     <h5>Tues, 19 July 2022 </h5>
                     <h1>Good morning, Harrison</h1>
-                    <ul class="nav mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav my-3 " id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn btn-md tb-btn-light tb-rounded active" id="pills-profile-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab"
-                                aria-controls="pills-profile" aria-selected="true">Dpt. Request</button>
+                            <button class="nav-link active  btn btn-md tb-btn-light tb-rounded" id="pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Dpt. Request</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link btn btn-md tb-btn-light tb-rounded " id="pills-home-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                                aria-controls="pills-profile" aria-selected="false">Assigned To Me</button>
+                            <button class="nav-link  btn btn-md tb-btn-light tb-rounded" id="pills-profile-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Assigned to me</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
@@ -321,76 +324,77 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
-                                data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
-                                aria-controls="pills-contact" aria-selected="false">Conversations</button>
+                                data-bs-toggle="pill" data-bs-target="#pills-contact-2" type="button" role="tab"
+                                aria-controls="pills-contact-2" aria-selected="false">Conversations</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active tab-remove-bg " id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">
-                            <!-- table -->
-                            <div class="container">
-                                <div class="overview-boxes">
-                                    <div class="box four col me-3">
-                                        <div class="right-side ">
-                                            <div class="box-topic">Not Started
-                                            </div>
-                                            <div class="number">5,732</div>
-                                        </div>
-                                        <img src="../../../../assets/images/Icons/warning-icon-gray.svg"
-                                            alt="icon-warning" class="cart" width="50" height="50">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="overview-boxes">
+                                <div class="box four">
+                                    <div class="right-side">
+                                        <div class="box-topic">Under Review</div>
+                                        <div class="number">5,732</div>
                                     </div>
-                                    <div class="box tb-light-yellow col me-3">
-                                        <div class="right-side  ">
-                                            <div class="box-topic">In Progress
-                                            </div>
-                                            <div class="number">546</div>
-                                        </div>
-                                        <img src="../../../../assets/images/Icons/warning-icon-yellow.svg"
-                                            alt="icon-warning" class="cart" />
-                                    </div>
-                                    <div class="box two col me-3">
-                                        <div class="right-side">
-                                            <div class="box-topic">Awaiting Feedback</div>
-                                            <div class="number">90</div>
-                                        </div>
-                                        <img src="../../../../assets/images/Icons/warning-icon-green.svg"
-                                            alt="icon-warning" class="cart" />
-                                    </div>
-                                    <div class="box first col me-3">
-                                        <div class="right-side  ">
-                                            <div class="box-topic">Delayed
-                                            </div>
-                                            <div class="number">90</div>
-                                        </div>
-                                        <img src="../../../../assets/images/Icons/warning-icon-red.svg"
-                                            alt="icon-warning" class="cart">
-                                    </div>
-
+                                    <img src="../../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning"
+                                        class="cart" />
                                 </div>
-                                <div class="row g-0 mt-4">
-                                    <!-- table -->
+                                <div class="box five-light-yellow">
+                                    <div class="right-side ">
+                                        <div class="box-topic">In Progress
+                                        </div>
+                                        <div class="number">546</div>
+                                    </div>
+                                    <img src="../../../../assets/images/Icons/warning-icon-yellow.svg"
+                                        alt="icon-warning" class="cart" />
+                                </div>
+                                <div class="box two">
+                                    <div class="right-side ">
+                                        <div class="box-topic">Awaiting Feedback
+                                        </div>
+                                        <div class="number">90</div>
+                                    </div>
+                                    <img src="../../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning"
+                                        class="cart">
+                                </div>
+                                <div class="box first">
+                                    <div class="right-side ">
+                                        <div class="box-topic">Delayed
+                                        </div>
+                                        <div class="number">90</div>
+                                    </div>
+                                    <img src="../../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning"
+                                        class="cart" width="50" height="50">
+                                </div>
+                            </div>
+                            <!-- table -->
+                            <div class="row">
+                                <!-- column -->
+                                <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h2 class="card-title pt-3 tb-bold input-label fs-3">Dpt. Requests
-                                                    </h2>
+                                                    <h3 class="card-title pt-3 tb-bold input-label fs-3">Dpt. Requests
+                                                    </h3>
                                                 </div>
                                                 <div class="ms-auto d-flex justify-content-between align-items-center">
-                                                    <div class="d-flex justify-content-center me-3">
-                                                        <div class="w-h-40  rounded-circle flex-center img-cover me-2">
-                                                            <img src="../../../../assets/images/Icons/search.svg"
-                                                                alt="icon-warning" class="w-100">
-                                                        </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <span class="rounded-circle pad-8-12 border-gray-500 me-3">
+                                                            <i class="fa-solid fa-magnifying-glass "></i>
+                                                        </span>
                                                     </div>
                                                 </div>
+                                                <div class="vartical-line me-4"></div>
                                                 <div class="dl">
-                                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
-                                                        data-bs-target="#largeModal1" data-bs-toggle="modal"><i
-                                                            class="fa-solid fa-chart-simple fa-xs px-1"></i>
-                                                        View
+                                                    <button
+                                                        class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text"
+                                                        type="button" data-bs-target="#largeModal1"
+                                                        data-bs-dismiss="modal" data-bs-toggle="modal"><img
+                                                            src="../../../../assets/images/Icons/Chart_fill.svg"
+                                                            class="me-1"> View
                                                         All</button>
                                                 </div>
                                             </div>
@@ -398,761 +402,278 @@
                                         </div>
                                         <div class="table-responsive rounded-3 mx-3 mt-1">
                                             <table id="exampletable" class="table v-middle">
-                                                <thead class="">
+                                                <thead>
                                                     <tr class="gray-500 text-white text-left">
-                                                        <th class="fw-light th-pd">ID </th>
-                                                        <th class="fw-light th-pd">Type</th>
-                                                        <th class="fw-light th-pd">Due Date</th>
-                                                        <th class="fw-light th-pd">Sector</th>
-                                                        <th class="fw-light th-pd">Assignee</th>
-                                                        <th class="fw-light th-pd">Status</th>
-                                                        <th class="fw-light th-pd">Time left
+                                                        <th class="fs-6 tb-fw-800 th-pd">ID</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Type</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Due Date</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Sector</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Assignee</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Status</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Time left
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="text-left fw-light ">
-                                                    <tr data-bs-toggle="modal" data-bs-target="#fullNewsRequest">
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                                             </div>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
                                                         <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
                                                         </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
                                                         <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
                                                             <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">EB</p>
                                                             </span>
-                                                            GovCom
+                                                            Elias.B
                                                         </td>
-
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-orange-op">
                                                                 <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
+                                                                    class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                                    NOT STARTED</h4>
                                                             </span>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                                             </div>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
                                                         <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
                                                         </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
                                                         <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
                                                             <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
                                                             </span>
-                                                            GovCom
-                                                        </td>
 
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <span class="p-2 status-color-gray-op">
                                                                 <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
                                                             </span>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                                             </div>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
                                                         <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
                                                         </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
                                                         <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
                                                             <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
                                                             </span>
-                                                            GovCom
-                                                        </td>
 
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <span class="p-2 status-color-gray-op">
                                                                 <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
                                                             </span>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
-                                                        <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
-                                                        </td>
-                                                        <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                                            <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
-                                                            </span>
-                                                            GovCom
-                                                        </td>
-
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
-                                                                <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
-                                                            </span>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
-                                                        <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
-                                                        </td>
-                                                        <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                                            <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
-                                                            </span>
-                                                            GovCom
-                                                        </td>
-
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
-                                                                <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
-                                                            </span>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
-                                                        <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
-                                                        </td>
-                                                        <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                                            <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
-                                                            </span>
-                                                            GovCom
-                                                        </td>
-
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
-                                                                <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
-                                                            </span>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td
-                                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                            <div class="form-check mb-2">
-                                                                <input
-                                                                    class="form-check-input shadow-none tb-bg-primary-checked"
-                                                                    type="checkbox" value="" id="flexCheckDefault">
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            News
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22
-                                                        </td>
-                                                        <td
-                                                            class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            Energy
-                                                        </td>
-                                                        <td
-                                                            class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                                            <span
-                                                                class="w-h-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                                                <p class="mb-0 bold-paragraph mt-1">SK</p>
-                                                            </span>
-                                                            GovCom
-                                                        </td>
-
-                                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
-                                                                <i
-                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                                <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
-                                                                    Not started</h4>
-                                                            </span>
-                                                        </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            <i class="fa-regular fa-clock"></i>
-                                                            5:05:24
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-                            <!-- table ends here -- -->
+                            <!-- table-ends here -- -->
                         </div>
-                        <div class="tab-pane fade tab-remove-bg" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">
-                        </div>
-                        <div class="tab-pane fade tab-remove-bg" id="pills-contact-2" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">
-                            <div class="row mb-4 mt-0">
-                                <div class="col-4">
-                                    <div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <div class="d-flex  justify-content-between py-3 px-1 ">
-                                                    <div class="col-2 position-relative">
-                                                        <div class="position-absolute red-dot-circle">
-                                                            <i
-                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
-                                                        </div>
-                                                        <img src="../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
-                                                            alt="" class="radius-image">
-                                                    </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <!-- <div class="overview-boxes">
+                <div class="box four">
+                  <div class="right-side">
+                    <div class="box-topic">Under Review</div>
+                    <div class="number">5,732</div>
+                  </div>
+                  <img src="../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning" class="cart" />
+                </div>
+                <div class="box five-light-yellow">
+                  <div class="right-side ">
+                    <div class="box-topic">In Progress
+                    </div>
+                    <div class="number">546</div>
+                  </div>
+                  <img src="../../../assets/images/Icons/warning-icon-yellow.svg" alt="icon-warning" class="cart" />
+                </div>
+                <div class="box two">
+                  <div class="right-side ">
+                    <div class="box-topic">Awaiting Feedback
+                    </div>
+                    <div class="number">90</div>
+                  </div>
+                  <img src="../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning" class="cart">
+                </div>
+                <div class="box first">
+                  <div class="right-side ">
+                    <div class="box-topic">Delayed
+                    </div>
+                    <div class="number">90</div>
+                  </div>
+                  <img src="../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning" class="cart"
+                    width="50" height="50">
+                </div>
+              </div>
+              <!-- table -->
+                            <div class="row">
+                                <!-- column -->
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <!-- title -->
+                                            <div class="d-md-flex align-items-center px-1">
+                                                <div>
+                                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Requests - In Progress
+                                                    </h4>
                                                 </div>
-                                            </div>
-                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
-                                                <h4> Darrell Steward</h4>
-                                                <p class=" tb-fs-14 text-base-black">010204 | Title</p>
-                                            </div>
-                                            <div class="ms-auto p-0 mt-4">
-                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
-                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
-                                                Bokstav fov.
-                                            </p>
-                                            <div class="d-flex justify-content-end">
-                                                <img src="../../../../assets/images/Vector.svg" alt="">
-                                            </div>
-                                            <div class="mb-3 border-bottom">
-                                                <p class=" tb-fs-12  ms-2 text-base-black">28 min ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <div class="d-flex  justify-content-between py-3 px-1 ">
-                                                    <div class="col-2 position-relative">
-                                                        <div class="position-absolute red-dot-circle">
-                                                            <i
-                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
-                                                        </div>
-                                                        <img src="../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
-                                                            alt="" class="radius-image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
-                                                <h4>Floyd Miles</h4>
-                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
-                                            </div>
-                                            <div class="ms-auto p-0 mt-4">
-                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12 ">
-                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
-                                                Bokstav fov.
-                                            </p>
-                                            <div class="d-flex justify-content-end">
-                                                <img src="../../../../assets/images/Vector.svg" alt="">
-                                            </div>
-                                            <div class="mb-3 border-bottom">
-                                                <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <div class="d-flex  justify-content-between py-3 px-1 ">
-                                                    <div class="col-2 position-relative">
-                                                        <div class="position-absolute red-dot-circle">
-                                                            <i
-                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
-                                                        </div>
-                                                        <img src="../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
-                                                            alt="" class="radius-image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
-                                                <h4>Esther Howard</h4>
-                                                <p class=" tb-fs-12 text-base-black">010204 | Title</p>
-                                            </div>
-                                            <div class="ms-auto p-0 mt-4">
-                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
-                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
-                                                Bokstav fov.
-                                            </p>
-                                            <div class="d-flex justify-content-end">
-                                                <img src="../../../../assets/images/Vector.svg" alt="">
-                                            </div>
-                                            <div class="mb-3 border-bottom">
-                                                <p class=" tb-fs-12 text-base-black ms-2">28 min ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <div class="d-flex  justify-content-between py-3 px-1 ">
-                                                    <div class="col-2 position-relative">
-                                                        <div class="position-absolute red-dot-circle">
-                                                            <i
-                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
-                                                        </div>
-                                                        <img src="../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
-                                                            alt="" class="radius-image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
-                                                <h4>Cody Fisher</h4>
-                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
-                                            </div>
-                                            <div class="ms-auto p-0 mt-4">
-                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
-                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
-                                                Bokstav fov.
-                                            </p>
-                                            <div class="d-flex justify-content-end">
-                                                <img src="../../../../assets/images/Vector.svg" alt="">
-                                            </div>
-                                            <div class="mb-3 border-bottom ms-2">
-                                                <p class=" tb-fs-12 text-base-black ">28 min ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <div class="p-1">
-                                                <div class="d-flex  justify-content-between py-3 px-1 ">
-                                                    <div class="col-2 position-relative">
-                                                        <div class="position-absolute red-dot-circle">
-                                                            <i
-                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
-                                                        </div>
-                                                        <img src="../../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
-                                                            alt="" class="radius-image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-0 mt-3 fw-bold tb-fs-14">
-                                                <h4>Kristin Watson</h4>
-                                                <p class=" tb-fs-12  text-base-black">010204 | Title</p>
-                                            </div>
-                                            <div class="ms-auto p-0 mt-4">
-                                                <span class="gray-100 pad-8-12 base-color-hover base-color-active">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="text-base-gray mb-0 ms-2 tb-fs-12">
-                                                Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade jinade.
-                                                Bokstav fov.
-                                            </p>
-                                            <div class="d-flex justify-content-end">
-                                                <img src="../../../../assets/images/Vector.svg" alt="">
-                                            </div>
-                                            <div class="mb-3 border-bottom ms-2">
-                                                <p class=" tb-fs-12 text-base-black ">28 min ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-8 ">
-                                    <div class="row p-3">
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex ">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom">
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom">
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4 ">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom">
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom">
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div class="border-bottom">
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="gray-100-hover">
-                                            <div class="d-flex">
-                                                <div class="py-2 px-0">
-                                                    <div class="d-flex  justify-content-between py-2 px-3 ">
-                                                        <div class="col-2 position-relative">
-                                                            <div class="position-absolute red-dot-circle">
-                                                                <i
-                                                                    class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
-                                                            </div>
-                                                            <img src="../../../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
-                                                                alt="" class="radius-image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="p-0 mt-4">
-                                                    <h6>Esther Howard</h6>
-                                                </div>
-                                                <div class="ms-auto p-2 mt-3 tb-fs-12 tb-gray-400">06/25/2019 02:13 AM
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <p class="text-start tb-fs-12 ms-3">
-                                                    Hey, del metanomi, och presyrade. Röngar geode. Kvasint norade
-                                                    jinade.
-                                                    Bokstav fov. Hey, del metanomi,
-                                                    och presyrade. Röngar geode. Kvasint norade jinade. Bokstav fov.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 m-0 p-0">
-                                            <div class=" p-2 border">
-                                                <label class="col-12 input-label" for="dataList">Send a message </label>
-                                                <input class="col-12">
-                                                <div class="d-flex mt-3">
-                                                    <div class=" ms-auto py-2 px-3 mx-1 ">
-                                                        <span class="pad-12-12 gray-100 rounded-circle">
-                                                            <i class="fa-sharp fa-solid fa-paperclip"></i>
+                                                <div class="ms-auto d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex justify-content-center">
+                                                        <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                                            <i class="fa-solid fa-magnifying-glass "></i>
                                                         </span>
                                                     </div>
-                                                    <div class="py-2 px-3 mx-1 tb-rounded bg-dark text-white">Send</div>
+                                                </div>
+                                                <div class="vartical-line me-4"></div>
+                                                <div class="dl">
+                                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#createDeliverablesModal-2"><i
+                                                            class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                                                        All</button>
                                                 </div>
                                             </div>
+                                            <!-- title -->
+                                        </div>
+                                        <div class="table-responsive rounded-3 mx-3 mt-1">
+                                            <table id="exampletable" class="table v-middle">
+                                                <thead>
+                                                    <tr class="gray-500 text-white text-left">
+                                                        <th class="fw-light th-pd">ID</th>
+                                                        <th class="fw-light th-pd">Type</th>
+                                                        <th class="fw-light th-pd">Creation Date</th>
+                                                        <th class="fw-light th-pd">Due Date</th>
+                                                        <th class="fw-light th-pd">Sector</th>
+                                                        <th class="fw-light th-pd">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="text-left fw-light ">
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <h6
+                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                                                    16
+                                                                </h6>
+                                                                <h6 class="fs-6 fw-light">16312</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-gray-op rounded">
+                                                                <i
+                                                                    class="tb-gray-400 fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 tb-gray-400 d-inline-block">
+                                                                    CLOSED</h4>
+                                                            </span>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- conversation tab end  -->
                     </div>
                 </div>
             </div>
@@ -1576,7 +1097,8 @@
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="text-end mt-3">
-                                                            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                            <img src="../../../../assets/images/Icons/edit-pen.svg"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1866,7 +1388,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -1893,7 +1416,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -1920,7 +1444,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -1947,7 +1472,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -1974,7 +1500,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -2001,7 +1528,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -2028,7 +1556,8 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                            </p>
                                         </div>
                                         <div class=""><span
                                                 class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
@@ -2046,7 +1575,7 @@
                                         <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-12 bg-white px-4 py-3  mt-3">
                                     <div class="row mb-4">
                                         <label class="input-label tb-fw-400" for="input2">Upload Media</label>
@@ -2090,15 +1619,116 @@
                         </div>
                     </div>
                     <div class="view-all-model-btn-wrapper text-end p-3">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Request Information</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send For Approval</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Request
+                            Information</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#filterModal">Send For Approval</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- large modal ends here -->
-
+        <!-- filter modal  -->
+        <div class="modal fade background-dim" id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75">
+                <div class="modal-content box-shadow-popup h-100">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Select Deliverables</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100">
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="prl">
+                                        <label for="prl">PRL</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English">
+                                        <label for="English">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic">
+                                        <label for="Arabic">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Social Media Posts">
+                                        <label for="Social Media Posts">Social Media Posts</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Others">
+                                        <label for="Others">Others</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English3">
+                                        <label for="English3">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic3">
+                                        <label for="Arabic3">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <span href="javascript:void(0)" class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other deliverables</span>
+                        </div>
+                    </div>
+                    <div class="text-end my-4 me-3 ">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>

@@ -389,12 +389,11 @@
                                                 </div>
                                                 <div class="vartical-line me-4"></div>
                                                 <div class="dl">
-                                                    <button
+                                                    <button data-bs-target="#largeModal1" data-bs-toggle="modal"
                                                         class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text"
-                                                        type="button" data-bs-target="#largeModal1"
-                                                        data-bs-dismiss="modal" data-bs-toggle="modal"><img
+                                                        type="button"><img
                                                             src="../../../../assets/images/Icons/Chart_fill.svg"
-                                                            class="me-1"> View
+                                                            class="me-1" > View
                                                         All</button>
                                                 </div>
                                             </div>
@@ -560,41 +559,7 @@
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
-                            <!-- <div class="overview-boxes">
-                <div class="box four">
-                  <div class="right-side">
-                    <div class="box-topic">Under Review</div>
-                    <div class="number">5,732</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning" class="cart" />
-                </div>
-                <div class="box five-light-yellow">
-                  <div class="right-side ">
-                    <div class="box-topic">In Progress
-                    </div>
-                    <div class="number">546</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-yellow.svg" alt="icon-warning" class="cart" />
-                </div>
-                <div class="box two">
-                  <div class="right-side ">
-                    <div class="box-topic">Awaiting Feedback
-                    </div>
-                    <div class="number">90</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning" class="cart">
-                </div>
-                <div class="box first">
-                  <div class="right-side ">
-                    <div class="box-topic">Delayed
-                    </div>
-                    <div class="number">90</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning" class="cart"
-                    width="50" height="50">
-                </div>
-              </div>
-              <!-- table -->
+                            <!-- table -->
                             <div class="row">
                                 <!-- column -->
                                 <div class="col-12">
@@ -603,22 +568,23 @@
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Requests - In Progress
-                                                    </h4>
+                                                    <h3 class="card-title pt-3 tb-bold input-label fs-3">Dpt. Requests
+                                                    </h3>
                                                 </div>
                                                 <div class="ms-auto d-flex justify-content-between align-items-center">
                                                     <div class="d-flex justify-content-center">
-                                                        <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                                        <span class="rounded-circle pad-8-12 border-gray-500 me-3">
                                                             <i class="fa-solid fa-magnifying-glass "></i>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="vartical-line me-4"></div>
                                                 <div class="dl">
-                                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#createDeliverablesModal-2"><i
-                                                            class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                                                    <button
+                                                        class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text"
+                                                        type="button"><img
+                                                            src="../../../../assets/images/Icons/Chart_fill.svg"
+                                                            class="me-1"> View
                                                         All</button>
                                                 </div>
                                             </div>
@@ -628,12 +594,14 @@
                                             <table id="exampletable" class="table v-middle">
                                                 <thead>
                                                     <tr class="gray-500 text-white text-left">
-                                                        <th class="fw-light th-pd">ID</th>
-                                                        <th class="fw-light th-pd">Type</th>
-                                                        <th class="fw-light th-pd">Creation Date</th>
-                                                        <th class="fw-light th-pd">Due Date</th>
-                                                        <th class="fw-light th-pd">Sector</th>
-                                                        <th class="fw-light th-pd">Status</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">ID</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Type</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Due Date</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Sector</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Assignee</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Status</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Time left
+                                                        </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="text-left fw-light ">
@@ -641,31 +609,136 @@
                                                         <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                                             </div>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22</td>
                                                         <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                             16/12/22</td>
                                                         <td
                                                             class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
                                                             Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">EB</p>
+                                                            </span>
+                                                            Elias.B
+                                                        </td>
                                                         <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op rounded">
+                                                            <span class="p-2 status-color-orange-op">
                                                                 <i
-                                                                    class="tb-gray-400 fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
-                                                                <h4 class="tb-h5 mb-0 tb-gray-400 d-inline-block">
-                                                                    CLOSED</h4>
+                                                                    class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                                    NOT STARTED</h4>
                                                             </span>
                                                         </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center">
 
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
+                                                            </span>
+
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-gray-op">
+                                                                <i
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
+                                                            </span>
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center">
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
+                                                            </span>
+
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-gray-op">
+                                                                <i
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
+                                                            </span>
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -673,9 +746,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- table-ends here -- -->
+                        </div>
+                        <div class="tab-pane fade tab-remove-bg" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            jhh
+                        </div>
+                        <div class="tab-pane fade tab-remove-bg" id="pills-contact-2" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            jj
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!--workload Departments ends here ------>
@@ -722,24 +805,27 @@
                             <div class="col-6">
                                 <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <button class="nav-link active btn btn-md tb-btn-light tb-rounded" id="home-tab" data-bs-toggle="tab"
-                                            data-bs-target="#overview-tab-pane">Overview</button>
+                                        <button class="nav-link active btn btn-md tb-btn-light tb-rounded" id="home-tab"
+                                            data-bs-toggle="tab" data-bs-target="#overview-tab-pane">Overview</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="profile-tab" data-bs-toggle="tab"
+                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="profile-tab"
+                                            data-bs-toggle="tab"
                                             data-bs-target="#attachments-tab-pane">Attachments</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab" data-bs-toggle="tab"
+                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab"
+                                            data-bs-toggle="tab"
                                             data-bs-target="#activities-tab-pane">Activities</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab" data-bs-toggle="tab"
-                                            data-bs-target="#dual-content-tab-pane">Dual Content</button>
+                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab"
+                                            data-bs-toggle="tab" data-bs-target="#dual-content-tab-pane">Dual
+                                            Content</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab" data-bs-toggle="tab"
-                                            data-bs-target="#versions-tab-pane">Versions</button>
+                                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="contact-tab"
+                                            data-bs-toggle="tab" data-bs-target="#versions-tab-pane">Versions</button>
                                     </li>
                                 </ul>
 
@@ -1092,7 +1178,7 @@
                                                 <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
                                                     <div class="col-8">
                                                         <div class="head-5">
-                                                            <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverable</p>
+                                                            <p class="mb-0 tb-fs-16 tb-fw-600">1 Deliverable</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
@@ -1361,12 +1447,13 @@
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center mb-4">
                                         <div class="col-8 d-flex">
-                                            <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 7 Deliverable(s)</p>
+                                            <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 1 Deliverable(s)</p>
                                             <img src="../../../../assets/images/Icons/info-red.svg" alt="">
                                         </div>
                                         <div class="col-4">
                                             <div class="text-end mt-3">
-                                                <button class="border-0 bg-white"><img
+                                                <button class="border-0 bg-white" data-bs-target="#filterModal"
+                                                    data-bs-toggle="modal"><img
                                                         src="../../../../assets/images/Icons/plus-icon.svg"
                                                         alt=""></button>
                                             </div>
@@ -1378,9 +1465,9 @@
                                         class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
                                         <div class="">
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="prl(en)" name="prl(en)"
+                                                <input class="me-3" type="radio" id="media-recom" name="others"
                                                     value="HTML">
-                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
+                                                <label for="media-recom" class="tb-fs-16 tb-fw-700">Media Recom.</label>
                                             </div>
                                         </div>
                                         <div class="">
@@ -1388,27 +1475,27 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                                    src="../../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days
                                             </p>
                                         </div>
                                         <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op rounded">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-gray ms-3">NOT STARTED</h4>
                                             </span>
                                         </div>
                                         <div class=""><span
                                                 class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                                <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
                                             </span></div>
                                     </div>
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
                                         <div class="">
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="prl(ar)" name="prl(en)"
+                                                <input class="me-3" type="radio" id="media-plan" name="others"
                                                     value="HTML">
-                                                <label for="prl(ar)" class="tb-fs-16 tb-fw-700">PRL (Ar)</label>
+                                                <label for="media-plan" class="tb-fs-16 tb-fw-700">Media Plan</label>
                                             </div>
                                         </div>
                                         <div class="">
@@ -1416,27 +1503,27 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                                    src="../../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days
                                             </p>
                                         </div>
                                         <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-gray ms-3">IN PROGRESS</h4>
                                             </span>
                                         </div>
                                         <div class=""><span
                                                 class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                                <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
                                             </span></div>
                                     </div>
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
                                         <div class="">
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="sm(en)" name="prl(en)"
+                                                <input class="me-3" type="radio" id="media-brief" name="others"
                                                     value="HTML">
-                                                <label for="sm(en)" class="tb-fs-16 tb-fw-700">SM (En)</label>
+                                                <label for="media-brief" class="tb-fs-16 tb-fw-700">Media Brief</label>
                                             </div>
                                         </div>
                                         <div class="">
@@ -1444,27 +1531,26 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                                    src="../../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days
                                             </p>
                                         </div>
                                         <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-gray ms-3">IN PROGRESS</h4>
                                             </span>
                                         </div>
                                         <div class=""><span
                                                 class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                                <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
                                             </span></div>
                                     </div>
                                     <div
                                         class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
                                         <div class="">
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="sm(ar)" name="prl(en)"
-                                                    value="HTML">
-                                                <label for="sm(ar)" class="tb-fs-16 tb-fw-700">SM (Ar)</label>
+                                                <input class="me-3" type="radio" id="others" name="others" value="HTML">
+                                                <label for="others" class="tb-fs-16 tb-fw-700">Others</label>
                                             </div>
                                         </div>
                                         <div class="">
@@ -1472,107 +1558,25 @@
                                         </div>
                                         <div class="">
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                                    src="../../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days
                                             </p>
                                         </div>
                                         <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-gray ms-3">IN PROGRESS</h4>
                                             </span>
                                         </div>
                                         <div class=""><span
                                                 class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                                <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
                                             </span></div>
                                     </div>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
-                                        <div class="">
-                                            <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="prl-media" name="prl(en)"
-                                                    value="HTML">
-                                                <label for="prl-media" class="tb-fs-16 tb-fw-700">PRL Media</label>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
-                                            </p>
-                                        </div>
-                                        <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
-                                            </span>
-                                        </div>
-                                        <div class=""><span
-                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
-                                            </span></div>
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
-                                        <div class="">
-                                            <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="sm-media" name="prl(en)"
-                                                    value="HTML">
-                                                <label for="sm-media" class="tb-fs-16 tb-fw-700">SM Media</label>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
-                                            </p>
-                                        </div>
-                                        <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
-                                            </span>
-                                        </div>
-                                        <div class=""><span
-                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
-                                            </span></div>
-                                    </div>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
-                                        <div class="">
-                                            <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="creative" name="prl(en)"
-                                                    value="HTML">
-                                                <label for="creative" class="tb-fs-16 tb-fw-700">Creative</label>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
-                                        </div>
-                                        <div class="">
-                                            <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
-                                            </p>
-                                        </div>
-                                        <div class=""><span
-                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
-                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
-                                            </span>
-                                        </div>
-                                        <div class=""><span
-                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
-                                            </span></div>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="../../../../assets/images/Icons/eye-slash.svg" alt="">
-                                        <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
+                                    <div class="">
+                                        <a href="javascript:void(0)" class="d-flex justify-content-center tb-primary">
+                                            <img src="../../../../assets/images/Icons/eye-slash.svg" alt="">
+                                            <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -1621,8 +1625,8 @@
                     <div class="view-all-model-btn-wrapper text-end p-3">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Request
                             Information</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-dismiss="modal" data-bs-toggle="modal"
-                            data-bs-target="#filterModal">Send For Approval</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#">Send For Approval</button>
                     </div>
                 </div>
             </div>
@@ -1716,7 +1720,9 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <a href="javascript:void(0)" class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other deliverables</a>
+                            <a href="javascript:void(0)"
+                                class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
+                                deliverables</a>
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">

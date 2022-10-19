@@ -292,6 +292,20 @@
                                     <span>Request</span></button>
                             </a>
                         </li>
+                        <!-- just to demonstrate the popups -->
+                        <li class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <div class="hover-remove" class="align-self-center">
+                              <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button" data-bs-toggle="modal"
+                                data-bs-target="#others">Others
+                            </button>
+                          </li>
+                          <li class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <div class="hover-remove" class="align-self-center">
+                              <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button" data-bs-toggle="modal"
+                                data-bs-target="#sendforApprovalModal">Approval Modal
+                            </button>
+                          </li>
+                          <!-- just to demonstrate the popups  ends--> 
                     </ul>
                 </div>
             </div>
@@ -1438,7 +1452,7 @@
                         </div>
                         <div class="col-2 d-flex justify-content-between align-items-center ">
                             <div>
-                                <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal" data-bs-target="#commentsModal">
                                     <img src="../../../assets/images/Icons/icon-comment.svg" alt="" />
                                 </button>
 
@@ -1522,7 +1536,8 @@
                                         </ul>
                                         <div class="tab-content" id="myTabContent">
                                             <div class="tab-pane fade show active shadow-none" id="request-tab-pane">
-                                                <div class="accordion accordion-bottom-border mt-3" id="accordion-english-1">
+                                                <div class="accordion accordion-bottom-border mt-3"
+                                                    id="accordion-english-1">
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="heading-english-1">
                                                             <button type="button"
@@ -1593,7 +1608,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="other-entity" name="other-entity"
-                                                                                placeholder="Placeholder.." disabled/>
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1614,7 +1629,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="impact" name="impact"
-                                                                                placeholder="Placeholder.."disabled />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1626,7 +1641,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="impact" name="impact"
-                                                                                placeholder="Placeholder.." disabled/>
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1667,7 +1682,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="coverage" name="coverage"
-                                                                                placeholder="Placeholder.." disabled/>
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1703,7 +1718,7 @@
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="published-news"
                                                                                 name="published-news"
-                                                                                placeholder="Placeholder.."disabled />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1771,7 +1786,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="subheading" name="subheading"
-                                                                                placeholder="Placeholder" disabled/>
+                                                                                placeholder="Placeholder" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
 
@@ -1783,7 +1798,7 @@
                                                                                 class="col-12 text-end input collapse-inner-bg"
                                                                                 id="subheading-arabic"
                                                                                 name="subheading-arabic"
-                                                                                placeholder="پلیس ہولڈر"  disabled/>
+                                                                                placeholder="پلیس ہولڈر" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1809,7 +1824,7 @@
                                                                                 class="col-12 text-end input collapse-inner-bg"
                                                                                 id="messages-arabic"
                                                                                 name="messages-arabic"
-                                                                                placeholder="پلیس ہولڈر" disabled/>
+                                                                                placeholder="پلیس ہولڈر" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1822,7 +1837,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="quotes" name="quotes"
-                                                                                placeholder="Placeholder.." disabled/>
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1834,7 +1849,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="quotesby" name="quotesby"
-                                                                                placeholder="Placeholder.." disabled/>
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1989,7 +2004,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="website" name="website"
-                                                                                placeholder="Placeholder text" disabled />
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2002,7 +2018,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="remarks" name="remarks"
-                                                                                placeholder="Placeholder text" disabled/>
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2016,7 +2033,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="facebook" name="facebook"
-                                                                                placeholder="Placeholder text" disabled/>
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2027,7 +2045,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="youtube" name="youtube"
-                                                                                placeholder="Placeholder text"disabled />
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2038,7 +2057,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="instagram" name="instagram"
-                                                                                placeholder="Placeholder text" disabled/>
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2049,7 +2069,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="twitter" name="twitter"
-                                                                                placeholder="Placeholder text" disabled/>
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2060,7 +2081,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="linkedin" name="linkedin"
-                                                                                placeholder="Placeholder text"disabled />
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2071,7 +2093,8 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="social-others" name="social-others"
-                                                                                placeholder="Placeholder text" disabled/>
+                                                                                placeholder="Placeholder text"
+                                                                                disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2112,7 +2135,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="Patronage" name="Patronage"
-                                                                                placeholder="Placeholder" disabled/>
+                                                                                placeholder="Placeholder" disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -2209,7 +2232,7 @@
                                                                 Media</button>
                                                         </h2>
                                                         <div id="collapse-deliverable-2"
-                                                            class="accordion-collapse collapse  show" >
+                                                            class="accordion-collapse collapse  show">
                                                             <div class="collapse-inner-bg p-5 pb-0">
                                                                 <div class="row">
                                                                     <p class="col-6 tb-fs-16">Language(s)</p>
@@ -2330,7 +2353,7 @@
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-attachments" role="tabpanel"
                                         aria-labelledby="pills-profile-tab">
-                                       .....
+                                        .....
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-activities" role="tabpanel"
                                         aria-labelledby="pills-activities-tab">
@@ -2480,29 +2503,32 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-versions">
-                                       
-                                     
+
+
                                         <div class="row my-4">
                                             <div class="col-12">
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-3 d-flex align-items-center">
                                                         <img src="../../../../assets/images/Icons/PDF.svg" alt="">
                                                         <div class="">
-                                                        <p class="text-danger m-0 ms-3 p-0">Current</p>
-                                                        <p class="mb-0 ms-3 p-0 ">Request_2021.pdf</p>
+                                                            <p class="text-danger m-0 ms-3 p-0">Current</p>
+                                                            <p class="mb-0 ms-3 p-0 ">Request_2021.pdf</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center">
                                                         <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
                                                     </div>
                                                     <div class="col-2 d-flex align-items-center">
-                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                             <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
                                                         </span>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
-                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                            class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt=""
+                                                            class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2516,13 +2542,16 @@
                                                         <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
                                                     </div>
                                                     <div class="col-2 d-flex align-items-center">
-                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                             <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
                                                         </span>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
-                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                            class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt=""
+                                                            class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2536,13 +2565,16 @@
                                                         <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
                                                     </div>
                                                     <div class="col-2 d-flex align-items-center">
-                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                             <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
                                                         </span>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
-                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                            class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt=""
+                                                            class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2556,13 +2588,16 @@
                                                         <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
                                                     </div>
                                                     <div class="col-2 d-flex align-items-center">
-                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                             <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
                                                         </span>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
-                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                            class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt=""
+                                                            class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2576,20 +2611,23 @@
                                                         <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
                                                     </div>
                                                     <div class="col-2 d-flex align-items-center">
-                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                        <span
+                                                            class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                             <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
                                                         </span>
                                                     </div>
                                                     <div class="col-3 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
-                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt=""
+                                                            class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt=""
+                                                            class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="col-6 vh-100 overflow-scroll">
                                 <div class="row">
@@ -3178,60 +3216,68 @@
                                     </div>
                                     <div class="col-12 py-3">
                                         <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                                          <div class="col-12 ">
-                                            <h6>Upload CSV</h6>
-                                          </div>
-                                          <div class="d-flex justify-content-between align-items-center">
-                                            <div class="p-2 col-1">
-                                              <p class="mb-0">75%</p>
+                                            <div class="col-12 ">
+                                                <h6>Upload CSV</h6>
                                             </div>
-                                            <div class="py-2 col-9">
-                                              <div class="progress">
-                                                <div class="progress-bar w-75" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="p-2 col-1">
+                                                    <p class="mb-0">75%</p>
+                                                </div>
+                                                <div class="py-2 col-9">
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-75" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="75"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 col-2 text-end">
+                                                    <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                        type="button">Cancel</button>
+                                                </div>
                                             </div>
-                                            <div class="p-0 col-2 text-end">
-                                              <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                                            </div>
-                                          </div>
                                         </div>
-                                      </div>
+                                    </div>
                                     <div class="col-12 py-3">
                                         <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                                          <div class="col-12 ">
-                                            <h6>Upload CSV</h6>
-                                          </div>
-                                          <div class="d-flex justify-content-between align-items-center">
-                                            <div class="p-2 col-1">
-                                              <p class="mb-0">75%</p>
+                                            <div class="col-12 ">
+                                                <h6>Upload CSV</h6>
                                             </div>
-                                            <div class="py-2 col-9">
-                                              <div class="progress">
-                                                <div class="progress-bar w-75" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="p-2 col-1">
+                                                    <p class="mb-0">75%</p>
+                                                </div>
+                                                <div class="py-2 col-9">
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-75" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="75"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="p-0 col-2 text-end">
+                                                    <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                        type="button">Cancel</button>
+                                                </div>
                                             </div>
-                                            <div class="p-0 col-2 text-end">
-                                              <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                                            </div>
-                                          </div>
                                         </div>
-                                      </div>
-                                      <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
-                                            <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                            <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                            <div class="">
-                                                <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
-                                                <img src="../../../assets/images/Icons/trash-red.svg" alt="">
-                                            </div>
-                                      </div>
-                                      <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
-                                            <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                            <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                            <div class="">
-                                                <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
-                                                <img src="../../../assets/images/Icons/trash-red.svg" alt="">
-                                            </div>
-                                      </div>
+                                    </div>
+                                    <div
+                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
+                                        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                        <div class="">
+                                            <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
+                                            <img src="../../../assets/images/Icons/trash-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
+                                        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                        <div class="">
+                                            <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
+                                            <img src="../../../assets/images/Icons/trash-red.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -3240,7 +3286,7 @@
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#requestInfo" type="button">Request Information</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-                            data-bs-target="#scheduled" type="button">Decline</button>
+                            data-bs-target="#decline-modal" type="button">Decline</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#priorityModal" type="button">Accept</button>
                     </div>
@@ -3248,17 +3294,18 @@
             </div>
         </div>
         <!-- Full screen modal ends -->
-        <div class="modal fade modal-backdrop-op priority-Modal large-modal" id="priorityModal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-position  ">
+        <div class="modal fade modal-backdrop-op " id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Request more informationt</h5>
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">Confirm
+                            Priority</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
-                    <div class="p-4 side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
+                    <div
+                        class="p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
                         <div>
                             <div class="tb-input-group p-2 mt-3 border">
                                 <label class="col-12 input-label" for="input">Priority<sup>*</sup></label>
@@ -3277,34 +3324,665 @@
                                 <input class="col-12 pla-2" id="" name="" placeholder="22/02/2022">
                             </div>
                         </div>
-                        <div class="main-wrapper">
-                            <div class="main-para d-flex">
-                                <img class="para-image" src="../../../assets/images/info.svg" alt="">
-                                <p class="pera">You are about accept this request, please note the due date is
-                                    automatically
-                                    defined by the Priority of the request.</p>
+                        <div class="col-12 mt-3">
+                            <div class="border-0 info-outer tb-input-group">
+                                <div class="d-flex">
+                                    <div>
+                                        <img class="info-icon" src="../assets/images/info-icon1.svg" alt="">
+                                    </div>
+                                    <p class="px-3 m-0">
+                                        You are about accept this request, please note the due date is automatically
+                                        defined by the Priority
+                                        of the request.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                            type="button">Cancel</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
-                            data-bs-target="#decline-modal" type="button">Next</button>
+                            data-bs-target="#filterModal" type="button">Next</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op large-modal" id="decline-modal" tabindex="-1"
+        <div class="modal fade modal-backdrop-op " id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Select Deliverables</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="prl">
+                                        <label for="prl">PRL</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English">
+                                        <label for="English">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic">
+                                        <label for="Arabic">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Social Media Posts">
+                                        <label for="Social Media Posts">Social Media Posts</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Others">
+                                        <label for="Others">Others</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English3">
+                                        <label for="English3">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic3">
+                                        <label for="Arabic3">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <span href="javascript:void(0)"
+                                class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
+                                deliverables</span>
+                        </div>
+                    </div>
+                    <div class="text-end my-4 me-3 ">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                            data-bs-target="#priorityModal" type="button">Back</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
+                            data-bs-target="#prl-Modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-backdrop-op " id="prl-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            PRL (En/Ar)</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 collapse-inner-bg side-modal-wrap h-100 px-5">
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are the deliverables due as part of the service level agreement (SLA)?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="impact1" name="impacts" value="yes">
+                                <label for="impact1">Yes <span class="label-span">(8th, November 2021)</span></label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="impact2" name="impacts" value="no">
+                                <label for="impact2">No</label>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">When is the ADGMO team deadline lorem?</h6>
+                            <div class="tb-input-group p-2 mt-3 border">
+                                <label class="col-12 input-label" for="date">Select Due Date<sup>*</sup></label>
+                                <input type="date" class="col-12 input-field" id="date">
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are there any additional needs with this deliverable?</h6>
+                            <div class="ps-2">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Image</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Video</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Carousel</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6 class="h6 my-3">Select the deliverables publishing date</h6>
+                                </div>
+                                <div class="col-3">
+                                    <span class="prl-Modal-sub-heading"><img
+                                            src="../../../assets/images/billed-monthly.svg" alt="">
+                                        Calendar</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="date">Select Publishing
+                                            Date<sup>*</sup></label>
+                                        <input type="date" class="col-12 input-field" id="date">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="dataList">Select Publishing
+                                            Date<sup>*</sup></label>
+                                        <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" my-4 mx-3 ">
+                        <div class="row">
+                            <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
+                                        data-bs-dismiss="modal" data-bs-target="#filterModal">Back</button>
+                                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button"
+                                        data-bs-dismiss="#prl-Modal" data-bs-toggle="modal"
+                                        data-bs-target="#social-media">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-backdrop-op " id="social-media" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Social Media (En/Ar)</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 collapse-inner-bg side-modal-wrap h-100 px-5 overflow-auto">
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are the deliverables due as part of the service level agreement (SLA)?
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="impact1" name="impacts" value="yes">
+                                <label for="impact1">Yes <span class="label-span">(8th, November 2021)</span></label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="impact2" name="impacts" value="no">
+                                <label for="impact2">No</label>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">When is the ADGMO team deadline lorem?</h6>
+                            <div class="tb-input-group p-2 mt-3 border">
+                                <label class="col-12 input-label" for="date">Select Due Date<sup>*</sup></label>
+                                <input type="date" class="col-12 input-field" id="date">
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are there any additional needs with this deliverable?</h6>
+                            <div class="ps-2">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Instagram</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Twitter</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Facebook</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Linkedin</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are there any additional needs with this deliverable?</h6>
+                            <div class="ps-2">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Reel</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Video Post</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Single Image</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Stories</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Carousel</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
+                                            <label for="prl">Guides</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Are there any additional needs with this deliverable?</h6>
+                            <div class="ps-2">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Single Image</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Carousel</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label for="prl">Video Post</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6 class="h6 my-3">Select the deliverables publishing date</h6>
+                                </div>
+                                <div class="col-3">
+                                    <span class="social-media-Modal-sub-heading"><img
+                                            src="../../../assets/images/billed-monthly.svg" alt="">
+                                        Calendar</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="date">Select Publishing
+                                            Date<sup>*</sup></label>
+                                        <input type="date" class="col-12 input-field" id="date">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="dataList">Select Publishing
+                                            Date<sup>*</sup></label>
+                                        <input class="col-12 input-field" id="" name="" placeholder="Placeholder">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" my-4 mx-3 ">
+                        <div class="row">
+                            <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
+                                        data-bs-dismiss="modal" data-bs-target="#prl-Modal"> Back</button>
+                                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#additional-info">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-backdrop-op " id="additional-info" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
-                <div class="modal-content inner-modal-content box-shadow-popup p-0">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Additional Information</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100 overflow-auto">
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Does it require any creative support?</h6>
+                            <div class="d-flex align-items-center">
+                                <input class="me-3" type="radio" id="impact1" name="impacts" value="yes">
+                                <label for="impact1">Yes</label>
+                            </div>
+                            <div>
+                                <input class="me-3" type="radio" id="impact2" name="impacts" value="no">
+                                <label for="impact2">No</label>
+                            </div>
+                        </div>
+                        <div class="row gy-2 my-2">
+                            <h6 class="h6 my-3">Shooting / Filming / Recording Details</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="date">Selact Date</label>
+                                        <input type="date" class="col-12 input-field" id="date">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="tb-input-group p-2 border mt-3">
+                                        <label class="col-12 input-label" for="dataList">Location</label>
+                                        <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tb-input-group p-2 mt-3 border">
+                                        <label class="col-12 input-label" for="dataList">Location</label>
+                                        <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gy-2 my-2">
+                                <h6 class="h6 my-3">Which type of video is required?</h6>
+                                <div class="d-flex align-items-center">
+                                    <input class="me-3" type="radio" id="impact1" name="impacts" value="yes">
+                                    <label for="impact1">Inteview Video</label>
+                                </div>
+                                <div>
+                                    <input class="me-3" type="radio" id="impact2" name="impacts" value="no">
+                                    <label for="impact2">Scripted Video</label>
+                                </div>
+                            </div>
+                            <div class="row gy-2 my-2">
+                                <h6 class="h6 my-3">Does it required voice over recording?</h6>
+                                <div class="d-flex align-items-center">
+                                    <input class="me-3" type="radio" id="impact1" name="impacts" value="yes">
+                                    <label for="impact1">Yes</label>
+                                </div>
+                                <div>
+                                    <input class="me-3" type="radio" id="impact2" name="impacts" value="no">
+                                    <label for="impact2">No</label>
+                                </div>
+                            </div>
+                            <div class="row gy-2 my-2">
+                                <h6 class="h6 my-3">Entity Contact Details</h6>
+                                <div class="tb-input-group p-2 border">
+                                    <label class="col-12 input-label" for="dataList">Name</label>
+                                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
+                                </div>
+                                <div class="tb-input-group p-2 border">
+                                    <label class="col-12 input-label" for="dataList">Position</label>
+                                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
+                                </div>
+                                <div class="tb-input-group p-2 border">
+                                    <label class="col-12 input-label" for="dataList">Mobile Number</label>
+                                    <input class="col-12 input-field" id="" name="" placeholder="Placeholder text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end my-4 me-3 ">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-dismiss="modal"
+                            data-bs-target="#social-media">Back</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
+                            data-bs-target="#review">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-backdrop-op " id="review" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Review</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap collapse-inner-bg h-100">
+                        <div class="accordion" id="accordion-dual">
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="heading-duel-1">
+                                    <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-duel-1">PRL</button>
+                                </h2>
+                                <div id="collapse-duel-1" class="accordion-collapse collapse show">
+                                    <div class="collapse-inner-bg p-5">
+                                        <div class="row mb-4">
+                                            <div class="col-8">Language(s)</div>
+                                            <div class="col-4 text-end">English, Arabic</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are the deliverables due as part of the service level
+                                                agreement (SLA)?</div>
+                                            <div class="col-4 text-end">Yes</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">When is the ADGMO team deadline lorem?</div>
+                                            <div class="col-4 text-end">20/02/2022</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are there any additional needs with this deliverable?
+                                            </div>
+                                            <div class="col-4 text-end">Image, Video</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Publishing date</div>
+                                            <div class="col-4 text-end">20/02/2022 - 9:00am</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="heading-duel-2">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-2">Social
+                                        Media</button>
+                                </h2>
+                                <div id="collapse-duel-2" class="accordion-collapse collapse">
+                                    <div class="collapse-inner-bg p-5">
+                                        <div class="row mb-4">
+                                            <div class="col-8">Language(s)</div>
+                                            <div class="col-4 text-end">English, Arabic</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are the deliverables due as part of the service level
+                                                agreement (SLA)?</div>
+                                            <div class="col-4 text-end">Yes</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">When is the ADGMO team deadline lorem?</div>
+                                            <div class="col-4 text-end">20/02/2022</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are there any additional needs with this deliverable?
+                                            </div>
+                                            <div class="col-4 text-end">Image, Video</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Publishing date</div>
+                                            <div class="col-4 text-end">20/02/2022 - 9:00am</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="heading-duel-3">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-3">Others</button>
+                                </h2>
+                                <div id="collapse-duel-3" class="accordion-collapse collapse">
+                                    <div class="collapse-inner-bg p-5">
+                                        <div class="row mb-4">
+                                            <div class="col-8">Language(s)</div>
+                                            <div class="col-4 text-end">English, Arabic</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are the deliverables due as part of the service level
+                                                agreement (SLA)?</div>
+                                            <div class="col-4 text-end">Yes</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">When is the ADGMO team deadline lorem?</div>
+                                            <div class="col-4 text-end">20/02/2022</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are there any additional needs with this deliverable?
+                                            </div>
+                                            <div class="col-4 text-end">Image, Video</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Publishing date</div>
+                                            <div class="col-4 text-end">20/02/2022 - 9:00am</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="heading-duel-4">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-4">Addtional
+                                        Information</button>
+                                </h2>
+                                <div id="collapse-duel-4" class="accordion-collapse collapse">
+                                    <div class="collapse-inner-bg p-5">
+                                        <div class="row mb-4">
+                                            <div class="col-8">Language(s)</div>
+                                            <div class="col-4 text-end">English, Arabic</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are the deliverables due as part of the service level
+                                                agreement (SLA)?</div>
+                                            <div class="col-4 text-end">Yes</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">When is the ADGMO team deadline lorem?</div>
+                                            <div class="col-4 text-end">20/02/2022</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Are there any additional needs with this deliverable?
+                                            </div>
+                                            <div class="col-4 text-end">Image, Video</div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-8">Publishing date</div>
+                                            <div class="col-4 text-end">20/02/2022 - 9:00am</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" my-4 mx-3 ">
+                        <div class="row">
+                            <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
+                                        data-bs-dismiss="modal" data-bs-target="#additional-info">Back</button>
+                                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-backdrop-op " id="decline-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
                             Decline Request</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
-                    <div class="p-4 side-modal-wrap h-100">
+                    <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="tb-input-group tb-input-group-internal p-2 ">
                             <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
                             <input class="col-12" id="" name="" placeholder="Placeholder text">
@@ -3418,17 +4096,17 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op large-modal" id="requestInfo" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-backdrop-op " id="requestInfo" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
-                <div class="modal-content inner-modal-content box-shadow-popup p-0">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
                             Request more information</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
-                    <div class="p-4 side-modal-wrap h-100">
+                    <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="tb-input-group tb-input-group-internal p-2 ">
                             <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
                             <input class="col-12" id="" name="" placeholder="Placeholder text">
@@ -3542,6 +4220,219 @@
                 </div>
             </div>
         </div>
+       <!-- Others Modal -->
+        <div class="modal fade modal-backdrop-op " id="others" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Others</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100">
+                        <div class="tb-input-group tb-input-group-internal p-2 ">
+                            <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
+                            <input class="col-12" id="" name="" placeholder="Placeholder text">
+                        </div>
+                    </div>
+                    <div class=" my-4 mx-3 ">
+                        <div class="row">
+                            <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Others Modal Ends -->
+        <!-- comments modal -->
+        <div class="modal fade modal-backdrop-op" id="commentsModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog main-modal modal-dialog-position">
+          <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+            <div class="modal-header">
+              <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
+                Comments
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <div class="d-flex mb-3">
+                  <div class="p-2">
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Show All</button>
+                    <button class="btn btn-md tb-rounded bg-color-gray " type="button">Show New</button>
+                  </div>
+                  <div class="ms-auto p-2 mt-2">
+                    <span class="pad-8-9 gray-100 rounded-circle">
+                      <i class="fa-solid fa-search"></i>
+                    </span>
+                  </div>
+                  <div class="pt-1 mt-2 ">
+                    <span class=" ">
+                      <img src="../assets/images/Frame 34003.svg" />
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-12 my-2 mx-0">
+                  <div class=" p-2 border">
+                    <label class="col-12 input-label" for="dataList">Type @ to mention someone </label>
+                    <input class="col-12" id="" name="">
+                    <div class="d-flex mt-3">
+                      <div class="p-2">
+                        <span class="pad-8-9 gray-100 rounded-circle">
+                          <i class="fa-sharp fa-solid fa-lock"></i>
+                        </span>
+                      </div>
+                      <div class=" p-2">
+                        <span class="pad-8-9 gray-100 rounded-circle">
+                          <i class="fa-sharp fa-solid fa-paperclip"></i>
+                        </span>
+                      </div>
+                      <div class=" ms-auto">
+                        <button class="btn btn-md tb-btn-light tb-rounded" type="button">Cancel</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex mb-3 mt-4">
+                <div class="p-2">
+                  <div class="col-2 position-relative">
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+                <div class="p-2 fw-bold tb-fs-14 position-relative"> Mark Anthony
+                  <span class=" position-absolute comment-popup-icon">
+                    <img src="../assets/images/Frame 1368.svg" alt="" class="m-0" />
+                  </span>
+                  <p class=" tb-fs-12 tb-gray-400">28 min ago</p>
+                </div>
+                <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span></div>
+              </div>
+              <div class="ms-3">
+                <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Etiam
+                  et
+                  ante iaculis, faucibus
+                  velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+              </div>
+              <div>
+                <img src="../assets/images/Container.svg" alt="" width="100%" />
+              </div>
+              <div class="d-flex mb-3 mt-4">
+                <div class="p-2">
+                  <div class="col-2 position-relative">
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+                <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+                  <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+                </div>
+                <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span></div>
+              </div>
+              <div class="ms-3">
+                <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Etiam
+                  et
+                  ante
+                  iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+                <p class="tb-fs-12 tb-gray-400 border-bottom mt-3">3 Replies</p>
+              </div>
+              <div class="d-flex mb-3 mt-4 ">
+                <div class="p-2">
+                  <div class="col-2 position-relative">
+                    <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                  </div>
+                </div>
+                <div class="p-2 fw-bold tb-fs-14"> Mark Anthony
+                  <p class="tb-fs-12 tb-gray-400">3 hours ago</p>
+                </div>
+                <div class="ms-auto p-2"> <span class="pad-6-8 gray-100 rounded-circle">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span></div>
+              </div>
+              <div class="ms-3 text-base-black tb-fs-14">
+                <p class="m-0 border-bottom"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+                  ante
+                  iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- comments modal ends -->
+      <!-- approval modal -->
+      <div class="modal fade" id="sendforApprovalModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">Send for Approval</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body collapse-inner-bg">
+          <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
+            <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+              <img src="../../../assets/images/Profile image (1).svg" alt="" class="img-100 selected-dropdown-image">
+            </div>
+            <div class="w-100">
+              <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
+              <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
+                placeholder="placeholder..">
+              <i class="fa fa-solid fa-angle-down"></i>
+
+              <ul class="col-12 input-dropdown-list list-group rounded-0">
+                <li class="list-group-item d-flex align-items-center " value="Avashesh">
+                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                    <img src="../../../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg" alt="Brookyln Simmons"
+                      class="img-100">
+                  </div>
+                  <span class="ms-3">Brookyln Simmons </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center " value="2">
+                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                    <img src="../../../assets/images/person1.jpg" alt="Jacob Jones" class="img-100">
+                  </div>
+                  <span class="ms-3">Jacob Jones</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center " value="3">
+                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                    <img src="../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt="Guy Hawkins"
+                      class="img-100">
+                  </div>
+                  <span class="ms-3">Guy Hawkins</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tb-input-group p-2 mt-4">
+            <label class="col-12 input-label" for="inputNoError">Label</label>
+            <input class="col-12 input-field" id="inputNoError" name="inputNoError" placeholder="Placeholder">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
+          <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- approval modal ends here -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

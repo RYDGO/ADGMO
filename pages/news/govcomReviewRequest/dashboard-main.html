@@ -17,7 +17,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../../styles/style.css">
-    <link rel="stylesheet" href="../../../styles/dashboard.css">
+    <link rel="stylesheet" href="../../../styles/dashboard.css"> -->
     <link rel="stylesheet" href="../../../styles/workloadDepartments/workloadDepartments.css">
 </head>
 
@@ -1463,7 +1463,7 @@
                     <div class="modal-body collapse-inner-bg py-4 px-5">
                         <div class="row g-0 gx-5 ">
                             <div class="col-6 vh-100 overflow-scroll">
-                                <ul class="nav mb-4" id="pills-tab" role="tablist">
+                                <ul class="nav mb-4 " id="pills-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active btn btn-md tb-btn-light tb-rounded tb-fs-12"
                                             id="pills-overview-button" data-bs-toggle="pill"
@@ -1508,7 +1508,7 @@
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active shadow-none" id="pills-overview"
                                         role="tabpanel" aria-labelledby="pills-overview-tab">
-                                        <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+                                        <ul class="nav nav-tabs collapse-inner-bg" id="myTab" role="tablist">
                                             <li class="nav-item">
                                                 <button class="nav-link btn  tb-btn-underline rounded-0 active p-2"
                                                     id="home-tab" data-bs-toggle="tab"
@@ -1522,7 +1522,7 @@
                                         </ul>
                                         <div class="tab-content" id="myTabContent">
                                             <div class="tab-pane fade show active shadow-none" id="request-tab-pane">
-                                                <div class="accordion accordion-bottom-border" id="accordion-english-1">
+                                                <div class="accordion accordion-bottom-border mt-3" id="accordion-english-1">
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="heading-english-1">
                                                             <button type="button"
@@ -1545,7 +1545,7 @@
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="type-of-announcement"
                                                                                 name="type-of-announcement"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1559,7 +1559,7 @@
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="category-of-announcement"
                                                                                 name="category-of-announcement"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1579,7 +1579,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="links" name="links"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1593,7 +1593,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="other-entity" name="other-entity"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1605,7 +1605,6 @@
                                                                     <div class="d-flex align-items-center">
                                                                         <p>Yes</p>
                                                                     </div>
-                                                                    <p class="error-message">• Error Message</p>
                                                                 </div>
                                                                 <div class="row impact-show">
                                                                     <div class="col-md-6">
@@ -1615,7 +1614,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="impact" name="impact"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.."disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1627,7 +1626,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="impact" name="impact"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled/>
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1668,7 +1667,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="coverage" name="coverage"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled/>
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1680,7 +1679,7 @@
                                                                             <input type="date"
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 name="published-date"
-                                                                                id="published-date" />
+                                                                                id="published-date" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1690,14 +1689,7 @@
                                                                         Already Published Before?<sup>*</sup>
                                                                     </h6>
                                                                     <div class="d-flex align-items-center">
-                                                                        <input class="me-3" type="radio" id="published1"
-                                                                            name="published" value="yes" />
-                                                                        <label for="published1">Yes</label>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="me-3" type="radio" id="published2"
-                                                                            name="published" value="no" />
-                                                                        <label for="published2">No</label>
+                                                                        <p>Yes</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
@@ -1711,7 +1703,7 @@
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="published-news"
                                                                                 name="published-news"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.."disabled />
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -1724,7 +1716,7 @@
                                                                             <input type="date"
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="target-published-date"
-                                                                                name="target-published-date" />
+                                                                                name="target-published-date" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1754,7 +1746,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="headline" name="headline"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
 
@@ -1766,7 +1758,7 @@
                                                                                 class="col-12 input text-end collapse-inner-bg"
                                                                                 id="headline-arabic"
                                                                                 name="headline-arabic"
-                                                                                placeholder="پلیس ہولڈر" />
+                                                                                placeholder="پلیس ہولڈر" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1779,7 +1771,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="subheading" name="subheading"
-                                                                                placeholder="Placeholder" />
+                                                                                placeholder="Placeholder" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
 
@@ -1791,7 +1783,7 @@
                                                                                 class="col-12 text-end input collapse-inner-bg"
                                                                                 id="subheading-arabic"
                                                                                 name="subheading-arabic"
-                                                                                placeholder="پلیس ہولڈر" />
+                                                                                placeholder="پلیس ہولڈر"  disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1805,7 +1797,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="messages" name="messages"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
 
@@ -1817,7 +1809,7 @@
                                                                                 class="col-12 text-end input collapse-inner-bg"
                                                                                 id="messages-arabic"
                                                                                 name="messages-arabic"
-                                                                                placeholder="پلیس ہولڈر" />
+                                                                                placeholder="پلیس ہولڈر" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1830,7 +1822,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="quotes" name="quotes"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1842,7 +1834,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="quotesby" name="quotesby"
-                                                                                placeholder="Placeholder.." />
+                                                                                placeholder="Placeholder.." disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -1997,7 +1989,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="website" name="website"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2010,7 +2002,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="remarks" name="remarks"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2024,7 +2016,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="facebook" name="facebook"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2035,7 +2027,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="youtube" name="youtube"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text"disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2046,7 +2038,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="instagram" name="instagram"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2057,7 +2049,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="twitter" name="twitter"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2068,7 +2060,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="linkedin" name="linkedin"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text"disabled />
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2079,7 +2071,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="social-others" name="social-others"
-                                                                                placeholder="Placeholder text" />
+                                                                                placeholder="Placeholder text" disabled/>
                                                                         </div>
                                                                         <p class="error-message">• Error Message</p>
                                                                     </div>
@@ -2108,16 +2100,7 @@
                                                                         Is the news under sponsorship / patronage.
                                                                     </h6>
                                                                     <div class="d-flex align-items-center">
-                                                                        <input class="me-3" type="radio"
-                                                                            id="sponsorship1" name="sponsorship"
-                                                                            value="no" />
-                                                                        <label for="sponsorship1">Yes</label>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="me-3" type="radio"
-                                                                            id="sponsorship2" name="sponsorship"
-                                                                            value="yes" />
-                                                                        <label for="sponsorship2">No</label>
+                                                                        <p>Yes</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
@@ -2129,7 +2112,7 @@
                                                                             <input
                                                                                 class="col-12 input collapse-inner-bg"
                                                                                 id="Patronage" name="Patronage"
-                                                                                placeholder="Placeholder" />
+                                                                                placeholder="Placeholder" disabled/>
                                                                         </div>
                                                                         <!-- <p class="error-message">• Error Message</p> -->
                                                                     </div>
@@ -2159,15 +2142,186 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade shadow-none" id="deliverables-tab-pane">
-                                                <div class="row">
+                                            <div class="tab-pane fade show active shadow-none"
+                                                id="deliverables-tab-pane">
+                                                <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
                                                     <div class="col-8">
-                                                        <div class="head-5"><b>7 Deliverable(s)</b></div>
+                                                        <div class="head-5">
+                                                            <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverable</p>
+                                                        </div>
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="text-end mt-3">
-                                                            <span class="gray-100 pad-8-12 gray-300-hover square-btn">
-                                                                <i class="fa-regular fa-plus"></i>
+                                                            <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion" id="accordion-dual">
+
+                                                    <div class="accordion-item accordion-bottom-border">
+                                                        <h2 class="accordion-header" id="heading-duel-1">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-1">PRL</button>
+                                                        </h2>
+
+                                                        <div id="collapse-deliverable-1"
+                                                            class="accordion-collapse collapse show">
+                                                            <div class="collapse-inner-bg p-5 pb-0">
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
+                                                                        as part of the service level agreement (SLA)?
+                                                                    </p>
+                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
+                                                                        deadline lorem?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are there any additional
+                                                                        needs with this deliverable?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Image, Video</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
+                                                                        9:00am</p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item accordion-bottom-border">
+                                                        <h2 class="accordion-header" id="heading-duel-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-2">Social
+                                                                Media</button>
+                                                        </h2>
+                                                        <div id="collapse-deliverable-2"
+                                                            class="accordion-collapse collapse  show" >
+                                                            <div class="collapse-inner-bg p-5 pb-0">
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
+                                                                        as part of the service level agreement (SLA)?
+                                                                    </p>
+                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
+                                                                        deadline lorem?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">On which channel(s) would
+                                                                        you like to post?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Instagram,
+                                                                        Twitter</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Instagram Format(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Twitter Format(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
+                                                                        9:00am</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading-duel-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-3">Attachments*</button>
+                                                        </h2>
+                                                        <div id="collapse-deliverable-3"
+                                                            class="accordion-collapse collapse  show">
+                                                            <div class="collapse-inner-bg p-5">
+                                                                <div class="row">
+                                                                    <div class="col-12 ">
+                                                                        <div class="tb-input-group d-flex p-3">
+                                                                            <div class="col-9">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="infographics">Infographics</label>
+                                                                                <input class="col-12 input"
+                                                                                    type="infographics"
+                                                                                    id="infographics"
+                                                                                    placeholder="Upload image" />
+                                                                            </div>
+                                                                            <div
+                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                                                <span class="tb-fs-18">Upload</span>
+                                                                                <input id="upload-infographics"
+                                                                                    type="file" class="upload" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 mt-4">
+                                                                        <div class="tb-input-group d-flex p-3">
+                                                                            <div class="col-9">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="media-assets">Media
+                                                                                    Assets</label>
+                                                                                <input class="col-12 input" type="text"
+                                                                                    id="media-assets"
+                                                                                    placeholder="Upload Image / Videos" />
+                                                                            </div>
+                                                                            <div
+                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                                                <span class="tb-fs-18">Upload</span>
+                                                                                <input id="upload-media-assets"
+                                                                                    type="file" class="upload" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-4">
+                                                                        <div class="tb-input-group p-2">
+                                                                            <label class="col-12 input-label "
+                                                                                for="supporting-data">Supporting
+                                                                                Data</label>
+                                                                            <input class="col-12 input-field"
+                                                                                id="supporting-data"
+                                                                                name="supporting-data"
+                                                                                placeholder="Placeholder text" />
+                                                                        </div>
+                                                                        <p class="error-message">• Error Message</p>
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-4">
+                                                                        <div class="tb-input-group p-2">
+                                                                            <label class="col-12 input-label "
+                                                                                for="further-info">Further
+                                                                                info</label>
+                                                                            <input class="col-12 input-field"
+                                                                                id="further-info" name="further-info"
+                                                                                placeholder="Placeholder text" />
+                                                                        </div>
+                                                                        <p class="error-message">• Error Message</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2176,64 +2330,7 @@
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-attachments" role="tabpanel"
                                         aria-labelledby="pills-profile-tab">
-                                        <div class="accordion" id="accordion-arabic">
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-1">
-                                                    <button type="button" class="shadow-none accordion-button collapsed"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-1">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-1" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-2">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-2">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-2" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-3">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-3">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-3" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-4">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-4">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-4" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       .....
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-activities" role="tabpanel"
                                         aria-labelledby="pills-activities-tab">
@@ -2346,128 +2443,153 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-dual-content" role="tabpanel"
-                                        aria-labelledby="pills-profile-tab">
-                                        <div class="accordion" id="accordion-arabic">
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-1">
-                                                    <button type="button" class="shadow-none accordion-button collapsed"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-1">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-1" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
+                                        aria-labelledby="pills-profile-tab ">
+                                        <div class="row g-0 gy-3 mt-3 collapse-inner-bg">
+                                            <div class="col-md-12 border-bottom-gray-200 p-1">
+                                                <h4 class="tb-h4">Heading</h4>
+                                                <p class="regular-paragraph opacity-75">The Department of Health – Abu
+                                                    Dhabi Enters Into a Memorandum of
+                                                    Understanding (MOU) With a Prestigious American Healthcare Body</p>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-2">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-2">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-2" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
+                                            <div class="col-md-12 border-bottom-gray-200 p-1">
+                                                <h4 class="tb-h4">Subheading</h4>
+                                                <p class="regular-paragraph opacity-75">The cooperation seeks to set a
+                                                    solid framework and establish
+                                                    regulatory foundations to achieve unified quality healthcare
+                                                    outcomes in Abu Dhabi and
+                                                    globally
 
-
-                                                    </div>
-                                                </div>
+                                                    The MoU will focus on developing an integrated system that promotes
+                                                    innovation and boosts
+                                                    licensing, training, inspection and monitoring systems for
+                                                    healthcare providers
+                                                </p>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-3">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-3">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-3" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-12 border-bottom-gray-200 p-1">
+                                                <h4 class="tb-h4">Body</h4>
+                                                <p class="regular-paragraph opacity-75">Lorem ipsum dolor sit amet
+                                                    consectetur,
+                                                    adipisicing elit. Laboriosam, laborum.</p>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-arabic-4">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-arabic-4">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-arabic-4" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-12 border-bottom-gray-200 p-1">
+                                                <h4 class="tb-h4">Tags</h4>
+                                                <p class="regular-paragraph opacity-75">Lorem ipsum dolor sit amet
+                                                    consectetur,
+                                                    adipisicing elit. Laboriosam, laborum.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade shadow-none" id="pills-versions" role="tabpanel"
-                                        aria-labelledby="pills-contact-tab">
-                                        <div class="accordion" id="accordion-dual">
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-duel-1">
-                                                    <button type="button" class="shadow-none accordion-button collapsed"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-duel-1" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
+                                    <div class="tab-pane fade shadow-none" id="pills-versions">
+                                       
+                                     
+                                        <div class="row my-4">
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt="">
+                                                        <div class="">
+                                                        <p class="text-danger m-0 ms-3 p-0">Current</p>
+                                                        <p class="mb-0 ms-3 p-0 ">Request_2021.pdf</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-duel-2">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-2">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-duel-2" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt="">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-duel-3">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-3">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-duel-3" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt="">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item accordion-bottom-border">
-                                                <h2 class="accordion-header" id="heading-duel-4">
-                                                    <button type="button" class="shadow-none accordion-button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-4">
-                                                        Title
-                                                    </button>
-                                                </h2>
-                                                <div id="collapse-duel-4" class="accordion-collapse collapse show">
-                                                    <div class="collapse-inner-bg p-5">
-
-
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt="">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="pdf-editor d-flex p-3">
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt="">
+                                                        <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center">
+                                                        <p class="mb-0 ms-3 opacity-75">15 May 2020 9:00 pm</p>
+                                                    </div>
+                                                    <div class="col-2 d-flex align-items-center">
+                                                        <span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                            <p class="mb-0 tb-fw-900 tb-copyright">JL</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center justify-content-end">
+                                                        <img src="../../../../assets/images/Icons/undo.svg" alt="" class="me-3">
+                                                        <img src="../../../../assets/images/Icons/download.svg" alt="" class="ms-3">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                             <div class="col-6 vh-100 overflow-scroll">
                                 <div class="row">
@@ -2702,6 +2824,87 @@
                                         </div>
 
                                     </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl(en)" name="Deliverable-redio"
+                                                    value="HTML">
+                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl(en)" name="Deliverable-redio"
+                                                    value="HTML">
+                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3" type="radio" id="prl(en)" name="Deliverable-redio"
+                                                    value="HTML">
+                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                                <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">PT</p>
+                                            </span></div>
+                                    </div>
                                     <div class="d-flex justify-content-center">
                                         <img src="../../../assets/images/Icons/eye-slash.svg" alt="">
                                         <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
@@ -2909,6 +3112,127 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <h6 class="duel-content-heading pt-3 m-3 text-end">عنوان*</h6>
+                                    <p class="duel-content-dec p-0 m-3 text-end">نص العنصر النائبنص العنصر النائبنص
+                                        العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
+                                    <hr>
+                                    <h6 class="duel-content-heading pt-3 m-3 text-end">عنوان*</h6>
+                                    <p class="duel-content-dec p-0 m-3 text-end"> نصنص العنصر النائبنص العنصر النائبنص
+                                        العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                        النائبنص العنصر النائبنص العنصر النائب</p>
+                                    <hr>
+                                    <h6 class="duel-content-heading pt-3 m-3 text-end">عنوان*</h6>
+                                    <p class="duel-content-dec p-0 m-3 text-end"> نصنص العنصر النائبنص العنصر النائبنص
+                                        العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                        النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص
+                                        العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                        النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                        العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                    </p>
+                                    <hr>
+                                    <h6 class="duel-content-heading pt-3 m-3 text-end">عنوان*</h6>
+                                    <p class="duel-content-dec p-0 m-3 text-end"> نصنص , العنصرالعنصر</p>
+                                    <hr>
+                                </div>
+                                <div class="col-12 bg-white px-4 py-3  mt-3">
+                                    <div class="row mb-4">
+                                        <label class="input-label tb-fw-400" for="input2">Upload Media</label>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14">Use Attachment</span>
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14 mx-3">Upload from DAM</span>
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <span class="tb-fs-14 mx-3">Upload from device</span>
+                                                <img src="../../../assets/images/Icons/right.svg" alt="">
+                                                <input id="uploadBtn" type="file" class="upload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4 d-flex justify-content-center">
+                                        <p class="tb-gray-400 mb-0">
+                                            Document must be .mp4, .mov, .mkv format.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
+                                          <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
+                                          </div>
+                                          <div class="d-flex justify-content-between align-items-center">
+                                            <div class="p-2 col-1">
+                                              <p class="mb-0">75%</p>
+                                            </div>
+                                            <div class="py-2 col-9">
+                                              <div class="progress">
+                                                <div class="progress-bar w-75" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                            <div class="p-0 col-2 text-end">
+                                              <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="col-12 py-3">
+                                        <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
+                                          <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
+                                          </div>
+                                          <div class="d-flex justify-content-between align-items-center">
+                                            <div class="p-2 col-1">
+                                              <p class="mb-0">75%</p>
+                                            </div>
+                                            <div class="py-2 col-9">
+                                              <div class="progress">
+                                                <div class="progress-bar w-75" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </div>
+                                            <div class="p-0 col-2 text-end">
+                                              <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
+                                            <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                            <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                            <div class="">
+                                                <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                <img src="../../../assets/images/Icons/trash-red.svg" alt="">
+                                            </div>
+                                      </div>
+                                      <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
+                                            <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                            <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                            <div class="">
+                                                <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                <img src="../../../assets/images/Icons/trash-red.svg" alt="">
+                                            </div>
+                                      </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3037,49 +3361,53 @@
                                 <h6>DAM-FB-Carousel.mp4</h6>
                                 <div class="col-12 p-3">
                                     <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                                      <div class="col-12 ">
-                                        <h6>Upload CSV</h6>
-                                      </div>
-                                      <div class="d-flex justify-content-between ">
-                                        <div class="p-2 col-1">
-                                          <p>75%</p>
+                                        <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
                                         </div>
-                                        <div class="p-2 col-7">
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;"
-                                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                          </div>
+                                        <div class="d-flex justify-content-between ">
+                                            <div class="p-2 col-1">
+                                                <p>75%</p>
+                                            </div>
+                                            <div class="p-2 col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        aria-label="Example with label" style="width: 75%;"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-3">
+                                                <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                    type="button">Cancel</button>
+                                            </div>
                                         </div>
-                                        <div class="p-0 col-3">
-                                          <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                                        </div>
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                             <div class="progress-wrapper">
                                 <h6>DAM-FB-Carousel.mp4</h6>
                                 <div class="col-12 p-3">
                                     <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                                      <div class="col-12 ">
-                                        <h6>Upload CSV</h6>
-                                      </div>
-                                      <div class="d-flex justify-content-between ">
-                                        <div class="p-2 col-1">
-                                          <p>75%</p>
+                                        <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
                                         </div>
-                                        <div class="p-2 col-7">
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;"
-                                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                          </div>
+                                        <div class="d-flex justify-content-between ">
+                                            <div class="p-2 col-1">
+                                                <p>75%</p>
+                                            </div>
+                                            <div class="p-2 col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        aria-label="Example with label" style="width: 75%;"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-3">
+                                                <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                    type="button">Cancel</button>
+                                            </div>
                                         </div>
-                                        <div class="p-0 col-3">
-                                          <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                                        </div>
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3090,122 +3418,130 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op large-modal" id="requestInfo" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog main-modal modal-dialog-position">
-      <div class="modal-content inner-modal-content box-shadow-popup p-0">
-        <div class="modal-header align-items-start p-4">
-          <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-            Request more information</h5>
-          <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade modal-backdrop-op large-modal" id="requestInfo" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Request more information</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100">
+                        <div class="tb-input-group tb-input-group-internal p-2 ">
+                            <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
+                            <input class="col-12" id="" name="" placeholder="Placeholder text">
+                        </div>
+                        <div class="inner-wrapper">
+                            <h6>Upload Media</h6>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                        <div class="col-9 d-flex align-items-center">
+                                            <label class="col-12" for="prl-en">Use Attachment</label>
+                                            <input class="col-12 d-none" type="text" id="prl-en"
+                                                placeholder="Upload PRL (en) Attachments" />
+                                        </div>
+                                        <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                            <span class="tb-fs-18">Upload</span>
+                                            <input id="upload-prl-en" type="file" class="upload" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                        <div class="col-9 d-flex align-items-center">
+                                            <label class="col-12" for="prl-en">Use Attachment</label>
+                                            <input class="col-12 d-none" type="text" id="prl-en"
+                                                placeholder="Upload PRL (en) Attachments" />
+                                        </div>
+                                        <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                            <span class="tb-fs-18">Upload</span>
+                                            <input id="upload-prl-en" type="file" class="upload" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
+                                        <div class="col-9 d-flex align-items-center">
+                                            <label class="col-12" for="prl-en">Use Attachment</label>
+                                            <input class="col-12 d-none" type="text" id="prl-en"
+                                                placeholder="Upload PRL (en) Attachments" />
+                                        </div>
+                                        <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                            <span class="tb-fs-18">Upload</span>
+                                            <input id="upload-prl-en" type="file" class="upload" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="inner-desc">Document must be .mp4, .mov, .mkv format.</p>
+                            <div class="progress-wrapper">
+                                <h6>DAM-FB-Carousel.mp4</h6>
+                                <div class="col-12 p-3">
+                                    <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
+                                        <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between ">
+                                            <div class="p-2 col-1">
+                                                <p>75%</p>
+                                            </div>
+                                            <div class="p-2 col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        aria-label="Example with label" style="width: 75%;"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-3">
+                                                <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                    type="button">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-wrapper">
+                                <h6>DAM-FB-Carousel.mp4</h6>
+                                <div class="col-12 p-3">
+                                    <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
+                                        <div class="col-12 ">
+                                            <h6>Upload CSV</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between ">
+                                            <div class="p-2 col-1">
+                                                <p>75%</p>
+                                            </div>
+                                            <div class="p-2 col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        aria-label="Example with label" style="width: 75%;"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 col-3">
+                                                <button class="btn btn-md  tb-rounded bg-color-gray"
+                                                    type="button">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end my-4 me-3 ">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Request</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="p-4 side-modal-wrap h-100">
-          <div class="tb-input-group tb-input-group-internal p-2 ">
-            <label class="col-12 input-label" for="dataList">Notes<sup>*</sup></label>
-            <input class="col-12" id="" name="" placeholder="Placeholder text">
-          </div>
-          <div class="inner-wrapper">
-            <h6>Upload Media</h6>
-            <div class="row">
-              <div class="col-12">
-                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                  <div class="col-9 d-flex align-items-center">
-                    <label class="col-12" for="prl-en">Use Attachment</label>
-                    <input class="col-12 d-none" type="text" id="prl-en" placeholder="Upload PRL (en) Attachments" />
-                  </div>
-                  <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                    <span class="tb-fs-18">Upload</span>
-                    <input id="upload-prl-en" type="file" class="upload" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                  <div class="col-9 d-flex align-items-center">
-                    <label class="col-12" for="prl-en">Use Attachment</label>
-                    <input class="col-12 d-none" type="text" id="prl-en" placeholder="Upload PRL (en) Attachments" />
-                  </div>
-                  <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                    <span class="tb-fs-18">Upload</span>
-                    <input id="upload-prl-en" type="file" class="upload" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                  <div class="col-9 d-flex align-items-center">
-                    <label class="col-12" for="prl-en">Use Attachment</label>
-                    <input class="col-12 d-none" type="text" id="prl-en" placeholder="Upload PRL (en) Attachments" />
-                  </div>
-                  <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                    <span class="tb-fs-18">Upload</span>
-                    <input id="upload-prl-en" type="file" class="upload" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="inner-desc">Document must be .mp4, .mov, .mkv format.</p>
-            <div class="progress-wrapper">
-              <h6>DAM-FB-Carousel.mp4</h6>
-              <div class="col-12 p-3">
-                <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                  <div class="col-12 ">
-                    <h6>Upload CSV</h6>
-                  </div>
-                  <div class="d-flex justify-content-between ">
-                    <div class="p-2 col-1">
-                      <p>75%</p>
-                    </div>
-                    <div class="p-2 col-7">
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;"
-                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="p-0 col-3">
-                      <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="progress-wrapper">
-              <h6>DAM-FB-Carousel.mp4</h6>
-              <div class="col-12 p-3">
-                <div class=" col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                  <div class="col-12 ">
-                    <h6>Upload CSV</h6>
-                  </div>
-                  <div class="d-flex justify-content-between ">
-                    <div class="p-2 col-1">
-                      <p>75%</p>
-                    </div>
-                    <div class="p-2 col-7">
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;"
-                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                    <div class="p-0 col-3">
-                      <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-end my-4 me-3 ">
-          <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
-          <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Request</button>
-        </div>
-      </div>
-    </div>
-  </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

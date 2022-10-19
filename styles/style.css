@@ -1848,6 +1848,7 @@ input[type="radio"] {
 }
 input[type="checkbox"] {
   border: 1px solid var(--grayshade-400) !important;
+  background-color: transparent !important;
 }
 input[type="checkbox"]:checked {
   background-color: red !important;

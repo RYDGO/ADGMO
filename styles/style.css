@@ -463,7 +463,7 @@ a:hover {
 }
 
 .text-gray-200 {
-  color: var(--grayshade-200);
+  color: var(--grayshade-200) !important;
 }
 
 .text-gray-300 {

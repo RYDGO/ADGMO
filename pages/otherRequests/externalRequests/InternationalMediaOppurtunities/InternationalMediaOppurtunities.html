@@ -560,41 +560,7 @@
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
-                            <!-- <div class="overview-boxes">
-                <div class="box four">
-                  <div class="right-side">
-                    <div class="box-topic">Under Review</div>
-                    <div class="number">5,732</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning" class="cart" />
-                </div>
-                <div class="box five-light-yellow">
-                  <div class="right-side ">
-                    <div class="box-topic">In Progress
-                    </div>
-                    <div class="number">546</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-yellow.svg" alt="icon-warning" class="cart" />
-                </div>
-                <div class="box two">
-                  <div class="right-side ">
-                    <div class="box-topic">Awaiting Feedback
-                    </div>
-                    <div class="number">90</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning" class="cart">
-                </div>
-                <div class="box first">
-                  <div class="right-side ">
-                    <div class="box-topic">Delayed
-                    </div>
-                    <div class="number">90</div>
-                  </div>
-                  <img src="../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning" class="cart"
-                    width="50" height="50">
-                </div>
-              </div>
-              <!-- table -->
+                            <!-- table -->
                             <div class="row">
                                 <!-- column -->
                                 <div class="col-12">
@@ -603,22 +569,23 @@
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Requests - In Progress
-                                                    </h4>
+                                                    <h3 class="card-title pt-3 tb-bold input-label fs-3">Dpt. Requests
+                                                    </h3>
                                                 </div>
                                                 <div class="ms-auto d-flex justify-content-between align-items-center">
                                                     <div class="d-flex justify-content-center">
-                                                        <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                                        <span class="rounded-circle pad-8-12 border-gray-500 me-3">
                                                             <i class="fa-solid fa-magnifying-glass "></i>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="vartical-line me-4"></div>
                                                 <div class="dl">
-                                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#createDeliverablesModal-2"><i
-                                                            class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                                                    <button
+                                                        class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text"
+                                                        type="button"><img
+                                                            src="../../../../assets/images/Icons/Chart_fill.svg"
+                                                            class="me-1"> View
                                                         All</button>
                                                 </div>
                                             </div>
@@ -628,12 +595,14 @@
                                             <table id="exampletable" class="table v-middle">
                                                 <thead>
                                                     <tr class="gray-500 text-white text-left">
-                                                        <th class="fw-light th-pd">ID</th>
-                                                        <th class="fw-light th-pd">Type</th>
-                                                        <th class="fw-light th-pd">Creation Date</th>
-                                                        <th class="fw-light th-pd">Due Date</th>
-                                                        <th class="fw-light th-pd">Sector</th>
-                                                        <th class="fw-light th-pd">Status</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">ID</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Type</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Due Date</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Sector</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Assignee</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Status</th>
+                                                        <th class="fs-6 tb-fw-800 th-pd">Time left
+                                                        </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="text-left fw-light ">
@@ -641,31 +610,136 @@
                                                         <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
-                                                                <h6
-                                                                    class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                                    16
-                                                                </h6>
-                                                                <h6 class="fs-6 fw-light">16312</h6>
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                                             </div>
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
                                                         </td>
-                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                                                            16/12/22</td>
                                                         <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                             16/12/22</td>
                                                         <td
                                                             class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
                                                             Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">EB</p>
+                                                            </span>
+                                                            Elias.B
+                                                        </td>
                                                         <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op rounded">
+                                                            <span class="p-2 status-color-orange-op">
                                                                 <i
-                                                                    class="tb-gray-400 fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
-                                                                <h4 class="tb-h5 mb-0 tb-gray-400 d-inline-block">
-                                                                    CLOSED</h4>
+                                                                    class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                                    NOT STARTED</h4>
                                                             </span>
                                                         </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center">
 
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
+                                                            </span>
+
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-gray-op">
+                                                                <i
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
+                                                            </span>
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center">
+
+                                                                <div
+                                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                                    <h6 class="pt-2">
+                                                                        L1
+                                                                    </h6>
+                                                                </div>
+                                                                <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                                            Media <br> Consultations
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            16/12/22</td>
+                                                        <td
+                                                            class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                            Energy</td>
+                                                        <td
+                                                            class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                                            <span
+                                                                class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                                                <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
+                                                            </span>
+
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
+                                                            <span class="p-2 status-color-gray-op">
+                                                                <i
+                                                                    class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                                                <h4 class="tb-h5 mb-0 text-black d-inline-block">
+                                                                    NOT STARTED</h4>
+                                                            </span>
+                                                        </td>
+                                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
+                                                                src="../../../../assets/images/Icons/timer-icon.svg"
+                                                                alt="">
+                                                            2 days
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -673,7 +747,16 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- table-ends here -- -->
                         </div>
+                        <div class="tab-pane fade tab-remove-bg" id="pills-contact" role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
+                        jhh
+                    </div>
+                    <div class="tab-pane fade tab-remove-bg" id="pills-contact-2" role="tabpanel"
+                    aria-labelledby="pills-contact-tab">
+                    jj
+                    </div>
                     </div>
                 </div>
 

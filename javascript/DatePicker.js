@@ -19,10 +19,7 @@ $("#datepicker-input").datepicker({
 
 
 $("#datepicker-div").datepicker({
-  // altField: "#datepicker-input",
-  // altFormat: "yy-mm-dd",
-  // hideIfNoPrevNext = true,
-  showButtonPanel: true,
+  monthNamesShort: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
   dateFormat: "yy-mm-dd",
   changeMonth: true,
   changeYear: true,
@@ -30,9 +27,7 @@ $("#datepicker-div").datepicker({
   dayNamesMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
   defaultDate: +1,
   buttonImageOnly: true,
-  currentText: "Set",
   firstDay: 1,
-  // defaultDate: +1,
 });
 
 $("#datepicker-div").on("change", function () {

@@ -2386,3 +2386,13 @@ input:checked + .slider:before {
 }
 
 
+/* Rich Text-Editor */
+.tox{
+  height: 200px !important;
+}
+.tox .tox-editor-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column-reverse !important;
+  overflow: hidden;
+}

@@ -3304,30 +3304,32 @@
                             aria-label="Close"></button>
                     </div>
                     <div
-                        class="p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
+                        class="modal-body p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
                         <div>
                             <div class="tb-input-group p-2 mt-3 border">
-                                <label class="col-12 input-label" for="input">Priority<sup>*</sup></label>
-                                <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                    name="browsers" placeholder="placeholder..">
-                                <i class="fa fa-solid fa-angle-down"></i>
-                                <datalist id="browsers" role="listbox">
-                                    <option value="Brookyln Simmons">Brookyln Simmons</option>
-                                    <option value="Jacob Jones">Jacob Jones</option>
-                                    <option value="Guy Hawkins">Guy Hawkins</option>
-                                </datalist>
+                                <form action="">
+                                    <label class="col-12 input-label" for="input">Priority<sup>*</sup></label>
+                                    <input class="col-11 input" autocomplete="off" role="combobox" id="input"
+                                        name="browsers" placeholder="placeholder..">
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                    <datalist id="browsers" role="listbox">
+                                        <option value="Brookyln Simmons">Brookyln Simmons</option>
+                                        <option value="Jacob Jones">Jacob Jones</option>
+                                        <option value="Guy Hawkins">Guy Hawkins</option>
+                                    </datalist>
+                                </form>
                             </div>
                             <div class="tb-input-group-1 tb-input-group-internal p-2">
                                 <label class="col-12 input-label priority-Modal-label-1" for="dataList">Due
                                     Date*<sup>*</sup></label>
-                                <input class="col-12 pla-2" id="" name="" placeholder="22/02/2022">
+                                <span class="col-12 pla-2 pt-2 opacity-50">22/02/2022</span>
                             </div>
                         </div>
                         <div class="col-12 mt-3">
                             <div class="border-0 info-outer tb-input-group">
                                 <div class="d-flex">
                                     <div>
-                                        <img class="info-icon" src="../assets/images/info-icon1.svg" alt="">
+                                        <img class="info-icon" src="../../../assets/images/info-icon1.svg" alt="">
                                     </div>
                                     <p class="px-3 m-0">
                                         You are about accept this request, please note the due date is automatically
@@ -3338,7 +3340,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-end my-4 me-3 ">
+                    <div class="modal-footer text-end my-4 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
                             type="button">Cancel</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
@@ -4387,31 +4389,30 @@
         <div class="modal-body collapse-inner-bg">
           <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
             <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-              <img src="../../../assets/images/Profile image (1).svg" alt="" class="img-100 selected-dropdown-image">
+              <img src="../../../assets/images/person.jpg" alt="" class="img-100 selected-dropdown-image">
             </div>
             <div class="w-100">
               <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
               <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
                 placeholder="placeholder..">
               <i class="fa fa-solid fa-angle-down"></i>
-
               <ul class="col-12 input-dropdown-list list-group rounded-0">
                 <li class="list-group-item d-flex align-items-center " value="Avashesh">
                   <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../../../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg" alt="Brookyln Simmons"
+                    <img src="../../../assets/images/person.jpg" alt="Brookyln Simmons"
                       class="img-100">
                   </div>
                   <span class="ms-3">Brookyln Simmons </span>
                 </li>
                 <li class="list-group-item d-flex align-items-center " value="2">
                   <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../../../assets/images/person1.jpg" alt="Jacob Jones" class="img-100">
+                    <img src="../../../assets/images/person.jpg" alt="Jacob Jones" class="img-100">
                   </div>
                   <span class="ms-3">Jacob Jones</span>
                 </li>
                 <li class="list-group-item d-flex align-items-center " value="3">
                   <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt="Guy Hawkins"
+                    <img src="../../../assets/images/person.jpg" alt="Guy Hawkins"
                       class="img-100">
                   </div>
                   <span class="ms-3">Guy Hawkins</span>
@@ -4441,6 +4442,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="../../../javascript/charts.js"></script>
+    <script src="../../../javascript/inputs&dropdowns.js"></script>
+    <script src="../../../javascript/script.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>

@@ -2322,7 +2322,7 @@ input:checked + .slider:before {
 /* switch buttons yes no style  ends */
 /* modal xl */
 .modal-xl {
-  max-width: 96%;
+  max-width: 96% !important;
 }
 /* site modal tab */
 .site-modal-tab {

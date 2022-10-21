@@ -1328,8 +1328,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="text-end mt-3">
-                                                <button class="border-0 bg-white" data-bs-target="#filterModal"
-                                                    data-bs-toggle="modal"><img
+                                                <button class="border-0 bg-white"><img
                                                         src="../../../../assets/images/Icons/plus-icon.svg"
                                                         alt=""></button>
                                             </div>
@@ -1474,8 +1473,9 @@
                     <div class="view-all-model-btn-wrapper text-end p-3">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Request
                             Information</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-dismiss="modal"
-                            data-bs-toggle="modal" data-bs-target="#">Send For Approval</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button"
+                        data-bs-target="#filterModal"
+                        data-bs-toggle="modal">Send For Approval</button>
                     </div>
                 </div>
             </div>
@@ -1484,8 +1484,8 @@
         <!-- filter modal  -->
         <div class="modal fade background-dim" id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-scrollable w-75">
-                <div class="modal-content box-shadow-popup h-100">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position">
+                <div class="modal-content box-shadow-popup vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
                             Select Deliverables</h5>

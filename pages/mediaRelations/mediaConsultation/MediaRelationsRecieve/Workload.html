@@ -2804,7 +2804,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                     <div class="row">
                         <div class="col-12 d-flex align-items-center mb-4">
                             <div class="col-8 d-flex">
-                                <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 7 Deliverable(s)</p>
+                                <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 1 Deliverable(s)</p>
                                 <img src="../../../../assets/images/Icons/info-red.svg" alt="">
                             </div>
                             <div class="col-4">
@@ -2969,7 +2969,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                     
                         
                              <button type="button"
-                                 class="btn-md tb-btn-primary tb-rounded p-4 border-0">back</button>
+                                 class="btn-md tb-btn-secondary tb-rounded p-4 border-0">back</button>
                              <button type="button"
                                  class="btn-md tb-btn-primary tb-rounded p-4 border-0">Send</button>
                         
@@ -3073,6 +3073,15 @@ aria-labelledby="exampleModalLabel" role="dialog">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#editor',
+            skin: 'bootstrap',
+            plugins: 'lists, link, image, media',
+            toolbar: 'fontsize bold italic underline strikethrough alignleft aligncentre alignright alignjustify bullist numlist backcolor forecolor save',
+            menubar: false
+        });
+    </script>
 </body>
 
 </html>

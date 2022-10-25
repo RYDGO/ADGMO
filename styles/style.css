@@ -767,6 +767,9 @@ a:hover {
 
 /* ---- GRAY BORDER COLORS ---- */
 
+.border-red {
+    border: 1px solid var(--base-color) !important;
+}
 .border-gray-100 {
     border: 1px solid var(--grayshade-100);
 }

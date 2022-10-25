@@ -168,4 +168,16 @@ $("input[name$='due_date']").click(function () {
 });
 
 
+$(".radio").on('change', function () {
+  $('.card-check-border').each(function () {
+    $(this).removeClass('border-red')
+  })
+
+  if ($(this).is(":checked")) {
+    $(this).parent().parent().parent().addClass('border-red')
+  }
+
+})
+
+
 

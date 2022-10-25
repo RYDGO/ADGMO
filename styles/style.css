@@ -1060,6 +1060,12 @@ height: 90vh;
 
 /* -------- Inputs and Dropdowns-starts here --------- */
 
+.radio:checked ~ .labelss {
+
+  border: 10px solid red !important;
+}
+
+
 input {
   outline: none !important;
   border: none !important;

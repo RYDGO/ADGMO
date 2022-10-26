@@ -65,74 +65,66 @@
 .input-modal-box{
     z-index: 101;
 }
-.folder-tree-wrapper {
-    background-color: #fff;
-    width: 220px;
-    min-height: 260px;
-    padding: 20px;
-    margin: 35px auto;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.11);
-  }
-  .folder-tree {
-    list-style: none;
-    cursor: pointer;
-    padding-left: 20px;
-  }
-  .folder-tree li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    transition: all 0.4s ease;
-    position: relative;
-  }
-  .folder-tree li:hover {
-  }
-  .folder-tree li i {
-    color: rgb(242, 176, 53);
-  }
-  .folder-tree li ul {
-    padding-left: 10px;
-    padding-top: 8px;
-  }
-  .folder-tree ul {
-    display: none;
-    position: relative;
-  }
-  .folder-tree ul:before {
-    position: absolute;
-    content: "";
-    left: -10px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: transparent;
-    border-left: dashed 1px #c2c2c2;
-    border-bottom: dashed 1px #c2c2c2;
-  }
-  .folder-tree li ul li {
-    display: block;
-    margin-bottom: 8px;
-  }
-  .folder-tree .arrow {
-    position: absolute;
-    top: 4px;
-    left: -14px;
-    width: 8px;
-    height: 8px;
-    transition: all 0.4s ease;
-    transform: rotate(-90deg);
-  }
-  .folder-tree .arrow i {
-    color: #595959;
-    transition: all 0.4s ease;
-  }
-  .folder-tree .arrow:hover i {
-    color: #292929;
-  }
-  .folder-tree li.expanded > ul {
-    display: block;
-  }
-  .folder-tree li.expanded > .arrow {
-    transform: rotate(0deg);
-  }
-  
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color:#000;
+    font-weight:700;
+    position:relative
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background:#fff !important;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#000 !important;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#000 !important;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}

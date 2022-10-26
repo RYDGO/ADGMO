@@ -298,268 +298,54 @@
             <!--sidebar ends here -->
         </nav>
         <section class="main-section">
-            <div class="py-2 pt-4  d-flex align-items-center justify-content-between">
-                <div class="col-2">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <a href="#" class="text-decoration-none text-dark">Back</a>
-                </div>
-                <div class="d-flex">
-                    <div>
-                        <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
-                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+            <div class=" d-flex position-relative my-4 align-items-center">
+                <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
+                <h1 class="tb-font-bold fs-1 m-0 p-0">Asset Library</h1>
+              </div>
+                <div class="row align-items-center py-3">
+                <form class="col-6 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white w-100">
+                      <button type="button" class="btn btn-light border-0 bg-transparent"  data-bs-whatever="@mdo"><img
+                          src="../../assets/images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
+                          
+                      <input class="bg-transparent input-group w-100 fs-4" type="text" placeholder="Search by name or tag " name="search">
                     </div>
-                    <div>
-                        <a href="#" class="text-base-black text-decoration-none">Requests</a>
-                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    <div class="d-flex align-items-center ms-3">
+                        <div class="form-floating gray-800 d-flex align-items-center rounded-4 px-3 py-3">
+                            <img src="../../assets/images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
+                          <select class="tb-input-group gray-800 border-0 fs-5 rounded-4 ps-1 selectBoxfilter">
+                            <option selected>Filters</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                        <a href="#" class="text-base-black text-decoration-none">Attachment</a>
+                  </form>
+                <form class="col-6 py-1 align-items-center d-flex justify-content-end">
+                  <div class="d-flex">
+                    <div class=" d-flex align-items-center">
+                      <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
+                        <li class="" role="presentation">
+                          <button class="nav-link active btn btn-secondary text-black me-2 fs-4" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><img src="../../assets/images/Icons/list-icon.svg" alt="list-icon"
+                            class="me-3" >list</button>
+                        </li>
+                        <li class="" role="presentation">
+                          <button class="nav-link btn btn-secondary text-black fs-4" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false"><img src="../../assets/images/Icons/grid-icon.svg" alt="grid-icon"
+                              class="me-3">Grid</button>
+                        </li>
+                      </ul>
                     </div>
-                </div>
-            </div>
-            <div class=" d-flex justify-content-between position-relative my-4 align-items-center">
-                <h1 class="tb-h1 col-6">Asset Library</h1>
-                <form class="col-6">
-                    <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white">
-
-                        <button type="button" class="btn btn-light border-0 bg-transparent" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal-attachment-pdf" data-bs-whatever="@mdo"><img
-                                src="../../../assets/images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
-
-                        <div class="modal modal-lg fade" id="exampleModal-attachment-pdf" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog me-5">
-                                <div class="modal-content tb-bg-body input-modal-box">
-                                    <div class="modal-body py-0">
-                                        <div class="row mb-4 pt-3">
-                                            <div class="col-5 d-flex align-items-start pe-0">
-                                                <img src="../../../assets/images/Icons/pdf-outline.svg" alt=""
-                                                    width="40" class="me-3">
-                                                <div class="">
-                                                    <p class="mb-0 text-gray-500">News Subtask for COVID</p>
-                                                    <p class="mb-0 text-gray-300">18 Aug</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 ps-0">
-                                                <p class="mb-0 text-black">News Subtask for COVID</p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-5 d-flex align-items-start pe-0">
-                                                <img src="../../../assets/images/Icons/pdf-outline.svg" alt=""
-                                                    width="40" class="me-3">
-                                                <div class="">
-                                                    <p class="mb-0 text-gray-500">News Subtask for COVID</p>
-                                                    <p class="mb-0 text-gray-300">18 Aug</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 ps-0">
-                                                <p class="mb-0 text-black">News Subtask for COVID</p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-5 d-flex align-items-start pe-0">
-                                                <img src="../../../assets/images/Icons/pdf-outline.svg" alt=""
-                                                    width="40" class="me-3">
-                                                <div class="">
-                                                    <p class="mb-0 text-gray-500">News Subtask for COVID</p>
-                                                    <p class="mb-0 text-gray-300">18 Aug</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 ps-0">
-                                                <p class="mb-0 text-black">News Subtask for COVID</p>
-                                            </div>
-                                        </div>
-                                        <div class="row bg-white py-3 ">
-                                            <div class="col-5 d-flex align-items-start pe-0">
-                                                <img src="../../../assets/images/Icons/pdf-outline.svg" alt=""
-                                                    width="40" class="me-3">
-                                                <div class="">
-                                                    <p class="mb-0 text-gray-500">News Subtask for COVID</p>
-                                                    <p class="mb-0 text-gray-300">18 Aug</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 ps-0">
-                                                <p class="mb-0 text-black">News Subtask for COVID</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <input class="bg-transparent input-group w-100 fs-5" type="text" placeholder="Requests"
-                            name="search">
-                        <button type="button" class="btn btn-light bg-white border-0" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal-damn" data-bs-whatever="@mdo"><img
-                                src="../../../assets/images/Icons/sliders-horizontal.svg" alt=""></button>
-                        <div class="modal fade" id="exampleModal-damn" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog me-5">
-                                <div class="modal-content tb-bg-body input-modal-box">
-                                    <div class="modal-header">
-                                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="sector" class="font-weight-500 mb-3">Sector</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="sector" name="sector">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist role="listbox">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </datalist>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="name" class="font-weight-500 mb-3">Name</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-12" id="name" name="name">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="entity" class="font-weight-500 mb-3">Entity </label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="entity" name="entity">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist role="listbox">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </datalist>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="deliverables"
-                                                    class="font-weight-500 mb-3">Deliverables</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="deliverables" name="deliverables">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist role="listbox">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </datalist>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="request-type" class="font-weight-500 mb-3">Request type
-                                                </label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="request-type" name="request-type">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist role="listbox">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </datalist>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="asset-published-date" class="font-weight-500 mb-3">Asset
-                                                    published date</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input type="date" class="col-12" name="asset-published-date"
-                                                        id="asset-published-date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="asset-type" class="font-weight-500 mb-3">Asset type</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="asset-type" name="asset-type">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist role="listbox">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </datalist>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="tag" class="font-weight-500 mb-3">Tag</label>
-                                                <div class="tb-input-group-damn-popup p-2">
-                                                    <input class="col-12" id="tag" name="tag">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class=" d-flex justify-content-end my-2 align-items-center ">
-                <form class="col-8 py-1 align-items-center d-flex justify-content-end">
-                    <div class="d-flex">
-                        <div class=" d-flex align-items-center">
-                            <h6 class="fw-light mx-2 m-0 p-0">View:</h6>
-                            <div class="form-floating gray-800">
-                                <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
-                                    <option selected>5</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class=" d-flex align-items-center">
-                            <h6 class="fw-light mx-2 m-0 p-0">Filter by:</h6>
-                            <div class="form-floating gray-800 ">
-                                <select class="tb-input-group ps-2 pe-5 py-1 gray-800 border-0" id="floatingSelectGrid">
-                                    <option selected>All</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="vartical-line mx-3"></div>
-                        <div class=" d-flex align-items-center">
-                            <ul class="nav nav-pills p-1 gray-800" id="pills-tab" role="tablist">
-                                <li class="" role="presentation">
-                                    <button class="nav-link  btn btn-secondary text-black" id="pills-home-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                                        aria-controls="pills-home" aria-selected="true"><img
-                                            src="../../../assets/images/Icons/list-icon.svg" alt="list-icon"
-                                            class="me-2">list</button>
-                                </li>
-                                <li class="" role="presentation">
-                                    <button class="nav-link active btn btn-secondary text-black" id="pills-profile-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false"><img
-                                            src="../../../assets/images/Icons/grid-icon.svg" alt="grid-icon"
-                                            class="me-2">Grid</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class=" d-flex align-items-center">
-                            <div class="py-2 px-3 mx-1 tb-rounded tb-btn-primary text-white"><img
-                                    src="../../../assets/images/Icons/Chart-icon.svg" alt="grid-icon"
-                                    class="me-2">Upload</div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                  </div>
+                </form>        
+              </div>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">

@@ -2546,3 +2546,9 @@ input:checked+.slider:before {
     flex-direction: column-reverse !important;
     overflow: hidden;
 }
+
+
+.arabic-accordian button::after{
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}

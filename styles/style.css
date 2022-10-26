@@ -126,6 +126,7 @@
     --para-disabled: #808191;
     --grayshade-700: #eaeef3;
     --grayshade-800: #f4f4f4;
+    --grayshade-900:#F8F8F8;
     /*----- TYPOGRAPHY ----- */
     --text-copyright: #ea3f47;
     --text-base-black: #393939;
@@ -746,6 +747,9 @@ a:hover {
 
 .gray-600 {
     background-color: var(--grayshade-600);
+}
+.gray-900 {
+    background-color: var(--grayshade-900);
 }
 
 .gray-100-hover:hover {

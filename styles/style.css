@@ -192,6 +192,18 @@ a:hover {
     width: 0em;
 }
 
+.tb-font-bold{
+    font-family: var(--font-graphic-bold);
+}
+.tb-font-semibold{
+    font-family: var(--font-graphic-semi-bold);
+}
+.tb-font-regular{
+    font-family: var(--font-graphic-medium);
+}
+.tb-font-light{
+    font-family: var(--font-graphic-light);
+}
 .input-label {
     font-family: var(--font-graphic-bold);
     font-size: 12px;
@@ -482,7 +494,10 @@ a:hover {
     width: 300px !important;
     height: 101px !important;
 }
-
+.custom-btn{
+    width: 170px;
+    height: 48px;
+}
 .vh-90 {
     height: 90vh;
 }
@@ -2545,4 +2560,20 @@ input:checked+.slider:before {
     flex: 1 1 auto;
     flex-direction: column-reverse !important;
     overflow: hidden;
+}
+.selectBoxfilter{
+    appearance:none !important;
+    -webkit-appearance: none !important;
+}
+.selectBoxfilter:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+.selectBoxfilter:focus {
+    outline: none !important;
+    border: none !important;
+}
+.selectBoxfilter:hover{
+    outline: none !important;
+    border: none !important;
 }

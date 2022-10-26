@@ -10,36 +10,35 @@ $(document).ready(function () {
     }
   });
 
-//--------- Input-validation -------
-  $('.input-field').focus(function () {
-    $(this).parent().addClass('border-dark')
-    $(this).on('input', () => {
+  //--------- Input-validation -------
+  $(".input-field").focus(function () {
+    $(this).parent().addClass("border-dark");
+    $(this).on("input", () => {
       if (!this.value) {
-
-        $(this).parent().removeClass('border-dark')
-        $(this).parent().addClass('border-danger')
-        $(this).parent().next().show()
-      } else {      
-        $(this).parent().removeClass('border-danger')
-        $(this).parent().next().hide()
+        $(this).parent().removeClass("border-dark");
+        $(this).parent().addClass("border-danger");
+        $(this).parent().next().show();
+      } else {
+        $(this).parent().removeClass("border-danger");
+        $(this).parent().next().hide();
       }
-    })
+    });
   });
-  $('.input-field').on('blur', function () {
-    let input = this
+  $(".input-field").on("blur", function () {
+    let input = this;
     setTimeout(() => {
-      let error = $(this).parent().next()
+      let error = $(this).parent().next();
       if (!input.value) {
-        $(error).show()
-        $(this).parent().removeClass('border-dark')
-        $(this).parent().addClass('border-danger')
+        $(error).show();
+        $(this).parent().removeClass("border-dark");
+        $(this).parent().addClass("border-danger");
       } else if (input.value) {
-        $(error).hide()
-        $(this).parent().removeClass('border-danger')
-        $(this).parent().removeClass('border-dark')
+        $(error).hide();
+        $(this).parent().removeClass("border-danger");
+        $(this).parent().removeClass("border-dark");
       }
-    }, 300)
-  })
+    }, 300);
+  });
   //--------- Input-Search-Dropdown (no-image) -------
   var selectedin = "";
   $(".input").focus(function () {
@@ -91,7 +90,6 @@ $(document).ready(function () {
       }
     });
   });
-  
 
   //--------- Input-Search-Dropdown (image) -------
   var selectedin = "";
@@ -108,8 +106,11 @@ $(document).ready(function () {
       .each(function () {
         $(this).click(() => {
           input.value = $(this).find("img")[0].alt;
-          console.log( $(this).parent().parent().find(".selected-dropdown-image"));
-          $(this).parent().parent().find(".selected-dropdown-image").src = $(this).find("img")[0].src;
+          console.log(
+            $(this).parent().parent().parent().find(".selected-dropdown-image")[0].src
+          );
+          $(this).parent().parent().parent().find(".selected-dropdown-image")[0].src=
+            $(this).find("img")[0].src;
           $(input).css("border-radius", "5px");
           $(inputdropdownlist).css("display", "none");
           $(this).parent().removeClass("border-danger");
@@ -117,6 +118,7 @@ $(document).ready(function () {
         });
       });
   });
+
   $(".input").on("blur", function () {
     let input = this;
     input.value = selectedin;
@@ -147,14 +149,32 @@ $(document).ready(function () {
     });
   });
 
-//   $(".dropdown-input").focus(function () {
-//     $(".input-dropdown-list").show(1000);
-//   });
-//   $(".dropdown-input").blur(function () {
-//     $(".input-dropdown-list").hide(1000);
-//   });
-
+  //   $(".dropdown-input").focus(function () {
+  //     $(".input-dropdown-list").show(1000);
+  //   });
+  //   $(".dropdown-input").blur(function () {
+  //     $(".input-dropdown-list").hide(1000);
+  //   });
 });
 
 //============== Javascript ============
 //-------------- Sidebar-toggle --------
+
+$("#datepicker-input").datepicker({
+  // altField: "#datepicker-input",
+  // altFormat: "yy-mm-dd",
+  showButtonPanel: true,
+  dateFormat: "yy-mm-dd",
+  changeMonth: true,
+  changeYear: true,
+  yearRange: "c-100:c+10",
+  dayNamesMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+  defaultDate: +1,
+  buttonImageOnly: true,
+  currentText: "Set",
+  firstDay: 1,
+  buttonImage:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAABGUlEQVQ4jc2UP06EQBjFfyCN3ZR2yxHwBGBCYUIhN1hqGrWj03KsiM3Y7p7AI8CeQI/ATbBgiE+gMlvsS8jM+97jy5s/mQCFszFQAQN1c2AJZzMgA3rqpgcYx5FQDAb4Ah6AFmdfNxp0QAp0OJvMUii2BDDUzS3w7s2KOcGd5+UsRDhbAo+AWfyU4GwnPAYG4XucTYOPt1PkG2SsYTbq2iT2X3ZFkVeeTChyA9wDN5uNi/x62TzaMD5t1DTdy7rsbPfnJNan0i24ejOcHUPOgLM0CSTuyY+pzAH2wFG46jugupw9mZczSORl/BZ4Fq56ArTzPYn5vUA6h/XNVX03DZe0J59Maxsk7iCeBPgWrroB4sA/LiX/R/8DOHhi5y8Apx4AAAAASUVORK5CYII=",
+  buttonText: "Pick Date",
+  showOn: "button",
+});

@@ -1,12 +1,1811 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Assets</title>
+  <!--======== CSS ======== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <!--===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--===== font-awesome CSS ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/assetsLibrary.css">
 </head>
+
 <body>
-    
+  <div class="container-fluid p-0 m-0">
+    <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
+          <div class="col-3 navbar-brand" href="#">
+            <div class="d-flex justify-content-evenly align-items-center mx-2">
+              <div class="userImg-container mx-2">
+                <img src="../../../assets/images/user.png" alt="user profile" class="img-responsive">
+              </div>
+              <div class="me-4">
+                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                  Dhabi
+                </h6>
+                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+              </div>
+              <div class="vartical-line"></div>
+            </div>
+          </div>
+          <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="d-flex justify-content-center me-3">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-center me-3">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-regular fa-bell"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <a href="#" rel="noopener noreferrer">
+              <div class="img-containerbox">
+                <img src="../../assets/images/Logos/HorizontalLogos/LogoRedFilled.png" alt="logo" class="img-responsive" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--navbar ends here -->
+
+    <nav class="sidebar " id="sidebar">
+      <header>
+        <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links flex-center flex-column align-items-start">
+            <li class="nav-link sidebarTabsToggle">
+              <a href="#" class="flex-center-align mb-2">
+                <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                <span class="text-dark nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center">
+                  <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Workload</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center">
+                  <img src="../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Schedule</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Asset Library</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Reporting</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Our Standards</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+              <a href="../pages/CreateRequest.html" class="hover-remove align-self-center">
+                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                  <span>Request</span></button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebar ends here -->
+    </nav>
+    <section class="main-section">
+      <div class=" d-flex position-relative my-4 align-items-center">
+        <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
+        <h1 class="tb-font-bold fs-1 m-0 p-0">Asset Library</h1>
+      </div>
+        <div class="row align-items-center py-3">
+        <form class="col-6 ">
+            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white w-100">
+              <button type="button" class="btn btn-light border-0 bg-transparent"  data-bs-whatever="@mdo"><img
+                  src="../../assets/images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
+                  
+              <input class="bg-transparent input-group w-100 fs-4" type="text" placeholder="Search by name or tag " name="search">
+            </div>
+            <div class="d-flex align-items-center ms-3">
+                <div class="form-floating gray-800 d-flex align-items-center rounded-4 px-3 py-3">
+                    <img src="../../assets/images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
+                  <select class="tb-input-group gray-800 border-0 fs-5 rounded-4 ps-1 selectBoxfilter">
+                    <option selected>Filters</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        <form class="col-6 py-1 align-items-center d-flex justify-content-end">
+          <div class="d-flex">
+            <div class=" d-flex align-items-center">
+              <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
+                <li class="" role="presentation">
+                  <button class="nav-link active btn btn-secondary text-black me-2 fs-4" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true"><img src="../../assets/images/Icons/list-icon.svg" alt="list-icon"
+                    class="me-3" >list</button>
+                </li>
+                <li class="" role="presentation">
+                  <button class="nav-link btn btn-secondary text-black fs-4" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false"><img src="../../assets/images/Icons/grid-icon.svg" alt="grid-icon"
+                      class="me-3">Grid</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>        
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="0">
+          <!-- table -->
+          <div class="row">
+            <!-- column -->
+            <div class="col-2">
+                <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular mb-3" type="button"><img src="../../assets/images/Icons/plus-icons.svg" alt="" srcset="" class="me-1"> Add Asset</button>
+                <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular" type="button"><img src="../../assets/images/Icons/folder-icon.svg" alt="" srcset="" class="me-2">Add Folder</button>
+                <div class="folder-tree-wrapper">
+                    <ul class="folder-tree">
+                      <li><i class="fa fa-folder"></i> New Folder (0)
+                        <div class="arrow"><i class="fa fa-angle-down"></i></div>
+                  
+                        <ul>
+                          <li><i class="fa fa-folder"></i> New Folder (0)</li>
+                          <li><i class="fa fa-folder"></i> New Folder (1)
+                            <div class="arrow"><i class="fa fa-angle-down"></i></div>
+                            <ul>
+                  
+                              <li><i class="fa fa-folder"></i> New Folder (2)</li>
+                              <li><i class="fa fa-folder"></i> folder</li>
+                  
+                            </ul>
+                  
+                          </li>
+                        </ul>
+                  
+                      </li>
+                      <li><i class="fa fa-folder"></i> New Folder (1)</li>
+                      <li><i class="fa fa-folder"></i> New Folder (2)</li>
+                      <li><i class="fa fa-folder"></i> folder</li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-10">
+              <div class="card">
+                <div class="table-responsive rounded-3 mx-3 mt-4">
+                  <table id="exampletable" class="table v-middle">
+                    <thead class="">
+                      <tr class="gray-500 text-white text-left ">
+                        <th class="fw-light th-pd">Name</th>
+                        <th class="fw-light th-pd">Type</th>
+                        <th class="fw-light th-pd">Owner</th>
+                        <th class="fw-light th-pd">Last Update</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-left fw-light ">
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                              class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                              <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                            </button>
+                            <div class="card card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li><a href="#"
+                                    class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                        class="w-h-25 me-2"></span>View properties</a></li>
+                                <li><a href="#"
+                                    class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                        src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                        class="w-h-25 me-2"></span>Version History</a></li>
+                                <li><a href="#"
+                                    class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                        src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                        class="w-h-25 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                              <div class="modal-content tb-bg-body input-modal-box border-0">
+                                <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                                  <div class="col-9 text-end pe-0">
+                                    <h5 class="modal-title tb-h3 text-black me-2" id="exampleModalLabel">Properties</h5>
+                                  </div>
+                                  <button type="button" class="col-3 btn-close close-dark m-0" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row m-3">
+                                    <div class="col-7">
+                                      <img class="w-100" src="../../assets/images/video-img.svg" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                      <div class="col-12 ms-3">
+                                        <div class="col-12 d-flex align-items-center">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Created by: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <img src="../../assets/images/Icons/LA.svg" alt="">
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-1">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Entity created for: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">Entity</h5>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Sector created for: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">Sector</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                      </div>
+                                      <div class="col-12 ms-3">
+                                        <div class="col-12 d-flex align-items-center">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">File Type: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Location: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Size: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">2.43 MB</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                      </div>
+                                      <div class="col-12 ms-3">
+                                        <div class="col-12 d-flex align-items-center">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <img src="../../assets/images/Icons/LA.svg" alt="">
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Last Updated: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">File Version: </h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+                                      </div>
+                                      <div class="col-12 ms-3">
+                                        <div class="col-12 d-flex align-items-center">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14 tb-copyright">Confidential & Copyrighted</h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">Contact Enquiry</h5>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center pt-2">
+                                          <div class="col-6">
+                                            <h5 class="m-0 tb-fs-14">Download count: &nbsp; &nbsp; 10</h5>
+                                          </div>
+                                          <div class="col-6 ms-1">
+                                            <h5 class="m-0 tb-fs-14">No. Views: &nbsp; &nbsp; 1</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 mt-5 d-flex justify-content-center px-4">
+                                        <button class="btn btn-md tb-btn-secondary tb-rounded w-100"
+                                          type="button">Download</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 1st DAM popup modal ends here -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                            class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                            <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                          </button>
+                          <div class="card card-style"style="display: none;">
+                            <ul class="list-unstyled">
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                  data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>View properties</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                      src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Version History</a></li>
+                              <li><a href="#"
+                                  class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                      src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="w-h-25 me-2"></span>Download</a></li>
+                            </ul>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <div class="col-6 d-flex align-items-center">
+                            <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                          </div>
+                        </td>
+                        <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+                        <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
+                            class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
+                            <p class="mb-0 small-paragraph">SK</p>
+                          </span></td>
+                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                          <span>15 May 2020 9:00 pm</span>
+                          <div class="float-end me-3  text-center w-h-40"> <button type="button"
+                              class=" btn-light py-0 px-2 bg-white  rounded-circle border" data-bs-toggle="modal"
+                              data-bs-target="#">
+                              <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- table-ends here -- -->
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="row d-flex justify-content-between align-items-center g-4 my-4 flex-wrap">
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
+                <div class="d-flex justify-content-center">
+                  <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
+                    <div class="d-flex justify-content-between pt-3 ms-3">
+                      <h5 class="fs-6">Document Title</h5>
+                      <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+                    </div>
+                    <div class="d-flex py-2 align-items-center">
+                      <img class="ps-3" src="../../assets/images/Profile image.png" alt="">
+                      <h5 class="ps-2 fs-6 m-0">20/07/22 10:00 AM</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog main-modal modal-dialog-centered modal-xl">
+            <div class="modal-content box-shadow-popup mx-5">
+              <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                <div class="col-9 text-end pe-0">
+                  <h5 class="modal-title tb-h3 text-black me-2" id="exampleModalLabel">Properties</h5>
+                </div>
+                <button type="button" class="col-3 btn-close close-dark m-0" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row m-3">
+                  <div class="col-7">
+                    <img class="w-100" src="../../assets/images/video-img.svg" alt="">
+                  </div>
+                  <div class="col-5">
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Created by: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <img src="../../assets/images/Icons/LA.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-1">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Entity created for: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Entity</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Sector created for: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Sector</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">File Type: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Location: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Size: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">2.43 MB</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <img src="../../assets/images/Icons/LA.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Last Updated: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">File Version: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14 tb-copyright">Confidential & Copyrighted</h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Contact Enquiry</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Download count: &nbsp; &nbsp; 10</h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">No. Views: &nbsp; &nbsp; 1</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-5 d-flex justify-content-center px-4">
+                      <button class="btn btn-md tb-btn-secondary tb-rounded w-100" type="button">Download</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1st DAM popup modal ends here -->
+        <!-- modal-three-dots -->
+        <!-- Button trigger modal -->
+
+
+
+
+
+      </div>
+    </section>
+    <!--Asset library ends here ------>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+  "></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <script src="../../javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

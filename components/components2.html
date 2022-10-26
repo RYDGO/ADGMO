@@ -2212,375 +2212,716 @@
     <a class="btn btn-info  m-4 w-25" data-bs-toggle="modal" href="#newsModal1" role="button">Review
     </a>
     <!--------review modal end here---->
-    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newsModal9">
-        News Modal 3
-    </button>
-    <!-- Modal -->
-    <div class="modal fade" id="newsModal9" tabindex="-1" aria-labelledby="newsEditExampleModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-            <div class="modal-content box-shadow-popup mx-5">
-                <div class="row modal-header p-4 pb-0 d-flex pe-5">
-                    <div class="d-flex justify-content-between">
-                        <div class="">
-                            <h5 class="tb-fs-24 font-weight-500">#112384739</h5>
-                        </div>
-                        <div class="">
-                            <div>
-                                <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-comment.svg" alt=""></button>
-                                <button class="btn bg-color-gray  border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-time.svg" alt=""></button>
-                                <button class="btn bg-color-gray me-5 border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/icon-albums.svg" alt=""></button>
-                                <button class="btn  pb-2   border-0 rounded-pill"><img
-                                        src="../assets/images/Icons/Vector (Stroke).svg" alt=""></button>
-                                <button type="button" class="col-3 btn-close close-dark m-0" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body ">
-                    <div class="row m-3">
-                        <div class="col-5">
-                              <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-                              </div>
-                            <ul class="nav mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12 active"
-                                        id="pills-english-button" data-bs-toggle="pill" data-bs-target="#pills-english"
-                                        role="tab" aria-controls="pills-english" aria-selected="true">Overview</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12"
-                                        id="pills-arabic-button" data-bs-toggle="pill" data-bs-target="#pills-arabic"
-                                        type="button" role="tab" aria-controls="pills-arabic" aria-selected="false"
-                                        tabindex="-1">Attachments</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12"
-                                        id="pills-dual-button" data-bs-toggle="pill" data-bs-target="#pills-dual"
-                                        type="button" role="tab" aria-controls="pills-dual" aria-selected="false"
-                                        tabindex="-1">Activities</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12"
-                                        id="pills-dual-button" data-bs-toggle="pill" data-bs-target="#pills-dual"
-                                        type="button" role="tab" aria-controls="pills-dual" aria-selected="false"
-                                        tabindex="-1">Dual Content</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link btn btn-sm tb-btn-light tb-rounded tb-fs-12"
-                                        id="pills-dual-button" data-bs-toggle="pill" data-bs-target="#pills-dual"
-                                        type="button" role="tab" aria-controls="pills-dual" aria-selected="false"
-                                        tabindex="-1">Versions</button>
-                                </li>
-                            </ul>
-                            <div class="row col-12 border-gray-100 tb-rounded">
-                                <div class="accordion px-0" id="accordion-english-1">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading-english-1">
-                                            <button type="button" class="shadow-none accordion-button collapsed"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapse-english-1">Title
-                                            </button>
-                                        </h2>
-                                        <div id="collapse-english-1" class="accordion-collapse collapse show">
-                                            <div class="collapse-inner-bg p-3">
-                                                <div class="row mt-2 mb-2">
-                                                    <div class="col-md-6">
-                                                        <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                            <label class="col-12 tb-ts-12 font-weight-400"
-                                                                for="announcement-type">Type of Annoucement
-                                                            </label>
-                                                            <input class="col-11 input collapse-inner-bg"
-                                                                autocomplete="off" role="combobox"
-                                                                id="announcement-type" name="announcement-type"
-                                                                placeholder="News">
-                                                        </div>
-                                                        <p class="error-message">• Error Message</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                            <label class="col-12 tb-ts-12 font-weight-400"
-                                                                for="announcement-type">Category of Annoucement
-                                                            </label>
-                                                            <input class="col-11 input collapse-inner-bg"
-                                                                autocomplete="off" role="combobox"
-                                                                id="announcement-type" name="announcement-type"
-                                                                placeholder="International Participation">
-
-                                                        </div>
-                                                        <p class="error-message">• Error Message</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <h6 class="tb-fs-14">Fill in if this request relates to
-                                                            international participation<sup>*</sup></h6>
-                                                    </div>
-                                                    <div class="row mt-2 mb-2">
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Related Link / Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="site.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Other Entity Related Link /
-                                                                    Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="othersite.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <h6 class="tb-fs-14">Will this have an impact on Abu Dhabi?</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <p>Yes</p>
-                                                    </div>
-                                                    <div class="row mt-2 mb-2">
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Other Entity Related Link /
-                                                                    Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="othersite.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Other Entity Related Link /
-                                                                    Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="othersite.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <h6 class="tb-fs-14">Will this have an impact on Abu Dhabi?</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <p>No</p>
-                                                    </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row col-12 mt-3 border-gray-100 tb-rounded">
-                                <div class="accordion px-0" id="accordion-english-1">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading-english-1">
-                                            <button type="button" class="shadow-none accordion-button collapsed"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapse-english-1">Title
-                                            </button>
-                                        </h2>
-                                        <div id="collapse-english-1" class="accordion-collapse collapse show">
-                                            <div class="collapse-inner-bg p-3">
-                                                <div class="row mt-2 mb-2">
-                                                    <div class="col-md-6">
-                                                        <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                            <label class="col-12 tb-ts-12 font-weight-400"
-                                                                for="announcement-type">Type of Annoucement
-                                                            </label>
-                                                            <input class="col-11 input collapse-inner-bg"
-                                                                autocomplete="off" role="combobox"
-                                                                id="announcement-type" name="announcement-type"
-                                                                placeholder="News">
-                                                        </div>
-                                                        <p class="error-message">• Error Message</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                            <label class="col-12 tb-ts-12 font-weight-400"
-                                                                for="announcement-type">Category of Annoucement
-                                                            </label>
-                                                            <input class="col-11 input collapse-inner-bg"
-                                                                autocomplete="off" role="combobox"
-                                                                id="announcement-type" name="announcement-type"
-                                                                placeholder="International Participation">
-
-                                                        </div>
-                                                        <p class="error-message">• Error Message</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <h6 class="tb-fs-14">Will this have an impact on Abu Dhabi?</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <p>Yes</p>
-                                                    </div>
-                                                    <div class="row mt-2 mb-2">
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Other Entity Related Link /
-                                                                    Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="othersite.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class=" collapse-inner-bg p-2 border-bottom-5">
-                                                                <label class="col-12 tb-ts-12 font-weight-400"
-                                                                    for="announcement-type">Other Entity Related Link /
-                                                                    Website
-                                                                </label>
-                                                                <input class="col-11 input collapse-inner-bg"
-                                                                    autocomplete="off" role="combobox"
-                                                                    id="announcement-type" name="announcement-type"
-                                                                    placeholder="othersite.com">
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="row mt-3">
-                                                    <div class="col-12">
-                                                        <h6 class="tb-fs-14">Will this have an impact on Abu Dhabi?</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <p>No</p>
-                                                    </div>
-                                              </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="row bg-white ">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h5 class="font-weight-500">0 Deliverables</h5>
-                                    </div>
-                                    <div>
-                                        <span class="pad-8-9 gray-100 ">
-                                        <i class="fa-solid fa-plus"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 mt-3">
-                                    <div class="d-flex justify-content-center">
-                                        <button class="btn btn-xl col-12  tb-rounded border-gray-100" type="button"><i class="fa-solid fa-list"></i> No deliverables to be displayed</button>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleDamModal9">
+       Dam Modal Properties View
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleDamModal9" tabindex="-1" aria-labelledby="exampleDamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content box-shadow-popup mx-5">
+            <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-        <!-----News  Modal 2 end here--->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-            Profile modal
-        </button>
-        <!-- Modal -->
-        <div class="modal fade modal-width" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel1"
-            aria-hidden="true">
-            <div class="modal-dialog  modal-sm">
-                <div class="modal-content inner-modal-content-box box-shadow-popup">
-                    <div class="modal-body collapse-inner-bg py-0 px-0 bg-white">
-                        <div class=" p-2 bg-white">
-                            <label class="col-12 input-label" for="links">
-                                <div class="d-flex col-md-8">
-                                    <div class="p-2 tb-primary font-weight-400 tb-fs-16">@EstherHoward</div>
-                                    <div class="p-2 tb-gray-400 tb-fs-16"> I think...</div>
-                                    <div class="ms-auto p-2">
-                                        <img src="../assets/images/Vector (1).svg" alt="edit icon" />
-                                    </div>
-                                    <div class="p-2">
-                                        <i class="fa-sharp fa-solid fa-paperclip"></i>
-                                    </div>
-                                    <div class="d-flex align-items-start">
-                                    </div>
-                                </div>
-                            </label>
-                            <input class="col-12  bg-white" id="links" name="links">
-                        </div>
-                        <div class="bg-white">
-                            <div class="d-flex gray-100-hover border-bottom">
-                                <div class="p-2">
-                                    <img src="../assets/images/Profile image.svg" />
-                                </div>
-                                <div class="p-2">
-                                    <p>Esther, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                                </div>
-                            </div>
-                            <div class="d-flex gray-100-hover border-bottom">
-                                <div class="p-2">
-                                    <img src="../assets/images/Profile image (3).svg" />
-                                </div>
-                                <div class="p-2">
-                                    <p>Luci, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                                </div>
-                            </div>
-                            <div class="d-flex gray-100-hover border-bottom">
-                                <div class="p-2">
-                                    <img src="../assets/images/Profile image (1).svg" />
-                                </div>
-                                <div class="p-2">
-                                    <p>Josef, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                                </div>
-                            </div>
-                            <div class="d-flex gray-100-hover border-bottom">
-                                <div class="p-2">
-                                    <img src="../assets/images/Profile image (2).svg" />
-                                </div>
-                                <div class="p-2">
-                                    <p>Ahmed, <span class="user-nameline">Ipsum Dolor Esit</span> </p>
-                                </div>
-                            </div>
-                        </div>
-
+            <div class="modal-body">
+              <div class="row m-3">
+                <div class="col-7">
+                  <img class="w-100" src="../assets/images/video-img.svg" alt="">
+                </div>
+                <div class="col-5">
+                <div class="row ms-1">
+                    <div class="col-9  pe-0">
+                        <h5 class="modal-title tb-h3 text-black me-2" id="exampleDmModalLabel">Properties</h5>
                     </div>
                 </div>
+                  <div class="col-12 ms-3 mt-3">
+                    <div class="col-12 d-flex align-items-center">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">File Name: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">VID_98349.mp4 </h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-1">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Entity: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">Entity</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Sector: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">Sector</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Deliverable : </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Media Recommendation</h5>
+                        </div>
+                   </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Asset Type: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Published Date </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Published Version: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Published Team: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Creative</h5>
+                        </div>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="row ms-1">
+                    <div class="col-9  pe-0">
+                        <h5 class="tb-fs-10 font-weight-600">Copyright </h5>
+                    </div>
+                </div>
+                  <div class="col-12 ms-3">
+                    <div class="col-12 d-flex align-items-center">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Copyright info: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Usage: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">Lorem Ipsum </h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Validity: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">2020-01-05 to 2020-01-05</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Fee: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">$20.00</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Disclaimer: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Lorem Ipsum</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                        </div>
+                        <div class="col-6 ms-1 ">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12">
+                                <img class="" src="../assets/images/Icons/LA.svg" alt="">
+                                <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="col-12 ms-3">
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Location: </h5>
+                        </div>
+                        <div class="col-6 ms-1 ">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-12">
+                                <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Size: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">2.43 MB </h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Tags: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">Loremipsum</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                      <div class="col-6">
+                        <h5 class="m-0 tb-fs-14">Download count: </h5>
+                      </div>
+                      <div class="col-6 ms-1">
+                        <h5 class="m-0 tb-fs-14">10 </h5>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Views: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">10 </h5>
+                        </div>
+                      </div>
+                    <hr>
+                  </div>
+                  <div class="col-12 mt-5 d-flex justify-content-center flex-column px-4">
+                    <button class="btn btn-md tb-btn-primary tb-rounded w-100" type="button">Download</button>
+                    <button class="btn btn-md mt-3 tb-btn-secondary tb-rounded w-100" type="button">Archive</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!------ Profile user end here------------>
+      </div>
+      <!-- 1st DAM popup modal ends here -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleDamModal21">
+        Dam modal 2 
+       </button>
+       <!-- Modal -->
+       <div class="modal fade" id="exampleDamModal21" tabindex="-1" aria-labelledby="exampleDamModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+           <div class="modal-content box-shadow-popup mx-5">
+             <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                 <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="row m-3">
+                 <div class="col-7">
+                   <img class="w-100" src="../assets/images/video-img.svg" alt="">
+                 </div>
+                 <div class="col-5">
+                   <div class="col-12 ms-3 mt-3">
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">File Name: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">VID_98349.mp4 </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-1">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Entity: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Entity</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Sector: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Sector</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Deliverable : </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Media Recommendation</h5>
+                         </div>
+                    </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Asset Type: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Date </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Version: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Team: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Creative</h5>
+                         </div>
+                     </div>
+                     <hr>
+                   </div>
+                   <div class="row ms-1">
+                     <div class="col-9  pe-0">
+                         <h5 class="tb-fs-10 font-weight-600">Copyright </h5>
+                     </div>
+                 </div>
+                   <div class="col-12 ms-3">
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Copyright info: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Usage: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Lorem Ipsum </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Validity: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">2020-01-05 to 2020-01-05</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Fee: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">$20.00</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Disclaimer: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Lorem Ipsum</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                         </div>
+                         <div class="col-6 ms-1 ">
+                             <div class="row d-flex align-items-center">
+                                 <div class="col-12">
+                                 <img class="" src="../assets/images/Icons/LA.svg" alt="">
+                                 <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <hr>
+                   </div>
+                   <div class="col-12 ms-3">
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Location: </h5>
+                         </div>
+                         <div class="col-6 ms-1 ">
+                             <div class="row d-flex align-items-center">
+                                 <div class="col-12">
+                                 <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Size: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">2.43 MB </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Tags: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Loremipsum</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Download count: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">10 </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Views: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">10 </h5>
+                         </div>
+                       </div>
+                     <hr>
+                   </div>
+                   <div class="col-12 mt-5 d-flex justify-content-center flex-column px-4">
+                     <button class="btn btn-md tb-btn-primary tb-rounded w-100" type="button">Download</button>
+                     <button class="btn btn-md mt-3 tb-btn-secondary tb-rounded w-100" type="button">Archive</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!---------------->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleDamModal20">
+        Dam Modal  View DOC
+       </button>
+       <!-- Modal -->
+       <div class="modal fade" id="exampleDamModal20" tabindex="-1" aria-labelledby="exampleDamModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+           <div class="modal-content box-shadow-popup mx-5">
+             <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                 <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="row m-3">
+                 <div class="col-7">
+                    <div class="row">
+                      <h6 class=" text-center tb-fs-16">Basic interview Questions for Microsoft World,Access,Excel,ond PowerPoint </h6>
+                        <div class="row ms-1">
+                            <div class="col-9  pe-0">
+                                <h5 class="modal-title tb-h3 text-black me-2" id="exampleDmModalLabel"><u>Microsoft Word</u></h5>
+                            </div>
+                        </div>
+                        <ol class="list-group list-group-numbered mt-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Tell me about the most complex document you have created in Word and the features or tools that you used to create the document.</div>
+                                </div>
+                              </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">How do you create a document in Microsoft Word from scratch?</div>
+                                    <P class="">
+                                        In the upper-left comer of the word program window, click the <span class="fw-bold">File</span>  tab and then click <span class="fw-bold">New</span>. The
+                                        New Document da log box opens With <span class="fw-bold">Blank document</span>  selected, click <span class="fw-bold"> Create</span>.
+                                    </P>
+                                  </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">How do you save a document in Microsoft Word?</div>
+                                    <p>
+                                        To save a document for the rest ome, you can press Ctrl+5, click the Save button on the Quick Access toolbar, or click Save on the  <span class="fw-bold"> File</span> tab. All three options display a dialog box in which you
+                                        specify a name for the document.
+                                    </p>
+                                  </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">How do you track changes to documents?</div>
+                               <p>
+                                You can use word's <span class="fw-bold">Track Changes</span>  feature to record the charges made to a document Gkx the <span class="fw-bold">Track Changes</span>  button in the Tracking group on the <span class="fw-bold">Review </span> tab Word ng haghts the but
+                                Indictaing that the Track Changes feature is turned on.
+                               </p>
+                              </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">How do you format text, change font, and font size?</div>
+                                  <p>
+                                    To format text, in the <span class="fw-bold">Font</span> group on the <span class="fw-bold">Home </span> tab, click the <span class="fw-bold">Bold Italic or Underline</span>  button. To change the font and font sin click on the toolbar. Click the <span class="fw-bold">Font</span>  arrow to display a list of
+                                    available fonts. Then click the <span class="fw-bold">Font Size</span>  arrow select the size.
+                                </p>
+                                </div>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold"> What will the following key combination do: Ctrl+P?</div>
+                                  <p>
+                                    Ctrl+P wil print the document.
+
+                                </p>
+                                </div>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold"> How do you check spellings and grammar of a MS Word document?</div>
+                                  <p>
+                                    Place the cursor at the beginning of the document or at the beginning of the section that you want check. Click the<span class="fw-bold">Review</span>  tab on the tool bar. Click <span class="fw-bold">Spelling & Grammar</span>  on the <span class="fw-bold">Proofing</span>  group.
+                                  </p>
+                                </div>
+                              </li>
+                              
+                          </ol>
+                          <div class="row">
+                            <div class="col-12  pe-0">
+                                <h5 class="modal-title tb-h3 text-black me-2 mt-3" id="exampleDmModalLabel"><u>Microsoft Excel</u></h5>
+                                <ol class="list-group list-group-numbered mt-5">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Tell me about the most complex document you have created in Excel and the features or tools that you used to create the document.</div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">How do you create a spreadsheet in Microsoft Excel from scratch?</div>
+                                        <p>
+                                        When you start Excel without specifying a document to open you get a bank workbook a new workbook window. This workbook, temporary named Book1, contains tree blank worksheets
+                                        (Sheet1, Sheet2, and Sheet to begin work on a new spreadsheet you simply start entering information in the first sheet of the book workbook window.
+                                        </p>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">How do you save a spreadsheet in Microsoft Excel? </div>
+                                        <p>
+                                            Click the Save button on the Quick Ass toolbar a press C-5, men designable the drive and folder if rectory where the fee should be bated.
+                                        </p>
+                                      </div>
+                                    </li>
+                                  </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-5">
+                   <div class="col-12 ms-3 mt-3">
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">File Name: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">VID_98349.mp4 </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-1">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Entity: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Entity</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Sector: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Sector</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Deliverable : </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Media Recommendation</h5>
+                         </div>
+                    </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Asset Type: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Date </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Version: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Published Team: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Creative</h5>
+                         </div>
+                     </div>
+                     <hr>
+                   </div>
+                   <div class="row ms-1">
+                     <div class="col-9  pe-0">
+                         <h5 class="tb-fs-10 font-weight-600">Copyright </h5>
+                     </div>
+                 </div>
+                   <div class="col-12 ms-3">
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Copyright info: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Usage: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Lorem Ipsum </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Validity: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">2020-01-05 to 2020-01-05</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Fee: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">$20.00</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Disclaimer: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">Lorem Ipsum</h5>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                         </div>
+                         <div class="col-6 ms-1 ">
+                             <div class="row d-flex align-items-center">
+                                 <div class="col-12">
+                                 <img class="" src="../assets/images/Icons/LA.svg" alt="">
+                                 <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <hr>
+                   </div>
+                   <div class="col-12 ms-3">
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Location: </h5>
+                         </div>
+                         <div class="col-6 ms-1 ">
+                             <div class="row d-flex align-items-center">
+                                 <div class="col-12">
+                                 <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Size: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">2.43 MB </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Tags: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">Loremipsum</h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                       <div class="col-6">
+                         <h5 class="m-0 tb-fs-14">Download count: </h5>
+                       </div>
+                       <div class="col-6 ms-1">
+                         <h5 class="m-0 tb-fs-14">10 </h5>
+                       </div>
+                     </div>
+                     <div class="col-12 d-flex align-items-center pt-2">
+                         <div class="col-6">
+                           <h5 class="m-0 tb-fs-14">Views: </h5>
+                         </div>
+                         <div class="col-6 ms-1">
+                           <h5 class="m-0 tb-fs-14">10 </h5>
+                         </div>
+                       </div>
+                     <hr>
+                   </div>
+                   <div class="col-12 mt-5 d-flex justify-content-center flex-column px-4">
+                     <button class="btn btn-md tb-btn-primary tb-rounded w-100" type="button">Download</button>
+                     <button class="btn btn-md mt-3 tb-btn-secondary tb-rounded w-100" type="button">Archive</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- 1st DAM popup modal ends here -->
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
@@ -2589,5 +2930,9 @@
 <script src="../javascript/script.js"></script>
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
+<script src="https://unpkg.com/htmlincludejs"></script>
+<script src="../javascript/inputs&dropdowns.js"></script>
+<script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>

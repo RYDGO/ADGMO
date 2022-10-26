@@ -1497,8 +1497,8 @@
    </div>
     <!-- Button trigger modal -->
 <!-- Modal -->
-<div class="modal fade background-dim " id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+<div class="modal fade modal-backdrop-op background-dim" id="filterModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
@@ -1509,42 +1509,34 @@
                     </div>
                     <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">                               
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="English">
-                                        <label for="English">English</label>
-                                    </div>
+                          <div class="row g-0 gy-3">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                        type="checkbox" value="" id="Arabic">
+                                    <label for="Arabic">Arabic</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">                               
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Arabic">
-                                        <label for="Arabic">Arabic</label>
-                                    </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                        type="checkbox" value="" id="English">
+                                    <label for="English">English</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <a href="javascript:void(0)"><span
-                                    class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
-                                    deliverables</span></a>
+                          </div>
+                          
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
                             data-bs-target="#priorityModal" type="button">Back</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#requiresFeedback" data-bs-dismiss="modal">Next</button>
+                            data-bs-target="#requiresFeedback">next</button>
                     </div>
                 </div>
             </div>
-</div>
+        </div>
         <!-- modal ends here -->
 <!-- Modal -->
 <div class="modal fade background-dim " id="requiresFeedback" tabindex="-1" aria-labelledby="exampleModalLabel"

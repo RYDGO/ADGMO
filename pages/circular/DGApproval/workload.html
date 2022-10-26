@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>workload  Dashboard</title>
+    <title>Deliverable Approval</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -386,6 +386,7 @@
             <!--sidebar ends here -->
         </nav>
         <!--dashboard ends here ------>
+        
         <!-- Modal -->
         <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
             role="dialog">
@@ -712,8 +713,7 @@
         <section class="main-section">
             <div class="py-4 d-flex align-items-center justify-content-between">
                 <div class="col-2">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <a href="#" class="text-decoration-none text-dark">Back</a>
+                    <a class="text-decoration-none text-dark tb-fs-14">Tues, 19 July 2022</a>
                 </div>
                 <div class="d-flex">
                     <div>
@@ -727,7 +727,7 @@
                 </div>
             </div>
             <div class="home-content pb-3">
-                <h1 class="tb-h1">Requests</h1>
+                <h1 class="tb-h1">Good Morning, Harrison</h1>
                 <ul class="nav my-3 " id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active  btn btn-md tb-btn-light tb-rounded" id="pills-home-tab"
@@ -939,39 +939,17 @@
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h4 class="card-title pt-3 tb-bold input-label fs-3">All Requests</h4>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="w-h-40  rounded-circle flex-center img-cover">
-                                                            <img src="../../../../assets/images/Icons/rocket.svg" alt="icon-warning" class="w-100">
-                                                        </div>
-                                                        <h6 class="tb-h6 m-0 ms-2">
-                                                            200 in progress
-                                                        </h6>
-                                                        <div class="w-h-40  rounded-circle flex-center img-cover  ms-2">
-                                                            <img src="../../../../assets/images/Icons/rocket.svg" alt="icon-warning" class="w-100">
-                                                        </div>
-                                                        <h6 class="tb-h6 m-0 ms-2">
-                                                            67 Not Started
-                                                        </h6>
-                                                    </div>
+                                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Dpt. Requests</h4>
+                                             
                                                 </div>
                                                 <div class="ms-auto d-flex justify-content-between align-items-center">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="w-h-40  rounded-circle flex-center img-cover me-2">
-                                                            <img src="../../../../assets/images/Icons/filter.svg" alt="icon-warning" class="w-100">
-                                                        </div>
-                                                    </div>
+                                                  
                                                     <div class="d-flex justify-content-center">
                                                         <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                             <img src="../../../../assets/images/Icons/search.svg" alt="icon-warning" class="w-100">
                                                         </div>
                                                     </div>
-    
-    
-                                                </div>
-                                                <div class="dl">
-                                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button" id="redirectToViewAll"><img src="../../../../assets/images/Icons/Chart_fill.svg" alt=""> View
-                                                        All</button>
+
                                                 </div>
                                             </div>
                                             <!-- title -->
@@ -1778,42 +1756,128 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op background-dim" id="filterModal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-backdrop-op " id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Select Deliverable Language</h5>
+                            Select Deliverables</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="row-wrapper">
-                          <div class="row g-0 gy-3">
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="Arabic">
-                                    <label for="Arabic">Arabic</label>
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-recommendations">
+                                        <label for="media-recommendations">Media Recommendations</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English">
+                                        <label for="English">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic">
+                                        <label for="Arabic">Arabic</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="English">
-                                    <label for="English">English</label>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-plan">
+                                        <label for="media-plan">Media Plan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                          
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-brief">
+                                        <label for="media-brief">Media Brief</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Others">
+                                        <label for="Others">Others</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English3">
+                                        <label for="English3">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic3">
+                                        <label for="Arabic3">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="javascript:void(0)"><span
+                                    class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
+                                    deliverables</span></a>
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
                             data-bs-target="#priorityModal" type="button">Back</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#prl-Modal">next</button>
+                            data-bs-target="#prl-Modal">Next</button>
                     </div>
                 </div>
             </div>
@@ -2276,7 +2340,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                             EWAA
                         </div>
                         <h5 class="modal-title tb-h3 text-black d-flex align-items-center" id="fullNewsRequest2Label">
-                            Media Opportunity desc....
+                            Media Consultation desc...
                         </h5>
                         <div class="">
                             MRS~012345
@@ -2737,7 +2801,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                                 <div class="d-flex align-items-center">
                                     <input class="me-3 radio" type="radio" id="prl(en)" name="Deliverable-redio"
                                         value="HTML">
-                                    <label for="prl(en)" class="tb-fs-16 tb-fw-700">Media Recom.</label>
+                                    <label for="prl(en)" class="tb-fs-16 tb-fw-700">PRL (En)</label>
                                 </div>
                             </div>
                             <div class="">
@@ -2755,7 +2819,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                             </div>
                             <div class=""><span
                                     class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                    <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
+                                    <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
                                 </span></div>
                         </div>
                         <div >
@@ -2838,7 +2902,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
              <div class="modal-content inner-modal-content-box box-shadow-popup">
                  <div class="modal-header align-items-start p-4">
                      <div>
-                         <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send for Approval
+                         <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Approve Deliverables
                          </h5>
                      </div>
                      <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
@@ -2847,24 +2911,16 @@ aria-labelledby="exampleModalLabel" role="dialog">
                  <div class="modal-body collapse-inner-bg py-4 px-5">
                      <div class="row g-3">
                          <div class="col-md-12">
-                             <div class="tb-input-group p-2 mt-3 d-flex">
-                                <div class="me-2">
-                                    <span class="w-h-40 status-color-orange-op  rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                        <p class="mb-0 bold-paragraph mt-1 tb-orange">DOH</p>
-                                    </span>
-                                </div>
-                                <div class="w-100">
-                                    <label class="col-12 input-label" for="input">Select Label<sup></sup></label>
-                                    <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                        name="browsers" placeholder="DOH">
-                                    <i class="fa fa-solid fa-angle-down"></i>
-                                    <datalist id="browsers" role="listbox">
-                                        <option value="Brookyln Simmons">Brookyln Simmons</option>
-                                        <option value="Jacob Jones">Jacob Jones</option>
-                                        <option value="Guy Hawkins">Guy Hawkins</option>
-                                    </datalist>
-                                </div>
-                                 
+                             <div class="tb-input-group p-2 mt-3">
+                                 <label class="col-12 input-label" for="input">Select Label<sup></sup></label>
+                                 <input class="col-11 input" autocomplete="off" role="combobox" id="input"
+                                     name="browsers" placeholder="placeholder..">
+                                 <i class="fa fa-solid fa-angle-down"></i>
+                                 <datalist id="browsers" role="listbox">
+                                     <option value="Brookyln Simmons">Brookyln Simmons</option>
+                                     <option value="Jacob Jones">Jacob Jones</option>
+                                     <option value="Guy Hawkins">Guy Hawkins</option>
+                                 </datalist>
                              </div>
                              <p class="error-message">• Error message</p>
                          </div>
@@ -2883,9 +2939,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                     
                         
                              <button type="button"
-                                 class="btn-md tb-btn-secondary tb-rounded p-4 border-0">back</button>
-                             <button type="button"
-                                 class="btn-md tb-btn-primary tb-rounded p-4 border-0">Send</button>
+                                 class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
                         
                  </div>
              </div>
@@ -2945,7 +2999,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
               <div class="col-md-12 mb-3">
                 <div class="tb-input-group bg-transparent p-2 mt-3 d-flex border-0">
                     <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1 me-3">
-                        <img src="../../../assets/images/person.jpg" alt="" class="img-100 selected-dropdown-image">
+                        <img src="../../../../assets/images/person.jpg" alt="" class="img-100 selected-dropdown-image">
                       </div>
                       <div class="w-100">
                   <label class="col-12 input-label" for="input">Select Assignee<sup>*</sup></label>

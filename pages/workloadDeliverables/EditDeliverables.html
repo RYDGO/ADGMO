@@ -47,10 +47,98 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </span>
+                            <div class="modal notification-shadow fade" id="notification-modal" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content notification-position">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title font-weight-700 text-dark-black "
+                                                id="exampleModalToggleLabel">
+                                                Notifications</h5>
+                                            <a href="#" class="text-decoration-none">See all</a>
+                                        </div>
+                                        <div class="modal-body collapse-inner-bg px-0 ">
+                                            <div class="bg-white  tb-rounded pb-3">
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"> <span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och
+                                                            presyrade. Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification popup modal ends here -->
                         </div>
-                        <div class="d-flex justify-content-center me-3">
+                        <div class="d-flex justify-content-center me-3 position-relative">
                             <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-regular fa-bell"></i>
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#notification-modal">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a>
                             </span>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -71,7 +159,6 @@
             </div>
         </nav>
         <!--navbar ends here -->
-
         <nav class="sidebar " id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
@@ -80,13 +167,14 @@
                 <div class="menu">
                     <ul class="menu-links flex-center flex-column align-items-start">
                         <li class="nav-link sidebarTabsToggle">
-                            <a href="#" class="flex-center-align mb-2">
+                            <a href="../Dashboard.html" class="flex-center-align mb-2">
                                 <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                 <span class="text-dark nav-text">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <a href="../workloadDepartments/workloadDepartments.html"
+                                class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
                                     <img src="../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Workload</span>
@@ -287,7 +375,7 @@
                         </li>
                         <li
                             class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <a href="../../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                            <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
                                 <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
                                     <span>Request</span></button>
                             </a>
@@ -297,6 +385,327 @@
             </div>
             <!--sidebar ends here -->
         </nav>
+        <!--dashboard ends here ------>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
+            role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content modal-dialog-scrollable">
+                    <div class="modal-header collapse-inner-bg align-items-start px-4 pt-4 pb-1">
+                        <div>
+                            <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Global Search</h5>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg px-4 py-3">
+                        <div class="col-12">
+                            <div class="tb-input-group tb-rounded-md tb-inp align-items-center px-4 py-3 border-0">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <div class="topnav p-2">
+                                            <div class="search-container col-12">
+                                                <form>
+                                                    <img src="../../assets/images/Icons/Vector (1).svg" alt="">
+                                                    <input class="bg-transparent w-75 ps-3 me-5" type="text"
+                                                        placeholder="Today" name="search">
+                                                    <img class="ms-3 ps-1" src="../../assets/images/Icons/Vector.svg"
+                                                        alt="">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="../pages/globalSearchResult.html" class="text-decoration-none">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            Save search
+                                        </button>
+                                    </a>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded me-3"
+                                            type="button">English</button>
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded"
+                                            type="button">يبرع</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label class="col-12 input-label fs-6" for="input2">Filters</label>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request ID
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sector
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Entity
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Type
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Saved Searches
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Task
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Unpublished Asset
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Published Asset
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Due date
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div>
+                                <h5 class="modal-title tb-h4 text-black " id="exampleModalLabel">Today</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/person1.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/movie.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="../../assets/images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-2 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="../../assets/images/Icons/L1.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            View All Results
+                                        </button>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  px-4">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>`
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  modal ends here -->
         <!--dashboard ends here ------>
         <section class="main-section">
             <div class="py-4 d-flex align-items-center justify-content-between">
@@ -323,20 +732,20 @@
 
             <div class="row position-relative my-3">
                 <ul class="nav ps-2 mb-4" id="pills-tab" role="tablist">
-                    <ul class="tb-h1 col-7 p-0 text-black">Overview#89349</ul>
+                    <ul class="tb-h1 col-7 p-0 text-black">Overview#89349843</ul>
                     <li class="col-2">
                         <ul class="nav  align-items-center me-4">
                             <li class="nav-item mx-2" data-bs-toggle="modal" href="#commentsModal" role="button">
                                 <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
-                                        src="../../assets/images/Icons/icon-comment.svg" alt=""></button>
+                                        src="../../../assets/images/Icons/icon-comment.svg" alt=""></button>
                             </li>
                             <li class="nav-item mx-2" role="presentation">
                                 <button class="btn bg-color-gray  border-0 rounded-pill"><img
-                                        src="../../assets/images/Icons/icon-time.svg" alt=""></button>
+                                        src="../../../assets/images/Icons/icon-time.svg" alt=""></button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="btn bg-color-gray  border-0 rounded-pill"><img
-                                        src="../../assets/images/Icons/icon-albums.svg" alt=""></button>
+                                        src="../../../assets/images/Icons/icon-albums.svg" alt=""></button>
                             </li>
                         </ul>
                     </li>
@@ -377,10 +786,10 @@
                             </span>
                             <h6 class="mb-0">Assignee</h6>
                             <div class="col-7 d-flex justify-content-end align-items-center image-overflow">
-                                <img id="img-overflow1" src="../../assets/images/Ellipse 1.svg" alt="">
-                                <img id="img-overflow2" src="../../assets/images/Ellipse 2.svg" alt="">
-                                <img id="img-overflow3" src="../../assets/images/Ellipse 3.svg" alt="">
-                                <img id="img-overflow4" src="../../assets/images/Ellipse 4.svg" alt="">
+                                <img id="img-overflow1" src="../../../assets/images/Ellipse 1.svg" alt="">
+                                <img id="img-overflow2" src="../../../assets/images/Ellipse 2.svg" alt="">
+                                <img id="img-overflow3" src="../../../assets/images/Ellipse 3.svg" alt="">
+                                <img id="img-overflow4" src="../../../assets/images/Ellipse 4.svg" alt="">
                                 <h5 class="m-0">Contributors</h5>
                             </div>
                         </div>
@@ -411,7 +820,7 @@
                                     </div>
                                     <div class="col-4 d-flex align-items-center ps-3">
                                         <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
-                                        <img src="../../assets/images/Icons/timer-icon.svg" alt="timer-icon"
+                                        <img src="../../../assets/images/Icons/timer-icon.svg" alt="timer-icon"
                                             class="me-1 mb-1">
                                         <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
                                     </div>
@@ -448,7 +857,7 @@
                                                     <span
                                                         class="common-width-label-22 px-5  d-flex align-items-center justify-content-evenly p-2 ">
                                                         <img class="me-1"
-                                                            src="../../assets/images/Icons/Greenish-blue-flag.svg"
+                                                            src="../../assets/images/Icons/flag-icon.svg"
                                                             width="25">
                                                         <p class="mb-0 text-base-black">Primary</p>
                                                     </span>
@@ -460,15 +869,15 @@
                                                         class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-2"></i>
                                                     <h4 class="tb-h5 mb-0 text-base-black">NOT STARTED</h4>
                                                 </span>
-                                                <img src="../../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                <img src="../../../assets/images/Icons/View-eye.svg" alt="" width="30"
                                                     class="me-2">
                                                 <button data-bs-toggle="modal" data-bs-target="#EditPRLDeliverables"
                                                     class="border-0 tb-rounded-pill"><img
-                                                        src="../../assets/images/Icons/edit.svg" alt=""
+                                                        src="../../../assets/images/Icons/edit.svg" alt=""
                                                         width="30"></button>
                                             </div>
                                             <!-- Modal -->
-                                            <div class="modal fade " id="EditPRLDeliverables" data-bs-backdrop="static"
+                                            <div class="modal fade background-dim" id="EditPRLDeliverables" data-bs-backdrop="static"
                                                 data-bs-keyboard="false" tabindex="-1"
                                                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div class="modal-dialog  modal-dialog-scrollable end-40">
@@ -488,7 +897,8 @@
                                                                     class="tb-input-group d-flex align-items-center  p-2">
                                                                     <div
                                                                         class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
-                                                                        <img src="../../assets/images/person1.jpg" alt=""
+                                                                        <img src="../../../assets/images/person1.jpg"
+                                                                            alt=""
                                                                             class="img-100 selected-dropdown-image">
                                                                     </div>
                                                                     <div class="col-11 ms-2">
@@ -506,29 +916,29 @@
                                                                                 value="Avashesh">
                                                                                 <div
                                                                                     class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                                                                    <img src="../../assets/images/person1.jpg"
-                                                                                        alt="Avashesh Jaiswal"
+                                                                                    <img src="../../../assets/images/person1.jpg"
+                                                                                        alt="Brookyln Simmons"
                                                                                         class="img-100">
                                                                                 </div>
-                                                                                <span class="ms-3">Avashesh Jaiswal
+                                                                                <span class="ms-3">Brookyln Simmons
                                                                                 </span>
                                                                             </li>
                                                                             <li class="list-group-item d-flex align-items-center "
                                                                                 value="2">
                                                                                 <div
                                                                                     class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                                                                    <img src="../../assets/images/person1.jpg"
-                                                                                        alt="Sadish Madtha"
+                                                                                    <img src="../../../assets/images/person1.jpg"
+                                                                                        alt="Jacob Jones"
                                                                                         class="img-100">
                                                                                 </div>
-                                                                                <span class="ms-3">Sadish Madtha</span>
+                                                                                <span class="ms-3">Jacob Jones</span>
                                                                             </li>
                                                                             <li class="list-group-item d-flex align-items-center "
                                                                                 value="3">
                                                                                 <div
                                                                                     class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                                                                    <img src="../../assets/images/ProfileImage.png"
-                                                                                        alt="Shubham Handargule"
+                                                                                    <img src="../../../assets/images/ProfileImage.png"
+                                                                                        alt="Guy Hawkins"
                                                                                         class="img-100">
                                                                                 </div>
                                                                                 <span class="ms-3">Shubham
@@ -539,6 +949,7 @@
                                                                 </div>
                                                                 <p class="error-message">• Error message</p>
                                                             </div>
+                                                            
                                                             <div class="col-12 mt-3">
                                                                 <div
                                                                     class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
@@ -613,7 +1024,7 @@
                                                                     <div class="col-3">
                                                                         <div class="position-relative">
                                                                             <img class="position-relative w-100"
-                                                                                src="../../assets/images/attached1.svg">
+                                                                                src="../../../assets/images/attached1.svg">
                                                                             <div
                                                                                 class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
                                                                                 <div
@@ -621,9 +1032,9 @@
                                                                                     Sky.jpg</div>
                                                                                 <div
                                                                                     class="col-4 d-flex justify-content-evenly">
-                                                                                    <img src="../../assets/images/Icons/eye-icon.svg"
+                                                                                    <img src="../../../assets/images/Icons/eye-icon.svg"
                                                                                         alt="">
-                                                                                    <img src="../../assets/images/Icons/pen.svg"
+                                                                                    <img src="../../../assets/images/Icons/pen.svg"
                                                                                         alt="">
                                                                                 </div>
                                                                             </div>
@@ -632,7 +1043,7 @@
                                                                     <div class="col-3">
                                                                         <div class="position-relative">
                                                                             <img class="position-relative w-100"
-                                                                                src="../../assets/images/attached2.svg">
+                                                                                src="../../../assets/images/attached2.svg">
                                                                             <div
                                                                                 class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
                                                                                 <div
@@ -697,10 +1108,8 @@
                                                                 type="button">Save</button>
                                                             <button type="button"
                                                                 class="btn btn-md tb-btn-primary tb-rounded"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-dismiss="modal"
-                                                                data-bs-target="#submitPrlDeliverablese">Accept
-                                                                Request</button>
+                                                                data-bs-toggle="modal" data-bs-dismiss="modal"
+                                                                data-bs-target="#submitPrlDeliverablese">Submit</button>
 
                                                         </div>
                                                     </div>
@@ -708,21 +1117,21 @@
                                             </div>
 
                                             <!-- Modal -->
-                                            <div class="modal modal-md fade" id="submitPrlDeliverablese" tabindex="-1"
+                                            <div class="modal modal-md fade background-dim" id="submitPrlDeliverablese" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog main-modal">
+                                                <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content inner-modal-content-box box-shadow-popup">
                                                         <div class="modal-header align-items-start p-4">
                                                             <div>
                                                                 <h5 class="modal-title tb-h3 text-black"
-                                                                    id="exampleModalLabel">Accept Request</h5>
+                                                                    id="exampleModalLabel">Submit Deliverables</h5>
                                                             </div>
                                                             <button type="button" class="btn-close close-dark"
                                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body collapse-inner-bg py-4 px-5">
                                                             <div class="col-12 mt-3">
-                                                                <div class="border-0 info-outer tb-input-group">
+                                                                <div class="bg-white p-2 tb-rounded-md border-gray-100">
                                                                     <div class="d-flex">
                                                                         <div>
                                                                             <img class="info-icon"
@@ -740,13 +1149,9 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <div class="">
-                                                                <div class="d-flex justify-content-center">
-                                                                    <button type="button"
-                                                                        class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
-                                                                </div>
-                                                            </div>
+                                                        <div class="modal-footer justify-content-center">
+                                                            <button type="button"
+                                                                class="btn btn-md tb-btn-primary tb-rounded p-4 ">Send</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2434,21 +2839,21 @@
                                                 class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                                                 <img src="../../assets/images/nodata.png" alt="" class="img-100">
                                             </div>
-                                            <span class="ms-3">Avashesh Jaiswal </span>
+                                            <span class="ms-3">Brookyln Simmons </span>
                                         </li>
                                         <li class="list-group-item d-flex align-items-center ">
                                             <div
                                                 class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                                                 <img src="../../assets/images/nodata.png" alt="" class="img-100">
                                             </div>
-                                            <span class="ms-3">Avashesh Jaiswal</span>
+                                            <span class="ms-3">Brookyln Simmons</span>
                                         </li>
                                         <li class="list-group-item d-flex align-items-center ">
                                             <div
                                                 class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
                                                 <img src="../../assets/images/nodata.png" alt="" class="img-100">
                                             </div>
-                                            <span class="ms-3">Avashesh Jaiswal</span>
+                                            <span class="ms-3">Brookyln Simmons</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -2615,7 +3020,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade background-dim" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
             role="dialog">
             <div class="modal-dialog modal-xl modal-dialog-scrollable">
                 <div class="modal-content modal-dialog-scrollable">
@@ -2774,7 +3179,7 @@
                                         <button type="button" href="#"
                                             class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                            Created date
+                                            Due date
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -2937,7 +3342,7 @@
         <!--  modal ends here -->
 
 
-        <div class="modal fade" id="commentsModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        <div class="modal fade background-dim" id="commentsModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -2982,7 +3387,7 @@
                                         </div>
                                         <div class=" ms-auto">
                                             <button class="btn btn-md tb-btn-light tb-rounded" type="button"
-                                                data-bs-dismiss="modal">Cancle</button>
+                                                data-bs-dismiss="modal">Cancel</button>
                                             <button class="btn btn-md tb-btn-primary tb-rounded"
                                                 type="button">Send</button>
                                         </div>
@@ -3067,7 +3472,7 @@
         </div>
 
         <!-- COMMENTS MODAL POPUP ENDS HERE -->
-        <div class="modal fade" id="exampleModal-add-new" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade background-dim" id="exampleModal-add-new" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-scrollable">
                 <div class="modal-content box-shadow-popup">
@@ -3454,7 +3859,7 @@
         </div>
         <!-- REQUEST OVERVIEW DELIVERABLE POPUP ENDS HERE -->
 
-        <div class="modal fade" id="prlDeliverableModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        <div class="modal fade background-dim" id="prlDeliverableModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
             <div class="modal-dialog main-modal modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -3482,7 +3887,7 @@
                         <div class="col-md-12 p-2">
                             <p>When is the ADGMO team deadline lorem?</p>
                             <div class="tb-input-group p-2 mt-3 ">
-                                <label class="col-12 input-label user-nameline" for="date">Created Date</label>
+                                <label class="col-12 input-label user-nameline" for="date">Due Date</label>
                                 <input type="date" class="col-12 user-nameline" id="date">
                             </div>
                         </div>
@@ -3513,7 +3918,7 @@
                                 </p>
                             </div>
                             <div>
-                                <img src="../assets/images/Billed Monthly.svg" alt="calender img" />
+                                <img src="../../assets/images/Icons/Billed-Monthly.svg" alt="calender img" />
                                 <span class=" tb-primary">Calender</span>
                             </div>
                         </div>
@@ -3536,8 +3941,8 @@
                         <div class="d-flex justify-content-between w-100">
                             <div class="p-2"> 1/2 <span class="user-nameline">deliverables</span></div>
                             <div class="p-2 ">
-                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
                                 <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Next</button>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Header and Sidebar</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -46,10 +46,98 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </span>
+                            <div class="modal notification-shadow fade" id="notification-modal" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content notification-position">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title font-weight-700 text-dark-black "
+                                                id="exampleModalToggleLabel">
+                                                Notifications</h5>
+                                            <a href="#" class="text-decoration-none">See all</a>
+                                        </div>
+                                        <div class="modal-body collapse-inner-bg px-0 ">
+                                            <div class="bg-white  tb-rounded pb-3">
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"> <span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och
+                                                            presyrade. Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs"></i>
+                                                        </div>
+                                                        <img src="../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex gray-600 justify-content-between py-2 px-3 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <div class="position-absolute red-dot-circle">
+                                                            <i
+                                                                class="fa-sharp fa-solid fa-circle notification-dot fa-xs "></i>
+                                                        </div>
+                                                        <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg"
+                                                            alt="" class="radius-image">
+                                                    </div>
+                                                    <div class="col-10 text-start">
+                                                        <p class="m-0"><span class="fw-bold">Linda Chow</span> Adel
+                                                            metanomi, och presyrade.
+                                                            Röngar geode. Kvasint
+                                                            norade jinade. Bokstav fov. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Notification popup modal ends here -->
                         </div>
-                        <div class="d-flex justify-content-center me-3">
+                        <div class="d-flex justify-content-center me-3 position-relative">
                             <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-regular fa-bell"></i>
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#notification-modal">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a>
                             </span>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -70,7 +158,6 @@
             </div>
         </nav>
         <!--navbar ends here -->
-
         <nav class="sidebar " id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
@@ -85,7 +172,8 @@
                             </a>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <a href="../pages/workloadDepartments/workloadDepartments.html"
+                                class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
                                     <img src="../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Workload</span>
@@ -297,7 +385,6 @@
             <!--sidebar ends here -->
         </nav>
         <!--dashboard ends here ------>
-
         <!-- Modal -->
         <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
             role="dialog">
@@ -327,7 +414,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="../pages/searchResult.html" target="_blank" class="text-decoration-none">
+                                    <a href="../pages/globalSearchResult.html" class="text-decoration-none">
                                         <button type="button"
                                             class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
                                             Save search
@@ -618,6 +705,7 @@
             </div>
         </div>
         <!--  modal ends here -->
+
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

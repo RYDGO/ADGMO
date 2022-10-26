@@ -107,3 +107,71 @@ $(".input").on("input", function () {
     }
   });
 });
+// assets three dots card popup 
+$('.ellipsis-btn').on("click", function () {
+  $(this).next().toggle('d-block');
+})
+$('#redirectToViewAll').on("click", function () {
+  window.location.href = "../workloadAsigntome/requestOverviewForm.html";
+})
+$('#requestAccepted').on("click", function () {
+  window.location.href = "../workloadAsigntome/requestAcceptedForm.html";
+})
+$('#redirectToViewAllRequests').on("click", function () {
+  window.location.href = "../pages/workloadAsigntome/viewAllRequest.html";
+})
+
+
+$("#prl-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#prlDeliverableModal")
+  }
+})
+
+$("#social-checkbox").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#nextBtnAddDel").attr("href", "#socialMedia")
+  }
+})
+
+$("#prl-image").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#prlNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#prlDeliverableModal")
+
+  }
+})
+
+$("#prl-video").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#prlNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#prlDeliverableModal")
+  }
+})
+
+$("#social-video").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#socialNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#socialMedia")
+  }
+})
+
+$("#social-image").on("change", function () {
+  if ($(this).is(':checked')) {
+    $("#socialNextBtn").attr("href", "#additionalModal")
+    $("#addBackBtn").attr("href", "#socialMedia")
+  }
+})
+
+$("input[name$='due_date']").click(function () {
+  var test = $(this).val();
+  if (test == "yes") {
+    $(".impact-show").hide();
+  } else {
+    $(".impact-show").show();
+  }
+});
+
+prlNextBtn
+
+

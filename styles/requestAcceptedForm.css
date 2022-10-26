@@ -1,18 +1,19 @@
-.popup-absolute{
+.popup-absolute {
     left: -350px;
 }
-#exampleModal-add-new .main-modal{
-    right: 40px;
+
+#socialMedia .main-modal,
+#prlDeliverableModal .main-modal,
+#exampleModal-add-new .main-modal,
+#additionalModal .main-modal,
+#reviewModal .main-modal {
     position: absolute;
-}
-#prlDeliverableModal .main-modal{
     right: 40px;
-    position: absolute;
-}
-#socialMedia .main-modal{
-    right: 40px !important;
-    position: absolute !important;
 }
 
-    
+.accordion-tab-width {
+    width: 470px;
+}
+
+
 /* CUSTOM POPUP CSS */

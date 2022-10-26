@@ -307,32 +307,42 @@
       <div class="d-flex">
         <div class="col-2">
             <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular mb-3" type="button"><img src="../../assets/images/Icons/plus-icons.svg" alt="" srcset="" class="me-1"> Add Asset</button>
-            <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular" data-bs-target="#createFolderModal" data-bs-toggle="modal" type="button"><img src="../../assets/images/Icons/folder-icon.svg" alt="" srcset="" class="me-2">Add Folder</button>
-            <div class="folder-tree-wrapper">
-                <ul class="folder-tree">
-                  <li><i class="fa fa-folder"></i> New Folder (0)
-                    <div class="arrow"><i class="fa fa-angle-down"></i></div>
-              
+            <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular mb-3" data-bs-target="#createFolderModal" data-bs-toggle="modal" type="button"><img src="../../assets/images/Icons/folder-icon.svg" alt="" srcset="" class="me-2">Add Folder</button>
+            <ul id="tree2">
+              <li class="">
+                  <img src="../../assets/images/Icons/file-folder.svg" alt="" class="mb-2">
+                  <a href="#" class="text-base-black fs-4 ms-1">Home</a>
+                <ul>
+                  <li><span class="d-flex align-items-center">
+                 <img src="../../assets/images/Icons/file-folder.svg" alt="" class=""> <span class="mt-2 fs-5 ms-1">
+                      Files
+                  </span> </span></li>
+                  <li><span class="d-flex align-items-center">
+                 <img src="../../assets/images/Icons/file-folder.svg" alt="" class=""> <span class="mt-2 fs-5 ms-1 text-nowrap">
+                  Published Assets
+                  </span> </span></li>
+                  <!-- <li>Employees
                     <ul>
-                      <li><i class="fa fa-folder"></i> New Folder (0)</li>
-                      <li><i class="fa fa-folder"></i> New Folder (1)
-                        <div class="arrow"><i class="fa fa-angle-down"></i></div>
+                      <li>Reports
                         <ul>
-              
-                          <li><i class="fa fa-folder"></i> New Folder (2)</li>
-                          <li><i class="fa fa-folder"></i> folder</li>
-              
+                          <li>Report1</li>
+                          <li>Report2</li>
+                          <li>Report3</li>
                         </ul>
-              
                       </li>
+                      <li>Employee Maint.</li>
                     </ul>
-              
-                  </li>
-                  <li><i class="fa fa-folder"></i> New Folder (1)</li>
-                  <li><i class="fa fa-folder"></i> New Folder (2)</li>
-                  <li><i class="fa fa-folder"></i> folder</li>
+                  </li> -->
+                  <li><span class="d-flex align-items-center">
+                      <img src="../../assets/images/Icons/files-icon.svg" alt="" srcset="">
+                      <span class="mt-2 fs-5 ms-2 text-nowrap">
+                      Edit-test.docx
+                  </span>
+                      </span></li>
+                  <li><span class="d-flex align-items-center"><img src="../../assets/images/Icons/images-icon.svg" alt="" srcset="" class="w-h-20"> <span class="mt-2 fs-5 ms-2 text-nowrap">img-2.jpg</span></span></li>
                 </ul>
-              </div>
+              </li>
+            </ul>
             </div>
           <div class="tab-content col-10" id="pills-tabContent">
             <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
@@ -538,7 +548,7 @@
                             <div class="tab-pane  fade show active tab-remove-bg" id="pills-all" role="tabpanel"
                                 aria-labelledby="pills-tab-all">
                                 <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/No-image.svg" class="card-img-top"
@@ -562,7 +572,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/No-image.svg" class="card-img-top"
@@ -586,7 +596,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/No-image.svg" class="card-img-top"
@@ -610,7 +620,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/party-day.svg" class="card-img-top"
@@ -634,7 +644,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/card-img.svg" class="card-img-top"
@@ -658,7 +668,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/No-image.svg" class="card-img-top"
@@ -682,7 +692,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/No-image.svg" class="card-img-top"
@@ -706,7 +716,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3 ">
+                                    <div class="col-4 ">
                                         <div class="p-3 gray-900 tb-rounded">
                                             <div class="card border-0 mb-2">
                                                 <img src="../../assets/images/party-day.svg" class="card-img-top"

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Share Assets</title>
+  <title>Search </title>
   <!--======== CSS ======== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -381,27 +381,34 @@
                   <div class="card-body">
                     <!-- title -->
                     <div class="d-md-flex align-items-center px-1">
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="ms-auto d-flex justify-content-between align-items-center">
                         <div class="d-flex justify-content-center me-4">
+                          <!-- <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                      <i class="fa-solid fa-magnifying-glass "></i>
+                                    </span> -->
                         </div>
                         <div class="dl">
-                          <div class="home-content pt-4 pb-2 w-100">
-                            <div class=" d-flex align-items-center justify-content-between">
-                              <div>
-                                <p class="mb-0 text-dark tb-fw-500 tb-fs-12">34 <span class="text-base-black">Results
-                                    found for</span> “ADGMO”</p>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-end">
-                                <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
-                                <div class="form-floating border px-2">
-                                  <select class="px-2 fs-5 py-2 border-0 selectBoxfilter" id="floatingSelectGrid">
-                                    <option selected>Popular</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                  </select>
-                                </div>
+                          <div class="home-content pt-4 pb-2">
+                            <div class=" d-flex align-items-center justify-content-end">
+                              <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
+                              <div class="btn-group form-floating border rounded-0">
+                                <button
+                                  class="px-2 fs-5 py-2 border-0 bg-white rounded-0   selectBoxfilter dropdown-toggle"
+                                  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Popular
+                                </button>
+                                <ul
+                                  class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
+                                  aria-labelledby="dropdownMenuButton">
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Newest
+                                      Asset</a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Most
+                                      Viewed</a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Oldest
+                                      Asset</a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Random</a>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
                           </div>
@@ -429,8 +436,7 @@
                           <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
                           <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                             <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40">
-                              <button type="button"
+                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
                                 class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
                                 <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                               </button>
@@ -446,7 +452,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -494,7 +501,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -514,7 +522,135 @@
                               </div>
                             </div>
 
-
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content tb-bg-body input-modal-box border-0">
+                                  <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                                    <div class="col-9 text-end pe-0">
+                                      <h5 class="modal-title tb-h3 text-black me-2" id="exampleModalLabel">Properties
+                                      </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn-close close-dark m-0" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="row m-3">
+                                      <div class="col-7">
+                                        <img class="w-100" src="../../assets/images/video-img.svg" alt="">
+                                      </div>
+                                      <div class="col-5">
+                                        <div class="col-12 ms-3">
+                                          <div class="col-12 d-flex align-items-center">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Created by: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <img src="../../assets/images/Icons/LA.svg" alt="">
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-1">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Entity created for: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">Entity</h5>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Sector created for: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">Sector</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+                                        </div>
+                                        <div class="col-12 ms-3">
+                                          <div class="col-12 d-flex align-items-center">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">File Type: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Location: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Size: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">2.43 MB</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+                                        </div>
+                                        <div class="col-12 ms-3">
+                                          <div class="col-12 d-flex align-items-center">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <img src="../../assets/images/Icons/LA.svg" alt="">
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Last Updated: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">File Version: </h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+                                        </div>
+                                        <div class="col-12 ms-3">
+                                          <div class="col-12 d-flex align-items-center">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14 tb-copyright">Confidential & Copyrighted</h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">Contact Enquiry</h5>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 d-flex align-items-center pt-2">
+                                            <div class="col-6">
+                                              <h5 class="m-0 tb-fs-14">Download count: &nbsp; &nbsp; 10</h5>
+                                            </div>
+                                            <div class="col-6 ms-1">
+                                              <h5 class="m-0 tb-fs-14">No. Views: &nbsp; &nbsp; 1</h5>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 mt-5 d-flex justify-content-center px-4">
+                                          <button class="btn btn-md tb-btn-secondary tb-rounded w-100"
+                                            type="button">Download</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 1st DAM popup modal ends here -->
                           </td>
                         </tr>
                         <tr>
@@ -542,7 +678,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -589,7 +726,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -636,7 +774,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -683,7 +822,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -730,7 +870,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -777,7 +918,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -824,7 +966,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -871,7 +1014,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -918,431 +1062,8 @@
                                           src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>View Properties</a></li>
                                   <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-
-
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
                                       class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left"> <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn"> <i
-                                  class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                      data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
                                           src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
                                           class="w-h-20 me-2"></span>Share</a></li>
                                   <li class="py-2"><a href="#"
@@ -1363,305 +1084,6 @@
                             </div>
 
 
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style" style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>View Properties</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Share</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Version History</a></li>
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Activities</a></li>
-
-                                  <li class="py-2"><a href="#"
-                                      class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                          src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                            <div class="col-6 d-flex align-items-center">
-                              <p class="mb-0 ms-3">Request_2021.pdf</p>
-                            </div>
-                          </td>
-                          <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-
-                          <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                            <span>15 May 2020 9:00 pm</span>
-                            <div class="float-end me-3  text-center w-h-40"> <button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border" data-bs-toggle="modal"
-                                data-bs-target="#">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                            </div>
                           </td>
                         </tr>
                       </tbody>
@@ -1675,17 +1097,21 @@
           <div class="tab-pane fade show active " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
             tabindex="0">
             <div class="card border-0 px-4">
-              <div class="home-content py-4">
+              <div class="home-content pt-4 pb-2">
                 <div class=" d-flex align-items-center justify-content-end">
                   <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
-                  <div class="form-floating border px-2">
-                    <select class="px-2 fs-5 py-2 border-0 selectBoxfilter" id="floatingSelectGrid">
-                      <option selected>Popular</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
+                  <div class="btn-group form-floating border rounded-0">
+                    <button class="px-2 fs-5 py-2 border-0 bg-white rounded-0   selectBoxfilter dropdown-toggle"
+                      type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Popular
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
+                      aria-labelledby="dropdownMenuButton">
+                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Newest Asset</a></li>
+                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Most Viewed</a></li>
+                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Oldest Asset</a></li>
+                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Random</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1693,7 +1119,7 @@
                 <div class="tab-pane  fade show active tab-remove-bg" id="pills-all" role="tabpanel"
                   aria-labelledby="pills-tab-all">
                   <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
-                    <div class="col-4 ">
+                    <div class="col-4">
                       <div class="p-3 gray-900 tb-rounded">
                         <div class="card border-0 mb-2">
                           <img src="../../assets/images/No-image.svg" class="card-img-top" alt="...">
@@ -1706,10 +1132,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1727,10 +1184,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1748,10 +1236,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1769,10 +1288,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1790,10 +1340,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1811,10 +1392,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1832,10 +1444,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1853,10 +1496,41 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-target="#createFolderModal" data-bs-toggle="modal"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1898,10 +1572,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1919,10 +1623,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1940,10 +1674,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1961,10 +1725,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2005,10 +1799,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2026,10 +1850,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2047,10 +1901,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2068,10 +1952,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2089,10 +2003,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2110,10 +2054,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2131,10 +2105,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2152,10 +2156,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2196,10 +2230,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2217,10 +2281,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2238,10 +2332,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2259,10 +2383,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2280,10 +2434,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2301,10 +2485,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2322,10 +2536,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2343,10 +2587,40 @@
                             <p class="text-gray-300 tb-fs-12 mb-0">Image <span class="text-gray-300 tb-fs-12">● Apr 14,
                                 2004</span> </p>
                           </div>
-                          <div>
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent">
+                          <div class="position-relative">
+                            <button type="button" class="border-0 ellipsis-btn bg-transparent ">
                               <img src="../../assets/images/Icons/option-dots.svg" alt="">
                             </button>
+                            <div class="card grid-card-style" style="display: none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Open</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                        src="../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>View Properties</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/share-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Share</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Version-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Version History</a></li>
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/Activities-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Activities</a></li>
+
+                                <li class="py-2"><a href="#"
+                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
+                                        src="../../assets/images/Icons/download-fill-icon.svg" alt="eya-icon"
+                                        class="w-h-20 me-2"></span>Download</a></li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -2375,16 +2649,24 @@
 
 
               </div>
-
             </div>
+
           </div>
           <div class="tab-pane fade  " id="no-results" role="tabpanel" aria-labelledby="pills-profile-tab"
             tabindex="0">
             <div class="card border-0 px-4 ">
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane  fade show active tab-remove-bg" id="pills-all" role="tabpanel"
+                <div class="tab-pane d-flex justify-content-center align-items-center p-5  fade show active tab-remove-bg" id="pills-all" role="tabpanel"
                   aria-labelledby="pills-tab-all">
-                  fuck
+                  <div class="card w-50 p-5 border-0 text-center">
+                    <img src="../../assets/images/Icons/no-results.svg" class="align-self-center" width="170px" alt="...">
+                    <div class="card-body">
+                      <h5 class="text-base-black tb-font-bold tb-fs-16">No results found</h5>
+                      <p class="text-base-black tb-font-regular tb-fs-18">We couldn’t find what you searched for.
+                        Try Search again</p>
+                        <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"> Go Back</button>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="tab-pane fade tab-remove-bg" id="pills-doc" role="tabpanel"

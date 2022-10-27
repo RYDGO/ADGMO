@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-       <!--======== CSS ======== -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
        ">
-       <!--===== Boxicons CSS ===== -->
-       <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-   
-       <!--===== font-awesome CSS ===== -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-           crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <link rel="stylesheet" href="../../../../styles/style.css">
-       <link rel="stylesheet" href="../../../../styles/index.css">
-       <!-- <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css"> -->
-</head>
-<body>
-    <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-    data-bs-target="#requestInfo" type="button">Request Information</button>
-<button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-    data-bs-target="#decline-modal" type="button">Decline</button>
-<button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
-    data-bs-toggle="modal" data-bs-target="#priorityModal" type="button">Accept</button>
-    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
-    data-bs-toggle="modal" data-bs-target="#sendforApprovalModal" type="button">Send For Approval</button>
+    <!--===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    
-           <!-- Others Modal Ends -->
-        <div class="modal fade modal-backdrop-op " id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <!-- <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css"> -->
+</head>
+
+<body>
+    <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal" data-bs-target="#requestInfo"
+        type="button">Request Information</button>
+    <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal" data-bs-target="#decline-modal"
+        type="button">Decline</button>
+    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal" data-bs-toggle="modal"
+        data-bs-target="#priorityModal" type="button">Accept</button>
+    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal" data-bs-toggle="modal"
+        data-bs-target="#sendforApprovalModal" type="button">Send For Approval</button>
+        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal" data-bs-target="#blockedModal"
+        type="button">Mark as Blocked</button>
+    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal" data-bs-toggle="modal"
+        data-bs-target="#assignModal" type="button">Assign</button>
+
+    <!-- Others Modal Ends -->
+    <div class="modal fade modal-backdrop-op " id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog main-modal modal-dialog-position">
             <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
@@ -106,8 +111,8 @@
                         <div class="row mt-2 mb-2 border-bottom py-2">
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="English">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="English">
                                     <label for="English">English</label>
                                 </div>
                             </div>
@@ -117,8 +122,8 @@
                         <div class="row mt-2 mb-2  py-2">
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="Arabic">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                        value="" id="Arabic">
                                     <label for="Arabic">Arabic</label>
                                 </div>
                             </div>
@@ -294,8 +299,7 @@
                     <div class="row g-0 mt-3">
                         <div class="tb-input-group d-flex align-items-center  p-2">
                             <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
-                                <img src="../assets/images/person1.jpg" alt=""
-                                    class="img-100 selected-dropdown-image">
+                                <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
                             </div>
                             <div class="col-11 ms-2">
                                 <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
@@ -315,8 +319,7 @@
                                     <li class="list-group-item d-flex align-items-center " value="2">
                                         <div
                                             class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                            <img src="../assets/images/person1.jpg" alt="Jacob Jones"
-                                                class="img-100">
+                                            <img src="../assets/images/person1.jpg" alt="Jacob Jones" class="img-100">
                                         </div>
                                         <span class="ms-3">Jacob Jones</span>
                                     </li>
@@ -364,131 +367,242 @@
                             </div>
                             <p class="error-message">• Error Message</p>
                         </div>
-                      <div class="col-md-12">
-                        <div class="accordion" id="accordion-arabic">
-                            <div class="accordion-item accordion-bottom-border">
-                              <h2 class="accordion-header" id="heading-arabic-1">
-                                <button type="button" class="shadow-none accordion-button collapsed" data-bs-toggle="collapse"
-                                  data-bs-target="#collapse-arabic-1">
-                                 Circular(en)
-                                </button>
-                              </h2>
-                              <div id="collapse-arabic-1" class="accordion-collapse collapse show">
-                                <div class="collapse-inner-bg p-3">
-                                 <div class="row">
-                                <div class="col-md-10">Are the deliverables due as part of the service level agreement (SLA)?</div>
-                                <div class="col-md-2">yes</div>
-                                 </div>
-                            
-                                  
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item accordion-bottom-border">
-                              <h2 class="accordion-header" id="heading-arabic-2">
-                                <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
-                                  data-bs-target="#collapse-arabic-2">
-                                  Circular(ar)
-                                </button>
-                              </h2>
-                              <div id="collapse-arabic-2" class="accordion-collapse collapse show">
-                                <div class="collapse-inner-bg p-3">
-                                    <div class="row">
-                                   <div class="col-md-10">Are the deliverables due as part of the service level agreement (SLA)?</div>
-                                   <div class="col-md-2">yes</div>
+                        <div class="col-md-12">
+                            <div class="accordion" id="accordion-arabic">
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-arabic-1">
+                                        <button type="button" class="shadow-none accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-arabic-1">
+                                            Circular(en)
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-arabic-1" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3">
+                                            <div class="row">
+                                                <div class="col-md-10">Are the deliverables due as part of the service
+                                                    level agreement (SLA)?</div>
+                                                <div class="col-md-2">yes</div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
-                               
-                                     
-                                   </div>
-                              </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-arabic-2">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-arabic-2">
+                                            Circular(ar)
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-arabic-2" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3">
+                                            <div class="row">
+                                                <div class="col-md-10">Are the deliverables due as part of the service
+                                                    level agreement (SLA)?</div>
+                                                <div class="col-md-2">yes</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                           
-                          </div>
-                      </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-end my-4 mx-3 ">
                     <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
-                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button" >Confirm</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="sendforApprovalModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-    tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
-                    Send for Approval</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body collapse-inner-bg">
-                <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
-                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                        <img src="../../../assets/images/person.jpg" alt=""
-                            class="img-100 selected-dropdown-image">
-                    </div>
-                    <div class="w-100">
-                        <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
-                        <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image"
-                            name="browsers" placeholder="placeholder..">
-                        <i class="fa fa-solid fa-angle-down"></i>
-                        <ul class="col-12 input-dropdown-list list-group rounded-0">
-                            <li class="list-group-item d-flex align-items-center " value="Avashesh">
-                                <div
-                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                    <img src="../../../assets/images/person.jpg" alt="Brookyln Simmons"
-                                        class="img-100">
+    
+
+    <!-- Assign Modal -->
+    <div class="modal fade" id="assignModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
+                        Select Assignee</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body collapse-inner-bg p-4">
+                    <p class="regular-paragraph">Select the deliverables to assign</p>
+                    <div class="row g-3">
+                        <div class="col-md-12 bg-white px-3">
+                            <label for="input-image-assigne"
+                                class="tb-fs-16 tb-fw-700 col-12 p-2 border-bottom">Circulars(En)
+                            </label>
+                            <div class="tb-input-group d-flex align-items-center  p-2 border-bottom">
+                                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                    <img src="../../../assets/images/person.jpg" alt=""
+                                        class="img-100 selected-dropdown-image">
                                 </div>
-                                <span class="ms-3">Brookyln Simmons </span>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center " value="2">
-                                <div
-                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                    <img src="../../../assets/images/person.jpg" alt="Jacob Jones"
-                                        class="img-100">
+                                <div class="w-100">
+                                    <label class="col-12 input-label"
+                                        for="input-image-assignee">Assignee<sup>*</sup></label>
+                                    <input class="col-11 input-img" autocomplete="off" role="combobox"
+                                        id="input-image-assigne" name="browsers" placeholder="placeholder..">
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                    <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                        <li class="list-group-item d-flex align-items-center " value="Avashesh">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Brookyln Simmons"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Brookyln Simmons </span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center " value="2">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Jacob Jones"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Jacob Jones</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center " value="3">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Guy Hawkins"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Guy Hawkins</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <span class="ms-3">Jacob Jones</span>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center " value="3">
-                                <div
-                                    class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                                    <img src="../../../assets/images/person.jpg" alt="Guy Hawkins"
-                                        class="img-100">
+                            </div>
+                            <div class="tb-input-group p-2">
+                                <label class="col-12 input-label" for="inputNoError">Notes</label>
+                                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
+                                    placeholder="Placeholder">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 bg-white px-3">
+                            <label for="input-image-assigne"
+                                class="tb-fs-16 tb-fw-700 col-12 p-2 border-bottom">Circulars(Ar)
+                            </label>
+                            <div class="tb-input-group d-flex align-items-center  p-2 border-bottom">
+                                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                    <img src="../../../assets/images/person.jpg" alt=""
+                                        class="img-100 selected-dropdown-image">
                                 </div>
-                                <span class="ms-3">Guy Hawkins</span>
-                            </li>
-                        </ul>
+                                <div class="w-100">
+                                    <label class="col-12 input-label"
+                                        for="input-image-assignee">Assignee<sup>*</sup></label>
+                                    <input class="col-11 input-img" autocomplete="off" role="combobox"
+                                        id="input-image-assigne" name="browsers" placeholder="placeholder..">
+                                    <i class="fa fa-solid fa-angle-down"></i>
+                                    <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                        <li class="list-group-item d-flex align-items-center " value="Avashesh">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Brookyln Simmons"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Brookyln Simmons </span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center " value="2">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Jacob Jones"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Jacob Jones</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center " value="3">
+                                            <div
+                                                class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                                                <img src="../../../assets/images/person.jpg" alt="Guy Hawkins"
+                                                    class="img-100">
+                                            </div>
+                                            <span class="ms-3">Guy Hawkins</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tb-input-group p-2">
+                                <label class="col-12 input-label" for="inputNoError">Notes</label>
+                                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
+                                    placeholder="Placeholder">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tb-input-group p-2 mt-4">
-                    <label class="col-12 input-label" for="inputNoError">Label</label>
-                    <input class="col-12 input-field" id="inputNoError" name="inputNoError"
-                        placeholder="Placeholder">
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Assign</button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Save</button>
-                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
             </div>
         </div>
     </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+    <!-- Blocked Modal -->
+    <div class="modal fade" id="blockedModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
+                        Mark as Blocked</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body collapse-inner-bg p-4">
+                    <p class="regular-paragraph">Select the deliverables to block</p>
+                    <div class="row g-3">
+                        <div class="col-md-12 bg-white px-3">
+                            <div class="col-12 p-2 border-bottom">
+                                <input type="checkbox" name="blocked" id="blockedEn">
+                                <label for="blockedEn" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars(En)
+                                </label>
+                            </div>
+                            <div class="tb-input-group p-2">
+                                <label class="col-12 input-label" for="inputNoError">Notes</label>
+                                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
+                                    placeholder="Placeholder">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 bg-white px-3">
+                            <div class="col-12 p-2 border-bottom">
+                                <input type="checkbox" name="blocked" id="blockedAr">
+                                <label for="blockedAr" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars(Ar)
+                                </label>
+                            </div>
+                            <div class="tb-input-group p-2">
+                                <label class="col-12 input-label" for="inputNoError">Notes</label>
+                                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
+                                    placeholder="Placeholder">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Block</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-<script src="../../../../javascript/charts.js"></script>
-<script src="../../../../javascript/inputs&dropdowns.js"></script>
-<script src="../../../../javascript/script.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../../../../javascript/charts.js"></script>
+    <script src="../../../../javascript/inputs&dropdowns.js"></script>
+    <script src="../../../../javascript/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
 </body>
 
 </html>

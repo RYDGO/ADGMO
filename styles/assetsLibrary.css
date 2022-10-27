@@ -47,6 +47,19 @@
     border-radius: 12px !important;
     
   }
+  .modalFilter-card-style{
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    padding:10px 0px 0px 0px;
+    z-index: 10;
+    width: 456px;
+    overflow-y: hidden;
+    border: none !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 4px !important;
+    
+  }
                     /* pagination style */
 
 #exampletable_info{
@@ -151,4 +164,9 @@
    border-left: 1px solid #b8b8b8;
    padding: 32px;
    margin-left: 4.7rem;
+}
+.custom-postions-modal{
+    position:absolute;
+    top: 26% !important;
+    left:52% !important;
 }

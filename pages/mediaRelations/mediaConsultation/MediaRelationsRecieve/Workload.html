@@ -1778,128 +1778,42 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op " id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade modal-backdrop-op background-dim" id="filterModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Select Deliverables</h5>
+                            Select Deliverable Language</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">
-                                <div class="col-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="media-recommendations">
-                                        <label for="media-recommendations">Media Recommendations</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="English">
-                                        <label for="English">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Arabic">
-                                        <label for="Arabic">Arabic</label>
-                                    </div>
+                          <div class="row g-0 gy-3">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                        type="checkbox" value="" id="Arabic">
+                                    <label for="Arabic">Arabic</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">
-                                <div class="col-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="media-plan">
-                                        <label for="media-plan">Media Plan</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="English2">
-                                        <label for="English2">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Arabic2">
-                                        <label for="Arabic2">Arabic</label>
-                                    </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                        type="checkbox" value="" id="English">
+                                    <label for="English">English</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">
-                                <div class="col-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="media-brief">
-                                        <label for="media-brief">Media Brief</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="English2">
-                                        <label for="English2">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Arabic2">
-                                        <label for="Arabic2">Arabic</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-wrapper">
-                            <div class="row mt-2 mb-2 border-bottom py-2">
-                                <div class="col-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Others">
-                                        <label for="Others">Others</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="English3">
-                                        <label for="English3">English</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="Arabic3">
-                                        <label for="Arabic3">Arabic</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a href="javascript:void(0)"><span
-                                    class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
-                                    deliverables</span></a>
+                          </div>
+                          
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
                             data-bs-target="#priorityModal" type="button">Back</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#prl-Modal">Next</button>
+                            data-bs-target="#prl-Modal">next</button>
                     </div>
                 </div>
             </div>

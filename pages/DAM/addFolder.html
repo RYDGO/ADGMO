@@ -288,13 +288,13 @@
             <div class=" d-flex align-items-center">
               <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
                 <li class="" role="presentation">
-                  <button class="nav-link active btn btn-secondary text-black me-2 fs-4" id="pills-home-tab" data-bs-toggle="pill"
+                  <button class="nav-link  btn btn-secondary text-black me-2 fs-4" id="pills-home-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                     aria-selected="true"><img src="../../assets/images/Icons/list-icon.svg" alt="list-icon"
                     class="me-3" >list</button>
                 </li>
                 <li class="" role="presentation">
-                  <button class="nav-link btn btn-secondary text-black fs-4" id="pills-profile-tab" data-bs-toggle="pill"
+                  <button class="nav-link active  btn btn-secondary text-black fs-4" id="pills-profile-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                     aria-selected="false"><img src="../../assets/images/Icons/grid-icon.svg" alt="grid-icon"
                       class="me-3">Grid</button>
@@ -307,35 +307,45 @@
       <div class="d-flex">
         <div class="col-2">
             <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular mb-3" type="button"><img src="../../assets/images/Icons/plus-icons.svg" alt="" srcset="" class="me-1"> Add Asset</button>
-            <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular" type="button"><img src="../../assets/images/Icons/folder-icon.svg" alt="" srcset="" class="me-2">Add Folder</button>
-            <div class="folder-tree-wrapper">
-                <ul class="folder-tree">
-                  <li><i class="fa fa-folder"></i> New Folder (0)
-                    <div class="arrow"><i class="fa fa-angle-down"></i></div>
-              
+            <button class="btn custom-btn  tb-btn-secondary tb-rounded fs-4 tb-font-regular mb-3" data-bs-target="#createFolderModal" data-bs-toggle="modal" type="button"><img src="../../assets/images/Icons/folder-icon.svg" alt="" srcset="" class="me-2">Add Folder</button>
+            <ul id="tree2">
+              <li class="">
+                  <img src="../../assets/images/Icons/file-folder.svg" alt="" class="mb-2">
+                  <a href="#" class="text-base-black fs-4 ms-1">Home</a>
+                <ul>
+                  <li><span class="d-flex align-items-center">
+                 <img src="../../assets/images/Icons/file-folder.svg" alt="" class=""> <span class="mt-2 fs-5 ms-1">
+                      Files
+                  </span> </span></li>
+                  <li><span class="d-flex align-items-center">
+                 <img src="../../assets/images/Icons/file-folder.svg" alt="" class=""> <span class="mt-2 fs-5 ms-1 text-nowrap">
+                  Published Assets
+                  </span> </span></li>
+                  <!-- <li>Employees
                     <ul>
-                      <li><i class="fa fa-folder"></i> New Folder (0)</li>
-                      <li><i class="fa fa-folder"></i> New Folder (1)
-                        <div class="arrow"><i class="fa fa-angle-down"></i></div>
+                      <li>Reports
                         <ul>
-              
-                          <li><i class="fa fa-folder"></i> New Folder (2)</li>
-                          <li><i class="fa fa-folder"></i> folder</li>
-              
+                          <li>Report1</li>
+                          <li>Report2</li>
+                          <li>Report3</li>
                         </ul>
-              
                       </li>
+                      <li>Employee Maint.</li>
                     </ul>
-              
-                  </li>
-                  <li><i class="fa fa-folder"></i> New Folder (1)</li>
-                  <li><i class="fa fa-folder"></i> New Folder (2)</li>
-                  <li><i class="fa fa-folder"></i> folder</li>
+                  </li> -->
+                  <li><span class="d-flex align-items-center">
+                      <img src="../../assets/images/Icons/files-icon.svg" alt="" srcset="">
+                      <span class="mt-2 fs-5 ms-2 text-nowrap">
+                      Edit-test.docx
+                  </span>
+                      </span></li>
+                  <li><span class="d-flex align-items-center"><img src="../../assets/images/Icons/images-icon.svg" alt="" srcset="" class="w-h-20"> <span class="mt-2 fs-5 ms-2 text-nowrap">img-2.jpg</span></span></li>
                 </ul>
-              </div>
+              </li>
+            </ul>
             </div>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          <div class="tab-content col-10" id="pills-tabContent">
+            <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
               tabindex="0">
                 
                  <!-- table -->
@@ -343,14 +353,40 @@
                 <!-- column -->
     
                 <div class="col-12">
-                  <div class="card">
+                  <div class="card border-0">
+                     <div class="card-body">
+                      <!-- title -->
+                      <div class="d-md-flex align-items-center px-1">
+                        <div class="ms-auto d-flex justify-content-between align-items-center">
+                          <div class="d-flex justify-content-center me-4">
+                            <!-- <span class="rounded-circle pad-8-12 border-gray-500 ">
+                              <i class="fa-solid fa-magnifying-glass "></i>
+                            </span> -->
+                          </div>
+                          <div class="dl">
+                            <div class=" d-flex align-items-center justify-content-end">
+                              <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
+                              <div class="form-floating border px-2">
+                                <select class="px-2 fs-5 py-2 border-0 selectBoxfilter" id="floatingSelectGrid">
+                                  <option selected>Popular</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- title -->
+                    </div>
                     <div class="table-responsive rounded-3 mx-3 mt-4">
                       <table id="exampletable" class="table v-middle">
                         <thead class="">
                           <tr class="gray-500 text-white text-left ">
                             <th class="fw-light th-pd">Name</th>
                             <th class="fw-light th-pd">Type</th>
-                            <th class="fw-light th-pd">Owner</th>
                             <th class="fw-light th-pd">Last Update</th>
                           </tr>
                         </thead>
@@ -358,15 +394,10 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -397,18 +428,13 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                              <span>15 May 2020 9:00 pm</span>
-                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                              <span>15 May 2020 9:00 pm</span>                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
                                 class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
                                 <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                               </button>
@@ -564,21 +590,16 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
                                 class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
+                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>                              </button>
                               <div class="card card-style"style="display: none;">
                                 <ul class="list-unstyled">
                                   <li><a href="#"
@@ -602,15 +623,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -618,8 +635,7 @@
                                 <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                               </button>
                               <div class="card card-style"style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li><a href="#"
+                                <ul class="list-unstyled">                                  <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
                                       data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
                                           src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
@@ -640,15 +656,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -659,8 +671,7 @@
                                 <ul class="list-unstyled">
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>View properties</a></li>
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
@@ -678,15 +689,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -700,8 +707,7 @@
                                       data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
                                           src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>View properties</a></li>
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                  <li><a href="#"                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
                                           src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>Version History</a></li>
                                   <li><a href="#"
@@ -716,15 +722,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -741,8 +743,7 @@
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
                                           src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Version History</a></li>
-                                  <li><a href="#"
+                                          class="w-h-25 me-2"></span>Version History</a></li>                                  <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
                                           src="../../assets/images/Icons/download.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>Download</a></li>
@@ -754,15 +755,77 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
+                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                              <span>15 May 2020 9:00 pm</span>
+                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                              </button>
+                              <div class="card card-style"style="display: none;">
+                                <ul class="list-unstyled">
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                          class="w-h-25 me-2"></span>View properties</a></li>
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                          class="w-h-25 me-2"></span>Version History</a></li>
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"                                          class="w-h-25 me-2"></span>Download</a></li>
+                                </ul>
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                              <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0 ms-3">Request_2021.pdf</p>
+                              </div>
+                            </td>
+                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+
+                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                              <span>15 May 2020 9:00 pm</span>
+                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
+                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
+                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                              </button>
+                              <div class="card card-style"style="display: none;">
+                                <ul class="list-unstyled">
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
+                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
+                                          class="w-h-25 me-2"></span>View properties</a></li>
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
+                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
+                                          class="w-h-25 me-2"></span>Version History</a></li>
+                                  <li><a href="#"
+                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
+                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                          class="w-h-25 me-2"></span>Download</a></li>
+                                </ul>
+                              </div>                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                              <div class="col-6 d-flex align-items-center">
+                                <p class="mb-0 ms-3">Request_2021.pdf</p>
+                              </div>
+                            </td>
+                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -788,95 +851,14 @@
                               </div>
                               </div>
                             </td>
-                          </tr>
-                          <tr>
+                          </tr>                          <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
-                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                              <span>15 May 2020 9:00 pm</span>
-                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style"style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>View properties</a></li>
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
-                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Version History</a></li>
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
-                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                              <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
-                                <p class="mb-0 ms-3">Request_2021.pdf</p>
-                              </div>
-                            </td>
-                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
-                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                              <span>15 May 2020 9:00 pm</span>
-                              <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
-                              </button>
-                              <div class="card card-style"style="display: none;">
-                                <ul class="list-unstyled">
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
-                                          src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>View properties</a></li>
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
-                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Version History</a></li>
-                                  <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
-                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Download</a></li>
-                                </ul>
-                              </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                              <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
-                                <p class="mb-0 ms-3">Request_2021.pdf</p>
-                              </div>
-                            </td>
-                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -905,18 +887,13 @@
     
                             </td>
                           </tr>
-                          <tr>
-                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                          <tr>                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -946,15 +923,10 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
-                            </td>
-                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+                            </td>                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -984,17 +956,12 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
-                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
-                              <span>15 May 2020 9:00 pm</span>
+
+                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">                              <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
                                 class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
                                 <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
@@ -1022,20 +989,15 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
-                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
-                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
+                                class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">                                <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                               </button>
                               <div class="card card-style"style="display: none;">
                                 <ul class="list-unstyled">
@@ -1060,23 +1022,18 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
                                 class=" btn-light py-0 px-2 bg-white  rounded-circle border ellipsis-btn">
                                 <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                               </button>
-                              <div class="card card-style"style="display: none;">
-                                <ul class="list-unstyled">
+                              <div class="card card-style"style="display: none;">                                <ul class="list-unstyled">
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
                                       data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
@@ -1098,15 +1055,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1116,8 +1069,7 @@
                               <div class="card card-style"style="display: none;">
                                 <ul class="list-unstyled">
                                   <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
-                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
+                                      class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"                                      data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
                                           src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>View properties</a></li>
                                   <li><a href="#"
@@ -1136,15 +1088,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1157,8 +1105,7 @@
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300"
                                       data-bs-toggle="modal" data-bs-target="#exampleModal9"><span><img
                                           src="../../assets/images/Icons/view-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>View properties</a></li>
-                                  <li><a href="#"
+                                          class="w-h-25 me-2"></span>View properties</a></li>                                  <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
                                           src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>Version History</a></li>
@@ -1174,15 +1121,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1198,8 +1141,7 @@
                                           class="w-h-25 me-2"></span>View properties</a></li>
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs-6 fw-300 my-1"><span><img
-                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Version History</a></li>
+                                          src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"                                          class="w-h-25 me-2"></span>Version History</a></li>
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
                                           src="../../assets/images/Icons/download.svg" alt="eya-icon"
@@ -1212,15 +1154,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1239,8 +1177,7 @@
                                           src="../../assets/images/Icons/Vector-icon.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>Version History</a></li>
                                   <li><a href="#"
-                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
-                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
+                                      class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
                                           class="w-h-25 me-2"></span>Download</a></li>
                                 </ul>
                               </div>
@@ -1252,15 +1189,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet1</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1280,8 +1213,7 @@
                                           class="w-h-25 me-2"></span>Version History</a></li>
                                   <li><a href="#"
                                       class="text-decoration-none text-black d-flex align-items-center fs- fw-l"><span><img
-                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"
-                                          class="w-h-25 me-2"></span>Download</a></li>
+                                          src="../../assets/images/Icons/download.svg" alt="eya-icon"                                          class="w-h-25 me-2"></span>Download</a></li>
                                 </ul>
                               </div>
                               </div>
@@ -1290,15 +1222,11 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet2</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1323,20 +1251,15 @@
                                 </ul>
                               </div>
                               </div>
-                            </td>
-                          </tr>
+                            </td>                          </tr>
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet3</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1364,17 +1287,12 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
-                              <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
+                            <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">                              <div class="col-6 d-flex align-items-center">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet4</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1404,15 +1322,10 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
-                              </div>
-                            </td>
+                              </div>                            </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet5</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1442,15 +1355,10 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet6</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
                               <div class="float-end me-3 position-relative  text-center w-h-40"><button type="button"
@@ -1480,19 +1388,14 @@
                           <tr>
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
                               <div class="col-6 d-flex align-items-center">
-                                <img src="../../assets/images/Icons/PDF.svg" alt="" width="30">
                                 <p class="mb-0 ms-3">Request_2021.pdf</p>
                               </div>
                             </td>
                             <td class=" py-2 table-pd-top border-bottom-0 table-pd-left">Spreadsheet</td>
-                            <td class="d-flex  align-items-center py-3 ps- border-bottom-0 ps-4"><span
-                                class="tb-rounded-pill common-width-label-45  gray-100 tb-rounded-pill d-flex justify-content-center align-items-center p-1">
-                                <p class="mb-0 small-paragraph">SK</p>
-                              </span></td>
+
                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                               <span>15 May 2020 9:00 pm</span>
-                              <div class="float-end me-3  text-center w-h-40"> <button type="button"
-                                  class=" btn-light py-0 px-2 bg-white  rounded-circle border" data-bs-toggle="modal"
+                              <div class="float-end me-3  text-center w-h-40"> <button type="button"                                  class=" btn-light py-0 px-2 bg-white  rounded-circle border" data-bs-toggle="modal"
                                   data-bs-target="#">
                                   <i class="fa-solid fa-ellipsis fs-4 pt-2"></i>
                                 </button>
@@ -1507,16 +1410,789 @@
                 </div>
                 <!-- table-ends here -- -->
             </div>
-            <div class="tab-pane fade col-8" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-              <div class="row d-flex justify-content-between align-items-center g-4 my-4 flex-wrap">
-                <div class="col-4">
-                  <div class="card border-0">
-                    <img src="../../assets/images/asset-liabrary.svg" class="card-img-top" alt="...">
-                    <div class="d-flex justify-content-center">
-                      <div class="position-absolute bottom-0 col-11 mx-3 mb-3 bg-white tb-rounded-10 view-card-border">
-                        <div class="d-flex justify-content-between pt-3 ms-3">
-                          <h5 class="fs-6">Document Title</h5>
-                          <img class="ms-2 me-2" src="../../assets/images/Icons/download-2.svg" alt="">
+            <div class="tab-pane fade show active " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="card border-0 px-4">
+                    <div class="home-content py-4">
+                      <div class=" d-flex align-items-center justify-content-end">
+                        <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
+                        <div class="form-floating border px-2">
+                          <select class="px-2 fs-5 py-2 border-0 selectBoxfilter" id="floatingSelectGrid">
+                            <option selected>Popular</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane  fade show active tab-remove-bg" id="pills-all" role="tabpanel"
+                                aria-labelledby="pills-tab-all">
+                                <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                   </div>
+                                   <div class="d-flex justify-content-end">
+                                       <div class="d-flex justify-content-between me-3">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-left"></i>
+                                           </span>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-right"></i>
+                                           </span>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade tab-remove-bg" id="pills-doc" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/No-image.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                   </div>
+                                   <div class="d-flex justify-content-end">
+                                       <div class="d-flex justify-content-between me-3">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-left"></i>
+                                           </span>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-right"></i>
+                                           </span>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade tab-remove-bg" id="pills-videos" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                   </div>
+                                   <div class="d-flex justify-content-end">
+                                       <div class="d-flex justify-content-between me-3">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-left"></i>
+                                           </span>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-right"></i>
+                                           </span>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade tab-remove-bg" id="pills-img" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="row d-flex g-4 mb-4 mt-2 flex-wrap">
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/card-img.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">
+                                                        Request_2021.pdf</p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <div class="p-3 gray-900 tb-rounded">
+                                            <div class="card border-0 mb-2">
+                                                <img src="../../assets/images/party-day.svg" class="card-img-top"
+                                                    alt="...">
+
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="nav-text text-base-black mb-1 tbfs-16">IMJ_2343.jpg
+                                                    </p>
+                                                    <p class="text-gray-300 tb-fs-12 mb-0">Image <span
+                                                            class="text-gray-300 tb-fs-12">● Apr 14,
+                                                            2004</span> </p>
+                                                </div>
+                                                <div>
+                                                    <button type="button"
+                                                        class="border-0 ellipsis-btn bg-transparent">
+                                                        <img src="../../assets/images/Icons/option-dots.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                   </div>
+                                   <div class="d-flex justify-content-end">
+                                       <div class="d-flex justify-content-between me-3">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-left"></i>
+                                           </span>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                           <span class="gray-100 pad-8-12 gray-300-hover">
+                                               <i class="fa-solid fa-chevron-right"></i>
+                                           </span>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                         <div class="d-flex py-2 align-items-center">
                           <img class="ps-3" src="../../assets/images/Profile image.png" alt="">

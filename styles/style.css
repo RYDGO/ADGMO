@@ -2284,6 +2284,9 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
     border-bottom: 30px solid var(--collapse-bg);
 }
 
+.accordion-top-border {
+    border-top: 15px solid var(--collapse-bg);
+}
 
 /* ACCORDION FORM STYLES ENDS  */
 

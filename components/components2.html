@@ -2988,14 +2988,14 @@
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content tb-bg-body">
-                <div class="modal-header">
+                <div class="modal-header p-0">
                     <div class="modal-header">
                         <h1 class="modal-title tb-fs-20 font-weight-700 text-dark-black " id="exampleModalToggleLabel2">
                             Filter by
                         </h1>
                     </div>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body pt-0">
                     <div class="row mb-3">
                         <div class="col-md-12">
                             <div class="tb-input-group-damn-popup p-2">
@@ -3014,12 +3014,9 @@
                                     name="sector" placeholder="Select Option">
                                 <i class="fa fa-solid fa-angle-down"></i>
                                 <datalist role="listbox">
-                                    <option value="1" >Health</option>
-                                    <hr>
-                                    <option value="2">Tech</option>
-                                    <hr>
-                                    <option value="3">Agriculture</option>
-                                    <hr>
+                                    <option value="1" class="border-bottom p-3" >Health</option>
+                                    <option value="2" class="border-bottom p-3">Tech</option>
+                                    <option value="3" class="border-bottom p-3">Agriculture</option>
                                 </datalist>
                             </div>
                         </div>
@@ -3064,7 +3061,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 ">
                         <label for="asset-published-date" class="font-weight-400 tb-fs-12 mb-3">Asset published date</label>
                         
                         <div class="col-md-6">
@@ -3082,12 +3079,14 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <button class="btn btn-md tb-btn-secondary tb-rounded w-100" type="button">Reset</button>
-                        </div>
-                        <div class="col-md-6">
-                            <button class="btn btn-md tb-btn-primary tb-rounded w-100 " type="button">Apply Filter</button>
+                    <div class="modal-footer flex-row d-flex justify-content-between w-100">
+                        <div class="row col-md-12">
+                            <div class="col-md-6">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded w-100" type="button">Reset</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-md tb-btn-primary tb-rounded w-100 " type="button">Apply Filter</button>
+                            </div>
                         </div>
                     </div>
                 </div>

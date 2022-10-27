@@ -145,3 +145,10 @@
     padding:0px 0px 0px 0px;
     outline: 0;
 }
+.vartical-lines{
+   width: 100% !important;
+   height: 30% !important;
+   border-left: 1px solid #b8b8b8;
+   padding: 32px;
+   margin-left: 4.7rem;
+}

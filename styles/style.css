@@ -1381,6 +1381,9 @@ option:hover,
 .inner-modal-content-box {
     width: 650px !important;
 }
+.inner-modal-content-dam-modals {
+    width: 1140px !important;
+}
 
 .main-modal {
     margin-left: 29.4% !important;

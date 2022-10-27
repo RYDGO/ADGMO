@@ -1087,16 +1087,16 @@ a:hover {
 
 .tb-btn-underline {
     background-color: var(--collapse-bg) !important;
-    color: var(--text-base-black) !important;
+    color: var(--grayshade-200) !important;
     border: 1px solid var(--collapse-bg) !important;
-    border-bottom: 1px solid var(--grayshade-100) !important;
+    border-bottom: 1px solid #dee2e6 !important;
 }
 
 .tb-btn-underline:hover {
     background-color: var(--collapse-bg) !important;
-    color: var(--text-base-black) !important;
+    color: var(--btn-bg-hover) !important;
     border: 1px solid var(--collapse-bg) !important;
-    border-bottom: 1px solid var(--grayshade-200) !important;
+    border-bottom: 1px solid var(--btn-bg-hover) !important;
 }
 
 .tb-btn-underline:active {
@@ -1749,10 +1749,15 @@ header .image-text .profession {
     padding: 0 0 0 30px;
 }
 
+.nav-link {
+    box-shadow: none !important;
+}
+
 .nav-link button {
     width: 210px;
     white-space: nowrap;
     padding: 0px 30px;
+    box-shadow: none !important;
 }
 
 .sidebar.close .nav-link button {

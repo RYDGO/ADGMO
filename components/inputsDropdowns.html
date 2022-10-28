@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <div class="container">
+ <div class="container-fluid bg-color-gray">
+  <div class="container ">
     <div class="row mt-4">
       <h1>Inputs and Dropdowns</h1>
       <div class="col-md-3 mt-3">
@@ -55,7 +56,7 @@
       <div class="col-md-3">
         <div class="tb-input-group p-2 mt-3 ">
           <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
-          <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
+          <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
             placeholder="placeholder..">
           <i class="fa fa-solid fa-angle-down"></i>
           <datalist id="browsers" role="listbox">
@@ -66,6 +67,59 @@
         </div>
         <p class="error-message">• Error message</p>
       </div>
+     
+      <div class="col-md-3 bg-white p-3 mt-3">
+        <div class="col-12 p-2 border-bottom">
+          <input class="form-check-input shadow-none" type="checkbox" value=""
+          id="blockedEn">
+          <label for="blockedEn" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars(En)
+          </label>
+      </div>
+        </label>
+        <div class="tb-input-group d-flex align-items-center  p-2 border-bottom">
+          <span
+          class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+          <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+      </span>
+            <div class="col">
+                <label class="col-12 input-label"
+                    for="input-image-assignee">Assignee<sup>*</sup></label>
+                <input class="col-11 input-no-img" autocomplete="off" role="combobox"
+                    id="input-image-assigne" name="browsers" placeholder="placeholder..">
+                <i class="fa fa-solid fa-angle-down"></i>
+                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                    <li class="list-group-item d-flex align-items-center " >
+                      <input type="radio" class="tb-radio me-3"name="assignee" id="assignee1" value="GuyHawkins 1">
+                      <div class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                      </div>
+                      <label for="assignee1"class="ms-3 col p-3">Guy Hawkins 1</label>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center " >
+                      <input type="radio" class="tb-radio me-3"name="assignee" id="assignee2"  value="Guy Hawkins 2">
+
+                      <div class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                      </div>
+                      <label for="assignee2"class="ms-3 col p-3">Guy Hawkins 2</label>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ">
+                      <input type="radio" class="tb-radio me-3"name="assignee" id="assignee3"  value="Guy Hawkins 3">
+                      <div class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                      </div>
+                        <label for="assignee3"class="ms-3 col p-3">Guy Hawkins 3</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tb-input-group p-2">
+            <label class="col-12 input-label" for="inputNoError">Notes</label>
+            <input class="col-12 input-field" id="inputNoError" name="inputNoError"
+                placeholder="Placeholder">
+        </div>
+    </div>
+
 
       <div class="col-md-3">
         <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
@@ -285,6 +339,7 @@
 
     <!-------------- Input And Dropdowns Ends Here -------------->
   </div>
+ </div>
 </body>
 
 <!-- Javascript-files -->

@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
   });
 
-  //--------- Input-Search-Dropdown (image) -------
+  //--------- Input-Search-Dropdown (image-change) -------
   var selectedin = "";
   $(".input-img").focus(function () {
     $(this).parent().children(".input-dropdown-list").css("display", "block");
@@ -119,10 +119,9 @@ $(document).ready(function () {
       });
   });
 
-  $(".input").on("blur", function () {
+  $(".input-img").on("blur", function () {
     let input = this;
     input.value = selectedin;
-    let datalist = $(this).parent().children("datalist");
     setTimeout(() => {
       let error = $(this).parent().next();
       if (!input.value) {
@@ -136,7 +135,8 @@ $(document).ready(function () {
       $(datalist).css("display", "none");
     }, 300);
   });
-  $(".input").on("input", function () {
+
+  $(".input-img").on("input", function () {
     currentFocus = -1;
     var text = this.value.toUpperCase();
     let option = $(this).parent().children("datalist").find("option");
@@ -149,12 +149,60 @@ $(document).ready(function () {
     });
   });
 
-  //   $(".dropdown-input").focus(function () {
-  //     $(".input-dropdown-list").show(1000);
-  //   });
-  //   $(".dropdown-input").blur(function () {
-  //     $(".input-dropdown-list").hide(1000);
-  //   });
+ //--------- Input-Search-Dropdown (image-no-image) -------
+ var selectedin = "";
+ $(".input-no-img").focus(function () {
+   $(this).parent().children(".input-dropdown-list").css("display", "block");
+   $(this).parent().addClass("border-dark");
+   $(this).css("border-radius", "5px 5px 0 0");
+   let input = this;
+   let inputdropdownlist = $(this).parent().children(".input-dropdown-list");
+   $(this)
+     .parent()
+     .children(".input-dropdown-list")
+     .find("li")
+     .each(function () {
+       $(this).click(() => {
+        $(this).find(".tb-radio:checked").attr('checked', true);
+         input.value = $(this).find(".tb-radio")[0].value;
+         
+         $(input).css("border-radius", "5px");
+         $(inputdropdownlist).css("display", "none");
+         $(this).parent().removeClass("border-danger");
+         // $(this).parent().next().css("display", "none");
+       });
+     });
+ });
+
+ $(".input-no-img").on("blur", function () {
+   let input = this;
+   input.value = selectedin;
+   let datalist = $(this).parent().children("datalist");
+   setTimeout(() => {
+     let error = $(this).parent().next();
+     if (!input.value) {
+       $(error).css("display", "block");
+       $(this).parent().removeClass("border-dark");
+       $(this).parent().addClass("border-danger");
+     } else if (input.value) {
+       $(error).css("display", "none");
+       $(this).parent().removeClass("border-danger");
+     }
+     $(datalist).css("display", "none");
+   }, 300);
+ });
+ $(".input-no-img").on("input", function () {
+   currentFocus = -1;
+   var text = this.value.toUpperCase();
+   let option = $(this).parent().children("datalist").find("option");
+   option.each(function () {
+     if (this.value.toUpperCase().indexOf(text) > -1) {
+       $(this).css("display", "block");
+     } else {
+       $(this).css("display", "none");
+     }
+   });
+ });
 });
 
 //============== Javascript ============

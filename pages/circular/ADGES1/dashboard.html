@@ -392,17 +392,21 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 my-3">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label"
-                                                        for="announcement-category">Entity</label>
-                                                    <input class="col-11 input-field" autocomplete="off" role="combobox"
-                                                        id="announcement-category" name="announcement-category"
-                                                        placeholder="Enter entity.." />
+                                                <div class="tb-input-group p-2 mt-3 ">
+                                                  <label class="col-12 input-label" for="input">Entity<sup>*</sup></label>
+                                                  <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
+                                                    placeholder="placeholder..">
+                                                  <i class="fa fa-solid fa-angle-down "></i>
+                                                  <datalist id="browsers" role="listbox">
+                                                    <option value="Brookyln Simmons">Brookyln Simmons</option>
+                                                    <option value="Jacob Jones">Jacob Jones</option>
+                                                    <option value="Guy Hawkins">Guy Hawkins</option>
+                                                  </datalist>
                                                 </div>
-                                                <p class="error-message text-danger">• Error Message</p>
-                                            </div>
+                                                <p class="error-message">• Error message</p>
+                                              </div>
                                         </div>
-                                        <div class="row">
+                                       <!-- <div class="row">
                                             <div class="col-md-12 my-3">
                                                 <div class="tb-input-group p-2">
                                                     <label class="col-12 input-label"
@@ -446,7 +450,7 @@
                                                     type="button" data-bs-toggle="modal"
                                                     data-bs-target="#uploadModal5">Upload CSV</button>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="row">
                                             <div class="col-md-12 my-3">
                                                 <div class="tb-input-group p-2">

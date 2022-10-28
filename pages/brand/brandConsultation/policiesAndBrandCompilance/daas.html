@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>JS Test</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <form name="myform" action="">
+            <label for="name">Name</label>
+            <input type="text" name="name"></input>
+            <br>
+            <label for="select_value" onchange="myFunction()">Select Number</label>
+            <select name="select_value">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <label for="radio_value">Select Position</label>
+            <input type="radio" name="radio_value" value="First">First</input>
+            <input type="radio" name="radio_value" value="Second">Second</input>
+            <input type="radio" name="radio_value" value="Third">Third</input>
+            <input type="radio" name="radio_value" value="Fourth">Fourth</input>
+            <input type="radio" name="radio_value" value="Fifth">Fifth</input>
+            <br>
+            <input type="submit" name="form_submit" value="Submit"></input>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementsByName("select_value").value;
+            document.getElementsByName('radio_value')[x].checked = true;
+        }
+    </script>
+</body>
+
+</html>

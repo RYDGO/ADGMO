@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="../../../../styles/dashboard.css" />
     <link rel="stylesheet" href="../../../../styles/style.css" />
     <link rel="stylesheet" href="../../../../styles/createRequestForms.css" />
-    <link rel="stylesheet" href="../../../../styles/circularAdgesInitiator.css" />
-    <link rel="stylesheet" href="../../../../styles/govcomUser.css" />
-    <link rel="stylesheet" href="../../../../styles/brand.css" />
 
     <!--===== Boxicons CSS ===== -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
@@ -33,8 +30,7 @@
                     <div class="col-3 navbar-brand" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../assets/images/user.png" alt="user profile"
-                                    class="img-responsive" />
+                                <img src="../../../../assets/images/user.png" alt="user profile" class="img-responsive" />
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline">
@@ -66,7 +62,7 @@
                     <div class="col-4 d-flex justify-content-end">
                         <a href="#" rel="noopener noreferrer">
                             <div class="img-containerbox">
-                                <img src="../../../../assets/images/HorizontalLogos/LogoRedFilled.png" alt="logo"
+                                <img src="../../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
                                     class="img-responsive" />
                             </div>
                         </a>
@@ -74,7 +70,6 @@
                 </div>
             </div>
         </nav>
-
         <!--navbar ends here -->
 
         <nav class="sidebar" id="sidebar">
@@ -309,6 +304,7 @@
             <!--sidebar ends here -->
         </nav>
         <!--sidebar ends here -->
+
         <section class="main-section">
             <div class="py-4 d-flex align-items-center justify-content-between">
                 <div class="col-2">
@@ -335,23 +331,20 @@
                         Create Request
                     </ul>
                     <li class="col-2">
-                        <ul class="nav align-items-center me-4">
-                            <li class="nav-item mx-2" role="presentation">
-                                <button class="btn bg-color-gray pb-2 border-0 rounded-pill">
-                                    <img src="../../../../assets/images/Icons/icon-comment.svg" alt="" />
-                                </button>
-                            </li>
-                            <li class="nav-item mx-2" role="presentation">
-                                <button class="btn bg-color-gray border-0 rounded-pill">
-                                    <img src="../../../../assets/images/Icons/icon-time.svg" alt="" />
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn bg-color-gray border-0 rounded-pill">
-                                    <img src="../../../../assets/images/Icons/icon-albums.svg" alt="" />
-                                </button>
-                            </li>
-                        </ul>
+                        <div>
+                            <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal"
+                                data-bs-target="#commentsModal">
+                                <img src="../../../../assets/images/Icons/icon-comment.svg" alt="" />
+                            </button>
+
+                            <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                                <img src="../../../../assets/images/Icons/icon-time.svg" alt="" />
+                            </button>
+
+                            <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                                <img src="../../../../assets/images/Icons/icon-albums.svg" alt="" />
+                            </button>
+                        </div>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active btn btn-md tb-btn-light tb-rounded tb-fs-12"
@@ -364,7 +357,7 @@
                         <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12" id="pills-arabic-button"
                             data-bs-toggle="pill" data-bs-target="#pills-arabic" type="button" role="tab"
                             aria-controls="pills-arabic" aria-selected="false">
-                            urdu
+                            يبرع
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -375,234 +368,167 @@
                         </button>
                     </li>
                 </ul>
-
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
                     <div class="tab-pane fade show active shadow-none" id="pills-english" role="tabpanel"
                         aria-labelledby="pills-home-tab">
                         <div class="accordion accordion-bottom-border" id="accordion-english-1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading-english-1">
-                                    <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-english-1">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-english-1">
                                         Title
                                     </button>
                                 </h2>
                                 <div id="collapse-english-1" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
-                                        <div class="row gy-2 my-2">
-                                            <h5>Request Subject</h5>
-                                            <h5>To identify the required brand asset which may include items under any
-                                                master brand,
-                                                leadership portraits, photo library etc...</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Description
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
+                                        <form id="brandconsultation">
+                                            <div class="row">
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="requestSubject">Request Subject</label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="requestSubject" name="announcement-type"
+                                                            placeholder="placeholder.." />
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist>
+                                                            <option value="Master brand">Master brand</option>
+                                                            <option value="Abu Dhabi Name">Abu Dhabi Name</option>
+                                                            <option value="Others">Others</option>
+                                                        </datalist>
+                                                    </div>
+                                                    <!-- <p class="error-message">• Error Message</p> -->
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="description">Description</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="description"
+                                                            name="description"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="eventContext">Event context and
+                                                            profile</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="eventContext"
+                                                            name="eventContext"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="stakeholders">Stakeholders</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="stakeholders"
+                                                            name="stakeholders"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="sectorLead">Government sector lead</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="sectorLead"
+                                                            name="sectorLead"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="highLevel">High level participation</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="highLevel"
+                                                            name="highLevel"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="attendees">Number of attendees</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="attendees"
+                                                            name="attendees"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div class="col-10 border-danger">
+                                                            <label class="col-12 input-label" for="prl-en">Promotional
+                                                                material
+                                                                (sample)</label>
+                                                            <input class="col-12 input bg-white" type="text" id="promotionalMaterial"
+                                                                placeholder="Upload Attachments" disabled>
+                                                        </div>
+                                                        <div
+                                                            class="fileUpload col-2 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="tb-fs-18">Upload</span>
+                                                            <input id="upload-promotional-en" type="file" class="upload">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="origin">Local
+                                                            or International</label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="origin" name="announcement-type"
+                                                            placeholder="placeholder.." />
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist>
+                                                            <option value="Local">Local</option>
+                                                            <option value="International">International</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div class="col-10 border-danger">
+                                                            <label class="col-12 input-label" for="rendersImagery">Renders /
+                                                                Imagery</label>
+                                                            <input class="col-12 input bg-white" type="text" id="rendersImagery"
+                                                                placeholder="Upload Attachments" disabled>
+                                                        </div>
+                                                        <div
+                                                            class="fileUpload col-2 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="tb-fs-18">Upload</span>
+                                                            <input id="upload-rendersImagery-en" type="file" class="upload">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3">
+                                                    <h5 class="tb-h4">Desired Launch date</h5>
+                                                </div>
+
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="launchDate">Select Date</label>
+                                                        <input type="date" class="col-12 input-field" id="launchDate"
+                                                            placeholder="placeholder text">
+                                                    </div>
+                                                    <p class="error-message">• Error message</p>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="text">Text</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="text"
+                                                            name="text"
+                                                            placeholder="placeholder text" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                                <div class="col-9 d-flex align-items-center">
-                                                    <label class="col-12" for="prl-en">Use Attachment</label>
-                                                    <input class="col-12 d-none" type="text" id="prl-en"
-                                                        placeholder="Upload PRL (en) Attachments" />
-                                                </div>
-                                                <div
-                                                    class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                    <span class="tb-fs-18">Upload</span>
-                                                    <input id="upload-prl-en" type="file" class="upload" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="my-4">Brand Requirements</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Text
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group create-form-tb-input-group p-2 mt-4 border">
-                                                    <label class="col-12 input-label" for="input">Select
-                                                        Label<sup>*</sup></label>
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="input" name="browsers" placeholder="placeholder..">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist id="browsers" role="listbox">
-                                                        <option value="Brookyln Simmons">Low</option>
-                                                        <option value="Jacob Jones">Medium</option>
-                                                        <option value="Guy Hawkins">High</option>
-                                                    </datalist>
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-4">
-                                                    <label class="col-12 input-label" for="links">Justification
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-3 border">
-                                                    <label class="col-12 input-label" for="date">Desired Launch
-                                                        date<sup>*</sup></label>
-                                                    <input type="date" class="col-12" id="date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-bottom-border" id="accordion-english-2">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-english-2">
-                                    <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-english-2">
-                                        Title
-                                    </button>
-                                </h2>
-                                <div id="collapse-english-2" class="accordion-collapse collapse show">
-                                    <div class="collapse-inner-bg p-5">
-                                        <div class="row gy-2 my-2">
-                                            <h5>Request Subject</h5>
-                                            <h5>To identify the required brand asset which may include items under any
-                                                master brand,
-                                                leadership portraits, photo library etc...</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Description
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                                <div class="col-9 d-flex align-items-center">
-                                                    <label class="col-12" for="prl-en">Use Attachment</label>
-                                                    <input class="col-12 d-none" type="text" id="prl-en"
-                                                        placeholder="Upload PRL (en) Attachments" />
-                                                </div>
-                                                <div
-                                                    class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                    <span class="tb-fs-18">Upload</span>
-                                                    <input id="upload-prl-en" type="file" class="upload" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="my-4">Brand Requirements</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Text
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group create-form-tb-input-group p-2 mt-4 border">
-                                                    <label class="col-12 input-label" for="input">Select
-                                                        Label<sup>*</sup></label>
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="input" name="browsers" placeholder="placeholder..">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist id="browsers" role="listbox">
-                                                        <option value="Brookyln Simmons">Low</option>
-                                                        <option value="Jacob Jones">Medium</option>
-                                                        <option value="Guy Hawkins">High</option>
-                                                    </datalist>
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-4">
-                                                    <label class="col-12 input-label" for="links">Justification
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-3 border">
-                                                    <label class="col-12 input-label" for="date">Desired Launch
-                                                        date<sup>*</sup></label>
-                                                    <input type="date" class="col-12" id="date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-bottom-border" id="accordion-english-3">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading-english-3">
-                                    <button type="button" class="shadow-none accordion-button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-english-3">
-                                        Title
-                                    </button>
-                                </h2>
-                                <div id="collapse-english-3" class="accordion-collapse collapse show">
-                                    <div class="collapse-inner-bg p-5">
-                                        <div class="row gy-2 my-2">
-                                            <h5>Request Subject</h5>
-                                            <h5>To identify the required brand asset which may include items under any
-                                                master brand,
-                                                leadership portraits, photo library etc...</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Description
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="tb-input-group d-flex p-3 btn-attach progress-wrapper">
-                                                <div class="col-9 d-flex align-items-center">
-                                                    <label class="col-12" for="prl-en">Use Attachment</label>
-                                                    <input class="col-12 d-none" type="text" id="prl-en"
-                                                        placeholder="Upload PRL (en) Attachments" />
-                                                </div>
-                                                <div
-                                                    class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                    <span class="tb-fs-18">Upload</span>
-                                                    <input id="upload-prl-en" type="file" class="upload" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="my-4">Brand Requirements</h5>
-                                            <div class="mb-4">
-                                                <div class="tb-input-group p-2">
-                                                    <label class="col-12 input-label" for="links">Text
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group create-form-tb-input-group p-2 mt-4 border">
-                                                    <label class="col-12 input-label" for="input">Select
-                                                        Label<sup>*</sup></label>
-                                                    <input class="col-11 input" autocomplete="off" role="combobox"
-                                                        id="input" name="browsers" placeholder="placeholder..">
-                                                    <i class="fa fa-solid fa-angle-down"></i>
-                                                    <datalist id="browsers" role="listbox">
-                                                        <option value="Brookyln Simmons">Low</option>
-                                                        <option value="Jacob Jones">Medium</option>
-                                                        <option value="Guy Hawkins">High</option>
-                                                    </datalist>
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-4">
-                                                    <label class="col-12 input-label" for="links">Justification
-                                                        <sup>*</sup></label>
-                                                    <input class="col-12 input" id="links" name="links"
-                                                        placeholder="Placeholder text" />
-                                                </div>
-                                                <div class="tb-input-group p-2 mt-3 border">
-                                                    <label class="col-12 input-label" for="date">Desired Launch
-                                                        date<sup>*</sup></label>
-                                                    <input type="date" class="col-12" id="date">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -1463,15 +1389,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1483,15 +1407,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1505,15 +1427,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1525,15 +1445,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1545,15 +1463,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1565,15 +1481,13 @@
                                                 </div>
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1717,15 +1631,13 @@
                                             <div class="col-12">
                                                 <div class="pdf-editor d-flex p-3">
                                                     <div class="col-6 d-flex align-items-center">
-                                                        <img src="../../../../assets/images/Icons/PDF.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/PDF.svg" alt="" width="30" />
                                                         <p class="mb-0 ms-3">Request_2021.pdf</p>
                                                     </div>
                                                     <div class="col-6 d-flex align-items-center justify-content-end">
-                                                        <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
-                                                            width="30" class="me-2" />
-                                                        <img src="../../../../assets/images/Icons/edit.svg" alt=""
-                                                            width="30" />
+                                                        <img src="../assets/images/Icons/View-eye.svg" alt="" width="30"
+                                                            class="me-2" />
+                                                        <img src="../assets/images/Icons/edit.svg" alt="" width="30" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1736,9 +1648,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4 createRequest-btn-wrapper">
-                    <div class="col-md-6 text-center">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">
+                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
+                    <div class="col-md-6">
+                        <button class="btn btn-md me-2 tb-btn-gray tb-rounded tb-h5" type="button">
                             Cancel
                         </button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
@@ -1748,42 +1660,33 @@
                     </div>
                 </div>
             </div>
-
             <!-- MODALS STARTED HERE -->
-
             <div class="modal fade background-dim" id="uploadModal5" tabindex="-1" aria-labelledby="uploadModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog main-modal">
+                <div class="modal-dialog main-modal modal-dialog-scrollable">
                     <div class="modal-content inner-modal-content-box box-shadow-popup">
                         <div class="modal-header align-items-start p-4">
                             <div>
                                 <h5 class="modal-title tb-h3 text-black" id="uploadModalLabel">
-                                    Upload
+                                    Upload CSV
                                 </h5>
                             </div>
                             <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="modal-footer collapse-inner-bg py-4 px-5">
+                        <div class="modal-body collapse-inner-bg py-4 px-5">
                             <div class="bg-white col-12">
                                 <div class="col-12 bg-white px-4 py-3 mt-3">
                                     <div class="col-12 d-flex">
-                                        <label class="input-label fs-6" for="input2">Attach File</label>
+                                        <label class="input-label fs-6" for="input2">Upload CSV</label>
                                     </div>
                                     <div class="col-12 d-flex justify-content-between">
-                                        <div class="col-6 me-1">
+                                        <div class="col-12 ms-1">
                                             <div class="mt-3">
-                                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
-                                                    <span class="tb-fs-14">Select from attachment</span>
-                                                    <input id="uploadBtn" type="file" class="upload" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 ms-1">
-                                            <div class="mt-3">
-                                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                                                <div
+                                                    class="fileUpload d-flex justify-content-center btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
                                                     <span class="tb-fs-14 mx-3">Upload from device</span>
-                                                    <img src="../../../../assets/images/right-arrow.svg" alt="" />
+                                                    <img src="../../../../assets/images/rightArrow.svg" alt="" />
                                                     <input id="uploadBtn" type="file" class="upload" />
                                                 </div>
                                             </div>
@@ -1791,24 +1694,21 @@
                                     </div>
                                     <div class="col-12 mt-4 d-flex justify-content-center">
                                         <p class="tb-gray-400 mb-0">
-                                            Document must be in the following formats xxxxxx
+                                            Document must be .csv format.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-12 p-3">
-                                    <div class="col-12 p-3 mt-2 border-gray-100 tb-rounded">
-                                        <div class="col-12">
-                                            <h6>Upload CSV</h6>
-                                        </div>
+                                <div class="col-12 p-2">
+                                    <div class="col-12 p-1 mt-1">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="p-2 col-1">
                                                 <p class="mb-0">75%</p>
                                             </div>
-                                            <div class="p-2 col-7">
+                                            <div class="p-2 col-8">
                                                 <div class="progress">
-                                                    <div class="progress-bar" role="progressbar"
-                                                        aria-label="Example with label" style="width: 75%"
-                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar w-75" role="progressbar"
+                                                        aria-label="Example with label" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div>
                                             <div class="p-0 col-3">
@@ -1820,12 +1720,85 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-12 p-3 mt-4 tb-btn-popup ps-3 p-0 m-0">
+                                <h5>4 addresses found</h5>
+                            </div>
+                            <div class="bg-white col-md-12 p-0 m-0">
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                             aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 p-4">
                             <div class="d-flex justify-content-center">
                                 <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0"
-                                    data-bs-dismiss="modal" data-bs-toggle="modal"
-                                    data-bs-target="#submitRequestNotification">
+                                    data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#normalModal">
                                     Submit
                                 </button>
                             </div>
@@ -1833,197 +1806,48 @@
                     </div>
                 </div>
             </div>
-            <!---- upload modal end here--->
-            <div class="modal fade background-dim" id="prlDeliverableModal2" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <!-- normal popup starts here -->
+            <div class="modal fade show background-dim" id="normalModal" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1" aria-modal="true" role="dialog">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black"
-                                id="exampleModalToggleLabel2">
-                                Upload
+                                id="exampleModalToggleLabel">Send Request
                             </h1>
-                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body collapse-inner-bg">
-                            <div class="bg-white p-3">
-                                <h6>Assign attachment</h6>
-                                <div>
-                                    <div class="tb-input-group m-0">
-                                        <div class="p-2 border">
-                                            <label class="col-12 input-label" for="input2">PRL (en)
-                                            </label>
-                                            <input class="col-11 dropdown-input input" autocomplete="off"
-                                                role="combobox" id="input2" name="browsers"
-                                                placeholder="Upload  PRL (en) attachment" />
-                                            <i class="fa fa-solid fa-angle-down"></i>
+                            <div class="col-12 my-3 bg-white">
+                                <div class="border-0 py-3 info-outer">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg" alt="">
                                         </div>
-                                    </div>
-                                    <div class="tb-input-group mt-3">
-                                        <div class="p-2 border">
-                                            <label class="col-12 input-label" for="input2">PRL (en)
-                                            </label>
-                                            <input class="col-11 dropdown-input input" autocomplete="off"
-                                                role="combobox" id="input2" name="browsers"
-                                                placeholder="Upload  PRL (en) attachment" />
-                                            <i class="fa fa-solid fa-angle-down"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="mt-2">
-                                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
-                                            data-bs-dismiss="modal">
-                                            Video.mp4
-                                        </button>
-                                    </div>
-                                    <div class="mt-2">
-                                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
-                                            data-bs-dismiss="modal">
-                                            Image.jpg
-                                        </button>
-                                    </div>
-                                    <div class="mt-2">
-                                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
-                                            data-bs-dismiss="modal">
-                                            Audio.wav
-                                        </button>
-                                    </div>
-                                    <div class="mt-2">
-                                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
-                                            data-bs-dismiss="modal">
-                                            File.pdf
-                                        </button>
+                                        <p class="px-3 mt-2 m-0">
+                                            You are about Send this request, sending this request will submit it to the
+                                            media office.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <div class="d-flex justify-content-center w-100">
-                                <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">
-                                    Submit
-                                </button>
-                            </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!------------upload2---------------->
         </section>
         <!--create request ends here ------>
-        <!-- normal popup starts here -->
-        <div class="modal fade show background-dim" id="normalModal" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black"
-                        id="exampleModalToggleLabel">Send Request
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body collapse-inner-bg">
-                    <div class="col-12 my-3 bg-white">
-                        <div class=" py-3 info-outer">
-                            <div class="d-flex">
-                                <div>
-                                    <img class="info-icon" src="../../../../assets/images/info-icon1.svg" alt="">
-                                </div>
-                                <p class="px-3 mt-2 m-0">
-                                    You are about Send this request, sending this request will submit it to the
-                                    media office.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send</button>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="modal fade large-modal background-dim" id="upload-csv" aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Upload CSV </h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="p-4 side-modal-wrap h-100 overflow-auto">
-                        <div class="create-form__upload-wrapper">
-                            <p>Upload CSV</p>
-                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
-                                <span class="tb-fs-14">Upload from device</span>
-                                <i class="fa-solid fa-arrow-right ms-3"></i>
-                                <input id="uploadBtn" type="file" class="upload">
-                            </div>
-                            <p class="text-center mt-2">Document must be .csv format.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="p-2 col-1">
-                                    <p class="mb-0">75%</p>
-                                </div>
-                                <div class="py-2 col-8">
-                                    <div class="progress">
-                                        <div class="progress-bar w-75" role="progressbar"
-                                            aria-label="Example with label" aria-valuenow="75" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="p-0 col-3 text-end">
-                                    <button class="btn btn-md  tb-rounded bg-color-gray" type="button">Cancel</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="create-form__upload-addresss-wrapper">
-                            <h6 class="create-form__upload-addresss-heading">4 addresses found</h6>
-                            <div class="createForm__detail-wrapper px-3 mb-4">
-                                <h6 class="h6 my-3">Tranthuy Nute</h6>
-                                <h6 class="h6 my-3">Abu Dhabi Center</h6>
-                                <h6 class="h6 my-3">tranthuy.nute@gmail.com</h6>
-                                <a href="javascript:void(0)" class="closs-btn"><img
-                                        src="../../../../assets/images/cross.svg" alt=""></a>
-                            </div>
-                            <div class="createForm__detail-wrapper px-3 mb-4">
-                                <h6 class="h6 my-3">Tranthuy Nute</h6>
-                                <h6 class="h6 my-3">Abu Dhabi Center</h6>
-                                <h6 class="h6 my-3">tranthuy.nute@gmail.com</h6>
-                                <a href="javascript:void(0)" class="closs-btn"><img
-                                        src="../../../../assets/images/cross.svg" alt=""></a>
-                            </div>
-                            <div class="createForm__detail-wrapper px-3 mb-4">
-                                <h6 class="h6 my-3">Tranthuy Nute</h6>
-                                <h6 class="h6 my-3">Abu Dhabi Center</h6>
-                                <h6 class="h6 my-3">tranthuy.nute@gmail.com</h6>
-                                <a href="javascript:void(0)" class="closs-btn"><img
-                                        src="../../../../assets/images/cross.svg" alt=""></a>
-                            </div>
-                            <div class="createForm__detail-wrapper px-3 mb-4">
-                                <h6 class="h6 my-3">Tranthuy Nute</h6>
-                                <h6 class="h6 my-3">Abu Dhabi Center</h6>
-                                <h6 class="h6 my-3">tranthuy.nute@gmail.com</h6>
-                                <a href="javascript:void(0)" class="closs-btn"><img
-                                        src="../../../../assets/images/cross.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center my-4 me-3 ">
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-    <script src="../../../javascript/script.js"></script>
-    <script src="../../../javascript/tableDropdown.js"></script>
+    <script src="../../../../javascript/script.js"></script>
+    <script src="../../../../javascript/tableDropdown.js"></script>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

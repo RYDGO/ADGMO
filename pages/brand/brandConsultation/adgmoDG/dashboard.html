@@ -1311,42 +1311,58 @@
             tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog">
             <div class="modal-dialog modal-fullscreen modal-dialog-scrollable p-3">
                 <div class="modal-content modal-dialog-scrollable tb-rounded">
-                    <div class="modal-header align-items-start py-4">
-                        <ul class="nav ps-2 col-11 d-flex justify-content-between" id="pills-tab" role="tablist">
-                            <p class="tb-h3 col-7 p-0">
-                                Brand Consultation #EX12345
-                            </p>
-                            <li class="col-2">
-                                <ul class="nav align-items-center me-4">
-                                    <li class="nav-item mx-2" role="presentation">
-                                        <button class="btn bg-color-gray pb-2 border-0 rounded-pill">
-                                            <img src="../../../../../assets/images/Icons/icon-comment.svg" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item mx-2" role="presentation">
-                                        <button class="btn bg-color-gray border-0 rounded-pill">
-                                            <img src="../../../../../assets/images/Icons/icon-time.svg" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="btn bg-color-gray border-0 rounded-pill">
-                                            <img src="../../../../../assets/images/Icons/icon-albums.svg" alt="">
-                                        </button>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="col-1 d-flex justify-content-end align-items-center">
-                            <button class="border-0 bg-white"><img src="../../../../../assets/images/Icons/expand.svg"
-                                    alt=""></button>
-                            <button type="button" class="btn-close close-dark ms-4" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                    <div class="modal-header align-items-start p-4">
+                        <div class="model-top-wrapper col-10">
+                            <div class=" d-flex ">
+                                <div
+                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                    <h6 class="pt-2">
+                                        L1
+                                    </h6>
+                                </div>
+                                <div class="ms-2">
+                                    <div class="tb-bg-blue py-1 px-2 d-inline-block rounded-1 text-base-white mb-1">
+                                        EWAA
+                                    </div>
+                                    <h5 class="modal-title tb-h3 text-black d-flex align-items-center"
+                                        id="fullNewsRequest2Label">
+                                        Brand Consultation des...
+                                    </h5>
+                                    <div class="">
+                                        BRC-012345
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-2 d-flex justify-content-between align-items-center ">
+                            <div>
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal"
+                                    data-bs-target="#commentsModal">
+                                    <img src="../../../../assets/images/Icons/icon-comment.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                                    <img src="../../../../assets/images/Icons/icon-time.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                                    <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn  w-h-35 border-0 bg-white "><img
+                                        src="../../../../assets/images/Icons/expand.svg" alt=""></button>
+                                <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+
 
                     </div>
                     <div class="modal-body collapse-inner-bg px-4 py-3 h-100 overflow-auto">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 vh-100 overflow-scroll">
                                 <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
                                     <li class="nav-item">
                                         <button class="nav-link active btn btn-md tb-btn-light tb-rounded" id="home-tab"
@@ -1376,439 +1392,113 @@
                                 <div class="tab-content site-modal-tab-content " id="myTabContent">
                                     <div class="tab-pane fade show active bg-transparent  shadow-none"
                                         id="overview-tab-pane">
-                                        <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <button class="nav-link" id="home-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#request-tab-pane">Request</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="nav-link active" id="profile-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#deliverables-tab-pane">Deliverables</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade shadow-none" id="request-tab-pane">
-                                                <div class="accordion" id="accordion-dual">
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-1">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-duel-1">Title</button>
-                                                        </h2>
-                                                        <div id="collapse-duel-1"
-                                                            class="accordion-collapse collapse show">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="entity-name">Entity
-                                                                                Name</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="entity-name" name="entity-name"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row gy-2 my-2 mb-5">
-                                                                    <h6 class="h6 my-3">
-                                                                        Format
-                                                                    </h6>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="d-flex align-items-center">
-                                                                            <input class="me-3 impact" type="radio"
-                                                                                id="format1" name="format" value="yes">
-                                                                            <label for="format1">Placeholder</label>
-                                                                        </div>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <input class="me-3" type="radio"
-                                                                                id="format2" name="format" value="no">
-                                                                            <label for="format2">Placeholder</label>
-                                                                        </div>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <input class="me-3" type="radio"
-                                                                                id="format3" name="format" value="no">
-                                                                            <label for="format3">Placeholder</label>
-                                                                        </div>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <input class="me-3" type="radio"
-                                                                                id="format4" name="format" value="no">
-                                                                            <label for="format4">Placeholder</label>
-                                                                        </div>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <input class="me-3" type="radio"
-                                                                                id="format5" name="format" value="no">
-                                                                            <label for="format5">Placeholder</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <h6 class="h6 my-3">
-                                                                        Timeline
-                                                                    </h6>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="timeline-from">From</label>
-                                                                            <input type="date"
-                                                                                class="col-12 input-field"
-                                                                                id="timeline-from" name="timeline-from">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="timeline-to">To</label>
-                                                                            <input type="date"
-                                                                                class="col-12 input-field"
-                                                                                id="timeline-to" name="timeline-to">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="expected-publication-timeline">Expected
-                                                                                publication
-                                                                                timeline</label>
-                                                                            <input type="date"
-                                                                                class="col-12 input-field"
-                                                                                id="expected-publication-timeline"
-                                                                                name="expected-publication-timeline">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <h6 class="h6 my-3">
-                                                                        Focus area/theme of interest
-                                                                    </h6>
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="key-msg">Key Message</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="key-msg" name="key-msg"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-12 mt-4">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="prl-en">Press
-                                                                                    Releases</label>
-                                                                                <input class="col-12 input" type="text"
-                                                                                    id="prl-en"
-                                                                                    placeholder="Upload attachment">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-prl-en" type="file"
-                                                                                    class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                        <div class="accordion accordion-bottom-border mt-3" id="accordion-english-4">
+                                            <div class="accordion-item">
+                                                <div id="collapse-english-1" class="accordion-collapse collapse show">
+                                                    <div class="collapse-inner-bg p-2">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="type-of-announcement1">Request
+                                                                        Subject</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="type-of-announcement1"
+                                                                        name="type-of-announcement1"
+                                                                        placeholder="Master Brand" disabled />
                                                                 </div>
                                                             </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-2">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-duel-2">Spokesperson
-                                                                Information</button>
-                                                        </h2>
-                                                        <div id="collapse-duel-2" class="accordion-collapse collapse">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="key-msg">Name</label>
-                                                                            <input class="col-12 input-field" id="name"
-                                                                                name="name"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-12 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="biography">Biography</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="biography" name="biography"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-12 mt-4">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="prl-en">Headshot*</label>
-                                                                                <input class="col-12 input" type="text"
-                                                                                    id="prl-en"
-                                                                                    placeholder="Upload image">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-prl-en" type="file"
-                                                                                    class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <h6 class="tb-h4 mt-4">Social Handles*</h6>
-                                                                    <div class="row g-4 mt-0">
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="facebook">Facebook</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="facebook" name="facebook"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="youtube">Youtube</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="youtube" name="youtube"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="instagram">Instagram</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="instagram" name="instagram"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="twitter">Twitter</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="twitter" name="twitter"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="linkedin">Linkedin</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="linkedin" name="linkedin"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="tb-input-group p-2">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="social-others">Other</label>
-                                                                                <input class="col-12 input-field"
-                                                                                    id="social-others"
-                                                                                    name="social-others"
-                                                                                    placeholder="Placeholder text">
-                                                                            </div>
-                                                                            <p class="error-message">• Error Message
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement2">Description</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement2"
+                                                                        name="category-of-announcement2"
+                                                                        placeholder="Lorem ipsum dolor sit amet"
+                                                                        disabled />
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading-duel-2">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-duel-3">Attachments*</button>
-                                                        </h2>
-                                                        <div id="collapse-duel-3" class="accordion-collapse collapse">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="row">
-                                                                    <div class="col-12 ">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="infographics">Infographics</label>
-                                                                                <input class="col-12 input"
-                                                                                    type="infographics"
-                                                                                    id="infographics"
-                                                                                    placeholder="Upload image">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-infographics"
-                                                                                    type="file" class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 mt-4">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="media-assets">Media
-                                                                                    Assets</label>
-                                                                                <input class="col-12 input" type="text"
-                                                                                    id="media-assets"
-                                                                                    placeholder="Upload Image / Videos">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-media-assets"
-                                                                                    type="file" class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="supporting-data">Supporting
-                                                                                Data</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="supporting-data"
-                                                                                name="supporting-data"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-12 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="further-info">Further
-                                                                                info</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="further-info" name="further-info"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement3">Event context
+                                                                        and
+                                                                        profile</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement3"
+                                                                        name="category-of-announcement3"
+                                                                        placeholder="Lorem ipsum dolor sit amet"
+                                                                        disabled />
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="tab-pane fade show active" id="deliverables-tab-pane">
-                                                <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
-                                                    <div class="col-8">
-                                                        <div class="head-5">
-                                                            <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverables</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="text-end mt-3">
-                                                            <img src="../../../../../assets/images/Icons/edit-pen.svg"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion" id="accordion-dual">
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-1">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-deliverable-1">PRL</button>
-                                                        </h2>
-                                                        <div id="collapse-deliverable-1"
-                                                            class="accordion-collapse collapse show border-gray-100">
-                                                            <div class="collapse-inner-bg p-5 pb-0">
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                                    </p>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement4">Stakeholders</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement4"
+                                                                        name="category-of-announcement4"
+                                                                        placeholder="Lorem ipsum dolor sit amet"
+                                                                        disabled />
                                                                 </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
-                                                                        as part of the service level agreement (SLA)?
-                                                                    </p>
-                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                                        deadline lorem?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are there any additional
-                                                                        needs with this deliverable?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Image, Video</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                                        9:00am</p>
-                                                                </div>
-
                                                             </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-1">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-deliverable-2">Social
-                                                                Media</button>
-                                                        </h2>
-                                                        <div id="collapse-deliverable-2"
-                                                            class="accordion-collapse collapse show border-gray-100">
-                                                            <div class="collapse-inner-bg p-5 pb-0">
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                                    </p>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement5">Government
+                                                                        sector
+                                                                        lead</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement5"
+                                                                        name="category-of-announcement5"
+                                                                        placeholder="Lorem ipsum" disabled />
                                                                 </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
-                                                                        as part of the service level agreement (SLA)?
-                                                                    </p>
-                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement6">High level
+                                                                        participation</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement6"
+                                                                        name="category-of-announcement6"
+                                                                        placeholder="Lorem ipsum" disabled />
                                                                 </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                                        deadline lorem?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement7">Number of
+                                                                        attendees</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement7"
+                                                                        name="category-of-announcement7"
+                                                                        placeholder="42" disabled />
                                                                 </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are there any additional
-                                                                        needs with this deliverable?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Image, Video</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement8">Local or
+                                                                        International</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement8"
+                                                                        name="category-of-announcement8"
+                                                                        placeholder="Lorem ipsum dolor sit amet"
+                                                                        disabled />
                                                                 </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                                        9:00am</p>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="tb-input-group-duel p-3">
+                                                                    <label class="col-12 input-label"
+                                                                        for="category-of-announcement9">Local or
+                                                                        International</label>
+                                                                    <input class="col-12 input collapse-inner-bg"
+                                                                        id="category-of-announcement9"
+                                                                        name="category-of-announcement9"
+                                                                        placeholder="Lorem ipsum dolor sit amet"
+                                                                        disabled />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1820,18 +1510,21 @@
                                     <div class="tab-pane fade" id="attachments-tab-pane">2</div>
                                     <div class="tab-pane fade" id="activities-tab-pane">3</div>
                                     <div class="tab-pane fade" id="dual-content-tab-pane">
-                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                                        <p class="duel-content-dec p-0 m-3">نص العنصر النائبنص العنصر النائبنص العنصر
+                                        <h6 class="duel-content-heading pt-3 m-3 text-end">*عنوان</h6>
+                                        <p class="duel-content-dec p-0 m-3 text-end">نص العنصر النائبنص العنصر النائبنص
+                                            العنصر
                                             النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
                                         <hr>
-                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                                        <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                        <h6 class="duel-content-heading pt-3 m-3 text-end">*عنوان</h6>
+                                        <p class="duel-content-dec p-0 m-3 text-end"> نصنص العنصر النائبنص العنصر
+                                            النائبنص العنصر
                                             النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
                                             العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
                                             النائبنص العنصر النائبنص العنصر النائب</p>
                                         <hr>
-                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                                        <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                        <h6 class="duel-content-heading pt-3 m-3 text-end">*عنوان</h6>
+                                        <p class="duel-content-dec p-0 m-3 text-end"> نصنص العنصر النائبنص العنصر
+                                            النائبنص العنصر
                                             النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
                                             العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
                                             النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر النائبنص
@@ -1846,8 +1539,8 @@
                                             العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
                                         </p>
                                         <hr>
-                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                                        <p class="duel-content-dec p-0 m-3"> نصنص , العنصرالعنصر</p>
+                                        <h6 class="duel-content-heading pt-3 m-3 text-end">*عنوان</h6>
+                                        <p class="duel-content-dec p-0 m-3 text-end"> نصنص , العنصرالعنصر</p>
                                         <hr>
                                     </div>
                                     <div class="tab-pane fade" id="versions-tab-pane">
@@ -1915,37 +1608,37 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 px-3 pb-4 border-gray-bottom-200">
+                                <div class="col-12 pb-2">
                                     <div
-                                        class="row d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 text-center card-check-border">
-                                        <div class="col-3">
+                                        class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-0 card-check-border">
+                                        <div>
                                             <div class="d-flex align-items-center">
-                                                <input class="me-3" type="radio" id="media-recom radio" name="others"
+                                                <input class="me-3 radio" type="radio" id="prl(en)" name="deliverable"
                                                     value="HTML">
-                                                <label for="media-recom" class="tb-fs-16 tb-fw-700">Brand Cons.</label>
+                                                <label for="prl(en)" class="tb-fs-16 tb-fw-700">Brand Cons.</label>
                                             </div>
                                         </div>
-                                        <div class="col-2">
+                                        <div>
                                             <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
                                         </div>
-                                        <div class="col-2">
+                                        <div>
                                             <p class="teble-text mb-0 text-gray-500 "><img
-                                                    src="../../../../../assets/images/Icons/stop-watch.svg" alt=""> 2
-                                                days
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
                                             </p>
                                         </div>
-                                        <div class="col-3 d-flex justify-content-center"><span
-                                                class="width-77 d-flex align-items-center justify-content-evenly p-2 status-color-blue-op rounded">
+                                        <div> <span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-blue-op">
                                                 <i class="tb-blue fa-xs fa-sharp fa-solid fa-circle "></i>
-                                                <h4 class="tb-h5 mb-0 tb-blue ms-3 text-uppercase">Approval</h4>
+                                                <h4 class="tb-h5 mb-0 tb-blue ms-3 me-3">Approval</h4>
                                             </span>
                                         </div>
-                                        <div class="col-2 d-flex justify-content-end"><span
+                                        <div>
+                                            <span
                                                 class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
                                                 <p class="mb-0 tb-fw-900 tb-copyright">BrT</p>
-                                            </span></div>
+                                            </span>
+                                        </div>
                                     </div>
-
                                 </div>
                                 <div class="col-12 bg-white px-4 py-3  mt-3">
                                     <div class="row mb-4">
@@ -1977,7 +1670,7 @@
                                             Document must be .mp4, .mov, .mkv format.
                                         </p>
                                     </div>
-                                
+
                                     <div
                                         class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
                                         <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
@@ -2004,7 +1697,14 @@
                                             minus eum ad ratione ab blanditiis nemo soluta atque dolores, repellendus,
                                             labore libero magnam quasi, perferendis repudiandae suscipit vel.</p>
                                     </div>
-                                    <p class="error-message">• Error Message</p>
+                                    <div class="tb-input-group p-2">
+                                        <label class="col-12 input-label text-end" for="notes2">*عنوان</label>
+                                        <p class="text-end">نص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائب</p>
+                                    </div>
                                 </div>
                                 <div class="col-12 mt-3">
                                     <div class="tb-input-group p-2">
@@ -2018,7 +1718,9 @@
                         </div>
                     </div>
                     <div class="view-all-model-btn-wrapper text-end p-3">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-target="#exampleModal5" data-bs-dismiss="modal" data-bs-toggle="modal">Revise</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
+                            data-bs-target="#exampleModal5" data-bs-dismiss="modal"
+                            data-bs-toggle="modal">Revise</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-target="#normalModal"
                             data-bs-dismiss="modal" data-bs-toggle="modal">Approve</button>
                     </div>

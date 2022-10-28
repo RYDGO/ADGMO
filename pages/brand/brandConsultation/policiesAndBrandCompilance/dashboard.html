@@ -72,7 +72,7 @@
         </nav>
         <!--navbar ends here -->
 
-        <nav class="sidebar " id="sidebar">
+        <nav class="sidebar" id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
             </header>
@@ -1574,8 +1574,9 @@
                         </div>
                     </div>
                     <div class="modal-footer p-4">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal" data-bs-dismiss="modal"
-                            data-bs-target="#selectAssignee" type="button">Request Information</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
+                            data-bs-dismiss="modal" data-bs-target="#selectAssignee" type="button">Request
+                            Information</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#decline-modal" type="button">Decline</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
@@ -1585,6 +1586,8 @@
             </div>
         </div>
         <!-- Others Modal Ends -->
+
+
         <!-- assigned to me brand consultation Modal -->
         <div class="modal fade background-dim" id="assignedbrandConsultation" tabindex="-1"
             aria-labelledby="fullNewsRequestLabel" aria-hidden="true">
@@ -2807,13 +2810,53 @@
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">Select Assignee</h5>
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">Select
+                            Assignee</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div
                         class="modal-body p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
-                        
+                        <div class="col-md-12">
+                            <div class="tb-input-group p-2 mt-3 border-danger">
+                                <label class="col-12 input-label" for="input">Assignee</label>
+                                <input class="col-11 input" role="combobox" id="input" name="browsers"
+                                    placeholder="placeholder..">
+                                <i class="fa fa-solid fa-angle-down"></i>
+                                <datalist id="browsers" role="listbox">
+                                    <div class="d-flex align-items-center my-1">
+                                        <option value="BrookylnSimmons" type="radio">
+                                            <input class="me-3" type="radio" id="BrookylnSimmons" for="BrookylnSimmons"
+                                                name="published" value="BrookylnSimmons">
+                                        </option>
+                                        <div
+                                            class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                                            <img src="../../../../assets/images/Icons/person-red.svg" alt="">
+                                        </div>
+                                        <option value="BrookylnSimmons">Brookyln Simmons </option><span
+                                            class="ms-2 text-danger">Default</span>
+                                    </div>
+                                    <div class="d-flex align-items-center my-1">
+                                        <input class="me-3" type="radio" id="JacobJones" name="published"
+                                            value="JacobJones">
+                                        <div
+                                            class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                                            <img src="../../../../assets/images/Icons/person-red.svg" alt="">
+                                        </div>
+                                        <option for="JacobJones">Jacob Jones</option>
+                                    </div>
+                                    <div class="d-flex align-items-center my-1">
+                                        <input class="me-3" type="radio" id="GuyHawkins" name="published"
+                                            value="GuyHawkins">
+                                        <div
+                                            class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                                            <img src="../../../../assets/images/Icons/person-red.svg" alt="">
+                                        </div>
+                                        <option for="GuyHawkins">Guy Hawkins</option>
+                                    </div>
+                                </datalist>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer text-end my-2 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
@@ -2953,6 +2996,7 @@
             </div>
         </div>
         <!-- noraml popoup 2 -->
+
         <div class="modal fade show background-dim" id="normalModal2" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

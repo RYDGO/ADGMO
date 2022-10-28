@@ -1574,8 +1574,8 @@
                         </div>
                     </div>
                     <div class="modal-footer p-4">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-                            data-bs-target="#requestInfo" type="button">Request Information</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal" data-bs-dismiss="modal"
+                            data-bs-target="#selectAssignee" type="button">Request Information</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#decline-modal" type="button">Decline</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
@@ -2802,6 +2802,28 @@
         </div>
         <!-- assigned to me brand consultation Modal Ends -->
 
+        <div class="modal fade modal-backdrop-op background-dim" id="selectAssignee" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">Select Assignee</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div
+                        class="modal-body p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
+                        
+                    </div>
+                    <div class="modal-footer text-end my-2 me-3 ">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                            type="button">Cancel</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade modal-backdrop-op background-dim" id="priorityModal" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
@@ -3373,8 +3395,8 @@
                     </div>
                     <div class="view-all-model-btn-wrapper text-end p-3">
 
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-target="#normalModal2"
-                            data-bs-dismiss="modal" data-bs-toggle="modal">Send</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button"
+                            data-bs-target="#normalModal2" data-bs-dismiss="modal" data-bs-toggle="modal">Send</button>
                     </div>
                 </div>
             </div>

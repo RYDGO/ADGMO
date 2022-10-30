@@ -14,6 +14,10 @@ if (sidebar) {
   });
 }
 
+$(".target-dual").click(function () {
+  $(".dual-content-button").click();
+});
+
 // Jquery: dropdown functionality
 $(document).ready(function () {
   $("#exampletable").DataTable({
@@ -113,50 +117,49 @@ $(".input").on("input", function () {
     }
   });
 });
-// assets three dots card popup 
-$('.ellipsis-btn').on("click", function () {
-  $(this).next().toggle('d-block');
-})
-$('#redirectToViewAll').on("click", function () {
+// assets three dots card popup
+$(".ellipsis-btn").on("click", function () {
+  $(this).next().toggle("d-block");
+});
+$("#redirectToViewAll").on("click", function () {
   window.location.href = "../workloadAsigntome/requestOverviewForm.html";
-})
-$('#requestAccepted').on("click", function () {
+});
+$("#requestAccepted").on("click", function () {
   window.location.href = "../workloadAsigntome/requestAcceptedForm.html";
-})
-$('#redirectToViewAllRequests').on("click", function () {
+});
+$("#redirectToViewAllRequests").on("click", function () {
   window.location.href = "../pages/workloadAsigntome/viewAllRequest.html";
-})
+});
 
-$('#redirectToViewAllSearchResults').on("click", function () {
+$("#redirectToViewAllSearchResults").on("click", function () {
   window.location.href = "../pages/globalSearchResult.html";
-})
+});
 
 $("#prl-checkbox").on("change", function () {
-  if ($(this).is(':checked')) {
-    $("#nextBtnAddDel").attr("href", "#prlDeliverableModal")
+  if ($(this).is(":checked")) {
+    $("#nextBtnAddDel").attr("href", "#prlDeliverableModal");
   }
-})
+});
 
 $("#social-checkbox").on("change", function () {
-  if ($(this).is(':checked')) {
-    $("#nextBtnAddDel").attr("href", "#socialMedia")
+  if ($(this).is(":checked")) {
+    $("#nextBtnAddDel").attr("href", "#socialMedia");
   }
-})
+});
 
 $("#prl-image,#prl-video").on("change", function () {
-  if ($(this).is(':checked')) {
-    $("#prlNextBtn").attr("href", "#additionalModal")
-    $("#addBackBtn").attr("href", "#prlDeliverableModal")
-
+  if ($(this).is(":checked")) {
+    $("#prlNextBtn").attr("href", "#additionalModal");
+    $("#addBackBtn").attr("href", "#prlDeliverableModal");
   }
-})
+});
 
 $("#social-video,#social-image").on("change", function () {
-  if ($(this).is(':checked')) {
-    $("#socialNextBtn").attr("href", "#additionalModal")
-    $("#addBackBtn").attr("href", "#socialMedia")
+  if ($(this).is(":checked")) {
+    $("#socialNextBtn").attr("href", "#additionalModal");
+    $("#addBackBtn").attr("href", "#socialMedia");
   }
-})
+});
 
 $("input[name$='due_date']").click(function () {
   var test = $(this).val();
@@ -167,17 +170,15 @@ $("input[name$='due_date']").click(function () {
   }
 });
 
-
-$(".radio").on('change', function () {
-  $('.card-check-border').each(function () {
-    $(this).removeClass('border-red')
-  })
+$(".radio").on("change", function () {
+  $(".card-check-border").each(function () {
+    $(this).removeClass("border-red");
+  });
 
   if ($(this).is(":checked")) {
-    $(this).parent().parent().parent().addClass('border-red')
+    $(this).parent().parent().parent().addClass("border-red");
   }
-
-})
+});
 
 $.fn.extend({
   treed: function (o) {
@@ -234,12 +235,9 @@ $.fn.extend({
         e.preventDefault();
       });
     });
-  }
+  },
 });
 
 //Initialization of treeviews
 
 $("#tree2").treed();
-
-
-

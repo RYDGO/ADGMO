@@ -10,6 +10,10 @@ $(document).ready(function () {
     }
   });
 
+  $(".target-dual").click(function () {
+    $('.dual-content-button').click();
+    });
+
   //--------- Input-validation -------
   $(".input-field").focus(function () {
     $(this).parent().addClass("border-dark");

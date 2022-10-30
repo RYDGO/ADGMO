@@ -2021,8 +2021,8 @@ input[type="radio"] {
 input[type="checkbox"] {
     border: 1px solid var(--grayshade-400) !important;
     background-color: transparent !important;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     border-radius: 0 !important;
 }
 

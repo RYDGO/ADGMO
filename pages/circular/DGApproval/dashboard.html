@@ -3553,54 +3553,47 @@
           <!--  modal ends here -->
 
           <div class="modal fade show background-dim" id="exampleModal6" tabindex="-1"
-               aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
-               <div class="modal-dialog  modal-dialog-centered modal-lg ">
-                    <div class="modal-content inner-modal-content-box box-shadow-popup">
+               aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog" >
+               <div class="modal-dialog  modal-dialog-centered modal-lg">
+                    <div class="modal-content inner-modal-content-box box-shadow-popup modal-dialog-scrollable">
                          <div class="modal-header align-items-start p-4">
                               <div>
                                    <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send Feedback
-
                                    </h5>
                               </div>
                               <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                                    aria-label="Close"></button>
                          </div>
-                         <div class="modal-footer collapse-inner-bg py-4 px-5">
+                         <div class="modal-footer collapse-inner-bg py-4 px-5"> 
                               <div class="col-12">
-                                   <div class="tb-input-group d-flex align-items-center mb-2  p-2">
-                                        <div class="col-12 ms-2 border-dark">
-                                             <label class="col-12 input-label" for="input-image">Select
-                                                  Deliverable</label>
-                                             <input class="col-11 input-img" autocomplete="off" role="combobox"
-                                                  id="input-image" name="browsers" placeholder="placeholder text">
+                                   <div class="tb-input-group d-flex align-items-center  p-2">
+                                        <div class="col-11 ms-2 border-dark">
+                                             <label class="col-12 input-label" for="input-image">Select Deliverable</label>
+                                             <input class="input col-11 input-img2 bg-white opacity-75 selected-dropdown-image"
+                                                  autocomplete="off" role="combobox" id="input-image" name="browsers"
+                                                  placeholder="placeholder text">
                                              <i class="fa fa-solid fa-angle-down"></i>
-
-
-                                             <ul class="col-12 input-dropdown-list list-group rounded-0 bg-white">
-                                                  <li class="list-group-child d-flex align-items-center "
-                                                       value="Avashesh">
-                                                       <input class="me-1 impact" type="radio" id="impact1"
-                                                            name="impacts" value="yes">
-
-                                                       <span>All </span>
+                                             <ul class="col-12 input-dropdown-list list-group rounded-0">
+                                                  <li class="list-group-item d-flex align-items-center"
+                                                       value="1">
+                                                       <input class="impact" type="radio" id="all"
+                                                            name="impacts" value="yes" alt="All">
+                                                       <label class="ms-2" for="all">All </label>
                                                        <span class="text-danger ms-2">• Default</span>
                                                   </li>
-                                                  <li class="list-group-child d-flex align-items-center " value="2">
-                                                       <input class="me-1 impact" type="radio" id="impact2"
-                                                            name="impacts" value="yes">
-
-                                                       <span>Circulars(En)</span>
+                                                  <li class="list-group-item d-flex align-items-center " value="2">
+                                                       <input class="impact" type="radio" id="circular (En)"
+                                                            name="impacts" value="yes" alt="Circular (En)">
+                                                       <label class="ms-2" for="circular (En)">Circular (En)</label>
                                                   </li>
-                                                  <li class="list-group-child d-flex align-items-center " value="3">
-                                                       <input class="me-1 impact" type="radio" id="impact3"
-                                                            name="impacts" value="yes">
-
-                                                       <span>Circulars(Ar)</span>
+                                                  <li class="list-group-item d-flex align-items-center " value="3">
+                                                       <input class="impact" type="radio" id="circular (Ar)"
+                                                            name="impacts" value="yes" alt="Circular (Ar)">
+                                                       <label class="ms-2" for="circular (Ar)">Circular (Ar)</label>
                                                   </li>
                                              </ul>
                                         </div>
                                    </div>
-                                   <p class="error-message">• Error message</p>
                               </div>
                               <div class="col-12">
                                    <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
@@ -3649,49 +3642,45 @@
                                                   class="img-100 selected-dropdown-image">
                                         </div>
                                         <div class="col-11 ms-2 border-dark">
-                                             <label class="col-12 input-label" for="input-image">Select Assignee</label>
+                                             <label class="col-12 input-label" for="input-image2">Select Assignee</label>
                                              <input class="input col-11 input-img bg-white opacity-75"
-                                                  autocomplete="off" role="combobox" id="input-image" name="browsers"
+                                                  autocomplete="off" role="combobox" id="input-image2" name="browsers"
                                                   placeholder="Cameron Williamson..">
-
                                              <i class="fa fa-solid fa-angle-down"></i>
                                              <p class="opacity-75">Content</p>
-
-                                             <ul class="col-12 input-dropdown-list list-group rounded-0">
-                                                  <li class="list-group-item d-flex align-items-center "
+                                             <ul class="col-12 input-dropdown-list  list-group rounded-0">
+                                                  <li class="list-group-item d-flex align-items-center"
                                                        value="Avashesh">
-                                                       <input class="me-3 impact" type="radio" id="impact1"
+                                                       <input class="me-3 impact" type="radio" id="brookylnSimmons"
                                                             name="impacts" value="yes">
                                                        <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                                            <img src="../../assets/images/ProfileImage.png"
+                                                            <img src="../../../assets/images/ProfileImage.png"
                                                                  alt="Brookyln Simmons" class="img-100">
                                                        </div>
-                                                       <span class="ms-3">Brookyln Simmons </span>
+                                                       <label class="ms-3" for="brookylnSimmons">Brookyln Simmons </label>
                                                        <span class="text-danger ms-2">• Default</span>
                                                   </li>
                                                   <li class="list-group-item d-flex align-items-center " value="2">
-                                                       <input class="me-3 impact" type="radio" id="impact1"
+                                                       <input class="me-3 impact" type="radio" id="JacobJones"
                                                             name="impacts" value="yes">
                                                        <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                                            <img src="../../assets/images/person1.jpg" alt="Jacob Jones"
+                                                            <img src="../../../assets/images/person1.jpg" alt="Jacob Jones"
                                                                  class="img-100">
                                                        </div>
-                                                       <span class="ms-3">Jacob Jones</span>
+                                                       <label class="ms-3" for="JacobJones">Jacob Jones</label>
                                                   </li>
                                                   <li class="list-group-item d-flex align-items-center " value="3">
-                                                       <input class="me-3 impact" type="radio" id="impact1"
+                                                       <input class="me-3 impact" type="radio" id="GuyHawkins"
                                                             name="impacts" value="yes">
                                                        <div class="w-h-35 rounded-circle img-cover overflow-hidden m-1">
-                                                            <img src="../../assets/images/ProfileImage.png"
+                                                            <img src="../../../assets/images/ProfileImage.png"
                                                                  alt="Guy Hawkins" class="img-100">
                                                        </div>
-                                                       <span class="ms-3">Guy Hawkins</span>
+                                                       <label class="ms-3" for="GuyHawkins">Guy Hawkins</label>
                                                   </li>
                                              </ul>
-
                                         </div>
                                    </div>
-                                   <p class="error-message">• Error message</p>
                               </div>
                          </div>
                          <div class="col-12 p-4">

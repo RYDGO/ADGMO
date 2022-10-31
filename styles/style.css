@@ -182,7 +182,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-graphic-regular);
-    font-size: 12px;
+    font-size: 14px
 }
 
 a:hover {
@@ -206,14 +206,14 @@ a:hover {
     font-family: var(--font-graphic-light);
 }
 .input-label {
-    font-family: var(--font-graphic-bold);
+    font-family: var(--font-graphic-medium);
     font-size: 12px;
+    font-weight: 400;
 }
 
 .nav-text {
     font-family: var(--font-graphic-regular);
     font-size: 20px;
-    font-weight: 400;
 }
 
 
@@ -561,45 +561,49 @@ a:hover {
 .tb-h5,
 .tb-heading-1,
 .tb-heading-2 {
-    font-weight: 900;
+    /* font-weight: 900; */
     color: var(--text-base-black);
-    font-family: var(--font-family);
+    font-family: var(--font-graphic-regular);
     text-decoration: none;
 }
 
+.tb-fw-bold{
+    font-family: var(--font-graphic-bold);
+}
+
 .tb-heading-1 {
-    font-size: 3.813rem;
-    line-height: 1.2;
+    font-size: 3.813rem !important;
+    line-height: 1.2 !important;
 }
 
 .tb-heading-2 {
-    font-size: 3.125rem;
-    line-height: 1.2;
+    font-size: 3.125rem !important;
+    line-height: 1.2 !important;
 }
 
 .tb-h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
 }
 
 .tb-h2 {
-    font-size: 1.938rem;
-    line-height: 1.2;
+    font-size: 1.938rem !important;
+    line-height: 1.2 !important;
 }
 
 .tb-h3 {
-    font-size: 1.563rem;
-    line-height: 1.2;
+    font-size: 20px !important;
+    line-height: 28px !important;
 }
 
 .tb-h4 {
-    font-size: 1.25rem;
-    line-height: 1.4;
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
 }
 
 .tb-h5 {
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
 }
 
 .lead-paragraph,
@@ -1376,7 +1380,7 @@ option:hover,
 }
 
 .inner-modal-content {
-    width: 565px !important;
+    width: 600px !important;
 }
 
 .inner-modal-content-box {
@@ -1754,8 +1758,8 @@ header .image-text .profession {
     box-shadow: none !important;
 }
 
-.navlink i{
-    font-size: 20px;   
+.nav-link i{
+    font-size: 20px;
 }
 
 .nav-link button {

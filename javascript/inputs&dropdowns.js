@@ -10,6 +10,8 @@ $(document).ready(function () {
     }
   });
 
+ 
+
   //--------- Input-validation -------
   $(".input-field").focus(function () {
     $(this).parent().addClass("border-dark");

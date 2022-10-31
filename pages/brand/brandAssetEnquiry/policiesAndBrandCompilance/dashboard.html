@@ -607,7 +607,7 @@
                                                                 </thead>
                                                                 <tbody class="text-left fw-light ">
                                                                     <tr class="odd" data-bs-target="#brandConsultation"
-                                                                        data-bs-dismiss="modal" data-bs-toggle="modal">
+                                                                        data-bs-toggle="modal">
                                                                         <td
                                                                             class="py-2 table-pd-top border-bottom-0 border-bottom-0 sorting_1">
                                                                             <div
@@ -1575,11 +1575,11 @@
                     </div>
                     <div class="modal-footer p-4">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-                            data-bs-dismiss="modal" data-bs-target="#" type="button">Request
+                             data-bs-target="#" type="button">Request
                             Information</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#decline-modal" type="button">Decline</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
+                        <button class="btn btn-md tb-btn-primary tb-rounded" 
                             data-bs-toggle="modal" data-bs-target="#selectAssignee" type="button">Accept</button>
                     </div>
                 </div>
@@ -2793,19 +2793,18 @@
                                 </div>
                         </div>
                     </div>
-
                     <div class="modal-footer p-4">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#decline-modal" type="button">Decline</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
-                            data-bs-toggle="modal" data-bs-target="#filterModal" type="button">Accept</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" 
+                            data-bs-toggle="modal" data-bs-target="#selectAssignee" type="button">Accept</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- assigned to me brand consultation Modal Ends -->
 
-        <div class="modal fade modal-backdrop-op background-dim" id="selectAssignee" tabindex="-1"
+        <div class="modal fade modal-backdrop-op" id="selectAssignee" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
@@ -2865,7 +2864,7 @@
                         </div>
                     </div>
                     <div class="modal-footer text-end my-2 me-3 ">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" 
                             type="button">Cancel</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
                     </div>
@@ -2874,63 +2873,6 @@
         </div>
     </div>
 
-    <div class="modal fade modal-backdrop-op background-dim" id="priorityModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog main-modal modal-dialog-position">
-            <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
-                <div class="modal-header align-items-start p-4">
-                    <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">Confirm
-                        Priority</h5>
-                    <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div
-                    class="modal-body p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="tb-input-group p-2 mt-3">
-                            <form action="">
-                                <label class="col-12 input-label" for="input">Priority<sup>*</sup></label>
-                                <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                    name="browsers" placeholder="placeholder..">
-                                <i class="fa fa-solid fa-angle-down"></i>
-                                <datalist id="browsers" role="listbox">
-                                    <option value="Brookyln Simmons">Brookyln Simmons</option>
-                                    <option value="Jacob Jones">Jacob Jones</option>
-                                    <option value="Guy Hawkins">Guy Hawkins</option>
-                                </datalist>
-                            </form>
-                        </div>
-
-
-                        <div class="tb-input-group p-2 mt-3">
-                            <label class="col-12 input-label" for="date">Due Date<sup>*</sup></label>
-                            <input type="date" class="col-12 input-field" id="date">
-                        </div>
-
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="border-0 info-outer tb-input-group">
-                            <div class="d-flex">
-                                <div>
-                                    <img class="info-icon" src="../../../../assets/images/info-icon1.svg" alt="">
-                                </div>
-                                <p class="px-3 m-0">
-                                    You are about accept this request, please note the due date is automatically
-                                    defined by the Priority
-                                    of the request.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer text-end my-4 me-3 ">
-                    <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
-                        type="button">Cancel</button>
-                    <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="modal fade modal-backdrop-op background-dim" id="filterModal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2947,25 +2889,24 @@
                         <div class="row g-0 gy-3">
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked me-2" type="checkbox"
                                         value="" id="Arabic">
                                     <label for="Arabic">Arabic</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked" type="checkbox"
+                                    <input class="form-check-input shadow-none tb-bg-primary-checked me-2" type="checkbox"
                                         value="" id="English">
                                     <label for="English">English</label>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="text-end my-4 me-3 ">
                     <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
-                        data-bs-target="#priorityModal" type="button">Back</button>
+                        data-bs-target="#selectAssignee" type="button">Back</button>
                     <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
                         data-bs-target="#normalModal">Confirm</button>
                 </div>
@@ -4653,7 +4594,7 @@
     </div>
 
     <!-- Full screen -2 modal -->
-    <div class="modal fade" id="fullNewsRequest2" tabindex="-1" aria-labelledby="fullNewsRequest2Label"
+    <div class="modal fade" id="fullNewsRequest2" tabindex="-1"
         aria-hidden="true">
         <div class="modal-dialog modal-fullscreen  p-3 background-dim">
             <div class="modal-content tb-rounded">
@@ -5829,15 +5770,15 @@
                             data-bs-target="#requestInfo" type="button">Request Information</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                             data-bs-target="#decline-modal" type="button">Decline</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
-                            data-bs-toggle="modal" data-bs-target="#priorityModal" type="button">Accept</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" 
+                            data-bs-toggle="modal" data-bs-target="#selectAssignee" type="button">Accept</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade show background-dim" id="sendforApprovalModal" aria-labelledby="exampleModalToggleLabel"
+    <div class="modal fade" id="sendforApprovalModal" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1" aria-modal="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content h-50">

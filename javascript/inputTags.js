@@ -1,7 +1,7 @@
 $(function () {
   $("#form-tags-1").tagsInput();
   let valueList = "";
-  $("#form-tags-2").tagsInput({
+  $(".form-tags-2").tagsInput({
     onAddTag: function (input, value) {
       valueList = value + "," + valueList;
       console.log("tag added: ", valueList);

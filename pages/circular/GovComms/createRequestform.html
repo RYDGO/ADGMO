@@ -520,7 +520,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody class="text-left fw-light ">
-                                                    <tr>
+                                                    <tr data-bs-target="#largeModal" data-bs-toggle="modal">
                                                         <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                                             <div
                                                                 class="d-flex align-items-center justify-content-center">
@@ -678,6 +678,667 @@
         </section>
         <!--workload Departments ends here ------>
 
+
+        <!--Large  Modal  Starts here-->
+        <div class="modal fade createDeliverablesModal background-dim" id="largeModal" aria-modal="true" tabindex="-1"
+            aria-labelledby="exampleModalLabel" role="dialog">
+            <div class="modal-dialog modal-fullscreen p-3 modal-dialog-scrollable">
+                <div class="modal-content modal-dialog-scrollable tb-rounded">
+                    <div class="modal-header align-items-start p-4">
+                        <div class="model-top-wrapper col-10">
+                            <div class=" d-flex ">
+                                <div
+                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                    <h6 class="pt-2">
+                                        L1
+                                    </h6>
+                                </div>
+                                <div class="ms-2">
+                                    <div class="tb-bg-blue py-1 px-2 d-inline-block rounded-1 text-base-white mb-1">
+                                        EWAA
+                                    </div>
+                                    <h5 class="modal-title tb-h3 text-black d-flex align-items-center"
+                                        id="fullNewsRequest2Label">
+                                        Circular description...
+                                    </h5>
+                                    <div class="">
+                                        CRS~012345
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-between align-items-center ">
+                            <div>
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal"
+                                    data-bs-target="#commentsModal">
+                                    <img src="../../../../assets/images/Icons/icon-comment.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                                    <img src="../../../../assets/images/Icons/icon-time.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                                    <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn  w-h-35 border-0 bg-white "><img
+                                        src="../../../../assets/images/Icons/expand.svg" alt=""></button>
+                                <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-body collapse-inner-bg px-4 py-3 h-100 overflow-auto">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#overview-tab-pane2">Overview</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="profile-tab-2" data-bs-toggle="tab"
+                                            data-bs-target="#attachments-tab-pane2">Attachments</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
+                                            data-bs-target="#activities-tab-pane2">Activities</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
+                                            data-bs-target="#dual-content-tab-pane2">Dual Content</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
+                                            data-bs-target="#versions-tab-pane2">Versions</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content site-modal-tab-content " id="myTabContent">
+                                    <div class="tab-pane fade show active bg-transparent  shadow-none"
+                                        id="overview-tab-pane2">
+                                        <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#request-tab-pane2">Request</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#deliverables-tab-pane2">Deliverables</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active shadow-none" id="request-tab-pane2">
+                                                <div class="accordion" id="accordion-dual">
+                                                    <div class="accordion-item accordion-bottom-border">
+                                                        <h2 class="accordion-header" id="heading-duel-1">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-duel-1">Request Brief</button>
+                                                        </h2>
+                                                        <div id="collapse-duel-1"
+                                                            class="accordion-collapse collapse show">
+                                                            <div class="collapse-inner-bg p-4">
+                                                                <div class="row g-3">
+                                                                    <div class="col-md-12">
+                                                                        <p class="tb-font-bold tb-fs-16">To*
+                                                                        <p>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="row gray-100 p-2">
+                                                                            <div class="d-flex">
+                                                                                <p class="regular-paragraph">Entity</p>
+                                                                                <p class="regular-paragraph ms-auto">Abu
+                                                                                    Dhabi Center</p>
+
+                                                                            </div>
+                                                                            <div class="d-flex">
+                                                                                <p class="regular-paragraph mb-0">Email
+                                                                                </p>
+                                                                                <p
+                                                                                    class="regular-paragraph ms-auto mb-0">
+                                                                                    tranthuy.nute@gmail.com</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 border-bottom">
+                                                                        <div class=" p-2">
+                                                                            <p class="tb-font-bold tb-fs-16">Subject
+                                                                            <p>
+                                                                            <p class="regular-paragraph tb-fs-14">Sonde
+                                                                                dinun vidov. Teresade sufafäv. </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 border-bottom">
+                                                                        <div class=" p-2">
+                                                                            <p class="tb-font-bold tb-fs-16">First
+                                                                                Paragraph
+                                                                            <p>
+                                                                            <p class="regular-paragraph tb-fs-14">Sonde
+                                                                                dinun vidov. Teresade sufafäv. Bipol
+                                                                                telesyr i förlåtandeintervall.
+                                                                                Feneviktig kontratologi. Nukusk jehus,
+                                                                                nirade. Vin wikiläcka för att
+                                                                                kravallturism. </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 border-bottom">
+                                                                        <div class=" p-2">
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                اﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود
+                                                                            <p>
+                                                                            <p
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                .مﻮﺠﻬﻟا ﺮﻤﺘﺳاو ﻮﻫ ﻢﺗو ,ﻢﺗ ﺖﺤﺗ ﺎﻴﻧﺎﻤﻟاو
+                                                                                ﺐﻧﺎﺠﻟﺎﺑ ﺦﻳرﺎﺗ .ﻦﻋ ﺾﻌﺑ ،ﺎﻳﺪﻴﺒﻴﻜﻳو رﺎﺘﺴﻟا
+                                                                                ,يأ نﻮﻳﺪﻟاو لاﺪﺒﺘﺳا ﺔﻤﻴﺴﺟ ﺎﻬﻟ .ﺔﺿرﺎﻌﻣ
+                                                                                ﻪﻠﻟا ﻚﻠﺗ ـﺑ ,ﻲﻓ تاذ ،ﻊﻴﺑﺮﻟا مزُه ,ﻢﺛ
+                                                                                ،ةﺪﻳﺪﺠﻟا رﺎﺘﺴﻟا ﺢﻔﺼﺗ ﻮﻳإ .ﻞﻌﺟ ٣٠ جرﻮﺟ
+                                                                                ضﺮﻔﺑ لﻮﺧد ,ءﻲﺷ ﺔﻴﻜﻳﺮﻣﺄﻟا ثاﺪﺤﺘﺳﺎﺑ ﻢﻬﺘﻀﺒﻗ
+                                                                                ﻊﻣ ,اﺪﻨﻟﻮﺑو ﻦﻴﻓﺮﻄﻟا رازوأ يأ ﺮﺳأ .ﻦﻋ
+                                                                                يﺪﻨﻟﻮﺒﻟا ىّﻦﺴﺘﻳ ﺔﻠﻤﻌﻟ ﻰﻟا .تءﺎﺑو ﺔﻳﺎﻬﻧ
+                                                                                ﺪﻌﺒﻓ ﻦﻜﻣ نأ ,ﺐﺒﺴﻟا ضرﺄﻟا ﺪﻘﻓ ﻦﻣ ,ﻞﺑ
+                                                                                تاﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 border-bottom">
+                                                                        <div class=" p-2">
+                                                                            <p class="tb-font-bold tb-fs-16">Second
+                                                                                Paragraph
+                                                                            <p>
+                                                                            <p class="regular-paragraph tb-fs-14">Sonde
+                                                                                dinun vidov. Teresade sufafäv. Bipol
+                                                                                telesyr i förlåtandeintervall.
+                                                                                Feneviktig kontratologi. Nukusk jehus,
+                                                                                nirade. Vin wikiläcka för att
+                                                                                kravallturism. </p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 border-bottom">
+                                                                        <div class=" p-2">
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                اﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود
+                                                                            <p>
+                                                                            <p
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                .مﻮﺠﻬﻟا ﺮﻤﺘﺳاو ﻮﻫ ﻢﺗو ,ﻢﺗ ﺖﺤﺗ ﺎﻴﻧﺎﻤﻟاو
+                                                                                ﺐﻧﺎﺠﻟﺎﺑ ﺦﻳرﺎﺗ .ﻦﻋ ﺾﻌﺑ ،ﺎﻳﺪﻴﺒﻴﻜﻳو رﺎﺘﺴﻟا
+                                                                                ,يأ نﻮﻳﺪﻟاو لاﺪﺒﺘﺳا ﺔﻤﻴﺴﺟ ﺎﻬﻟ .ﺔﺿرﺎﻌﻣ
+                                                                                ﻪﻠﻟا ﻚﻠﺗ ـﺑ ,ﻲﻓ تاذ ،ﻊﻴﺑﺮﻟا مزُه ,ﻢﺛ
+                                                                                ،ةﺪﻳﺪﺠﻟا رﺎﺘﺴﻟا ﺢﻔﺼﺗ ﻮﻳإ .ﻞﻌﺟ ٣٠ جرﻮﺟ
+                                                                                ضﺮﻔﺑ لﻮﺧد ,ءﻲﺷ ﺔﻴﻜﻳﺮﻣﺄﻟا ثاﺪﺤﺘﺳﺎﺑ ﻢﻬﺘﻀﺒﻗ
+                                                                                ﻊﻣ ,اﺪﻨﻟﻮﺑو ﻦﻴﻓﺮﻄﻟا رازوأ يأ ﺮﺳأ .ﻦﻋ
+                                                                                يﺪﻨﻟﻮﺒﻟا ىّﻦﺴﺘﻳ ﺔﻠﻤﻌﻟ ﻰﻟا .تءﺎﺑو ﺔﻳﺎﻬﻧ
+                                                                                ﺪﻌﺒﻓ ﻦﻜﻣ نأ ,ﺐﺒﺴﻟا ضرﺄﻟا ﺪﻘﻓ ﻦﻣ ,ﻞﺑ
+                                                                                تاﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود</p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade " id="deliverables-tab-pane2">
+                                                <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
+                                                    <div class="col-8">
+                                                        <div class="head-5">
+                                                            <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverable</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="text-end mt-3">
+                                                            <img src="../../../../assets/images/Icons/edit-pen.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion" id="accordion-dual">
+
+                                                    <div class="accordion-item accordion-bottom-border">
+                                                        <h2 class="accordion-header" id="heading-duel-1">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-1">PRL</button>
+                                                        </h2>
+
+                                                        <div id="collapse-deliverable-1"
+                                                            class="accordion-collapse collapse show">
+                                                            <div class="collapse-inner-bg p-5 pb-0">
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
+                                                                        as part of the service level agreement (SLA)?
+                                                                    </p>
+                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
+                                                                        deadline lorem?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are there any additional
+                                                                        needs with this deliverable?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Image, Video</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
+                                                                        9:00am</p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item accordion-bottom-border">
+                                                        <h2 class="accordion-header" id="heading-duel-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-2">Social
+                                                                Media</button>
+                                                        </h2>
+                                                        <div id="collapse-deliverable-2"
+                                                            class="accordion-collapse collapse">
+                                                            <div class="collapse-inner-bg p-5 pb-0">
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
+                                                                        as part of the service level agreement (SLA)?
+                                                                    </p>
+                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
+                                                                        deadline lorem?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">On which channel(s) would
+                                                                        you like to post?</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Instagram,
+                                                                        Twitter</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Instagram Format(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Twitter Format(s)</p>
+                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
+                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
+                                                                        9:00am</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading-duel-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button collapsed tb-fs-18"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapse-deliverable-3">Attachments*</button>
+                                                        </h2>
+                                                        <div id="collapse-deliverable-3"
+                                                            class="accordion-collapse collapse">
+                                                            <div class="collapse-inner-bg p-5">
+                                                                <div class="row">
+                                                                    <div class="col-12 ">
+                                                                        <div class="tb-input-group d-flex p-3">
+                                                                            <div class="col-9">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="infographics">Infographics</label>
+                                                                                <input class="col-12 input"
+                                                                                    type="infographics"
+                                                                                    id="infographics"
+                                                                                    placeholder="Upload image" />
+                                                                            </div>
+                                                                            <div
+                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                                                <span class="tb-fs-18">Upload</span>
+                                                                                <input id="upload-infographics"
+                                                                                    type="file" class="upload" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 mt-4">
+                                                                        <div class="tb-input-group d-flex p-3">
+                                                                            <div class="col-9">
+                                                                                <label class="col-12 input-label"
+                                                                                    for="media-assets">Media
+                                                                                    Assets</label>
+                                                                                <input class="col-12 input" type="text"
+                                                                                    id="media-assets"
+                                                                                    placeholder="Upload Image / Videos" />
+                                                                            </div>
+                                                                            <div
+                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
+                                                                                <span class="tb-fs-18">Upload</span>
+                                                                                <input id="upload-media-assets"
+                                                                                    type="file" class="upload" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-4">
+                                                                        <div class="tb-input-group p-2">
+                                                                            <label class="col-12 input-label "
+                                                                                for="supporting-data">Supporting
+                                                                                Data</label>
+                                                                            <input class="col-12 input-field"
+                                                                                id="supporting-data"
+                                                                                name="supporting-data"
+                                                                                placeholder="Placeholder text" />
+                                                                        </div>
+                                                                        <p class="error-message">• Error Message</p>
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-4">
+                                                                        <div class="tb-input-group p-2">
+                                                                            <label class="col-12 input-label "
+                                                                                for="further-info">Further
+                                                                                info</label>
+                                                                            <input class="col-12 input-field"
+                                                                                id="further-info" name="further-info"
+                                                                                placeholder="Placeholder text" />
+                                                                        </div>
+                                                                        <p class="error-message">• Error Message</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="attachments-tab-pane2">2</div>
+                                    <div class="tab-pane fade" id="activities-tab-pane2">3</div>
+                                    <div class="tab-pane fade" id="dual-content-tab-pane2">
+                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
+                                        <p class="duel-content-dec p-0 m-3">نص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
+                                        <hr>
+                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
+                                        <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائب</p>
+                                        <hr>
+                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
+                                        <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص
+                                            العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                            النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                            العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                        </p>
+                                        <hr>
+                                        <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
+                                        <p class="duel-content-dec p-0 m-3"> نصنص , العنصرالعنصر</p>
+                                        <hr>
+                                    </div>
+                                    <div class="tab-pane fade" id="versions-tab-pane">
+                                        <div class="data-top">
+                                            <span class="data-tab">V1(Current) <img
+                                                    src="../../assets/images/Vector (Stroke).svg" alt=""></span>
+                                            <h6 class="table-heading">John Luis . 22/02/2022 - 9:00am</h6>
+                                        </div>
+                                        <div class="table-heading1 text-end">
+                                            <h6 class="table-heading-h6">عنوان</h6>
+                                            <p class="table-heading-desc">نص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">عنوان</h6>
+                                            <p class="table-heading-desc"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائب</p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">عنوان</h6>
+                                            <p class="table-heading-desc">
+                                                نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائب
+                                            </p>
+                                            <hr>
+                                            <h6 class="table-heading-h6">عنوان</h6>
+                                            <p class="table-heading-desc"> نصنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر
+                                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
+                                                نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
+                                                النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص
+                                                العنصر النائب
+                                            </p>
+                                            <h6 class="table-heading-h6">عنوان</h6>
+                                            <p class="table-heading-desc"> نصنص , العنصرالعنصر</p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center mb-4">
+                                        <div class="col-8 d-flex">
+                                            <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 2 Deliverable(s)</p>
+                                            <img src="../../../../assets/images/Icons/info-red.svg" alt="">
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-end mt-3">
+                                                <button class="border-0 bg-white"><img
+                                                        src="../../../../assets/images/Icons/plus-icon.svg"
+                                                        alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pb-4 border-gray-bottom-200">
+
+                                    <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-en-3" aria-expanded="false">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3 radio" type="radio" id="prl(en3)"
+                                                    name="Deliverable-redio" value="HTML">
+                                                <label for="prl(en3)" class="tb-fs-16 tb-fw-700">Circulars(En)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 text-black ms-3">Not started</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div id="collapse-en-3" class="accordion-collapse collapse">
+                                        <div class="collapse-inner-bg p-5">
+                                            <div class="row">
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="border-danger">
+                                                            <label class="col-12 input-label" for="links">Heading
+                                                            </label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Lorem ipsum.." disabled="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="border-danger">
+                                                            <label class="col-12 input-label" for="links">Sub Heading
+                                                            </label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Lorem ipsum.." disabled="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="col-12 border-0">
+                                                            <label class="col-12 input-label" for="links">Body
+                                                            </label>
+                                                            <textarea
+                                                                class="col-12 w-100 border-0 input collapse-inner-bg"
+                                                                id="links" name="links" placeholder="Lorem ipsum.."
+                                                                disabled="" rows="8"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="border-danger">
+                                                            <label class="col-12 input-label" for="links">Tags
+                                                            </label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Lorem ipsum.." disabled="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-arab-3"
+                                        aria-expanded="false">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3 radio" type="radio" id="prl(arab3)"
+                                                    name="Deliverable-redio" value="HTML">
+                                                <label for="prl(arab3)" class="tb-fs-16 tb-fw-700">Circulars(Ar)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stop-watch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 text-black ms-3">Not Started</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div id="collapse-arab-3" class="accordion-collapse collapse">
+                                        <div class="collapse-inner-bg p-5">
+                                            <div class="row">
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="border-danger col-12">
+                                                            <label class="col-12 input-label text-end" for="links">أدخل
+                                                                الب
+                                                            </label>
+                                                            <input class="col-12 input collapse-inner-bg text-end"
+                                                                id="links" name="links"
+                                                                placeholder="أدخل البريد الإلكتروني" disabled="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 border-bottom-gray-200">
+                                                    <div
+                                                        class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                        <div class="border-danger col-12">
+                                                            <label class="col-12 input-label text-end" for="links">أدخل
+                                                                الب
+                                                            </label>
+                                                            <input class="col-12 input collapse-inner-bg text-end"
+                                                                id="links" name="links"
+                                                                placeholder="أدخل البريد الإلكتروني" disabled="">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="view-all-model-btn-wrapper text-end p-3">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button"
+                            data-bs-target="#exampleModal5" data-bs-toggle="modal">Request Information</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-target="#approvework"
+                            data-bs-toggle="modal">Send for Approval</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
 
         <!-- Full screen -2 modal -->
         <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullNewsRequest2Label"
@@ -914,8 +1575,10 @@
                                                 </div>
                                                 <div class="accordion accordion-bottom-border" id="accordion-english-2">
                                                     <div class="accordion-item">
-                                                        <h2 class="accordion-header arabic-accordian" id="heading-english-2">
-                                                            <button type="button" class="shadow-none accordion-button flex-row-reverse"
+                                                        <h2 class="accordion-header arabic-accordian"
+                                                            id="heading-english-2">
+                                                            <button type="button"
+                                                                class="shadow-none accordion-button flex-row-reverse"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#collapse-arabic-2">
                                                                 عنوان
@@ -932,40 +1595,52 @@
 
                                                                     <div class="col-md-12 border-bottom">
                                                                         <div class=" p-2">
-                                                                            <p class="tb-font-bold tb-fs-16 text-end">البريد الإلكتروني
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                البريد الإلكتروني
 
                                                                             <p>
-                                                                            <p class="regular-paragraph tb-fs-14 text-end">أدخل البريد الإلكتروني</p>
+                                                                            <p
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                أدخل البريد الإلكتروني</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 border-bottom">
                                                                         <div class=" p-2">
-                                                                            <p class="tb-font-bold tb-fs-16 text-end"> تران ثوي الجوز
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                تران ثوي الجوز
 
                                                                             <p>
-                                                                            <p class="tb-font-bold tb-fs-16 text-end">مركز أبو ظبي
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                مركز أبو ظبي
 
                                                                             <p>
-                                                                            <p class="regular-paragraph tb-fs-14 text-end">gmail.comإنذارتران ثوي.  </p>
+                                                                            <p
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                gmail.comإنذارتران ثوي. </p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 border-bottom">
                                                                         <div class=" p-2">
-                                                                            <p class="tb-font-bold tb-fs-16 text-end">موضوعات
+                                                                            <p class="tb-font-bold tb-fs-16 text-end">
+                                                                                موضوعات
                                                                             <p>
-                                                                            <p class="regular-paragraph tb-fs-14 text-end">موضوعات</p>
+                                                                            <p
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                موضوعات</p>
 
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 border-bottom">
                                                                         <div class=" p-2">
                                                                             <p class=" tb-fs-16 text-end">
-                                                                                يتقدم المكتب الإعلامي لحكومة أبوظبي (ADGMO) بأطيب تمنياته
-   
+                                                                                يتقدم المكتب الإعلامي لحكومة أبوظبي
+                                                                                (ADGMO) بأطيب تمنياته
+
                                                                             <p>
                                                                             <p
-                                                                                class="regular-paragraph tb-fs-14 text-end">يرجى الرجوع إلى الموضوع المذكور أعلاه *
-                                                                              </p>
+                                                                                class="regular-paragraph tb-fs-14 text-end">
+                                                                                يرجى الرجوع إلى الموضوع المذكور أعلاه *
+                                                                            </p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 border-bottom">
@@ -973,7 +1648,10 @@
                                                                             <p class="tb-font-bold tb-fs-16">First
                                                                                 Paragraph
                                                                             <p>
-                                                                            <input class="collapse-inner-bg col-12" type="text" placeholder="placholder text" disabled>
+                                                                                <input class="collapse-inner-bg col-12"
+                                                                                    type="text"
+                                                                                    placeholder="placholder text"
+                                                                                    disabled>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-12 border-bottom">
@@ -1897,14 +2575,13 @@
                                 data-bs-target="#requestInfo" type="button">Request Information</button>
                             <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
                                 data-bs-target="#decline-modal" type="button">Decline</button>
-                            <button class="btn btn-md tb-btn-primary tb-rounded"
-                                data-bs-toggle="modal" data-bs-target="#priorityModal" type="button">Accept</button>
+                            <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+                                data-bs-target="#priorityModal" type="button">Accept</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Others Modal Ends -->
 
         <div class="modal fade modal-backdrop-op " id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -2293,7 +2970,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
-                            Send for Approval</h1>
+                            Submit Approval</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body collapse-inner-bg">

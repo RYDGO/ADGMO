@@ -6,8 +6,30 @@ document.addEventListener("DOMContentLoaded", function () {
       initialDate: "2022-08-07",
       headerToolbar: {
         left: "prev,title,next ",
-        center: '',
+        center: 'renderCenter',
         right: "timeGridDay,timeGridWeek,dayGridMonth"
+      },
+        nowIndicator: true,
+      navLinks: true, // can click day/week names to navigate views
+      businessHours: false, // display business hours
+      editable: true,
+      selectable: true,
+      select: function (arg) {
+        document.getElementById("eventtarget").classList.add("show");
+        document.getElementById("eventtarget").style.display = "block";
+        document.getElementById("cancelAddEvent").addEventListener("click", ()=>{
+          document.getElementById("eventtarget").classList.remove("show");
+          document.getElementById("eventtarget").style.display = "none";
+        })
+        calendar.unselect();
+      },
+      eventClick: function(arg) {
+        document.getElementById("scheduledetilesmodal").classList.add("show");
+        document.getElementById("scheduledetilesmodal").style.display = "block";
+        document.getElementById("scheduledetilesmodal").addEventListener("click", ()=>{
+          document.getElementById("scheduledetilesmodal").classList.remove("show");
+          document.getElementById("scheduledetilesmodal").style.display = "none";
+        })
       },
       events: [
         {
@@ -61,4 +83,3 @@ document.addEventListener("DOMContentLoaded", function () {
   
     calendar.render();
   });
-  

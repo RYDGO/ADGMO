@@ -1,7 +1,7 @@
 $(function () {
   $("#form-tags-1").tagsInput();
   let valueList = "";
-  $("#form-tags-2").tagsInput({
+  $(".form-tags-2").tagsInput({
     onAddTag: function (input, value) {
       valueList = value + "," + valueList;
       console.log("tag added: ", valueList);
@@ -24,7 +24,7 @@ $(function () {
 
   $(".form-tags-4").tagsInput({
     autocomplete: {
-      source: ["brookyln", "simmons", "bob", "harry", "andrew", "john", "micael", "peter"],
+      source: ["john", "jay", "peter", "smith", "alex"],
     },
   });
 

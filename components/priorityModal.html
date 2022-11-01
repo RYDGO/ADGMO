@@ -57,6 +57,8 @@
         type="button">Mark as Blocked</button>
     <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal" data-bs-toggle="modal"
         data-bs-target="#assignModal" type="button">Assign</button>
+    <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal" data-bs-toggle="modal"
+        data-bs-target="#sendRequestModal" type="button">Send Request</button>
 
     <!-- Others Modal Ends -->
     <div class="modal fade modal-backdrop-op " id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -612,6 +614,39 @@
             </div>
         </div>
     </div>
+    <!-- send request modal -->
+    <div class="modal fade show background-dim" id="sendRequestModal" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1" aria-modal="true" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black"
+                                id="exampleModalToggleLabel">Send Request
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body collapse-inner-bg">
+                            <div class="col-12 my-3 bg-white">
+                                <div class="border-0 py-3 info-outer">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg"
+                                                alt="">
+                                        </div>
+                                        <p class="px-3 mt-2 m-0">
+                                            You are about Send this request, sending this request will submit it to the
+                                            media office.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

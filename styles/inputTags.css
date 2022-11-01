@@ -15,10 +15,10 @@ body {
   margin: 150px auto;
   max-width: 960px;
 }
-/* label {
+label {
   display: block;
   padding: 20px 0 5px 0;
-} */
+}
 .tagsinput,
 .tagsinput * {
   box-sizing: border-box;
@@ -45,11 +45,11 @@ body {
 }
 .tagsinput .tag {
   position: relative;
-  background: #ECEFF1;
+  background: #556270;
   display: block;
   max-width: 100%;
   word-wrap: break-word;
-  color: #000;
+  color: #fff;
   padding: 5px 30px 5px 5px;
   border-radius: 2px;
   margin: 0 5px 5px 0;

@@ -265,7 +265,6 @@ $(function () {
             focus: true,
             unique: settings.unique,
           });
-
           return false;
         });
 

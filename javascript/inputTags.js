@@ -22,9 +22,9 @@ $(function () {
     validationPattern: new RegExp("^[a-zA-Z]+$"),
   });
 
-  $("#form-tags-4").tagsInput({
+  $(".form-tags-4").tagsInput({
     autocomplete: {
-      source: ["apple", "banana", "orange", "pizza"],
+      source: ["john", "jay", "peter", "smith", "alex", "harry"],
     },
   });
 
@@ -217,11 +217,11 @@ $(function () {
         $("<div>", { id: id + "_addTag" }).append(
           settings.interactive
             ? $("<input>", {
-                id: id + "_tag",
-                class: "tag-input",
-                value: "",
-                placeholder: settings.placeholder,
-              })
+              id: id + "_tag",
+              class: "tag-input",
+              value: "",
+              placeholder: settings.placeholder,
+            })
             : null
         )
       );

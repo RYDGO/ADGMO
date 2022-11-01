@@ -12,11 +12,13 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/inputTags.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
   <div class="container-fluid bg-color-gray">
-    <div class="container ">
+    <div class="container">
       <div class="row mt-4">
         <h1>Inputs and Dropdowns</h1>
         <div class="col-md-3 mt-3">
@@ -56,10 +58,10 @@
         <div class="col-md-3">
           <div class="tb-input-group p-2 mt-3 ">
             <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
-            <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
+            <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
               placeholder="placeholder..">
             <i class="fa fa-solid fa-angle-down"></i>
-            <datalist id="browsers" role="listbox">
+            <datalist id="browsers" role="listbox" multiple>
               <option value="Brookyln Simmons">Brookyln Simmons</option>
               <option value="Jacob Jones">Jacob Jones</option>
               <option value="Guy Hawkins">Guy Hawkins</option>
@@ -67,21 +69,25 @@
           </div>
           <p class="error-message">• Error message</p>
         </div>
-
-
+        <div class="col-12 mt-3">
+          <div class="tb-input-group p-2">
+            <form id="form">
+              <label class="col-12 input-label" for="tags">Tags</label>
+              <input class="form-tags-4" name="tags-4" type="text">
+            </form>
+          </div>
         <div class="col-md-3 mt-3">
           <div class=" bg-white p-3">
             <div class="col-12 p-2 border-bottom">
-                <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
-                <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
-                </label>
-              </div>
-            <div class="tb-input-group p-2">
-                <label class="col-12 input-label" for="inputNoError">Notes</label>
-                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
-                    placeholder="Placeholder">
+              <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
+              <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
+              </label>
             </div>
-        </div>
+            <div class="tb-input-group p-2">
+              <label class="col-12 input-label" for="inputNoError">Notes</label>
+              <input class="col-12 input-field" id="inputNoError" name="inputNoError" placeholder="Placeholder">
+            </div>
+          </div>
 
         </div>
 
@@ -256,6 +262,22 @@
         </div>
         <p class="error-message">• Error message</p>
       </div>
+
+      <div class="col-md-3">
+        <div class="tb-input-group p-2 mt-3 ">
+          <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
+          <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
+            placeholder="placeholder..">
+          <i class="fa fa-solid fa-angle-down"></i>
+          <datalist id="browsers" role="listbox" multiple>
+            <option value="Brookyln Simmons">Brookyln Simmons</option>
+            <option value="Jacob Jones">Jacob Jones</option>
+            <option value="Guy Hawkins">Guy Hawkins</option>
+          </datalist>
+        </div>
+        <p class="error-message">• Error message</p>
+      </div>
+
       <div class="row">
         <div class="col-md-4">
           <div class="tb-input-group d-flex p-3 mt-3 ">
@@ -368,6 +390,8 @@
 "></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../javascript/inputs&dropdowns.js"></script>
+<script src="../javascript/inputTags.js"></script>
+
 <script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
@@ -379,6 +403,7 @@
     menubar: false
   });
 </script>
-
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="../javascript/inputTags.js"></script>
 
 </html>

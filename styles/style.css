@@ -1501,7 +1501,7 @@ tbody tr:hover {
     top: 9%;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 280px;
     /* padding: 10px 0px; */
     background: var(--base-white-color);
     transition: var(--tran-05);
@@ -1517,7 +1517,7 @@ tbody tr:hover {
 
 .sidebar li {
     height: auto;
-    width: 210px;
+    width: 245px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -1763,7 +1763,7 @@ header .image-text .profession {
 }
 
 .nav-link button {
-    width: 210px;
+    width:100%;
     white-space: nowrap;
     padding: 0px 30px;
     box-shadow: none !important;
@@ -1783,10 +1783,7 @@ header .image-text .profession {
     padding: 0;
 }
 
-.nav-link button {
-    width: 210px;
-    white-space: nowrap;
-}
+
 
 .sidebar.close .nav-link button {
     width: 102px;

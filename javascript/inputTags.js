@@ -24,7 +24,7 @@ $(function () {
 
   $(".form-tags-4").tagsInput({
     autocomplete: {
-      source: ["john", "jay", "peter", "smith", "alex"],
+      source: ["john", "jay", "peter", "smith", "alex", "harry"],
     },
   });
 

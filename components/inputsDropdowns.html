@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/inputTags.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
+
 <body>
   <div class="container-fluid bg-color-gray">
     <div class="container ">
@@ -66,22 +69,25 @@
           </div>
           <p class="error-message">• Error message</p>
         </div>
-            <label>Tags input with autocomplete:</label>
-        		<input class="form-tags-4" name="tags-4" type="text">
-
+        <div class="col-12 mt-3">
+          <div class="tb-input-group p-2">
+            <form id="form">
+              <label class="col-12 input-label" for="tags">Tags</label>
+              <input class="form-tags-4" name="tags-4" type="text" value="">
+            </form>
+          </div>
         <div class="col-md-3 mt-3">
           <div class=" bg-white p-3">
             <div class="col-12 p-2 border-bottom">
-                <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
-                <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
-                </label>
-              </div>
-            <div class="tb-input-group p-2">
-                <label class="col-12 input-label" for="inputNoError">Notes</label>
-                <input class="col-12 input-field" id="inputNoError" name="inputNoError"
-                    placeholder="Placeholder">
+              <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
+              <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
+              </label>
             </div>
-        </div>
+            <div class="tb-input-group p-2">
+              <label class="col-12 input-label" for="inputNoError">Notes</label>
+              <input class="col-12 input-field" id="inputNoError" name="inputNoError" placeholder="Placeholder">
+            </div>
+          </div>
 
         </div>
 
@@ -272,19 +278,6 @@
         <p class="error-message">• Error message</p>
       </div>
 
-      <div class="col-12 mt-3">
-        <div class="tb-input-group p-2">
-            <label class="col-12 input-label" for="tags">Tags</label>
-            <input class="col-11 input form-tags-2"name="tags-1" id="tags" type="text">
-            <i class="fa fa-solid fa-angle-down"></i>
-            <datalist id="browsers" role="listbox" multiple>
-              <option value="Brookyln Simmons">Brookyln Simmons</option>
-              <option value="Jacob Jones">Jacob Jones</option>
-              <option value="Guy Hawkins">Guy Hawkins</option>
-            </datalist>
-        </div>
-      </div>
-
       <div class="row">
         <div class="col-md-4">
           <div class="tb-input-group d-flex p-3 mt-3 ">
@@ -410,6 +403,7 @@
     menubar: false
   });
 </script>
-
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="../javascript/inputTags.js"></script>
 
 </html>

@@ -7884,7 +7884,7 @@ var FullCalendar = (function (exports) {
                 var buttonName = widget.buttonName, buttonClick = widget.buttonClick, buttonText = widget.buttonText, buttonIcon = widget.buttonIcon, buttonHint = widget.buttonHint;
                 if (buttonName === 'title') {
                     isOnlyButtons = false;
-                    children.push(createElement("h2", { className: "fc-toolbar-title", id: props.titleId }, props.title));
+                    children.push(createElement("h2", { className: "fc-toolbar-title text-nowrap", id: props.titleId }, props.title));
                 }
                 else {
                     var isPressed = buttonName === props.activeButton;
@@ -7896,6 +7896,21 @@ var FullCalendar = (function (exports) {
                         buttonClasses.push(theme.getClass('buttonActive'));
                     }
                     children.push(createElement("button", { type: "button", title: typeof buttonHint === 'function' ? buttonHint(props.navUnit) : buttonHint, disabled: isDisabled, "aria-pressed": isPressed, className: buttonClasses.join(' '), onClick: buttonClick }, buttonText || (buttonIcon ? createElement("span", { className: buttonIcon }) : '')));
+                }
+                if (buttonName === 'renderCenter') {
+                    isOnlyButtons = false;
+                    children.push(createElement("div", { className: "w-100", id:"inputBox" }, props.title));
+                    setTimeout(() => {
+                        const elem = document.getElementById('inputBox');
+                        elem.innerHTML = '<div class="p-2 custom-weight">' +
+                        '<div class="d-flex justify-content-between align-items-center bg-white border border-gray w-100 py-3 px-2 tb-rounded m-0 light-box-shadow-btn ">' +
+                        '<i class="fa-solid fa-magnifying-glass fs-4 px-3 text-gray-200"></i>' +
+                        '<input class="bg-transparent w-100 fs-4 pe-3 schedule-search" type="text" placeholder="Search by ref #, entity, responsible" name="search" autocomplete="off">' +
+                        '<span data-bs-toggle="modal" href="#addDeliverablesModal" role="button"><i class="fa-solid h fa-sliders fs-3 flex-center-align  gap-3 pe-3 text-gray-500" id="calfilter"></i></span>' +
+                        '<span><div class="span-box-one span-box">3</div></span>' +
+                        '</div>' +
+                        '</div>'
+                    }, 0);
                 }
             }
             if (children.length > 1) {
@@ -9445,8 +9460,8 @@ var FullCalendar = (function (exports) {
     function renderInnerContent$4(innerProps) {
         return (createElement("div", { className: "fc-event-main-frame" },
             innerProps.timeText && (createElement("div", { className: "fc-event-time" }, innerProps.timeText)),
-            createElement("div", { className: "fc-event-title-container" },
-                createElement("div", { className: "fc-event-title fc-sticky" }, innerProps.event.title || createElement(Fragment, null, "\u00A0")))));
+            createElement("div", { className: "fc-event-title-container " },
+                createElement("div", { className: "fc-event-title fc-sticky modal-open" }, innerProps.event.title || createElement(Fragment, null, "\u00A0")))));
     }
 
     var NowIndicatorRoot = function (props) { return (createElement(ViewContextType.Consumer, null, function (context) {

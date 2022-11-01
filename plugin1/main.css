@@ -203,11 +203,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 
 }
 .fc .fc-button-primary {
-  padding: 10px 20px;
-	margin: 0px 10px;
     text-align: center;
     color: var(--text-base-black);
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
     /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
@@ -247,8 +244,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   .fc-dayGridMonth-button,
 .fc-timeGridWeek-button,
 .fc-timeGridDay-button {
-	padding: 10px 20px;
-	margin: 0px 10px;
+	padding: 10px 20px !important;
+	margin: 0px 10px !important;
     text-align: center;
     color: var(--text-base-black);
     transition: all 0.4s;
@@ -256,7 +253,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 	border-radius: 50px !important;
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
     background-color: var(--text-base-white);
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     cursor: pointer;
     font-size: 14px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -359,7 +356,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     margin-top: 1.5em;
   }
 .fc .fc-toolbar-title {
-    font-size: 1.75em;
+    font-size: 20px;
+    font-family: var(--font-graphic-medium);
     margin: 0;
   }
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
@@ -783,7 +781,7 @@ A HORIZONTAL event
   }
 .fc .fc-daygrid-day.fc-day-today {
       background-color: rgba(255, 220, 40, 0.15);
-      background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15));
+      background-color: var(--light-yellow-box-color);
     }
 .fc .fc-daygrid-day-frame {
     position: relative;

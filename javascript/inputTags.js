@@ -22,9 +22,9 @@ $(function () {
     validationPattern: new RegExp("^[a-zA-Z]+$"),
   });
 
-  $("#form-tags-4").tagsInput({
+  $(".form-tags-4").tagsInput({
     autocomplete: {
-      source: ["avi", "sid", "naveen", "shubham"],
+      source: ["brookyln", "simmons", "bob", "harry", "andrew", "john", "micael", "peter"],
     },
   });
 

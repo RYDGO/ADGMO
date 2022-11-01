@@ -1,7 +1,7 @@
 $(function () {
   $("#form-tags-1").tagsInput();
   let valueList = "";
-  $("#form-tags-2").tagsInput({
+  $(".form-tags-2").tagsInput({
     onAddTag: function (input, value) {
       valueList = value + "," + valueList;
       console.log("tag added: ", valueList);
@@ -177,7 +177,8 @@ $(function () {
       if (settings.hide) $(this).hide();
 
       var id = $(this).attr("id");
-      if (!id || _getDelimiter(delimiter[$(this).attr("id")])) {
+      if (!id || _getDelimiter(delimiter[$(this).attr("id")])) 
+      {
         id = $(this)
           .attr("id", "tags" + new Date().getTime() + ++uniqueIdCounter)
           .attr("id");

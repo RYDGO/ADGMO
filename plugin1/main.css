@@ -348,9 +348,10 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 .fc .fc-toolbar.fc-header-toolbar {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 .fc .fc-toolbar.fc-footer-toolbar {
     margin-top: 1.5em;
@@ -363,7 +364,6 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
   display: flex !important;
     margin-left: .75em; /* space between */
-    display: none !important;
   }
 .fc-direction-rtl .fc-toolbar > * > :not(:first-child) {
     margin-right: .75em; /* space between */

@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar");
-  
+    setTimeout(() => {
+      var calendarheader = document.querySelector(".fc-header-toolbar");
+      var child = document.getElementById("statusBar");
+      calendarheader.appendChild(child);
+    }, 1000);
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: "dayGridMonth",
       initialDate: "2022-08-07",
       headerToolbar: {
         left: "prev,title,next ",
         center: 'renderCenter',
-        right: "timeGridDay,timeGridWeek,dayGridMonth"
+        right: "timeGridDay,timeGridWeek,dayGridMonth",
       },
         nowIndicator: true,
       navLinks: true, // can click day/week names to navigate views
@@ -24,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         calendar.unselect();
       },
       eventClick: function(arg) {
+        console.log(arg);
         document.getElementById("scheduledetilesmodal").classList.add("show");
         document.getElementById("scheduledetilesmodal").style.display = "block";
         document.getElementById("scheduledetilesmodal").addEventListener("click", ()=>{

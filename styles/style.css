@@ -193,6 +193,9 @@ a:hover {
     width: 0em;
 }
 
+.tb-font-medium{
+    font-family: var(--font-graphic-medium);
+}
 .tb-font-bold{
     font-family: var(--font-graphic-bold);
 }

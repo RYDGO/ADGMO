@@ -1196,7 +1196,8 @@ input:focus+.fa {
     display: none;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
-    background-color: #aaa !important;
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
 }
 
 .select2-dropdown {

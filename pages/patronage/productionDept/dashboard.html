@@ -1534,401 +1534,6 @@
         <!--dashboard ends here ------>
 
 
-
-        <!-- Modal -->
-        <div class="modal fade background-dim" id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position">
-                <div class="modal-content box-shadow-popup h-100">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Script(En/Ar)</h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-4 side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
-                        <div class="row">
-                            <div class="tb-input-group p-2 mt-3 mb-4">
-                                <div class="d-flex col-12">
-                                    <div class="col-1">
-                                        <img src="../../../assets/images/person2.svg" alt="">
-                                    </div>
-                                    <div class="col-11">
-                                        <label class="col-12 input-label" for="input">Assignee</label>
-                                        <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                            name="browsers" placeholder="placeholder..">
-                                        <i class="fa fa-solid fa-angle-down"></i>
-                                        <datalist id="browsers" role="listbox">
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
-                                                <span class="notification-dot align-items-center text-center m-0 p-0">.
-                                                    Default</span>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                        </datalist>
-                                    </div>
-                                </div>
-                            </div>
-                            <div></div>
-                            <div class="tb-input-group-1 tb-input-group-internal p-2">
-                                <label class="col-12 input-label priority-Modal-label-1" for="dataList">Notes</label>
-                                <input class="col-12 pla-2" placeholder="placeholder...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row p-4">
-                        <div class="col-6 d-flex align-items-center">
-                            <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-end">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded"
-                                    data-bs-target="#deliverablesModal" data-bs-toggle="modal" data-bs-dismiss="modal"
-                                    type="button">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
-                                    data-bs-target="#interviewQuesmodal" data-bs-dismiss="modal"
-                                    type="button">Next</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade show background-dim" id="prlDeliverableModal" aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1" aria-modal="true" role="dialog">
-            <div class="modal-dialog h-75 modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content h-75">
-                    <div class="modal-header">
-                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black " id="exampleModalToggleLabel">
-                            Select Assignee
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body collapse-inner-bg">
-                        <div class="col-12 mb-4 p-3">
-                            <h6 class="tb-fs-16 font-weight-400 pb-3">Do you want to assign it to multiple teams/users?
-                            </h6>
-                            <div class="d-flex align-items-center my-2">
-                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
-                                <label for="html">Yes</label>
-                            </div>
-                            <div class="d-flex align-items-center my-2">
-                                <input class="me-3" type="radio" id="SpecifyColor" name="fav_language" value="HTML">
-                                <label for="html">No</label>
-                            </div>
-                        </div>
-                        <div class="tb-input-group p-2 mt-3 mb-4">
-                            <div class="d-flex col-12">
-                                <div class="col-1">
-                                    <img src="../../../assets/images/person2.svg" alt="">
-                                </div>
-                                <div class="col-11">
-                                    <label class="col-12 input-label" for="input3">Assignee</label>
-                                    <input class="col-11 input" autocomplete="off" role="combobox" id="input3"
-                                        name="browsers3" placeholder="placeholder..">
-                                    <i class="fa fa-solid fa-angle-down"></i>
-                                    <datalist id="browsers3" role="listbox">
-                                        <div class="d-flex my-2">
-                                            <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                            <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                            <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
-                                            <span class="notification-dot align-items-center text-center m-0 p-0">.
-                                                Default</span>
-                                        </div>
-                                        <div class="d-flex my-2">
-                                            <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                            <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                            <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
-                                        </div>
-                                        <div class="d-flex my-2">
-                                            <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                            <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                            <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                        </div>
-                                        <div class="d-flex my-2">
-                                            <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                            <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                            <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                        </div>
-                                        <div class="d-flex my-2">
-                                            <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                            <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                            <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                        </div>
-                                    </datalist>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="col-md-12 p-2">
-                                <div class="tb-input-group p-2">
-                                    <label class="col-12 input-label" for="time">Notes</label>
-                                    <input class="col-12" id="time" placeholder="placeholder text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="d-flex justify-content-center w-100">
-                            <div class="p-2 ">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#additional-info-Modal"
-                                    type="button">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Assign </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade background-dim" id="interviewQuesmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position">
-                <div class="modal-content box-shadow-popup h-100">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Interview Questions (En/Ar)</h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="p-4 side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
-                        <div class="row">
-                            <div class="tb-input-group p-2 mt-3 mb-4">
-                                <div class="d-flex col-12">
-                                    <div class="col-1">
-                                        <img src="../../../assets/images/person2.svg" alt="">
-                                    </div>
-                                    <div class="col-11">
-                                        <label class="col-12 input-label" for="input2">Assignee</label>
-                                        <input class="col-11 input" autocomplete="off" role="combobox" id="input2"
-                                            name="browsers2" placeholder="placeholder..">
-                                        <i class="fa fa-solid fa-angle-down"></i>
-                                        <datalist id="browsers2" role="listbox">
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
-                                                <span class="notification-dot align-items-center text-center m-0 p-0">.
-                                                    Default</span>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                            <div class="d-flex my-2">
-                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
-                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
-                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
-                                            </div>
-                                        </datalist>
-                                    </div>
-                                </div>
-                            </div>
-                            <div></div>
-                            <div class="tb-input-group-1 tb-input-group-internal p-2">
-                                <label class="col-12 input-label priority-Modal-label-1" for="dataList">Notes</label>
-                                <input class="col-12 pla-2" placeholder="placeholder...">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row p-4">
-                        <div class="col-6 d-flex align-items-center">
-                            <p class="mb-0">2/2 <span class="label-span">deliverables</span></p>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-end">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#priorityModal" type="button">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
-                                    data-bs-target="#additional-info-Modal" type="button"
-                                    data-bs-dismiss="modal">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade background-dim" id="deliverablesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-scrollable w-75">
-                <div class="modal-content box-shadow-popup h-100">
-                    <div class="modal-header align-items-start p-4">
-                        <div>
-                            <h5 class="modal-title tb-fs-24 font-weight-400 text-black" id="exampleModalLabel">Create
-                                dependency </h5>
-                        </div>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body collapse-inner-bg py-4 px-4">
-                        <table class="table align-middle">
-                            <tr class="tb-fs-18 font-weight-400">
-                                <td>
-                                    <div class="form-check mb-2 ">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="prl-checkbox"> Script
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault"> English
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault"> Arabic
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tb-fs-18 font-weight-400">
-                                <td>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="social-checkbox"> Interview Questions
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault"> English
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault"> Arabic
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" id="nextBtnAddDel"
-                            data-bs-toggle="modal" data-bs-target="#priorityModal" role="button"
-                            data-bs-dismiss="modal">Next</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade background-dim" id="additional-info-Modal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position">
-                <div class="modal-content box-shadow-popup h-100">
-                    <div class="modal-header align-items-start p-4">
-                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Review</h5>
-                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="p-4 side-modal-wrap h-100 overflow-auto">
-                        <div class="accordion" id="accordion-dual">
-                            <div class="accordion-item bg-">
-                                <h2 class="accordion-header" id="heading-duel-1">
-                                    <button type="button" class="shadow-none accordion-button collapsed"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">Script</button>
-                                </h2>
-                                <div id="collapse-duel-1" class="accordion-collapse collapse show">
-                                    <div class="collapse-inner-bg p-4">
-                                        <div class="row">
-                                            <div class="col-12 my-2 d-flex justify-content-between">
-                                                <h6 class="opacity-75">Language(s)</h6>
-                                                <h6>English, Arabic</h6>
-                                            </div>
-                                            <div class="col-12 my-2 d-flex justify-content-between">
-                                                <h6 class="opacity-75">Assignee </h6>
-                                                <h6>Content Team</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h2 class="accordion-header" id="heading-duel-1">
-                                    <button type="button" class="shadow-none accordion-button collapsed"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-2">Interview
-                                        Questions</button>
-                                </h2>
-                                <div id="collapse-duel-2" class="accordion-collapse collapse show">
-                                    <div class="collapse-inner-bg p-4">
-                                        <div class="row">
-                                            <div class="col-12 my-2 d-flex justify-content-between">
-                                                <h6 class="opacity-75">Language(s)</h6>
-                                                <h6>English, Arabic</h6>
-                                            </div>
-                                            <div class="col-12 my-2 d-flex justify-content-between">
-                                                <h6 class="opacity-75">Assignee </h6>
-                                                <h6>Content Team</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row p-4">
-                        <div class="col-6 d-flex align-items-center">
-                            <p class="mb-0">2/2 <span class="label-span">deliverables</span></p>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-end">
-                                <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#interviewQuesmodal"
-                                    type="button">Back</button>
-                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#prlDeliverableModal"
-                                    type="button">Confirm</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="collapse-english-0" class="accordion-collapse collapse show">
-            <div class="collapse-inner-bg p-5 position-relative">
-            </div>
-        </div>
-
-
         <!--Large  Modal  Starts here-->
         <div class="modal fade  background-dim adges-rebranding-modal" id="largeModal1"
             aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog">
@@ -2467,7 +2072,8 @@
                     <div class="view-all-model-btn-wrapper text-end p-3">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Mark As Blocked</button>
                         <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Revise</button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Complete</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
+                        data-bs-target="#deliverablesModal">Assign</button>
                     </div>
                 </div>
             </div>
@@ -2475,10 +2081,317 @@
 
         <!-- Large Modal ends here -->
 
+        <!-- Modal -->
+        <div class="modal fade background-dim" id="priorityModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position-right">
+                <div class="modal-content box-shadow-popup h-100">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Script(En/Ar)</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4 side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
+                        <div class="row">
+                            <div class="tb-input-group p-2 mt-3 mb-4">
+                                <div class="d-flex col-12">
+                                    <div class="col-1">
+                                        <img src="../../../assets/images/person2.svg" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <label class="col-12 input-label" for="input">Assignee</label>
+                                        <input class="col-11 input" autocomplete="off" role="combobox" id="input"
+                                            name="browsers" placeholder="placeholder..">
+                                        <i class="fa fa-solid fa-angle-down"></i>
+                                        <datalist id="browsers" role="listbox">
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
+                                                <span class="notification-dot align-items-center text-center m-0 p-0">.
+                                                    Default</span>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div class="tb-input-group-1 tb-input-group-internal p-2">
+                                <label class="col-12 input-label priority-Modal-label-1" for="dataList">Notes</label>
+                                <input class="col-12 pla-2" placeholder="placeholder...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-4">
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="mb-0">1/2 <span class="label-span">deliverables</span></p>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded"
+                                    data-bs-target="#deliverablesModal" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                    type="button">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+                                    data-bs-target="#interviewQuesmodal" data-bs-dismiss="modal"
+                                    type="button">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade background-dim" id="interviewQuesmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position-right">
+                <div class="modal-content box-shadow-popup h-100">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Interview Questions (En/Ar)</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
+                        <div class="row">
+                            <div class="tb-input-group p-2 mt-3 mb-4">
+                                <div class="d-flex col-12">
+                                    <div class="col-1">
+                                        <img src="../../../assets/images/person2.svg" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <label class="col-12 input-label" for="input2">Assignee</label>
+                                        <input class="col-11 input" autocomplete="off" role="combobox" id="input2"
+                                            name="browsers2" placeholder="placeholder..">
+                                        <i class="fa fa-solid fa-angle-down"></i>
+                                        <datalist id="browsers2" role="listbox">
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Brookyln Simmons">Brookyln Simmons</option>
+                                                <span class="notification-dot align-items-center text-center m-0 p-0">.
+                                                    Default</span>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Jacob Jones">Jacob Jones</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                            <div class="d-flex my-2">
+                                                <img src="../../../assets/images/rounded.svg" class="mx-1" alt="">
+                                                <img src="../../../assets/images/person2.svg" class="mx-1" alt="">
+                                                <option class="mx-1" value="Guy Hawkins">Guy Hawkins</option>
+                                            </div>
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div class="tb-input-group-1 tb-input-group-internal p-2">
+                                <label class="col-12 input-label priority-Modal-label-1" for="dataList">Notes</label>
+                                <input class="col-12 pla-2" placeholder="placeholder...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row p-4">
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="mb-0">2/2 <span class="label-span">deliverables</span></p>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                                    data-bs-toggle="modal" data-bs-target="#priorityModal" type="button">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+                                    data-bs-target="#additional-info-Modal" type="button"
+                                    data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade background-dim" id="deliverablesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position-right">
+                <div class="modal-content box-shadow-popup h-100">
+                    <div class="modal-header align-items-start p-4">
+                        <div>
+                            <h5 class="modal-title tb-fs-24 font-weight-400 text-black" id="exampleModalLabel">Create
+                                dependency </h5>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg py-4 px-4">
+                        <table class="table align-middle">
+                            <tr class="tb-fs-18 font-weight-400">
+                                <td>
+                                    <div class="form-check mb-2 ">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="prl-checkbox"> Script
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="flexCheckDefault"> English
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="flexCheckDefault"> Arabic
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tb-fs-18 font-weight-400">
+                                <td>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="social-checkbox"> Interview Questions
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="flexCheckDefault"> English
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="flexCheckDefault"> Arabic
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Back</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" id="nextBtnAddDel"
+                            data-bs-toggle="modal" data-bs-target="#priorityModal" role="button"
+                            data-bs-dismiss="modal">Next</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade background-dim" id="additional-info-Modal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-scrollable w-75 modal-dialog-position-right">
+                <div class="modal-content box-shadow-popup h-100">
+                    <div class="modal-header align-items-start p-4">
+                        <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
+                            Review</h5>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="p-4 side-modal-wrap h-100 overflow-auto">
+                        <div class="accordion" id="accordion-dual">
+                            <div class="accordion-item bg-">
+                                <h2 class="accordion-header" id="heading-duel-1">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">Script</button>
+                                </h2>
+                                <div id="collapse-duel-1" class="accordion-collapse collapse show">
+                                    <div class="collapse-inner-bg p-4">
+                                        <div class="row">
+                                            <div class="col-12 my-2 d-flex justify-content-between">
+                                                <h6 class="opacity-75">Language(s)</h6>
+                                                <h6>English, Arabic</h6>
+                                            </div>
+                                            <div class="col-12 my-2 d-flex justify-content-between">
+                                                <h6 class="opacity-75">Assignee </h6>
+                                                <h6>Content Team</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="heading-duel-1">
+                                    <button type="button" class="shadow-none accordion-button collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-duel-2">Interview
+                                        Questions</button>
+                                </h2>
+                                <div id="collapse-duel-2" class="accordion-collapse collapse show">
+                                    <div class="collapse-inner-bg p-4">
+                                        <div class="row">
+                                            <div class="col-12 my-2 d-flex justify-content-between">
+                                                <h6 class="opacity-75">Language(s)</h6>
+                                                <h6>English, Arabic</h6>
+                                            </div>
+                                            <div class="col-12 my-2 d-flex justify-content-between">
+                                                <h6 class="opacity-75">Assignee </h6>
+                                                <h6>Content Team</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-4">
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="mb-0">2/2 <span class="label-span">deliverables</span></p>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
+                                    data-bs-toggle="modal" data-bs-target="#interviewQuesmodal"
+                                    type="button">Back</button>
+                                <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-dismiss="modal"
+                                    data-bs-toggle="modal" data-bs-target="#prlDeliverableModal"
+                                    type="button">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collapse-english-0" class="accordion-collapse collapse show">
+            <div class="collapse-inner-bg p-5 position-relative">
+            </div>
+        </div>
+
+
+
 
     </div>
 
-
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>

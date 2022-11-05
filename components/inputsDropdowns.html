@@ -12,11 +12,10 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/inputTags.css">
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="../styles/inputTags.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -24,18 +23,32 @@
     <div class="container">
       <div class="row mt-4">
         <div class="col-md-12 mt-3">
-          <h4>multiselect Dropdowns</h4>
-          <div class="tb-input-group p-2">
-            <label class="col-12 input-label" for="multiselect">Label</label>
-            <select class="js-example-basic-multiple col-12 fav_clr" name="states[]" multiple="multiple" id="multiselect">
-              <option value="all">All</option>
-              <option value="ADP">ADP</option>
-              <option value="ADP">DOH</option>
-              <option value="ADP">ADHA</option>
-              <option value="ADP">ADSSA</option>
-            </select>
+          <h4>single select Dropdown</h4>
+          <div class="tb-input-group">
+              <label class="col-12 input-label p-2" for="select1">Label</label>
+              <select class="js-example-basic-multiple col-12 fav_clr"
+                  aria-label="Default select example" id="select1">
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+              </select>
           </div>
-        </div>
+      </div>
+      <div class="col-md-12 mt-3">
+          <div class="tb-input-group">
+              <label class="col-12 input-label p-2"
+                  for="multiselect">Entity</label>
+              <select
+                  class="js-example-basic-multiple multiple-select col-12 fav_clr"
+                  name="states[]" multiple="multiple" id="multiselect">
+                  <option value="all">All</option>
+                  <option value="ADP">ADP</option>
+                  <option value="ADP">DOH</option>
+                  <option value="ADP">ADHA</option>
+                  <option value="ADP">ADSSA</option>
+              </select>
+          </div>
+      </div>
 
         <h1>Inputs and Dropdowns</h1>
         <div class="col-md-3 mt-3">

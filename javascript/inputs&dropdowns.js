@@ -1,5 +1,17 @@
 //============== JQuery ============
 $(document).ready(function () {
+  $('.js-example-basic-multiple').select2();
+
+  $('.fav_clr').on("select2:select", function (e) { 
+         var data = e.params.data.text;
+         console.log(data);
+         if(data=='All'){
+          $(".fav_clr > option").prop("selected","selected");
+          $(".fav_clr").trigger("change");
+         }
+    });
+});
+$(document).ready(function () {
   //--------- impact-Radio-hide/show -------
   $("input[name$='impacts']").click(function () {
     var test = $(this).val();
@@ -256,3 +268,5 @@ $("#datepicker-input").datepicker({
   buttonText: "Pick Date",
   showOn: "button",
 });
+
+

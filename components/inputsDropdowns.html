@@ -11,15 +11,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/inputTags.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/inputTags.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
   <div class="container-fluid bg-color-gray">
     <div class="container">
       <div class="row mt-4">
+        <div class="col-md-12 mt-3">
+          <h4>single select Dropdown</h4>
+          <div class="tb-input-group">
+              <label class="col-12 input-label p-2" for="select1">Label</label>
+              <select class="js-example-basic-multiple col-12 fav_clr"
+                  aria-label="Default select example" id="select1">
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+              </select>
+          </div>
+      </div>
+      <div class="col-md-12 mt-3">
+          <div class="tb-input-group">
+              <label class="col-12 input-label p-2"
+                  for="multiselect">Entity</label>
+              <select
+                  class="js-example-basic-multiple multiple-select col-12 fav_clr"
+                  name="states[]" multiple="multiple" id="multiselect">
+                  <option value="all">All</option>
+                  <option value="ADP">ADP</option>
+                  <option value="ADP">DOH</option>
+                  <option value="ADP">ADHA</option>
+                  <option value="ADP">ADSSA</option>
+              </select>
+          </div>
+      </div>
+
         <h1>Inputs and Dropdowns</h1>
         <div class="col-md-3 mt-3">
           <h4>Input without error</h4>
@@ -76,12 +106,66 @@
               <input class="form-tags-4" name="tags-4" type="text">
             </form>
           </div>
-        <div class="col-md-3 mt-3">
-          <div class=" bg-white p-3">
+          <div class="col-md-3 mt-3">
+            <div class=" bg-white p-3">
+              <div class="col-12 p-2 border-bottom">
+                <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
+                <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
+                </label>
+              </div>
+              <div class="tb-input-group p-2">
+                <label class="col-12 input-label" for="inputNoError">Notes</label>
+                <input class="col-12 input-field" id="inputNoError" name="inputNoError" placeholder="Placeholder">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 bg-white p-3 mt-3">
             <div class="col-12 p-2 border-bottom">
-              <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn1">
-              <label for="blockedEn1" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars (En)
+              <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn">
+              <label for="blockedEn" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars(En)
               </label>
+            </div>
+            </label>
+            <div class="tb-input-group d-flex align-items-center  p-2 border-bottom">
+              <span
+                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+              </span>
+              <div class="col">
+                <label class="col-12 input-label" for="input-image-assignee">Assignee<sup>*</sup></label>
+                <input class="col-11 input-no-img" autocomplete="off" role="combobox" id="input-image-assignee"
+                  name="browsers" placeholder="placeholder..">
+                <i class="fa fa-solid fa-angle-down"></i>
+                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                  <li class="list-group-item d-flex align-items-center ">
+                    <input type="radio" class="tb-radio me-3" name="assignee" id="assignee1" value="GuyHawkins 1">
+                    <div
+                      class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                      <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                    </div>
+                    <label for="assignee1" class="ms-3 col p-3">Guy Hawkins 1</label>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center ">
+                    <input type="radio" class="tb-radio me-3" name="assignee" id="assignee2" value="Guy Hawkins 2">
+
+                    <div
+                      class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                      <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                    </div>
+                    <label for="assignee2" class="ms-3 col p-3">Guy Hawkins 2</label>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center ">
+                    <input type="radio" class="tb-radio me-3" name="assignee" id="assignee3" value="Guy Hawkins 3">
+                    <div
+                      class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
+                      <img src="../../../assets/images/Icons/person-red.svg" alt="">
+                    </div>
+                    <label for="assignee3" class="ms-3 col p-3">Guy Hawkins 3</label>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="tb-input-group p-2">
               <label class="col-12 input-label" for="inputNoError">Notes</label>
@@ -89,68 +173,97 @@
             </div>
           </div>
 
-        </div>
 
-        <div class="col-md-3 bg-white p-3 mt-3">
-          <div class="col-12 p-2 border-bottom">
-            <input class="form-check-input shadow-none" type="checkbox" value="" id="blockedEn">
-            <label for="blockedEn" class="tb-fs-16 tb-fw-700 ms-2 ">Circulars(En)
-            </label>
+          <div class="col-md-3">
+            <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
+              <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                <img src="../assets/images/Profile image (1).svg" alt="" class="img-100 selected-dropdown-image">
+              </div>
+              <div>
+                <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
+                <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
+                  placeholder="placeholder..">
+                <i class="fa fa-solid fa-angle-down"></i>
+
+                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                  <li class="list-group-item d-flex align-items-center " value="Avashesh">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg" alt="Brookyln Simmons"
+                        class="img-100">
+                    </div>
+                    <span class="ms-3">Brookyln Simmons </span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center " value="2">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/person1.jpg" alt="Jacob Jones" class="img-100">
+                    </div>
+                    <span class="ms-3">Jacob Jones</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center " value="3">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt="Guy Hawkins"
+                        class="img-100">
+                    </div>
+                    <span class="ms-3">Guy Hawkins</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="error-message">• Error message</p>
           </div>
-          </label>
-          <div class="tb-input-group d-flex align-items-center  p-2 border-bottom">
-            <span
-              class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-              <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
-            </span>
-            <div class="col">
-              <label class="col-12 input-label" for="input-image-assignee">Assignee<sup>*</sup></label>
-              <input class="col-11 input-no-img" autocomplete="off" role="combobox" id="input-image-assignee"
-                name="browsers" placeholder="placeholder..">
-              <i class="fa fa-solid fa-angle-down"></i>
-              <ul class="col-12 input-dropdown-list list-group rounded-0">
-                <li class="list-group-item d-flex align-items-center ">
-                  <input type="radio" class="tb-radio me-3" name="assignee" id="assignee1" value="GuyHawkins 1">
-                  <div
-                    class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
-                    <img src="../../../assets/images/Icons/person-red.svg" alt="">
-                  </div>
-                  <label for="assignee1" class="ms-3 col p-3">Guy Hawkins 1</label>
-                </li>
-                <li class="list-group-item d-flex align-items-center ">
-                  <input type="radio" class="tb-radio me-3" name="assignee" id="assignee2" value="Guy Hawkins 2">
 
-                  <div
-                    class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
-                    <img src="../../../assets/images/Icons/person-red.svg" alt="">
-                  </div>
-                  <label for="assignee2" class="ms-3 col p-3">Guy Hawkins 2</label>
-                </li>
-                <li class="list-group-item d-flex align-items-center ">
-                  <input type="radio" class="tb-radio me-3" name="assignee" id="assignee3" value="Guy Hawkins 3">
-                  <div
-                    class="rounded-circle w-h-35 bg-danger bg-opacity-10 d-flex justify-content-center align-items-center">
-                    <img src="../../../assets/images/Icons/person-red.svg" alt="">
-                  </div>
-                  <label for="assignee3" class="ms-3 col p-3">Guy Hawkins 3</label>
-                </li>
-              </ul>
+          <div class="col-md-3">
+            <div class="tb-input-group d-flex align-items-center p-2 mt-3">
+              <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                <img src="../assets/images/person1.jpg" alt="" class="img-100">
+              </div>
+              <div>
+                <label class="col-12 input-label" for="input2">Select Label<sup>*</sup></label>
+                <input class="col-11 dropdown-input " autocomplete="off" role="combobox" id="input2" name="browsers"
+                  placeholder="placeholder..">
+                <i class="fa fa-solid fa-angle-down"></i>
+                <ul class="col-12 input-dropdown-list list-group rounded-0">
+                  <li class="list-group-item d-flex align-items-center ">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/Profile image.png" alt="" class="img-100">
+                    </div>
+                    <span class="ms-3">Brookyln Simmons </span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center ">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/info-icon.png" alt="" class="img-100">
+                    </div>
+                    <span class="ms-3">Brookyln Simmons</span>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center ">
+                    <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
+                      <img src="../assets/images/nodata.png" alt="" class="img-100">
+                    </div>
+                    <span class="ms-3">Brookyln Simmons</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="tb-input-group p-2">
-            <label class="col-12 input-label" for="inputNoError">Notes</label>
-            <input class="col-12 input-field" id="inputNoError" name="inputNoError" placeholder="Placeholder">
+          <div class="col-md-3 mt-3">
+            <div class="tb-input-group p-2 ">
+              <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
+              <input class="col-12" id="" name="" placeholder="Placeholder">
+            </div>
+            <div class="tb-input-group p-2 ">
+              <label class="col-12 input-label text-end" for="dataList"><sup>*</sup>
+                لیبل</label>
+              <input class="col-12 text-end" id="" name="" placeholder="پلیس ہولڈر">
+            </div>
           </div>
         </div>
-
-
-        <div class="col-md-3">
-          <div class="tb-input-group d-flex align-items-center  p-2 mt-3">
-            <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-              <img src="../assets/images/Profile image (1).svg" alt="" class="img-100 selected-dropdown-image">
+        <div class="row g-0">
+          <div class="tb-input-group d-flex align-items-center  p-2">
+            <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
+              <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
             </div>
-            <div>
-              <label class="col-12 input-label" for="input-image">Select Label<sup>*</sup></label>
+            <div class="col-11 ms-2">
+              <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
               <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
                 placeholder="placeholder..">
               <i class="fa fa-solid fa-angle-down"></i>
@@ -158,8 +271,7 @@
               <ul class="col-12 input-dropdown-list list-group rounded-0">
                 <li class="list-group-item d-flex align-items-center " value="Avashesh">
                   <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../assets/images/yogendra-singh-HrpYHchKb5Y-unsplash.jpg" alt="Brookyln Simmons"
-                      class="img-100">
+                    <img src="../assets/images/Profile image.svg" alt="Brookyln Simmons" class="img-100">
                   </div>
                   <span class="ms-3">Brookyln Simmons </span>
                 </li>
@@ -171,8 +283,7 @@
                 </li>
                 <li class="list-group-item d-flex align-items-center " value="3">
                   <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../assets/images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt="Guy Hawkins"
-                      class="img-100">
+                    <img src="../assets/images/Profile image.svg" alt="Guy Hawkins" class="img-100">
                   </div>
                   <span class="ms-3">Guy Hawkins</span>
                 </li>
@@ -183,209 +294,130 @@
         </div>
 
         <div class="col-md-3">
-          <div class="tb-input-group d-flex align-items-center p-2 mt-3">
-            <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-              <img src="../assets/images/person1.jpg" alt="" class="img-100">
-            </div>
-            <div>
-              <label class="col-12 input-label" for="input2">Select Label<sup>*</sup></label>
-              <input class="col-11 dropdown-input " autocomplete="off" role="combobox" id="input2" name="browsers"
-                placeholder="placeholder..">
-              <i class="fa fa-solid fa-angle-down"></i>
-              <ul class="col-12 input-dropdown-list list-group rounded-0">
-                <li class="list-group-item d-flex align-items-center ">
-                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../assets/images/Profile image.png" alt="" class="img-100">
-                  </div>
-                  <span class="ms-3">Brookyln Simmons </span>
-                </li>
-                <li class="list-group-item d-flex align-items-center ">
-                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../assets/images/info-icon.png" alt="" class="img-100">
-                  </div>
-                  <span class="ms-3">Brookyln Simmons</span>
-                </li>
-                <li class="list-group-item d-flex align-items-center ">
-                  <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                    <img src="../assets/images/nodata.png" alt="" class="img-100">
-                  </div>
-                  <span class="ms-3">Brookyln Simmons</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mt-3">
-          <div class="tb-input-group p-2 ">
-            <label class="col-12 input-label" for="dataList">Label<sup>*</sup></label>
-            <input class="col-12" id="" name="" placeholder="Placeholder">
-          </div>
-          <div class="tb-input-group p-2 ">
-            <label class="col-12 input-label text-end" for="dataList"><sup>*</sup>
-              لیبل</label>
-            <input class="col-12 text-end" id="" name="" placeholder="پلیس ہولڈر">
-          </div>
-        </div>
-      </div>
-      <div class="row g-0">
-        <div class="tb-input-group d-flex align-items-center  p-2">
-          <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1">
-            <img src="../assets/images/person1.jpg" alt="" class="img-100 selected-dropdown-image">
-          </div>
-          <div class="col-11 ms-2">
-            <label class="col-12 input-label" for="input-image">Assignee<sup>*</sup></label>
-            <input class="col-11 input-img" autocomplete="off" role="combobox" id="input-image" name="browsers"
-              placeholder="placeholder..">
-            <i class="fa fa-solid fa-angle-down"></i>
-
-            <ul class="col-12 input-dropdown-list list-group rounded-0">
-              <li class="list-group-item d-flex align-items-center " value="Avashesh">
-                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                  <img src="../assets/images/Profile image.svg" alt="Brookyln Simmons" class="img-100">
-                </div>
-                <span class="ms-3">Brookyln Simmons </span>
-              </li>
-              <li class="list-group-item d-flex align-items-center " value="2">
-                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                  <img src="../assets/images/person1.jpg" alt="Jacob Jones" class="img-100">
-                </div>
-                <span class="ms-3">Jacob Jones</span>
-              </li>
-              <li class="list-group-item d-flex align-items-center " value="3">
-                <div class="w-h-35 rounded-circle border-gray-200 img-cover overflow-hidden m-1">
-                  <img src="../assets/images/Profile image.svg" alt="Guy Hawkins" class="img-100">
-                </div>
-                <span class="ms-3">Guy Hawkins</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p class="error-message">• Error message</p>
-      </div>
-
-      <div class="col-md-3">
-        <div class="tb-input-group p-2 mt-3 ">
-          <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
-          <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
-            placeholder="placeholder..">
-          <i class="fa fa-solid fa-angle-down"></i>
-          <datalist id="browsers" role="listbox" multiple>
-            <option value="Brookyln Simmons">Brookyln Simmons</option>
-            <option value="Jacob Jones">Jacob Jones</option>
-            <option value="Guy Hawkins">Guy Hawkins</option>
-          </datalist>
-        </div>
-        <p class="error-message">• Error message</p>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="tb-input-group d-flex p-3 mt-3 ">
-            <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
-            <input type="text" class="col-5" id="uploadFile" placeholder="Choose File" />
-            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
-              <span class="tb-fs-14">browse</span>
-              <input id="uploadBtn" type="file" class="upload" />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="tb-input-group d-flex p-3 mt-3 ">
-            <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
-            <input type="text" class="col-5" id="uploadFile" placeholder="choose file" />
-            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
-              <span class="tb-fs-14">browse</span>
-              <input id="uploadBtn" type="file" class="upload" />
-            </div>
-          </div>
-          <div class="tb-input-group d-flex flex-row-reverse p-3 ">
-            <label class="col-4 input-label text-end" for="input"><sup>*</sup>لیبل</label>
-            <input type="text" class="col-5 text-end" id="uploadFile" placeholder="پلیس ہولڈر" />
-            <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
-              <span class="tb-fs-14">browse</span>
-              <input id="uploadBtn" type="file" class="upload" />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
           <div class="tb-input-group p-2 mt-3 ">
-            <label class="col-12 input-label" for="date">Calendar<sup>*</sup></label>
-            <input type="date" class="col-12" id="date">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mt-3">
-          <div class="tb-input-group p-2 ">
-            <label class="col-12 input-label" for="dataList">Label Rich Text<sup>*</sup></label>
-            <textarea id="editor" placeholder="Placeholder"></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <h1>Dropdowns Validations</h1>
-        <div class="col-md-3">
-          <div class="tb-input-group p-2 mt-3">
             <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
-            <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
+            <input class="col-11 input me-5" autocomplete="off" role="combobox" id="input" name="browsers"
               placeholder="placeholder..">
             <i class="fa fa-solid fa-angle-down"></i>
-            <datalist id="browsers" role="listbox">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+            <datalist id="browsers" role="listbox" multiple>
+              <option value="Brookyln Simmons">Brookyln Simmons</option>
+              <option value="Jacob Jones">Jacob Jones</option>
+              <option value="Guy Hawkins">Guy Hawkins</option>
             </datalist>
           </div>
-          <p class="error-message">• Error Message</p>
+          <p class="error-message">• Error message</p>
         </div>
-      </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tb-input-group d-flex p-3 mt-3 ">
+              <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
+              <input type="text" class="col-5" id="uploadFile" placeholder="Choose File" />
+              <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+                <span class="tb-fs-14">browse</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tb-input-group d-flex p-3 mt-3 ">
+              <label class="col-4 input-label" for="input">Choose File<sup>*</sup></label>
+              <input type="text" class="col-5" id="uploadFile" placeholder="choose file" />
+              <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+                <span class="tb-fs-14">browse</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+            <div class="tb-input-group d-flex flex-row-reverse p-3 ">
+              <label class="col-4 input-label text-end" for="input"><sup>*</sup>لیبل</label>
+              <input type="text" class="col-5 text-end" id="uploadFile" placeholder="پلیس ہولڈر" />
+              <div class="fileUpload btn-sm tb-btn-primary tb-rounded">
+                <span class="tb-fs-14">browse</span>
+                <input id="uploadBtn" type="file" class="upload" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="tb-input-group p-2 mt-3 ">
+              <label class="col-12 input-label" for="date">Calendar<sup>*</sup></label>
+              <input type="date" class="col-12" id="date">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mt-3">
+            <div class="tb-input-group p-2 ">
+              <label class="col-12 input-label" for="dataList">Label Rich Text<sup>*</sup></label>
+              <textarea id="editor" placeholder="Placeholder"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <h1>Dropdowns Validations</h1>
+          <div class="col-md-3">
+            <div class="tb-input-group p-2 mt-3">
+              <label class="col-12 input-label" for="input">Select Label<sup>*</sup></label>
+              <input class="col-11 input" autocomplete="off" role="combobox" id="input" name="browsers"
+                placeholder="placeholder..">
+              <i class="fa fa-solid fa-angle-down"></i>
+              <datalist id="browsers" role="listbox">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </datalist>
+            </div>
+            <p class="error-message">• Error Message</p>
+          </div>
+        </div>
 
 
-      <div class="row my-4">
-        <div class="col-12 px-4">
+        <div class="row my-4">
+          <div class="col-12 px-4">
+            <div class="col-12">
+              <h5 class="tb-h4">PRL (en)</h5>
+            </div>
+            <div class="pdf-editor d-flex p-3 ">
+              <div class="col-6 d-flex align-items-center">
+                <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
+                <p class="mb-0 ms-3">Request_2021.pdf</p>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-end">
+                <img src="../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
+                <img src="../assets/images/Icons/edit.svg" alt="" width="30">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
           <div class="col-12">
-            <h5 class="tb-h4">PRL (en)</h5>
-          </div>
-          <div class="pdf-editor d-flex p-3 ">
-            <div class="col-6 d-flex align-items-center">
-              <img src="../assets/images/Icons/PDF.svg" alt="" width="30">
-              <p class="mb-0 ms-3">Request_2021.pdf</p>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-end">
-              <img src="../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
-              <img src="../assets/images/Icons/edit.svg" alt="" width="30">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="tb-input-group d-flex p-3">
-            <div class="col-9 border-danger">
-              <label class="col-12" for="prl-en">PRL (en)</label>
-              <input class="col-12 input" type="text" id="prl-en" placeholder="Upload PRL (en) Attachments"
-                style="border-radius: 5px 5px 0px 0px;">
-            </div>
-            <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded" style="display: block;">
-              <span class="tb-fs-18">Upload</span>
-              <input id="upload-prl-en" type="file" class="upload">
+            <div class="tb-input-group d-flex p-3">
+              <div class="col-9 border-danger">
+                <label class="col-12" for="prl-en">PRL (en)</label>
+                <input class="col-12 input" type="text" id="prl-en" placeholder="Upload PRL (en) Attachments"
+                  style="border-radius: 5px 5px 0px 0px;">
+              </div>
+              <div class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded" style="display: block;">
+                <span class="tb-fs-18">Upload</span>
+                <input id="upload-prl-en" type="file" class="upload">
+              </div>
             </div>
           </div>
         </div>
+        <!-- PDF EDITOR AND VIEWER ENDS HERE -->
+
+
+        <!-------------- Input And Dropdowns Ends Here -------------->
       </div>
-      <!-- PDF EDITOR AND VIEWER ENDS HERE -->
-
-
-      <!-------------- Input And Dropdowns Ends Here -------------->
     </div>
-  </div>
 </body>
 
 <!-- Javascript-files -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
@@ -405,5 +437,7 @@
 </script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="../javascript/inputTags.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+
 
 </html>

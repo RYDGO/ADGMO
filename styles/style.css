@@ -1172,11 +1172,40 @@ a:hover {
 input {
     outline: none !important;
     border: none !important;
+    /* box-shadow: none !important; */
 }
 
 input:focus+.fa {
     transform: rotate(180deg);
     transition: transform 0.8s ease;
+}
+
+/* select2 styles  */
+.select2-search{
+   padding: 5px;
+   background-color:  transparent;
+}
+.select2-search.select2-search--dropdown {
+    display: none
+}
+
+.select2-container--default .select2-selection--single ,
+.select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: none !important;
+    border-radius: 4px;
+}
+#select2-multiselect-results .select2-results__option--selected {
+    display: none;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: var(--grayshade-100) !important;
+    color: var(--text-base-black) !important;
+}
+
+.select2-dropdown {
+    border:none !important;
+    padding: 5px !important;
 }
 
 .tb-input-group {
@@ -1266,6 +1295,8 @@ option:hover,
 .tb-input-group .active {
     background-color: var(--grayshade-100);
 }
+
+
 
 
 /* -- input file-upload-- */

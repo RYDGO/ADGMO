@@ -1166,6 +1166,12 @@ a:hover {
 
 /* -------- Inputs and Dropdowns-starts here --------- */
 
+select span{
+    background-color:#fff;
+    border: none !important;
+    outline: none !important;
+}
+
 input {
     outline: none !important;
     border: none !important;

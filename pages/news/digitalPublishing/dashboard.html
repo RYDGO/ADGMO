@@ -953,8 +953,7 @@
                           </div>
                           <div class="vartical-line me-4"></div>
                           <div class="dl">
-                            <button class="btn btn-lg tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                              data-bs-target="#fullNewsRequest"><i class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                            <button class="btn btn-lg tb-btn-primary tb-rounded" type="button" ><i class="fa-solid fa-chart-simple fa-xs px-1"></i> View
                               All</button>
                           </div>
                         </div>
@@ -975,7 +974,8 @@
                           </tr>
                         </thead>
                         <tbody class="text-left fw-light ">
-                          <tr>
+                          <tr data-bs-toggle="modal"
+                          data-bs-target="#fullNewsRequest">
                             <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                               <div class="d-flex align-items-center justify-content-center">
                                 <h6
@@ -2733,7 +2733,7 @@
             <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal" data-bs-target="#scheduled"
               type="button">Schedule</button>
             <!-- when status is scheduled -->
-            <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal" data-bs-target="#scheduled"
+            <button class="btn btn-md tb-btn-primary tb-rounded"
               type="button">Mark as Published</button>
           </div>
         </div>

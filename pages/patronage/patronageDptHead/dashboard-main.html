@@ -435,22 +435,18 @@
                             <div class="row align-items-center m-0 p-0">
                                 <div class="col-6 ps-0">
                                     <div class="pia-chart-container">
-                                        <div class="chartjs-size-monitor"
-                                            style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                                            <div class="chartjs-size-monitor-expand"
-                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                                <div
-                                                    style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                                        <div class="chartjs-size-monitor">
+                                            <div class="chartjs-size-monitor-expand">
+                                                <div>
                                                 </div>
                                             </div>
-                                            <div class="chartjs-size-monitor-shrink"
-                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                                <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+                                            <div class="chartjs-size-monitor-shrink">
+                                                <div>
                                                 </div>
                                             </div>
                                         </div>
                                         <canvas id="pie-chart" class="canvas-style chartjs-render-monitor" width="617"
-                                            height="306" style="display: block; width: 617px; height: 306px;"></canvas>
+                                            height="306"></canvas>
                                         <div class="d-flex justify-content-start flex-column">
                                             <ul class="text-decoration-none m-0 pb-3 text-start">
                                                 <h4>Team Allocation chart</h4>
@@ -709,16 +705,512 @@
                         </div>
 
                     </div>
-
-
                     <!-- department request tab end -->
 
                     <div class="tab-pane fade tab-remove-bg" id="pills-profile" role="tabpanel"
                         aria-labelledby="pills-profile-tab">
-                        <!-- table -->
+                        <div class="row">
+                            <!-- column -->
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- title -->
+                                        <div class="d-md-flex align-items-center px-1">
+                                            <div>
+                                                <h4 class="card-title fs-4  pt-3 tb-font-bold ">Tasks</h4>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="w-h-40  rounded-circle flex-center img-cover">
+                                                        <img src="../../../assets/images/Icons/rocket.svg"
+                                                            alt="icon-warning" class="w-100">
+                                                    </div>
+                                                    <h6 class="tb-h6 m-0 ms-2">
+                                                        200 in progress
+                                                    </h6>
+                                                    <div class="w-h-40  rounded-circle flex-center img-cover  ms-2">
+                                                        <img src="../../../assets/images/Icons/rocket.svg"
+                                                            alt="icon-warning" class="w-100">
+                                                    </div>
+                                                    <h6 class="tb-h6 m-0 ms-2">
+                                                        67 Not Started
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="ms-auto d-flex justify-content-between align-items-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="w-h-40  rounded-circle flex-center img-cover me-2">
+                                                        <img src="../../../assets/images/Icons/filter.svg"
+                                                            alt="icon-warning" class="w-100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dl mx-3">
+                                                <button class="btn btn-lg tb-btn-secondary tb-rounded"
+                                                    type="button">Edit Assignee</button>
+                                            </div>
+                                            <div class="dl">
+                                                <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#deliverablesModal"><i
+                                                        class="fa-solid fa-chart-simple fa-xs px-1"></i> View
+                                                    All</button>
+                                            </div>
+                                        </div>
+                                        <!-- title -->
+                                    </div>
+                                    <div class="table-responsive rounded-3 mx-3 mt-1">
+                                        <table id="exampletable" class="table v-middle">
+                                            <thead class="">
+                                                <tr class="gray-500 text-white text-left">
+                                                    <th class="fw-light th-pd">ID </th>
+                                                    <th class="fw-light th-pd">Type</th>
+                                                    <th class="fw-light th-pd">Due Date</th>
+                                                    <th class="fw-light th-pd">Sector</th>
+                                                    <th class="fw-light th-pd">Status</th>
+                                                    <th class="fw-light th-pd">Time Remaining
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-left fw-light ">
+                                                <tr data-bs-target="#largeModal1" data-bs-toggle="modal">
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <h6
+                                                                class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                                                16
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
 
-                        .......
-                        <!-- table ends here -- -->
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <h6
+                                                                class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                14
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center ">
+                                                            <h6
+                                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                10
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <h6
+                                                                class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                9
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="py-2 table-pd-top border-bottom-0  d-flex justify-content-center align-items-center">
+                                                        <div class="form-check mb-2">
+                                                            <input
+                                                                class="form-check-input shadow-none tb-bg-primary-checked"
+                                                                type="checkbox" value="" id="flexCheckDefault">
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <h6
+                                                                class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                                16
+                                                            </h6>
+                                                            <h6 class="fs-6 fw-light">16312</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content
+                                                    </td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22
+                                                    </td>
+                                                    <td
+                                                        class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">
+                                                        Energy
+                                                    </td>
+
+                                                    <td class="py-3 border-bottom-0"><span
+                                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                                            <i
+                                                                class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                            <p class="caption-paragraph mb-0 text-base-black">UNDER
+                                                                REVIEW</p>
+                                                        </span></td>
+                                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
+                                                            class="fa-regular fa-clock"></i>
+                                                        5:05:24
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade tab-remove-bg" id="pills-contact" role="tabpanel"
                         aria-labelledby="pills-contact-tab">
@@ -1953,6 +2445,478 @@
             </div>
         </div>
 
+        <!--Large  Modal  Starts here-->
+        <div class="modal fade  background-dim adges-rebranding-modal" id="largeModal1" aria-modal="true" tabindex="-1"
+            aria-labelledby="exampleModalLabel" role="dialog">
+            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable p-3">
+                <div class="modal-content modal-dialog-scrollable tb-rounded">
+                    <div class="modal-header align-items-center p-3 px-4">
+                        <div class="model-top-wrapper col-10">
+                            <div class=" d-flex align-items-center">
+                                <div
+                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                    <h6 class="pt-2">
+                                        L1
+                                    </h6>
+                                </div>
+                                <div class="ms-2 mb-2">
+                                    <div class="tb-bg-blue py-1 px-2 d-inline-block rounded-1 text-base-white mb-1">
+                                        EWAA
+                                    </div>
+                                    <h5 class="modal-title tb-fs-24  d-flex align-items-center tb-font-regular"
+                                        id="fullNewsRequest2Label">
+                                        Patronage Descriptio...
+                                    </h5>
+                                    <div class="">
+                                        BRC-012345
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-between align-items-center ">
+                            <div>
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal"
+                                    data-bs-target="#commentsModal">
+                                    <img src="../../../../assets/images/Icons/icon-comment.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                                    <img src="../../../../assets/images/Icons/icon-time.svg" alt="">
+                                </button>
+
+                                <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                                    <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn  w-h-35 border-0 bg-white "><img
+                                        src="../../../../assets/images/Icons/expand.svg" alt=""></button>
+                                <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-body px-4 py-3 pt-0 h-100 overflow-auto bg-white">
+                        <div class="row">
+                            <div class="col-6 vh-100 overflow-scroll">
+                                <div class="px-3">
+                                    <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <button class="nav-link active border-0" id="home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#overview-tab-pane">Overview</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link border-0" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#attachments-tab-pane">Attachments</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab"
+                                                data-bs-target="#activities-tab-pane">Activities</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab"
+                                                data-bs-target="#dual-content-tab-pane">Dual Content</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab"
+                                                data-bs-target="#versions-tab-pane">Versions</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content site-modal-tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active bg-transparent" id="overview-tab-pane">
+                                            <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <button class="nav-link active tb-font-medium" id="home-tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#request-tab-pane">Request</button>
+                                                </li>
+                                                <li class="nav-item tb-font-medium">
+                                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#deliverables-tab-pane">Deliverables</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="request-tab-pane">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex align-items-center mb-4">
+                                                          <div class="col-8 d-flex">
+                                                            <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 7 Deliverable(s)</p>
+                                                            <img src="../../../assets/images/Icons/info-red.svg" alt="">
+                                                          </div>
+                                                          <div class="col-4">
+                                                            <div class="text-end mt-3">
+                                                              <button class="border-0 bg-white"><img src="../../../assets/images/Icons/plus-icon.svg" alt=""></button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="accordion" id="accordion-dual">
+                                                        <div class="accordion-item border tb-rounded-10">
+                                                            <h2 class="accordion-header tb-rounded-10"
+                                                                id="heading-duel-1 ">
+                                                                <button type="button"
+                                                                    class="shadow-none accordion-button  tb-rounded-10"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapse-duel-1">Title</button>
+                                                            </h2>
+                                                            <div id="collapse-duel-1"
+                                                                class="accordion-collapse collapse show collapse-inner-bg tb-rounded-10">
+                                                                <div class="collapse-inner-bg p-5 tb-rounded-10">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Department/Section</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item border tb-rounded-10">
+                                                            <h2 class="accordion-header " id="heading-duel-2">
+                                                                <button type="button"
+                                                                    class="shadow-none accordion-button tb-rounded-10"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapse-duel-2">Title</button>
+                                                            </h2>
+                                                            <div id="collapse-duel-2"
+                                                                class="accordion-collapse collapse show tb-rounded-10">
+                                                                <div class="collapse-inner-bg p-5 tb-rounded-10">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Department/Section</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="tb-input-group p-2 mb-5">
+                                                                                <label class="col-12 input-label "
+                                                                                    for="entity-name">Event Date</label>
+                                                                                <input class="col-12 input-field"
+                                                                                    id="entity-name" name="entity-name"
+                                                                                    placeholder="Placeholder text" />
+                                                                            </div>
+                                                                            <p class="error-message">• Error Message</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="deliverables-tab-pane">
+                                                    <div class="row">
+                                                        <div class="collapse-inner-bg p-5 pb-0">
+                                                            <div class="row">
+                                                                <p class="col-6 tb-fs-16">Language(s)</p>
+                                                                <p class="col-6 text-end tb-fs-16">English, Arabic
+                                                                </p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <p class="col-6 tb-fs-16">Are the deliverables due
+                                                                    as part of the service level agreement (SLA)?
+                                                                </p>
+                                                                <p class="col-6 text-end tb-fs-16">Yes</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <p class="col-6 tb-fs-16">When is the ADGMO team
+                                                                    deadline lorem?</p>
+                                                                <p class="col-6 text-end tb-fs-16">20/02/2022</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <p class="col-6 tb-fs-16">Are there any additional
+                                                                    needs with this deliverable?</p>
+                                                                <p class="col-6 text-end tb-fs-16">Image, Video</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <p class="col-6 tb-fs-16">Publishing date</p>
+                                                                <p class="col-6 text-end tb-fs-16">20/02/2022 -
+                                                                    9:00am</p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="attachments-tab-pane">2</div>
+                                        <div class="tab-pane fade" id="activities-tab-pane">3</div>
+                                        <div class="tab-pane fade" id="dual-content-tab-pane">4</div>
+                                        <div class="tab-pane fade" id="versions-tab-pane">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 vh-100 overflow-scroll collapse-inner-bg px-4">
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center mb-4">
+                                        <div class="col-8 d-flex">
+                                            <p class="tb-fs-16 tb-fw-600 mb-0 me-2  tb-font-medium">7 Deliverable(s)</p>
+                                            <img src="../../../assets/images/Icons/info-red.svg" alt="">
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-end mt-3">
+                                                <button class="border-0 bg-white"><img
+                                                        src="../../../assets/images/Icons/plus-icon.svg"
+                                                        alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pb-4 border-gray-bottom-200">
+                                    <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border border-red"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-en-2" aria-expanded="true">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3 radio" type="radio" id="prl(en2)"
+                                                    name="Deliverable-redio" value="HTML">
+                                                <label for="prl(en2)" class="tb-fs-16 tb-fw-700">Recommendations
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-gray-op">
+                                                <i class="tb-gray fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 text-black ms-3">Under Review</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div id="collapse-en-2" class="accordion-collapse collapse show" style="">
+                                        <div class="collapse-inner-bg p-1">
+                                                <div class="col-12 bg-white px-4 py-3">
+                                                    <div class="row mb-4">
+                                                        <label class="input-label tb-fw-400" for="input2">Upload Media</label>
+                                                    </div>
+                                                    <div class="row g-3">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14">Use Attachment</span>
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14 mx-3">Upload from DAM</span>
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14 ms-3 me-1">Upload from device</span>
+                                                                <img src="../../../assets/images/Icons/right.svg" alt="">
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4 d-flex justify-content-center">
+                                                        <p class="tb-gray-400 mb-3">
+                                                            Document must be .mp4, .mov, .mkv format.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="brand-input tb-input-group p-2 mt-2 mb-4">
+                                                        <label class="col-12 input input-label" for="dataList">Notes</label>
+                                                        <input class="col-12 input" id="" name="" placeholder="Placeholder" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-arab-2"
+                                        aria-expanded="false">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                <input class="me-3 radio" type="radio" id="prl(arab2)"
+                                                    name="Deliverable-redio" value="HTML">
+                                                <label for="prl(arab2)" class="tb-fs-16 tb-fw-700">Recommendations Review
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="teble-text mb-0 text-gray-500 "><img
+                                                    src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                        </div>
+                                        <div class=""><span
+                                                class="d-flex align-items-center justify-content-evenly p-2 status-color-blue-op">
+                                                <i class="tb-blue fa-xs fa-sharp fa-solid fa-circle "></i>
+                                                <h4 class="tb-h5 mb-0 text-primary ms-3">Approval</h4>
+                                            </span>
+                                        </div>
+                                        <div class=""><span
+                                                class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                                <p class="mb-0 tb-fw-900 tb-copyright">CoT</p>
+                                            </span></div>
+                                    </div>
+                                    <div id="collapse-arab-2" class="accordion-collapse collapse">
+                                        <div class="collapse-inner-bg p-1">
+                                                <div class="col-12 bg-white px-4 py-3">
+                                                    <div class="row mb-4">
+                                                        <label class="input-label tb-fw-400" for="input2">Upload Media</label>
+                                                    </div>
+                                                    <div class="row g-3">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14">Use Attachment</span>
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14 mx-3">Upload from DAM</span>
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                                <span class="tb-fs-14 ms-3 me-1">Upload from device</span>
+                                                                <img src="../../../assets/images/Icons/right.svg" alt="">
+                                                                <input id="uploadBtn" type="file" class="upload">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4 d-flex justify-content-center">
+                                                        <p class="tb-gray-400 mb-3">
+                                                            Document must be .mp4, .mov, .mkv format.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="brand-input tb-input-group p-2 mt-2 mb-4">
+                                                        <label class="col-12 input input-label" for="dataList">Notes</label>
+                                                        <input class="col-12 input" id="" name="" placeholder="Placeholder" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-center p-2 mt-2">
+                                            <img src="../../../assets/images/Icons/eye-slash.svg" alt="">
+                                            <a href="#" class="mb-0 tb-copyright ms-3">Hide deliverables</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-model-btn-wrapper text-end p-3">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Mark As Blocked</button>
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Revise</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Assign</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Large Modal ends here -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

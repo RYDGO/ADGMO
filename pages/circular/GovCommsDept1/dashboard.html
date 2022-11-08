@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../../../styles/index.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../../../styles/govcomUser.css">
+    <link rel="stylesheet" href="../../../styles/inputTags.css">
     <!-- <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css"> -->
 </head>
 
@@ -1956,7 +1957,7 @@
                                         <div class="">
                                             <div class="d-flex align-items-center">
                                                 <input class="me-3 radio" type="radio" id="prl(arab)"
-                                                    name="Deliverable-redio" value="HTML">
+                                                    name="Deliverable-redio" value="HTML" checked>
                                                 <label for="prl(arab)" class="tb-fs-16 tb-fw-700">Circulars(En)
                                                 </label>
                                             </div>
@@ -1977,16 +1978,16 @@
                                         <div class=" p-3 pt-0">
                                             <div class="row collapse-inner-bg">
                                                 <div class="col-md-12 p-3 bg-white mb-1 ">
-                                                    <label class="col-12 input-label" for="links">Subject
+                                                    <label class="col-12 input-label" for="linksubject">Subject
                                                     </label>
-                                                    <input class="col-12 input-field" id="links" name="links"
+                                                    <input class="col-12 input-field" id="linksubject" name="linksubject"
                                                         placeholder="Lorem ipsum..">
                                                 </div>
                                                 <div class="col-md-12 bg-white p-3 my-1">
-                                                    <label class="col-12 input-label" for="links2">Email Body
+                                                    <label class="col-12 input-label" for="linkemailbody">Email Body
                                                     </label>
                                                     <textarea class="decline-request border-0 ps-0 input-field"
-                                                        placeholder="placeholder text" rows="4"></textarea>
+                                                       id="linkemailbody" name="linkemailbody" placeholder="placeholder text" rows="4"></textarea>
                                                 </div>
                                                 <div class="col-md-12 bg-white p-3 my-1 ">
                                                     <label class="col-12 input-label" for="links3">Tags
@@ -2064,18 +2065,18 @@
                                                 </span></div>
                                         </div>
                                     </div>
-                                    <div id="collapse-arab-1" class="accordion-collapse collapse show" style="">
-                                        <div class="collapse-inner-bg p-5">
+                                    <div id="collapse-arab-1" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3">
                                             <div class="row">
                                                 <div class="col-md-12 my-1 bg-white">
                                                     <div
                                                         class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
                                                         <div class="border-danger bg-white col-12">
-                                                            <label class="col-12 input-label text-end" for="links">أدخل
+                                                            <label class="col-12 input-label text-end" for="arablinks1">أدخل
                                                                 الب
                                                             </label>
-                                                            <input class="col-12 input-field text-end" id="links"
-                                                                name="links" placeholder="أدخل البريد الإلكتروني">
+                                                            <input class="col-12 input-field text-end" id="arablinks1"
+                                                                name="arablinks1" placeholder="أدخل البريد الإلكتروني">
                                                         </div>
 
                                                     </div>
@@ -2084,11 +2085,11 @@
                                                     <div
                                                         class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
                                                         <div class="border-danger col-12">
-                                                            <label class="col-12 input-label text-end" for="links">أدخل
+                                                            <label class="col-12 input-label text-end" for="arablinks2">أدخل
                                                                 الب
                                                             </label>
-                                                            <input class="col-12 input-field text-end" id="links"
-                                                                name="links" placeholder="أدخل البريد الإلكتروني">
+                                                            <input class="col-12 input-field text-end" id="arablinks2"
+                                                                name="arablinks2" placeholder="أدخل البريد الإلكتروني">
                                                         </div>
 
                                                     </div>
@@ -2159,8 +2160,8 @@
                                             dism. Pronade sotat. </p>
                                     </div>
                                     <div class="col-md-12 bg-white p-3">
-                                        <h4 class="tb-h4">Tags</h4>
-                                        <p class="regular-paragraph">Placeholder text</p>
+                                        <label class="col-12 input-label" for="tags">Tags</label>
+                                        <input name="tags" id="tags" placeholder="Placeholder text">
                                     </div>
                                 </div>
                             </div>
@@ -2169,9 +2170,9 @@
                     <div class="modal-footer p-2">
                         <div class="modal-footer p-0">
                             <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-toggle="modal"
-                                data-bs-target="#blockedModal" type="button">Blocked </button>
+                                data-bs-target="#" type="button">Request More Information </button>
                             <button class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
-                                data-bs-target="#assignModal" type="button">Assign</button>
+                                data-bs-target="#normalModal" type="button">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -2223,6 +2224,7 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="../../../javascript/inputTags.js"></script>
     <script>
         tinymce.init({
             selector: 'textarea#editor',
@@ -2235,49 +2237,3 @@
 </body>
 
 </html>
-
-
-
-<div class="col-12 bg-white px-4 py-3  mt-3">
-    <div class="row mb-4">
-        <label class="input-label tb-fw-400" for="input2">Upload
-            Media</label>
-    </div>
-    <div class="row g-3">
-        <div class="col-6">
-            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-center p-3">
-                <span class="tb-fs-14">Use Attachment</span>
-                <input id="uploadBtn" type="file" class="upload">
-            </div>
-        </div>
-     
-        <div class="col-6">
-            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-center p-3">
-                <span class="tb-fs-14 mx-3">Upload from device</span>
-                <img src="../../../assets/images/Icons/right.svg" alt="">
-                <input id="uploadBtn" type="file" class="upload">
-            </div>
-        </div>
-    </div>
-    <div class="col-12 my-4 d-flex justify-content-center">
-        <p class="tb-gray-400 mb-0">
-            Document must be .mp4, .mov, .mkv format.
-        </p>
-    </div>
-    <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
-        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-        <div class="">
-            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-        </div>
-    </div>
-    <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
-        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-        <div class="">
-            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-        </div>
-    </div>
-</div>

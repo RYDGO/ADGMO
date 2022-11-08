@@ -362,7 +362,7 @@
                         <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12" id="pills-arabic-button"
                             data-bs-toggle="pill" data-bs-target="#pills-arabic" type="button" role="tab"
                             aria-controls="pills-arabic" aria-selected="false">
-                            urdu
+                            يبرع
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -375,14 +375,13 @@
                 </ul>
 
                 <div class="tab-content tab-content-form w-100 p-7 py-4" id="pills-tabContent">
-                    <div class="tab-pane fade show active shadow-none" id="pills-english" role="tabpanel"
+                    <div class="tab-pane fade show active shadow-none tb-rounded-md overflow-hidden position-relative" id="pills-english" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        <div class="accordion accordion-bottom-border" id="accordion-english-1">
+                        <div class="accordion " id="accordion-english-1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading-english-1">
                                     <button type="button" class="shadow-none accordion-button collapsed"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-english-1">
-                                        Title
                                     </button>
                                 </h2>
                                 <div id="collapse-english-1" class="accordion-collapse collapse show">
@@ -465,8 +464,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
+                            
                         </div>
+                    
+                            <div class="row g-0">
+                                <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                    <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                        Cancel
+                                    </button>
+                                
+                                    <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#sendRequestModal">
+                                        Send Request
+                                    </button>
+                                </div>
+                            </div>
+                       
                     </div>
                     <div class="tab-pane fade shadow-none" id="pills-arabic" role="tabpanel"
                         aria-labelledby="pills-profile-tab">
@@ -766,17 +781,7 @@
                     </div>
                 </div>
 
-                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
-                    <div class="col-md-6">
-                        <button class="btn btn-md bg-color-gray fw-bold tb-rounded me-1" type="button">
-                            Cancel
-                        </button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#sendRequestModal">
-                            Send Request
-                        </button>
-                    </div>
-                </div>
+             
             </div>
 
             <!-- English MODAL STARTED HERE -->

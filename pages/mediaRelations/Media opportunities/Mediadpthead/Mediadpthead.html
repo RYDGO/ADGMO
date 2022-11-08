@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>workload  Dashboard</title>
+    <title>Media dpt head</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
@@ -939,7 +939,8 @@
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h4 class="card-title pt-3 tb-bold input-label fs-3">All Requests</h4>
+                                                    <h4 class="card-title tb-fs-24  pt-3 tb-font-bold">Department Requests
+                                                    </h4>
                                                     <div class="d-flex align-items-center">
                                                         <div class="w-h-40  rounded-circle flex-center img-cover">
                                                             <img src="../../../../assets/images/Icons/rocket.svg" alt="icon-warning" class="w-100">
@@ -961,7 +962,7 @@
                                                             <img src="../../../../assets/images/Icons/filter.svg" alt="icon-warning" class="w-100">
                                                         </div>
                                                     </div>
-                                                    <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center me-2">
                                                         <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                             <img src="../../../../assets/images/Icons/search.svg" alt="icon-warning" class="w-100">
                                                         </div>
@@ -969,7 +970,10 @@
     
     
                                                 </div>
-                                                <div class="dl">
+                                                <div class="dl d-flex gap-3">
+                                                    
+                                                    <button class="btn btn-lg tb-btn-secondary tb-rounded" type="button" id="redirectToViewAll">Edit Assignee</button>
+
                                                     <button class="btn btn-lg tb-btn-primary tb-rounded" type="button" id="redirectToViewAll"><img src="../../../../assets/images/Icons/Chart_fill.svg" alt=""> View
                                                         All</button>
                                                 </div>
@@ -987,7 +991,7 @@
                                                         <th class="fs-6 tb-fw-800 th-pd">Sector</th>
                                                         <th class="fs-6 tb-fw-800 th-pd">Req.Status</th>
                                                         <th class="fs-6 tb-fw-800 th-pd">Co.Status</th>
-                                                        <th class="fs-6 tb-fw-800 th-pd">Time left
+                                                        <th class="fs-6 tb-fw-800 th-pd text-nowrap">Time left
                                                         </th>
                                                     </tr>
                                                 </thead>
@@ -1003,7 +1007,7 @@
                                                                         L1
                                                                     </h6>
                                                                 </div>
-                                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Opportunity desc..
+                                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Consultation desc..
                                                                   <br>  
                                                                 <span class="fs-6 text-gray">MDO~012345</span>  
                                                                 </h6>
@@ -1051,7 +1055,7 @@
                                                                     L1
                                                                 </h6>
                                                             </div>
-                                                            <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Opportunity desc..
+                                                            <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Consultation desc..
                                                               <br>  
                                                             <span class="fs-6 text-gray">MDO~012345</span>  
                                                             </h6>
@@ -1099,7 +1103,7 @@
                                                                     L1
                                                                 </h6>
                                                             </div>
-                                                            <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Opportunity desc..
+                                                            <h6 class="fs-5 fw-light pt-1 m-0 ms-1">Media Consultation desc..
                                                               <br>  
                                                             <span class="fs-6 text-gray">MDO~012345</span>  
                                                             </h6>
@@ -1778,42 +1782,128 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-backdrop-op background-dim" id="filterModal" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-backdrop-op " id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog main-modal modal-dialog-position">
                 <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
                     <div class="modal-header align-items-start p-4">
                         <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">
-                            Select Deliverable Language</h5>
+                            Select Deliverables</h5>
                         <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="p-4 collapse-inner-bg side-modal-wrap h-100">
                         <div class="row-wrapper">
-                          <div class="row g-0 gy-3">
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="Arabic">
-                                    <label for="Arabic">Arabic</label>
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-recommendations">
+                                        <label for="media-recommendations">Media Recommendations</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English">
+                                        <label for="English">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic">
+                                        <label for="Arabic">Arabic</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                        type="checkbox" value="" id="English">
-                                    <label for="English">English</label>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-plan">
+                                        <label for="media-plan">Media Plan</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                          
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="media-brief">
+                                        <label for="media-brief">Media Brief</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English2">
+                                        <label for="English2">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic2">
+                                        <label for="Arabic2">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-wrapper">
+                            <div class="row mt-2 mb-2 border-bottom py-2">
+                                <div class="col-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Others">
+                                        <label for="Others">Others</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="English3">
+                                        <label for="English3">English</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                            type="checkbox" value="" id="Arabic3">
+                                        <label for="Arabic3">Arabic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="javascript:void(0)"><span
+                                    class="other-deliverables-btn tb-copyright text-decoration-underline">+7 other
+                                    deliverables</span></a>
                         </div>
                     </div>
                     <div class="text-end my-4 me-3 ">
                         <button class="btn btn-md tb-btn-secondary tb-rounded" data-bs-dismiss="modal"
                             data-bs-target="#priorityModal" type="button">Back</button>
                         <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#prl-Modal">next</button>
+                            data-bs-target="#prl-Modal">Next</button>
                     </div>
                 </div>
             </div>
@@ -2258,579 +2348,331 @@
                 </div>
             </div>
         </div>
-                <!--Large  Modal  Starts here-->
-<div class="modal fade createDeliverablesModal background-dim" id="largeModal" aria-modal="true" tabindex="-1"
-aria-labelledby="exampleModalLabel" role="dialog">
-<div class="modal-dialog modal-fullscreen p-3 modal-dialog-scrollable">
-    <div class="modal-content modal-dialog-scrollable tb-rounded">
-        <div class="modal-header align-items-start p-4">
-            <div class="model-top-wrapper col-10">
-                <div class=" d-flex ">
-                    <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
-                        <h6 class="pt-2">
-                            L1
-                        </h6>
-                    </div>
-                    <div class="ms-2">
-                        <div class="tb-bg-blue py-1 px-2 d-inline-block rounded-1 text-base-white mb-1">
-                            EWAA
+    <!--Large  Modal  Starts here-->
+    <div class="modal fade createDeliverablesModal background-dim" id="largeModal" aria-modal="true" tabindex="-1"
+    aria-labelledby="exampleModalLabel" role="dialog">
+    <div class="modal-dialog modal-fullscreen p-3 modal-dialog-scrollable">
+        <div class="modal-content modal-dialog-scrollable tb-rounded">
+            <div class="modal-header align-items-start px-4 py-3 align-items-center ">
+                <div class="model-top-wrapper col-10">
+                    <div class=" d-flex align-items-center">
+                        <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                            <h6 class="pt-2">
+                                L1
+                            </h6>
                         </div>
-                        <h5 class="modal-title tb-h3 text-black d-flex align-items-center" id="fullNewsRequest2Label">
-                            Media Opportunity desc....
-                        </h5>
-                        <div class="">
-                            MRS~012345
+                        <div class="ms-2">
+                            <div class="tb-bg-blue py-1 px-2 d-inline-block rounded-1 text-base-white mb-1">
+                                EWAA
+                            </div>
+                            <h5 class="modal-title tb-h3 text-black d-flex align-items-center" id="fullNewsRequest2Label">
+                                Media Consultation description
+                            </h5>
+                            <div class="">
+                                MRS~012345
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-2 d-flex justify-content-between align-items-center ">
-                <div>
-                    <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal" data-bs-target="#commentsModal">
-                        <img src="../../../../assets/images/Icons/icon-comment.svg" alt="">
-                    </button>
-
-                    <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
-                        <img src="../../../../assets/images/Icons/icon-time.svg" alt="">
-                    </button>
-
-                    <button class="btn tb-btn-gray  w-h-35 rounded-circle">
-                        <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
-                    </button>
+                <div class="col-2 d-flex justify-content-between align-items-center ">
+                    <div>
+                        <button class="btn tb-btn-gray  w-h-35 rounded-circle" data-bs-toggle="modal" data-bs-target="#commentsModal">
+                            <img src="../../../../assets/images/Icons/icon-comment.svg" alt="">
+                        </button>
+    
+                        <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                            <img src="../../../../assets/images/Icons/icon-time.svg" alt="">
+                        </button>
+    
+                        <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                            <img src="../../../../assets/images/Icons/icon-albums.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn  w-h-35 border-0 bg-white "><img src="../../../../assets/images/Icons/expand.svg" alt=""></button>
+                        <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 " data-bs-dismiss="modal" aria-label="Close">
+                    </button></div>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn  w-h-35 border-0 bg-white "><img src="../../../../assets/images/Icons/expand.svg" alt=""></button>
-                    <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 " data-bs-dismiss="modal" aria-label="Close">
-                </button></div>
+    
+                
             </div>
-
-            
-        </div>
-        <div class="modal-body collapse-inner-bg px-4 py-3 h-100 overflow-auto">
-            <div class="row">
-                <div class="col-6">
-                    <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                data-bs-target="#overview-tab-pane2">Overview</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="profile-tab-2" data-bs-toggle="tab"
-                                data-bs-target="#attachments-tab-pane2">Attachments</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
-                                data-bs-target="#activities-tab-pane2">Activities</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
-                                data-bs-target="#dual-content-tab-pane2">Dual Content</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab"
-                                data-bs-target="#versions-tab-pane2">Versions</button>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content site-modal-tab-content " id="myTabContent">
-                        <div class="tab-pane fade show active bg-transparent  shadow-none"
-                            id="overview-tab-pane2">
-                            <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+            <div class="modal-body px-4 py-3 pt-0 h-100 overflow-auto bg-white">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="px-3">
+                            <ul class="nav nav-tabs site-modal-tab" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#request-tab-pane2">Request</button>
+                                    <button class="nav-link active border-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane1">Overview</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                        data-bs-target="#deliverables-tab-pane2">Deliverables</button>
+                                    <button class="nav-link border-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#attachments-tab-pane2">Attachments</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#activities-tab-pane2">Activities</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#dual-content-tab-pane2">Dual Content</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link border-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#versions-tab-pane2">Versions</button>
                                 </li>
                             </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active shadow-none" id="request-tab-pane2">
-                                    <div class="accordion" id="accordion-dual">
-                                        <div class="accordion-item accordion-bottom-border">
-                                            <h2 class="accordion-header" id="heading-duel-1">
-                                                <button type="button"
-                                                    class="shadow-none accordion-button collapsed tb-fs-18"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-duel-1">Title</button>
-                                            </h2>
-                                            <div id="collapse-duel-1"
-                                                class="accordion-collapse collapse show">
-                                                <div class="collapse-inner-bg p-5">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">Entity Name</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Placeholder.." disabled>
+                            <div class="tab-content site-modal-tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active bg-transparent" id="overview-tab-pane1">
+                                    <ul class="nav nav-tabs inner-tab mb-4" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <button class="nav-link active tb-font-medium" id="home-tab" data-bs-toggle="tab" data-bs-target="#request-tab-pane">Request</button>
+                                        </li>
+                                        <li class="nav-item tb-font-medium">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#deliverables-tab-pane">Deliverables</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="request-tab-pane">
+                                            <div class="accordion d-flex gap-3 flex-column" id="accordion-dual">
+                                                <div class="accordion-item border tb-rounded-10">
+                                                    <h2 class="accordion-header tb-rounded-10" id="heading-duel-1">
+                                                        <button type="button" class="shadow-none accordion-button  tb-rounded-10" data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">Title</button>
+                                                    </h2>
+                                                    <div id="collapse-duel-1" class="accordion-collapse collapse show collapse-inner-bg tb-rounded-10">
+                                                        <div class="collapse-inner-bg p-5 tb-rounded-10">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">Entity Name</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Placeholder.." disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
                                                                 </div>
-                                                                
-                                                              </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">Format</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Placeholder.." disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row">
+                                                                <h6 class="h6 my-3">
+                                                                    Timeline
+                                                                </h6>
+                                                                <div class="col-md-6">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">From</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Sep 19, 2010" disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">To</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Apr 14, 2004" disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">Expected publication timeline</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Sep 19, 2010" disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <h6 class="h6 my-3">
+                                                                    Focus area/theme of interest
+                                                                </h6>
+                                                                <div class="col-md-12">
+                                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
+                                                                        <div class="border-danger">
+                                                                          <label class="col-12 input-label" for="links">Key Messages</label>
+                                                                          <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Tren antenat. Ponel dekanar men uren. Neoitet vibelt. Anera suse. Teskap dosament. Hyr nehyr. " disabled="">
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                </div>
+                                                                <div class="col-12 mt-4">
+                                                                    <h6 class="h6 my-3">
+                                                                        Press Release
+                                                                    </h6>
+                                                                    <div class="pdf-editor d-flex p-3">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                          <img src="../../../../assets/images/Icons/PDF.svg" alt="" width="30">
+                                                                          <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                                        </div>
+                                                                        <div class="col-6 d-flex align-items-center justify-content-end">
+                                                                          <img src="../../../../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
+                                                                          <img src="../../../../assets/images/Icons/edit.svg" alt="" width="30">
+                                                                        </div>
+                                                                      </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-md-12">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">Format</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Placeholder.." disabled>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="row">
-                                                        <h6 class="h6 my-3">
-                                                            Timeline
-                                                        </h6>
-                                                        <div class="col-md-6">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">From</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Sep 19, 2010" disabled>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">To</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Apr 14, 2004" disabled>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">Expected publication timeline</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Sep 19, 2010" disabled>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <h6 class="h6 my-3">
-                                                            Focus area/theme of interest
-                                                        </h6>
-                                                        <div class="col-md-12">
-                                                            <div class="tb-input-group-duel p-2 d-flex justify-content-between border-0">
-                                                                <div class="border-danger">
-                                                                  <label class="col-12 input-label" for="links">Key Messages</label>
-                                                                  <input class="col-12 input collapse-inner-bg" id="links" name="links" placeholder="Tren antenat. Ponel dekanar men uren. Neoitet vibelt. Anera suse. Teskap dosament. Hyr nehyr. " disabled>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                        </div>
-                                                        <div class="col-12 mt-4">
-                                                            <h6 class="h6 my-3">
-                                                                Press Release
-                                                            </h6>
-                                                            <div class="pdf-editor d-flex p-3">
-                                                                <div class="col-6 d-flex align-items-center">
-                                                                  <img src="../../../../assets/images/Icons/PDF.svg" alt="" width="30">
-                                                                  <p class="mb-0 ms-3">Request_2021.pdf</p>
-                                                                </div>
-                                                                <div class="col-6 d-flex align-items-center justify-content-end">
-                                                                  <img src="../../../../assets/images/Icons/View-eye.svg" alt="" width="30" class="me-2">
-                                                                  <img src="../../../../assets/images/Icons/edit.svg" alt="" width="30">
-                                                                </div>
-                                                              </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade show active" id="deliverables-tab-pane2">
-                                    <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
-                                        <div class="col-8">
-                                            <div class="head-5">
-                                                <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverable</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="text-end mt-3">
-                                                <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion" id="accordion-dual">
-
-                                        <div class="accordion-item accordion-bottom-border">
-                                            <h2 class="accordion-header" id="heading-duel-1">
-                                                <button type="button"
-                                                    class="shadow-none accordion-button collapsed tb-fs-18"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-deliverable-1">PRL</button>
-                                            </h2>
-
-                                            <div id="collapse-deliverable-1"
-                                                class="accordion-collapse collapse show">
-                                                <div class="collapse-inner-bg p-5 pb-0">
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Language(s)</p>
-                                                        <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                        </p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Are the deliverables due
-                                                            as part of the service level agreement (SLA)?
-                                                        </p>
-                                                        <p class="col-6 text-end tb-fs-16">Yes</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                            deadline lorem?</p>
-                                                        <p class="col-6 text-end tb-fs-16">20/02/2022</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Are there any additional
-                                                            needs with this deliverable?</p>
-                                                        <p class="col-6 text-end tb-fs-16">Image, Video</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Publishing date</p>
-                                                        <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                            9:00am</p>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item accordion-bottom-border">
-                                            <h2 class="accordion-header" id="heading-duel-2">
-                                                <button type="button"
-                                                    class="shadow-none accordion-button collapsed tb-fs-18"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-deliverable-2">Social
-                                                    Media</button>
-                                            </h2>
-                                            <div id="collapse-deliverable-2"
-                                                class="accordion-collapse collapse">
-                                                <div class="collapse-inner-bg p-5 pb-0">
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Language(s)</p>
-                                                        <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                        </p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Are the deliverables due
-                                                            as part of the service level agreement (SLA)?
-                                                        </p>
-                                                        <p class="col-6 text-end tb-fs-16">Yes</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                            deadline lorem?</p>
-                                                        <p class="col-6 text-end tb-fs-16">20/02/2022</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">On which channel(s) would
-                                                            you like to post?</p>
-                                                        <p class="col-6 text-end tb-fs-16">Instagram,
-                                                            Twitter</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Instagram Format(s)</p>
-                                                        <p class="col-6 text-end tb-fs-16">Carousel</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Twitter Format(s)</p>
-                                                        <p class="col-6 text-end tb-fs-16">Carousel</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <p class="col-6 tb-fs-16">Publishing date</p>
-                                                        <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                            9:00am</p>
+                                            
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading-duel-2">
-                                                <button type="button"
-                                                    class="shadow-none accordion-button collapsed tb-fs-18"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-deliverable-3">Attachments*</button>
-                                            </h2>
-                                            <div id="collapse-deliverable-3"
-                                                class="accordion-collapse collapse">
-                                                <div class="collapse-inner-bg p-5">
-                                                    <div class="row">
-                                                        <div class="col-12 ">
-                                                            <div class="tb-input-group d-flex p-3">
-                                                                <div class="col-9">
-                                                                    <label class="col-12 input-label"
-                                                                        for="infographics">Infographics</label>
-                                                                    <input class="col-12 input"
-                                                                        type="infographics"
-                                                                        id="infographics"
-                                                                        placeholder="Upload image" />
-                                                                </div>
-                                                                <div
-                                                                    class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                    <span class="tb-fs-18">Upload</span>
-                                                                    <input id="upload-infographics"
-                                                                        type="file" class="upload" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-4">
-                                                            <div class="tb-input-group d-flex p-3">
-                                                                <div class="col-9">
-                                                                    <label class="col-12 input-label"
-                                                                        for="media-assets">Media
-                                                                        Assets</label>
-                                                                    <input class="col-12 input" type="text"
-                                                                        id="media-assets"
-                                                                        placeholder="Upload Image / Videos" />
-                                                                </div>
-                                                                <div
-                                                                    class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                    <span class="tb-fs-18">Upload</span>
-                                                                    <input id="upload-media-assets"
-                                                                        type="file" class="upload" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 mt-4">
-                                                            <div class="tb-input-group p-2">
-                                                                <label class="col-12 input-label "
-                                                                    for="supporting-data">Supporting
-                                                                    Data</label>
-                                                                <input class="col-12 input-field"
-                                                                    id="supporting-data"
-                                                                    name="supporting-data"
-                                                                    placeholder="Placeholder text" />
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                        <div class="col-md-12 mt-4">
-                                                            <div class="tb-input-group p-2">
-                                                                <label class="col-12 input-label "
-                                                                    for="further-info">Further
-                                                                    info</label>
-                                                                <input class="col-12 input-field"
-                                                                    id="further-info" name="further-info"
-                                                                    placeholder="Placeholder text" />
-                                                            </div>
-                                                            <p class="error-message">• Error Message</p>
-                                                        </div>
-                                                    </div>
-
+                                        <div class="tab-pane fade" id="deliverables-tab-pane">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="head-5"><b>7 Deliverable(s)</b></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="text-end mt-3">
+                                                        <span class="gray-100 pad-8-12 gray-300-hover square-btn">
+                                                            <i class="fa-regular fa-plus"></i>
+                                                    </span></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="attachments-tab-pane2">2</div>
-                        <div class="tab-pane fade" id="activities-tab-pane2">3</div>
-                        <div class="tab-pane fade" id="dual-content-tab-pane2">
-                            <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                            <p class="duel-content-dec p-0 m-3">نص العنصر النائبنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
-                            <hr>
-                            <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                            <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائب</p>
-                            <hr>
-                            <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                            <p class="duel-content-dec p-0 m-3"> نصنص العنصر النائبنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص
-                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
-                                النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
-                                العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
-                            </p>
-                            <hr>
-                            <h6 class="duel-content-heading pt-3 m-3">عنوان*</h6>
-                            <p class="duel-content-dec p-0 m-3"> نصنص , العنصرالعنصر</p>
-                            <hr>
-                        </div>
-                        <div class="tab-pane fade" id="versions-tab-pane">
-                            <div class="data-top">
-                                <span class="data-tab">V1(Current) <img
-                                        src="../../assets/images/Vector (Stroke).svg" alt=""></span>
-                                <h6 class="table-heading">John Luis . 22/02/2022 - 9:00am</h6>
-                            </div>
-                            <div class="table-heading1 text-end">
-                                <h6 class="table-heading-h6">عنوان</h6>
-                                <p class="table-heading-desc">نص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصالعنصر النائب</p>
-                                <hr>
-                                <h6 class="table-heading-h6">عنوان</h6>
-                                <p class="table-heading-desc"> نصنص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائب</p>
-                                <hr>
-                                <h6 class="table-heading-h6">عنوان</h6>
-                                <p class="table-heading-desc">
-                                    نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائب
-                                </p>
-                                <hr>
-                                <h6 class="table-heading-h6">عنوان</h6>
-                                <p class="table-heading-desc"> نصنص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائب العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائب نصنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب نصنص العنصر
-                                    النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائب
-                                    نصنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر النائبنص العنصر
-                                    النائبنص العنصر النائب العنصر النائبنص العنصر النائبنص العنصر النائبنص
-                                    العنصر النائب
-                                </p>
-                                <h6 class="table-heading-h6">عنوان</h6>
-                                <p class="table-heading-desc"> نصنص , العنصرالعنصر</p>
-                                <hr>
+                                <div class="tab-pane fade" id="attachments-tab-pane2">2</div>
+                                <div class="tab-pane fade" id="activities-tab-pane2">3</div>
+                                <div class="tab-pane fade" id="dual-content-tab-pane2">4</div>
+                                <div class="tab-pane fade" id="versions-tab-pane2">5</div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-12 d-flex align-items-center mb-4">
-                            <div class="col-8 d-flex">
-                                <p class="tb-fs-16 tb-fw-600 mb-0 me-2"> 1 Deliverable(s)</p>
-                                <img src="../../../../assets/images/Icons/info-red.svg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <div class="text-end mt-3">
-                                    <button class="border-0 bg-white"><img
-                                            src="../../../../assets/images/Icons/plus-icon.svg"
-                                            alt=""></button>
+                    <div class="col-6 vh-100 overflow-scroll collapse-inner-bg px-4">
+                        <div class="row">
+                            <div class="col-12 d-flex align-items-center mb-4">
+                                <div class="col-8 d-flex">
+                                    <p class="tb-fs-16 mb-0 me-2  tb-font-medium">2 Tasks </p>
+                                    <img src="../../../../assets/images/Icons/info-red.svg" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-end mt-3">
+                                        <button class="border-0 bg-white"><img src="../../../assets/images/Icons/plus-icon.svg" alt=""></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 pb-4 border-gray-bottom-200">
-                        <div
-                            class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border">
-                            <div class="">
-                                <div class="d-flex align-items-center">
-                                    <input class="me-3 radio" type="radio" id="prl(en)" name="Deliverable-redio"
-                                        value="HTML">
-                                    <label for="prl(en)" class="tb-fs-16 tb-fw-700">Media Recom.</label>
+                        <div class="col-12 pb-4">
+                            <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-2 card-check-border border-red" data-bs-toggle="collapse" data-bs-target="#collapse-en-2" aria-expanded="true">
+                                <div class="">
+                                    <div class="d-flex align-items-center">
+                                        <input class="me-3 radio" type="radio" id="prl(en2)" name="Deliverable-redio" value="HTML">
+                                        <label for="prl(en2)" class="tb-fs-16 tb-fw-700">Media Recom. (En)
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="">
-                                <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
-                            </div>
-                            <div class="">
-                                <p class="teble-text mb-0 text-gray-500 "><img
-                                        src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
-                            </div>
-                            <div class=""><span
-                                    class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                <div class="">
+                                    <p class="teble-text text-gray-500  mb-0 d-none">12/08/2022</p>
+                                </div>
+                                <div class="d-none">
+                                    <p class="teble-text mb-0 text-gray-500 "><img src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days</p>
+                                </div>
+                                <div class=""><span class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
                                     <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
                                     <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
                                 </span>
+                                </div>
+                                <div class=""><span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                        <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
+                                    </span></div>
                             </div>
-                            <div class=""><span
-                                    class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
-                                    <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
-                                </span></div>
-                        </div>
-                        <div >
-                            <a class="d-flex justify-content-center tb-primary" href="#"><img src="../../../../assets/images/Icons/eye-slash.svg" alt="">
-                                <p class="mb-0 tb-copyright ms-3">Hide deliverables</p></a>
-                        </div>
-                    </div>
-                    <div class="col-12 bg-white px-4 py-3  mt-3">
-                        <div class="row mb-4">
-                            <label class="input-label tb-fw-400" for="input2">Upload Media</label>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-4">
-                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
-                                    <span class="tb-fs-14">Use Attachment</span>
-                                    <input id="uploadBtn" type="file" class="upload">
+                            <div id="collapse-en-2" class="accordion-collapse collapse show">
+                                <div class="collapse-inner-bg p-1">
+                                    <div class="col-12 bg-white px-4 py-3">
+                                        <div class="row mb-4">
+                                            <label class="input-label tb-fw-400" for="input2">Upload
+                                                Media</label>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                    <span class="tb-fs-14 mx-3">Upload from DAM</span>
+                                                    <input id="uploadBtn" type="file" class="upload">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3 text-center">
+                                                    <span class="tb-fs-14 ms-1 me-1">Upload from device</span>
+                                                    <img src="../../../../assets/images/Icons/right.svg" alt="">
+                                                    <input id="uploadBtn" type="file" class="upload">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-4 d-flex justify-content-center">
+                                            <p class="tb-gray-400 mb-3">
+                                                Document must be .mp4, .mov, .mkv format.
+                                            </p>
+                                        </div>
+                                        <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded bg-white">
+                                            <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
+                                            <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                            <div class="">
+                                                <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
+                                            </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
-                                    <span class="tb-fs-14 mx-3">Upload from DAM</span>
-                                    <input id="uploadBtn" type="file" class="upload">
+                            <div class="row g-0 gy-3 mt-3">
+                                <div class="col-md-12 bg-white p-3">
+                                    <h4 class="tb-h4">Notes</h4>
+                                    <p class="tb-fs-16  text-black">Lörem ipsum etnoitet päniledes. Nodade andrototal, typp därför att telegram radiogram. Nagelprotest akäna huruvida enera föbelt episk än debuligen. Padda dekar sur, det vill säga pölig pror stenosade. Rer sedir när ångerrösta inte dism. Pronade sotat. </p>
+                                </div>
+                                <div class="col-md-12 bg-white p-3 mb-3">
+                                    <h4 class="tb-h4">Tags</h4>
+                                    <p class="regular-paragraph">Placeholder text</p>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
-                                    <span class="tb-fs-14 mx-3">Upload from device</span>
-                                    <img src="../../../assets/images/Icons/right.svg" alt="">
-                                    <input id="uploadBtn" type="file" class="upload">
+    
+                            <div class="" data-bs-toggle="collapse" data-bs-target="#collapse-arab-2" aria-expanded="false">
+                                <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <input class="me-3 radio" type="radio" id="prl(en)" name="deliverable" value="HTML">
+                                            <label for="prl(en)" class="tb-fs-16 tb-fw-700">Media Recom. (En)
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-none">
+                                        <p class="teble-text text-gray-500  mb-0">12/08/2022</p>
+                                    </div>
+                                    <div class="d-none">
+                                        <p class="teble-text mb-0 text-gray-500 "><img src="../../../assets/images/Icons/stopwatch.svg" alt=""> 2 days
+                                        </p>
+                                    </div>
+                                    <div class=""><span class="d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                                            <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <h4 class="tb-h5 mb-0 tb-orange ms-3">IN PROGRESS</h4>
+                                        </span>
+                                    </div>
+                                    <div class=""><span class="common-width-label-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  mx-2">
+                                        <p class="mb-0 tb-fw-900 tb-copyright">MRT</p>
+                                    </span></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 my-4 d-flex justify-content-center">
-                            <p class="tb-gray-400 mb-0">
-                                Document must be .mp4, .mov, .mkv format.
-                            </p>
-                        </div>
-                          <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
-                                <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                <p  class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                <div class="">
-                                    <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-                                    <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-                                </div>
-                          </div>
-                          <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
-                                <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                <p  class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                <div class="">
-                                    <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-                                    <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-                                </div>
-                          </div>
-                    </div>
-                    <div class="row g-0 gy-3 mt-3">
-                        <div class="col-md-12 bg-white p-3">
-                            <h4 class="tb-h4">Notes</h4>
-                            <p class="regular-paragraph">Lörem ipsum etnoitet päniledes. Nodade andrototal, typp därför att telegram radiogram. Nagelprotest akäna huruvida enera föbelt episk än debuligen. Padda dekar sur, det vill säga pölig pror stenosade. Rer sedir när ångerrösta inte dism. Pronade sotat. </p>
-                        </div>
-                        <div class="col-md-12 bg-white p-3">
-                            <h4 class="tb-h4">Tags</h4>
-                            <p class="regular-paragraph">Placeholder text</p>
+                           
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="view-all-model-btn-wrapper text-end p-3">
+                <button class="btn btn-md tb-btn-secondary tb-rounded tb-font-regular" type="button" data-bs-target="#RequestInfoModal"  data-bs-toggle="modal">Request more information</button>
+                <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button" data-bs-target="#DeclineModal4"  data-bs-toggle="modal">Decline</button>
+                <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button" data-bs-target="#approvework"  data-bs-toggle="modal">Approve</button>
             </div>
         </div>
-        <div class="view-all-model-btn-wrapper text-end p-3">
-            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" data-bs-target="#exampleModal5"  data-bs-toggle="modal">Revisions needed</button>
-            <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-target="#approvework"  data-bs-toggle="modal">Approve</button>
-        </div>
     </div>
-</div>
-</div>
+    </div>
          <!-- Modal -->
          <div class="modal modal-md fade background-dim" id="approvework" tabindex="-1" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
@@ -2838,7 +2680,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
              <div class="modal-content inner-modal-content-box box-shadow-popup">
                  <div class="modal-header align-items-start p-4">
                      <div>
-                         <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send for Approval
+                         <h5 class="modal-title fs-4 text-black tb-font-regular" id="exampleModalLabel">Approve Deliverables
                          </h5>
                      </div>
                      <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
@@ -2846,28 +2688,6 @@ aria-labelledby="exampleModalLabel" role="dialog">
                  </div>
                  <div class="modal-body collapse-inner-bg py-4 px-5">
                      <div class="row g-3">
-                         <div class="col-md-12">
-                             <div class="tb-input-group p-2 mt-3 d-flex">
-                                <div class="me-2">
-                                    <span class="w-h-40 status-color-orange-op  rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
-                                        <p class="mb-0 bold-paragraph mt-1 tb-orange">DOH</p>
-                                    </span>
-                                </div>
-                                <div class="w-100">
-                                    <label class="col-12 input-label" for="input">Select Label<sup></sup></label>
-                                    <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                        name="browsers" placeholder="DOH">
-                                    <i class="fa fa-solid fa-angle-down"></i>
-                                    <datalist id="browsers" role="listbox">
-                                        <option value="Brookyln Simmons">Brookyln Simmons</option>
-                                        <option value="Jacob Jones">Jacob Jones</option>
-                                        <option value="Guy Hawkins">Guy Hawkins</option>
-                                    </datalist>
-                                </div>
-                                 
-                             </div>
-                             <p class="error-message">• Error message</p>
-                         </div>
                          <div class="col-md-12">
                              <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
                                  <div>
@@ -2883,9 +2703,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                     
                         
                              <button type="button"
-                                 class="btn-md tb-btn-secondary tb-rounded p-4 border-0">back</button>
-                             <button type="button"
-                                 class="btn-md tb-btn-primary tb-rounded p-4 border-0">Send</button>
+                                 class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
                         
                  </div>
              </div>
@@ -2900,7 +2718,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
           <div class="modal-content inner-modal-content-box box-shadow-popup">
             <div class="modal-header align-items-start p-4">
               <div>
-                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Revisions needed</h5>
+                <h5 class="modal-title fs-4 text-black tb-font-regular" id="exampleModalLabel">Revisions needed</h5>
               </div>
               <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -2945,7 +2763,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
               <div class="col-md-12 mb-3">
                 <div class="tb-input-group bg-transparent p-2 mt-3 d-flex border-0">
                     <div class="w-h-35 col-3 rounded-circle img-cover overflow-hidden m-1 me-3">
-                        <img src="../../../assets/images/person.jpg" alt="" class="img-100 selected-dropdown-image">
+                        <img src="../../../../assets/images/person.jpg" alt="" class="img-100 selected-dropdown-image">
                       </div>
                       <div class="w-100">
                   <label class="col-12 input-label" for="input">Select Assignee<sup>*</sup></label>
@@ -2972,6 +2790,118 @@ aria-labelledby="exampleModalLabel" role="dialog">
       </div>
         <!--  modal ends here -->
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="RequestInfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog main-modal modal-dialog-position">
+      <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+        <div class="modal-header align-items-start p-4">
+          <div>
+            <h5 class="modal-title fs-4 text-black tb-font-regular" id="exampleModalLabel">Request More Information</h5>
+          </div>
+          <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body collapse-inner-bg py-4 px-5">
+          <div class="col-12">
+            <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+              <div>
+                <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                <textarea class="decline-request border-0 ps-0" rows="4" cols="59"
+                  placeholder="Placeholder text"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 bg-white px-4 py-3  mt-3">
+            <div class="col-12 d-flex">
+              <label class="input-label fs-6" for="input2">Attach File</label>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="col-6 me-1">
+                <div class=" mt-3">
+                  <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                    <span class="tb-fs-14">Select from attachment</span>
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ms-1">
+                <div class=" mt-3">
+                  <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                    <span class="tb-fs-14 mx-3">Upload from device</span>
+                    <img src="../assets/images/right-arrow.svg" alt="">
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4 d-flex justify-content-center">
+              <p class="tb-gray-400 mb-0">
+                Document must be in the following formats xxxxxx
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-end  my-4 me-3 ">
+          <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="DeclineModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog main-modal modal-dialog-position">
+      <div class="modal-content inner-modal-content box-shadow-popup p-0 vh-90">
+        <div class="modal-header align-items-start p-4">
+          <div>
+            <h5 class="modal-title fs-4 text-black tb-font-regular" id="exampleModalLabel">Decline Request</h5>
+          </div>
+          <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body collapse-inner-bg py-4 px-5">
+          <div class="col-12">
+            <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+              <div>
+                <label class="col-12 input-label fs-6" for="input2">Add notes</label>
+                <textarea class="decline-request border-0 ps-0" rows="4" cols="59"
+                  placeholder="Placeholder text"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 bg-white px-4 py-3  mt-3">
+            <div class="col-12 d-flex">
+              <label class="input-label fs-6" for="input2">Attach File</label>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="col-6 me-1">
+                <div class=" mt-3">
+                  <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                    <span class="tb-fs-14">Select from attachment</span>
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ms-1">
+                <div class=" mt-3">
+                  <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-nowrap p-3">
+                    <span class="tb-fs-14 mx-3">Upload from device</span>
+                    <img src="../assets/images/right-arrow.svg" alt="">
+                    <input id="uploadBtn" type="file" class="upload">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4 d-flex justify-content-center">
+              <p class="tb-gray-400 mb-0">
+                Document must be in the following formats xxxxxx
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-end  my-4 me-3 ">
+            <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Cancel</button>
+          <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Decline</button>
+      </div>
+      </div>
+    </div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../../../../javascript/inputs&dropdowns.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

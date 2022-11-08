@@ -180,6 +180,41 @@ $(".radio").on("change", function () {
   }
 });
 
+$(".multi-checked-border").on("change", function () {
+
+  if ($(this).is(":checked")) {
+    $(this).parent().parent().parent().addClass("border-gray-500-checked");
+  }
+  else {
+    $(this).parent().parent().parent().removeClass("border-gray-500-checked");
+  }
+});
+
+$("#toggleSelect").on("click", function () {
+  $(this).addClass("d-none");
+  $("#toggleSelectAll").removeClass("d-none");
+  $(".toggleCheckbox").removeClass("d-none");
+  $(".toggle-ellipsis-btn").addClass("d-none");
+});
+
+$("#toggleSelectAll").on("click", function () {
+  if (!$('.toggleCheckbox').is(":checked")) {
+    $('.toggleCheckbox').click()
+    }
+});
+
+$("#toggleCancel").on("click", function () {
+  $("#toggleSelectAll").addClass("d-none");
+  $("#toggleSelect").removeClass("d-none");
+   $(".toggleCheckbox").addClass("d-none");
+   $(".toggle-ellipsis-btn").removeClass("d-none");
+
+   if ($('.toggleCheckbox').is(":checked")) {
+   $('.toggleCheckbox').click()
+   }
+});
+
+
 $.fn.extend({
   treed: function (o) {
     var openedClass = "glyphicon-minus-sign";

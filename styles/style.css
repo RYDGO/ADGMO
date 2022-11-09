@@ -2359,6 +2359,9 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
 .accordion-bottom-border {
     border-bottom: 30px solid var(--body-bg);
 }
+.accordion-bottom-border-2 {
+    border-bottom: 30px solid var(--body-bg);
+}
 
 .accordion-top-border {
     border-top: 15px solid var(--collapse-bg);

@@ -9,6 +9,7 @@
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -18,6 +19,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../../../styles/style.css">
     <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/assetsLibrary.css">
     <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css">
 </head>
 
@@ -792,15 +794,13 @@
                                                 <i class="fa-solid fa-chevron-right"></i>
                                             </span>
                                         </div>
-
                                     </div>
-
                                 </div>
                                 <div class="col-6 pe-0">
                                     <div class="overview-boxes">
                                         <div class="row row-cols-2 g-3">
                                             <div class="col ">
-                                                <div class="box three">
+                                                <div class="box two">
                                                     <div class="right-side">
                                                         <div class="box-topic">Normal</div>
                                                         <div class="number">90</div>
@@ -961,7 +961,7 @@
 
                                                                 <div
                                                                     class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
-                                                                    <h6 class="pt-2">
+                                                                    <h6 class="pt-1">
                                                                         L1
                                                                     </h6>
                                                                 </div>
@@ -2196,7 +2196,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
             <div class="model-top-wrapper col-10">
                 <div class=" d-flex align-items-center">
                     <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
-                        <h6 class="pt-2">
+                        <h6 class="pt-1">
                             L1
                         </h6>
                     </div>
@@ -2269,11 +2269,11 @@ aria-labelledby="exampleModalLabel" role="dialog">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="request-tab-pane">
                                         <div class="accordion d-flex gap-3 flex-column" id="accordion-dual">
-                                            <div class="accordion-item border tb-rounded-10">
+                                            <div class="border tb-rounded-10">
                                                 <h2 class="accordion-header tb-rounded-10" id="heading-duel-1">
                                                     <button type="button" class="shadow-none accordion-button  tb-rounded-10" data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">Title</button>
                                                 </h2>
-                                                <div id="collapse-duel-1" class="accordion-collapse collapse show collapse-inner-bg tb-rounded-10">
+                                                <div id="collapse-duel-1" class="accordion-collapse collapse show collapse-inner-bg ">
                                                     <div class="collapse-inner-bg p-5 tb-rounded-10">
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -2403,7 +2403,7 @@ aria-labelledby="exampleModalLabel" role="dialog">
                         <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-2 card-check-border border-red" data-bs-toggle="collapse" data-bs-target="#collapse-en-2" aria-expanded="true">
                             <div class="">
                                 <div class="d-flex align-items-center">
-                                    <input class="me-3 radio" type="radio" id="prl(en2)" name="Deliverable-redio" value="HTML">
+                                    <input class="me-3 radio" type="radio" id="prl(en2)" checked name="Deliverable-redio" value="HTML">
                                     <label for="prl(en2)" class="tb-fs-16 tb-fw-700">Media Recom. (En)
                                     </label>
                                 </div>
@@ -2450,34 +2450,31 @@ aria-labelledby="exampleModalLabel" role="dialog">
                                             Document must be .mp4, .mov, .mkv format.
                                         </p>
                                     </div>
-                                </div>
+                                </div>  
                                 <div class="col-12">
-                                    <div class="brand-input tb-input-group p-2 mt-2 mb-4">
-                                        <label class="col-12 input input-label" for="dataList">Notes</label>
-                                        <input class="col-12 input" id="" name="" placeholder="Placeholder">
+                                    <div class="brand-input tb-input-group p-2 my-2">
+                                        <label class="col-12 input input-label" for="notes">Notes</label>
+                                        <textarea class="decline-request border-0 input-field ps-0" id="" rows="4" placeholder="placholder text"></textarea>
+                                        <!-- <input class="col-12 input-field" id="notes" name="notes" placeholder="Placeholder"> -->
                                     </div>
                                     <p class="error-message">• Error Message</p>
-                                    <p class="error-message">• Error Message</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="brand-input tb-input-group p-2 my-2">
+                                        <label class="col-12 input input-label" for="tags">Tags</label>
+                                        <input class="regular-paragraph" id="tags" placeholder="placholder text">
+                                        <p class="error-message">• Error Message</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-0 gy-3 mt-3">
-                            <div class="col-md-12 bg-white p-3">
-                                <h4 class="tb-h4">Notes</h4>
-                                <p class="tb-fs-16  text-black">Lörem ipsum etnoitet päniledes. Nodade andrototal, typp därför att telegram radiogram. Nagelprotest akäna huruvida enera föbelt episk än debuligen. Padda dekar sur, det vill säga pölig pror stenosade. Rer sedir när ångerrösta inte dism. Pronade sotat. </p>
-                            </div>
-                            <div class="col-md-12 bg-white p-3 mb-3">
-                                <h4 class="tb-h4">Tags</h4>
-                                <p class="regular-paragraph">Placeholder text</p>
-                            </div>
-                        </div>
-
+                
                         <div class="" data-bs-toggle="collapse" data-bs-target="#collapse-arab-2" aria-expanded="false">
                             <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border">
                                 <div class="">
                                     <div class="d-flex align-items-center">
-                                        <input class="me-3 radio" type="radio" id="prl(en)" name="deliverable" value="HTML">
-                                        <label for="prl(en)" class="tb-fs-16 tb-fw-700">Media Recom. (En)
+                                        <input class="me-3 radio" type="radio" id="prl(en)" name="Deliverable-redio" value="HTML">
+                                        <label for="prl(en)" class="tb-fs-16 tb-fw-700">Media Recom. (Ar)
                                         </label>
                                     </div>
                                 </div>
@@ -2498,7 +2495,6 @@ aria-labelledby="exampleModalLabel" role="dialog">
                                 </span></div>
                             </div>
                         </div>
-                       
                     </div>
                 </div>
             </div>

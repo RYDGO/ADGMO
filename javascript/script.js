@@ -192,6 +192,7 @@ $(".multi-checked-border").on("change", function () {
 
 $("#toggleSelect").on("click", function () {
   $(this).addClass("d-none");
+  $("#toggleCancel").removeClass("d-none");
   $("#toggleSelectAll").removeClass("d-none");
   $(".toggleCheckbox").removeClass("d-none");
   $(".toggle-ellipsis-btn").addClass("d-none");
@@ -200,6 +201,9 @@ $("#toggleSelect").on("click", function () {
 $("#toggleSelectAll").on("click", function () {
   if (!$('.toggleCheckbox').is(":checked")) {
     $('.toggleCheckbox').click()
+    $(".downloadbtn").removeClass("d-none");
+    $(".shortShowHide").addClass("d-none");
+    
     }
 });
 
@@ -211,7 +215,10 @@ $("#toggleCancel").on("click", function () {
 
    if ($('.toggleCheckbox').is(":checked")) {
    $('.toggleCheckbox').click()
+   $(".downloadbtn").addClass("d-none");
+   $(".shortShowHide").removeClass("d-none");
    }
+   $(this).addClass("d-none");
 });
 
 

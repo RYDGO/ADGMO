@@ -216,6 +216,7 @@ $("#toggleCancel").on("click", function () {
    if ($('.toggleCheckbox').is(":checked")) {
    $('.toggleCheckbox').click()
    $(".downloadbtn").addClass("d-none");
+   $(".multi-checked-1").css("border", "none");
    $(".shortShowHide").removeClass("d-none");
    }
    $(this).addClass("d-none");

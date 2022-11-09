@@ -2357,7 +2357,10 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
 /*  search styles ends */
 
 .accordion-bottom-border {
-    border-bottom: 30px solid var(--collapse-bg);
+    border-bottom: 30px solid var(--body-bg);
+}
+.accordion-bottom-border-2 {
+    border-bottom: 30px solid var(--body-bg);
 }
 
 .accordion-top-border {
@@ -2392,6 +2395,11 @@ table.dataTable thead>tr>td.sorting_desc_disabled:after {
     border: none;
     background-color: transparent !important;
     box-shadow: none !important;
+}
+
+.accordion-item{
+    border-radius: 12px 12px 0 0 !important;
+    overflow: hidden;
 }
 
 table.dataTable td.dt-control {

@@ -1096,6 +1096,32 @@ a:hover {
     border: 1px solid var(--btn-bg-disabled) !important;
     color: var(--btn-bg-disabled) !important;
 }
+.tb-btn-gray-200 {
+    background-color: var(--grayshade-200) !important;
+    color: var(--text-base-white) !important;
+}
+
+.tb-btn-gray-200:hover {
+    background-color: var(--btn-bg-hover) !important;
+    color: var(--text-base-white) !important;
+}
+
+.tb-btn-gray-200:active {
+    background-color: var(--grayshade-300) !important;
+    color: var(--text-base-white) !important;
+    border: 1px solid var(--grayshade-300) !important;
+}
+
+.tb-btn-gray-200.active {
+    background-color: var(--base-black-color) !important;
+    color: var(--base-white-color) !important;
+    border: 1px solid var(--btn-bg-selected) !important;
+}
+
+.tb-btn-gray-200:disabled {
+    border: 1px solid var(--btn-bg-disabled) !important;
+    color: var(--btn-bg-disabled) !important;
+}
 
 
 /* --- Gray BUTTONS --- */

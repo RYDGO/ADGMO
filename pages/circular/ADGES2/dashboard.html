@@ -9,6 +9,7 @@
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -17,7 +18,8 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../../../styles/style.css">
-    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/assetsLibrary.css">
     <!-- <link rel="stylesheet" href="../../../../styles/workloadDepartments/workloadDepartments.css"> -->
 </head>
 
@@ -410,22 +412,12 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active  btn btn-md tb-btn-light tb-rounded" id="pills-home-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Dpt. Request</button>
+                            aria-selected="true">Requests - In Progress</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link  btn btn-md tb-btn-light tb-rounded" id="pills-profile-tab"
                             data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
-                            aria-controls="pills-profile" aria-selected="false">Assigned to me</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
-                            aria-controls="pills-contact" aria-selected="false">My Requests</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-contact-2" type="button" role="tab"
-                            aria-controls="pills-contact-2" aria-selected="false">Conversations</button>
+                            aria-controls="pills-profile" aria-selected="false">Requests - Closed</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
@@ -480,8 +472,7 @@
                                             <!-- title -->
                                             <div class="d-md-flex align-items-center px-1">
                                                 <div>
-                                                    <h4 class="card-title tb-h3 pt-3 tb-bold">Dpt. Requests</h4>
-
+                                                    <h4 class="card-title pt-3 tb-bold input-label fs-3">Requests - In Progress</h4>
                                                 </div>
                                                 <div class="ms-auto d-flex justify-content-between align-items-center">
 
@@ -529,7 +520,7 @@
 
                                                                 <div
                                                                     class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
-                                                                    <h6 class="pt-2">
+                                                                    <h6 class="pt-1">
                                                                         L1
                                                                     </h6>
                                                                 </div>
@@ -1083,7 +1074,7 @@
             aria-modal="true" role="dialog">
             <div class="modal-dialog modal-fullscreen  p-3 background-dim">
                 <div class="modal-content tb-rounded">
-                    <div class="modal-header align-items-start p-4 border-bottom-gray-200">
+                    <div class="modal-header align-items-start p-4 border-bottom-lighgray">
                         <div class="model-top-wrapper col-10">
                             <div class=" d-flex ">
                                 <div
@@ -1180,7 +1171,7 @@
                                         <div class="tab-content" id="myTabContent4">
                                             <div class="tab-pane fade show active bg-transparent"
                                                 id="request-tab-pane4">
-                                                <div class="accordion accordion-bottom-border mt-3"
+                                                <div class="accordion  my-3"
                                                     id="accordion-english-4">
                                                     <div class="accordion-item border tb-rounded-10">
                                                         <h2 class="accordion-header tb-rounded-10"
@@ -1194,7 +1185,7 @@
                                                             </button>
                                                         </h2>
                                                         <div id="collapse-english-1"
-                                                            class="accordion-collapse collapse show" style="">
+                                                            class="accordion-collapse collapse show">
                                                             <div class="collapse-inner-bg p-2">
                                                                 <div class="row g-3">
                                                                     <div class="col-md-12">
@@ -1222,8 +1213,8 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="col-md-12 border-bottom">
-                                                                        <div class=" p-2">
+                                                                    <div class="col-md-12 ">
+                                                                        <div class=" p-2 border-bottom">
                                                                             <p class="tb-font-bold tb-fs-16">Subject
                                                                             </p>
                                                                             <p>
@@ -1235,8 +1226,8 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
-                                                                        <div class=" p-2">
+                                                                    <div class="col-md-12 ">
+                                                                        <div class=" p-2 border-bottom">
                                                                             <p class="tb-font-bold tb-fs-16 text-end">
                                                                                 اﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود
                                                                             </p>
@@ -1251,8 +1242,8 @@
                                                                                 ،ةﺪﻳﺪ</p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
-                                                                        <div class=" p-2">
+                                                                    <div class="col-md-12 ">
+                                                                        <div class=" p-2 border-bottom">
                                                                             <p class="tb-font-bold tb-fs-16">Email Body
                                                                             </p>
                                                                             <p>
@@ -1266,8 +1257,8 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
-                                                                        <div class=" p-2">
+                                                                    <div class="col-md-12 ">
+                                                                        <div class=" p-2 border-bottom">
                                                                             <p class="tb-font-bold tb-fs-16 text-end">
                                                                                 اﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود
                                                                             </p>
@@ -1288,8 +1279,8 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
-                                                                        <div class=" p-2">
+                                                                    <div class="col-md-12 ">
+                                                                        <div class=" p-2 border-bottom">
                                                                             <p class="tb-font-bold tb-fs-16">Contact
                                                                                 Person
                                                                             </p>
@@ -1300,7 +1291,7 @@
                                                                             </p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
+                                                                    <div class="col-md-12 ">
                                                                         <div class=" p-2">
                                                                             <p class="tb-font-bold tb-fs-16">Contact
                                                                                 Email
@@ -1317,12 +1308,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion accordion-bottom-border" id="accordion-english-2">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header arabic-accordian"
+                                                <div class="accordion my-3" id="accordion-english-2">
+                                                    <div class="accordion-item border tb-rounded-10">
+                                                        <h2 class="accordion-header arabic-accordian tb-rounded-10"
                                                             id="heading-english-2">
                                                             <button type="button"
-                                                                class="shadow-none accordion-button flex-row-reverse"
+                                                                class="shadow-none accordion-button flex-row-reverse tb-rounded-10"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#collapse-arabic-2">
                                                                 عنوان
@@ -1412,7 +1403,7 @@
                                                                             </p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-12 border-bottom">
+                                                                    <div class="col-md-12">
                                                                         <div class=" p-2">
                                                                             <p class="tb-font-bold tb-fs-16 text-end">
                                                                                 اﺪﻌﻤﻟاو ةدﺎﻴﻘﺑ ةدﺎﻗ لود
@@ -1439,615 +1430,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion accordion-bottom-border" id="accordion-english-3">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading-english-3">
-                                                            <button type="button" class="shadow-none accordion-button"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-english-3">
-                                                                Title
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse-english-3"
-                                                            class="accordion-collapse collapse show">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="tb-input-group-duel-full p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="headline">Main Proposed
-                                                                                Headline<sup></sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="headline" name="headline"
-                                                                                placeholder="Placeholder.." disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label text-end"
-                                                                                for="headline-arabic"><sup>*</sup>
-                                                                                لیبل</label>
-                                                                            <input
-                                                                                class="col-12 input text-end collapse-inner-bg"
-                                                                                id="headline-arabic"
-                                                                                name="headline-arabic"
-                                                                                placeholder="پلیس ہولڈر" disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-4">
-                                                                    <div class="col-12">
-                                                                        <div class="tb-input-group-duel-full p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="subheading">Subheading<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="subheading" name="subheading"
-                                                                                placeholder="Placeholder" disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label text-end"
-                                                                                for="subheading-arabic"><sup>*</sup>
-                                                                                لیبل</label>
-                                                                            <input
-                                                                                class="col-12 text-end input collapse-inner-bg"
-                                                                                id="subheading-arabic"
-                                                                                name="subheading-arabic"
-                                                                                placeholder="پلیس ہولڈر" disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-4">
-                                                                    <div class="col-12">
-                                                                        <div class="tb-input-group-duel-full p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="messages">Key
-                                                                                Messages<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="messages" name="messages"
-                                                                                placeholder="Placeholder.." disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label text-end"
-                                                                                for="messages-arabic"><sup>*</sup>
-                                                                                لیبل</label>
-                                                                            <input
-                                                                                class="col-12 text-end input collapse-inner-bg"
-                                                                                id="messages-arabic"
-                                                                                name="messages-arabic"
-                                                                                placeholder="پلیس ہولڈر" disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-4">
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="quotes">Quotes (if any)</label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="quotes" name="quotes"
-                                                                                placeholder="Placeholder.." disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="quotesby">Quotes
-                                                                                by<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="quotesby" name="quotesby"
-                                                                                placeholder="Placeholder.." disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <h6 class="tb-h4 my-4">Attachments</h6>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">PRL (en)</h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">PRL (ar)</h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">
-                                                                                Logos of all Entities (high res)*
-                                                                            </h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">Imagery (Photography,
-                                                                                Videos)</h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">Infographics</h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mb-4">
-                                                                    <div class="col-12 px-4">
-                                                                        <div class="col-12">
-                                                                            <h5 class="tb-h4">Marketing materials</h5>
-                                                                        </div>
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-4">
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="website">Website<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="website" name="website"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-4">
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="remarks">Remarks<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="remarks" name="remarks"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                                <h6 class="tb-h4 my-4">Social Handles*</h6>
-                                                                <div class="row g-4">
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="facebook">Facebook<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="facebook" name="facebook"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="youtube">Youtube<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="youtube" name="youtube"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="instagram">Instagram<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="instagram" name="instagram"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="twitter">Twitter<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="twitter" name="twitter"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="linkedin">Linkedin<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="linkedin" name="linkedin"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="social-others">Other<sup>*</sup></label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="social-others" name="social-others"
-                                                                                placeholder="Placeholder text"
-                                                                                disabled="">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion accordion-bottom-border" id="accordion-english-4">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading-english-4">
-                                                            <button type="button" class="shadow-none accordion-button"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-english-4">
-                                                                Title
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse-english-4"
-                                                            class="accordion-collapse collapse show">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="col-12 mb-4">
-                                                                    <h6 class="h6 my-3">
-                                                                        Additional relevant information<sup>*</sup>
-                                                                    </h6>
-                                                                    <h6 class="h6 my-3">
-                                                                        Is the news under sponsorship / patronage.
-                                                                    </h6>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <p>Yes</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="tb-input-group-duel p-2">
-                                                                            <label class="col-12 input-label"
-                                                                                for="Patronage">Patronage Request
-                                                                                Reference</label>
-                                                                            <input
-                                                                                class="col-12 input collapse-inner-bg"
-                                                                                id="Patronage" name="Patronage"
-                                                                                placeholder="Placeholder" disabled="">
-                                                                        </div>
-                                                                        <!-- <p class="error-message">• Error Message</p> -->
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row my-4">
-                                                                    <div class="col-12">
-                                                                        <div class="pdf-editor d-flex p-3">
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center">
-                                                                                <img src="../../assets/images/Icons/PDF.svg"
-                                                                                    alt="" width="30">
-                                                                                <p class="mb-0 ms-3">Request_2021.pdf
-                                                                                </p>
-                                                                            </div>
-                                                                            <div
-                                                                                class="col-6 d-flex align-items-center justify-content-end">
-                                                                                <img src="../../assets/images/Icons/View-eye.svg"
-                                                                                    alt="" width="30" class="me-2">
-                                                                                <img src="../../assets/images/Icons/edit.svg"
-                                                                                    alt="" width="30">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
-                                            <div class="tab-pane fade show active shadow-none"
-                                                id="deliverables-tab-pane4">
-                                                <div class="row align-items-center px-3 pb-4 collapse-inner-bg">
-                                                    <div class="col-8">
-                                                        <div class="head-5">
-                                                            <p class="mb-0 tb-fs-16 tb-fw-600">7 Deliverable</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="text-end mt-3">
-                                                            <img src="../../../assets/images/Icons/edit-pen.svg" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion" id="accordion-dual">
-
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-1">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-deliverable-1">PRL</button>
-                                                        </h2>
-
-                                                        <div id="collapse-deliverable-1"
-                                                            class="accordion-collapse collapse show">
-                                                            <div class="collapse-inner-bg p-5 pb-0">
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                                    </p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
-                                                                        as part of the service level agreement (SLA)?
-                                                                    </p>
-                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                                        deadline lorem?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are there any additional
-                                                                        needs with this deliverable?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Image, Video</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                                        9:00am</p>
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item accordion-bottom-border">
-                                                        <h2 class="accordion-header" id="heading-duel-2">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-deliverable-2">Social
-                                                                Media</button>
-                                                        </h2>
-                                                        <div id="collapse-deliverable-2"
-                                                            class="accordion-collapse collapse  show">
-                                                            <div class="collapse-inner-bg p-5 pb-0">
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Language(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">English, Arabic
-                                                                    </p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Are the deliverables due
-                                                                        as part of the service level agreement (SLA)?
-                                                                    </p>
-                                                                    <p class="col-6 text-end tb-fs-16">Yes</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">When is the ADGMO team
-                                                                        deadline lorem?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">On which channel(s) would
-                                                                        you like to post?</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Instagram,
-                                                                        Twitter</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Instagram Format(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Twitter Format(s)</p>
-                                                                    <p class="col-6 text-end tb-fs-16">Carousel</p>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <p class="col-6 tb-fs-16">Publishing date</p>
-                                                                    <p class="col-6 text-end tb-fs-16">20/02/2022 -
-                                                                        9:00am</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading-duel-2">
-                                                            <button type="button"
-                                                                class="shadow-none accordion-button collapsed tb-fs-18"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapse-deliverable-3">Attachments*</button>
-                                                        </h2>
-                                                        <div id="collapse-deliverable-3"
-                                                            class="accordion-collapse collapse  show">
-                                                            <div class="collapse-inner-bg p-5">
-                                                                <div class="row">
-                                                                    <div class="col-12 ">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="infographics">Infographics</label>
-                                                                                <input class="col-12 input"
-                                                                                    type="infographics"
-                                                                                    id="infographics"
-                                                                                    placeholder="Upload image">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-infographics"
-                                                                                    type="file" class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 mt-4">
-                                                                        <div class="tb-input-group d-flex p-3">
-                                                                            <div class="col-9">
-                                                                                <label class="col-12 input-label"
-                                                                                    for="media-assets">Media
-                                                                                    Assets</label>
-                                                                                <input class="col-12 input" type="text"
-                                                                                    id="media-assets"
-                                                                                    placeholder="Upload Image / Videos">
-                                                                            </div>
-                                                                            <div
-                                                                                class="fileUpload col-3 text-center btn-lg tb-btn-primary tb-rounded">
-                                                                                <span class="tb-fs-18">Upload</span>
-                                                                                <input id="upload-media-assets"
-                                                                                    type="file" class="upload">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="supporting-data">Supporting
-                                                                                Data</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="supporting-data"
-                                                                                name="supporting-data"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                    <div class="col-md-12 mt-4">
-                                                                        <div class="tb-input-group p-2">
-                                                                            <label class="col-12 input-label "
-                                                                                for="further-info">Further
-                                                                                info</label>
-                                                                            <input class="col-12 input-field"
-                                                                                id="further-info" name="further-info"
-                                                                                placeholder="Placeholder text">
-                                                                        </div>
-                                                                        <p class="error-message">• Error Message</p>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                     <div class="tab-pane fade shadow-none" id="pills-attachments4" role="tabpanel"
@@ -2341,13 +1726,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 pb-4 border-gray-bottom-200">
+                                <div class="col-12 pb-4">
                                     <div class="d-flex justify-content-between align-items-center bg-white p-3 tb-rounded border-gray-100 mb-3 card-check-border target-dual border-red"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-en-1" aria-expanded="true">
                                         <div class="">
                                             <div class="d-flex align-items-center">
                                                 <input class="me-3 radio" type="radio" id="prl(arab)"
-                                                    name="Deliverable-redio" value="HTML">
+                                                    name="Deliverable-redio" value="HTML" checked>
                                                 <label for="prl(arab)" class="tb-fs-16 tb-fw-700">Circulars(En)
                                                 </label>
                                             </div>
@@ -2379,7 +1764,7 @@
                                                     <label class="col-12 input-label" for="links2">Email Body
                                                     </label>
                                                     <textarea
-                                                        class="decline-request border-0 ps-0 input-field border-bottom-gray-200"
+                                                        class="decline-request border-0 ps-0 input-field"
                                                         placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rem atque reprehenderit consequatur repellat consectetur accusantium similique modi temporibus "
                                                         disabled id="exampleFormControlTextarea1" rows="4"></textarea>
                                                 </div>
@@ -2464,71 +1849,8 @@
                                         </div>
 
                                     </div>
-
-                                    <div>
-                                        <a class="d-flex justify-content-center tb-primary" href="#"><img
-                                                src="../../../../assets/images/Icons/eye-slash.svg" alt="">
-                                            <p class="mb-0 tb-copyright ms-3">Hide deliverables</p>
-                                        </a>
-                                    </div>
                                 </div>
-                                <div class="col-12 bg-white px-4 py-3  mt-3">
-                                    <div class="row mb-4">
-                                        <label class="input-label tb-fw-400" for="input2">Upload Media</label>
-                                    </div>
-                                    <div class="row g-3">
-                                        <div class="col-6">
-                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-center p-3">
-                                                <span class="tb-fs-14">Use Attachment</span>
-                                                <input id="uploadBtn" type="file" class="upload">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="fileUpload btn-lg tb-rounded tb-btn-popup text-center p-3">
-                                                <span class="tb-fs-14 pe-3">Upload from device</span>
-                                                <img src="../../../assets/images/Icons/right.svg" alt="">
-                                                <input id="uploadBtn" type="file" class="upload">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 my-4 d-flex justify-content-center">
-                                        <p class="tb-gray-400 mb-0">
-                                            Document must be .mp4, .mov, .mkv format.
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded">
-                                        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                        <div class="">
-                                            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-                                            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-gray-100 d-flex justify-content-between p-3 align-items-center tb-rounded">
-                                        <p class="mb-0 tb-fs-14">DAM-FB-Carousel.mp4</p>
-                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
-                                        <div class="">
-                                            <img src="../../../../assets/images/Icons/edit-pen.svg" alt="">
-                                            <img src="../../../../assets/images/Icons/trash-red.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row g-0 gy-3 mt-3">
-                                    <div class="col-md-12 bg-white p-3">
-                                        <h4 class="tb-h4">Notes</h4>
-                                        <p class="regular-paragraph">Lörem ipsum etnoitet päniledes. Nodade
-                                            andrototal, typp därför att telegram radiogram. Nagelprotest
-                                            akäna huruvida enera föbelt episk än debuligen. Padda dekar sur,
-                                            det vill säga pölig pror stenosade. Rer sedir när ångerrösta inte
-                                            dism. Pronade sotat. </p>
-                                    </div>
-                                    <div class="col-md-12 bg-white p-3">
-                                        <h4 class="tb-h4">Tags</h4>
-                                        <p class="regular-paragraph">Placeholder text</p>
-                                    </div>
-                                </div>
+                            
                             </div>
                         </div>
                     </div>

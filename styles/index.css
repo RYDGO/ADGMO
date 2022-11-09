@@ -193,5 +193,5 @@
 
 #exampletable_info,
 #exampletable_paginate {
-  display: none !important;
+  /* display: none !important; */
 }

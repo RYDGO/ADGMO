@@ -903,6 +903,11 @@ a:hover {
     border-bottom-right-radius: 8px;
 }
 
+.tb-rounded-bottom-lr-12 {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
 .tb-rounded-pill {
     border-radius: 64px;
 }
@@ -1448,6 +1453,9 @@ option:hover,
 
 .inner-modal-content {
     width: 600px !important;
+}
+.inner-modal-content-800 {
+    width: 800px !important;
 }
 
 .inner-modal-content-box {

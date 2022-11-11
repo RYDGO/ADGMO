@@ -1,9 +1,5 @@
 //============== JQuery ============
 $(document).ready(function () {
- 
-});
-
-$(document).ready(function () {
   // image select dropdown
   (function ($) {
     $.fn.mySelectDropdown = function (options) {

@@ -280,6 +280,7 @@
             </div>
         </div>
     </div>
+    
     <div class="modal fade background-dim show" id="Acceptmodal" aria-labelledby="exampleModalToggleLabel" tabindex="-1"
         aria-modal="true" role="dialog">
         <div class="modal-dialog modal-lg main-modal modal-dialog-position-right modal-dialog-scrollable">
@@ -757,6 +758,22 @@
                                                         Document must be .mp4, .mov, .mkv format.
                                                     </p>
                                                 </div>
+                                                <!-- <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded bg-white">
+                                                        <p class="mb-0 tb-fs-14 tb-font-regular">DAM-FB-Carousel.mp4</p>
+                                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                                        <div class="">
+                                                            <img src="../../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                            <img src="../../../../../assets/images/Icons/trash-red.svg" alt="">
+                                                        </div>
+                                                  </div> -->
+                                                <!-- <div class="border-gray-100 d-flex justify-content-between p-3 align-items-center mb-3 tb-rounded bg-white">
+                                                        <p class="mb-0 tb-fs-14 tb-font-regular">DAM-FB-Carousel.mp4</p>
+                                                        <p class="mb-0 tb-fs-12 text-gray-500">v1</p>
+                                                        <div class="">
+                                                            <img src="../../../../../assets/images/Icons/edit-pen.svg" alt="">
+                                                            <img src="../../../../../assets/images/Icons/trash-red.svg" alt="">
+                                                        </div>
+                                                  </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -839,6 +856,8 @@
                 </div>
                 <div class="view-all-model-btn-wrapper text-end p-3">
 
+                    <button class="btn btn-md tb-btn-secondary tb-rounded tb-font-regular" type="button"
+                        data-bs-target="#SendForApprovalModal" data-bs-toggle="modal">Send For Approval</button>
                     <button class="btn btn-md tb-btn-secondary tb-rounded tb-font-regular" type="button"
                         data-bs-target="#RequestInfoModal" data-bs-toggle="modal">Request Information</button>
                     <button class="btn btn-md tb-btn-secondary tb-rounded tb-font-regular" type="button"
@@ -927,6 +946,64 @@
         </div>
     </div>
 
+
+    <!-- normal popoup -->
+    <div class="modal fade show background-dim" id="SendForApprovalModal" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">
+                        Send For Approval
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body collapse-inner-bg">
+                    <div class="row g-0">
+                        <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                            <div>
+                                <label class="col-12 input-label fs-6" for="input2">Notes</label>
+                                <input type="text" placeholder="placeholder text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-md tb-btn-secondary tb-rounded">Back</button>
+                    <a class="btn btn-md tb-btn-primary tb-rounded" type="button" href="#">Complete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- normal popoup -->
+      <div class="modal fade show background-dim" id="assignModal" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">
+                      Send For Approval
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body collapse-inner-bg">
+                  <div class="row g-0">
+                      <div class="tb-input-group tb-inp align-items-center px-4 py-3 border-0">
+                          <div>
+                              <label class="col-12 input-label fs-6" for="input2">Notes</label>
+                              <input type="text" placeholder="placeholder text">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                  <button class="btn btn-md tb-btn-secondary tb-rounded">Back</button>
+                  <a class="btn btn-md tb-btn-primary tb-rounded" type="button" href="#">Complete</a>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

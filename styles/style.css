@@ -1216,6 +1216,12 @@ input:focus + .fa {
   padding: 5px !important;
 }
 
+.select2-container{
+width: 100% !important;
+z-index: 9999 !important;
+
+}
+
 /* image option dropdown */
 .f-dropdown {
   --max-scroll: 3;
@@ -1241,18 +1247,17 @@ input:focus + .fa {
   text-overflow: ellipsis;
   padding-right: 12px;
 }
+
+ 
 .f-dropdown ul li a img,
 .f-dropdown > span img {
   width: 36px;
   height: 36px;
   margin-right: 10px;
   border-radius: 50%;
-}
+  object-fit: none !important;
+  background-color: #ef3f431a !important;
 
-.person-select ul li a img,
-.person-select > span img {
- object-fit: none !important;
- background-color: ef3f431a !important;
 }
 
 .f-dropdown > span:before,

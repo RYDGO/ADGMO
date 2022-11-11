@@ -1248,6 +1248,13 @@ input:focus + .fa {
   margin-right: 10px;
   border-radius: 50%;
 }
+
+.person-select ul li a img,
+.person-select > span img {
+ object-fit: none !important;
+ background-color: ef3f431a !important;
+}
+
 .f-dropdown > span:before,
 .f-dropdown > span:after {
   content: "";

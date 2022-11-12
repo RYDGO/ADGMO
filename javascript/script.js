@@ -281,6 +281,13 @@ $.fn.extend({
   },
 });
 
+$("#search-btn").click(function () {
+  $("#search-bar").toggleClass("d-none");
+ 
+})
+$("#Edit-btn").click(function () {
+  $("#textarea-box").toggle();
+})
 //Initialization of treeviews
 
 $("#tree2").treed();

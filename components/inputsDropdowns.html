@@ -13,7 +13,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../styles/inputTags.css">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
@@ -50,16 +49,31 @@
           </div>
         </div>
 
-        <div class="col-md-5  mt-3">
-          <h4>File Upload</h4>
+        <h4>File Upload</h4>
+        <div class="col-md-12  mt-3">
           <div class="tb-input-group">
             <div class="d-flex justify-content-between p-3">
-             <label class="input-label d-flex align-items-center" for="fileupload">Upload*</label>
-             <div class="position-relative col d-flex justify-content-end">
-              <input type="file" name="fileupload" class="file-position w-75" id="fileupload" accept="pdf" multiple>
-             </div>
-            <label class="btn btn-md tb-btn-primary tb-rounded" for="fileupload">Browse</label>
-           </div>
+              <label class="input-label d-flex align-items-center" for="fileupload">Upload*</label>
+              <div class="position-relative col d-flex justify-content-end">
+                <input type="file" name="fileupload" class="file-position w-75" id="fileupload" accept="pdf" multiple>
+              </div>
+              <label class="btn btn-md tb-btn-primary tb-rounded" for="fileupload">Browse</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12  mt-3">
+          <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+              <div class="col">
+                <label class="input-label d-flex align-items-center" for="fileupload">Detailed budget
+                  plan</label>
+                <div class="position-relative col">
+                  <input type="file" name="fileupload" class="file-position w-75" id="fileupload" accept="pdf" multiple>
+                </div>
+              </div>
+              <label class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" for="fileupload">Upload</label>
+            </div>
           </div>
         </div>
 
@@ -439,10 +453,217 @@
         <!-------------- Input And Dropdowns Ends Here -------------->
       </div>
     </div>
+
+    <div class="row gy-3">
+    
+        <div class="col-12">
+            <h5 class="mb-4">Upload attachments for each of the following
+                categories
+            </h5>
+        </div>
+
+        <div class="col-md-12  mt-3">
+            <div class="tb-input-group">
+                <div class="d-flex justify-content-between p-3">
+                    <div class="col">
+                        <label class="input-label d-flex align-items-center"
+                            for="fileupload">Brief on the event’s
+                            history* </label>
+                        <div class="position-relative col">
+                            <input type="file" name="fileupload"
+                                class="file-position w-75" id="fileupload"
+                                accept="pdf" multiple>
+                        </div>
+                    </div>
+                    <label
+                        class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                        for="fileupload">Upload</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12  mt-3">
+            <div class="tb-input-group">
+                <div class="d-flex justify-content-between p-3">
+                    <div class="col">
+                        <label class="input-label d-flex align-items-center"
+                            for="fileupload">Event programme</label>
+                        <div class="position-relative col">
+                            <input type="file" name="fileupload"
+                                class="file-position w-75" id="fileupload"
+                                accept="pdf" multiple>
+                        </div>
+                    </div>
+                    <label
+                        class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                        for="fileupload">Upload</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12  mt-3">
+            <div class="tb-input-group">
+                <div class="d-flex justify-content-between p-3">
+                    <div class="col">
+                        <label class="input-label d-flex align-items-center"
+                            for="fileupload">Basic information on main
+                            partners and speakers*</label>
+                        <div class="position-relative col">
+                            <input type="file" name="fileupload"
+                                class="file-position w-75" id="fileupload"
+                                accept="pdf" multiple>
+                        </div>
+                    </div>
+                    <label
+                        class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                        for="fileupload">Upload</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12  mt-3">
+            <div class="tb-input-group">
+                <div class="d-flex justify-content-between p-3">
+                    <div class="col">
+                        <label class="input-label d-flex align-items-center"
+                            for="fileupload">Press releases related
+                            to the event*</label>
+                        <div class="position-relative col">
+                            <input type="file" name="fileupload"
+                                class="file-position w-75" id="fileupload"
+                                accept="pdf" multiple>
+                        </div>
+                    </div>
+                    <label
+                        class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                        for="fileupload">Upload</label>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="col-md-12  mt-3">
+        <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+                <div class="col">
+                    <label class="input-label d-flex align-items-center"
+                        for="fileupload">Event map-out (venue) and
+                        seating distribution (if available)*</label>
+                    <div class="position-relative col">
+                        <input type="file" name="fileupload"
+                            class="file-position w-75" id="fileupload"
+                            accept="pdf" multiple>
+                    </div>
+                </div>
+                <label
+                    class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                    for="fileupload">Upload</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12  mt-3">
+        <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+                <div class="col">
+                    <label class="input-label d-flex align-items-center"
+                        for="fileupload">Event route*</label>
+                    <div class="position-relative col">
+                        <input type="file" name="fileupload"
+                            class="file-position w-75" id="fileupload"
+                            accept="pdf" multiple>
+                    </div>
+                </div>
+                <label
+                    class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                    for="fileupload">Upload</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12  mt-3">
+        <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+                <div class="col">
+                    <label class="input-label d-flex align-items-center"
+                        for="fileupload">Marketing and media
+                        plan</label>
+                    <div class="position-relative col">
+                        <input type="file" name="fileupload"
+                            class="file-position w-75" id="fileupload"
+                            accept="pdf" multiple>
+                    </div>
+                </div>
+                <label
+                    class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                    for="fileupload">Upload</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12  mt-3">
+        <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+                <div class="col">
+                    <label class="input-label d-flex align-items-center"
+                        for="fileupload">Basic information on
+                        high-level invitees</label>
+                    <div class="position-relative col">
+                        <input type="file" name="fileupload"
+                            class="file-position w-75" id="fileupload"
+                            accept="pdf" multiple>
+                    </div>
+                </div>
+                <label
+                    class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                    for="fileupload">Upload</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12  mt-3">
+        <div class="tb-input-group">
+            <div class="d-flex justify-content-between p-3">
+                <div class="col">
+                    <label class="input-label d-flex align-items-center"
+                        for="fileupload">Detailed budget
+                        plan</label>
+                    <div class="position-relative col">
+                        <input type="file" name="fileupload"
+                            class="file-position w-75" id="fileupload"
+                            accept="pdf" multiple>
+                    </div>
+                </div>
+                <label
+                    class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                    for="fileupload">Upload</label>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-5">
+        <p>Disclaimer</p>
+        <p>·The organizing entity must submit the request no later than 3
+            months
+            prior to the event date, noting that the date of receiving the
+            request is after submitting all the listed requiremeets</p>
+        <p>·The application will be assessed in terms of the category,
+            reputation and size of the event locally and internationally, in
+            addition to its alignment to Abu Dhabi’s vision and strategic
+            goals
+        </p>
+        <p>·Applications containing any of the below will not be processed:
+        </p>
+        <p>Objectives that contradict the customs and traditions of Abu
+            Dhabi
+        </p>
+        <p>Financial aid requests</p>
+        <p>Events that are sponsored by any other party</p>
+    </div>
+    </div>
 </body>
 
 <!-- Javascript-files -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js

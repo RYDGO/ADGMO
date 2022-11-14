@@ -1585,7 +1585,19 @@ input::file-selector-button {
   background-color: transparent;
   z-index: 1;
 }
+.comment-modal {
+ width: 1100px !important;
+}
 
+#CommentsModal .modal-content {
+  position: absolute !important;
+  top:-10px ;
+  height: 100vh !important;
+  right: -10px !important;
+  width: 300px !important;
+  transition: var(--tran-05);
+  border-radius:12px !important;
+}
 /* dropshadow */
 
 .box-shadow-popup {

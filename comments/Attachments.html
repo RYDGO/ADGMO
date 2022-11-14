@@ -33,6 +33,9 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#attachmentModal">
       attachment bar opens the attachment
     </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CanvasModal">
+      Canvas Modal
+    </button>
     <div class="modal fade createDeliverablesModal background-dim" id="CommentsRequestModal" aria-modal="true"
       tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog">
       <div class="modal-dialog modal-fullscreen p-3 modal-dialog-scrollable">
@@ -2261,6 +2264,269 @@ tabindex="-1" aria-modal="true" role="dialog">
     </div>
 </div>
 </div>
+
+          <!--Canvas  Modal  Starts here-->
+          <div class="modal fade createDeliverablesModal background-dim" id="CanvasModal" aria-modal="true"
+          tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog">
+          <div class="modal-dialog modal-fullscreen p-3 modal-dialog-scrollable">
+              <div class="modal-content modal-dialog-scrollable tb-rounded" id="content-modal-toggle">
+                <div class="modal-header align-items-start px-4 py-4 align-items-center ">
+                  <div class="ms-2">
+                    <h5 class="modal-title tb-h3 text-black d-flex align-items-center" id="fullNewsRequest2Label">
+                      #112384739
+                    </h5>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center ">
+                    <div>
+                      <button class="btn tb-btn-gray  w-h-35 rounded-circle" 
+                      data-backdrop='static' data-keyboard='false'
+                      data-bs-toggle="modal"
+                        data-bs-target="#CommentsModal" id="canvas-modal-toggle" >
+                        <img src="../../assets/images/Icons/icon-comment.svg" alt="">
+                      </button>
+      
+                      <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2">
+                        <img src="../../assets/images/Icons/icon-time.svg" alt="">
+                      </button>
+      
+                      <button class="btn tb-btn-gray  w-h-35 rounded-circle">
+                        <img src="../../assets/images/Icons/icon-albums.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
+                        data-bs-dismiss="modal" aria-label="Close">
+                      </button>
+                    </div>
+                  </div>
+      
+      
+                </div>
+                  <div class="modal-body px-4 py-3 pt-0 h-100  bg-white">
+                     <div class="canvas-body">
+                      <img src="../assets/images/canvas-image.svg" alt="" srcset="" class="img-responsive">
+                     </div>
+                  </div>
+                  <div class="view-all-model-btn-wrapper text-end p-3">
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#SendForApprovalModal" data-bs-toggle="modal">Back</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#SendForApprovalModal" data-bs-toggle="modal">Edit</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#AssignApprovalModal-1" data-bs-toggle="modal">Download</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+          <!--comments  Modal  Starts here-->
+          <div class="modal fade createDeliverablesModal" id="CommentsModal" aria-modal="true"
+          tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog" data-bs-backdrop="static">
+          <div class="modal-dialog p-3 modal-dialog-scrollable modal-dialog-position-right ">
+              <div class="modal-content modal-dialog-scrollable tb-rounded-12">
+                <div class="modal-header align-items-start px-4 py-4 align-items-center ">
+                  <div class="ms-2">
+                    <h5 class="modal-title tb-fs-20  text-black d-flex align-items-center tb-font-semibold" id="fullNewsRequest2Label">
+                      Comments
+                    </h5>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center ">
+                      <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
+                        data-bs-dismiss="modal" aria-label="Close" id="close-Comments-modal">
+                      </button>
+                  </div>
+                </div>
+                  <div class="modal-body px-2 py-3 pt-0 h-100  bg-white">
+                    <div class="vh-100 overflow-scroll px-2">
+                      <div class="row">
+                        <div class="col-12 d-flex align-items-center mb-4">
+                          <div class="col-2">
+                            <button class="border-0 bg-transparent" id="search-btn">
+                              <img src="../assets/images/Icons/search.svg" alt="" class="me-2 img-responsive"></button>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn tb-btn-dark tb-rounded me-2" type="button">Show all</button>
+                          </div>
+                          <div class="col-3">
+                            <button class="btn tb-btn-gray-200 tb-rounded" type="button">Show New</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-bottom-gray-100 d-none" id="search-bar">
+                        <div class="search-container col-12 bg-white rounded p-2 ">
+                            <form class="d-flex justify-content-between align-items-center px-2">
+                              <div>
+                                <img src="../assets/images/Icons/search-icon.svg" alt="">
+                                <input class="bg-transparent ps-1 tb-fs-18" type="text" placeholder="Search here..." name="search" autocomplete="off">
+                              </div>
+                                <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg" alt="">
+                            </form>
+                        </div>
+                        <div class="pb-2 pt-3">
+                          <h5 class="tb-fs-16">Search results: for <span class="tb-font-regular tb-fs-16">ADGMO, </span>122 results</h5>
+                        </div>
+                    </div>
+                      <div class="col-md-12 my-2 mx-0">
+                        <div class=" p-2 border bg-white" id="textarea-box">
+      <textarea class="textarea" rows="3" placeholder="Type @ to mention someone " name="">                    </textarea>
+                          <div class="d-flex">
+                            <div class=" p-2">
+                              <img src="../assets/images/Icons/Attachment-icon.svg" alt="">
+                            </div>
+                            <div class=" ms-auto">
+                              <button class="btn btn-md tb-btn-gray rounded-0" type="button">Cancel</button>
+                              <button class="btn btn-md tb-btn-dark rounded-0" type="button">Send</button>
+                            </div>
+      
+                          </div>
+      
+                        </div>
+                        <div class="border-bottom-gray-100 ">
+                          <div class="d-flex mt-4 align-items-center">
+                            <div class="p-2 ps-0">
+                              <div class="col-2 position-relative">
+                                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                              </div>
+                            </div>
+                            <div class="p-2 tb-fs-14"> 
+                              <h6 class="mb-0 pt-3">Mark Anthony</h6>
+                              <p class=" tb-fs-12 tb-gray-400">10 min ago</p>
+                            </div>
+                            <div class="ms-auto position-relative">
+                            <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
+                            <div class="card grid-card-style-left" style="display:none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          </div>
+                          <div class=" mb-2">
+                            <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                      </div>
+                        <div>
+                          <div>
+                            <img src="../assets/images/Container.svg" alt="" width="100%">
+                          </div>
+                          <div class="border-bottom-gray-100 pt-3 pb-3 d-flex gap-3 flex-column">
+                            <div class="d-flex align-items-center">
+                                <div class="">
+                                  <img src="../assets/images/user-girl.svg" alt="" class="radius-image">
+                              </div>
+                              <h6 class="tb-fs-16 ps-2 mb-0"><span class="tb-primary tb-fs-16">@EstherHoward </span>I think we need to up date this section based on the feedback.</h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="">
+                                  <img src="../assets/images/user-boy.svg" alt="" class="radius-image">
+                              </div>
+                              <h6 class="tb-fs-16 ps-2 mb-0"><span class="tb-primary tb-fs-16">@RichardQuest </span>I think we need to up date this section based on the feedback.</h6>
+                            </div>
+                            </div>
+                            <div class="p-2 border bg-white mt-3">
+                              <textarea class="border-0 textarea" rows="2" id="" placeholder="Type here..." name="">                        </textarea>
+                              <div class="d-flex">
+                                <div class=" ms-auto">
+                                  <button class="btn btn-md tb-btn-gray rounded-0" type="button">Reply</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="border-bottom-gray-100 ">
+                            <div class="d-flex mt-4 align-items-center">
+                              <div class="p-2 ps-0">
+                                <div class="col-2 position-relative">
+                                  <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                                </div>
+                              </div>
+                              <div class="p-2 tb-fs-14"> 
+                                <h6 class="mb-0 pt-3">Mark Anthony</h6>
+                                <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
+                              </div>
+                              <div class="ms-auto position-relative">
+                              <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
+                              <div class="card grid-card-style-left" style="display:none;">
+                                <ul class="list-unstyled">
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            </div>
+                            <div class=" mb-2">
+                              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+                            </div>
+                        </div>
+                          <div class="border-bottom-gray-100 ">
+                            <div class="d-flex mt-4 align-items-center">
+                              <div class="p-2 ps-0">
+                                <div class="col-2 position-relative">
+                                  <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                                </div>
+                              </div>
+                              <div class="p-2 tb-fs-14"> 
+                                <h6 class="mb-0 pt-3">Mark Anthony</h6>
+                                <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
+                              </div>
+                              <div class="ms-auto position-relative">
+                              <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
+                              <div class="card grid-card-style-left" style="display:none;">
+                                <ul class="list-unstyled">
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
+                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            </div>
+                            <div class=" mb-2">
+                              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+                            </div>
+                        </div>
+                        <div class="border-bottom-gray-100 ">
+                          <div class="d-flex mt-4 align-items-center">
+                            <div class="p-2 ps-0">
+                              <div class="col-2 position-relative">
+                                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
+                              </div>
+                            </div>
+                            <div class="p-2 tb-fs-14"> 
+                              <h6 class="mb-0 pt-3">Mark Anthony</h6>
+                              <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
+                            </div>
+                            <div class="ms-auto position-relative">
+                            <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
+                            <div class="card grid-card-style-left" style="display:none;">
+                              <ul class="list-unstyled">
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
+                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          </div>
+                          <div class=" mb-2">
+                            <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
+                          </div>
+                      </div>
+      
+                        </div>
+                      </div>
+                  </div>
+                  <!-- <div class="view-all-model-btn-wrapper text-end p-3">
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#SendForApprovalModal" data-bs-toggle="modal">Back</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#SendForApprovalModal" data-bs-toggle="modal">Edit</button>
+                      <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
+                          data-bs-target="#AssignApprovalModal-1" data-bs-toggle="modal">Download</button>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>

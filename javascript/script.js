@@ -222,6 +222,12 @@ $("#toggleCancel").on("click", function () {
    $(this).addClass("d-none");
 });
 
+$("#canvas-modal-toggle").click(function(){
+  $("#content-modal-toggle").addClass("comment-modal");
+})
+$("#close-Comments-modal").click(function (){
+  $("#content-modal-toggle").removeClass("comment-modal");
+})
 
 $.fn.extend({
   treed: function (o) {
@@ -281,8 +287,13 @@ $.fn.extend({
   },
 });
 
+$("#search-btn").click(function () {
+  $("#search-bar").toggleClass("d-none");
+ 
+})
+$("#Edit-btn").click(function () {
+  $("#textarea-box").toggle();
+})
 //Initialization of treeviews
 
 $("#tree2").treed();
-
-

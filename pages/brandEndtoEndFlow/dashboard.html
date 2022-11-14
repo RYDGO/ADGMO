@@ -4488,28 +4488,30 @@
                 </div>
                 <div
                     class="modal-body p-4 collapse-inner-bg side-modal-wrap h-100 px-5 d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="tb-input-group p-2 mt-3">
+                   
+                       
                             <form action="">
-                                <label class="col-12 input-label" for="input">Priority<sup>*</sup></label>
-                                <input class="col-11 input" autocomplete="off" role="combobox" id="input"
-                                    name="browsers" placeholder="placeholder..">
-                                <i class="fa fa-solid fa-angle-down"></i>
-                                <datalist id="browsers" role="listbox">
-                                    <option value="Brookyln Simmons">Brookyln Simmons</option>
-                                    <option value="Jacob Jones">Jacob Jones</option>
-                                    <option value="Guy Hawkins">Guy Hawkins</option>
-                                </datalist>
-                            </form>
-                        </div>
+                                <div class="col-md-12 mt-3">
+
+                                    <div class="tb-input-group">
+                                      <label class="col-12 input-label p-2" for="priority">Priority</label>
+                                      <select class="js-example-basic-multiple col-12 fav_clr" aria-label="Default select example" id="priority">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                           
+                       
                         <div class="col-md-12">
                             <div class="tb-input-group p-2 mt-3">
                                 <label class="col-12 input-label" for="date">Due Date<sup>*</sup></label>
                                 <input type="date" class="col-12 input-field" id="date">
                             </div>
                         </div>
-
-                    </div>
+                    </form>
+                  
                     <div class="col-12 mt-3">
                         <div class="border-0 info-outer tb-input-group">
                             <div class="d-flex">

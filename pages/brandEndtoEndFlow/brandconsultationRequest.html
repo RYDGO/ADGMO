@@ -9,6 +9,8 @@
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     " />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../../../../styles/dashboard.css" />
     <link rel="stylesheet" href="../../../../styles/style.css" />
     <link rel="stylesheet" href="../../../../styles/createRequestForms.css" />
@@ -30,7 +32,8 @@
                     <div class="col-3 navbar-brand" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../assets/images/user.png" alt="user profile" class="img-responsive" />
+                                <img src="../../../../assets/images/user.png" alt="user profile"
+                                    class="img-responsive" />
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline">
@@ -376,154 +379,227 @@
                                 <h2 class="accordion-header" id="heading-english-1">
                                     <button type="button" class="shadow-none accordion-button collapsed"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-english-1">
-                                        Title
+
                                     </button>
                                 </h2>
                                 <div id="collapse-english-1" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <form id="brandconsultation">
-                                            <div class="row">
-                                                <div class="col-md-12 my-3">
+                                            <div class="row gy-4">
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="requestSubject">Request Subject</label>
-                                                        <input class="col-11 input" autocomplete="off" role="combobox"
-                                                            id="requestSubject" name="announcement-type"
-                                                            placeholder="placeholder.." />
-                                                        <i class="fa fa-solid fa-angle-down"></i>
-                                                        <datalist>
-                                                            <option value="Master brand">Master brand</option>
-                                                            <option value="Abu Dhabi Name">Abu Dhabi Name</option>
-                                                            <option value="Others">Others</option>
-                                                        </datalist>
+                                                        <label class="col-12 input-label " for="request-title">Request
+                                                            Title</label>
+                                                        <input class="col-12 input-field" id="request-title"
+                                                            name="request-title" placeholder="Placeholder text" />
                                                     </div>
-                                                    <!-- <p class="error-message">• Error Message</p> -->
+                                                    <p class="error-message">• Error Message</p>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2" for="select1">Request
+                                                            Subject</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="select1">
+                                                            <option value="1">Master brand</option>
+                                                            <option value="2">Abu Dhabi Name</option>
+                                                            <option value="3">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label"
                                                             for="description">Description</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="description"
-                                                            name="description"
+                                                            role="combobox" id="description" name="description"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="eventContext">Event context and
+                                                        <label class="col-12 input-label" for="eventContext">Event
+                                                            context and
                                                             profile</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="eventContext"
-                                                            name="eventContext"
+                                                            role="combobox" id="eventContext" name="eventContext"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label"
                                                             for="stakeholders">Stakeholders</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="stakeholders"
-                                                            name="stakeholders"
+                                                            role="combobox" id="stakeholders" name="stakeholders"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="sectorLead">Government sector lead</label>
+                                                        <label class="col-12 input-label" for="sectorLead">Government
+                                                            sector lead</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="sectorLead"
-                                                            name="sectorLead"
+                                                            role="combobox" id="sectorLead" name="sectorLead"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="highLevel">High level participation</label>
+                                                        <label class="col-12 input-label" for="highLevel">High level
+                                                            participation</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="highLevel"
-                                                            name="highLevel"
+                                                            role="combobox" id="highLevel" name="highLevel"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="attendees">Number of attendees</label>
+                                                        <label class="col-12 input-label" for="attendees">Number of
+                                                            attendees</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="attendees"
-                                                            name="attendees"
+                                                            role="combobox" id="attendees" name="attendees"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
-                                                    <div class="tb-input-group d-flex p-3">
-                                                        <div class="col-10 border-danger">
-                                                            <label class="col-12 input-label" for="prl-en">Promotional
-                                                                material
-                                                                (sample)</label>
-                                                            <input class="col-12 input bg-white" type="text" id="promotionalMaterial"
-                                                                placeholder="Upload Attachments" disabled>
-                                                        </div>
-                                                        <div
-                                                            class="fileUpload col-2 text-center btn-md tb-btn-primary tb-rounded">
-                                                            <span class="tb-fs-18">Upload</span>
-                                                            <input id="upload-promotional-en" type="file" class="upload">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 my-3">
-                                                    <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label" for="origin">Local
-                                                            or International</label>
-                                                        <input class="col-11 input" autocomplete="off" role="combobox"
-                                                            id="origin" name="announcement-type"
-                                                            placeholder="placeholder.." />
-                                                        <i class="fa fa-solid fa-angle-down"></i>
-                                                        <datalist>
-                                                            <option value="Local">Local</option>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2"
+                                                            for="international2">Usage</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="international2">
+                                                            <option value="local">Local</option>
                                                             <option value="International">International</option>
-                                                        </datalist>
+                                                        </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 my-3">
-                                                    <div class="tb-input-group d-flex p-3">
-                                                        <div class="col-10 border-danger">
-                                                            <label class="col-12 input-label" for="rendersImagery">Renders /
-                                                                Imagery</label>
-                                                            <input class="col-12 input bg-white" type="text" id="rendersImagery"
-                                                                placeholder="Upload Attachments" disabled>
-                                                        </div>
-                                                        <div
-                                                            class="fileUpload col-2 text-center btn-md tb-btn-primary tb-rounded">
-                                                            <span class="tb-fs-18">Upload</span>
-                                                            <input id="upload-rendersImagery-en" type="file" class="upload">
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload2">Promotional material (sample)
+                                                                </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload2"
+                                                                        class="file-position w-75" id="fileupload2"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload2">Upload</label>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-12 mt-3">
-                                                    <h5 class="tb-h4">Desired Launch date</h5>
                                                 </div>
 
-                                                <div class="col-md-12 mb-3">
-                                                    <div class="tb-input-group p-2 mt-3">
-                                                        <label class="col-12 input-label" for="launchDate">Select Date</label>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2" for="international">Local
+                                                            or International</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="international">
+                                                            <option value="1">Local</option>
+                                                            <option value="2">International</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload3">Renders and Imagery
+                                                                </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload3"
+                                                                        class="file-position w-75" id="fileupload3"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload3">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="Brief">Brief</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="Brief" name="text"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="text">Specific master
+                                                            band</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="text" name="text"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="usage">Usage</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="usage" name="text"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="implement">Implementation
+                                                            Type</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="implement" name="text"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload4">Renders and Imagery
+                                                                </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload4"
+                                                                        class="file-position w-75" id="fileupload4"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload4">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <h5 class="tb-h4 m-0">Desired Launch date</h5>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="launchDate">Select
+                                                            Date</label>
                                                         <input type="date" class="col-12 input-field" id="launchDate"
                                                             placeholder="placeholder text">
                                                     </div>
                                                     <p class="error-message">• Error message</p>
                                                 </div>
-                                                <div class="col-md-12 my-3">
+                                                <div class="col-md-12">
                                                     <div class="tb-input-group p-2">
-                                                        <label class="col-12 input-label"
-                                                            for="text">Text</label>
+                                                        <label class="col-12 input-label" for="text">Text</label>
                                                         <input class="col-11 input-field" autocomplete="off"
-                                                            role="combobox" id="text"
-                                                            name="text"
+                                                            role="combobox" id="text" name="text"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
@@ -531,6 +607,18 @@
                                         </form>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                    Cancel
+                                </button>
+
+                                <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#normalModal">
+                                    Send Request
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1648,17 +1736,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
-                    <div class="col-md-6">
-                        <button class="btn btn-md me-2 tb-btn-gray tb-rounded tb-h5" type="button">
-                            Cancel
-                        </button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#normalModal">
-                            Send Request
-                        </button>
-                    </div>
-                </div>
+
             </div>
             <!-- MODALS STARTED HERE -->
             <div class="modal fade background-dim" id="uploadModal5" tabindex="-1" aria-labelledby="uploadModalLabel"
@@ -1731,24 +1809,8 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
-                                             aria-label="Close"></button>
-                                        </div>
-                                        <h6 class="h6 mb-3">
-                                            Abu Dhabi Center
-                                        </h6>
-                                        <h6 class="h6 my-3">
-                                            tranthuy.nute@gmail.com
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="row col-12  border-bottom-lighgray ">
-                                    <div class="col-md-12 my-0 ps-4">
-                                        <div class="d-flex justify-content-between">
-                                            <h6 class="h6 my-3">
-                                                Tranthuy Nute
-                                            </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1765,7 +1827,8 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1782,7 +1845,26 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1822,7 +1904,8 @@
                                 <div class="border-0 py-3 info-outer">
                                     <div class="d-flex">
                                         <div>
-                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg" alt="">
+                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg"
+                                                alt="">
                                         </div>
                                         <p class="px-3 mt-2 m-0">
                                             You are about Send this request, sending this request will submit it to the
@@ -1840,14 +1923,17 @@
             </div>
         </section>
         <!--create request ends here ------>
-
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="../../../../javascript/script.js"></script>
     <script src="../../../../javascript/tableDropdown.js"></script>
+    <script src="../../../../javascript/inputs&dropdowns.js"></script>
+
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

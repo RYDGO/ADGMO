@@ -30,7 +30,8 @@
                     <div class="col-3 navbar-brand" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../assets/images/user.png" alt="user profile" class="img-responsive" />
+                                <img src="../../../../assets/images/user.png" alt="user profile"
+                                    class="img-responsive" />
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline">
@@ -376,95 +377,104 @@
                                 <h2 class="accordion-header" id="heading-english-1">
                                     <button type="button" class="shadow-none accordion-button collapsed"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-english-1">
-                                        Title
+
                                     </button>
                                 </h2>
                                 <div id="collapse-english-1" class="accordion-collapse collapse show">
                                     <div class="collapse-inner-bg p-5">
                                         <form id="brandconsultation">
                                             <div class="row">
-                                                    <div class="col-12">
-                                                        <p class="tb-h4">Request Subject</p>
-                                                        <p class="tb-h4">To identify the required brand asset which may include items under any master brand, leadership portraits, photo library etc...</p>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="announcement-category-request">Request Title</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="announcement-category-request"
+                                                            name="announcement-category-request"
+                                                            placeholder="placeholder text" />
                                                     </div>
-                                                    <div class="col-md-12 my-3">
-                                                        <div class="tb-input-group p-2">
-                                                            <label class="col-12 input-label"
-                                                                for="announcement-category">Description</label>
-                                                            <input class="col-11 input-field" autocomplete="off"
-                                                                role="combobox" id="announcement-category"
-                                                                name="announcement-category"
-                                                                placeholder="placeholder text" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 my-3">
-                                                        <div class="tb-input-group d-flex p-3">
-                                                            <div class="col-10 border-danger">
-                                                                <label class="col-12 input-label" for="prl-en">Attach files</label>
-                                                                <input class="col-12 input bg-white" type="text" id="prl-en"
-                                                                    placeholder="Upload Attachments" disabled>
-                                                            </div>
-                                                            <div
-                                                                class="fileUpload col-2 text-center btn-md tb-btn-primary tb-rounded">
-                                                                <span class="tb-fs-18">Upload</span>
-                                                                <input id="upload-prl-en" type="file" class="upload">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <p class="tb-h4">Context</p>
-                                                        <p class="tb-h4">To provide a summary of the request and its proposed implementation</p>
-                                                    </div>
-                                                    <div class="col-md-12 mb-3">
-                                                        <div class="tb-input-group p-2 mt-3">
-                                                            <label class="col-12 input-label" for="date">Select Date</label>
-                                                            <input type="date" class="col-12 input-field" id="date"
-                                                                placeholder="placeholder text">
-                                                        </div>
-                                                        <p class="error-message">• Error message</p>
-                                                    </div>
-                                                    <div class="col-md-12 my-3">
-                                                        <div class="tb-input-group p-2">
-                                                            <label class="col-12 input-label"
-                                                                for="announcement-category">Text</label>
-                                                            <input class="col-11 input-field" autocomplete="off"
-                                                                role="combobox" id="announcement-category"
-                                                                name="announcement-category"
-                                                                placeholder="placeholder text" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 my-3">
-                                                        <div class="tb-input-group p-2">
-                                                            <label class="col-12 input-label"
-                                                            for="announcement-type">Priority Level</label>
-                                                            <input class="col-11 input" autocomplete="off" role="combobox"
-                                                            id="announcement-type" name="announcement-type"
-                                                            placeholder="Select" />
-                                                            <i class="fa fa-solid fa-angle-down"></i>
-                                                            <datalist>
-                                                                <option value="Low">Low</option>
-                                                                <option value="Medium">Medium</option>
-                                                                <option value="High">High</option>
-                                                            </datalist>
-                                                        </div>
-                                                        <!-- <p class="error-message">• Error Message</p> -->
-                                                    </div>
-                                                
-                                                
+                                                </div>
+                                                <div class="col-12">
+                                                    <p class="tb-h4">Request Subject</p>
+                                                    <p class="tb-h4">To identify the required brand asset which may
+                                                        include items under any master brand, leadership portraits,
+                                                        photo library etc...</p>
+                                                </div>
                                                 <div class="col-md-12 my-3">
                                                     <div class="tb-input-group p-2">
                                                         <label class="col-12 input-label"
-                                                            for="announcement-category">Justification</label>
+                                                            for="announcement-category">Description</label>
                                                         <input class="col-11 input-field" autocomplete="off"
                                                             role="combobox" id="announcement-category"
                                                             name="announcement-category"
                                                             placeholder="placeholder text" />
                                                     </div>
                                                 </div>
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Attach files
+                                                                </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12 my-3">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="announcement-category2">Context</label>
+                                                        <input class="col-11 input-field" autocomplete="off"
+                                                            role="combobox" id="announcement-category2"
+                                                            name="announcement-category2"
+                                                            placeholder="placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload2">Attach files
+                                                                </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload2"
+                                                                        class="file-position w-75" id="fileupload2"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload2">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                    Cancel
+                                </button>
+
+                                <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#normalModal">
+                                    Send Request
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1582,17 +1592,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row position-fixed bottom-0 justify-content-center bg-white py-4">
-                    <div class="col-md-6">
-                        <button class="btn btn-md me-2 tb-btn-gray tb-rounded tb-h5" type="button">
-                            Cancel
-                        </button>
-                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button" data-bs-toggle="modal"
-                            data-bs-target="#normalModal">
-                            Send Request
-                        </button>
-                    </div>
-                </div>
+
             </div>
             <!-- MODALS STARTED HERE -->
             <div class="modal fade background-dim" id="uploadModal5" tabindex="-1" aria-labelledby="uploadModalLabel"
@@ -1665,24 +1665,8 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
-                                             aria-label="Close"></button>
-                                        </div>
-                                        <h6 class="h6 mb-3">
-                                            Abu Dhabi Center
-                                        </h6>
-                                        <h6 class="h6 my-3">
-                                            tranthuy.nute@gmail.com
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="row col-12  border-bottom-lighgray ">
-                                    <div class="col-md-12 my-0 ps-4">
-                                        <div class="d-flex justify-content-between">
-                                            <h6 class="h6 my-3">
-                                                Tranthuy Nute
-                                            </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1699,7 +1683,8 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1716,7 +1701,26 @@
                                             <h6 class="h6 my-3">
                                                 Tranthuy Nute
                                             </h6>
-                                            <button type="button" class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100" 
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <h6 class="h6 mb-3">
+                                            Abu Dhabi Center
+                                        </h6>
+                                        <h6 class="h6 my-3">
+                                            tranthuy.nute@gmail.com
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row col-12  border-bottom-lighgray ">
+                                    <div class="col-md-12 my-0 ps-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="h6 my-3">
+                                                Tranthuy Nute
+                                            </h6>
+                                            <button type="button"
+                                                class="btn-close close-dark my-3 p-2 tb-fs-10 rounded-circle gray-100"
                                                 aria-label="Close"></button>
                                         </div>
                                         <h6 class="h6 mb-3">
@@ -1757,7 +1761,8 @@
                                 <div class=" py-3 info-outer">
                                     <div class="d-flex">
                                         <div>
-                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg" alt="">
+                                            <img class="info-icon" src="../../../../assets/images/info-icon1.svg"
+                                                alt="">
                                         </div>
                                         <p class="px-3 mt-2 m-0">
                                             You are about Send this request, sending this request will submit it to the

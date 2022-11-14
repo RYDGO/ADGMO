@@ -1216,10 +1216,9 @@ input:focus + .fa {
   padding: 5px !important;
 }
 
-.select2-container{
-width: 100% !important;
-z-index: 9999 !important;
-
+.modal, .select2-container{
+  width: 100% !important;
+  z-index: 999999!important;
 }
 
 /* image option dropdown */

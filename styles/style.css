@@ -1230,6 +1230,19 @@ input:focus + .fa {
   padding: 5px !important;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 0 6px !important;
+    height: 0;
+    left: 50%;
+    margin-left: -10px !important;
+    margin-top: -4px !important;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
 .modal, .select2-container{
   width: 100% !important;
   z-index: 999999!important;

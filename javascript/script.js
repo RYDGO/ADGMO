@@ -221,13 +221,26 @@ $("#toggleCancel").on("click", function () {
    }
    $(this).addClass("d-none");
 });
-
-$("#canvas-modal-toggle").click(function(){
+        // comments modal
+$(".canvas-modal-toggle").click(function(){
   $("#content-modal-toggle").addClass("comment-modal");
 })
 $("#close-Comments-modal").click(function (){
   $("#content-modal-toggle").removeClass("comment-modal");
 })
+          // version history
+$("#versionHistory-modal-toggle").click(function(){
+  $("#content-modal-toggle").addClass("comment-modal");
+})
+$("#close-Comments-modal").click(function (){
+  $("#content-modal-toggle").removeClass("comment-modal");
+})
+// $(".canvas-modal-toggle").click(function(){
+//   $("#content-modal-toggle").addClass("comment-modal");
+// })
+// $("#close-Comments-modal").click(function (){
+//   $("#content-modal-toggle").removeClass("comment-modal");
+// })
 
 $.fn.extend({
   treed: function (o) {

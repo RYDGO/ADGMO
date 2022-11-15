@@ -901,6 +901,10 @@ a:hover {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+.tb-rounded-top-lr-12 {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
 
 .tb-rounded-pill {
   border-radius: 64px;
@@ -1602,6 +1606,15 @@ input::file-selector-button {
 }
 
 #CommentsModal .modal-content {
+  position: absolute !important;
+  top:-10px ;
+  height: 100vh !important;
+  right: -10px !important;
+  width: 350px !important;
+  transition: var(--tran-05);
+  border-radius:12px !important;
+}
+#version-history-modal .modal-content {
   position: absolute !important;
   top:-10px ;
   height: 100vh !important;
@@ -2598,6 +2611,33 @@ table.dataTable thead > tr > td.sorting_desc_disabled:after {
   position: absolute;
   left: 75%;
 }
+#img-overflow1-1 {
+  position: absolute;
+  top:-20%;
+  left:0;
+  z-index: 9;
+}
+
+#img-overflow2-2 {
+  position: absolute;
+   top:-20%;
+  left:4%;
+  z-index: 99;
+}
+
+#img-overflow3-3 {
+  position: absolute;
+   top:-20%;
+  left:8%;
+  z-index: 999;
+}
+
+#img-overflow4-4 {
+  position: absolute;
+  left:12%;
+   top:-20%;
+  z-index: 9999;
+}
 
 /*  search styles ends */
 
@@ -2918,7 +2958,9 @@ input:checked + .slider:before {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
-
+.accordian-disabled-op{
+  opacity: 0.5 !important;
+}
 /* tables pagination */
 
 .pagination {

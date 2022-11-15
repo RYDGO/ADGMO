@@ -2287,7 +2287,7 @@ tabindex="-1" aria-modal="true" role="dialog">
       
                       <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2" data-backdrop='static' data-keyboard='false'
                       data-bs-toggle="modal"
-                        data-bs-target="#versionHistoryModal" id="versionHistory-modal-toggle">
+                        data-bs-target="#version-history-modal" id="version-history">
                         <img src="../../assets/images/Icons/icon-time.svg" alt="">
                       </button>
       
@@ -2313,7 +2313,7 @@ tabindex="-1" aria-modal="true" role="dialog">
                     <div class="viewTime flex-center-justify gap-2">
                       <h6 class="mb-0 tb-fs-16">Viewing :<span>20/10/22</span> <span>10:00AM</span></h6>
                       <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
-                      data-bs-target="#" data-bs-toggle="modal">Restore</button>
+                      data-bs-target="#restoreModal" data-bs-toggle="modal">Restore</button>
                     </div>
                     <div class="">
                       <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
@@ -2537,205 +2537,180 @@ tabindex="-1" aria-modal="true" role="dialog">
               </div>
           </div>
       </div>
-      
           <!--comments  Modal  Starts here-->
-          <div class="modal fade createDeliverablesModal" id="versionHistoryModal" aria-modal="true"
+          <div class="modal fade createDeliverablesModal" id="version-history-modal" aria-modal="true"
           tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog" data-bs-backdrop="static">
           <div class="modal-dialog p-3 modal-dialog-scrollable modal-dialog-position-right ">
               <div class="modal-content modal-dialog-scrollable tb-rounded-12 " id="modal-height">
                 <div class="modal-header align-items-start px-4 py-4 align-items-center ">
                   <div class="ms-2">
                     <h5 class="modal-title tb-fs-20  text-black d-flex align-items-center tb-font-semibold" id="fullNewsRequest2Label">
-                      Comments
+                      Version history
                     </h5>
                   </div>
                   <div class="d-flex justify-content-between align-items-center ">
                       <button type="button" class="btn-close close-dark d-flex align-items-center ms-3 "
-                        data-bs-dismiss="modal" aria-label="Close" id="close-Comments-modal">
+                        data-bs-dismiss="modal" aria-label="Close" id="close-version-modal">
                       </button>
                   </div>
                 </div>
                   <div class="modal-body px-2 py-3 pt-0 h-100  bg-white">
                     <div class="vh-100 overflow-scroll px-2">
-                      <div class="row">
-                        <div class="col-12 d-flex align-items-center mb-1">
-                          <div class="col-2">
-                            <button class="border-0 bg-transparent me-2" id="search-btn ">
-                              <img src="../assets/images/Icons/search.svg" alt="" class="me-2 img-responsive p-1"></button>
-                          </div>
-                          <div class="col-3 me-2">
-                            <button class="btn  tb-btn-dark tb-rounded " type="button">Show all</button>
-                          </div>
-                          <div class="col-4">
-                            <button class="btn tb-btn-gray-200 tb-rounded " type="button">Show New</button>
-                          </div>
+                        <div class="accordion d-flex gap-3 flex-column tb-rounded-10" id="accordion-dual">
+                            <div class="">
+                                <h2 class="accordion-header collapse-inner-bg tb-rounded-10" id="heading-duel-1">
+                                    <button type="button" class="shadow-none accordion-button collapse-inner-bg tb-rounded-top-lr-12 tb-fs-20" data-bs-toggle="collapse" data-bs-target="#collapse-duel-1" aria-expanded="true">Current Version</button>
+                                </h2>
+                                <div id="collapse-duel-1" class="accordion-collapse collapse-inner-bg tb-rounded-10 collapse show" >
+                                    <div class="collapse-inner-bg py-2 px-3 tb-rounded-bottom-lr-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                               <h6 class="mb-0">20/07/22 10:00 AM</h6>
+                                            </div>
+                                            <div class="col-md-12 my-2 mt-4">
+                                                <h6 class="mb-0">Edited Title >
+                                                  Annotation added</h6>
+                                            </div>
+                                            
+                                            <div class="col-md-12 my-2 mt-4">
+                                              <div class="d-flex justify-content-between align-items-center position-relative">
+                                              <div class="align-items-center">
+                                                <img id="img-overflow1-1" src="../assets/images/Ellipse 1.svg" alt="">
+                                                <img id="img-overflow2-2" src="../assets/images/Ellipse 2.svg" alt="">
+                                                <img id="img-overflow3-3" src="../assets/images/Ellipse 3.svg" alt="">
+                                                <img id="img-overflow4-4" src="../assets/images/Ellipse 4.svg" alt="">
+                                              </div>
+                                              <h5 class="m-0 tb-fs-14">Contributors</h5>
+                                              <a href="#" ><img src="../assets/images/Icons/edit-pen-border.svg" alt="" class="w-h-25"></a>
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
                         </div>
-                      </div>
-                      <div class="border-bottom-gray-100 d-none" id="search-bar">
-                        <div class="search-container col-12 bg-white rounded p-2 ">
-                            <form class="d-flex justify-content-between align-items-center px-2">
-                              <div>
-                                <img src="../assets/images/Icons/search-icon.svg" alt="">
-                                <input class="bg-transparent ps-1 tb-fs-18" type="text" placeholder="Search here..." name="search" autocomplete="off">
-                              </div>
-                                <img class="ms-3 ps-1" src="../assets/images/Icons/Vector.svg" alt="">
-                            </form>
+                        <div class="py-4">
+                          <button class="btn btn-md tb-btn-gray-200 tb-rounded-10 tb-fs-18 tb-font-regular" type="button">Compare</button>
                         </div>
-                        <div class="pb-2 pt-3">
-                          <h5 class="tb-fs-16">Search results: for <span class="tb-font-regular tb-fs-16">ADGMO, </span>122 results</h5>
-                        </div>
-                    </div>
-                      <div class="col-md-12 my-2 mx-0">
-                        <div class=" p-2 pb-0  border bg-white" id="textarea-box">
-      <textarea class="textarea" rows="3" placeholder="Type @ to mention someone " name="">                    </textarea>
-                          <div class="d-flex align-items-center">
-                            <div class=" p-3 pe-0">
-                              <button class="rounded-circle border-0">
-                              <img src="../assets/images/Icons/Attachment-icon.svg" alt="">
-                            </button>
-                            </div>
-                            <div class=" ms-auto">
-                              <button class="btn btn-md tb-btn-gray rounded-0 me-1" type="button">Cancel</button>
-                              <button class="btn btn-md tb-btn-dark rounded-0" type="button">Send</button>
-                            </div>
-      
-                          </div>
-      
-                        </div>
-                        <div class="border-bottom-gray-100 ">
-                          <div class="d-flex mt-4 align-items-center">
-                            <div class="p-2 ps-0">
-                              <div class="col-2 position-relative">
-                                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-                              </div>
-                            </div>
-                            <div class="p-2 tb-fs-14"> 
-                              <h6 class="mb-0 pt-3">Mark Anthony</h6>
-                              <p class=" tb-fs-12 tb-gray-400">10 min ago</p>
-                            </div>
-                            <div class="ms-auto position-relative">
-                            <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
-                            <div class="card grid-card-style-left" style="display:none;">
-                              <ul class="list-unstyled">
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          </div>
-                          <div class=" mb-2">
-                            <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                          </div>
-                      </div>
-                        <div>
+                        <div class="accordion d-flex gap-3 flex-column tb-rounded-10" id="accordion-dual-10">
                           <div class="">
-                            <img src="../assets/images/Container.svg" alt="" width="100%" class="img-responsive">
+                              <h2 class="accordion-header collapse-inner-bg tb-rounded-10" id="heading-duel-1" id="accordion-dual-9">
+                                  <button type="button" class="shadow-none accordion-button  tb-rounded-10 tb-fs-16" data-bs-toggle="collapse" data-bs-target="#collapse-duel-2" aria-expanded="true" aria-expanded="false" aria-controls="collapseTwo" disabled>45 autosaved versions</button>
+                              </h2>
+                              <div id="collapse-duel-2" class="accordion-collapse  tb-rounded-10 collapse show accordian-disabled-op">
+                                  <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
+                                      <div class="row mt-4">
+                                          <div class="col-md-12">
+                                             <h6 class="mb-0">20/07/22 10:00 AM</h6>
+                                          </div>
+                                          <div class="col-md-12 my-2 mt-4">
+                                              <h6 class="mb-0">Edited Title >
+                                                Annotation added</h6>
+                                          </div>
+                                          
+                                          <div class="col-md-12 my-2 mt-4">
+                                            <div class="d-flex justify-content-between align-items-center position-relative">
+                                            <div class="">
+                                              <img id="img-overflow1-1" src="../assets/images/Ellipse 1.svg" alt="">
+                                              <img id="img-overflow2-2" src="../assets/images/Ellipse 2.svg" alt="">
+                                              <img id="img-overflow3-3" src="../assets/images/Ellipse 3.svg" alt="">
+                                              <img id="img-overflow4-4" src="../assets/images/Ellipse 4.svg" alt="">
+                                            </div>
+                                            <h5 class="m-0 tb-fs-14">Contributors</h5>
+                                            <a href="#" ><img src="../assets/images/Icons/edit-pen-border.svg" alt="" class="w-h-25"></a>
+                                          </div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+  
+                                  <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
+                                      <div class="row mt-4">
+                                          <div class="col-md-12">
+                                             <h6 class="mb-0">20/07/22 10:00 AM</h6>
+                                          </div>
+                                          <div class="col-md-12 my-2 mt-4">
+                                              <h6 class="mb-0">Edited Title >
+                                                Annotation added</h6>
+                                          </div>
+                                          
+                                          <div class="col-md-12 my-2 mt-4">
+                                            <div class="d-flex justify-content-between align-items-center position-relative">
+                                            <div class="">
+                                              <img id="img-overflow1-1" src="../assets/images/Ellipse 1.svg" alt="">
+                                              <img id="img-overflow2-2" src="../assets/images/Ellipse 2.svg" alt="">
+                                              <img id="img-overflow3-3" src="../assets/images/Ellipse 3.svg" alt="">
+                                              <img id="img-overflow4-4" src="../assets/images/Ellipse 4.svg" alt="">
+                                            </div>
+                                            <h5 class="m-0 tb-fs-14">Contributors</h5>
+                                            <a href="#" ><img src="../assets/images/Icons/edit-pen-border.svg" alt="" class="w-h-25"></a>
+                                          </div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+  
+                                  <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
+                                      <div class="row mt-4">
+                                          <div class="col-md-12">
+                                             <h6 class="mb-0">20/07/22 10:00 AM</h6>
+                                          </div>
+                                          <div class="col-md-12 my-2 mt-4">
+                                              <h6 class="mb-0">Edited Title >
+                                                Annotation added</h6>
+                                          </div>
+                                          
+                                          <div class="col-md-12 my-2 mt-4">
+                                            <div class="d-flex justify-content-between align-items-center position-relative">
+                                            <div class="">
+                                              <img id="img-overflow1-1" src="../assets/images/Ellipse 1.svg" alt="">
+                                              <img id="img-overflow2-2" src="../assets/images/Ellipse 2.svg" alt="">
+                                              <img id="img-overflow3-3" src="../assets/images/Ellipse 3.svg" alt="">
+                                              <img id="img-overflow4-4" src="../assets/images/Ellipse 4.svg" alt="">
+                                            </div>
+                                            <h5 class="m-0 tb-fs-14">Contributors</h5>
+                                            <a href="#" ><img src="../assets/images/Icons/edit-pen-border.svg" alt="" class="w-h-25"></a>
+                                          </div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+  
+                                  <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
+                                      <div class="row mt-4">
+                                          <div class="col-md-12">
+                                             <h6 class="mb-0">20/07/22 10:00 AM</h6>
+                                          </div>
+                                          <div class="col-md-12 my-2 mt-4">
+                                              <h6 class="mb-0">Edited Title >
+                                                Annotation added</h6>
+                                          </div>
+                                          
+                                          <div class="col-md-12 my-2 mt-4">
+                                            <div class="d-flex justify-content-between align-items-center position-relative">
+                                            <div class="">
+                                              <img id="img-overflow1-1" src="../assets/images/Ellipse 1.svg" alt="">
+                                              <img id="img-overflow2-2" src="../assets/images/Ellipse 2.svg" alt="">
+                                              <img id="img-overflow3-3" src="../assets/images/Ellipse 3.svg" alt="">
+                                              <img id="img-overflow4-4" src="../assets/images/Ellipse 4.svg" alt="">
+                                            </div>
+                                            <h5 class="m-0 tb-fs-14">Contributors</h5>
+                                            <a href="#" ><img src="../assets/images/Icons/edit-pen-border.svg" alt="" class="w-h-25"></a>
+                                          </div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+  
+                              </div>
                           </div>
-                          <!-- <div class="border-bottom-gray-100 pt-3 pb-3 d-flex gap-3 flex-column">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                  <img src="../assets/images/user-girl.svg" alt="" class="radius-image">
-                              </div>
-                              <h6 class="tb-fs-16 ps-2 mb-0"><span class="tb-primary tb-fs-16">@EstherHoward </span>I think we need to up date this section based on the feedback.</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                  <img src="../assets/images/user-boy.svg" alt="" class="radius-image">
-                              </div>
-                              <h6 class="tb-fs-16 ps-2 mb-0"><span class="tb-primary tb-fs-16">@RichardQuest </span>I think we need to up date this section based on the feedback.</h6>
-                            </div>
-                            </div>
-                            <div class="p-2 border bg-white mt-3">
-                              <textarea class="border-0 textarea" rows="2" id="" placeholder="Type here..." name="">                        </textarea>
-                              <div class="d-flex">
-                                <div class=" ms-auto">
-                                  <button class="btn btn-md tb-btn-gray rounded-0" type="button">Reply</button>
-                                </div>
-                              </div>
-                            </div> -->
-                          </div>
-                          <div class="border-bottom-gray-100 ">
-                            <div class="d-flex mt-4 align-items-center">
-                              <div class="p-2 ps-0">
-                                <div class="col-2 position-relative">
-                                  <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-                                </div>
-                              </div>
-                              <div class="p-2 tb-fs-14"> 
-                                <h6 class="mb-0 pt-3">Mark Anthony</h6>
-                                <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
-                              </div>
-                              <div class="ms-auto position-relative">
-                              <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
-                              <div class="card grid-card-style-left" style="display:none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            </div>
-                            <div class=" mb-2">
-                              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
-                            </div>
-                        </div>
-                          <div class="border-bottom-gray-100 ">
-                            <div class="d-flex mt-4 align-items-center">
-                              <div class="p-2 ps-0">
-                                <div class="col-2 position-relative">
-                                  <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-                                </div>
-                              </div>
-                              <div class="p-2 tb-fs-14"> 
-                                <h6 class="mb-0 pt-3">Mark Anthony</h6>
-                                <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
-                              </div>
-                              <div class="ms-auto position-relative">
-                              <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
-                              <div class="card grid-card-style-left" style="display:none;">
-                                <ul class="list-unstyled">
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
-                                  <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            </div>
-                            <div class=" mb-2">
-                              <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
-                            </div>
-                        </div>
-                        <div class="border-bottom-gray-100 ">
-                          <div class="d-flex mt-4 align-items-center">
-                            <div class="p-2 ps-0">
-                              <div class="col-2 position-relative">
-                                <img src="../assets/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="" class="radius-image">
-                              </div>
-                            </div>
-                            <div class="p-2 tb-fs-14"> 
-                              <h6 class="mb-0 pt-3">Mark Anthony</h6>
-                              <p class=" tb-fs-12 tb-gray-400">5 min ago</p>
-                            </div>
-                            <div class="ms-auto position-relative">
-                            <button class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn"> <img src="../assets/images/Icons/option-dot-gray.svg" alt="" class="w-h-35"></button>
-                            <div class="card grid-card-style-left" style="display:none;">
-                              <ul class="list-unstyled">
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Edit</a></li>
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Delete</a></li>
-                                <li class="py-2"><a href="#" class="text-decoration-none d-flex align-items-center fs-5 text-black">Resolve</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          </div>
-                          <div class=" mb-2">
-                            <p class="m-0 text-base-black tb-fs-14"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ante iaculis, faucibus velit porta, tempor leo. Nunc eget erat nibh. Fusce vitae tempus est. </p>
-                          </div>
+                          
                       </div>
-      
-                        </div>
                       </div>
+                     
                   </div>
                   <div class="view-all-model-btn-wrapper text-end p-3">
                       <!-- <button class="btn btn-md tb-btn-primary tb-rounded tb-font-regular" type="button"
@@ -2748,7 +2723,25 @@ tabindex="-1" aria-modal="true" role="dialog">
               </div>
           </div>
       </div>
-      
+
+
+      <div class="modal fade" id="restoreModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header pb-0">
+              <h1 class="modal-title tb-fs-24" id="exampleModalToggleLabel">Restore this version</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body tb-fs-16">
+              Are you sure? This action permanently restores this version which will  overwrite your current version.
+            </div>
+            <div class="modal-footer justify-content-center gap-2">
+                <button class="btn btn-md tb-btn-gray rounded" type="button">Cancel</button>
+                <button class="btn btn-md tb-btn-dark rounded" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
 "></script>

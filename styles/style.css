@@ -1598,7 +1598,7 @@ input::file-selector-button {
   z-index: 1;
 }
 .comment-modal {
- width: 1100px !important;
+ width: 1050px !important;
 }
 
 #CommentsModal .modal-content {
@@ -1606,9 +1606,12 @@ input::file-selector-button {
   top:-10px ;
   height: 100vh !important;
   right: -10px !important;
-  width: 300px !important;
+  width: 350px !important;
   transition: var(--tran-05);
   border-radius:12px !important;
+}
+#modal-height{
+  max-height: 103% !important;
 }
 /* dropshadow */
 

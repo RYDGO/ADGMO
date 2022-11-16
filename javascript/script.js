@@ -119,7 +119,23 @@ $(".input").on("input", function () {
 });
 // assets three dots card popup
 $(".ellipsis-btn").on("click", function () {
-  $(this).next().toggle("d-block");
+  var selectCard = $(".ellipsis-btn");
+  for (var obj of selectCard) {
+    if ($(obj).next().css('display') == "flex") {
+      $(obj).next().css("display", "none");
+    } else {
+      $(this).next().css("display", "flex");
+
+    }
+  }
+$(".ellipsis-btn").click(function(){
+  if ($(this).next().css("display")=="flex") {
+    $(this).next().css("display", "none");
+  }else {
+    $(this).next().css("display", "flex");
+
+  }
+})
 });
 $("#redirectToViewAll").on("click", function () {
   window.location.href = "../workloadAsigntome/requestOverviewForm.html";
@@ -191,6 +207,7 @@ $(".multi-checked-border").on("change", function () {
 });
 
 $("#toggleSelect").on("click", function () {
+
   $(this).addClass("d-none");
   $("#toggleCancel").removeClass("d-none");
   $("#toggleSelectAll").removeClass("d-none");
@@ -199,39 +216,74 @@ $("#toggleSelect").on("click", function () {
 });
 
 $("#toggleSelectAll").on("click", function () {
-  if (!$('.toggleCheckbox').is(":checked")) {
-    $('.toggleCheckbox').click()
-    $(".downloadbtn").removeClass("d-none");
-    $(".shortShowHide").addClass("d-none");
-    
+    // $(".toggleCheckbox").attr("checked", this.checked);
+    $(".toggleCheckbox").prop("checked");
+    var toggleCheck =  $(".toggleCheckbox");
+    for(var obj of toggleCheck){
+      console.log("sffsf",obj)
+      // $(obj).prop("checked");
+      $(obj).prop("checked", true);
+      $("input[type='checkbox']:checked").attr("style","border:1px solid #000 !important")
+      $(".shortShowHide").addClass("d-none");
+      $(".downloadbtn").removeClass("d-none");
+      $(obj).parent().parent().parent().addClass("border-gray-500-checked");
     }
+
+  // if (!$('.toggleCheckbox').is(":checked")) {
+  //   $('.toggleCheckbox').click()
+  //   $(".downloadbtn").removeClass("d-none");
+  //   $(".shortShowHide").addClass("d-none");
+
+  // }
 });
 
 $("#toggleCancel").on("click", function () {
   $("#toggleSelectAll").addClass("d-none");
   $("#toggleSelect").removeClass("d-none");
-   $(".toggleCheckbox").addClass("d-none");
-   $(".toggle-ellipsis-btn").removeClass("d-none");
+  $(".toggleCheckbox").addClass("d-none");
+  $(".toggle-ellipsis-btn").removeClass("d-none");
 
-   if ($('.toggleCheckbox').is(":checked")) {
-   $('.toggleCheckbox').click()
-   $(".downloadbtn").addClass("d-none");
-   $(".multi-checked-1").css("border", "none");
-   $(".shortShowHide").removeClass("d-none");
-   }
-   $(this).addClass("d-none");
+
+
+  if ($('.toggleCheckbox').is(":checked")) {
+    let toggleCheck =  $(".toggleCheckbox");
+    for(var obj of toggleCheck){
+      console.log("sffsf ff",obj)
+      // $(obj).prop("checked");
+      $(obj).prop("checked", false);
+      $(".shortShowHide").addClass("d-none");
+      $(".downloadbtn").removeClass("d-none");
+      $(obj).parent().parent().parent().removeClass("border-gray-500-checked");
+    }
+    $(".downloadbtn").addClass("d-none");
+    $(".shortShowHide").removeClass("d-none");
+    $(obj).parent().parent().parent().removeClass("border-gray-500-checked");
+  }
+  $(this).addClass("d-none");
 });
 
-$("#canvas-modal-toggle").click(function(){
+$('.toggleCheckbox').on('click', function(){
+  console.log("sfdsfdffdf11111");
+  if ($(this).is(":checked")) {
+    $(".downloadbtn").removeClass("d-none");
+    $(".shortShowHide").addClass("d-none");
+  }
+  else {
+    $(".downloadbtn").addClass("d-none");
+    $(".shortShowHide").removeClass("d-none");
+  }
+})
+
+$("#canvas-modal-toggle").click(function () {
   $("#content-modal-toggle").addClass("comment-modal");
 })
-$("#close-Comments-modal").click(function (){
+$("#close-Comments-modal").click(function () {
   $("#content-modal-toggle").removeClass("comment-modal");
 })
-$("#version-history").click(function(){
+$("#version-history").click(function () {
   $("#content-modal-toggle").addClass("comment-modal");
 })
-$("#close-version-modal").click(function (){
+$("#close-version-modal").click(function () {
   $("#content-modal-toggle").removeClass("comment-modal");
 })
 $.fn.extend({
@@ -294,7 +346,7 @@ $.fn.extend({
 
 $("#search-btn").click(function () {
   $("#search-bar").toggleClass("d-none");
- 
+
 })
 $("#Edit-btn").click(function () {
   $("#textarea-box").toggle();

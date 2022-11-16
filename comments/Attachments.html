@@ -2278,21 +2278,21 @@ tabindex="-1" aria-modal="true" role="dialog">
                   </div>
                   <div class="d-flex justify-content-between align-items-center ">
                     <div>
-                      <button class="btn tb-btn-gray  w-h-35 rounded-circle" 
+                      <button class="btn  w-h-40 rounded-circle gray-500 text-center tb-btn-gray" 
                       data-backdrop='static' data-keyboard='false'
                       data-bs-toggle="modal"
                         data-bs-target="#CommentsModal" id="canvas-modal-toggle" >
-                        <img src="../../assets/images/Icons/icon-comment.svg" alt="">
+                        <i class="fa-regular fa-comment tb-fs-20"></i>
                       </button>
       
-                      <button class="btn tb-btn-gray  w-h-35 rounded-circle mx-2" data-backdrop='static' data-keyboard='false'
+                      <button class="btn  w-h-40 rounded-circle gray-500 text-center tb-btn-gray mx-2" data-backdrop='static' data-keyboard='false'
                       data-bs-toggle="modal"
                         data-bs-target="#version-history-modal" id="version-history">
-                        <img src="../../assets/images/Icons/icon-time.svg" alt="">
+                        <i class="fa-regular fa-clock tb-fs-20"></i>
                       </button>
       
                       <button class="btn tb-btn-gray  w-h-35 rounded-circle">
-                        <img src="../../assets/images/Icons/icon-albums.svg" alt="">
+                        <img src="../assets/images/Icons/icon-albums.svg" alt="">
                       </button>
                     </div>
                     <div class="d-flex align-items-center">
@@ -2602,8 +2602,14 @@ tabindex="-1" aria-modal="true" role="dialog">
                               </h2>
                               <div id="collapse-duel-2" class="accordion-collapse  tb-rounded-10 collapse show accordian-disabled-op">
                                   <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
-                                      <div class="row mt-4">
-                                          <div class="col-md-12">
+                                      <div class="row mt-4 p-0">
+                                          <div class="col-md-12 d-flex justify-content-between align-items-center p-0">
+                                            <span class="p-2 px-3  status-color-orange-op ">
+                                              <i
+                                                  class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                              <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                  IN PROGRESS</h4>
+                                          </span>
                                              <h6 class="mb-0">20/07/22 10:00 AM</h6>
                                           </div>
                                           <div class="col-md-12 my-2 mt-4">
@@ -2629,7 +2635,13 @@ tabindex="-1" aria-modal="true" role="dialog">
   
                                   <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
                                       <div class="row mt-4">
-                                          <div class="col-md-12">
+                                            <div class="col-md-12 d-flex justify-content-between align-items-center p-0">
+                                            <span class="p-2 px-3  status-color-orange-op ">
+                                              <i
+                                                  class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                              <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                  IN PROGRESS</h4>
+                                          </span>
                                              <h6 class="mb-0">20/07/22 10:00 AM</h6>
                                           </div>
                                           <div class="col-md-12 my-2 mt-4">
@@ -2655,7 +2667,13 @@ tabindex="-1" aria-modal="true" role="dialog">
   
                                   <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
                                       <div class="row mt-4">
-                                          <div class="col-md-12">
+                                            <div class="col-md-12 d-flex justify-content-between align-items-center p-0">
+                                            <span class="p-2 px-3  status-color-orange-op ">
+                                              <i
+                                                  class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                              <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                  IN PROGRESS</h4>
+                                          </span>
                                              <h6 class="mb-0">20/07/22 10:00 AM</h6>
                                           </div>
                                           <div class="col-md-12 my-2 mt-4">
@@ -2681,7 +2699,13 @@ tabindex="-1" aria-modal="true" role="dialog">
   
                                   <div class=" py-2 pb-4 px-3 border-gray-bottom-200">
                                       <div class="row mt-4">
-                                          <div class="col-md-12">
+                                            <div class="col-md-12 d-flex justify-content-between align-items-center p-0">
+                                            <span class="p-2 px-3  status-color-orange-op ">
+                                              <i
+                                                  class="tb-orange fa-xs fa-sharp fa-solid fa-circle me-1 "></i>
+                                              <h4 class="tb-h5 mb-0 tb-orange d-inline-block">
+                                                  IN PROGRESS</h4>
+                                          </span>
                                              <h6 class="mb-0">20/07/22 10:00 AM</h6>
                                           </div>
                                           <div class="col-md-12 my-2 mt-4">
@@ -2725,19 +2749,19 @@ tabindex="-1" aria-modal="true" role="dialog">
       </div>
 
 
-      <div class="modal fade" id="restoreModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-0">
-              <h1 class="modal-title tb-fs-24" id="exampleModalToggleLabel">Restore this version</h1>
+      <div class="modal fade background-dim " id="restoreModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg flex-center h-100">
+          <div class="modal-content inner-modal-content-box tb-rounded-md p-2">
+            <div class="modal-header pb-0 pt-4">
+              <h1 class="modal-title tb-fs-22" id="exampleModalToggleLabel">Restore this version</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body tb-fs-16">
+            <div class="modal-body tb-fs-16 pt-0">
               Are you sure? This action permanently restores this version which will  overwrite your current version.
             </div>
             <div class="modal-footer justify-content-center gap-2">
-                <button class="btn btn-md tb-btn-gray rounded" type="button">Cancel</button>
-                <button class="btn btn-md tb-btn-dark rounded" type="button">Send</button>
+                <button class="btn btn-md tb-btn-gray rounded tb-font-regular" type="button">Cancel</button>
+                <button class="btn btn-md tb-btn-dark rounded tb-font-regular" type="button">Confirm</button>
             </div>
           </div>
         </div>

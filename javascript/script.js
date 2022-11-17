@@ -273,7 +273,6 @@ $('.toggleCheckbox').on('click', function(){
     $(".shortShowHide").removeClass("d-none");
   }
 })
-
 $("#canvas-modal-toggle").click(function () {
   $(this).addClass("gray-500");
   $(this).addClass("text-white");

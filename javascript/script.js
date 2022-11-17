@@ -357,11 +357,13 @@ $.fn.extend({
 });
 
 $("#search-btn").click(function () {
-  $("#search-bar").toggleClass("d-none");
+  $("#search-bar").removeClass("d-none");
+  $("#textarea-box").hide();
 
 })
 $("#Edit-btn").click(function () {
-  $("#textarea-box").toggle();
+  $("#search-bar").addClass("d-none");
+  $("#textarea-box").show();
 })
 //Initialization of treeviews
 

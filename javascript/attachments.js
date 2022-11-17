@@ -1,8 +1,8 @@
 function showMarkerArea(target) {
-    const markerArea = new markerjs2.MarkerArea(target);
-    markerArea.settings.displayMode = 'popup';
-    markerArea.addEventListener("render", (event) => (target.src = event.dataUrl));
-    markerArea.uiStyleSettings.toolbarStyleColorsClassName = "bg-white pt-4 pb-5 tb-rounded-top-lr-12";
+  const markerArea = new markerjs2.MarkerArea(target);
+  markerArea.settings.displayMode = 'popup';
+  markerArea.addEventListener("render", (event) => (target.src = event.dataUrl));
+  markerArea.uiStyleSettings.toolbarStyleColorsClassName = "bg-white pt-4 pb-5 tb-rounded-top-lr-12";
   markerArea.uiStyleSettings.toolbarButtonStyleColorsClassName =
     "btn tb-btn-gray  w-h-40 rounded-circle mx-2";
   markerArea.uiStyleSettings.toolbarActiveButtonStyleColorsClassName =
@@ -21,5 +21,5 @@ function showMarkerArea(target) {
     "btn tb-btn-gray  w-h-40 rounded-circle mx-2";
   markerArea.uiStyleSettings.toolboxActiveButtonStyleColorsClassName =
     "btn  w-h-40 rounded-circle mx-2 gray-300 text-white";
-    markerArea.show();
-  }
+  markerArea.show();
+}

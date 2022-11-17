@@ -220,7 +220,7 @@ $("#toggleSelectAll").on("click", function () {
     $(".toggleCheckbox").prop("checked");
     var toggleCheck =  $(".toggleCheckbox");
     for(var obj of toggleCheck){
-      console.log("sffsf",obj)
+      // console.log("sffsf",obj)
       // $(obj).prop("checked");
       $(obj).prop("checked", true);
       $("input[type='checkbox']:checked").attr("style","border:1px solid #000 !important")
@@ -248,7 +248,7 @@ $("#toggleCancel").on("click", function () {
   if ($('.toggleCheckbox').is(":checked")) {
     let toggleCheck =  $(".toggleCheckbox");
     for(var obj of toggleCheck){
-      console.log("sffsf ff",obj)
+      // console.log("sffsf ff",obj)
       // $(obj).prop("checked");
       $(obj).prop("checked", false);
       $(".shortShowHide").addClass("d-none");
@@ -263,7 +263,7 @@ $("#toggleCancel").on("click", function () {
 });
 
 $('.toggleCheckbox').on('click', function(){
-  console.log("sfdsfdffdf11111");
+  // console.log("sfdsfdffdf11111");
   if ($(this).is(":checked")) {
     $(".downloadbtn").removeClass("d-none");
     $(".shortShowHide").addClass("d-none");
@@ -275,15 +275,28 @@ $('.toggleCheckbox').on('click', function(){
 })
 
 $("#canvas-modal-toggle").click(function () {
+  $(this).addClass("gray-500");
+  $(this).addClass("text-white");
+  $(this).removeClass("tb-btn-gray");
   $("#content-modal-toggle").addClass("comment-modal");
+  
 })
 $("#close-Comments-modal").click(function () {
+  $("#canvas-modal-toggle").removeClass("gray-500");
+  $("#canvas-modal-toggle").removeClass("text-white");
+  $("#canvas-modal-toggle").addClass("tb-btn-gray");
   $("#content-modal-toggle").removeClass("comment-modal");
 })
 $("#version-history").click(function () {
+  $(this).addClass("gray-500");
+  $(this).addClass("text-white");
+  $(this).removeClass("tb-btn-gray");
   $("#content-modal-toggle").addClass("comment-modal");
 })
 $("#close-version-modal").click(function () {
+  $("#version-history").removeClass("gray-500");
+  $("#version-history").removeClass("text-white");
+  $("#version-history").addClass("tb-btn-gray");
   $("#content-modal-toggle").removeClass("comment-modal");
 })
 $.fn.extend({

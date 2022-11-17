@@ -128,14 +128,14 @@ $(".ellipsis-btn").on("click", function () {
 
     }
   }
-$(".ellipsis-btn").click(function(){
-  if ($(this).next().css("display")=="flex") {
-    $(this).next().css("display", "none");
-  }else {
-    $(this).next().css("display", "flex");
+  $(".ellipsis-btn").click(function () {
+    if ($(this).next().css("display") == "flex") {
+      $(this).next().css("display", "none");
+    } else {
+      $(this).next().css("display", "flex");
 
-  }
-})
+    }
+  })
 });
 $("#redirectToViewAll").on("click", function () {
   window.location.href = "../workloadAsigntome/requestOverviewForm.html";
@@ -216,18 +216,18 @@ $("#toggleSelect").on("click", function () {
 });
 
 $("#toggleSelectAll").on("click", function () {
-    // $(".toggleCheckbox").attr("checked", this.checked);
-    $(".toggleCheckbox").prop("checked");
-    var toggleCheck =  $(".toggleCheckbox");
-    for(var obj of toggleCheck){
-      // console.log("sffsf",obj)
-      // $(obj).prop("checked");
-      $(obj).prop("checked", true);
-      $("input[type='checkbox']:checked").attr("style","border:1px solid #000 !important")
-      $(".shortShowHide").addClass("d-none");
-      $(".downloadbtn").removeClass("d-none");
-      $(obj).parent().parent().parent().addClass("border-gray-500-checked");
-    }
+  // $(".toggleCheckbox").attr("checked", this.checked);
+  $(".toggleCheckbox").prop("checked");
+  var toggleCheck = $(".toggleCheckbox");
+  for (var obj of toggleCheck) {
+    // console.log("sffsf",obj)
+    // $(obj).prop("checked");
+    $(obj).prop("checked", true);
+    $("input[type='checkbox']:checked").attr("style", "border:1px solid #000 !important")
+    $(".shortShowHide").addClass("d-none");
+    $(".downloadbtn").removeClass("d-none");
+    $(obj).parent().parent().parent().addClass("border-gray-500-checked");
+  }
 
   // if (!$('.toggleCheckbox').is(":checked")) {
   //   $('.toggleCheckbox').click()
@@ -246,8 +246,8 @@ $("#toggleCancel").on("click", function () {
 
 
   if ($('.toggleCheckbox').is(":checked")) {
-    let toggleCheck =  $(".toggleCheckbox");
-    for(var obj of toggleCheck){
+    let toggleCheck = $(".toggleCheckbox");
+    for (var obj of toggleCheck) {
       // console.log("sffsf ff",obj)
       // $(obj).prop("checked");
       $(obj).prop("checked", false);
@@ -262,7 +262,7 @@ $("#toggleCancel").on("click", function () {
   $(this).addClass("d-none");
 });
 
-$('.toggleCheckbox').on('click', function(){
+$('.toggleCheckbox').on('click', function () {
   // console.log("sfdsfdffdf11111");
   if ($(this).is(":checked")) {
     $(".downloadbtn").removeClass("d-none");
@@ -273,13 +273,12 @@ $('.toggleCheckbox').on('click', function(){
     $(".shortShowHide").removeClass("d-none");
   }
 })
-
 $("#canvas-modal-toggle").click(function () {
   $(this).addClass("gray-500");
   $(this).addClass("text-white");
   $(this).removeClass("tb-btn-gray");
   $("#content-modal-toggle").addClass("comment-modal");
-  
+
 })
 $("#close-Comments-modal").click(function () {
   $("#canvas-modal-toggle").removeClass("gray-500");
@@ -367,3 +366,26 @@ $("#Edit-btn").click(function () {
 //Initialization of treeviews
 
 $("#tree2").treed();
+var DataRender
+$("#editorimg").on("click", function () {
+
+  setTimeout(() => {
+    var buttonblock = $(".__markerjs2__0_toolbar_button")
+    for (var obj of buttonblock) {
+      if ($(obj).attr('data-action') == 'close') {
+
+        $(obj).removeClass('tb-btn-gray')
+        $(obj).attr("data-bs-dismiss", "modal");
+      } else if ($(obj).attr('data-action') == 'render') {
+        $(obj).attr("data-bs-toggle", "modal");
+        $(obj).attr("data-bs-target", "#CommentsAssetsModal")
+        DataRender = $(obj)
+
+      }
+    }
+  }, 1000)
+  // console.log(DataRender);
+  // DataRender.attr("data-bs-toggle", "modal");
+  // DataRender.attr("data-bs-target", "#CommentsAssetsModal")
+
+})

@@ -863,6 +863,9 @@ a:hover {
 .border-gray-900 {
     border: 1px solid var(--grayshade-900);
 }
+.border-gray-700 {
+    border: 1px solid #d9d9d9;
+}
 
 .border-gray-500-checked {
     border: 1px solid var(--grayshade-500);
@@ -1802,6 +1805,16 @@ input::file-selector-button {
 
 .inner-modal-content-800 {
     width: 800px !important;
+}
+.inner-modal-content-700 {
+    width: 700px !important;
+}
+
+.modal-center{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
 }
 
 .inner-modal-content-box {

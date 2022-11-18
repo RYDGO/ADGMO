@@ -1,5 +1,5 @@
 function showMarkerArea(target) {
-  const  markerArea = new markerjs2.MarkerArea(target);
+  const markerArea = new markerjs2.MarkerArea(target);
   console.log(markerArea);
   markerArea.settings.displayMode = 'popup';
   markerArea.addEventListener("render", (event) => (target.src = event.dataUrl));
@@ -25,14 +25,7 @@ function showMarkerArea(target) {
   markerArea.show();
 }
 
-function saveState(){
-  console.log("call");
-  var buttonblock = $(".__markerjs2__0_toolbar_button")
-  for(var obj of buttonblock){
-    console.log("click", obj);
-    if ($(obj).attr('data-action') == 'render') {
-      $(obj).click();
-      console.log("click");
-    }
-  }
+function saveState() {
+
+  $('#okEditButton').click();
 }

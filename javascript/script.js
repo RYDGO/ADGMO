@@ -371,31 +371,16 @@ $("#tree2").treed();
 // $(".insetingBtn").appendChild( "<p>Test</p>" );
 $("#editorimg").on("click", function () {
   $(".insertingBtn").after(`<div class=" inner   view-all-model-btn-wrapper text-end p-3">
-  <button class="__markerjs2__0_toolbar_button btn btn-md tb-btn-secondary tb-rounded tb-font-semibold" type="button"   onclick="saveState();">Save</button>
+  <button class="btn btn-md tb-btn-secondary tb-rounded tb-font-semibold" type="button"   onclick="saveState();">Save</button>
   <button class="btn btn-md tb-btn-primary tb-rounded tb-font-semibold" type="button" >Submit</button>
 </div>` );
-// console.log($(".insertingBtn"))
 
-// var DataRender
-// $("#editorimg").on("click", function () {
+  var buttonblock = $(".__markerjs2__0_toolbar_button")
+  for (var obj of buttonblock) {
+    if ($(obj).attr('data-action') == 'close') {
 
-//   setTimeout(() => {
-//     var buttonblock = $(".__markerjs2__0_toolbar_button")
-//     for (var obj of buttonblock) {
-//       if ($(obj).attr('data-action') == 'close') {
-
-//         $(obj).removeClass('tb-btn-gray')
-//         $(obj).attr("data-bs-dismiss", "modal");
-//       } else if ($(obj).attr('data-action') == 'render') {
-//         $(obj).attr("data-bs-toggle", "modal");
-//         $(obj).attr("data-bs-target", "#CommentsAssetsModal")
-//         DataRender = $(obj)
-
-//       }
-//     }
-//   }, 1000)
-//   // console.log(DataRender);
-//   // DataRender.attr("data-bs-toggle", "modal");
-//   // DataRender.attr("data-bs-target", "#CommentsAssetsModal")
-
+      // $(obj).removeClass('tb-btn-gray')
+      $(obj).attr("data-bs-dismiss", "modal");
+    }
+  }
 })

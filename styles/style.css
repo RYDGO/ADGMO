@@ -3156,7 +3156,7 @@ input:checked+.slider:before {
     z-index: 9999999!important;
 } */
 
-.__markerjs2__0_toolbar{
+.__markerjs2__0_toolbar {
     width: 96% !important;
     padding: 2% !important;
     flex-shrink: 0;
@@ -3167,11 +3167,21 @@ input:checked+.slider:before {
     box-sizing: content-box;
     overflow: hidden;
 }
-.insertingBtn{
+
+.insertingBtn {
     position: relative !important;
 }
-.inner{
-    position:absolute;
-    bottom:10%;
-    right:3%;
+
+.inner {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
 }

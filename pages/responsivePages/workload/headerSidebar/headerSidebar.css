@@ -16,8 +16,32 @@
     .mobile-icons-sidebar{
         display: flex !important;
     }
+    .sidebar{
+        position: fixed;
+        top: 9%;
+        left: 0%;
+        height: 100%;
+        width: 280px;
+        /* padding: 10px 0px; */
+        background: var(--base-white-color);
+        /* transition: var(--tran-05); */
+        transition: 0.6s ease-in-out;
+        z-index: 100;
+    }
+    .sidebarClose{
+        position: fixed;
+        top: 9%;
+        left: -100% !important;
+        height: 100%;
+        width: 280px;
+        /* padding: 10px 0px; */
+        transition: 0.6s ease-in-out;
+        background: var(--base-white-color);
+        transition: var(--tran-05);
+        z-index: 100;
+    }
     .sidebar header .toggle{
-        display: none;;
+        display: none;
     }
     .main-section {
         position: relative;

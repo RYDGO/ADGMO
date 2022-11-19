@@ -2135,6 +2135,8 @@ header .image-text .profession {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar li a {

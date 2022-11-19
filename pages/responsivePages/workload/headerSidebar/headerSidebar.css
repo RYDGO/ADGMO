@@ -1,0 +1,23 @@
+@media(min-width:320px){
+    .navbar-style{
+        padding: 20px 0;
+    }
+}
+@media(max-width:575px){
+    .header-icons{
+        display: none;
+    }
+    #navbarTogglerDemo01{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:768px){
+    .mobile-icons-sidebar{
+        display: flex !important;
+    }
+    .sidebar header .toggle{
+        display: none;;
+    }
+}
+

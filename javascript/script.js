@@ -15,9 +15,18 @@ if (sidebar) {
 }
 $(document).ready(function (){
   $("#mobile-toggle-bar").click(function () {
-    $("#sidebar").toggleClass("sidebarClose")
+    $("#sidebar").removeClass("sidebarClose")
+    $("#sidebar-background-dim").addClass("sidebar-background-dim")
   })
-}) 
+  $("#close-sidebar-btn").click(function () {
+    $("#sidebar").addClass("sidebarClose")
+    $("#sidebar-background-dim").removeClass("sidebar-background-dim")
+  })
+  $("#sidebar-background-dim").click(function () {
+    $("#sidebar").addClass("sidebarClose")
+    $(this).removeClass("sidebar-background-dim")
+  })
+})
 $(".target-dual").click(function () {
   $(".dual-content-button").click();
 });

@@ -13,7 +13,11 @@ if (sidebar) {
     sidebar.classList.toggle("close");
   });
 }
-
+$(document).ready(function (){
+  $("#mobile-toggle-bar").click(function () {
+    $("#sidebar").toggleClass("sidebarClose")
+  })
+}) 
 $(".target-dual").click(function () {
   $(".dual-content-button").click();
 });

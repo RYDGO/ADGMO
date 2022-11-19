@@ -4,15 +4,23 @@
     }
 }
 @media(max-width:575px){
-    .header-icons{
-        display: none;
-    }
-    #navbarTogglerDemo01{
+    
+    /* #navbarTogglerDemo01{
         display: flex;
         justify-content: space-between;
-    }
+    } */
 }
 @media(max-width:768px){
+    #navbarTogglerDemo01{
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .mobile-toggle{
+        display: block !important;  
+    }
+    .header-icons{
+        display: none !important;
+    }
     .mobile-icons-sidebar{
         display: flex !important;
     }

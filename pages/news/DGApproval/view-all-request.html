@@ -23,13 +23,13 @@
 
 <body>
     <div class="container-fluid p-0 m-0">
-        <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+        <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
-                    <div class="col-3 navbar-brand" href="#">
+                <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between" id="navbarTogglerDemo01">
+                    <div class="col-3 navbar-brand d-flex header-icons" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../assets/images/user.png" alt="user profile" class="img-responsive">
+                                <img src="../../../../assets/images/user.png" alt="user profile" class="h-100">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -38,31 +38,33 @@
                             </div>
                             <div class="vartical-line"></div>
                         </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0  header-icons">
+                            <div class="d-flex justify-content-center me-3">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40" >
+                                    <a class="text-decoration-none text-black" type="button" >
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center me-3 ">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <i class="fa-regular fa-bell"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <i class="fa-solid fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
-                        <div class="d-flex justify-content-center me-3">
-                            <span class="rounded-circle pad-8-12 border-gray-500">
-                                <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal8">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="d-flex justify-content-center me-3">
-                            <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-regular fa-bell"></i>
-                            </span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-solid fa-globe"></i>
-                            </span>
-                        </div>
+                    <div class="d-none mobile-toggle" id="mobile-toggle-bar">
+                        <img src="../../../../assets/images/Icons/mobile-toggle-icon.svg" alt="">
                     </div>
                     <div class="col-4 d-flex justify-content-end">
                         <a href="#" rel="noopener noreferrer">
                             <div class="img-containerbox">
-                                <img src="../../../assets/images/Logos/HorizontalLogos/LogoRedFilled.png" alt="logo"
+                                <img src="../../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
                                     class="img-responsive" />
                             </div>
                         </a>
@@ -71,24 +73,61 @@
             </div>
         </nav>
         <!--navbar ends here -->
-
-        <nav class="sidebar " id="sidebar">
+        <div class="" id="sidebar-background-dim"></div>
+        <nav class="sidebar sidebarClose" id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
-            </header>
+            </header> 
             <div class="menu-bar">
                 <div class="menu">
+                    <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
+                            <div class="userImg-container mx-2 rounded-circle">
+                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi</h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                        </div>
+                        <div class="   mb-4 mt-2  px-4  flex-center-align justify-content-between  ">
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal8">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <i class="fa-regular fa-bell"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <i class="fa-solid fa-globe"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500" id="close-sidebar-btn">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="menu-links flex-center flex-column align-items-start">
                         <li class="nav-link sidebarTabsToggle">
                             <a href="#" class="flex-center-align mb-2">
-                                <img src="../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                 <span class="text-dark nav-text">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
-                                    <img src="../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Workload</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -128,7 +167,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center">
-                                    <img src="../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <img src="../../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Schedule</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -168,7 +207,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <img src="../../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Asset Library</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -208,7 +247,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Reporting</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -248,7 +287,7 @@
                         <li class="nav-link sidebarTabsToggle dropdown-main">
                             <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
                                 <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
                                     <span class="text-dark nav-text">Our Standards</span>
                                 </div>
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
@@ -287,7 +326,7 @@
                         </li>
                         <li
                             class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <a href="../../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                            <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
                                 <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
                                     <span>Request</span></button>
                             </a>
@@ -295,33 +334,33 @@
                     </ul>
                 </div>
             </div>
-            <!--sidebar ends here -->
         </nav>
+        <!--sidebar ends here -->
 
 
 
         <section class="main-section">
             <div class="home-content pb-3">
                 <div class="heading-section">
-                    <h5>Tues, 19 July 2022 </h5>
-                    <h1>Good morning, Harrison</h1>
-                    <ul class="nav mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
+                    <h5 class="fs-5">Tues, 19 July 2022 </h5>
+                    <h1 class="fs-1 tb-font-regular text-black">Good morning, Harrison</h1>
+                    <ul class="nav mb-3 tabs-section" id="pills-tab" role="tablist">
+                        <li class="nav-item text-nowrap" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded active" id="pills-home-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home"
                                 aria-selected="true">Dpt. Request</button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item text-nowrap" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-profile-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
                                 aria-controls="pills-profile" aria-selected="false">Assigned To Me</button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item text-nowrap" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
                                 aria-controls="pills-contact" aria-selected="false">My Requests</button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item text-nowrap" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded" id="pills-contact-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
                                 aria-controls="pills-contact" aria-selected="false">Conversations</button>
@@ -331,14 +370,14 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane  fade show active tab-remove-bg" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        <div class="container">
-                            <div class="row align-items-center m-0 p-0">
-                                <div class="col-6 ps-0">
-                                    <div class="pia-chart-container">
+                        <div class="container-lg">
+                            <div class="row align-items-center m-0 p-0 mb-2">
+                                <div class="col-lg-6 ps-lg-0 pie">
+                                    <div class="pia-chart-container flex-column flex-sm-row gap-4">
                                         <canvas id="pie-chart" class="canvas-style"></canvas>
                                         <div class="d-flex justify-content-start flex-column">
-                                            <ul class="text-decoration-none m-0 pb-3 text-start">
-                                                <h4>Team Allocation chart</h4>
+                                            <ul class="text-decoration-none m-0 pb-3 text-start team-allocation">
+                                                <h4 class="fw-semibold">Team Allocation chart</h4>
                                                 <li class="list-unstyled flex-center-align justify-content-between">
                                                     <div class="flex-center-align">
                                                         <div class="span-box-one-small span-box-small me-2"></div>Total
@@ -373,13 +412,13 @@
                                     </div>
 
                                 </div>
-                                <div class="col-6 pe-0">
+                                <div class="col-lg-6 pe-lg-0 color-cards">
                                     <div class="overview-boxes">
                                         <div class="row row-cols-2 g-3">
                                             <div class="col ">
                                                 <div class="box three">
                                                     <div class="right-side">
-                                                        <div class="box-topic">Urgent (L1)</div>
+                                                        <div class="box-topic text-nowrap">Urgent (L1)</div>
                                                         <div class="number">5,732</div>
                                                     </div>
                                                     <img src="../../../assets/images/Icons/warning-icon-green.svg"
@@ -389,7 +428,7 @@
                                             <div class="col ">
                                                 <div class="box five-light-yellow tb-light-yellow">
                                                     <div class="right-side">
-                                                        <div class="box-topic">Important (L2)</div>
+                                                        <div class="box-topic text-nowrap">Important (L2)</div>
                                                         <div class="number">546</div>
                                                     </div>
                                                     <img src="../../../assets/images/Icons/warning-icon-yellow.svg"
@@ -399,7 +438,7 @@
                                             <div class="col ">
                                                 <div class="box first">
                                                     <div class="right-side">
-                                                        <div class="box-topic">Normal (L3)</div>
+                                                        <div class="box-topic text-nowrap">Normal (L3)</div>
                                                         <div class="number">90</div>
                                                     </div>
                                                     <img src="../../../assets/images/Icons/warning-icon-red.svg"
@@ -409,7 +448,7 @@
                                             <div class="col ">
                                                 <div class="box four">
                                                     <div class="right-side">
-                                                        <div class="box-topic">Low (L4)</div>
+                                                        <div class="box-topic text-nowrap">Low (L4)</div>
                                                         <div class="number">90</div>
                                                     </div>
                                                     <img src="../../../assets/images/Icons/warning-icon-gray.svg"
@@ -420,8 +459,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row  my-4 d-flex justify-content-around gx-1 m-0 p-0">
-                                <div class="col ps-0">
+                            <div class="tasks-carousel">
+                                <div class="gray-cards ps-0">
                                     <div class="task-box py-4">
                                         <div class="left-circal">
                                             <span
@@ -435,7 +474,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="gray-cards">
                                     <div class="task-box py-4">
                                         <div class="left-circal">
                                             <span
@@ -449,7 +488,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="gray-cards">
                                     <div class="task-box py-4">
                                         <div class="left-circal">
                                             <span
@@ -463,7 +502,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="gray-cards">
                                     <div class="task-box py-4">
                                         <div class="left-circal">
                                             <span
@@ -477,7 +516,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="gray-cards">
                                     <div class="task-box py-4">
                                         <div class="left-circal">
                                             <span
@@ -501,18 +540,16 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <!-- title -->
-                                            <div class="d-md-flex align-items-center px-1">
-                                                <div>
+                                            <div class="d-flex align-items-center px-1">
+                                                <div class="col-6">
                                                     <h2 class="card-title pt-3 tb-bold input-label fs-3">Dpt. Requests
                                                     </h2>
                                                 </div>
-                                                <div class="ms-auto d-flex justify-content-between align-items-center">
-                                                    <div class="d-flex justify-content-center">
+                                                <div class="col-6 d-flex justify-content-end">
                                                         <div class="w-h-40  rounded-circle flex-center img-cover me-2">
                                                             <img src="../../../assets/images/Icons/search.svg"
                                                                 alt="icon-warning" class="w-100">
                                                         </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- title -->
@@ -523,11 +560,11 @@
                                                     <tr class="gray-500 text-white text-left">
                                                         <th class="fw-light th-pd">ID </th>
                                                         <th class="fw-light th-pd">Type</th>
-                                                        <th class="fw-light th-pd">Due Date</th>
+                                                        <th class="fw-light th-pd text-nowrap">Due Date</th>
                                                         <th class="fw-light th-pd">Sector</th>
                                                         <th class="fw-light th-pd">Assignee</th>
                                                         <th class="fw-light th-pd">Status</th>
-                                                        <th class="fw-light th-pd">Time left
+                                                        <th class="fw-light th-pd text-nowrap">Time left
                                                         </th>
                                                     </tr>
                                                 </thead>
@@ -567,7 +604,7 @@
                                                         </td>
 
                                                         <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                                            <span class="p-2 status-color-gray-op">
+                                                            <span class="p-2 status-color-gray-op text-nowrap">
                                                                 <i
                                                                     class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                                                 <h4 class="tb-h5 mb-0 text-base-black d-inline-block">
@@ -650,10 +687,10 @@
                                                 <tr class="gray-500 text-white text-left">
                                                     <th class="fw-light th-pd">ID </th>
                                                     <th class="fw-light th-pd">Type</th>
-                                                    <th class="fw-light th-pd">Due Date</th>
+                                                    <th class="fw-light th-pd text-nowrap">Due Date</th>
                                                     <th class="fw-light th-pd">Sector</th>
                                                     <th class="fw-light th-pd">Status</th>
-                                                    <th class="fw-light th-pd">Time Remaining
+                                                    <th class="fw-light th-pd ">Time Remaining
                                                     </th>
                                                 </tr>
                                             </thead>

@@ -187,7 +187,7 @@
 }
 
 .display-none {
-    display: none!important
+    display: none !important
 }
 
 .display-block {
@@ -863,6 +863,7 @@ a:hover {
 .border-gray-900 {
     border: 1px solid var(--grayshade-900);
 }
+
 .border-gray-700 {
     border: 1px solid #d9d9d9;
 }
@@ -1316,7 +1317,7 @@ input:focus+.fa {
 .modal,
 .select2-container {
     width: 100% !important;
-    z-index: 999999!important;
+    z-index: 999999 !important;
 }
 
 
@@ -1806,11 +1807,12 @@ input::file-selector-button {
 .inner-modal-content-800 {
     width: 800px !important;
 }
+
 .inner-modal-content-700 {
     width: 700px !important;
 }
 
-.modal-center{
+.modal-center {
     position: absolute;
     top: 50% !important;
     left: 50% !important;
@@ -2567,9 +2569,11 @@ textarea {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -3201,64 +3205,147 @@ input:checked+.slider:before {
     background-color: transparent !important;
 }
 
+.gray-cards {
+    width: 240px;
+}
+
+.tasks-carousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
 
 
-
-/* -----------------Media queries of Header and Sidebar- starts here------------------ */
-@media(min-width:320px){
-    .navbar-style{
+/* ------------------media queries----------------------- */
+@media(min-width:320px) {
+    .navbar-style {
         padding: 20px 10px;
     }
 }
-@media(max-width:575px){
-    .header-icons{
-        display: none;
-    }
-    #navbarTogglerDemo01{
+
+@media(max-width:575px) {
+
+    #navbarTogglerDemo01 {
         display: flex;
         justify-content: space-between;
     }
 }
-@media(max-width:768px){
-    .mobile-icons-sidebar{
+
+@media(max-width:768px) {
+    
+
+    .header-icons {
+        display: none !important;
+    }
+
+    .mobile-toggle {
+        display: block !important;
+    }
+
+    .mobile-icons-sidebar {
         display: flex !important;
     }
-    .sidebar{
+
+    .sidebar {
         position: fixed;
-        top: 9%;
+        top: 0%;
         left: 0%;
         height: 100%;
         width: 280px;
         /* padding: 10px 0px; */
         background: var(--base-white-color);
         /* transition: var(--tran-05); */
-        transition: 0.6s ease-in-out;
-        z-index: 100;
+        transition: 0.4s ease-in-out;
+        z-index: 10000000;
     }
-    .sidebarClose{
+
+    .sidebarClose {
         position: fixed;
-        top: 9%;
+        top: 0%;
         left: -100% !important;
         height: 100%;
         width: 280px;
         /* padding: 10px 0px; */
-        transition: 0.6s ease-in-out;
         background: var(--base-white-color);
-        transition: var(--tran-05);
-        z-index: 100;
+        transition: 0.4s ease-in-out;
+        z-index: 10000000;
     }
-    .sidebar header .toggle{
+
+    .sidebar header .toggle {
         display: none;
     }
+
     .main-section {
         position: relative;
         background: var(--body-bg);
         min-height: 100vh;
-        width: 100%;
+        width: 100% !important;
         padding: 15px 10px !important;
         left: 0 !important;
         transition: all 0.5s ease;
         top: 6rem;
     }
+
+    .sidebar-background-dim {
+        background-color: rgb(0 0 0 / 60%);
+        width: 100vw !important;
+        overflow: hidden;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        transition: 0.4s ease-in-out;
+        z-index: 10000;
+    }
 }
 
+@media(max-width:992px) {
+    .tabs-section {
+        display: grid;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 0.2rem;
+        overflow: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .color-cards .overview-boxes {
+        display: block !important;
+    }
+
+    .color-cards {
+        padding: 0;
+    }
+
+    .pie {
+        padding: 0;
+    }
+}
+
+@media(max-width:1050px) {
+    .overview-boxes .box-topic {
+        font-size: 14px !important;
+    }
+}
+@media(max-width:1050px) and (min-width:992px) {
+        #pie-chart{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+    
+
+@media(max-width:1260px) {
+    .team-allocation{
+        padding: 0;
+    }
+    .team-allocation h4{
+        font-size: 16px;
+    }
+}

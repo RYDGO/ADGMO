@@ -3219,6 +3219,9 @@ input:checked+.slider:before {
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
+.download-dropdown:after{
+    display: none;
+}
 
 
 /* status -backgrounds */

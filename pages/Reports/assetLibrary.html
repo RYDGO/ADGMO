@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request Summary</title>
+    <title>Asset Library</title>
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
-    
+
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -351,22 +351,26 @@
                             <!-- title -->
                             <div class="d-md-flex align-items-center px-1 justify-content-between">
                                 <div>
-                                    <h2 class="card-title pt-3 tb-font-bold input-label fs-3">Request Summary
+                                    <h2 class="card-title pt-3 tb-font-bold input-label fs-3">Entity Summary
                                     </h2>
                                 </div>
                                 <div class="btn-group form-floating">
-                                    <button class="border-0 rounded download-dropdown dropdown-toggle"
-                                      type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
-                                      <img src="../../assets/images/Icons/download-fill.svg" alt="">
+                                    <button class="border-0 rounded download-dropdown dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                        <img src="../../assets/images/Icons/download-fill.svg" alt="">
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
-                                      aria-labelledby="dropdownMenuButton">
-                                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2" href="#"><img class="me-3" src="../../assets/images/Icons/document-pdf.svg" alt="">PDF </a>
-                                      </li>
-                                      <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2" href="#"><img class="me-3" src="../../assets/images/Icons/excel-logo-fill.svg" alt=""> Excel</a>
-                                      </li>
+                                        aria-labelledby="dropdownMenuButton">
+                                        <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2" href="#"><img
+                                                    class="me-3" src="../../assets/images/Icons/document-pdf.svg"
+                                                    alt="">PDF </a>
+                                        </li>
+                                        <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2" href="#"><img
+                                                    class="me-3" src="../../assets/images/Icons/excel-logo-fill.svg"
+                                                    alt=""> Excel</a>
+                                        </li>
                                     </ul>
-                                  </div>
+                                </div>
                             </div>
                             <!-- title -->
                         </div>
@@ -375,92 +379,370 @@
                                 <thead class="">
                                     <tr class="gray-500 text-white text-left">
                                         <th class="fw-light th-pd text-center">
-                                            <input
-                                            class="form-check-input shadow-none tb-bg-primary-checked"
-                                            type="checkbox" value="" id="flexCheckDefault"> 
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                type="checkbox" value="" id="flexCheckDefault">
                                         </th>
-                                        <th class="fw-light th-pd text-nowrap">Req .Type</th>
-                                        <th class="fw-light th-pd text-nowrap">Total Req. Raised</th>
-                                        <th class="fw-light th-pd">Total Req. Carried Forward
-                                            From Previous Month</th>
-                                        <th class="fw-light th-pd">Total Req. Delivered</th>
-                                        <th class="fw-light th-pd">Total Req. Met SLA</th>
+                                        <th class="fw-light th-pd text-nowrap">Req. ID</th>
+                                        <th class="fw-light th-pd text-nowrap">Sector</th>
+                                        <th class="fw-light th-pd text-nowrap">Entity</th>
+                                        <th class="fw-light th-pd text-nowrap">As.Type</th>
+                                        <th class="fw-light th-pd text-nowrap">As.Format</th>
+                                        <th class="fw-light th-pd text-nowrap">As.Name</th>
+                                        <th class="fw-light th-pd text-nowrap">Publishing Date</th>
+                                        <th class="fw-light th-pd text-nowrap">Published by</th>
+                                        <th class="fw-light th-pd text-nowrap">Total Views</th>
+                                        <th class="fw-light th-pd text-nowrap">Total Downloads</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-left fw-light ">
                                     <tr>
-                                        <td
-                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                                             <div class="form-check mb-2 d-flex justify-content-center">
-                                                <input
-                                                    class="form-check-input shadow-none tb-bg-primary-checked"
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
                                                     type="checkbox" value="" id="flexCheckDefault">
                                             </div>
                                         </td>
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium"><img src="../../assets/images/selectProfileImages/createProfile-1.svg" class="w-h-30 me-2" alt=""> News
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
                                         </td>
                                         <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
                                             12
                                         </td>
-                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                            8
-                                        </td>
-                                        <td     class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                            8
-                                        </td>
-
-                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                            8
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td
-                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                                             <div class="form-check mb-2 d-flex justify-content-center">
-                                                <input
-                                                    class="form-check-input shadow-none tb-bg-primary-checked"
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
                                                     type="checkbox" value="" id="flexCheckDefault">
                                             </div>
                                         </td>
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium"><img src="../../assets/images/selectProfileImages/createProfile-9.svg" class="w-h-30 me-2" alt=""> Brand Consultations
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
                                         </td>
                                         <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
                                             12
                                         </td>
-                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                            8
-                                        </td>
-                                        <td     class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                            8
-                                        </td>
-
-                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                            8
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td
-                                            class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
                                             <div class="form-check mb-2 d-flex justify-content-center">
-                                                <input
-                                                    class="form-check-input shadow-none tb-bg-primary-checked"
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
                                                     type="checkbox" value="" id="flexCheckDefault">
                                             </div>
                                         </td>
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium"><img src="../../assets/images/selectProfileImages/createProfile-7.svg" class="w-h-30 me-2" alt=""> Patronage
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
                                         </td>
                                         <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
                                             12
                                         </td>
-                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
-                                            8
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
                                         </td>
-                                        <td     class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
-                                            8
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                            <div class="form-check mb-2 d-flex justify-content-center">
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                    type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
                                         </td>
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
 
-                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
-                                            8
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                            <div class="form-check mb-2 d-flex justify-content-center">
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                    type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                            <div class="form-check mb-2 d-flex justify-content-center">
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                    type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+                                            <div class="form-check mb-2 d-flex justify-content-center">
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
+                                                    type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td class="py-2  border-bottom-0 table-pd-left tb-font-medium">
+                                            <div class="d-flex align-items-center justify-content-start">
+
+                                                <div
+                                                    class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                                    <h6 class="w-h-25 d-flex align-items-center justify-content-center">
+                                                        L1
+                                                    </h6>
+                                                </div>
+                                                <h6 class="fs-5 fw-light pt-1 m-0 ms-1  tb-font-regular">News
+                                                    <br>
+                                                    <span class="fs-6 text-gray-300 tb-font-regular">STA~012345</span>
+                                                </h6>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            Logistics
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            ADB Ports
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            PRL
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content.pdf
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            11/10/22
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            Content
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-nowrap">
+                                            5
                                         </td>
                                     </tr>
                                 </tbody>

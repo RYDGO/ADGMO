@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Relations Consultation Form</title>
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    " />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+    <!--===== Boxicons CSS ===== -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../../../../styles/style.css" />
+        <link rel="stylesheet" href="../../../../styles/createRequestForms.css" />
+        <link rel="stylesheet" href="../headerSidebar/headerSidebar.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
+            <div class="container-fluid">
+                <div class="navbar-collapse pe-md-5 d-sm-flex justify-content-sm-between justify-content-md-between" id="navbarTogglerDemo01">
+                    <div class="col-3 navbar-brand d-sm-none d-md-flex header-icons" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2">
+                            <div class="userImg-container mx-2">
+                                <img src="../../../../../../../../../assets/images/user.png" alt="user profile" class="h-100">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi</h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                            <div class="vartical-line"></div>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0  d-sm-none d-md-flex header-icons">
+                            <div class="d-flex justify-content-center me-3">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40" >
+                                    <a class="text-decoration-none text-black" type="button" >
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center me-3 ">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <i class="fa-regular fa-bell"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <i class="fa-solid fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-md-none mobile-toggle" id="mobile-toggle-bar">
+                        <img src="../../../../../../../../../assets/images/Icons/mobile-toggle-icon.svg" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <a href="#" rel="noopener noreferrer">
+                            <div class="img-containerbox">
+                                <img src="../../../../../../../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
+                                    class="img-responsive" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--navbar ends here -->
+        <div class="" id="sidebar-background-dim"></div>
+        <nav class="sidebar sidebarClose" id="sidebar">
+            <header>
+                <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+            </header> 
+            <div class="menu-bar">
+                <div class="menu">
+                    <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
+                            <div class="userImg-container mx-2 rounded-circle">
+                                <img src="../../../../../../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi</h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                        </div>
+                        <div class="   mb-4 mt-2  px-4  flex-center-align justify-content-between  ">
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal8">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <i class="fa-regular fa-bell"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500">
+                                    <i class="fa-solid fa-globe"></i>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <span class="rounded-circle pad-8-12 border-gray-500" id="close-sidebar-btn">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="menu-links flex-center flex-column align-items-start">
+                        <li class="nav-link sidebarTabsToggle">
+                            <a href="#" class="flex-center-align mb-2">
+                                <img src="../../../../../../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Workload</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Schedule</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Asset Library</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Reporting</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Our Standards</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li
+                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                                    <span>Request</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="main-section">
+            <div class="py-4 d-flex align-items-center justify-content-between  flex-wrap px-3">
+                <div class="col-lg-2 col-md-2 col-sm-2 py-2 pe-5 d-flex align-items-center">
+                     <i class="fa-solid fa-arrow-left fs-6"></i>
+                     <a href="#" class="text-decoration-none text-dark fs-6 ps-2">Back</a>
+                </div>
+                <div class="d-flex align-items-center">
+                     <div class="d-flex align-items-center">
+                          <a href="#" class="tb-gray-400 tb-base-black-hover fs-6">Home</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3 fs-6"></i>
+                     </div>
+                     <div class="d-flex align-items-center">
+                          <a href="#" class="text-base-black text-decoration-none fs-6">Requests</a>
+                          <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3 fs-6"></i>
+                     </div>
+                     <div class="d-flex align-items-center">
+                          <a href="#" class="text-base-black text-decoration-none fs-6">Create Requests</a>
+                     </div>
+                </div>
+           </div>
+            <div class="position-relative my-3 px-3 row gap-3">
+                <div class="col-sm-12 col-xl-8 col-lg-11 col-md-6  d-flex justify-content-between align-items-center flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row gap-3">
+                    <div class="align-self-start">
+                        <h2 class="fs-1  text-nowrap  tb-font-regular mb-0 pe-md-3 pe-2">Create Request</h2>
+                    </div>
+                        <div class="align-self-start d-flex align-items-center gap-3">
+                                <button class="btn bg-color-gray pb-2 border-0 rounded-pill">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon-comment.svg" alt="" />
+                                </button>
+                                <button class="btn bg-color-gray border-0 rounded-pill">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon-time.svg" alt="" />
+                                </button>
+                                <button class="btn bg-color-gray border-0 rounded-pill">
+                                    <img src="../../../../../../../../../assets/images/Icons/icon-albums.svg" alt="" />
+                                </button>
+                        </div>
+                </div>
+                    <div class="col">
+                        <ul  class="nav  d-flex align-items-center  justify-content-lg-start justify-content-xl-end justify-content-md-end flex-nowrap">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active btn btn-md tb-btn-light tb-rounded tb-fs-12"
+                                    id="pills-english-button" data-bs-toggle="pill" data-bs-target="#pills-english" role="tab"
+                                    aria-controls="pills-english" aria-selected="true">
+                                    English
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12" id="pills-arabic-button"
+                                    data-bs-toggle="pill" data-bs-target="#pills-arabic" type="button" role="tab"
+                                    aria-controls="pills-arabic" aria-selected="false">
+                                    يبرع
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-md tb-btn-light tb-rounded tb-fs-12" id="pills-dual-button"
+                                    data-bs-toggle="pill" data-bs-target="#pills-dual" type="button" role="tab"
+                                    aria-controls="pills-dual" aria-selected="false">
+                                    dual
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+        
+                <div class="tab-content  w-100 px-2 px-sm-3 px-md-4 px-lg-4 px-xl-4 py-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active shadow-none" id="pills-english" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <form action="">
+                            <div class="accordion accordion-bottom-border" id="accordion-english-1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-english-1">
+                                        <button type="button" class="shadow-none accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-english-1">
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-english-1" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row gy-3 ">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label " for="request-title">Request
+                                                            Title</label>
+                                                        <input class="col-12 input-field" id="request-title"
+                                                            name="request-title" placeholder="Placeholder text" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+
+
+                                                <div class="col-md-12 mt-3">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2"
+                                                            for="multiselect">Entity</label>
+                                                        <select
+                                                            class="js-example-basic-multiple multiple-select col-12 fav_clr"
+                                                            name="states[]" multiple="multiple" id="multiselect">
+                                                            <option value="all">All</option>
+                                                            <option value="ADP">ADP</option>
+                                                            <option value="ADP">DOH</option>
+                                                            <option value="ADP">ADHA</option>
+                                                            <option value="ADP">ADSSA</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="timeline-from">Event
+                                                            Date</label>
+                                                        <input type="date" class="col-12 input" id="timeline-from"
+                                                            name="timeline-from" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label" for="timeline-to">Event
+                                                            Time</label>
+                                                        <input type="time" class="col-12 input" id="timeline-to"
+                                                            name="timeline-to" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+
+
+                                                <div class="col-md-12 d-flex justify-content-center">
+                                                    <button class="btn btn-md tb-btn-gray text-gray-500 tb-rounded tb-font-bold"
+                                                        type="button">+ Add Alternative Date</button>
+                                                </div>
+                                                <div class="my-3 d-flex align-items-center">
+                                                    <img src="../../../../../assets/images/Icons/info-red.svg" alt=""
+                                                        class="mb-1 me-2">
+                                                    <h6 class="h6 m-0">
+                                                        Event date must be within 3 months from the current date. 
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-bottom-border" id="accordion-english-2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-english-2">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-english-2">
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-english-2" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row gy-3">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label "
+                                                            for="location">Location</label>
+                                                        <input class="col-12 input-field" id="location" name="location"
+                                                            placeholder="Placeholder text" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2" for="eventCat">Event
+                                                            Category</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="eventCat">
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label " for="cname">Contact
+                                                            Name</label>
+                                                        <input class="col-12 input-field" id="cname" name="cname"
+                                                            placeholder="Placeholder text" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Event
+                                                            Brief</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Event
+                                                            Objectives</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">How are the
+                                                            event’s objectives aligned with the Abu Dhabi Government’s
+                                                            strategic messages?</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Main
+                                                            Partners</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Main
+                                                            Invitees
+                                                            (High-level)</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Number of
+                                                            attendees</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2" for="reqType">Request
+                                                            type</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="reqType">
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group">
+                                                        <label class="col-12 input-label p-2"
+                                                            for="main-personality">Main personality’s
+                                                            engagement during the event</label>
+                                                        <select class="js-example-basic-multiple col-12 fav_clr"
+                                                            aria-label="Default select example" id="main-personality">
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label"
+                                                            for="inputNoError">Description</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Did the
+                                                            event
+                                                            previously take place?*</label>
+                                                        <div>
+                                                            <div class="d-inline-flex align-items-center pt-3">
+                                                                <input class="me-2" type="radio" id="creative1"
+                                                                    name="deliverable" value="HTML">
+                                                                <label for="creative1" class="tb-fs-14 me-3">YES</label>
+                                                            </div>
+                                                            <div class="d-inline-flex align-items-center pt-3">
+                                                                <input class="me-2" type="radio" id="creative2"
+                                                                    name="deliverable" value="HTML">
+                                                                <label for="creative2" class="tb-fs-14 me-3">NO</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Previous
+                                                            Patrons</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="date">Previous Event
+                                                            date</label>
+                                                        <input type="date" class="col-12 input-field" id="date">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Did HH
+                                                            previously attend the event?</label>
+                                                        <div>
+                                                            <div class="d-inline-flex align-items-center pt-3">
+                                                                <input class="me-2" type="radio" id="creative3"
+                                                                    name="deliverable2" value="HTML">
+                                                                <label for="creative3" class="tb-fs-14 me-3">YES</label>
+                                                            </div>
+                                                            <div class="d-inline-flex align-items-center pt-3">
+                                                                <input class="me-2" type="radio" id="creative4"
+                                                                    name="deliverable2" value="HTML">
+                                                                <label for="creative4" class="tb-fs-14 me-3">NO</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Previous
+                                                            Patrons</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="date">Previous Event
+                                                            date</label>
+                                                        <input type="date" class="col-12 input-field" id="date">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="tb-input-group p-2 mt-3">
+                                                        <label class="col-12 input-label" for="inputNoError">Any other
+                                                            information to support the request</label>
+                                                        <input class="col-12 input-field" id="inputNoError"
+                                                            name="inputNoError" placeholder="Placeholder">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-bottom-border" id="accordion-english-3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-english-3">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-english-3">
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-english-3" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row gy-3">
+
+                                                <div class="col-12">
+                                                    <h5 class="mb-4">Upload attachments for each of the following
+                                                        categories
+                                                    </h5>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Brief on the event’s
+                                                                    history* </label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Event route*</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Press releases related
+                                                                    to the event*</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Basic information on main
+                                                                    partners and speakers*</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Event map-out (venue) and
+                                                                    seating distribution (if available)*</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Event programme</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Marketing and media
+                                                                    plan</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Basic information on
+                                                                    high-level invitees</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12  mt-3">
+                                                    <div class="tb-input-group">
+                                                        <div class="d-flex justify-content-between p-3">
+                                                            <div class="col">
+                                                                <label class="input-label d-flex align-items-center"
+                                                                    for="fileupload">Detailed budget
+                                                                    plan</label>
+                                                                <div class="position-relative col">
+                                                                    <input type="file" name="fileupload"
+                                                                        class="file-position w-75" id="fileupload"
+                                                                        accept="pdf" multiple>
+                                                                </div>
+                                                            </div>
+                                                            <label
+                                                                class="btn btn-md tb-btn-primary tb-rounded tb-font-regular"
+                                                                for="fileupload">Upload</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <div class="border-0 info-outer bg-white">
+                                                      <div class="d-flex">
+                                                        <div>
+                                                          <img class="info-icon" src="../../../../../assets/images/info-icon1.svg" alt="">
+                                                        </div>
+                                                       <ul class="">
+                                                           <li class="text-justify">The organizing entity must submit the request no later than 3
+                                                            months
+                                                            prior to the event date, noting that the date of receiving the
+                                                            request is after submitting all the listed requiremeets</li>
+                                                           <li class="text-justify">The application will be assessed in terms of the category,
+                                                            reputation and size of the event locally and internationally, in
+                                                            addition to its alignment to Abu Dhabi’s vision and strategic
+                                                            goals</li>
+                                                           <li class="text-justify">Applications containing any of the below will not be processed:</li>
+                                                           <li class="text-justify">Objectives that contradict the customs and traditions of Abu
+                                                            Dhabi</li>
+                                                           <li class="text-justify">Financial aid requests</li>
+                                                           <li class="text-justify">Events that are sponsored by any other party</li>
+                                                       </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-0">
+                                <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                    <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                        Cancel
+                                    </button>
+
+                                    <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#mediaconsultation-sendrequest">
+                                        Send Request
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade shadow-none" id="pills-arabic" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <form action="">
+                            <div class="accordion" id="accordion-arabic">
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-arabic-1">
+                                        <button type="button" class="shadow-none accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-arabic-1">
+                                            Title
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-arabic-1" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="request-title-ar">اسم
+                                                            الكيان </label>
+                                                        <input class="col-12 input-field text-end" id="request-title-ar"
+                                                            name="entity-name" placeholder="نائب" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end" for="entity-name">اسم
+                                                            الكيان </label>
+                                                        <input class="col-12 input-field text-end" id="entity-name"
+                                                            name="entity-name" placeholder="نائب" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                            </div>
+                                            <div class="row gy-2 my-2 mb-5">
+                                                <h6 class="h6 my-3">
+                                                    Format
+                                                </h6>
+                                                <div class="d-flex justify-content-between flex-wrap gap-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="me-3 impact" type="radio" id="format1"
+                                                            name="format" value="yes" />
+                                                        <label for="format1">Placeholder</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="me-3" type="radio" id="format2" name="format"
+                                                            value="no" />
+                                                        <label for="format2">Placeholder</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="me-3" type="radio" id="format3" name="format"
+                                                            value="no" />
+                                                        <label for="format3">Placeholder</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="me-3" type="radio" id="format4" name="format"
+                                                            value="no" />
+                                                        <label for="format4">Placeholder</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <input class="me-3" type="radio" id="format5" name="format"
+                                                            value="no" />
+                                                        <label for="format5">Placeholder</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <h6 class="h6 my-3 text-end">
+                                                    الجدول الزمني
+                                                </h6>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="timeline-from">إلى</label>
+                                                        <input type="date"
+                                                            class="col-12 input flex-row-reverse text-end"
+                                                            id="timeline-from" name="timeline-from" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="timeline-to">إلى</label>
+                                                        <input type="date"
+                                                            class="col-12 input flex-row-reverse text-end"
+                                                            id="timeline-to" name="timeline-to" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="expected-publication-timeline">الجدول الزمني المتوقع
+                                                            للنشر
+                                                        </label>
+                                                        <input type="date"
+                                                            class="col-12 input flex-row-reverse text-end"
+                                                            id="expected-publication-timeline"
+                                                            name="expected-publication-timeline" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h6 class="h6 my-3 text-end">
+                                                    موضوع الاهتمام
+                                                </h6>
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end" for="key-msg">الرسائل
+                                                            الرئيسية</label>
+                                                        <input class="col-12 input-field text-end" id="key-msg"
+                                                            name="key-msg" placeholder="نائب" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div
+                                                            class="fileUpload col-4 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="fs-5">Upload</span>
+                                                            <input id="upload-prl-en" type="file" class="upload" />
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="col-12 input-label text-end" for="prl-en">خبر
+                                                                صحفى
+                                                            </label>
+                                                            <input class="col-12 input text-end" type="text" id="prl-en"
+                                                                placeholder="تحميل المرفق" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-arabic-2">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-arabic-2">
+                                            Spokesperson Information
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-arabic-2" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="key-msg">اسم</label>
+                                                        <input class="col-12 input-field text-end" id="name" name="name"
+                                                            placeholder="نائب" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-md-12 mt-4">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end" for="biography">سيرة
+                                                            شخصية </label>
+                                                        <input class="col-12 input-field   text-end" id="biography"
+                                                            name="biography" placeholder="نائب" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div
+                                                            class="fileUpload col-4 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="fs-5">Upload</span>
+                                                            <input id="upload-prl-en" type="file" class="upload" />
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="col-12 input-label text-end" for="prl-en">صورة
+                                                                للوجه
+                                                            </label>
+                                                            <input class="col-12 input text-end" type="text" id="prl-en"
+                                                                placeholder="تحميل المرفق" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="tb-h4 mt-4 text-end">مقابض اجتماعية
+                                                </h6>
+                                                <div class="row g-4 mt-0">
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="facebook">ينكدين</label>
+                                                            <input class="col-12 input-field text-end" id="facebook"
+                                                                name="facebook" placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="youtube">ينكدين</label>
+                                                            <input class="col-12 input-field text-end" id="youtube"
+                                                                name="youtube" placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="instagram">ينكدين</label>
+                                                            <input class="col-12 input-field text-end" id="instagram"
+                                                                name="instagram" placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="twitter">ينكدين</label>
+                                                            <input class="col-12 input-field text-end" id="twitter"
+                                                                name="twitter" placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="linkedin">ينكدين</label>
+                                                            <input class="col-12 input-field text-end" id="linkedin"
+                                                                name="linkedin" placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tb-input-group p-2">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="social-others">ينكدين</label>
+                                                            <input class="col-12 input-field text-end"
+                                                                id="social-others" name="social-others"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                        <p class="error-message">• Error Message</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-arabic-3">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-arabic-3">
+                                            Attachments*
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-arabic-3" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div
+                                                            class="fileUpload col-4 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="fs-5">Upload</span>
+                                                            <input id="upload-infographics" type="file"
+                                                                class="upload" />
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="infographics">الرسوم البيانية
+                                                            </label>
+                                                            <input class="col-12 input text-end" type="infographics"
+                                                                id="infographics" placeholder="تحميل المرفق" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <div class="tb-input-group d-flex p-3">
+                                                        <div
+                                                            class="fileUpload col-4 text-center btn-md tb-btn-primary tb-rounded">
+                                                            <span class="fs-5">Upload</span>
+                                                            <input id="upload-media-assets" type="file"
+                                                                class="upload" />
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="media-assets">أصول الوسائط</label>
+                                                            <input class="col-12 input text-end" type="text"
+                                                                id="media-assets" placeholder="تحميل المرفق" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-4">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="supporting-data">تاريخ الدعم
+                                                        </label>
+                                                        <input class="col-12 input-field text-end" id="supporting-data"
+                                                            name="supporting-data" placeholder="تحميل المرفق" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                                <div class="col-md-12 mt-4">
+                                                    <div class="tb-input-group p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="further-info">مزيد
+                                                            من المعلومات</label>
+                                                        <input class="col-12 input-field text-end" id="further-info"
+                                                            name="further-info" placeholder="تحميل المرفق" />
+                                                    </div>
+                                                    <p class="error-message">• Error Message</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                    <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                        Cancel
+                                    </button>
+
+                                    <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#mediaconsultation-sendrequest">
+                                        Send Request
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade shadow-none" id="pills-dual" role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
+                        <form action="">
+                            <div class="accordion" id="accordion-dual">
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-duel-1">
+                                        <button type="button" class="shadow-none accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-duel-1">
+                                            Title
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-duel-1" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Type of
+                                                                Announcement<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Category of
+                                                                Announcement<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links"
+                                                                placeholder="international participation" />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h6 class="h6 my-3">
+                                                    Fill in if this request relates to international
+                                                    participation*<sup>*</sup>
+                                                </h6>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Related
+                                                                Link/Website<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Other
+                                                                EntitiRelated Link/
+                                                                Website<sup>*</sup>es<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links"
+                                                                placeholder="international participation" />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row gy-2 my-2">
+                                                <h6 class="h6 my-3">
+                                                    Will this have an impact on Abu Dhabi?
+                                                </h6>
+                                                <div class="d-flex align-items-center">
+                                                    <input class="me-3" type="radio" id="impact1" name="impacts"
+                                                        value="yes" />
+                                                    <label for="impact1">Yes</label>
+                                                </div>
+                                                <div>
+                                                    <input class="me-3" type="radio" id="impact2" name="impacts"
+                                                        value="no" />
+                                                    <label for="impact2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Select
+                                                                Impact</label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Strategic
+                                                                relevance to Abu Dhabi*</label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h6 class="h6 my-3">
+                                                    Announcement is related to a member of the Royal
+                                                    Family (HH)<sup>*</sup>
+                                                </h6>
+                                            </div>
+                                            <div class="row gy-2">
+                                                <div class="d-flex align-items-center">
+                                                    <input class="me-3" type="radio" id="royal-family-1"
+                                                        name="royal-family" value="yes" />
+                                                    <label for="royal-family-1">Yes</label>
+                                                </div>
+                                                <div>
+                                                    <input class="me-3" type="radio" id="royal-family-2"
+                                                        name="royal-family" value="nno" />
+                                                    <label for="royal-family-2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-duel-2">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-duel-2">
+                                            Title
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-duel-2" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Coverage
+                                                                Occurance<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Published
+                                                                Date<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <h6 class="h6 my-3">
+                                                    Already Published Before?<sup>*</sup>
+                                                </h6>
+                                                <div class="d-flex align-items-center">
+                                                    <input class="me-3" type="radio" id="published1" name="published"
+                                                        value="yes" />
+                                                    <label for="published1">Yes</label>
+                                                </div>
+                                                <div>
+                                                    <input class="me-3" type="radio" id="published2" name="published"
+                                                        value="no" />
+                                                    <label for="published2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Previously
+                                                                Published News<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Target
+                                                                Published
+                                                                Date<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-duel-3">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-duel-3">
+                                            Title
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-duel-3" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="tb-input-group-duel-full p-2">
+                                                        <label class="col-12 input-label" for="headline">Main Proposed
+                                                            Headline<sup></sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="headline"
+                                                            name="headline" placeholder="Placeholder.." />
+                                                    </div>
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="headline-arabic"><sup>*</sup> لیبل</label>
+                                                        <input class="col-12 input text-end collapse-inner-bg"
+                                                            id="headline-arabic" name="headline-arabic"
+                                                            placeholder="پلیس ہولڈر" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="tb-input-group-duel-full p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="headline">Subheading<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="headline"
+                                                            name="headline" placeholder="Placeholder.." />
+                                                    </div>
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="headline-arabic"><sup>*</sup> لیبل</label>
+                                                        <input class="col-12 input text-end collapse-inner-bg"
+                                                            id="headline-arabic" name="headline-arabic"
+                                                            placeholder="پلیس ہولڈر" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="tb-input-group-duel-full p-2">
+                                                        <label class="col-12 input-label" for="headline">Key
+                                                            Messages<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="headline"
+                                                            name="headline" placeholder="Placeholder.." />
+                                                    </div>
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label text-end"
+                                                            for="headline-arabic"><sup>*</sup> لیبل</label>
+                                                        <input class="col-12 input text-end collapse-inner-bg"
+                                                            id="headline-arabic" name="headline-arabic"
+                                                            placeholder="پلیس ہولڈر" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Select
+                                                                Impact</label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Strategic
+                                                                relevance to Abu Dhabi*</label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h6 class="tb-h4 my-4">Attachments</h6>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">PRL (en)</h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">PRL (ar)</h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">
+                                                            Logos of all Entities (high res)*
+                                                        </h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">Imagery (Photography, Videos)</h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">Infographics</h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 px-4">
+                                                    <div class="col-12">
+                                                        <h5 class="tb-h4">Marketing materials</h5>
+                                                    </div>
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Website
+                                                                Link<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label"
+                                                                for="links">Remarks<sup>*</sup></label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h6 class="tb-h4 my-4">Social Handles*</h6>
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="facebook">Facebook<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="facebook"
+                                                            name="facebook" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="youtube">Youtube<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="youtube"
+                                                            name="youtube" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="instagram">Instagram<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="instagram"
+                                                            name="instagram" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="twitter">Twitter<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="twitter"
+                                                            name="twitter" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="linkedin">Linkedin<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="linkedin"
+                                                            name="linkedin" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-duel p-2">
+                                                        <label class="col-12 input-label"
+                                                            for="social-others">Other<sup>*</sup></label>
+                                                        <input class="col-12 input collapse-inner-bg" id="social-others"
+                                                            name="social-others" placeholder="Placeholder text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion-bottom-border">
+                                    <h2 class="accordion-header" id="heading-duel-4">
+                                        <button type="button" class="shadow-none accordion-button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-duel-4">
+                                            Title
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-duel-4" class="accordion-collapse collapse show">
+                                        <div class="collapse-inner-bg p-3 p-sm-5 p-md-5 p-lg-5 p-xl-5 pb-2">
+                                            <div class="col-12 mb-4">
+                                                <h6 class="h6 my-3">
+                                                    Additional relevant information<sup>*</sup>
+                                                </h6>
+                                                <h6 class="h6 my-3">
+                                                    Is the news under sponsorship / patronage.
+                                                </h6>
+                                                <div class="d-flex align-items-center">
+                                                    <input class="me-3" type="radio" id="sponsorship1"
+                                                        name="sponsorship" value="no" />
+                                                    <label for="sponsorship1">Yes</label>
+                                                </div>
+                                                <div>
+                                                    <input class="me-3" type="radio" id="sponsorship2"
+                                                        name="sponsorship" value="yes" />
+                                                    <label for="sponsorship2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-duel p-2 d-flex justify-content-between">
+                                                        <div class="">
+                                                            <label class="col-12 input-label" for="links">Patronage
+                                                                Request
+                                                                Reference</label>
+                                                            <input class="col-12 input collapse-inner-bg" id="links"
+                                                                name="links" placeholder="Placeholder.." />
+                                                        </div>
+                                                        <div class="">
+                                                            <label class="col-12 input-label text-end"
+                                                                for="links"><sup>*</sup>عنوان</label>
+                                                            <input class="col-12 input text-end collapse-inner-bg"
+                                                                id="links" name="links"
+                                                                placeholder="نص العنصر النائب" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-12">
+                                                    <div class="pdf-editor d-flex p-3">
+                                                        <div class="col-6 d-flex align-items-center">
+                                                            <img src="../../../../assets/images/Icons/PDF.svg" alt=""
+                                                                width="30" />
+                                                            <p class="mb-0 ms-3">Request_2021.pdf</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-6 d-flex align-items-center justify-content-end">
+                                                            <img src="../../../../assets/images/Icons/View-eye.svg" alt=""
+                                                                width="30" class="me-2" />
+                                                            <img src="../../../../assets/images/Icons/edit.svg" alt=""
+                                                                width="30" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-0">
+                                <div class="d-flex justify-content-center py-3 bg-white bottom-0 ">
+                                    <button class="btn btn-md bg-color-gray fw-bold tb-rounded" type="button">
+                                        Cancel
+                                    </button>
+
+                                    <button class="btn btn-md tb-btn-primary tb-rounded ms-3" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#mediaconsultation-sendrequest">
+                                        Send Request
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+        <!--create request ends here ------>
+        <!-- Modal started-->
+        <div class="modal fade modal-backdrop-op" id="submitRequestNotification" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog main-modal modal-dialog-position">
+                <div class="modal-content inner-modal-content box-shadow-popup p-4">
+                    <div class="modal-header align-items-start p-0">
+                        <img src="../../../../assets/images/popup-img.png" class="me-4" alt="" width="70">
+                        <div>
+                            <h5 class="modal-title fw-bold text-black text-capitalize" id="exampleModalLabel">News
+                                request submitted #89349</h5>
+                            <p class="m-0 lead-paragraph">Kanäsat räning, plus semid. Dåhet roredade. Fonyrade
+                                gigaskapet. Daköktig fande.</p>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer p-0 pt-3">
+                        <!-- <button type="button" class="btn" data-bs-dismiss="modal">Go to Requests</button> -->
+                        <a href="#" class="text-decoration-none text-base-black fw-bold fs-5">Go to Requests</a>
+                        <button
+                            class="btn tb-btn-popup tb-btn-popup-hover tb-rounded fw-bold fs-5 py-2 px-3 ms-4 text-base-black m-0 border-0"
+                            type="button">View All
+                            Requests</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="mediaconsultation-sendrequest" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog main-modal">
+                <div class="modal-content inner-modal-content-box box-shadow-popup">
+                    <div class="modal-header align-items-start p-4">
+                        <div>
+                            <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Send Request</h5>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer collapse-inner-bg py-4 px-5">
+                        <div class="col-12 mt-3">
+                            <div class="py-3 border border-gray  ps-3 tb-input-group tb-rounded-10">
+                                <div class="d-flex">
+                                    <div>
+                                        <img class="info-icon" src="../../../../../../../assets/images/info-icon1.svg" alt="">
+                                    </div>
+                                    <p class="px-3 m-0 tb-font-regular tb-fw-500">
+                                        You are about Send this request, sending this request will submit it to the
+                                        media office.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-4">
+                        <div class="d-flex justify-content-center">
+                            <a type="button"
+                                class="btn-md tb-btn-primary tb-rounded p-4 border-0 text-decoration-none">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Send Request modal ends here -->
+
+
+        <!-- Large Modal ends here -->
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../../../javascript/script.js"></script>
+    <script src="../../../../javascript/inputs&dropdowns.js"></script>
+    <script src="../../../../javascript/tableDropdown.js"></script>>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

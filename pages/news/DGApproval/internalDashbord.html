@@ -27,31 +27,84 @@
 
 <body>
     <div class="container-fluid p-0 m-0 pb-5">
-        <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
-                    <div class="col-3 navbar-brand" href="#">
-                        <div class="d-flex justify-content-evenly align-items-center mx-2">
-                            <div class="userImg-container mx-2">
-                                <img src="../../../assets/images/user.png" alt="user profile" class="img-responsive">
-                            </div>
-                            <div class="me-4">
-                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
-                                    Dhabi
-                                </h6>
-                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
-                            </div>
-                            <div class="vartical-line"></div>
+      <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
+        <div class="container-fluid">
+            <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between" id="navbarTogglerDemo01">
+                <div class="col-3 navbar-brand d-flex header-icons" href="#">
+                    <div class="d-flex justify-content-evenly align-items-center mx-2">
+                        <div class="userImg-container mx-2">
+                           <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
                         </div>
+                        <div class="me-4">
+                            <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                Dhabi</h6>
+                            <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                        </div>
+                        <div class="vartical-line"></div>
                     </div>
-                    <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
-
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0  header-icons">
                         <div class="d-flex justify-content-center me-3">
-                            <span class="rounded-circle pad-8-12 border-gray-500">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="rounded-circle pad-8-12 border-gray-500 w-h-40" >
+                                <a class="text-decoration-none text-black" type="button" >
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
                             </span>
                         </div>
-                        <div class="d-flex justify-content-center me-3">
+                        <div class="d-flex justify-content-center me-3 ">
+                            <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                <i class="fa-regular fa-bell"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none mobile-toggle" id="mobile-toggle-bar">
+                    <img src="../../../../assets/images/Icons/mobile-toggle-icon.svg" alt="">
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <a href="#" rel="noopener noreferrer">
+                        <div class="img-containerbox">
+                            <img src="../../../../assets/images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
+                                class="img-responsive" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar ends here -->
+    <div class="" id="sidebar-background-dim"></div>
+    <nav class="sidebar sidebarClose" id="sidebar">
+        <header>
+            <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+        </header> 
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
+                    <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
+                        <div class="userImg-container mx-2 rounded-circle">
+                            <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                        </div>
+                        <div class="me-4">
+                            <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                Dhabi</h6>
+                            <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                        </div>
+                    </div>
+                    <div class="   mb-4 mt-2  px-4  flex-center-align justify-content-between  ">
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center">
                             <span class="rounded-circle pad-8-12 border-gray-500">
                                 <i class="fa-regular fa-bell"></i>
                             </span>
@@ -61,251 +114,237 @@
                                 <i class="fa-solid fa-globe"></i>
                             </span>
                         </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500" id="close-sidebar-btn">
+                                <i class="fa-solid fa-power-off"></i>
+                            </span>
+                        </div>
                     </div>
-                    <div class="col-4 d-flex justify-content-end">
-                        <a href="#" rel="noopener noreferrer">
-                            <div class="img-containerbox">
-                                <img src="../../../assets/images/Logos/HorizontalLogos/LogoRedFilled.png" alt="logo"
-                                    class="img-responsive" />
-                            </div>
+                </div>
+                <ul class="menu-links flex-center flex-column align-items-start">
+                    <li class="nav-link sidebarTabsToggle">
+                        <a href="#" class="flex-center-align mb-2">
+                            <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                            <span class="text-dark nav-text">Dashboard</span>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                        <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <div class="d-flex align-items-center">
+                                <img src="../../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Workload</span>
+                            </div>
+                            <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                        </a>
+                        <ul class="nav-link sub-menu">
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Overview</a>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Activity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                        <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <div class="d-flex align-items-center">
+                                <img src="../../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Schedule</span>
+                            </div>
+                            <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                        </a>
+                        <ul class="nav-link sub-menu">
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Overview</a>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Activity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                        <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <div class="d-flex align-items-center ">
+                                <img src="../../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Asset Library</span>
+                            </div>
+                            <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                        </a>
+                        <ul class="nav-link sub-menu">
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Overview</a>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Activity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                        <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <div class="d-flex align-items-center ">
+                                <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Reporting</span>
+                            </div>
+                            <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                        </a>
+                        <ul class="nav-link sub-menu">
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Overview</a>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Activity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link sidebarTabsToggle dropdown-main">
+                        <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                            <div class="d-flex align-items-center ">
+                                <img src="../../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Our Standards</span>
+                            </div>
+                            <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                        </a>
+                        <ul class="nav-link sub-menu">
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Overview</a>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-content flex-center"><a
+                                    class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                        class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                <ul class="nav-link sub-menu submenu-inner">
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            1</a></li>
+                                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                            href="#">Attachments
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                    href="#">Activity</a></li>
+                        </ul>
+                    </li>
+                    <li
+                        class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                        <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                            <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                                <span>Request</span></button>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-        <!--navbar ends here -->
-
-        <nav class="sidebar " id="sidebar">
-            <header>
-                <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
-            </header>
-            <div class="menu-bar">
-                <div class="menu">
-                    <ul class="menu-links flex-center flex-column align-items-start">
-                        <li class="nav-link sidebarTabsToggle">
-                            <a href="#" class="flex-center-align mb-2">
-                                <img src="../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
-                                <span class="text-dark nav-text">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="../../../assets/images/Icons/icon1.svg" class="icon img-responsive" />
-                                    <span class="text-dark nav-text">Workload</span>
-                                </div>
-                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
-                            </a>
-                            <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Activity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="../../../assets/images/Icons/icon2.svg" class="icon img-responsive" />
-                                    <span class="text-dark nav-text">Schedule</span>
-                                </div>
-                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
-                            </a>
-                            <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Activity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
-                                <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon3.svg" class="icon img-responsive" />
-                                    <span class="text-dark nav-text">Asset Library</span>
-                                </div>
-                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
-                            </a>
-                            <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Activity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
-                                <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
-                                    <span class="text-dark nav-text">Reporting</span>
-                                </div>
-                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
-                            </a>
-                            <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Activity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-link sidebarTabsToggle dropdown-main">
-                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
-                                <div class="d-flex align-items-center ">
-                                    <img src="../../../assets/images/Icons/icon4.svg" class="icon img-responsive" />
-                                    <span class="text-dark nav-text">Our Standards</span>
-                                </div>
-                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
-                            </a>
-                            <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Overview</a>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-content flex-center"><a
-                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
-                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
-                                    <ul class="nav-link sub-menu submenu-inner">
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                1</a></li>
-                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
-                                                href="#">Attachments
-                                                2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">Activity</a></li>
-                            </ul>
-                        </li>
-                        <li
-                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
-                            <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
-                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
-                                    <span>Request</span></button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--sidebar ends here -->
-        </nav>
+        </div>
+    </nav>
+    <!--sidebar ends here -->
         <section class="main-section">
             <div class="home-content pb-5">
                 <div class="heading-section">
-                    <h5>Tues, 19 July 2022 </h5>
-                    <h1>Good morning, Harrison</h1>
+                    <h5 class="fs-5">Tues, 19 July 2022 </h5>
+                    <h1 class="fs-1 tb-font-regular text-black">Good morning, Harrison</h1>
                     <ul class="nav mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link btn btn-md tb-btn-light tb-rounded active" id="pills-home-tab"
@@ -331,42 +370,44 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active tab-remove-bg" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <div class="overview-boxes">
-                                <div class="box four">
+                            <div class="overview-boxes d-block">
+                              <div class="d-flex gap-3">
+                                <div class="box w-100 four">
                                     <div class="right-side">
-                                        <div class="box-topic">Not Started</div>
+                                        <div class="box-topic text-nowrap">Not Started</div>
                                         <div class="number">5,732</div>
                                     </div>
                                     <img src="../../../assets/images/Icons/warning-icon-gray.svg" alt="icon-warning"
                                         class="cart" width="50" height="50">
                                 </div>
-                                <div class="box five-light-yellow tb-light-yellow">
+                                <div class="box w-100 five-light-yellow tb-light-yellow">
                                     <div class="right-side ">
-                                        <div class="box-topic">In Progress
+                                        <div class="box-topic text-nowrap">In Progress
                                         </div>
                                         <div class="number">546</div>
                                     </div>
                                     <img src="../../../assets/images/Icons/warning-icon-yellow.svg" alt="icon-warning"
                                         class="cart">
                                 </div>
-                                <div class="box two">
+                                <div class="box w-100 two">
                                     <div class="right-side ">
-                                        <div class="box-topic">Awaiting Feedback
+                                        <div class="box-topic text-nowrap">Awaiting Feedback
                                         </div>
                                         <div class="number">90</div>
                                     </div>
                                     <img src="../../../assets/images/Icons/warning-icon-green.svg" alt="icon-warning"
                                         class="cart" />
                                 </div>
-                                <div class="box first">
+                                <div class="box w-100 first">
                                     <div class="right-side ">
-                                        <div class="box-topic">Delayed
+                                        <div class="box-topic text-nowrap">Delayed
                                         </div>
                                         <div class="number">90</div>
                                     </div>
                                     <img src="../../../assets/images/Icons/warning-icon-red.svg" alt="icon-warning"
                                         class="cart" />
                                 </div>
+                              </div>
                             </div>
                             <!-- table -->
                             <div class="row">

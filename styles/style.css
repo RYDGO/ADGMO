@@ -1331,7 +1331,7 @@ input:focus+.fa {
 .modal,
 .select2-container {
     width: 100% !important;
-    z-index: 999999 !important;
+    z-index: 1000000 !important;
 }
 
 
@@ -3233,6 +3233,9 @@ input:checked+.slider:before {
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+}
+.download-dropdown:after{
+    display: none;
 }
 
 

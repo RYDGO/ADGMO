@@ -9,26 +9,33 @@
     <!--======== CSS ======== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     ">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BMSVieira/BVSelect-VanillaJS@1fbb755/css/bvselect.css">
     <!--===== font-awesome CSS ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="../../../../styles/style.css">
     <link rel="stylesheet" href="../../../../styles/dashboard.css">
+  <link rel="stylesheet" href="../../../../styles/inputTags.css">
+
 </head>
 
 <body>
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
             <div class="container-fluid">
-                <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between" id="navbarTogglerDemo01">
+                <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between"
+                    id="navbarTogglerDemo01">
                     <div class="col-3 navbar-brand d-flex header-icons" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile"
+                                    class="h-100">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -39,8 +46,8 @@
                         </div>
                         <div class="navbar-nav me-auto mb-2 mb-lg-0  header-icons">
                             <div class="d-flex justify-content-center me-3">
-                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40" >
-                                    <a class="text-decoration-none text-black" type="button" >
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <a class="text-decoration-none text-black" type="button">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </a>
                                 </span>
@@ -76,13 +83,14 @@
         <nav class="sidebar sidebarClose" id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
-            </header> 
+            </header>
             <div class="menu-bar">
                 <div class="menu">
                     <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
                             <div class="userImg-container mx-2 rounded-circle">
-                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile"
+                                    class="h-100">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -335,64 +343,229 @@
             </div>
         </nav>
         <!--sidebar ends here -->
-        
-      <section class="main-section">
-        <div class="header">
-        <div class=" d-flex position-relative my-4 align-items-center d-fle justify-content-between">
-            <div class="col-6 d-flex position-relative my-4 align-items-center">
-              <h1 class="tb-font-bold fs-1 m-0 p-0">Reporting</h1>
-            </div>
-            <div class="col-md-2">
-                <div class="tb-input-group p-1 px-2 tb-bg-light rounded-3 border-0 ">
-                  <input class="col-11 input bg-transparent fs-5 py-2 px-2" autocomplete="off" role="combobox" id="input" name="browsers" placeholder="placeholder..">
-                  <i class="fa fa-solid fa-angle-down fs-5 "></i>
-                  <datalist id="browsers" role="listbox" style="display: none;">
-                    <option value="SLA Compliance">SLA Compliance</option>
-                    <option value="Asset Library">Asset Library</option>
-                    <option value="Request Summary">Request Summary</option>
-                  </datalist>
+
+        <section class="main-section">
+            <div class="pb-5">
+            <div class="header px-3 pb-5">
+                <div class=" d-flex position-relative my-4 align-items-center d-fle justify-content-between">
+                    <div class="col-6 d-flex position-relative my-4 align-items-center">
+                        <h1 class="tb-font-bold fs-1 m-0 p-0">Reporting</h1>
+                    </div>
+                    <div class="col-3">
+                        <div class="position-relative p-1 px-2 tb-bg-light rounded-3 border-0 ">
+                            <input class="col-11 input bg-transparent fs-5 py-2 px-2" autocomplete="off" role="combobox"
+                                id="input" name="browsers" placeholder="placeholder..">
+                            <i class="fa fa-solid fa-angle-down fs-5 "></i>
+                            <datalist id="browsers" role="listbox" style="display: none;">
+                                <option value="SLA Compliance">SLA Compliance</option>
+                                <option value="Asset Library View">Asset Library View</option>
+                                <option value="Request Summary">Request Summary</option>
+                            </datalist>
+                        </div>
+                    </div>
                 </div>
-                <p class="error-message" style="display: none;">• Error Message</p>
+                <div class="row">
+                    <div class="col">
+                        <label for="#selectdata" class="pb-3 fs-5 ">Select the entity for reporting</label>
+                        <div class="tb-input-group" id="selectdata">
+                            <label class="col-12 fs-6 text-muted px-3 pt-2" for="date">Entity</label>
+                            <div class="f-dropdown selectDropdown filled "><select class="f-control f-dropdown pt-0"
+                                    placeholder="Please choose 2">
+                                    <option value=""></option>
+                                    <option value="KIZAD" data-image="../../assets/images/Icons/dropdown-icons.svg" class="grayshade-100">KIZAD
+                                    </option>
+                                    <option value="DOH" selected="selected"
+                                        data-image="../../assets/images/Icons/dropdown-icons.svg" class="grayshade-100">DOH</option>
+                                    <option value="EMIRF" data-image="../../assets/images/Icons/dropdown-icons.svg"  class="grayshade-100">EMIRF
+                                    </option>
+                                    <option value="ARAM" data-image="../../assets/images/Icons/dropdown-icons.svg" class="grayshade-100">ARAM
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="#selectdata" class="pb-3 fs-5 ">Select the date range</label>
+                        <div class="tb-input-group p-2 pb-3">
+                            <label class="col-12 fs-6 text-muted  pt-2" for="date">Date Range</label>
+                            <div class="">
+                                <input type="text" name="daterangedata" value="" class="col-11 fs-5 text-muted"
+                                    placeholder="01/01/2018 - 01/15/2018 " />
+                                <img src="../../assets/images/Icons/calendar-date.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="#selectdata" class="pb-3 fs-5 ">Select the sector</label>
+                        <div class="tb-input-group">
+                            <label class="col-12 input-label p-2 text-muted  pt-2" for="multiselectSector">Sector</label>
+                            <select class="js-example-basic-multiple multiple-select col-12 fav_clr select2-hidden-accessible" name="states[]" multiple="" id="multiselectSector" placeholder="" data-select2-id="select2-data-multiselect-1" tabindex="-1" aria-hidden="true">
+                              <option value="all">All</option>
+                              <option value="ADP">ADP</option>
+                              <option value="ADP">DOH</option>
+                              <option value="ADP">ADHA</option>
+                              <option value="ADP">ADSSA</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label for="#selectdata" class="pb-3 fs-5 ">Select the member</label>
+                        <div class="tb-input-group" id="selectdata">
+                            <label class="col-12 fs-6 text-muted px-3 pt-2" for="date">Member</label>
+                            <div class="f-dropdown selectDropdown filled "><select class="f-control f-dropdown pt-0"
+                                    placeholder="Please choose 2">
+                                    <option value=""></option>
+                                    <option value="KIZAD" data-image="../../assets/images/Icons/person-black.svg" class="grayshade-100">KIZAD
+                                    </option>
+                                    <option value="DOH" selected="selected"
+                                        data-image="../../assets/images/Icons/person-black.svg" class="grayshade-100">Seshu Kuppa</option>
+                                    <option value="EMIRF" data-image="../../assets/images/Icons/person-black.svg"  class="grayshade-100">EMIRF
+                                    </option>
+                                    <option value="ARAM" data-image="../../assets/images/Icons/person-black.svg" class="grayshade-100">ARAM
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <label for="#selectdata" class="pb-3 fs-5 ">Select the entity</label>
+                    <div class="tb-input-group">
+                        <label class="col-12 input-label p-2 text-muted  pt-2" for="multiselectEntity">Entity</label>
+                        <select class="js-example-basic-multiple multiple-select col-12 fav_clr select2-hidden-accessible" name="states[]" multiple="" id="multiselectEntity" placeholder="" data-select2-id="select2-data-multiselect-2" tabindex="-1" aria-hidden="true">
+                          <option value="all">All</option>
+                          <option value="ADP">ADP</option>
+                          <option value="ADP">DOH</option>
+                          <option value="ADP">ADHA</option>
+                          <option value="ADP">ADSSA</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col">
+                    <label for="#selectdata" class="pb-3 fs-5 ">Select the section</label>
+                    <div class="tb-input-group">
+                        <label class="col-12 input-label p-2  pt-2" for="select1">Section</label>
+                        <select class="js-example-basic-multiple col-12 fav_clr select2-hidden-accessible" aria-label="Default select example" id="select1" data-select2-id="select2-data-select1" tabindex="-1" aria-hidden="true">
+                          <option value="1" data-select2-id="select2-data-2-goht">Content</option>
+                          <option value="2" data-select2-id="select2-data-6-braj">Two</option>
+                          <option value="3" data-select2-id="select2-data-7-c1mr">Three</option>
+                        </select>
+                      </div>
+                </div>
+                
+            </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
+                        <div class="card border-0">
+                            <div class="card-body px-4 pt-4 pb-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h2 class="card-title pt-3 tb-bold input-label fs-3">Asset Library Views</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive rounded-3 mx-3 mt-4">
+                                <table id="exampletable" class="table v-middle">
+                                    <thead class="">
+                                        <tr class="gray-500 text-white text-left ">
+                                            <th class="fw-light th-pd text-left">Asset ID</th>
+                                            <th class="fw-light th-pd text-center">Type</th>
+                                            <th class="fw-light th-pd text-center">Views</th>
+                                            <th class="fw-light th-pd text-center">Downloads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-left fw-light ">
+                                        <tr>
+                                            <td
+                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="mb-0 ms-3">13765</p>
+                                                </div>
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">Video</td>
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-center">
+                                                <span>100</span>
+                                                <div class="float-end me-3 position-relative  text-center w-h-40">
+                                                    <input
+                                                        class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
+                                                        type="checkbox" value="" id="multi-checked-list-1">
+                                                </div>
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">42</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="mb-0 ms-3">13765</p>
+                                                </div>
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">video</td>
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-center">
+                                                <span>100</span>
+                                                <div class="float-end me-3 position-relative  text-center w-h-40">
+                                                    <input
+                                                        class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
+                                                        type="checkbox" value="" id="multi-checked-list-1">
+                                                </div>
+
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">42</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="mb-0 ms-3">13765</p>
+                                                </div>
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">Video</td>
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-center">
+                                                <span>100</span>
+                                                <div class="float-end me-3 position-relative  text-center w-h-40">
+                                                    <input
+                                                        class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
+                                                        type="checkbox" value="" id="multi-checked-list-1">
+                                                </div>
+
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">42</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex ps-4 align-items-center">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="mb-0 ms-3">13765</p>
+                                                </div>
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">Video
+                                            </td>
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left text-center">
+                                                <span>100</span>
+                                                <div class="float-end me-3 position-relative  text-center w-h-40">
+                                                    <input
+                                                        class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
+                                                        type="checkbox" value="" id="multi-checked-list-1">
+                                                </div>
+
+                                            </td>
+                                            <td class=" py-2 table-pd-top border-bottom-0 table-pd-left text-center">42</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
               </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-            <div class="col-md-4">
-                <label for="#selectdata"  class="py-3 fs-5 ">Select the entity for reporting</label>
-                <div class="tb-input-group" id="selectdata">
-                  <label class="col-12 input-label p-2" for="select1">Entity</label>
-                  <div class="f-dropdown selectDropdown filled"><select class="f-control f-dropdown" placeholder="Please choose 2">
-                    <option value=""> </option>
-                    <option value="KIZAD" data-image="https://source.unsplash.com/50x50/?mazda">KIZAD</option>
-                    <option value="DOH" selected="selected" data-image="https://source.unsplash.com/50x50/?mercedes">DOH</option>
-                    <option value="EMIRF" data-image="https://source.unsplash.com/50x50/?skoda">EMIRF</option>
-                    <option value="ARAM" data-image="https://source.unsplash.com/50x50/?renault">ARAM</option>
-                  </select><ul><li class=""><a data-val="1"><img src="https://source.unsplash.com/50x50/?mazda"><span>List entry #2.1</span></a></li><li class="active"><a data-val="2"><img src="https://source.unsplash.com/50x50/?mercedes"><span>List entry
-                      #2.2</span></a></li><li><a data-val="3"><img src="https://source.unsplash.com/50x50/?skoda"><span>List entry #2.3</span></a></li><li><a data-val="4"><img src="https://source.unsplash.com/50x50/?renault"><span>List entry #2.4</span></a></li><li class=""><a data-val="5"><img src="https://source.unsplash.com/50x50/?jeep"><span>List entry #2.5</span></a></li></ul><span><img src="https://source.unsplash.com/50x50/?mercedes"><span>List entry
-                      #2.2</span></span></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h4>Calendar without error</h4>
-                <div class="tb-input-group p-2 mt-3 ">
-                  <label class="col-12 input-label" for="date">Calendar<sup>*</sup></label>
-                  <input type="date" class="col-12 input-field" id="date">
-                </div>
-                <p class="error-message">• Error message</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-                <h4>Calendar without error</h4>
-                <div class="tb-input-group p-2 mt-3 ">
-                  <label class="col-12 input-label" for="date">Calendar<sup>*</sup></label>
-                  <input type="date" class="col-12 input-field" id="date">
-                </div>
-                <p class="error-message">• Error message</p>
-              </div>
-            </div>
-            </div>
-            </div>
-        </section> 
+        </div>
+        </section>
         <!--dashboard ends here ------>
 
     </div>
@@ -400,9 +573,16 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="../../../../javascript/script.js"></script>
+    <script src="../../javascript/inputs&dropdowns.js"></script>
+<script src="../../javascript/inputTags.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
 
 </html>

@@ -3221,6 +3221,41 @@ input:checked+.slider:before {
 }
 
 
+/* status -backgrounds */
+
+.status-not_started,
+.status-under_review,
+.status-declined,
+.status-closed ,
+.status-reopen,
+.status-blocked {
+    background: #b0b0b069;
+}
+.status-draft,
+.status-in_progress,
+.status-pending,
+.status-on_hold,
+.status-revision,
+.status-assigned,
+.status-scheduling {
+    background-color: var(--light-yellow-box-color) !important;
+}
+
+.status-approved,
+.status-accepted,
+.status-completed,
+.status-feedback,
+.status-published,
+.status-scheduled,
+.status-ready,
+.status-dg_approved {
+    background: #37c3a133;
+}
+
+.status-rejected,.status-cancelled {
+    background: #ef3f431a;
+}
+
 /* ------------------media queries----------------------- */
 @media(min-width:320px) {
     .navbar-style {

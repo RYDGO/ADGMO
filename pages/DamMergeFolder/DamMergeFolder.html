@@ -465,7 +465,7 @@
                   <div class="card-body px-4 pt-4">
                     <div class="d-flex justify-content-between align-items-center">
                       <div>
-                        <p class="mb-0"> <span class="tb-fs-14 tb-fw-700 tb-font-regular">34</span> Results found for <span
+                        <p class="mb-0"> <span class="tb-fs-14 tb-fw-700 tb-font-regular">341</span> Results found for <span
                             class="tb-fs-14 tb-fw-700 tb-font-regular">“ADGMO”</span> </p>
                       </div>
                       <div class="home-content d-flex">
@@ -526,7 +526,7 @@
                                   <li class="py-2"><a href="./versionHistoryCard.html"
                                       class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
                                           src="../../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                          class="w-h-20 me-2"></span>Open</a></li>
+                                          class="w-h-20 me-2"></span>Open1</a></li>
                                   <li class="py-2"><a href="#"
                                       class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
                                       data-bs-toggle="modal" data-bs-target="#ImagesModal"><span><img
@@ -1389,9 +1389,11 @@
                             <div class="card grid-card-style" style="display: none;">
                               <ul class="list-unstyled">
                                 <li class="py-2"><a href="#"
-                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                        src="../../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                        class="w-h-20 me-2"></span>Open</a></li>
+                                  class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                  data-bs-toggle="modal" data-bs-target="#OpenImageModal"><span><img
+                                      src="../../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                      class="w-h-20 me-2"></span>Open</a></li>
+
                                 <li class="py-2"><a href="#"
                                     class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
                                     data-bs-toggle="modal" data-bs-target="#PropertiesModal"><span><img
@@ -3580,7 +3582,37 @@
     </div>
   </div>
 
+ <!--View Image Modal -->
+ <div class="modal fade background-dim" id="OpenImageModal" tabindex="-1" aria-labelledby="exampleDamModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg inner-modal-content-dam-modals">
+    <div class="modal-content box-shadow-popup mx-5 ">
 
+      <div class="modal-body">
+        <div class="row m-3">
+          <div class="col-12 d-flex align-items-center mb-3">
+            <div class="col-6">
+              <h5 class="m-0 tb-fs-14">VID_98349.mp4 </h5>
+            </div>
+            <div class="col-6 ms-1 d-flex justify-content-between">
+              <h5 class="m-0 tb-fs-14"> </h5>
+              <button type="button" class="btn-close close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="col-12">
+            <img class="w-100" src="../../assets/images/video-img.svg" alt="">
+          </div>
+          <div class="col-12">
+            <div class="col-12 mt-5 d-flex justify-content-center flex-row px-4">
+              <button class="btn btn-md tb-btn-primary tb-rounded w-10" type="button">Download</button>
+              <button class="btn btn-md ms-3 tb-btn-secondary tb-rounded w-10" type="button">Archive</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DAM open modal ends here -->
 
     <!--Properties Modal -->
     <div class="modal fade background-dim" id="PropertiesModal" tabindex="-1" aria-labelledby="exampleDamModalLabel" aria-hidden="true">

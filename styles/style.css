@@ -1317,7 +1317,7 @@ input:focus+.fa {
 .modal,
 .select2-container {
     width: 100% !important;
-    z-index: 999999 !important;
+    z-index: 1000000 !important;
 }
 
 
@@ -3254,119 +3254,6 @@ input:checked+.slider:before {
 
 .status-rejected,.status-cancelled {
     background: #ef3f431a;
-}
-
-/* -----------------Media queries of Header and Sidebar- starts here------------------ */
-@media(min-width:320px){
-  .navbar-style{
-      padding: 20px 10px;
-  }
-}
-@media(max-width:575px){
-  .header-icons{
-      display: none;
-  }
-  #navbarTogglerDemo01{
-      display: flex;
-      justify-content: space-between;
-  }
-}
-@media(max-width:768px){
-  .mobile-icons-sidebar{
-      display: flex !important;
-  }
-  .sidebar{
-      position: fixed;
-      top: 9%;
-      left: 0%;
-      height: 100%;
-      width: 280px;
-      /* padding: 10px 0px; */
-      background: var(--base-white-color);
-      /* transition: var(--tran-05); */
-      transition: 0.6s ease-in-out;
-      z-index: 100;
-  }
-  .sidebarClose{
-      position: fixed;
-      top: 9%;
-      left: -100% !important;
-      height: 100%;
-      width: 280px;
-      /* padding: 10px 0px; */
-      transition: 0.6s ease-in-out;
-      background: var(--base-white-color);
-      transition: var(--tran-05);
-      z-index: 100;
-  }
-  .sidebar header .toggle{
-      display: none;
-  }
-  .main-section {
-      position: relative;
-      background: var(--body-bg);
-      min-height: 100vh;
-      width: 100%;
-      padding: 15px 40px !important;
-      left: 0 !important;
-      transition: all 0.5s ease;
-      top: 6rem;
-  }
-}
-
-/* status labels */
-
-/* constent color  */
-
-.tb-completed,
-.tb-approved,
-.tb-accepted,
-.tb-scheduled,
-.tb-published,
-.tb-ready,
-.tb-feedback {
-    color: var(--status-color-green) !important;
-    font-weight:600;
-}
-
-.tb-scheduled,.tb-scheduling {
-    color: var(--status-color-yellow) !important;
-    font-weight:600;
-}
-
-.tb-in_progress,
-.tb-on_hold,
-.tb-scheduling,
-.tb-pending,
-.tb-draft,
-.tb-requester_review,
-.tb-assigned,
-.tb-revision {
-    color: var(--status-color-orange) !important;
-    font-weight:600;
-}
-
-.tb-cancelled,.tb-rejected,.delayed{
-    color: var(--base-color) !important;
-    font-weight:600;
-}
-
-.tb-reopen,
-.tb-under_review,
-.tb-not_started {
-    font-weight:600;
-}
-
-.tb-declined,
-.tb-closed,
-.tb-blocked {
-    color: var(--grayshade-400) !important;
-    font-weight:600;
-}
-
-.tb-approval {
-    color: var(--status-color-blue);
-    font-weight:600;
 }
 
 /* ------------------media queries----------------------- */

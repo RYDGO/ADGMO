@@ -2368,7 +2368,6 @@ header .image-text .profession {
     padding: 85px 40px 0px 40px;
     left: 250px;
     transition: all 0.5s ease;
-    z-index: 100001;
 }
 
 .sidebar.active~.main-section {

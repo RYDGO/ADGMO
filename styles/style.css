@@ -1268,18 +1268,23 @@ input:focus+.fa {
     transition: transform 0.8s ease;
 }
 
+
 /* daterangepicker */
-.daterangepicker{
+
+.daterangepicker {
     /* right: 7rem !important; */
     box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.294);
-    border:1px solid #ECEFF1 !important;
+    border: 1px solid #ECEFF1 !important;
     z-index: 999999 !important;
 }
-.daterangepicker td.active,.daterangepicker td.active:hover{
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
     background-color: var(--base-color)
 }
-.drp-buttons{
-    display:none !important;
+
+.drp-buttons {
+    display: none !important;
 }
 
 
@@ -1327,6 +1332,7 @@ input:focus+.fa {
     top: 50%;
     width: 0;
 }
+
 
 /* .modal,
 .select2-container {
@@ -1900,10 +1906,12 @@ tbody tr:hover {
     background-color: var(--body-bg) !important;
     cursor: pointer;
 }
+
 table.dataTable>tbody>tr.selected>* {
     box-shadow: inset 0 0 0 9999px rgba(241, 241, 241, 0.9);
     color: #393939;
 }
+
 .th-pd {
     padding: 14px 24px !important;
 }
@@ -2587,11 +2595,9 @@ textarea {
     0% {
         opacity: 0;
     }
-
     50% {
         opacity: 0.5;
     }
-
     100% {
         opacity: 1;
     }
@@ -3237,7 +3243,8 @@ input:checked+.slider:before {
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
-.download-dropdown:after{
+
+.download-dropdown:after {
     display: none;
 }
 
@@ -3247,11 +3254,12 @@ input:checked+.slider:before {
 .status-not_started,
 .status-under_review,
 .status-declined,
-.status-closed ,
+.status-closed,
 .status-reopen,
 .status-blocked {
     background: #b0b0b069;
 }
+
 .status-draft,
 .status-in_progress,
 .status-pending,
@@ -3273,11 +3281,14 @@ input:checked+.slider:before {
     background: #37c3a133;
 }
 
-.status-rejected,.status-cancelled {
+.status-rejected,
+.status-cancelled {
     background: #ef3f431a;
 }
 
+
 /* ------------------media queries----------------------- */
+
 @media(min-width:320px) {
     .navbar-style {
         padding: 20px 10px;
@@ -3285,7 +3296,6 @@ input:checked+.slider:before {
 }
 
 @media(max-width:575px) {
-
     #navbarTogglerDemo01 {
         display: flex;
         justify-content: space-between;
@@ -3293,20 +3303,15 @@ input:checked+.slider:before {
 }
 
 @media(max-width:768px) {
-    
-
     .header-icons {
         display: none !important;
     }
-
     .mobile-toggle {
         display: block !important;
     }
-
     .mobile-icons-sidebar {
         display: flex !important;
     }
-
     .sidebar {
         position: fixed;
         top: 0%;
@@ -3319,7 +3324,6 @@ input:checked+.slider:before {
         transition: 0.4s ease-in-out;
         z-index: 10000000;
     }
-
     .sidebarClose {
         position: fixed;
         top: 0%;
@@ -3331,11 +3335,9 @@ input:checked+.slider:before {
         transition: 0.4s ease-in-out;
         z-index: 10000000;
     }
-
     .sidebar header .toggle {
         display: none;
     }
-
     .main-section {
         position: relative;
         background: var(--body-bg);
@@ -3346,7 +3348,6 @@ input:checked+.slider:before {
         transition: all 0.5s ease;
         top: 6rem;
     }
-
     .sidebar-background-dim {
         background-color: rgb(0 0 0 / 60%);
         width: 100vw !important;
@@ -3374,11 +3375,9 @@ input:checked+.slider:before {
     .color-cards .overview-boxes {
         display: block !important;
     }
-
     .color-cards {
         padding: 0;
     }
-
     .pie {
         padding: 0;
     }
@@ -3389,22 +3388,23 @@ input:checked+.slider:before {
         font-size: 14px !important;
     }
 }
+
 @media(max-width:1050px) and (min-width:992px) {
-        #pie-chart{
+    #pie-chart {
         width: 100px !important;
         height: 100px !important;
     }
 }
-    
 
 @media(max-width:1260px) {
-    .team-allocation{
+    .team-allocation {
         padding: 0;
     }
-    .team-allocation h4{
+    .team-allocation h4 {
         font-size: 16px;
     }
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: var(--grayshade-100) !important;
     border: 1px solid transparent !important;
@@ -3423,22 +3423,32 @@ input:checked+.slider:before {
     vertical-align: bottom;
     white-space: nowrap;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     background-color: var(--grayshade-300) !important;
     border: none;
     color: #fff !important;
     cursor: pointer;
     font-size: 1em;
-    border-radius:50% !important;
+    border-radius: 50% !important;
     font-weight: bold;
     padding: 0px 7px;
     position: absolute;
-    left:5px !important;
+    left: 5px !important;
     top: 6px !important;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
     cursor: default;
     padding-left: 15px;
     padding-right: 5px;
     font-size: 16px;
+}
+
+table.dataTable tr th.select-checkbox.selected::after {
+    content: "✔";
+    margin-top: -11px;
+    margin-left: -4px;
+    text-align: center;
+    text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
 }

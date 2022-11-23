@@ -2677,6 +2677,7 @@ table.dataTable thead>tr>td.sorting_desc:after,
 table.dataTable thead>tr>td.sorting_asc_disabled:after,
 table.dataTable thead>tr>td.sorting_desc_disabled:after {
     top: 40%;
+    right: 10% !important;
     color: var(--text-base-white);
     opacity: 1;
 }

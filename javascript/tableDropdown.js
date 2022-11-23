@@ -146,3 +146,30 @@ $("#dropdownTable tbody").on("click", "td.dt-control", function () {
 });
 
 // ************************************************** Table Row Dropdown Ends *************************************************
+$(document).ready(function() {
+  $('#dataTables-1').DataTable( {
+      order:[[1, 'asc']],
+      rowGroup: {
+          dataSrc: 1
+      },
+      // columnDefs: [ {
+      //     targets: [ 1, 2 ],
+      //     visible: false
+      // } ]
+  } );
+} );
+
+$(document).ready(function() {
+  $('#exampletable-2').DataTable( {
+      columnDefs: [ {
+          orderable: false,
+          className: 'select-checkbox',
+          targets:   0
+      } ],
+      select: {
+          style:    'os',
+          selector: 'td:first-child'
+      },
+      order: [[ 1, 'asc' ]]
+  } );
+} );

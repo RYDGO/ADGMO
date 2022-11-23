@@ -3276,7 +3276,9 @@ input:checked+.slider:before {
 .status-rejected,.status-cancelled {
     background: #ef3f431a;
 }
-
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{
+    display: none;
+}
 /* ------------------media queries----------------------- */
 @media(min-width:320px) {
     .navbar-style {

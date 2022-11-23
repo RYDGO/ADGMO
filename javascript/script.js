@@ -285,7 +285,15 @@ $("#toggleCancel").on("click", function () {
 
 $('.toggleCheckbox').on('click', function () {
   // console.log("sfdsfdffdf11111");
-  if ($(this).is(":checked")) {
+  let checkedCount= 0;
+  let toggleCheck = $(".toggleCheckbox");
+  for (var obj of toggleCheck) {
+    if($(obj).is(":checked")) {
+      checkedCount++;
+    }
+  }
+
+  if (checkedCount) {
     $(".downloadbtn").removeClass("d-none");
     $(".shortShowHide").addClass("d-none");
   }

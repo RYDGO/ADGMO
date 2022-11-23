@@ -3194,6 +3194,13 @@ input:checked+.slider:before {
     border-radius: 6px !important;
 }
 
+.grid-card-style-dam {
+    width: 190px; 
+}
+.modalFilter-card-style.card-dam-filterby {
+    top: 8px !important;
+    left: -45px !important;
+}
 
 /* .__markerjs2_ {
     z-index: 9999999!important;

@@ -259,7 +259,9 @@
     <section class="main-section">
       <div class=" d-flex position-relative my-4 align-items-center">
         <div class="col-6 d-flex position-relative my-4 align-items-center">
-          <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
+          <a href="/portal/homepage" class="text-dark">
+            <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
+          </a>
           <h1 class="tb-font-bold fs-1 m-0 p-0">Asset Library</h1>
         </div>
         <form class="col-6 py-1 align-items-center d-flex justify-content-end">
@@ -301,11 +303,14 @@
             <div class="d-flex align-items-center ms-3 position-relative">
               <div class="form-floating gray-800 d-flex align-items-center rounded-3 px-4 btn-md">
                   <img src="../../assets/images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
-                  <div class="position-relative"><button type="button"
-                    class="gray-800 border-0 fs-5 rounded-4 btn-light border-0 bg-transparent  ellipsis-btn">
+                 
+                  <div class="position-relative">
+                    <button type="button" id="dropdownFilterButton" 
+                    class="gray-800 border-0 fs-5 rounded-4 btn-light bg-transparent" data-bs-toggle="dropdown" aria-expanded="false">
                     Filters
                   </button>
-                  <div class="card modalFilter-card-style p-3 gray-600" style="display:none;">
+                  <div class="dropdown-menu modalFilter-card-style p-3 w-30 gray-600 position-absolute z-index filterWidth card-dam-filterby"
+                  aria-labelledby="dropdownFilterButton">
                       <h3 class="card-title tb-font-bold fs-3 m-0 py-3 gray-600 px-3 pb-1">Filter by</h3>
                       <div class="card-body pt-0 gray-600 pb-0">
                         <div class="row mb-2">
@@ -1381,17 +1386,21 @@
                                 2004</span> </p>
                           </div>
                           <div class="position-relative">
+                            <!-- ======== -->
                             <input class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
-                              type="checkbox" value="" id="multi-checked-1">
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn">
-                              <img src="../../../assets/images/Icons/option-dots.svg" alt="">
-                            </button>
-                            <div class="card grid-card-style" style="display: none;">
-                              <ul class="list-unstyled">
+                            type="checkbox" value="" id="multi-checked-1">
+                            <div class="btn-group form-floating rounded-0">
+                              <button class="border-0 rounded-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../../assets/images/Icons/option-dots.svg" alt="" class="gray-900 toggle-ellipsis-btn">
+                              </button>
+                              <ul
+                                class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3 grid-card-style-dam"
+                                aria-labelledby="dropdownMenuButton">
                                 <li class="py-2"><a href="#"
                                   class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
                                   data-bs-toggle="modal" data-bs-target="#OpenImageModal"><span><img
-                                      src="../../../assets/images/Icons/view-box.svg" alt="eya-icon"
+                                      src="../../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
                                       class="w-h-20 me-2"></span>Open</a></li>
 
                                 <li class="py-2"><a href="#"
@@ -1419,6 +1428,7 @@
                                         class="w-h-20 me-2"></span>Download</a></li>
                               </ul>
                             </div>
+                            <!-- ======== -->
                           </div>
                         </div>
                       </div>
@@ -1437,17 +1447,23 @@
                                 2004</span> </p>
                           </div>
                           <div class="position-relative">
+                            <!-- ======== -->
                             <input class="form-check-input shadow-none dark-checkbox multi-checked-border toggleCheckbox d-none"
-                              type="checkbox" value="" id="multi-checked-1">
-                            <button type="button" class="border-0 ellipsis-btn bg-transparent toggle-ellipsis-btn">
-                              <img src="../../../assets/images/Icons/option-dots.svg" alt="">
-                            </button>
-                            <div class="card grid-card-style" style="display: none;">
-                              <ul class="list-unstyled">
+                            type="checkbox" value="" id="multi-checked-1">
+                            <div class="btn-group form-floating rounded-0">
+                              <button class="border-0 rounded-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../../assets/images/Icons/option-dots.svg" alt="" class="gray-900 toggle-ellipsis-btn">
+                              </button>
+                              <ul
+                                class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3 grid-card-style-dam"
+                                aria-labelledby="dropdownMenuButton">
                                 <li class="py-2"><a href="#"
-                                    class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"><span><img
-                                        src="../../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
-                                        class="w-h-20 me-2"></span>Open</a></li>
+                                  class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
+                                  data-bs-toggle="modal" data-bs-target="#OpenImageModal"><span><img
+                                      src="../../../assets/images/Icons/eya-icons.svg" alt="eya-icon"
+                                      class="w-h-20 me-2"></span>Open</a></li>
+
                                 <li class="py-2"><a href="#"
                                     class="text-decoration-none d-flex align-items-center fs-5 text-gray-400"
                                     data-bs-toggle="modal" data-bs-target="#PropertiesModal"><span><img
@@ -1473,6 +1489,7 @@
                                         class="w-h-20 me-2"></span>Download</a></li>
                               </ul>
                             </div>
+                            <!-- ======== -->
                           </div>
                         </div>
                       </div>

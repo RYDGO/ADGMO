@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -42,7 +42,7 @@
                         </div>
                         <!-- title -->
                     </div>
-                    <table id="exampletable" class="table v-middle">
+                    <table id="exampletable-2" class="table v-middle">
                         <thead class="">
                             <tr class="gray-500 text-white text-left">
                                 <th class="fw-light th-pd">ID </th>
@@ -79,15 +79,14 @@
                                         <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                         <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                     </span></td>
-                               
+
                                 <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                     <span><i class="fa-regular fa-clock"></i> 5:05:24</span>
-                                    <div class="float-end me-3 position-relative  text-center"><button type="button"
-                                      class=" btn-light py-1 px-2 bg-gray  rounded-circle border  ellipsis-btn" data-bs-toggle="collapse" id="row1" data-bs-target=".row1">
+                                    <div class="float-end me-3 position-relative  text-center"><button type="button" class=" btn-light py-1 px-2 bg-gray  rounded-circle border  ellipsis-btn" data-bs-toggle="collapse" id="row1" data-bs-target=".row1">
                                       <img src="../assets/images/Icons/up-icon.svg" alt="up-icon" width="15" class="mb-1">
                                     </button>
                                     </div>
-                                    </td>
+                                </td>
                                 <td></td>
                             </tr>
                             <tr class="collapse row1">
@@ -230,9 +229,10 @@
                         <!-- title -->
                     </div>
                     <div class="table-responsive rounded-3 mx-3 mt-1">
-                        <table id="exampletable" class="table v-middle">
+                        <table id="exampletable-1" class="table v-middle">
                             <thead class="">
                                 <tr class="gray-500 text-white text-left">
+                                    <th></th>
                                     <th class="fw-light th-pd">ID </th>
                                     <th class="fw-light th-pd">Type</th>
                                     <th class="fw-light th-pd">Due Date</th>
@@ -244,15 +244,10 @@
                             </thead>
                             <tbody class="text-left fw-light ">
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                            <h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
                                                 16
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -262,26 +257,18 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
 
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center">                                            <h6 class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 14
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -290,129 +277,94 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span>
                                     </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center ">
-                                            <h6
-                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                10
-                                            </h6>
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                10                                            </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
                                         </div>
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
-                                    </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center ">
-                                            <h6
-                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 10
                                             </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
+                                            <h6 class="fs-6 fw-light">16312</h6>                                        </div>
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
-                                    </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 9
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
                                         </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
+                                    </td>                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
 
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0  d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0  d-flex justify-content-start align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 16
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
                                         </div>
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
 
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                             </tbody>
@@ -472,8 +424,8 @@
             </div>
         </div>
         <!-- table-ends here -- -->
-         <!-- table -->
-         <div class="row">
+        <!-- table -->
+        <div class="row">
             <!-- column -->
             <div class="col-12">
                 <div class="card">
@@ -493,9 +445,7 @@
                             </div>
                             <div class="vartical-line me-4"></div>
                             <div class="dl">
-                                <button
-                                    class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text"
-                                    type="button"><img
+                                <button class="btn py-3 px-4 tb-btn-primary tb-rounded tb-bold nav-text" type="button"><img
                                         src="../../../../assets/images/Icons/Chart_fill.svg"
                                         class="me-1"> View
                                     All</button>
@@ -520,11 +470,9 @@
                             <tbody class="text-left fw-light ">
                                 <tr>
                                     <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex align-items-center justify-content-center">
 
-                                            <div
-                                                class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                            <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
                                                 <h6 class="pt-2">
                                                     L1
                                                 </h6>
@@ -532,22 +480,17 @@
                                             <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                         </div>
                                     </td>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
                                         Media <br> Consultations
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                         16/12/22</td>
-                                    <td
-                                        class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                    <td class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
                                         Energy</td>
-                                    <td
-                                        class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
-                                        <span
-                                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                    <td class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                        <span class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
                                             <p class="mb-0 bold-paragraph mt-1 tb-primary">EB</p>
-                                        </span>
-                                        Elias.B
+                                        </span> Elias.B
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
                                         <span class="p-2 status-color-orange-op">
@@ -557,19 +500,14 @@
                                                 NOT STARTED</h4>
                                         </span>
                                     </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
-                                            src="../../../../assets/images/Icons/timer-icon.svg"
-                                            alt="">
-                                        2 days
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img src="../../../../assets/images/Icons/timer-icon.svg" alt=""> 2 days
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex align-items-center justify-content-center">
 
-                                            <div
-                                                class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                            <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
                                                 <h6 class="pt-2">
                                                     L1
                                                 </h6>
@@ -577,19 +515,15 @@
                                             <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                         </div>
                                     </td>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
                                         Media <br> Consultations
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                         16/12/22</td>
-                                    <td
-                                        class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                    <td class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
                                         Energy</td>
-                                    <td
-                                        class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
-                                        <span
-                                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                    <td class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                        <span class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
                                             <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
                                         </span>
 
@@ -602,19 +536,14 @@
                                                 NOT STARTED</h4>
                                         </span>
                                     </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
-                                            src="../../../../assets/images/Icons/timer-icon.svg"
-                                            alt="">
-                                        2 days
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img src="../../../../assets/images/Icons/timer-icon.svg" alt=""> 2 days
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 table-pd-top border-bottom-0 border-bottom-0">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex align-items-center justify-content-center">
 
-                                            <div
-                                                class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
+                                            <div class="tb-bg-green align-self-center  rounded-circle w-h-25 mx-1 text-white text-center">
                                                 <h6 class="pt-2">
                                                     L1
                                                 </h6>
@@ -622,19 +551,15 @@
                                             <h6 class="fs-5 fw-light pt-1 m-0">16312</h6>
                                         </div>
                                     </td>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left flex-wrap">
                                         Media <br> Consultations
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                         16/12/22</td>
-                                    <td
-                                        class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
+                                    <td class="text-info py-2 table-pd-top border-bottom-0 table-pd-left">
                                         Energy</td>
-                                    <td
-                                        class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
-                                        <span
-                                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                                    <td class="py-2 pt-3 border-bottom-0 border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0">
+                                        <span class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
                                             <p class="mb-0 bold-paragraph mt-1 tb-primary">MRT</p>
                                         </span>
 
@@ -647,10 +572,7 @@
                                                 NOT STARTED</h4>
                                         </span>
                                     </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img
-                                            src="../../../../assets/images/Icons/timer-icon.svg"
-                                            alt="">
-                                        2 days
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><img src="../../../../assets/images/Icons/timer-icon.svg" alt=""> 2 days
                                     </td>
                                 </tr>
                             </tbody>
@@ -700,15 +622,10 @@
                             </thead>
                             <tbody class="text-left fw-light ">
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                            <h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
                                                 16
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -717,27 +634,18 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 14
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -746,83 +654,56 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>                                        </span>
                                     </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center ">
-                                            <h6
-                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 10
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
                                         </div>
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
-                                    </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24                                        </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center ">
-                                            <h6
-                                                class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 10
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
                                         </div>
                                     </td>
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        </td>
+                                </tr>                                <tr>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 9
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -832,26 +713,17 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
 
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td
-                                        class="py-2 table-pd-top border-bottom-0  d-flex justify-content-center align-items-center">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
+                                <tr>                                    <td class="py-2 table-pd-top border-bottom-0  d-flex justify-content-center align-items-center">
+
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <h6
-                                                class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                            <h6 class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
                                                 16
                                             </h6>
                                             <h6 class="fs-6 fw-light">16312</h6>
@@ -861,20 +733,16 @@
                                     <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
                                     <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
 
-                                    <td class="py-3 border-bottom-0"><span
-                                            class="d-flex align-items-center justify-content-evenly p-2 ">
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
                                             <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
                                             <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
                                         </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i
-                                            class="fa-regular fa-clock"></i>
-                                        5:05:24
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
         </div>
     </div>
@@ -882,15 +750,16 @@
 
 <!-- Javascript-files -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../javascript/script.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js
 "></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script>
 <script src="https://cdn.datatables.net/rowgroup/1.3.0/js/dataTables.rowGroup.min.js"></script>
 <script src="../javascript/tableDropdown.js"></script>
 
-<script src="../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/plugins.min.js"></script> -->
+
 
 </html>

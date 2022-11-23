@@ -152,10 +152,10 @@ $(document).ready(function() {
       rowGroup: {
           dataSrc: 1
       },
-      columnDefs: [ {
-          targets: [ 1, 2 ],
-          visible: false
-      } ]
+      // columnDefs: [ {
+      //     targets: [ 1, 2 ],
+      //     visible: false
+      // } ]
   } );
 } );
 

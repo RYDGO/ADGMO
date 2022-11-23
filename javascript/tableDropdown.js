@@ -162,12 +162,23 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('#exampletable-1').DataTable({
+  var DT1 = $('#exampletable-1').DataTable({
     columnDefs: [{
       orderable: false,
       className: 'select-checkbox',
       targets: 0
     }],
-    select: true,
+    select: {
+      style: 'multi',
+      selector: 'td:first-child'
+    },
+  });
+
+  $(".selectAll").on("click", function (e) {
+    if ($(this).is(":checked")) {
+      DT1.rows().select();
+    } else {
+      DT1.rows().deselect();
+    }
   });
 });

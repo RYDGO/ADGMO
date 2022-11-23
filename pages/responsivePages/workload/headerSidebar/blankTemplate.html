@@ -12,6 +12,8 @@
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css">
+
     <!--===== font-awesome CSS ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -24,11 +26,13 @@
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
             <div class="container-fluid">
-                <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between" id="navbarTogglerDemo01">
+                <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between"
+                    id="navbarTogglerDemo01">
                     <div class="col-3 navbar-brand d-flex header-icons" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2">
                             <div class="userImg-container mx-2">
-                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile"
+                                    class="h-100">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -39,8 +43,8 @@
                         </div>
                         <div class="navbar-nav me-auto mb-2 mb-lg-0  header-icons">
                             <div class="d-flex justify-content-center me-3">
-                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40" >
-                                    <a class="text-decoration-none text-black" type="button" >
+                                <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                    <a class="text-decoration-none text-black" type="button">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </a>
                                 </span>
@@ -76,13 +80,14 @@
         <nav class="sidebar sidebarClose" id="sidebar">
             <header>
                 <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
-            </header> 
+            </header>
             <div class="menu-bar">
                 <div class="menu">
                     <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
                         <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
                             <div class="userImg-container mx-2 rounded-circle">
-                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                <img src="../../../../assets/images/Profile-image-header.svg" alt="user profile"
+                                    class="h-100">
                             </div>
                             <div class="me-4">
                                 <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
@@ -335,10 +340,188 @@
             </div>
         </nav>
         <!--sidebar ends here -->
-        
-      <section class="main-section">
-                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit exercitationem aspernatur molestiae quo, quibusdam accusantium amet consectetur nihil et provident assumenda in quam dolorem id.</h1>
-        </section> 
+
+        <section class="main-section">
+            <!-- table 2 -->
+             <!-- table 2 -->
+        <div class="row mt-5">
+            <!-- column -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- title -->
+                        <div class="d-md-flex align-items-center px-1">
+                            <div>
+                                <h4 class="card-title tb-h3 pt-3 tb-bold">Overdue tasks</h4>
+                            </div>
+                            <div class="ms-auto d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-center me-4">
+                                    <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                        <i class="fa-solid fa-magnifying-glass "></i>
+                                    </span>
+                                </div>
+                                <div class="vartical-line me-4"></div>
+                                <div class="dl">
+                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><i
+                                            class="fa-solid fa-chart-simple fa-xs px-1"></i> View All</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- title -->
+                    </div>
+                    <div class="table-responsive rounded-3 mx-3 mt-1">
+                        <table id="exampletable-1" class="table v-middle">
+                            <thead class="">
+                                <tr class="gray-500 text-white text-left">
+                                    
+                                    <th class="pe-4"><div class="mb-2 text-end">
+                                        <input class="form-check-input shadow-none tb-bg-primary-checked selectAll" type="checkbox" value="" id="flexCheckDefault">
+                                    </div></th>
+                                    <th class="fw-light th-pd">ID </th>
+                                    <th class="fw-light th-pd">Type</th>
+                                    <th class="fw-light th-pd">Due Date</th>
+                                    <th class="fw-light th-pd">Sector</th>
+                                    <th class="fw-light th-pd">Status</th>
+                                    <th class="fw-light th-pd">Time Remaining
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-left fw-light ">
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
+                                                16
+                                            </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                14
+                                            </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center ">
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                10 </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center ">
+                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                10
+                                            </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                9
+                                            </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="py-2 table-pd-top border-bottom-0  d-flex justify-content-start align-items-center">
+
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
+                                                16
+                                            </h6>
+                                            <h6 class="fs-6 fw-light">16312</h6>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
+                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+
+                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
+                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
+                                        </span></td>
+                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
         <!--dashboard ends here ------>
 
     </div>
@@ -346,6 +529,8 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="../../../../javascript/script.js"></script>
+    <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script>
+    <script src="../../../../javascript/tableDropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

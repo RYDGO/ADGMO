@@ -111,8 +111,8 @@ $(document).ready(function () {
          var data = e.params.data.text;
          console.log(data);
          if(data=='All'){
-          $(".fav_clr > option").prop("selected","selected");
-          $(".fav_clr").trigger("change");
+          $(this).find('option').prop("selected","selected");
+          $(this).trigger("change");
          }
     });
   //--------- impact-Radio-hide/show -------

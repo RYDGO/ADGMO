@@ -15,6 +15,9 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BMSVieira/BVSelect-VanillaJS@1fbb755/css/bvselect.css">
     <!--===== font-awesome CSS ===== -->
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -619,13 +622,12 @@
                                 <!-- title -->
                                 <div class="d-md-flex align-items-center px-1 justify-content-between">
                                     <div>
-                                        <h2 class="card-title pt-3 tb-font-bold input-label fs-3">Request Summary
-                                        </h2>
+                                        <h4 class="card-title pt-3 tb-font-bold input-label fs-3">Request Summary</h4>
                                     </div>
                                     <div class="btn-group form-floating">
                                         <button class="border-0 rounded download-dropdown dropdown-toggle" type="button"
                                             id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                            <img src="../../assets/images/Icons/download-fill.svg" alt="">
+                                            <img src="../../../../assets/images/Icons/download-fill.svg" alt="">
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
                                             aria-labelledby="dropdownMenuButton">
@@ -644,99 +646,81 @@
                                 <!-- title -->
                             </div>
                             <div class="table-responsive rounded-3 mx-3 mt-1">
-                                <table id="exampletable" class="table v-middle">
+                                <table id="exampletable-1" class="table v-middle">
                                     <thead class="">
                                         <tr class="gray-500 text-white text-left">
-                                            <th class="fw-light th-pd text-center">
-                                                <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                    type="checkbox" value="" id="flexCheckDefault">
-                                            </th>
+                                            
+                                            <th class="pe-4"><div class="mb-2 text-end">
+                                                <input class="form-check-input shadow-none tb-bg-primary-checked selectAll" type="checkbox" value="" id="flexCheckDefault">
+                                            </div></th>
                                             <th class="fw-light th-pd text-nowrap">Req .Type</th>
                                             <th class="fw-light th-pd text-nowrap">Total Req. Raised</th>
-                                            <th class="fw-light th-pd">Total Req. Carried Forward
+                                            <th class="fw-light th-pd text-nowrap">Total Req. Carried Forward
                                                 From Previous Month</th>
-                                            <th class="fw-light th-pd">Total Req. Delivered</th>
-                                            <th class="fw-light th-pd">Total Req. Met SLA</th>
+                                            <th class="fw-light th-pd text-nowrap">Total Req. Delivered</th>
+                                            <th class="fw-light th-pd text-nowrap">Total Req. Met SLA</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-left fw-light ">
-                                        <tr>
-                                            <td
-                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                <div class="form-check mb-2 d-flex justify-content-center">
-                                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                        type="checkbox" value="" id="flexCheckDefault">
-                                                </div>
-                                            </td>
+                                        <tr> 
+                                            <td></td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
-                                                <img src="../../assets/images/selectProfileImages/createProfile-1.svg"
+                                                <img src="../../../../assets/images/selectProfileImages/createProfile-1.svg"
                                                     class="w-h-30 me-2" alt=""> News
                                             </td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 12
                                             </td>
-                                            <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
                                             <td
-                                                class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                class=" table-pd-top">
                                                 8
                                             </td>
-
+    
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td
-                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                <div class="form-check mb-2 d-flex justify-content-center">
-                                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                        type="checkbox" value="" id="flexCheckDefault">
-                                                </div>
-                                            </td>
-                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
-                                                <img src="../../assets/images/selectProfileImages/createProfile-9.svg"
+                                            <td></td>
+                                            <td class="py-2 table-pd-top text-nowrap border-bottom-0 table-pd-left tb-font-medium">
+                                                <img src="../../../../assets/images/selectProfileImages/createProfile-9.svg"
                                                     class="w-h-30 me-2" alt=""> Brand Consultations
                                             </td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 12
                                             </td>
-                                            <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
                                             <td
-                                                class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                class="table-pd-top ">
                                                 8
                                             </td>
-
+    
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td
-                                                class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-center align-items-center">
-                                                <div class="form-check mb-2 d-flex justify-content-center">
-                                                    <input class="form-check-input shadow-none tb-bg-primary-checked"
-                                                        type="checkbox" value="" id="flexCheckDefault">
-                                                </div>
-                                            </td>
+                                            <td></td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
-                                                <img src="../../assets/images/selectProfileImages/createProfile-7.svg"
+                                                <img src="../../../../assets/images/selectProfileImages/createProfile-7.svg"
                                                     class="w-h-30 me-2" alt=""> Patronage
                                             </td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 12
                                             </td>
-                                            <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
                                             <td
-                                                class=" border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center m-0 pt-0">
+                                                class=" table-pd-top">
                                                 8
                                             </td>
-
+    
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>
@@ -746,7 +730,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- table ends here -- -->
                 </div>
                 <div class="mb-4">
                 </div>
@@ -1880,6 +1863,7 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="../../../../javascript/script.js"></script>
+    <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script>
     <script src="../../javascript/inputs&dropdowns.js"></script>
     <script src="../../javascript/inputTags.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

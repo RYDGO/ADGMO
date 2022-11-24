@@ -12,6 +12,7 @@
     <!--===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+   
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css">
 
     <!--===== font-awesome CSS ===== -->
@@ -342,185 +343,124 @@
         <!--sidebar ends here -->
 
         <section class="main-section">
-            <!-- table 2 -->
              <!-- table 2 -->
-        <div class="row mt-5">
-            <!-- column -->
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <!-- title -->
-                        <div class="d-md-flex align-items-center px-1">
-                            <div>
-                                <h4 class="card-title tb-h3 pt-3 tb-bold">Overdue tasks</h4>
-                            </div>
-                            <div class="ms-auto d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-center me-4">
-                                    <span class="rounded-circle pad-8-12 border-gray-500 ">
-                                        <i class="fa-solid fa-magnifying-glass "></i>
-                                    </span>
+             <div class="row mt-5">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- title -->
+                            <div class="d-md-flex align-items-center px-1 justify-content-between">
+                                <div>
+                                    <h4 class="card-title pt-3 tb-font-bold input-label fs-3">Request Summary</h4>
                                 </div>
-                                <div class="vartical-line me-4"></div>
-                                <div class="dl">
-                                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><i
-                                            class="fa-solid fa-chart-simple fa-xs px-1"></i> View All</button>
+                                <div class="btn-group form-floating">
+                                    <button class="border-0 rounded download-dropdown dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                        <img src="../../../../assets/images/Icons/download-fill.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2"
+                                                href="#"><img class="me-3"
+                                                    src="../../assets/images/Icons/document-pdf.svg" alt="">PDF </a>
+                                        </li>
+                                        <li class="py-2"><a class="dropdown-item tb-fs-16 text-black px-2"
+                                                href="#"><img class="me-3"
+                                                    src="../../assets/images/Icons/excel-logo-fill.svg" alt="">
+                                                Excel</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <!-- title -->
                         </div>
-                        <!-- title -->
-                    </div>
-                    <div class="table-responsive rounded-3 mx-3 mt-1">
-                        <table id="exampletable-1" class="table v-middle">
-                            <thead class="">
-                                <tr class="gray-500 text-white text-left">
-                                    
-                                    <th class="pe-4"><div class="mb-2 text-end">
-                                        <input class="form-check-input shadow-none tb-bg-primary-checked selectAll" type="checkbox" value="" id="flexCheckDefault">
-                                    </div></th>
-                                    <th class="fw-light th-pd">ID </th>
-                                    <th class="fw-light th-pd">Type</th>
-                                    <th class="fw-light th-pd">Due Date</th>
-                                    <th class="fw-light th-pd">Sector</th>
-                                    <th class="fw-light th-pd">Status</th>
-                                    <th class="fw-light th-pd">Time Remaining
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-left fw-light ">
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="bg-secondary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14 tb-fs-14">
-                                                16
-                                            </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-
-                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
-
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="tb-bg-primary align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                14
-                                            </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News</td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
-
-                                        <div class="d-flex align-items-center justify-content-center ">
-                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                10 </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span></td>
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                        <div class="table-responsive rounded-3 mx-3 mt-1">
+                            <table id="exampletable-1" class="table v-middle">
+                                <thead class="">
+                                    <tr class="gray-500 text-white text-left">
+                                        
+                                        <th class="pe-4"><div class="mb-2 text-end">
+                                            <input class="form-check-input shadow-none tb-bg-primary-checked selectAll" type="checkbox" value="" id="flexCheckDefault">
+                                        </div></th>
+                                        <th class="fw-light th-pd text-nowrap">Req .Type</th>
+                                        <th class="fw-light th-pd text-nowrap">Total Req. Raised</th>
+                                        <th class="fw-light th-pd">Total Req. Carried Forward
+                                            From Previous Month</th>
+                                        <th class="fw-light th-pd text-nowrap">Total Req. Delivered</th>
+                                        <th class="fw-light th-pd text-nowrap">Total Req. Met SLA</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-left fw-light ">
+                                    <tr> 
+                                        <td></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
+                                            <img src="../../../../assets/images/selectProfileImages/createProfile-1.svg"
+                                                class="w-h-30 me-2" alt=""> News
                                         </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
-
-                                        <div class="d-flex align-items-center justify-content-center ">
-                                            <h6 class="tb-bg-green align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                10
-                                            </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">News
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                        <td class="text-success py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-                                        <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span></td>
-                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            12
                                         </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 border-bottom-0 d-flex justify-content-start align-items-center">
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            8
+                                        </td>
+                                        <td
+                                            class=" table-pd-top">
+                                            8
+                                        </td>
 
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="tb-bg-yellow   rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                9
-                                            </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
+                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
+                                            8
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="py-2 table-pd-top text-nowrap border-bottom-0 table-pd-left tb-font-medium">
+                                            <img src="../../../../assets/images/selectProfileImages/createProfile-9.svg"
+                                                class="w-h-30 me-2" alt=""> Brand Consultations
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            8
+                                        </td>
+                                        <td
+                                            class="table-pd-top ">
+                                            8
+                                        </td>
 
-                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="py-2 table-pd-top border-bottom-0  d-flex justify-content-start align-items-center">
+                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
+                                            8
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
+                                            <img src="../../../../assets/images/selectProfileImages/createProfile-7.svg"
+                                                class="w-h-30 me-2" alt=""> Patronage
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            12
+                                        </td>
+                                        <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
+                                            8
+                                        </td>
+                                        <td
+                                            class=" table-pd-top">
+                                            8
+                                        </td>
 
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="tb-bg-pink align-self-center  rounded-pill p-1 mx-1 text-white text-center common-width-label-30 tb-fs-14">
-                                                16
-                                            </h6>
-                                            <h6 class="fs-6 fw-light">16312</h6>
-                                        </div>
-                                    </td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">Content</td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left">16/12/22</td>
-                                    <td class="tb-primary py-2 table-pd-top border-bottom-0 table-pd-left">Energy</td>
-
-                                    <td class="py-3 border-bottom-0"><span class="d-flex align-items-center justify-content-evenly p-2 ">
-                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle "></i>
-                                            <p class="caption-paragraph mb-0 text-base-black">UNDER REVIEW</p>
-                                        </span></td>
-                                    <td class="py-2 table-pd-top border-bottom-0 table-pd-left"><i class="fa-regular fa-clock"></i> 5:05:24
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        <td class="table-pd-top py-3 px-5 border-bottom-0">
+                                            8
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <!--dashboard ends here ------>
 

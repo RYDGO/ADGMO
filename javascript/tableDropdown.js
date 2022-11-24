@@ -174,6 +174,8 @@ $(document).ready(function () {
     },
   });
 
+  $(".selectAll").parent().parent().removeClass('sorting_asc')
+
   $(".selectAll").on("click", function (e) {
     if ($(this).is(":checked")) {
       DT1.rows().select();

@@ -3363,6 +3363,11 @@ input:checked+.slider:before {
     max-width: 400px;
     position: relative;
 }
+/* 
+.input-img-data input:focus ~  img {
+    transform: rotate(180deg);
+    transition: all 0.8s ease-in-out;
+} */
 
 
 .input-wrapper {

@@ -162,8 +162,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  var selectTable = ['#exampletable-1', '#exampletable-2'];
-  var allCheck = [".selectAll", ".selectAll1"];
+  var selectTable = ['#exampletable-1', '#exampletable-2', '#exampletable-3', '#exampletable-4', '#exampletable-5'];
+  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5"];
   var DT1 = [];
   $.each(selectTable, function (index, element) {
     DT1[index] = $(element).DataTable({

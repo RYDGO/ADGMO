@@ -166,7 +166,7 @@ $(document).ready(function () {
     columnDefs: [{
       orderable: false,
       className: 'select-checkbox',
-      targets: 0
+      targets: 0,
     }],
     select: {
       style: 'multi',

@@ -3673,7 +3673,7 @@ table.dataTable>tbody>tr>td.select-checkbox:before, table.dataTable>tbody>tr>td.
 }
 table.dataTable>tbody>tr.selected>td.select-checkbox:after, table.dataTable>tbody>tr.selected>th.select-checkbox:after {
     content: "✔";
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     margin-top: 0px !important;
     margin-left: 0px !important;
     padding-left: 0.1rem !important;

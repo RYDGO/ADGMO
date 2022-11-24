@@ -525,6 +525,9 @@ a:hover {
 .common-width-label-3 {
     width: 3%;
 }
+.common-width-label-24 {
+    width: 23%;
+}
 
 .common-width-status-box {
     width: 300px !important;
@@ -1318,6 +1321,9 @@ input:focus+.fa {
 .select2-dropdown {
     border: none !important;
     padding: 5px !important;
+}
+.select2-dropdown{
+    width: 100% !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {

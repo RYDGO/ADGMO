@@ -149,21 +149,35 @@ $("#dropdownTable tbody").on("click", "td.dt-control", function () {
 
 // ************************************************** Table Row Dropdown Ends *************************************************
 $(document).ready(function () {
-  $('#dataTables-1').DataTable({
+  var DT2 = $('#dataTables-1').DataTable({
     order: [[1, 'asc']],
     rowGroup: {
       dataSrc: 1
     },
-    // columnDefs: [ {
-    //     targets: [ 1, 2 ],
-    //     visible: false
-    // } ]
+    columnDefs: [{
+      orderable: false,
+      className: 'select-checkbox',
+      targets: 0,
+    }],
+    select: {
+      style: 'multi',
+      selector: 'td:first-child'
+    }
+  });
+
+  $('.selectAll6').on("click", function (e) {
+    if ($(this).is(":checked")) {
+      console.log("selectAll6 check");
+      DT2.rows().select();
+    } else {
+      DT2.rows().deselect();
+    }
   });
 });
 
 $(document).ready(function () {
   var selectTable = ['#exampletable-1', '#exampletable-2', '#exampletable-3', '#exampletable-4', '#exampletable-5'];
-  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5"];
+  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5",];
   var DT1 = [];
   $.each(selectTable, function (index, element) {
     DT1[index] = $(element).DataTable({

@@ -1005,6 +1005,9 @@ a:hover {
     padding-left: 28px !important;
 }
 
+.table-pd-left-child{
+    padding-left: 45px !important;
+}
 
 /* custom margins */
 
@@ -3726,3 +3729,14 @@ table.dataTable {
     border-collapse: separate !important;
     border-spacing: 0;
 }
+
+.child-row-child td img{
+    position: absolute;
+    top: -11px;
+    left: 25px;
+    width: 12px;
+}  
+
+/* [data-toggle="toggle"] {
+	display: none;
+} */

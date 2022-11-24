@@ -1,5 +1,11 @@
 // ************************************************** Table Row Dropdown Start *************************************************
 
+$(document).ready(function() {
+	$('.parent-row').click(function(){
+		$(this).parents().find('.child-row-child').toggle();
+	});
+});
+
 /* Formatting function for row details - modify as you need */
 function format(d) {
   // `d` is the original data object for the row
@@ -176,8 +182,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  var selectTable = ['#exampletable-1', '#exampletable-2', '#exampletable-3', '#exampletable-4', '#exampletable-5'];
-  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5",];
+  var selectTable = ['#exampletable-1', '#exampletable-2', '#exampletable-3', '#exampletable-4', '#exampletable-5', '#exampletable-6'];
+  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5", ".selectAll6"];
   var DT1 = [];
   $.each(selectTable, function (index, element) {
     DT1[index] = $(element).DataTable({

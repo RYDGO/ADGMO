@@ -3363,23 +3363,13 @@ input:checked+.slider:before {
     max-width: 400px;
     position: relative;
 }
+/* 
+.input-img-data input:focus ~  img {
+    transform: rotate(180deg);
+    transition: all 0.8s ease-in-out;
+} */
 
-.combo::after {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    content: "";
-    display: block;
-    height: .5rem;
-    pointer-events: none;
-    position: absolute;
-    right: 16px;
-    top: 64%;
-    transform: translate(0, -65%) rotate(45deg);
-    width: .5rem;
-}
-.combo-input:focus .combo-menu::after{
-    transform: translate(0, -65%) rotate(225deg) !important;
-}
+
 .input-wrapper {
     border-radius: 4px;
 }

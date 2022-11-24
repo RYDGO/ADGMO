@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BMSVieira/BVSelect-VanillaJS@1fbb755/css/bvselect.css">
     <!--===== font-awesome CSS ===== -->
-    
+
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../../../styles/style.css">
     <link rel="stylesheet" href="../../../../styles/dashboard.css">
     <link rel="stylesheet" href="../../../../styles/inputTags.css">
-    
+
 </head>
 
 <body>
@@ -354,9 +354,9 @@
                         <div class="col-6 d-flex position-relative my-4 align-items-center">
                             <h1 class="tb-font-bold fs-1 m-0 p-0">Reporting</h1>
                         </div>
-                        <div class="common-width-label-24">
+                        <div class="width-17">
                             <div class="position-relative p-1 px-1 tb-bg-light rounded-3 border-0 ">
-                                <input class="col-11 input bg-transparent fs-5 py-2 px-2" autocomplete="off"
+                                <input class="col-10 input bg-transparent fs-5 py-2 px-2" autocomplete="off"
                                     role="combobox" id="input" name="" placeholder="placeholder..">
                                 <i class="fa fa-solid fa-angle-down fs-5 "></i>
                                 <datalist id="" role="listbox" style="display: none;">
@@ -466,7 +466,7 @@
                         <div class="col">
                             <label for="#selectdata" class="pb-3 fs-5 ">Select the section</label>
                             <div class="tb-input-group">
-                                <label class="col-12 input-label p-2  pt-2" for="select1">Section</label>
+                                <label class="col-12 input-label p-2 text-muted  pt-2" for="select1">Section</label>
                                 <select class="js-example-basic-multiple col-12 fav_clr select2-hidden-accessible"
                                     aria-label="Default select example" id="select1"
                                     data-select2-id="select2-data-select1" tabindex="-1" aria-hidden="true">
@@ -479,14 +479,17 @@
 
                     </div>
                     <div class="row mt-3">
-                        <div class="col">
-                           <label for="" class="combo-label">Multiselect with comma-separated values</label>
-    <div class="combo js-csv">
-        <div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="listbox1" class="input-wrapper">
-            <input aria-activedescendant="" aria-autocomplete="list" id="combo1" class="combo-input" type="text">
-        </div>
-        <div class="combo-menu" role="listbox" aria-multiselectable="true" id="listbox1"></div>
-    </div>
+                        <div class="col ">
+                            <label for="" class="combo-label fs-5">Select the request type</label>
+                            <div class="combo js-csv tb-input-group">
+                                <div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="listbox1"
+                                    class="input-wrapper">
+                                    <label class="input-label ps-3 pt-2 text-muted  " for="">Type</label>
+                                    <input aria-activedescendant="" aria-autocomplete="list" id="combo1"
+                                        class="combo-input shadow-none py-0 width-90" type="text">
+                                </div>
+                                <div class="combo-menu" role="listbox" aria-multiselectable="true" id="listbox1"></div>
+                            </div>
                         </div>
 
 
@@ -651,10 +654,14 @@
                                 <table id="exampletable-1" class="table v-middle">
                                     <thead class="">
                                         <tr class="gray-500 text-white text-left">
-                                            
-                                            <th class="pe-0 "><div class="mb-2 text-end">
-                                                <input class="form-check-input shadow-none tb-bg-primary-checked selectAll" type="checkbox" value="" id="flexCheckDefault">
-                                            </div></th>
+
+                                            <th class="pe-0 ">
+                                                <div class="mb-2 text-end">
+                                                    <input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked selectAll"
+                                                        type="checkbox" value="" id="flexCheckDefault">
+                                                </div>
+                                            </th>
                                             <th class="fw-light th-pd text-nowrap">Req .Type</th>
                                             <th class="fw-light th-pd text-nowrap">Total Req. Raised</th>
                                             <th class="fw-light th-pd text-nowrap">Total Req. Carried Forward
@@ -664,7 +671,7 @@
                                         </tr>
                                     </thead>
                                     <tbody class="text-left fw-light ">
-                                        <tr> 
+                                        <tr>
                                             <td></td>
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left tb-font-medium">
                                                 <img src="../../../../assets/images/selectProfileImages/createProfile-1.svg"
@@ -676,18 +683,18 @@
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
-                                            <td
-                                                class=" table-pd-top">
+                                            <td class=" table-pd-top">
                                                 8
                                             </td>
-    
+
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td class="py-2 table-pd-top text-nowrap border-bottom-0 table-pd-left tb-font-medium">
+                                            <td
+                                                class="py-2 table-pd-top text-nowrap border-bottom-0 table-pd-left tb-font-medium">
                                                 <img src="../../../../assets/images/selectProfileImages/createProfile-9.svg"
                                                     class="w-h-30 me-2" alt=""> Brand Consultations
                                             </td>
@@ -697,11 +704,10 @@
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
-                                            <td
-                                                class="table-pd-top ">
+                                            <td class="table-pd-top ">
                                                 8
                                             </td>
-    
+
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>
@@ -718,11 +724,10 @@
                                             <td class="py-2 table-pd-top border-bottom-0 table-pd-left">
                                                 8
                                             </td>
-                                            <td
-                                                class=" table-pd-top">
+                                            <td class=" table-pd-top">
                                                 8
                                             </td>
-    
+
                                             <td class="table-pd-top py-3 px-5 border-bottom-0">
                                                 8
                                             </td>

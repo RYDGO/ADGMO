@@ -1346,7 +1346,9 @@ input:focus+.fa {
     z-index: 100000000 !important;
 } */
 
-
+.select2-container {
+    width: 100% !important;
+}
 /* image option dropdown */
 
 .f-dropdown {

@@ -162,25 +162,33 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  var DT1 = $('#exampletable-1').DataTable({
-    columnDefs: [{
-      orderable: false,
-      className: 'select-checkbox',
-      targets: 0,
-    }],
-    select: {
-      style: 'multi',
-      selector: 'td:first-child'
-    },
+  var selectTable = ['#exampletable-1', '#exampletable-2', '#exampletable-3', '#exampletable-4', '#exampletable-5'];
+  var allCheck = [".selectAll1", ".selectAll2", ".selectAll3", ".selectAll4", ".selectAll5"];
+  var DT1 = [];
+  $.each(selectTable, function (index, element) {
+    DT1[index] = $(element).DataTable({
+      columnDefs: [{
+        orderable: false,
+        className: 'select-checkbox',
+        targets: 0,
+      }],
+      select: {
+        style: 'multi',
+        selector: 'td:first-child'
+      },
+    });
   });
 
-  $(".selectAll").parent().parent().removeClass('sorting_asc')
-
-  $(".selectAll").on("click", function (e) {
-    if ($(this).is(":checked")) {
-      DT1.rows().select();
-    } else {
-      DT1.rows().deselect();
-    }
+  $.each(allCheck, function (index, element) {
+    $(element).parent().parent().removeClass('sorting_asc');
+    $(element).on("click", function (e) {
+      if ($(this).is(":checked")) {
+        console.log("checked", DT1[index]);
+        DT1[index].rows().select();
+      } else {
+        console.log("un-checked", DT1[index]);
+        DT1[index].rows().deselect();
+      }
+    });
   });
 });

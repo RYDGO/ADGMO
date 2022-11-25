@@ -3753,12 +3753,15 @@ table.dataTable {
     border-spacing: 0;
 }
 
+
+
 .child-row-child td img{
     position: absolute;
     top: -11px;
     left: 25px;
     width: 12px;
-}  
+} 
+
 
 /* [data-toggle="toggle"] {
 	display: none;
@@ -3767,4 +3770,14 @@ thead input {
     width: 100%;
     border-radius: 3px;
     padding: 3px;
+}
+
+
+.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
+    display: none !important;
+  
+}
+
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+   display:none !important;
 }

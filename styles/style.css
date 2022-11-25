@@ -434,9 +434,11 @@ a:hover {
 .width-17 {
     width: 17%;
 }
+
 .width-77 {
     width: 77%;
 }
+
 .width-90 {
     width: 90% !important;
 }
@@ -531,6 +533,7 @@ a:hover {
 .common-width-label-3 {
     width: 3%;
 }
+
 .common-width-label-24 {
     width: 23%;
 }
@@ -1302,7 +1305,6 @@ input:focus+.fa {
 
 /* select2 styles  */
 
-
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: var(--grayshade-100) !important;
     border: 1px solid transparent !important;
@@ -1370,6 +1372,8 @@ input:focus+.fa {
     border: none !important;
     padding: 5px !important;
 }
+
+
 /* .select2-dropdown{
     width: 100% !important;
 } */
@@ -1397,6 +1401,7 @@ input:focus+.fa {
 .select2-container {
     width: 100% !important;
 }
+
 
 /* image option dropdown */
 
@@ -1704,7 +1709,6 @@ datalist {
     left: 0;
     z-index: 999;
     box-shadow: 0 1rem 3rem rgba(184, 184, 184, 0.175)!important;
-
 }
 
 option {
@@ -1714,7 +1718,7 @@ option {
     cursor: pointer;
     font-size: 1.2rem;
     font-family: var(--font-graphic-regular);
-    color:#000;
+    color: #000;
 }
 
 option:hover,
@@ -2739,7 +2743,7 @@ table.dataTable thead>tr>td.sorting_desc:after,
 table.dataTable thead>tr>td.sorting_asc_disabled:after,
 table.dataTable thead>tr>td.sorting_desc_disabled:after {
     top: 40%;
-    right: 10% !important;
+    right: 2% !important;
     color: var(--text-base-white);
     opacity: 1;
 }
@@ -3258,12 +3262,14 @@ input:checked+.slider:before {
 }
 
 .grid-card-style-dam {
-    width: 190px; 
+    width: 190px;
 }
+
 .modalFilter-card-style.card-dam-filterby {
     top: 8px !important;
     left: -45px !important;
 }
+
 
 /* .__markerjs2_ {
     z-index: 9999999!important;
@@ -3355,11 +3361,17 @@ input:checked+.slider:before {
 .status-cancelled {
     background: #ef3f431a;
 }
-.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate{
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
     display: none;
 }
 
+
 /* multiple secelct input */
+
 .combo {
     display: block;
     margin-bottom: 1.5em;
@@ -3367,22 +3379,13 @@ input:checked+.slider:before {
     position: relative;
 }
 
-.combo::after {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    content: "";
-    display: block;
-    height: .5rem;
-    pointer-events: none;
-    position: absolute;
-    right: 16px;
-    top: 64%;
-    transform: translate(0, -65%) rotate(45deg);
-    width: .5rem;
-}
-.combo-input:focus .combo-menu::after{
-    transform: translate(0, -65%) rotate(225deg) !important;
-}
+
+/* 
+.input-img-data input:focus ~  img {
+    transform: rotate(180deg);
+    transition: all 0.8s ease-in-out;
+} */
+
 .input-wrapper {
     border-radius: 4px;
 }
@@ -3464,6 +3467,8 @@ select.combo-input {
     transform: translate(0, -50%) rotate(45deg);
     width: 8px;
 }
+
+
 /* multiselect list of selected options */
 
 .selected-options {
@@ -3551,6 +3556,7 @@ select.combo-input {
     box-shadow: 0 0 3px 2px #0067b8;
     outline: 5px solid transparent;
 }
+
 
 /* ------------------media queries----------------------- */
 
@@ -3670,7 +3676,8 @@ select.combo-input {
     }
 }
 
-table.dataTable>tbody>tr>td.select-checkbox:before, table.dataTable>tbody>tr>th.select-checkbox:before {
+table.dataTable>tbody>tr>td.select-checkbox:before,
+table.dataTable>tbody>tr>th.select-checkbox:before {
     content: " ";
     margin-top: 0px !important;
     margin-left: 0px !important;
@@ -3679,9 +3686,12 @@ table.dataTable>tbody>tr>td.select-checkbox:before, table.dataTable>tbody>tr>th.
     background-color: transparent;
     width: 16px;
     height: 16px;
-    
 }
-table.dataTable>tbody>tr>td.select-checkbox:before, table.dataTable>tbody>tr>td.select-checkbox:after, table.dataTable>tbody>tr>th.select-checkbox:before, table.dataTable>tbody>tr>th.select-checkbox:after {
+
+table.dataTable>tbody>tr>td.select-checkbox:before,
+table.dataTable>tbody>tr>td.select-checkbox:after,
+table.dataTable>tbody>tr>th.select-checkbox:before,
+table.dataTable>tbody>tr>th.select-checkbox:after {
     display: block;
     position: absolute;
     top: 2rem !important;
@@ -3690,7 +3700,9 @@ table.dataTable>tbody>tr>td.select-checkbox:before, table.dataTable>tbody>tr>td.
     height: 1.2rem;
     box-sizing: border-box;
 }
-table.dataTable>tbody>tr.selected>td.select-checkbox:after, table.dataTable>tbody>tr.selected>th.select-checkbox:after {
+
+table.dataTable>tbody>tr.selected>td.select-checkbox:after,
+table.dataTable>tbody>tr.selected>th.select-checkbox:after {
     content: "✔";
     font-size: 0.8rem !important;
     margin-top: 0px !important;
@@ -3702,7 +3714,7 @@ table.dataTable>tbody>tr.selected>td.select-checkbox:after, table.dataTable>tbod
     border-radius: 0.25em !important;
     background-color: var(--base-color) !important;
     text-align: center;
-    text-shadow: none  !important;
+    text-shadow: none !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3714,13 +3726,24 @@ table.dataTable>tbody>tr.selected>td.select-checkbox:after, table.dataTable>tbod
     border-bottom-width: 0px !important;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
-table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:after{
+
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting_asc:after,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>th.sorting_asc_disabled:after,
+table.dataTable thead>tr>th.sorting_desc_disabled:after,
+table.dataTable thead>tr>td.sorting:after,
+table.dataTable thead>tr>td.sorting_asc:after,
+table.dataTable thead>tr>td.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc_disabled:after,
+table.dataTable thead>tr>td.sorting_desc_disabled:after {
     content: "▾";
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
     right: 0;
     font-size: 1rem;
 }
+
 table.dataTable {
     clear: both;
     margin-top: 0px !important;
@@ -3740,3 +3763,8 @@ table.dataTable {
 /* [data-toggle="toggle"] {
 	display: none;
 } */
+thead input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 3px;
+}

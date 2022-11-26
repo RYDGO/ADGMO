@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   $('.parent-row').click(function () {
-    $(this).parents().find('.child-row-child').toggle();
+    $(this).nextUntil('tr.parent-row').toggleClass('d-none');
   });
 });
 
@@ -203,10 +203,8 @@ $(document).ready(function () {
     $(element).parent().parent().removeClass('sorting_asc');
     $(element).on("click", function (e) {
       if ($(this).is(":checked")) {
-        console.log("checked", DT1[index]);
         DT1[index].rows().select();
       } else {
-        console.log("un-checked", DT1[index]);
         DT1[index].rows().deselect();
       }
     });

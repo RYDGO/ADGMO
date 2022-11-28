@@ -337,10 +337,19 @@ a:hover {
 .tb-light-pink {
     color: var(--first-box-color) !important;
 }
+.tb-light-status-color {
+    color: #2B6284 !important;
+}
+.tb-bg-light-status-color {
+    background-color: #2B6284 !important;
+}
 
 
 /* STATUS COLOR OPACITY-BACKGROUNDS */
 
+.tb-light-status-color-op {
+    background: #2b62841a;
+}
 .status-color-purple-op {
     background: #8129c72e;
 }

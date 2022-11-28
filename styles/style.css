@@ -303,6 +303,9 @@ a:hover {
     background-color: var(--grayshade-100) !important;
     cursor: pointer;
 }
+.three-skyblue{
+    background-color: var(--three-box-color);
+}
 
 
 /* ------- CONTENT STATUS COLORS ---- */

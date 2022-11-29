@@ -1451,7 +1451,7 @@ input:focus+.fa {
     height: 36px;
     margin-right: 10px;
     border-radius: 50%;
-    /* object-fit: none !important; */
+    object-fit: none !important;
     background-color: #ef3f431a !important;
 }
 

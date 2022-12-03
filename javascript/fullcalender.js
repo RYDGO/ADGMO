@@ -2,14 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar");
   
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: "dayGridMonth",
+      initialView: "timeGridDay",
       initialDate: "2022-08-07",
       headerToolbar: {
         left: "prev,title,next ",
         center: 'renderCenter',
         right: "timeGridDay,timeGridWeek,dayGridMonth",
       },
-        nowIndicator: true,
+      height: 650,
+      nowIndicator: true,
       navLinks: true, // can click day/week names to navigate views
       businessHours: false, // display business hours
       editable: true,
@@ -86,6 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var child = document.getElementById("statusBar");
       child.style.display="block"
       calendarheader.appendChild(child);
+      
     }, 100);
     calendar.render();
+    setTimeout(() => {
+      calendar.changeView("dayGridMonth");
+    }, 2000);
   });

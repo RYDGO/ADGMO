@@ -3793,3 +3793,35 @@ thead input {
 table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
    display:none !important;
 }
+#pagination-container{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 1rem !important;
+    padding-top: 2rem;
+}
+#pagination-container ul{
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:1.7rem;
+}
+#pagination-container ul .active{
+    box-shadow: none !important;
+}
+#pagination-container ul li{
+    padding: 0.2rem 0.9rem !important;
+    background-color: var(--grayshade-100);
+    cursor: pointer;
+    border-radius: 2px;
+}
+#pagination-container ul li .prev,
+#pagination-container ul li .next{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#pagination-container ul li:hover{
+    background-color: var(--base-color);
+    color: var(--base-white-color);
+}

@@ -1,10 +1,10 @@
 // ************************************************** Table Row Dropdown Start *************************************************
 
-$(document).ready(function () {
-  $('.parent-row').click(function () {
-    $(this).parents().find('.child-row-child').toggle();
-  });
-});
+// $(document).ready(function () {
+//   $('.parent-row').click(function () {
+//     $(this).parents().find('.child-row-child').toggle();
+//   });
+// });
 
 /* Formatting function for row details - modify as you need */
 function format(d) {

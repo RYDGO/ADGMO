@@ -1408,7 +1408,7 @@ input:focus+.fa {
 .f-dropdown {
     --max-scroll: 3;
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .f-dropdown select {

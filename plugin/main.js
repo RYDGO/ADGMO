@@ -9486,20 +9486,23 @@ var FullCalendar = (function (exports) {
             var timeFormat = context.options.eventTimeFormat || props.defaultTimeFormat;
             var timeText = buildSegTimeText(seg, timeFormat, context, props.defaultDisplayEventTime, props.defaultDisplayEventEnd);
             return (createElement(EventRoot, { seg: seg, timeText: timeText, disableDragging: props.disableDragging, disableResizing: props.disableResizing, defaultContent: props.defaultContent || renderInnerContent$4, isDragging: props.isDragging, isResizing: props.isResizing, isDateSelecting: props.isDateSelecting, isSelected: props.isSelected, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) {
-                return (createElement('div', '', createElement("span", { className: " tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op w-25" },
+                return (createElement('div', '', createElement('div', { class: "d-flex gap-1" }, createElement("span", { className: "tb-bg-blue  d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op w-25" },
                     createElement("h5", {
-                        class: "fs-5 mb-0 text-white text-center fw-bold"
-                    }, "KIZ")), createElement("a", __assign({
-                        className: props.extraClassNames.concat(classNames).join(' '), style: {
-                            borderColor: hookProps.borderColor,
-                            backgroundColor: hookProps.backgroundColor,
-                        }, ref: rootElRef
-                    }, getSegAnchorAttrs(seg, context)),
-                        createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
-                        hookProps.isStartResizable &&
-                        createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
-                        hookProps.isEndResizable &&
-                        createElement("div", { className: "fc-event-resizer fc-event-resizer-end" }))));
+                        class: "fs-5 mb-0 text-white text-center nav-text"
+                    }, "KIZ")), createElement("span", { className: " tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-green-op w-25" },
+                        createElement("h5", {
+                            class: "fs-5 mb-0 text-white text-center nav-text"
+                        }, "PIN"))), createElement("a", __assign({
+                            className: props.extraClassNames.concat(classNames).join(' '), style: {
+                                borderColor: hookProps.borderColor,
+                                backgroundColor: hookProps.backgroundColor,
+                            }, ref: rootElRef
+                        }, getSegAnchorAttrs(seg, context)),
+                            createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
+                            hookProps.isStartResizable &&
+                            createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
+                            hookProps.isEndResizable &&
+                            createElement("div", { className: "fc-event-resizer fc-event-resizer-end" }))));
             }));
         };
         return StandardEvent;

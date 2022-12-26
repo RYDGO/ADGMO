@@ -303,7 +303,8 @@ a:hover {
     background-color: var(--grayshade-100) !important;
     cursor: pointer;
 }
-.three-skyblue{
+
+.three-skyblue {
     background-color: var(--three-box-color);
 }
 
@@ -337,9 +338,11 @@ a:hover {
 .tb-light-pink {
     color: var(--first-box-color) !important;
 }
+
 .tb-light-status-color {
     color: #2B6284 !important;
 }
+
 .tb-bg-light-status-color {
     background-color: #2B6284 !important;
 }
@@ -350,6 +353,7 @@ a:hover {
 .tb-light-status-color-op {
     background: #2b62841a;
 }
+
 .status-color-purple-op {
     background: #8129c72e;
 }
@@ -1020,9 +1024,10 @@ a:hover {
     padding-left: 28px !important;
 }
 
-.table-pd-left-child{
+.table-pd-left-child {
     padding-left: 45px !important;
 }
+
 
 /* custom margins */
 
@@ -3765,31 +3770,36 @@ table.dataTable {
     border-spacing: 0;
 }
 
-
-
-.child-row-child td img{
+.child-row-child td img {
     position: absolute;
     top: -11px;
     left: 25px;
     width: 12px;
-} 
+}
 
 
 /* [data-toggle="toggle"] {
 	display: none;
 } */
+
 thead input {
     width: 100%;
     border-radius: 3px;
     padding: 3px;
 }
 
-
-.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
+.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
     display: none !important;
-  
 }
 
-table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
-   display:none !important;
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+    display: none !important;
+}
+
+.width-98 {
+    width: 98%;
 }

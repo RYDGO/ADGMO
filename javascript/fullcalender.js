@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var calendar = new FullCalendar.Calendar(calendarEl, {
 		initialView: "timeGridDay",
-		initialDate: "2022-08-07",
+		initialDate: new Date(),
 		headerToolbar: {
 			left: "prev,title,next ",
 			center: 'renderCenter',
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		events: [
 			{
 				title: "All Day Event",
-				start: "2022-08-01"
+				start: "2022-12-25"
 			}
 		]
 	});

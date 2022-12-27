@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		events: [
 			{
 				title: "All Day Event",
-				start: "2022-12-25"
+				start: "2022-12-25",
+				name: "PIN",
+				number: 10,
+				subTitle: "Social Media",
+				etime: "9:30"
 			}
 		]
 	});

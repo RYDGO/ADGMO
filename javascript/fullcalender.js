@@ -39,7 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 				name: "PIN",
 				number: 10,
 				subTitle: "Social Media",
-				etime: "9:30"
+				etime: "9:30",
+				bgDay: "tb-bg-green",
+				bgCard: "status-color-green-light-op",
+				txtColor: "tb-green"
+			}, {
+				title: "Non NGO Event",
+				start: "2022-12-27",
+				name: "GO",
+				number: 10,
+				subTitle: "Social Media",
+				etime: "9:30",
+				bgDay: "tb-bg-purple",
+				bgCard: "status-color-purpal-op2",
+				txtColor: "tb-purple"
 			}
 		]
 	});

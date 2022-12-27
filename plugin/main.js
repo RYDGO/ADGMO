@@ -9494,83 +9494,50 @@ var FullCalendar = (function (exports) {
             var timeText = buildSegTimeText(seg, timeFormat, context, props.defaultDisplayEventTime, props.defaultDisplayEventEnd);
             var extProps = props.seg.eventRange.def.extendedProps
             return (createElement(EventRoot, { seg: seg, timeText: timeText, disableDragging: props.disableDragging, disableResizing: props.disableResizing, defaultContent: props.defaultContent || renderInnerContent$4, isDragging: props.isDragging, isResizing: props.isResizing, isDateSelecting: props.isDateSelecting, isSelected: props.isSelected, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) {
-                return (createElement('div', '', button1 === 'dayGridMonth' && createElement('div', { class: "d-flex gap-1" }, createElement("span", { className: "tb-bg-blue  d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op w-25" },
+                return (createElement('div', '', button1 === 'dayGridMonth' && createElement('div', { class: "d-flex gap-1" }, createElement("span", { className: `d-flex align-items-center justify-content-evenly p-1 px-3 w-25 ${extProps.bgDay}` },
                     createElement("h5", {
                         class: "fs-5 mb-0 text-white text-center nav-text"
-                    }, extProps.name)), createElement("span", { className: " tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-green-op w-25" },
-                        createElement("h5", {
-                            class: "fs-5 mb-0 text-white text-center nav-text"
-                        }, extProps.name))), (button1 === 'timeGridWeek' || button1 === 'timeGridDay') && createElement('div', '', createElement("div", {
-                            class: "card w-100 border m-0 p-0 "
-                        }, createElement("div", {
-                            class: "card-body px-1 py-2 m-0 p-0 status-color-green-light-op"
-                        }, createElement("div", {
-                            class: " py-1 px-1"
-                        }, createElement("div", {
-                            class: "card-body-header d-flex justify-content-between align-items-center"
-                        }, createElement("div", {
-                            class: "card-left-box"
-                        }, createElement("span", {
-                            class: " tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op"
-                        }, createElement("h6", {
-                            class: " mb-0 text-white mt-1 text-center fw-bold fs-6"
-                        }, extProps.name))), createElement("div", {
-                            class: "card-right"
-                        }, createElement("div", {
-                            class: "span-box-one span-box tb-bg-green fs-6"
-                        }, extProps.number))), createElement("h5", {
-                            class: "pt-2 m-0 p-0 tb-green m-0 fs-6"
-                        }, extProps.subTitle), createElement("div", {
-                            class: "card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center"
-                        }, createElement("div", {
-                            class: "card-left-box"
-                        }, createElement("p", {
-                            class: " mb-0 tb-green  text-center fw-bold"
-                        }, extProps.etime)), createElement("div", {
-                            class: "card-right-box"
-                        }, createElement("i", {
-                            class: "tb-green fa-solid fa-arrow-right me-1 fs-6"
-                        })))))), createElement("div", {
-                            class: "card w-100 border m-0 p-0 "
-                        }, createElement("div", {
-                            class: "card-body px-1 py-2 m-0 p-0 status-color-green-light-op"
-                        }, createElement("div", {
-                            class: " py-1 px-1"
-                        }, createElement("div", {
-                            class: "card-body-header d-flex justify-content-between align-items-center"
-                        }, createElement("div", {
-                            class: "card-left-box"
-                        }, createElement("span", {
-                            class: " tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op"
-                        }, createElement("h6", {
-                            class: " mb-0 text-white mt-1 text-center fw-bold fs-6"
-                        }, extProps.name))), createElement("div", {
-                            class: "card-right"
-                        }, createElement("div", {
-                            class: "span-box-one span-box tb-bg-green fs-6"
-                        }, extProps.number))), createElement("h5", {
-                            class: "pt-2 m-0 p-0 tb-green m-0 fs-6"
-                        }, extProps.subTitle), createElement("div", {
-                            class: "card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center"
-                        }, createElement("div", {
-                            class: "card-left-box"
-                        }, createElement("p", {
-                            class: " mb-0 tb-green  text-center fw-bold"
-                        }, extProps.etime)), createElement("div", {
-                            class: "card-right-box"
-                        }, createElement("i", {
-                            class: "tb-green fa-solid fa-arrow-right me-1 fs-6"
-                        }))))))), createElement("a", __assign({
-                            className: props.extraClassNames.concat(classNames).join(' '), style: {
-                                borderColor: hookProps.borderColor,
-                                backgroundColor: hookProps.backgroundColor,
-                            }, ref: rootElRef
-                        }, getSegAnchorAttrs(seg, context)),
-                            createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
-                            hookProps.isStartResizable &&
-                            createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
-                            hookProps.isEndResizable &&
-                            createElement("div", { className: "fc-event-resizer fc-event-resizer-end" }))));
+                    }, extProps.name))), (button1 === 'timeGridWeek' || button1 === 'timeGridDay') && createElement('div', '', createElement("div", {
+                        class: "card w-100 border m-0 p-0 "
+                    }, createElement("div", {
+                        class: `card-body px-1 py-2 m-0 p-0 ${extProps.bgCard}`
+                    }, createElement("div", {
+                        class: " py-1 px-1"
+                    }, createElement("div", {
+                        class: "card-body-header d-flex justify-content-between align-items-center"
+                    }, createElement("div", {
+                        class: "card-left-box"
+                    }, createElement("span", {
+                        class: `d-flex align-items-center justify-content-evenly p-1 px-3 ${extProps.bgDay}`
+                    }, createElement("h6", {
+                        class: " mb-0 text-white mt-1 text-center fw-bold fs-6"
+                    }, extProps.name))), createElement("div", {
+                        class: "card-right"
+                    }, createElement("div", {
+                        class: `span-box-one span-box fs-6 ${extProps.bgDay}`
+                    }, extProps.number))), createElement("h5", {
+                        class: `pt-2 m-0 p-0 ${extProps.txtColor} m-0 fs-6`
+                    }, extProps.subTitle), createElement("div", {
+                        class: "card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center"
+                    }, createElement("div", {
+                        class: "card-left-box"
+                    }, createElement("p", {
+                        class: `mb-0 ${extProps.txtColor} text-center fw-bold`
+                    }, extProps.etime)), createElement("div", {
+                        class: "card-right-box"
+                    }, createElement("i", {
+                        class: `${extProps.txtColor} fa-solid fa-arrow-right me-1 fs-6`
+                    }))))))), createElement("a", __assign({
+                        className: props.extraClassNames.concat(classNames).join(' '), style: {
+                            borderColor: hookProps.borderColor,
+                            backgroundColor: hookProps.backgroundColor,
+                        }, ref: rootElRef
+                    }, getSegAnchorAttrs(seg, context)),
+                        createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
+                        hookProps.isStartResizable &&
+                        createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
+                        hookProps.isEndResizable &&
+                        createElement("div", { className: "fc-event-resizer fc-event-resizer-end" }))));
             }));
         };
         return StandardEvent;

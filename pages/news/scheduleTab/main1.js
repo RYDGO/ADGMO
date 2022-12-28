@@ -1,11 +1,5 @@
 var FullCalendar = (function (exports) {
     'use strict';
-    var button1 = 0;
-    var isTabPressed = function (button) {
-        button1 = button;
-
-        return button1;
-    }
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -7921,7 +7915,6 @@ var FullCalendar = (function (exports) {
                     var buttonClasses = ["fc-" + buttonName + "-button", theme.getClass('button')];
                     if (isPressed) {
                         buttonClasses.push(theme.getClass('buttonActive'));
-                        isTabPressed(buttonName);
                     }
                     children.push(createElement("button", { type: "button", title: typeof buttonHint === 'function' ? buttonHint(props.navUnit) : buttonHint, disabled: isDisabled, "aria-pressed": isPressed, className: buttonClasses.join(' '), onClick: buttonClick }, buttonText || (buttonIcon ? createElement("span", { className: buttonIcon }) : '')));
                 }
@@ -9492,59 +9485,25 @@ var FullCalendar = (function (exports) {
             var seg = props.seg;
             var timeFormat = context.options.eventTimeFormat || props.defaultTimeFormat;
             var timeText = buildSegTimeText(seg, timeFormat, context, props.defaultDisplayEventTime, props.defaultDisplayEventEnd);
-            var extProps = props.seg.eventRange.def.extendedProps
             return (createElement(EventRoot, { seg: seg, timeText: timeText, disableDragging: props.disableDragging, disableResizing: props.disableResizing, defaultContent: props.defaultContent || renderInnerContent$4, isDragging: props.isDragging, isResizing: props.isResizing, isDateSelecting: props.isDateSelecting, isSelected: props.isSelected, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) {
-                return (createElement('div', '', button1 === 'dayGridMonth' && createElement('div', { class: "d-flex gap-1" }, createElement("span", { className: `d-flex align-items-center justify-content-evenly p-1 px-3 w-25 ${extProps.bgDay}` },
-                    createElement("h5", {
-                        class: "fs-5 mb-0 text-white text-center nav-text"
-                    }, extProps.name))), (button1 === 'timeGridWeek' || button1 === 'timeGridDay') && createElement('div', '', createElement("div", {
-                        class: "card w-100 border m-0 p-0 "
-                    }, createElement("div", {
-                        class: `card-body px-1 py-2 m-0 p-0 ${extProps.bgCard}`
-                    }, createElement("div", {
-                        class: " py-1 px-1"
-                    }, createElement("div", {
-                        class: "card-body-header d-flex justify-content-between align-items-center"
-                    }, createElement("div", {
-                        class: "card-left-box"
-                    }, createElement("span", {
-                        class: `d-flex align-items-center justify-content-evenly p-1 px-3 ${extProps.bgDay}`
-                    }, createElement("h6", {
-                        class: " mb-0 text-white mt-1 text-center fw-bold fs-6"
-                    }, extProps.name))), createElement("div", {
-                        class: "card-right"
-                    }, createElement("div", {
-                        class: `span-box-one span-box fs-6 ${extProps.bgDay}`
-                    }, extProps.number))), createElement("h5", {
-                        class: `pt-2 m-0 p-0 ${extProps.txtColor} m-0 fs-6`
-                    }, extProps.subTitle), createElement("div", {
-                        class: "card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center"
-                    }, createElement("div", {
-                        class: "card-left-box"
-                    }, createElement("p", {
-                        class: `mb-0 ${extProps.txtColor} text-center fw-bold`
-                    }, extProps.etime)), createElement("div", {
-                        class: "card-right-box"
-                    }, createElement("i", {
-                        class: `${extProps.txtColor} fa-solid fa-arrow-right me-1 fs-6`
-                    }))))))), createElement("a", __assign({
-                        className: props.extraClassNames.concat(classNames).join(' '), style: {
-                            borderColor: hookProps.borderColor,
-                            backgroundColor: hookProps.backgroundColor,
-                        }, ref: rootElRef
-                    }, getSegAnchorAttrs(seg, context)),
-                        createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
-                        hookProps.isStartResizable &&
-                        createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
-                        hookProps.isEndResizable &&
-                        createElement("div", { className: "fc-event-resizer fc-event-resizer-end" }))));
+                return (createElement("a", __assign({
+                    className: props.extraClassNames.concat(classNames).join(' '), style: {
+                        borderColor: hookProps.borderColor,
+                        backgroundColor: hookProps.backgroundColor,
+                    }, ref: rootElRef
+                }, getSegAnchorAttrs(seg, context)),
+                    createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
+                    hookProps.isStartResizable &&
+                    createElement("div", { className: "fc-event-resizer fc-event-resizer-start" }),
+                    hookProps.isEndResizable &&
+                    createElement("div", { className: "fc-event-resizer fc-event-resizer-end" })));
             }));
         };
         return StandardEvent;
     }(BaseComponent));
     function renderInnerContent$4(innerProps) {
         return (createElement("div", { className: "fc-event-main-frame" },
-            innerProps.timeText && (createElement("div", { className: "fc-event-time" }, inner + Props.timeText)),
+            innerProps.timeText && (createElement("div", { className: "fc-event-time" }, innerProps.timeText)),
             createElement("div", { className: "fc-event-title-container " },
                 createElement("div", { className: "fc-event-title fc-sticky modal-open" }, innerProps.event.title || createElement(Fragment, null, "\u00A0")))));
     }
@@ -12438,7 +12397,7 @@ var FullCalendar = (function (exports) {
             var navLinkAttrs = buildNavLinkAttrs(context, date, 'week');
             return (createElement(DayCellRoot, { date: date, dateProfile: dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, elRef: this.handleRootEl }, function (dayElRef, dayClassNames, rootDataAttrs, isDisabled) {
                 return (createElement("td", __assign({ ref: dayElRef, role: "gridcell", className: ['fc-daygrid-day'].concat(dayClassNames, props.extraClassNames || []).join(' ') }, rootDataAttrs, props.extraDataAttrs, (props.showDayNumber ? { 'aria-labelledby': state.dayNumberId } : {})),
-                    createElement("div", { className: "fc-daygrid-day-frame fc-scrollgrid-sync-inner p-1", ref: props.innerElRef /* different from hook system! RENAME */ },
+                    createElement("div", { className: "fc-daygrid-day-frame fc-scrollgrid-sync-inner", ref: props.innerElRef /* different from hook system! RENAME */ },
                         props.showWeekNumber && (createElement(WeekNumberRoot, { date: date, defaultFormat: DEFAULT_WEEK_NUM_FORMAT$1 }, function (weekElRef, weekClassNames, innerElRef, innerContent) { return (createElement("a", __assign({ ref: weekElRef, className: ['fc-daygrid-week-number'].concat(weekClassNames).join(' ') }, navLinkAttrs), innerContent)); })),
                         !isDisabled && (createElement(TableCellTop, { date: date, dateProfile: dateProfile, showDayNumber: props.showDayNumber, dayNumberId: state.dayNumberId, forceDayTop: props.forceDayTop, todayRange: props.todayRange, extraHookProps: props.extraHookProps })),
                         createElement("div", { className: "fc-daygrid-day-events", ref: props.fgContentElRef },

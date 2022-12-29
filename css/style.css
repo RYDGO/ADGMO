@@ -1,91 +1,91 @@
 @font-face {
     font-family: graphic-bold;
-    src: url("fonts/graphik(en)/Graphik-Bold.otf");
+    src: url("../fonts/graphik(en)/Graphik-Bold.otf");
 }
 
 @font-face {
     font-family: graphic-black;
-    src: url("../assets/fonts/graphik(en)/Graphik-Black.otf");
+    src: url("../fonts/graphik(en)/Graphik-Black.otf");
 }
 
 @font-face {
     font-family: graphic-black-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-BlackItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-BlackItalic.otf");
 }
 
 @font-face {
     font-family: graphic-bold-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-BoldItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-BoldItalic.otf");
 }
 
 @font-face {
     font-family: graphic-extra-light;
-    src: url("../assets/fonts/graphik(en)/Graphik-Extralight.otf");
+    src: url("../fonts/graphik(en)/Graphik-Extralight.otf");
 }
 
 @font-face {
     font-family: graphic-extra-light-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-ExtralightItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-ExtralightItalic.otf");
 }
 
 @font-face {
     font-family: graphic-light;
-    src: url("../assets/fonts/graphik(en)/Graphik-Light.otf");
+    src: url("../fonts/graphik(en)/Graphik-Light.otf");
 }
 
 @font-face {
     font-family: graphic-light-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-LightItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-LightItalic.otf");
 }
 
 @font-face {
     font-family: graphic-medium;
-    src: url("../assets/fonts/graphik(en)/Graphik-Medium.otf");
+    src: url("../fonts/graphik(en)/Graphik-Medium.otf");
 }
 
 @font-face {
     font-family: graphic-medium-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-MediumItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-MediumItalic.otf");
 }
 
 @font-face {
     font-family: graphic-regular;
-    src: url("../assets/fonts/graphik(en)/Graphik-Regular.otf");
+    src: url("../fonts/graphik(en)/Graphik-Regular.otf");
 }
 
 @font-face {
     font-family: graphic-regular-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-RegularItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-RegularItalic.otf");
 }
 
 @font-face {
     font-family: graphic-semi-bold;
-    src: url("../assets/fonts/graphik(en)/Graphik-Semibold.otf");
+    src: url("../fonts/graphik(en)/Graphik-Semibold.otf");
 }
 
 @font-face {
     font-family: graphic-semi-bold-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-SemiboldItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-SemiboldItalic.otf");
 }
 
 @font-face {
     font-family: graphic-super;
-    src: url("../assets/fonts/graphik(en)/Graphik-Super.otf");
+    src: url("../fonts/graphik(en)/Graphik-Super.otf");
 }
 
 @font-face {
     font-family: graphic-super-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-SuperItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-SuperItalic.otf");
 }
 
 @font-face {
     font-family: graphic-thin;
-    src: url("../assets/fonts/graphik(en)/Graphik-Thin.otf");
+    src: url("../fonts/graphik(en)/Graphik-Thin.otf");
 }
 
 @font-face {
     font-family: graphic-thin-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-ThinItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-ThinItalic.otf");
 }
 
 

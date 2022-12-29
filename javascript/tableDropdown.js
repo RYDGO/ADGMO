@@ -210,3 +210,24 @@ $(document).ready(function () {
     });
   });
 });
+
+var items = $("#exampletable-7 > tbody > tr").not('.child-row-child');
+var numItems = items.length;
+var perPage = 10;
+
+items.slice(perPage).hide();
+
+$('#pagination-container').pagination({
+  items: numItems,
+  itemsOnPage: perPage,
+  prevText: "&lt;",
+  nextText: "&gt;",
+  displayedPages: 0,
+  edges: 0,
+  onPageClick: function (pageNumber) {
+    var showFrom = perPage * (pageNumber - 1);
+    var showTo = showFrom + perPage;
+    items.hide().slice(showFrom, showTo).show();
+  }
+});
+

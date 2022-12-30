@@ -1,91 +1,91 @@
 @font-face {
     font-family: graphic-bold;
-    src: url("fonts/graphik(en)/Graphik-Bold.otf");
+    src: url("../fonts/graphik(en)/Graphik-Bold.otf");
 }
 
 @font-face {
     font-family: graphic-black;
-    src: url("../assets/fonts/graphik(en)/Graphik-Black.otf");
+    src: url("../fonts/graphik(en)/Graphik-Black.otf");
 }
 
 @font-face {
     font-family: graphic-black-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-BlackItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-BlackItalic.otf");
 }
 
 @font-face {
     font-family: graphic-bold-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-BoldItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-BoldItalic.otf");
 }
 
 @font-face {
     font-family: graphic-extra-light;
-    src: url("../assets/fonts/graphik(en)/Graphik-Extralight.otf");
+    src: url("../fonts/graphik(en)/Graphik-Extralight.otf");
 }
 
 @font-face {
     font-family: graphic-extra-light-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-ExtralightItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-ExtralightItalic.otf");
 }
 
 @font-face {
     font-family: graphic-light;
-    src: url("../assets/fonts/graphik(en)/Graphik-Light.otf");
+    src: url("../fonts/graphik(en)/Graphik-Light.otf");
 }
 
 @font-face {
     font-family: graphic-light-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-LightItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-LightItalic.otf");
 }
 
 @font-face {
     font-family: graphic-medium;
-    src: url("../assets/fonts/graphik(en)/Graphik-Medium.otf");
+    src: url("../fonts/graphik(en)/Graphik-Medium.otf");
 }
 
 @font-face {
     font-family: graphic-medium-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-MediumItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-MediumItalic.otf");
 }
 
 @font-face {
     font-family: graphic-regular;
-    src: url("../assets/fonts/graphik(en)/Graphik-Regular.otf");
+    src: url("../fonts/graphik(en)/Graphik-Regular.otf");
 }
 
 @font-face {
     font-family: graphic-regular-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-RegularItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-RegularItalic.otf");
 }
 
 @font-face {
     font-family: graphic-semi-bold;
-    src: url("../assets/fonts/graphik(en)/Graphik-Semibold.otf");
+    src: url("../fonts/graphik(en)/Graphik-Semibold.otf");
 }
 
 @font-face {
     font-family: graphic-semi-bold-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-SemiboldItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-SemiboldItalic.otf");
 }
 
 @font-face {
     font-family: graphic-super;
-    src: url("../assets/fonts/graphik(en)/Graphik-Super.otf");
+    src: url("../fonts/graphik(en)/Graphik-Super.otf");
 }
 
 @font-face {
     font-family: graphic-super-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-SuperItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-SuperItalic.otf");
 }
 
 @font-face {
     font-family: graphic-thin;
-    src: url("../assets/fonts/graphik(en)/Graphik-Thin.otf");
+    src: url("../fonts/graphik(en)/Graphik-Thin.otf");
 }
 
 @font-face {
     font-family: graphic-thin-italic;
-    src: url("../assets/fonts/graphik(en)/Graphik-ThinItalic.otf");
+    src: url("../fonts/graphik(en)/Graphik-ThinItalic.otf");
 }
 
 
@@ -303,8 +303,7 @@ a:hover {
     background-color: var(--grayshade-100) !important;
     cursor: pointer;
 }
-
-.three-skyblue {
+.three-skyblue{
     background-color: var(--three-box-color);
 }
 
@@ -338,11 +337,9 @@ a:hover {
 .tb-light-pink {
     color: var(--first-box-color) !important;
 }
-
 .tb-light-status-color {
     color: #2B6284 !important;
 }
-
 .tb-bg-light-status-color {
     background-color: #2B6284 !important;
 }
@@ -353,7 +350,6 @@ a:hover {
 .tb-light-status-color-op {
     background: #2b62841a;
 }
-
 .status-color-purple-op {
     background: #8129c72e;
 }
@@ -1024,10 +1020,9 @@ a:hover {
     padding-left: 28px !important;
 }
 
-.table-pd-left-child {
+.table-pd-left-child{
     padding-left: 45px !important;
 }
-
 
 /* custom margins */
 
@@ -3770,34 +3765,29 @@ table.dataTable {
     border-spacing: 0;
 }
 
-.child-row-child td img {
+
+
+.child-row-child td img{
     position: absolute;
     top: -11px;
     left: 25px;
     width: 12px;
-}
+} 
 
 
 /* [data-toggle="toggle"] {
 	display: none;
 } */
-
 thead input {
     width: 100%;
     border-radius: 3px;
     padding: 3px;
 }
 
-.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
-table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after,
-table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before,
-table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
-    display: none !important;
-}
 
-table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
-table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
     display: none !important;
+  
 }
 
 table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
@@ -3907,50 +3897,4 @@ table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTa
 
 .tb-round8-status-label {
     background-color: hsl(154deg 8% 18%);
-}
-.width-98 {
-    width: 98%;
-}
-
-table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
-table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
-    display: none !important;
-}
-
-#pagination-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 1rem !important;
-    padding-top: 2rem;
-}
-
-#pagination-container ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.7rem;
-}
-
-#pagination-container ul .active {
-    box-shadow: none !important;
-}
-
-#pagination-container ul li {
-    padding: 0.2rem 0.9rem !important;
-    background-color: var(--grayshade-100);
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-#pagination-container ul li .prev,
-#pagination-container ul li .next {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-#pagination-container ul li:hover {
-    background-color: var(--base-color);
-    color: var(--base-white-color);
 }

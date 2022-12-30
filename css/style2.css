@@ -1,0 +1,11 @@
+.modal-width {
+    width: 600px;
+}
+
+.list-group {
+    --bs-list-group-border-color: none;
+}
+
+.dam-doc-width {
+    width: 1200px;
+}

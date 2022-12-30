@@ -1,6 +1,6 @@
 @font-face {
     font-family: graphic-bold;
-    src: url("../assets/fonts/graphik(en)/Graphik-Bold.otf");
+    src: url("fonts/graphik(en)/Graphik-Bold.otf");
 }
 
 @font-face {
@@ -303,7 +303,8 @@ a:hover {
     background-color: var(--grayshade-100) !important;
     cursor: pointer;
 }
-.three-skyblue{
+
+.three-skyblue {
     background-color: var(--three-box-color);
 }
 
@@ -337,9 +338,11 @@ a:hover {
 .tb-light-pink {
     color: var(--first-box-color) !important;
 }
+
 .tb-light-status-color {
     color: #2B6284 !important;
 }
+
 .tb-bg-light-status-color {
     background-color: #2B6284 !important;
 }
@@ -350,6 +353,7 @@ a:hover {
 .tb-light-status-color-op {
     background: #2b62841a;
 }
+
 .status-color-purple-op {
     background: #8129c72e;
 }
@@ -1020,9 +1024,10 @@ a:hover {
     padding-left: 28px !important;
 }
 
-.table-pd-left-child{
+.table-pd-left-child {
     padding-left: 45px !important;
 }
+
 
 /* custom margins */
 
@@ -3765,31 +3770,187 @@ table.dataTable {
     border-spacing: 0;
 }
 
-
-
-.child-row-child td img{
+.child-row-child td img {
     position: absolute;
     top: -11px;
     left: 25px;
     width: 12px;
-} 
+}
 
 
 /* [data-toggle="toggle"] {
 	display: none;
 } */
+
 thead input {
     width: 100%;
     border-radius: 3px;
     padding: 3px;
 }
 
-
-.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
+.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
     display: none !important;
-  
+}
+
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+    display: none !important;
 }
 
 table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
    display:none !important;
+}
+
+
+/* colors for status labels */
+
+.common-width-and-height-100 {
+    width: 83px;
+        height: 60px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+}
+
+.common-width-and-height-100-one {
+    width: 83px;
+        height: 60px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transform: rotate(90deg);
+}
+
+.common-width-label-75 {
+    width: 60px;
+    height: 60px;
+}
+
+.tb-brown-status-label {
+    background-color: hsl(357deg 56% 33%);
+}
+
+.tb-silver-status-label {
+    background-color: hsl(225deg 6% 86%);
+}
+
+
+.tb-cement-status-label {
+    background-color: hsl(200deg 1% 48%);
+}
+
+.tb-yellow-status-label {
+    background-color: hsl(40deg 42% 49%);
+}
+
+.tb-darkbrown-status-label {
+    background-color: hsl(358deg 16% 31%);
+}
+
+.tb-lightblue-status-label {
+    background-color: hsl(178deg 41% 53%);
+}
+
+.tb-darkblue-status-label {
+    background-color: hsl(238deg 46% 56%);
+}
+
+.tb-navykblue-status-label {
+    background-color: hsl(199deg 36% 56%);
+}
+
+.tb-youthyellow-status-label {
+    background-color: hsl(29deg 72% 56%);
+}
+
+.tb-techblue-status-label {
+    background-color: hsl(212deg 48% 52%);
+}
+
+.tb-eduyellow-status-label {
+    background-color: hsl(41deg 86% 63%);
+}
+
+.tb-energgreen-status-label {
+    background-color: hsl(150deg 38% 52%);
+}
+
+.tb-transportgreen-status-label {
+    background-color: hsl(151deg 13% 58%);
+}
+
+.tb-round1-status-label {
+    background-color: hsl(180deg 39% 26%);
+}
+
+.tb-round2-status-label {
+    background-color: hsl(268deg 76% 20%);
+}
+
+.tb-round3-status-label {
+    background-color: hsl(209deg 56% 19%);
+}
+.tb-round4-status-label {
+    background-color: hsl(30deg 53% 29%);
+}
+
+.tb-round5-status-label {
+    background-color: hsl(215deg 59% 22%);
+}
+.tb-round6-status-label {
+    background-color: hsl(29deg 58% 15%);
+}
+.tb-round7-status-label {
+    background-color: hsl(154deg 45% 16%);
+}
+
+.tb-round8-status-label {
+    background-color: hsl(154deg 8% 18%);
+}
+.width-98 {
+    width: 98%;
+}
+
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+    display: none !important;
+}
+
+#pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem !important;
+    padding-top: 2rem;
+}
+
+#pagination-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+#pagination-container ul .active {
+    box-shadow: none !important;
+}
+
+#pagination-container ul li {
+    padding: 0.2rem 0.9rem !important;
+    background-color: var(--grayshade-100);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#pagination-container ul li .prev,
+#pagination-container ul li .next {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#pagination-container ul li:hover {
+    background-color: var(--base-color);
+    color: var(--base-white-color);
 }

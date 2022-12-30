@@ -1,0 +1,137 @@
+#wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#external-events {
+    float: left;
+    width: 150px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+#external-events h4 {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+.external-event {
+    /* try to mimick the look of a real event */
+    margin: 10px 0;
+    padding: 2px 4px;
+    background: #3366cc;
+    color: #fff;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+#external-events p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+}
+
+#external-events p input {
+    margin: 0;
+    vertical-align: middle;
+}
+
+#calendar {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--grayshade-600);
+}
+
+.span-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.span-box-one {
+    background-color: var(--base-color);
+    color: var(--text-base-white);
+    font-weight: 700;
+}
+
+.top-rounded {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 100px !important;
+    object-fit: cover;
+}
+
+.modals-card-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+.modal-backdrop {
+    background-color: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.form-select {
+    background-position: right -0.25rem center !important;
+}
+
+.schedule-inputs input::placeholder {
+    color: var(--grayshade-400)
+}
+
+.Published {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+    color: var(--grayshade-400);
+}
+
+.Published .box {
+    width: 15px;
+    height: 15px;
+    margin-right: .8rem !important;
+    border-radius: 3px;
+}
+
+.Published .one {
+    background-color: var(--text-base-black);
+}
+
+.Published .two {
+    background-color: var(--grayshade-100);
+    border: 1px solid var(--text-base-black);
+}
+
+.Published .three {
+    background-color: var(--grayshade-100);
+}
+
+.modal-dialog-position-filter {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 1000000;
+    border-radius: 8px;
+}
+
+.inner-modal-content-filter {
+    width: 450px !important;
+}
+
+.modal-schedule-position {
+    width: 80%;
+}
+
+.eventdrop .modal-backdrop {
+    display: none !important;
+}

@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+     ">
+    <!--===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='../../../plugin/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/digitalPublishing/calenders.css">
+    <link rel="stylesheet" href="css/Calender/Datepicker.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
+                    <div class="col-3 navbar-brand" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2">
+                            <div class="userImg-container mx-2">
+                                <img src="images/user.png" alt="user profile" class="img-responsive">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi
+                                </h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                            <div class="vartical-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-regular fa-bell"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <a href="#" rel="noopener noreferrer">
+                            <div class="img-containerbox">
+                                <img src="images/Logos/HorizontalLogos/LogoRedFilled.png" alt="logo"
+                                    class="img-responsive" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--navbar ends here -->
+
+        <nav class="sidebar " id="sidebar">
+            <header>
+                <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links flex-center flex-column align-items-start">
+                        <li class="nav-link sidebarTabsToggle">
+                            <a href="" class="flex-center-align mb-2">
+                                <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="../../workloadDepartments/workloadDepartments.html"
+                                class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Workload</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Schedule</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Select Date <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu flex-center bg-white">
+                                            <a class="text-black" href="#">
+                                                <div class="datepicker-container openemr-calendar" id="datepicker-div">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="flex-center "><a class="text-black justify-content-between sub-btn px-3"
+                                        href="#">Upcoming Events<i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu  flex-center bg-white">
+                                            <a class="text-black flex-column gap-2" href="#">
+                                                <div class="card w-100 border m-0 p-0 ">
+                                                    <div
+                                                        class="card-body px-1 py-2 m-0 p-0 status-color-green-light-op">
+                                                        <div class=" py-1 px-1">
+                                                            <div
+                                                                class="card-body-header d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box"><span
+                                                                        class=" tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                                                        <h6
+                                                                            class=" mb-0 text-white mt-1 text-center fw-bold">
+                                                                            DOH</h6>
+                                                                    </span></div>
+                                                                <div class="card-right">
+                                                                    <div class="span-box-one span-box tb-bg-green fs-6">
+                                                                        10</div>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="pt-2 m-0 p-0 tb-green m-0">Social Media</h5>
+                                                            <div
+                                                                class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box">
+                                                                    <h6 class=" mb-0 tb-green  text-center fw-bold">
+                                                                        09:30</h6>
+                                                                </div>
+                                                                <div class="card-right-box"><i
+                                                                        class="tb-green fa-solid fa-arrow-right me-1 fs-6"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card w-100 border m-0 p-0 ">
+                                                    <div
+                                                        class="card-body px-1 py-2 m-0 p-0 status-color-green-light-op">
+                                                        <div class=" py-1 px-1">
+                                                            <div
+                                                                class="card-body-header d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box"><span
+                                                                        class=" tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                                                        <h6
+                                                                            class=" mb-0 text-white mt-1 text-center fw-bold">
+                                                                            DOH</h6>
+                                                                    </span></div>
+                                                                <div class="card-right">
+                                                                    <div class="span-box-one span-box tb-bg-green fs-6">
+                                                                        10</div>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="pt-2 m-0 p-0 tb-green m-0">Social Media</h5>
+                                                            <div
+                                                                class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box">
+                                                                    <h6 class=" mb-0 tb-green  text-center fw-bold">
+                                                                        09:30</h6>
+                                                                </div>
+                                                                <div class="card-right-box"><i
+                                                                        class="tb-green fa-solid fa-arrow-right me-1 fs-6"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card w-100 border-purpal m-0 p-0 ">
+                                                    <div class="card-body px-1 py-2 m-0 p-0 status-color-purpal-op2">
+                                                        <div class=" py-1 px-1">
+                                                            <div
+                                                                class="card-body-header d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box"><span
+                                                                        class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                                                        <h6
+                                                                            class=" mb-0 text-white mt-1 text-center fw-bold">
+                                                                            DOH</h6>
+                                                                    </span></div>
+                                                                <div class="card-right">
+                                                                    <div
+                                                                        class="span-box-one span-box tb-bg-purple fs-6">
+                                                                        10</div>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="pt-2 m-0 p-0 tb-purple m-0">Social Media</h5>
+                                                            <div
+                                                                class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box">
+                                                                    <h6 class=" mb-0 tb-purple  text-center fw-bold">
+                                                                        09:30</h6>
+                                                                </div>
+                                                                <div class="card-right-box"><i
+                                                                        class="tb-purple fa-solid fa-arrow-right me-1 fs-6"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card w-100 border-purpal m-0 p-0 ">
+                                                    <div class="card-body px-1 py-2 m-0 p-0 status-color-purpal-op2">
+                                                        <div class=" py-1 px-1">
+                                                            <div
+                                                                class="card-body-header d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box"><span
+                                                                        class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                                                        <h6
+                                                                            class=" mb-0 text-white mt-1 text-center fw-bold">
+                                                                            DOH</h6>
+                                                                    </span></div>
+                                                                <div class="card-right">
+                                                                    <div
+                                                                        class="span-box-one span-box tb-bg-purple fs-6">
+                                                                        10</div>
+                                                                </div>
+                                                            </div>
+                                                            <h5 class="pt-2 m-0 p-0 tb-purple m-0">Social Media</h5>
+                                                            <div
+                                                                class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                                                <div class="card-left-box">
+                                                                    <h6 class=" mb-0 tb-purple  text-center fw-bold">
+                                                                        09:30</h6>
+                                                                </div>
+                                                                <div class="card-right-box"><i
+                                                                        class="tb-purple fa-solid fa-arrow-right me-1 fs-6"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Asset Library</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Reporting</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Our Standards</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li
+                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <a href="../../../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                                    <span>Request</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--sidebar ends here -->
+        </nav>
+
+        <section class="main-section">
+            <div class="py-4 px-2 d-flex align-items-center justify-content-between">
+                <div class="col-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="#" class="text-decoration-none text-dark">Back</a>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Create Requests</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div id='calendar'></div>
+                <div class="d-flex py-2" id="statusBar" style="display: none !important;">
+                    <div class="Published ">
+                        <div class="box one"></div>
+                        <span class="fs-5 mt-1 text-base-gray">Published</span>
+                    </div>
+                    <div class="Published ">
+                        <div class="box two"></div>
+                        <span class="fs-5 mt-1 text-base-gray">Planned</span>
+                    </div>
+                    <div class="Published ">
+                        <div class="box three"></div>
+                        <span class="fs-5 mt-1 text-base-gray">Scheduled</span>
+                    </div>
+                </div>
+                <!-- <div class="card w-25 border m-0 p-0 ">
+                    <div class="card-body px-2 py-2 status-color-green-light-op">
+                        <div class=" py-1 px-1">
+                            <div class="card-body-header d-flex justify-content-between align-items-center">
+                                <div class="card-left-box"><span class=" tb-bg-green d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                        <h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">DOH</h5>
+                                    </span></div>
+                                <div class="card-right">
+                                    <div class="span-box-one span-box tb-bg-green">10</div>
+                                </div>
+                            </div>
+                            <h2 class="py-3 tb-green m-0">Social Media</h2>
+                            <div class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                <div class="card-left-box">
+                                    <h5 class="fs-5 mb-0 tb-green mt-1 text-center fw-bold">09:30</h5>
+                                </div>
+                                <div class="card-right-box"><i class="tb-green fa-solid fa-arrow-right me-1 fs-4"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-25 border-purpal m-0 p-0 my-3">
+                    <div class="card-body px-2 py-2 status-color-purpal-op2">
+                        <div class=" py-1 px-1">
+                            <div class="card-body-header d-flex justify-content-between align-items-center">
+                                <div class="card-left-box"><span class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-1 px-3 status-color-blue-op">
+                                        <h5 class="fs-5 mb-0 text-white mt-1 text-center fw-bold">KIZ</h5>
+                                    </span></div>
+                                <div class="card-right">
+                                    <div class="span-box-one span-box tb-bg-purple">L1</div>
+                                </div>
+                            </div>
+                            <h2 class="py-3 tb-purple m-0">Social Media</h2>
+                            <div class="card-footer border-0 bg-transparent m-0 p-0  d-flex justify-content-between align-items-center">
+                                <div class="card-left-box">
+                                    <h5 class="fs-5 mb-0 tb-purple mt-1 text-center fw-bold">09:30</h5>
+                                </div>
+                                <div class="card-right-box"><i class="tb-purple fa-solid fa-arrow-right me-1 fs-4"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Button trigger modal -->
+            </div>
+        </section>
+        <!--scheduleTab ends here ------>
+
+        <!-- Modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" style="background-color:transparent" id="scheduledetilesmodal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered justify-content-center">
+                <div class="modal-content modal-schedule-position">
+                    <div class="modal-body">
+                        <span class="tooltiptextt tooltips-right">
+                            <div class="bg-white my-3 p-1">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="w-h-25 tb-bg-green rounded-circle  d-flex justify-content-center align-items-center me-3 ">
+                                            <p class="mb-0 bold-paragraph text-white">L1</p>
+                                        </span>
+                                        <p class="tb-green tb-fw-700 mb-0">133897</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/Icons/timeline.svg" alt="" width="17">
+                                        <p class="mb-0">July 10th, 2022</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="tb-green tb-fs-16 tb-fw-700 mb-0">Department of Health</p>
+                                    <p class="text-gray-400 tb-fs-10  mb-0">Learn to live your best life with
+                                        professional life coach special guests live from Dubai</p>
+                                </div>
+                                <div class="mt-3 tb-bg-light-sea-green tb-rounded p-2 ps-3">
+                                    <p class="text-white tb-fs-10 mb-0">11:00am</p>
+                                    <p class="text-white tb-fw-500 tb-fs-12  mb-0">Press Release</p>
+                                </div>
+                                <div class="mt-3 status-color-light-sea-green-op tb-rounded p-2 ps-3">
+                                    <p class="tb-light-sea-green tb-fs-10 mb-0">11:00am</p>
+                                    <p class="tb-light-sea-green tb-fw-500 tb-fs-12  mb-0">Press Release</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eventtarget" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">
+                            Events
+                        </h1>
+                        <button type="button" class="btn-close" id="cancelAddEvent" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="row g-0">
+                            <div class="tb-input-group p-2">
+                                <label class="col-12 input-label" for="dataList">Events<span
+                                        class="error-message">*</span></label>
+                                <input class="col-12 input-field" id="eventName" name="" placeholder="Events">
+                            </div>
+                            <p class="error-message">• Error message</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button" id="cancelAddEvent"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal8" aria-modal="true" tabindex="-1" aria-labelledby="exampleModalLabel"
+            role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content modal-dialog-scrollable">
+                    <div class="modal-header collapse-inner-bg align-items-start px-4 pt-4 pb-1">
+                        <div>
+                            <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Global Search</h5>
+                        </div>
+                        <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg px-4 py-3">
+                        <div class="col-12">
+                            <div class="tb-input-group tb-rounded-md tb-inp align-items-center px-4 py-3 border-0">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <div class="topnav p-2">
+                                            <div class="search-container col-12">
+                                                <form>
+                                                    <img src="images/Icons/Vector (1).svg" alt="">
+                                                    <input class="bg-transparent w-75 ps-3 me-5" type="text"
+                                                        placeholder="Today" name="search">
+                                                    <img class="ms-3 ps-1" src="images/Icons/Vector.svg" alt="">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="../pages/searchResult.html" target="_blank" class="text-decoration-none">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            Save search
+                                        </button>
+                                    </a>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded me-3"
+                                            type="button">English</button>
+                                        <button class="btn btn-sm tb-btn-secondary tb-rounded"
+                                            type="button">يبرع</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label class="col-12 input-label fs-6" for="input2">Filters</label>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request ID
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sector
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Entity
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Request
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Type
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Saved Searches
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 d-flex">
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Task
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Unpublished Asset
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Published Asset
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button type="button" href="#"
+                                            class="btn-lg collapse-inner-bg fw-semibold tb-rounded ms-2  border-0 dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Created date
+                                        </button>
+                                        <ul class="dropdown-menu border-0 shadow  bg-body rounded dropdown-menu-style"
+                                            data-popper-placement="bottom-start">
+                                            <li class="pb-2 pt-1 border-bottom  "><input
+                                                    class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                    type="checkbox" value="" id="flexCheckDefault"><label class="fs-5">
+                                                    All</label></li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Requests</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6 text-nowrap"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Comments</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Schedule</label>
+                                            </li>
+                                            <li class="pb-2 pt-1 border-bottom  "><label class="fs-6"><input
+                                                        class="form-check-input shadow-none tb-bg-primary-checked mx-2 align-items-center"
+                                                        type="checkbox" value="" id="flexCheckDefault"> Assets</label>
+                                            </li>
+                                            <li class="text-center"><button
+                                                    class="btn btn-md bg-white border border-dark tb-rounded ba nav-text text-nowrap fs-6 mt-2"
+                                                    type="button">
+                                                    Apply All</button></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div>
+                                <h5 class="modal-title tb-h4 text-black " id="exampleModalLabel">Today</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Creative Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/Icons/clipboard-list.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Production Subtask #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/person1.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News_headshot.jpeg</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/movie.jpg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">Dubai_newstrailer.mov</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  me-3">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <img class="px-3" src="images/download.png" alt="">
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-2 tb-fs-16 border-0">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="tb-input-group tb-inp align-items-center px-2 pt-3 pb-1 border-0 ">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div class="col-4 d-flex ms-2">
+                                        <div>
+                                            <img src="images/Icons/L1.svg" alt="">
+                                        </div>
+                                        <div class="ps-3">
+                                            <h5 class="fw-bold tb-fs-16">News Request #13657</h5>
+                                            <span class="tb-fs-14 opacity-50">Created 18 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <button type="button"
+                                            class="btn-md tb-btn-primary tb-rounded ms-2 p-1 border-0">
+                                            View All Results
+                                        </button>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end  px-4">
+                                        <span class="opacity-50">Last modified: &nbsp;</span> <span> 15 minutes
+                                            ago</span>
+                                        <button type="button" class="btn-md gray-700 tb-rounded ms-3 tb-fs-16 border-0">
+                                            View
+                                        </button>`
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  modal ends here -->
+
+        <div class="modal fade" id="addDeliverablesModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog inner-modal-content-filter modal-dialog-scrollable modal-dialog-position-filter">
+                <div class="modal-content">
+                    <div class="modal-header bg-white">
+                        <h3 class="modal-title font-weight-400 text-dark-black" id="exampleModalToggleLabel">Filters
+                        </h3>
+                        <button type="button" class="btn-close text-base-gray" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body collapse-inner-bg">
+                        <div class="body-filters py-2 px-5 ">
+                            <div class="status-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Status</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="Planned">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Planned">
+                                        Planned
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="Scheduled">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Scheduled">
+                                        Scheduled
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="Published">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Published">
+                                        Published
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sector-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Sector</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Health">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Health">
+                                                Health
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Sports">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Sports">
+                                                Sports
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Security">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Security">
+                                                Security
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Youth">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Youth">
+                                                Youth
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Tech">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Tech">
+                                                Tech
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Culture">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Culture">
+                                                Culture
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Economy">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black" for="Economy">
+                                                Economy
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Education">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black"
+                                                for="Education">
+                                                Education
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Energy-Sustainability">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="Energy-Sustainability">
+                                                Energy Sustainability
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="Transport-Planning">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="Transport-Planning">
+                                                Transport Urban Plan
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Entity-filter border-bottom border-2 border-gray pb-4 mt-4 mb-4">
+                                <div class="sector-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Entity</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row filter-container d-flex  align-items-center mt-2">
+                                    <div class="col-5">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="KAZ">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="KAZ">
+                                                KAZ
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="AMAL">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="AMAL">
+                                                AMAL
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="EMIRF">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="EMIRF">
+                                                EMIRF
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="LOPI" disabled>
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap"
+                                                for="LOPI">
+                                                LOPI
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="GINU">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="GINU">
+                                                GINU
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="WWER">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="WWER">
+                                                WWER
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="ADGM" disabled>
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap"
+                                                for="ADGM">
+                                                ADGM
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="IUY" disabled>
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap"
+                                                for="IUY">
+                                                IUY
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="WQAS" disabled>
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-gray text-nowrap"
+                                                for="WQAS">
+                                                WQAS
+                                            </label>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <input
+                                                class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                                type="checkbox" value="" id="#TIAD">
+                                            <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                                for="#TIAD">
+                                                #TIAD
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Responsible Team-filter pb-4 mt-4 mb-4">
+                                <div class="status-header d-flex justify-content-between align-items-center ">
+                                    <div class="status text-center">
+                                        <h5 class="text-base-gray m-0 p-0">Responsible Team</h5>
+                                    </div>
+                                    <div class="selectbtn">
+                                        <a href="#" class="text-decoration-none fs-5 tb-primary">
+                                            <h5 class="text-center m-0 p-0">Select all</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="GovTeam">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                        for="GovTeam">
+                                        GovTeam
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="Strategy">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                        for="Strategy">
+                                        Strategy
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-center mt-3">
+                                    <input
+                                        class="form-check-input shadow-none tb-bg-primary-checked fs-5 m-0 me-2 bg-transparent"
+                                        type="checkbox" value="" id="Digital-Publishing">
+                                    <label class="m-0 p-0 fs-5  font-weight-400 text-base-black text-nowrap"
+                                        for="Digital-Publishing">
+                                        Digital Publishing
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Clear Filters</button>
+                        <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> -->
+    <!-- <script src='../../../plugin/assets/js/jquery-1.10.2.js' type="text/javascript"></script> -->
+    <!-- <script src='../../../plugin/assets/js/jquery-ui.custom.min.js' type="text/javascript"></script> -->
+    <script src="js/script.js"></script>
+    <script src='plugin/main.js' type="text/javascript"></script>
+    <script src='js/full-calender.js' type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/date-picker.js"></script>
+</body>
+
+</html>

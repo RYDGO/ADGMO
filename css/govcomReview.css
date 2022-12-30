@@ -1,7 +1,0 @@
-.govcomReviewModal .table-data-status {
-    color: #11A6FF;
-    background-color: rgba(17, 166, 255, 0.08);
-}
-.govcomReviewModal .table-data-status::before {
-    background-color: #11A6FF;
-}

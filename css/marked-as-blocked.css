@@ -1,0 +1,6 @@
+.marked-as-blocked .form-check {
+    background-color: #ffffff !important;
+    padding: 16px;
+    padding-left: 32px;
+    border-radius: 8px;
+}

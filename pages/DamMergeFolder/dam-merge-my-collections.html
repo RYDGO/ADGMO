@@ -174,11 +174,11 @@
                                 <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
                             </a>
                             <ul class="nav-link sub-menu">
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">All Assets</a>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">All
+                                        Assets</a>
                                 </li>
-                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
-                                        href="#">My Assets</a></li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">My
+                                        Assets</a></li>
                             </ul>
                         </li>
                         <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
@@ -274,181 +274,224 @@
             <!--sidebar ends here -->
         </nav>
         <section class="main-section">
-                <div class=" d-flex position-relative my-4 align-items-center">
-                    <div class="col-6 d-flex position-relative my-4 align-items-center">
+            <div class=" d-flex position-relative my-4 align-items-center">
+                <div class="col-6 d-flex position-relative my-4 align-items-center">
                     <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
                     <h1 class="tb-font-bold fs-1 m-0 p-0">Asset Library</h1>
-                    </div>
-                    <form class="col-6 py-1 align-items-center d-flex justify-content-end">
+                </div>
+                <form class="col-6 py-1 align-items-center d-flex justify-content-end">
                     <div class="d-flex">
-                      <div class=" d-flex align-items-center">
-                        <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
-                          <li class="" role="presentation">
-                            <button class="nav-link  btn btn-secondary text-black me-2 fs-4" id="pills-home-tab" data-bs-toggle="pill"
-                              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                              aria-selected="true"><img src="../../assets/images/Icons/list-icon.svg" alt="list-icon"
-                              class="" ></button>
-                          </li>
-                          <li class="" role="presentation">
-                            <button class="nav-link active btn btn-secondary text-black fs-4" id="pills-profile-tab" data-bs-toggle="pill"
-                              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                              aria-selected="false"><img src="../../assets/images/Icons/grid-icon.svg" alt="grid-icon"
-                                class=""></button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    </form>
-                </div>
-                <div class="row align-items-center py-3">
-                    <form class="col-6 ">
-                    <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white w-100">
-                      <button type="button" class="btn btn-light border-0 bg-transparent"  data-bs-whatever="@mdo"><img
-                          src="../../assets/images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
-                          
-                      <input class="bg-transparent input-group w-100 fs-4" type="text" placeholder="Search by name or tag " name="search">
-                    </div>
-                    <div class="d-flex align-items-center ms-3 position-relative">
-                        <div class="form-floating gray-800 d-flex align-items-center rounded-3 px-4 py-3">
-                            <img src="../../assets/images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
-                            <div class="position-relative"><button type="button"
-                              class="gray-800 border-0 fs-5 rounded-4 btn-light border-0 bg-transparent  ellipsis-btn">
-                              Filters
-                            </button>
-                            <div class="card modalFilter-card-style p-3 gray-600" style="display:none;">
-                                <h3 class="card-title tb-font-bold fs-3 m-0 py-3 gray-600 px-3 pb-1">Filter by</h3>
-                                <div class="card-body pt-0 gray-600 pb-0">
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Sector" class="font-weight-400 col-3 tb-fs-12 tb-font-regular  tb-font-regular ">Sector </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Sector"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Entity" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Entity </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Entity"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Deliverables" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Deliverables </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Deliverables"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Requesttype" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Request type </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Requesttype"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Assettype" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Asset type </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Assettype"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2">
-                                      <div class="col-md-12">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label for="Tags" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Tags </label>
-                                              <input class="col-11 input" autocomplete="off" role="combobox" id="Tags"
-                                                  name="sector" placeholder="Select Option">
-                                              <i class="fa fa-solid fa-angle-down"></i>
-                                              <datalist role="listbox">
-                                                  <option value="Health" class="border-bottom p-3" >Health</option>
-                                                  <option value="Tech" class="border-bottom p-3">Tech</option>
-                                                  <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
-                                              </datalist>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="row mb-2 ">
-                                      <label for="asset-published-date" class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">Asset published date</label>
-                                      
-                                      <div class="col-md-6">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">From</label>
-                  
-                                              <input type="date" class="col-12 user-nameline input" name="asset-published-date" id="asset-published-date" placeholder="Select Option">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <div class="tb-input-group-damn-popup p-2 mb-0">
-                                              <label class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">To</label>
-                                              <input type="date" class="col-12 user-nameline input" name="asset-published-date" id="asset-published-date"  placeholder="Select Option">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="border-top border-gray flex-row d-flex justify-content-between align-items-center  w-100 gray-600 pt-3 pb-0">
-                                    <div class="row col-md-12 mx-auto">
-                                        <div class="col-md-6 ps-0 pe-1">
-                                            <button class="btn btn-md tb-btn-secondary tb-rounded w-100 tb-font-regular fs-5" type="button">Reset</button>
-                                        </div>
-                                        <div class="col-md-6 ps-1 pe-0">
-                                            <button class="btn btn-md tb-btn-primary tb-rounded w-100 tb-font-regular fs-5" type="button">Apply Filter</button>
-                                        </div>
-                                    </div>
-                              </div>
-                                  </div>
-                                  
-                              </div>
-                          </div>
+                        <div class=" d-flex align-items-center">
+                            <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
+                                <li class="" role="presentation">
+                                    <button class="nav-link  btn btn-secondary text-black me-2 fs-4" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true"><img
+                                            src="../../assets/images/Icons/list-icon.svg" alt="list-icon"
+                                            class=""></button>
+                                </li>
+                                <li class="" role="presentation">
+                                    <button class="nav-link active btn btn-secondary text-black fs-4"
+                                        id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                        type="button" role="tab" aria-controls="pills-profile"
+                                        aria-selected="false"><img src="../../assets/images/Icons/grid-icon.svg"
+                                            alt="grid-icon" class=""></button>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
                     </div>
-                    </form>
-                    <div class="col-6 text-end">
-                        <button class="btn btn-lg tb-btn-gray tb-rounded me-3" type="button">Select</button>
-                        <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><img src="../../assets/images/Icons/Chart_fill.svg" alt=""> Upload</button>
-                    </div>   
+                </form>
+            </div>
+            <div class="row align-items-center py-3">
+                <form class="col-6 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white w-100">
+                            <button type="button" class="btn btn-light border-0 bg-transparent"
+                                data-bs-whatever="@mdo"><img src="../../assets/images/Icons/Vector (1).svg" alt=""
+                                    class="me-2 ms-1"></button>
+
+                            <input class="bg-transparent input-group w-100 fs-4" type="text"
+                                placeholder="Search by name or tag " name="search">
+                        </div>
+                        <div class="d-flex align-items-center ms-3 position-relative">
+                            <div class="form-floating gray-800 d-flex align-items-center rounded-3 px-4 py-3">
+                                <img src="../../assets/images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
+                                <div class="position-relative"><button type="button"
+                                        class="gray-800 border-0 fs-5 rounded-4 btn-light border-0 bg-transparent  ellipsis-btn">
+                                        Filters
+                                    </button>
+                                    <div class="card modalFilter-card-style p-3 gray-600" style="display:none;">
+                                        <h3 class="card-title tb-font-bold fs-3 m-0 py-3 gray-600 px-3 pb-1">Filter by
+                                        </h3>
+                                        <div class="card-body pt-0 gray-600 pb-0">
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Sector"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular  tb-font-regular ">Sector
+                                                        </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Sector" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Entity"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Entity
+                                                        </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Entity" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Deliverables"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Deliverables
+                                                        </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Deliverables" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Requesttype"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Request
+                                                            type </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Requesttype" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Assettype"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Asset
+                                                            type </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Assettype" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label for="Tags"
+                                                            class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Tags
+                                                        </label>
+                                                        <input class="col-11 input" autocomplete="off" role="combobox"
+                                                            id="Tags" name="sector" placeholder="Select Option">
+                                                        <i class="fa fa-solid fa-angle-down"></i>
+                                                        <datalist role="listbox">
+                                                            <option value="Health" class="border-bottom p-3">Health
+                                                            </option>
+                                                            <option value="Tech" class="border-bottom p-3">Tech</option>
+                                                            <option value="Agriculture" class="border-bottom p-3">
+                                                                Agriculture</option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2 ">
+                                                <label for="asset-published-date"
+                                                    class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">Asset
+                                                    published date</label>
+
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label
+                                                            class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">From</label>
+
+                                                        <input type="date" class="col-12 user-nameline input"
+                                                            name="asset-published-date" id="asset-published-date"
+                                                            placeholder="Select Option">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="tb-input-group-damn-popup p-2 mb-0">
+                                                        <label
+                                                            class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">To</label>
+                                                        <input type="date" class="col-12 user-nameline input"
+                                                            name="asset-published-date" id="asset-published-date"
+                                                            placeholder="Select Option">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="border-top border-gray flex-row d-flex justify-content-between align-items-center  w-100 gray-600 pt-3 pb-0">
+                                                <div class="row col-md-12 mx-auto">
+                                                    <div class="col-md-6 ps-0 pe-1">
+                                                        <button
+                                                            class="btn btn-md tb-btn-secondary tb-rounded w-100 tb-font-regular fs-5"
+                                                            type="button">Reset</button>
+                                                    </div>
+                                                    <div class="col-md-6 ps-1 pe-0">
+                                                        <button
+                                                            class="btn btn-md tb-btn-primary tb-rounded w-100 tb-font-regular fs-5"
+                                                            type="button">Apply Filter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-6 text-end">
+                    <button class="btn btn-lg tb-btn-gray tb-rounded me-3" type="button">Select</button>
+                    <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><img
+                            src="../../assets/images/Icons/Chart_fill.svg" alt=""> Upload</button>
                 </div>
+            </div>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
@@ -2236,19 +2279,19 @@
                                         <div class="d-flex align-items-center">
                                             <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
                                             <i class="fa-solid fa-chevron-down"></i>
-                                       </div>
-                                       <div class="d-flex justify-content-end">
-                                           <div class="d-flex justify-content-between me-3">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-left"></i>
-                                               </span>
-                                           </div>
-                                           <div class="d-flex justify-content-between">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-right"></i>
-                                               </span>
-                                           </div>
-                                       </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-flex justify-content-between me-3">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -2356,19 +2399,19 @@
                                         <div class="d-flex align-items-center">
                                             <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
                                             <i class="fa-solid fa-chevron-down"></i>
-                                       </div>
-                                       <div class="d-flex justify-content-end">
-                                           <div class="d-flex justify-content-between me-3">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-left"></i>
-                                               </span>
-                                           </div>
-                                           <div class="d-flex justify-content-between">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-right"></i>
-                                               </span>
-                                           </div>
-                                       </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-flex justify-content-between me-3">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade tab-remove-bg" id="pills-videos" role="tabpanel"
@@ -2571,19 +2614,19 @@
                                         <div class="d-flex align-items-center">
                                             <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
                                             <i class="fa-solid fa-chevron-down"></i>
-                                       </div>
-                                       <div class="d-flex justify-content-end">
-                                           <div class="d-flex justify-content-between me-3">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-left"></i>
-                                               </span>
-                                           </div>
-                                           <div class="d-flex justify-content-between">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-right"></i>
-                                               </span>
-                                           </div>
-                                       </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-flex justify-content-between me-3">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade tab-remove-bg" id="pills-img" role="tabpanel"
@@ -2786,19 +2829,19 @@
                                         <div class="d-flex align-items-center">
                                             <p class="mb-0 me-3 text-base-black tb-fs-14">12 Per page</p>
                                             <i class="fa-solid fa-chevron-down"></i>
-                                       </div>
-                                       <div class="d-flex justify-content-end">
-                                           <div class="d-flex justify-content-between me-3">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-left"></i>
-                                               </span>
-                                           </div>
-                                           <div class="d-flex justify-content-between">
-                                               <span class="gray-100 pad-8-12 gray-300-hover">
-                                                   <i class="fa-solid fa-chevron-right"></i>
-                                               </span>
-                                           </div>
-                                       </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-flex justify-content-between me-3">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="gray-100 pad-8-12 gray-300-hover">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 

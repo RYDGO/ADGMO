@@ -303,7 +303,8 @@ a:hover {
     background-color: var(--grayshade-100) !important;
     cursor: pointer;
 }
-.three-skyblue{
+
+.three-skyblue {
     background-color: var(--three-box-color);
 }
 
@@ -337,9 +338,11 @@ a:hover {
 .tb-light-pink {
     color: var(--first-box-color) !important;
 }
+
 .tb-light-status-color {
     color: #2B6284 !important;
 }
+
 .tb-bg-light-status-color {
     background-color: #2B6284 !important;
 }
@@ -350,6 +353,7 @@ a:hover {
 .tb-light-status-color-op {
     background: #2b62841a;
 }
+
 .status-color-purple-op {
     background: #8129c72e;
 }
@@ -1020,7 +1024,7 @@ a:hover {
     padding-left: 28px !important;
 }
 
-.table-pd-left-child{
+.table-pd-left-child {
     padding-left: 45px !important;
 }
 
@@ -1720,7 +1724,7 @@ datalist {
     border-radius: 1rem;
     left: 0;
     z-index: 999;
-    box-shadow: 0 1rem 3rem rgba(184, 184, 184, 0.175)!important;
+    box-shadow: 0 1rem 3rem rgba(184, 184, 184, 0.175) !important;
 }
 
 option {
@@ -2673,9 +2677,11 @@ textarea {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -3589,12 +3595,15 @@ select.combo-input {
     .header-icons {
         display: none !important;
     }
+
     .mobile-toggle {
         display: block !important;
     }
+
     .mobile-icons-sidebar {
         display: flex !important;
     }
+
     .sidebar {
         position: fixed;
         top: 0%;
@@ -3607,6 +3616,7 @@ select.combo-input {
         transition: 0.4s ease-in-out;
         z-index: 10000000;
     }
+
     .sidebarClose {
         position: fixed;
         top: 0%;
@@ -3618,9 +3628,11 @@ select.combo-input {
         transition: 0.4s ease-in-out;
         z-index: 10000000;
     }
+
     .sidebar header .toggle {
         display: none;
     }
+
     .main-section {
         position: relative;
         background: var(--body-bg);
@@ -3631,6 +3643,7 @@ select.combo-input {
         transition: all 0.5s ease;
         top: 6rem;
     }
+
     .sidebar-background-dim {
         background-color: rgb(0 0 0 / 60%);
         width: 100vw !important;
@@ -3655,12 +3668,15 @@ select.combo-input {
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
     }
+
     .color-cards .overview-boxes {
         display: block !important;
     }
+
     .color-cards {
         padding: 0;
     }
+
     .pie {
         padding: 0;
     }
@@ -3683,6 +3699,7 @@ select.combo-input {
     .team-allocation {
         padding: 0;
     }
+
     .team-allocation h4 {
         font-size: 16px;
     }
@@ -3767,12 +3784,12 @@ table.dataTable {
 
 
 
-.child-row-child td img{
+.child-row-child td img {
     position: absolute;
     top: -11px;
     left: 25px;
     width: 12px;
-} 
+}
 
 
 /* [data-toggle="toggle"] {
@@ -3785,13 +3802,17 @@ thead input {
 }
 
 
-.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
+.child-row-child table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:after,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:after {
     display: none !important;
-  
+
 }
 
-table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
-   display:none !important;
+table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before,
+table.dataTable>tbody>tr.child-row-child>th.select-checkbox:before {
+    display: none !important;
 }
 
 
@@ -3799,17 +3820,17 @@ table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTa
 
 .common-width-and-height-100 {
     width: 83px;
-        height: 60px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
+    height: 60px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .common-width-and-height-100-one {
     width: 83px;
-        height: 60px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        transform: rotate(90deg);
+    height: 60px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(90deg);
 }
 
 .common-width-label-75 {
@@ -3881,6 +3902,7 @@ table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTa
 .tb-round3-status-label {
     background-color: hsl(209deg 56% 19%);
 }
+
 .tb-round4-status-label {
     background-color: hsl(30deg 53% 29%);
 }
@@ -3888,9 +3910,11 @@ table.dataTable>tbody>tr.child-row-child>td.select-checkbox:before, table.dataTa
 .tb-round5-status-label {
     background-color: hsl(215deg 59% 22%);
 }
+
 .tb-round6-status-label {
     background-color: hsl(29deg 58% 15%);
 }
+
 .tb-round7-status-label {
     background-color: hsl(154deg 45% 16%);
 }

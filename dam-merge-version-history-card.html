@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version History card</title>
+  <!--======== CSS ======== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <!--===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--===== font-awesome CSS ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/assetsLibrary.css">
+</head>
+
+<body>
+  <div class="container-fluid p-0 m-0">
+    <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
+          <div class="col-3 navbar-brand" href="#">
+            <div class="d-flex justify-content-evenly align-items-center mx-2">
+              <div class="userImg-container mx-2">
+                <img src="images/user.png" alt="user profile" class="img-responsive">
+              </div>
+              <div class="me-4">
+                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                  Dhabi
+                </h6>
+                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+              </div>
+              <div class="vartical-line"></div>
+            </div>
+          </div>
+          <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="d-flex justify-content-center me-3">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-center me-3">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-regular fa-bell"></i>
+              </span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span class="rounded-circle pad-8-12 border-gray-500">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <a href="#" rel="noopener noreferrer">
+              <div class="img-containerbox">
+                <img src="images/Logos/HorizontalLogos/LogoRedFilled.png" alt="logo" class="img-responsive" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--navbar ends here -->
+
+    <nav class="sidebar " id="sidebar">
+      <header>
+        <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links flex-center flex-column align-items-start">
+            <li class="nav-link sidebarTabsToggle">
+              <a href="#" class="flex-center-align mb-2">
+                <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                <span class="text-dark nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center">
+                  <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Workload</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center">
+                  <img src="images/Icons/icon2.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Schedule</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="images/Icons/icon3.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Asset Library</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Reporting</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle dropdown-main">
+              <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                <div class="d-flex align-items-center ">
+                  <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                  <span class="text-dark nav-text">Our Standards</span>
+                </div>
+                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+              </a>
+              <ul class="nav-link sub-menu">
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Overview</a>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-content flex-center"><a class="text-black justify-content-between sub-btn"
+                    href="#">Deliverables <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                  <ul class="nav-link sub-menu submenu-inner">
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        1</a></li>
+                    <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black" href="#">Attachments
+                        2</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu dropdown-content flex-center"><a class="text-black" href="#">Activity</a></li>
+              </ul>
+            </li>
+            <li class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+              <a href="../pages/CreateRequest.html" class="hover-remove align-self-center">
+                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                  <span>Request</span></button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--sidebar ends here -->
+    </nav>
+    <section class="main-section">
+      <div class=" d-flex position-relative my-4 align-items-center">
+        <div class="col-6 d-flex position-relative my-4 align-items-center">
+          <i class="fa-solid fa-arrow-left fs-3 me-4"></i>
+          <h1 class="tb-font-bold fs-1 m-0 p-0">Asset Library</h1>
+        </div>
+        <form class="col-6 py-1 align-items-center d-flex justify-content-end">
+          <div class="d-flex">
+            <div class=" d-flex align-items-center">
+              <ul class="nav nav-pills p-1 gray-800 rounded" id="pills-tab" role="tablist">
+                <li class="" role="presentation">
+                  <button class="nav-link  btn btn-secondary text-black me-2 fs-4" id="pills-home-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true"><img src="images/Icons/list-icon.svg"
+                      alt="list-icon" class=""></button>
+                </li>
+                <li class="" role="presentation">
+                  <button class="nav-link active btn btn-secondary text-black fs-4" id="pills-profile-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="false"><img src="images/Icons/grid-icon.svg"
+                      alt="grid-icon" class=""></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row align-items-center py-3">
+        <form class="col-6 ">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-around align-items-center p-2 rounded-4 bg-white w-100">
+              <button type="button" class="btn btn-light border-0 bg-transparent" data-bs-whatever="@mdo"><img
+                  src="images/Icons/Vector (1).svg" alt="" class="me-2 ms-1"></button>
+
+              <input class="bg-transparent input-group w-100 fs-4" type="text" placeholder="Search by name or tag "
+                name="search">
+            </div>
+            <div class="d-flex align-items-center ms-3 position-relative">
+              <div class="form-floating gray-800 d-flex align-items-center rounded-3 px-4 py-3">
+                <img src="images/Icons/filter-fill.svg" alt="" srcset="" class="me-2">
+                <div class="position-relative"><button type="button"
+                    class="gray-800 border-0 fs-5 rounded-4 btn-light border-0 bg-transparent  ellipsis-btn">
+                    Filters
+                  </button>
+                  <div class="card modalFilter-card-style p-3 gray-600" style="display:none;">
+                    <h3 class="card-title tb-font-bold fs-3 m-0 py-3 gray-600 px-3 pb-1">Filter by</h3>
+                    <div class="card-body pt-0 gray-600 pb-0">
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Sector"
+                              class="font-weight-400 col-3 tb-fs-12 tb-font-regular  tb-font-regular ">Sector </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Sector" name="sector"
+                              placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Entity" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Entity </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Entity" name="sector"
+                              placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Deliverables"
+                              class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Deliverables </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Deliverables"
+                              name="sector" placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Requesttype" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Request
+                              type </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Requesttype"
+                              name="sector" placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Assettype" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Asset type
+                            </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Assettype" name="sector"
+                              placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-12">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label for="Tags" class="font-weight-400 col-3 tb-fs-12 tb-font-regular ">Tags </label>
+                            <input class="col-11 input" autocomplete="off" role="combobox" id="Tags" name="sector"
+                              placeholder="Select Option">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            <datalist role="listbox">
+                              <option value="Health" class="border-bottom p-3">Health</option>
+                              <option value="Tech" class="border-bottom p-3">Tech</option>
+                              <option value="Agriculture" class="border-bottom p-3">Agriculture</option>
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 ">
+                        <label for="asset-published-date" class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">Asset
+                          published date</label>
+
+                        <div class="col-md-6">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">From</label>
+
+                            <input type="date" class="col-12 user-nameline input" name="asset-published-date"
+                              id="asset-published-date" placeholder="Select Option">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="tb-input-group-damn-popup p-2 mb-0">
+                            <label class="font-weight-400 tb-fs-12 mb-3 tb-font-regular ">To</label>
+                            <input type="date" class="col-12 user-nameline input" name="asset-published-date"
+                              id="asset-published-date" placeholder="Select Option">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="border-top border-gray flex-row d-flex justify-content-between align-items-center  w-100 gray-600 pt-3 pb-0">
+                        <div class="row col-md-12 mx-auto">
+                          <div class="col-md-6 ps-0 pe-1">
+                            <button class="btn btn-md tb-btn-secondary tb-rounded w-100 tb-font-regular fs-5"
+                              type="button">Reset</button>
+                          </div>
+                          <div class="col-md-6 ps-1 pe-0">
+                            <button class="btn btn-md tb-btn-primary tb-rounded w-100 tb-font-regular fs-5"
+                              type="button">Apply Filter</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="col-6 text-end">
+          <button class="btn btn-lg tb-btn-gray tb-rounded me-3" type="button">Select</button>
+          <button class="btn btn-lg tb-btn-primary tb-rounded" type="button"><img src="images/Icons/Chart_fill.svg"
+              alt=""> Upload</button>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="tab-content col-12" id="pills-tabContent">
+          <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+            <!-- table -->
+            <div class="row">
+              <!-- column -->
+
+              <div class="col-12">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <!-- title -->
+                    <div class="d-md-flex align-items-center px-1">
+                      <div class="ms-auto d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-center me-4">
+                          <!-- <span class="rounded-circle pad-8-12 border-gray-500 ">
+                                      <i class="fa-solid fa-magnifying-glass "></i>
+                                    </span> -->
+                        </div>
+                        <div class="dl">
+                          <div class="home-content pt-4 pb-2">
+                            <div class="d-flex align-items-center justify-content-end">
+                              <h6 class="mx-2 m-0 p-0 fs-5">Sort by</h6>
+                              <div class="btn-group form-floating border rounded-0">
+                                <button
+                                  class="px-2 fs-5 py-2 border-0 bg-white rounded-0   selectBoxfilter dropdown-toggle"
+                                  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Popular
+                                </button>
+                                <ul
+                                  class="dropdown-menu dropdown-menu-lg-end mt-1 shadow-lg p-2 px-3 border-0  bg-body rounded-3"
+                                  aria-labelledby="dropdownMenuButton">
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">View All
+                                    </a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Most
+                                      Viewed</a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Last
+                                      Uploaded</a></li>
+                                  <li class="py-2"><a class="dropdown-item tb-fs-16 text-gray-400" href="#">Your
+                                      Assets</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- title -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- table-ends here -- -->
+          </div>
+          <div class="tab-pane fade show active " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row">
+              <!-- column -->
+
+              <div class="col-12">
+                <div class="card border-0 bg-white px-4">
+                  <div class="card-header border-0 bg-white">
+                    <div class=" d-flex position-relative my-4 align-items-center">
+                      <a href="../../DAM/versionHistory/versionHistory.html"><i
+                          class="fa-solid fa-arrow-left fs-3 me-4 text-black"></i></a>
+                      <h1 class="tb-font-bold fs-3 m-0 p-0">Version History</h1>
+                    </div>
+                  </div>
+                  <div class="card-body border-0 bg-white">
+                    <div class="">
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">JL</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Julie Zoe</h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class=" base-color-op p-2 rounded ">
+                              <h4 class="tb-h5 mb-0 tb-primary d-inline-flex">Current</h4>
+                            </span>
+                            <button class="btn w-h-35  flex-center tb-btn-gray mx-2" data-bs-toggle="modal"
+                              data-bs-target="">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="vartical-lines"></div>
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">ML</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Marc </h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+
+                          </div>
+                          <div class=" d-flex">
+                            <button class="btn w-h-35  flex-center tb-btn-gray me-2" data-bs-toggle="modal"
+                              data-bs-target="#RestoreVersion">
+                              <img src="images/Icons/timeloop.svg" alt="" class="img-responsive" width="30">
+                            </button>
+                            <button class="btn w-h-35  flex-center tb-btn-gray" data-bs-toggle="modal"
+                              data-bs-target="#PreviewVersion">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="vartical-lines"></div>
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">ML</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Marc </h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+
+                          </div>
+                          <div class=" d-flex">
+                            <button class="btn w-h-35  flex-center tb-btn-gray me-2" data-bs-toggle="modal"
+                              data-bs-target="#RestoreVersion">
+                              <img src="images/Icons/timeloop.svg" alt="" class="img-responsive" width="30">
+                            </button>
+                            <button class="btn w-h-35  flex-center tb-btn-gray" data-bs-toggle="modal"
+                              data-bs-target="#PreviewVersion">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="vartical-lines"></div>
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">ML</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Marc </h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+
+                          </div>
+                          <div class=" d-flex">
+                            <button class="btn w-h-35  flex-center tb-btn-gray me-2" data-bs-toggle="modal"
+                              data-bs-target="#RestoreVersion">
+                              <img src="images/Icons/timeloop.svg" alt="" class="img-responsive" width="30">
+                            </button>
+                            <button class="btn w-h-35  flex-center tb-btn-gray" data-bs-toggle="modal"
+                              data-bs-target="#PreviewVersion">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="vartical-lines"></div>
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">ML</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Marc </h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+
+                          </div>
+                          <div class=" d-flex">
+                            <button class="btn w-h-35  flex-center tb-btn-gray me-2" data-bs-toggle="modal"
+                              data-bs-target="#RestoreVersion">
+                              <img src="images/Icons/timeloop.svg" alt="" class="img-responsive" width="30">
+                            </button>
+                            <button class="btn w-h-35  flex-center tb-btn-gray" data-bs-toggle="modal"
+                              data-bs-target="#PreviewVersion">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="vartical-lines"></div>
+                      <div class="flex-center-align py-2">
+                        <div class="pe-4 ">
+                          <h6 class="text-gray-300 mb-0">9:50 am</h6>
+                        </div>
+                        <div class="pe-3">
+                          <span
+                            class="w-h-40 base-color-op rounded-circle  d-flex justify-content-center align-items-center">
+                            <h4 class="mb-0 tb-font-regular fs-4 mt-1 tb-primary">ML</h4>
+                          </span>
+                        </div>
+                        <div class="col pe-3 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="bold-paragraph fs-4 mb-0">Marc </h4>
+                            <span class="tb-font-light text-gray-300 fs-5">"“Changed background into
+                              skyscrappers”"</span>
+
+                          </div>
+                          <div class=" d-flex">
+                            <button class="btn w-h-35  flex-center tb-btn-gray me-2" data-bs-toggle="modal"
+                              data-bs-target="#RestoreVersion">
+                              <img src="images/Icons/timeloop.svg" alt="" class="img-responsive" width="30">
+                            </button>
+                            <button class="btn w-h-35  flex-center tb-btn-gray" data-bs-toggle="modal"
+                              data-bs-target="#PreviewVersion">
+                              <img src="images/Icons/eye-black.svg" alt="" width="30">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog main-modal modal-dialog-centered modal-xl">
+            <div class="modal-content box-shadow-popup mx-5">
+              <div class="row modal-header p-4 pb-0 d-flex pe-5">
+                <div class="col-9 text-end pe-0">
+                  <h5 class="modal-title tb-h3 text-black me-2" id="exampleModalLabel">Properties</h5>
+                </div>
+                <button type="button" class="col-3 btn-close close-dark m-0" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row m-3">
+                  <div class="col-7">
+                    <img class="w-100" src="images/video-img.svg" alt="">
+                  </div>
+                  <div class="col-5">
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Created by: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <img src="images/Icons/LA.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-1">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Entity created for: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Entity</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Sector created for: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Sector</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">File Type: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">PDF Document</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Location: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <a href="" class="m-0 tb-fs-14">doc/image/link/filename.pdf</a>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Size: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">2.43 MB</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Uploaded by: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <img src="images/Icons/LA.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Last Updated: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">15 May 2020 9:30 am</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">File Version: </h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">V 4.0</h5>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-12 ms-3">
+                      <div class="col-12 d-flex align-items-center">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14 tb-copyright">Confidential & Copyrighted</h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">Contact Enquiry</h5>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex align-items-center pt-2">
+                        <div class="col-6">
+                          <h5 class="m-0 tb-fs-14">Download count: &nbsp; &nbsp; 10</h5>
+                        </div>
+                        <div class="col-6 ms-1">
+                          <h5 class="m-0 tb-fs-14">No. Views: &nbsp; &nbsp; 1</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-5 d-flex justify-content-center px-4">
+                      <button class="btn btn-md tb-btn-secondary tb-rounded w-100" type="button">Download</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1st DAM popup modal ends here -->
+        <!-- modal-three-dots -->
+        <!-- Button trigger modal -->
+      </div>
+  </div>
+  </section>
+  <!--Asset library ends here ------>
+
+  <div class="modal fade background-dim" id="createFolderModal" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title tb-fs-24 font-weight-500 text-dark-black" id="exampleModalToggleLabel">Share Asset
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body collapse-inner-bg">
+          <div class="row g-0">
+            <div class="tb-input-group p-2 mb-3">
+              <label class="col-12 nav-text" for="dataList">Email address<span class="error-message">*</span></label>
+              <input class="col-12 input-field" id="" name="" type="email" placeholder="name@email.com">
+            </div>
+            <p class="error-message">• Error message</p>
+            <div class="tb-input-group tb-inp align-items-center p-2  border-0">
+              <div>
+                <form method="post">
+                  <label class="col-12 nav-text fs-6" for="input2">Message</label>
+                  <textarea class="mytextarea decline-request border-0 ps-0" rows="4" cols="44"
+                    placeholder="Placeholder"></textarea>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-end">
+          <button class="btn btn-md tb-btn-secondary tb-rounded" type="button">Copy Link</button>
+          <button class="btn btn-md tb-btn-primary tb-rounded" type="button">Share Asset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Asset library ends here ------>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+  "></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

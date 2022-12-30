@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Select Request Types</title>
+     <!--======== CSS ======== -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+     <link rel="stylesheet" href="css/createRequestForms.css">
+     <link rel="stylesheet" href="css/style.css">
+
+     <!--===== Boxicons CSS ===== -->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--===== font-awesome CSS ===== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <div class="container-fluid p-0 m-0">
+          <nav class="navbar navbar-expand-md p-md-2 navbar-style top-0 start-0">
+               <div class="container-fluid">
+                    <div class="navbar-collapse pe-lg-5 d-sm-flex justify-content-sm-between justify-content-md-between"
+                         id="navbarTogglerDemo01">
+                         <div class="col-3 navbar-brand d-flex header-icons" href="#">
+                              <div class="d-flex justify-content-evenly align-items-center mx-2">
+                                   <div class="userImg-container mx-2">
+                                        <img src="images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                   </div>
+                                   <div class="me-4">
+                                        <h6 class="user-nameline "><span
+                                                  class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                             Dhabi</h6>
+                                        <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                                   </div>
+                                   <div class="vartical-line"></div>
+                              </div>
+                              <div class="navbar-nav me-auto mb-2 mb-lg-0  header-icons">
+                                   <div class="d-flex justify-content-center me-3">
+                                        <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                             <a class="text-decoration-none text-black" type="button">
+                                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                             </a>
+                                        </span>
+                                   </div>
+                                   <div class="d-flex justify-content-center me-3 ">
+                                        <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                             <i class="fa-regular fa-bell"></i>
+                                        </span>
+                                   </div>
+                                   <div class="d-flex justify-content-center">
+                                        <span class="rounded-circle pad-8-12 border-gray-500 w-h-40">
+                                             <i class="fa-solid fa-globe"></i>
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="d-none mobile-toggle" id="mobile-toggle-bar">
+                              <img src="images/Icons/mobile-toggle-icon.svg" alt="">
+                         </div>
+                         <div class="col-4 d-flex justify-content-end">
+                              <a href="#" rel="noopener noreferrer">
+                                   <div class="img-containerbox">
+                                        <img src="images/Logos/horizontalLogos/LogoRedFilled.png" alt="logo"
+                                             class="img-responsive" />
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </nav>
+          <!--navbar ends here -->
+          <div class="" id="sidebar-background-dim"></div>
+          <nav class="sidebar sidebarClose" id="sidebar">
+               <header>
+                    <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+               </header>
+               <div class="menu-bar">
+                    <div class="menu">
+                         <div class="mobile-icons-sidebar navbar-brand d-none  flex-column" href="#">
+                              <div class="d-flex justify-content-evenly align-items-center mx-2 pb-2">
+                                   <div class="userImg-container mx-2 rounded-circle">
+                                        <img src="images/Profile-image-header.svg" alt="user profile" class="h-100">
+                                   </div>
+                                   <div class="me-4">
+                                        <h6 class="user-nameline "><span
+                                                  class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                             Dhabi</h6>
+                                        <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                                   </div>
+                              </div>
+                              <div class="   mb-4 mt-2  px-4  flex-center-align justify-content-between  ">
+                                   <div class="d-flex justify-content-center">
+                                        <span class="rounded-circle pad-8-12 border-gray-500">
+                                             <a class="text-decoration-none text-black" type="button"
+                                                  data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                             </a>
+                                        </span>
+                                   </div>
+                                   <div class="d-flex justify-content-center">
+                                        <span class="rounded-circle pad-8-12 border-gray-500">
+                                             <i class="fa-regular fa-bell"></i>
+                                        </span>
+                                   </div>
+                                   <div class="d-flex justify-content-center">
+                                        <span class="rounded-circle pad-8-12 border-gray-500">
+                                             <i class="fa-solid fa-globe"></i>
+                                        </span>
+                                   </div>
+                                   <div class="d-flex justify-content-center">
+                                        <span class="rounded-circle pad-8-12 border-gray-500" id="close-sidebar-btn">
+                                             <i class="fa-solid fa-power-off"></i>
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+                         <ul class="menu-links flex-center flex-column align-items-start">
+                              <li class="nav-link sidebarTabsToggle">
+                                   <a href="#" class="flex-center-align mb-2">
+                                        <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                        <span class="text-dark nav-text">Dashboard</span>
+                                   </a>
+                              </li>
+                              <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                                   <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                        <div class="d-flex align-items-center">
+                                             <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                             <span class="text-dark nav-text">Workload</span>
+                                        </div>
+                                        <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                                   </a>
+                                   <ul class="nav-link sub-menu">
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Overview</a>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Deliverables <i
+                                                       class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Activity</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                                   <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                        <div class="d-flex align-items-center">
+                                             <img src="images/Icons/icon2.svg" class="icon img-responsive" />
+                                             <span class="text-dark nav-text">Schedule</span>
+                                        </div>
+                                        <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                                   </a>
+                                   <ul class="nav-link sub-menu">
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Overview</a>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Deliverables <i
+                                                       class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Activity</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                                   <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                        <div class="d-flex align-items-center ">
+                                             <img src="images/Icons/icon3.svg" class="icon img-responsive" />
+                                             <span class="text-dark nav-text">Asset Library</span>
+                                        </div>
+                                        <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                                   </a>
+                                   <ul class="nav-link sub-menu">
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Overview</a>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Deliverables <i
+                                                       class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Activity</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                                   <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                        <div class="d-flex align-items-center ">
+                                             <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                             <span class="text-dark nav-text">Reporting</span>
+                                        </div>
+                                        <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                                   </a>
+                                   <ul class="nav-link sub-menu">
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Overview</a>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Deliverables <i
+                                                       class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Activity</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-link sidebarTabsToggle dropdown-main">
+                                   <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                        <div class="d-flex align-items-center ">
+                                             <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                             <span class="text-dark nav-text">Our Standards</span>
+                                        </div>
+                                        <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                                   </a>
+                                   <ul class="nav-link sub-menu">
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Overview</a>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Attachments <i class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="dropdown-content flex-center"><a
+                                                  class="text-black justify-content-between sub-btn"
+                                                  href="#">Deliverables <i
+                                                       class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                             <ul class="nav-link sub-menu submenu-inner">
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            1</a></li>
+                                                  <li class="sub-menu dropdown-content-inner flex-center"><a
+                                                            class="text-black" href="#">Attachments
+                                                            2</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                                  href="#">Activity</a></li>
+                                   </ul>
+                              </li>
+                              <li
+                                   class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                                   <a href="../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                                        <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn"
+                                             type="button">Create
+                                             <span>Request</span></button>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <!--sidebar ends here -->
+          <section class="main-section">
+               <div class="py-4 d-flex align-items-center justify-content-between">
+                    <div class="col-2">
+                         <i class="fa-solid fa-arrow-left"></i>
+                         <a href="./dashboard.html" class="text-decoration-none text-dark">Back</a>
+                    </div>
+                    <div class="d-flex">
+                         <div>
+                              <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                              <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                         </div>
+                         <div>
+                              <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                              <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                         </div>
+                         <div>
+                              <a href="#" class="text-base-black text-decoration-none">Create Requests</a>
+                         </div>
+                    </div>
+               </div>
+               <div class=" d-flex justify-content-between position-relative">
+                    <h1 class="tb-h1 col-6">Create Request</h1>
+               </div>
+               <!-- header section ends here -- -->
+
+               <div class="col-12 my-5 mt-4">
+                    <div class="card border border-gray-100 py-1">
+                         <div class="card-body">
+                              <!-- title -->
+                              <div class="d-md-flex align-items-center ps-2 px-1 py-1">
+                                   <div>
+                                        <h4 class="card-title pt-3 tb-bold input-label fs-3">Select Request Type</h4>
+                                   </div>
+                                   <div class="ms-auto d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-center me-4">
+                                             <button class="pad-8-12 bg-transparent border-0">
+                                                  <img src="images/Icons/search.svg" alt="">
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="bg-white px-4 tb-rounded">
+                              <div class="row g-3">
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="#" class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-1.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="tb-bold nav-text fs-3">News</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="./circularCreateRequestForm.html"
+                                             class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-2.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="tb-bold nav-text fs-3">Circulars</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="createRequestForms.html"
+                                             class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-3.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Communication Plan</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="../../adgsSubmitMediaRequest/mediaRelationsConsultationForm.html"
+                                             class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-4.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Media Consultation</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-5.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Media Opportunities</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="./mediaAssetsArchiving.html"
+                                             class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-6.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Media Assets Enquiries
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <a href="./createRequestForm.html"
+                                             class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-7.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="tb-bold nav-text fs-3">Patronage</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-8.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       AD Brand Consultation
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-9.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Brand Consultation
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-10.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       New Brand Approval
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-11.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Re-Branding Approval
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-12.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Brand Assets Enquiries</h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <div class="col-2">
+                                                  <img src="images/selectProfileImages/createProfile-13.svg" alt=""
+                                                       width="40">
+                                             </div>
+                                             <div class="pt-2">
+                                                  <h4 class="text-nowrap tb-bold nav-text fs-3">
+                                                       Media Assets Archiving
+                                                  </h4>
+                                                  <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2 WEEKS
+                                                  </h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex gray-600 align-items-center p-3 tb-box-hover">
+                                             <a href="internationalMediaOppertunitiesForm.html"
+                                                  class="d-flex gray-600 align-items-center p-3 tb-box-hover tb-h4">
+                                                  <div class="col-2">
+                                                       <img src="images/selectProfileImages/createProfile-14.svg" alt=""
+                                                            width="40">
+                                                  </div>
+                                                  <div class="pt-2">
+                                                       <h4 class="tb-bold nav-text fs-3">
+                                                            International Media Opportunities</h4>
+                                                       <h6 class="text-base-gray nav-text tb-fs-12 ">ESTIMATED TIME: 2
+                                                            WEEKS</h6>
+                                                  </div>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- Create Request card ends here ------>
+          </section>
+          <!-- Create Request ends here ------>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+     <script src="javascript/script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>

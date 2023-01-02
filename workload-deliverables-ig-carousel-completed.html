@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Crousel Frames Completed</title>
+    <!--======== CSS ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+    <!--===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== font-awesome CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/request-accepted-form.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-expand-lg p-2 navbar-style top-0 start-0">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse pe-5" id="navbarTogglerDemo01">
+                    <div class="col-3 navbar-brand" href="#">
+                        <div class="d-flex justify-content-evenly align-items-center mx-2">
+                            <div class="userImg-container mx-2">
+                                <img src="images/user.png" alt="user profile" class="img-responsive">
+                            </div>
+                            <div class="me-4">
+                                <h6 class="user-nameline "><span class="user-name text-dark tb-h5">Harrison</span>,Abu
+                                    Dhabi</h6>
+                                <h6 class="user-nameline ">Sheltering and Humanit...</h6>
+                            </div>
+                            <div class="vartical-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <a class="text-decoration-none text-black" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center me-3">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-regular fa-bell"></i>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="rounded-circle pad-8-12 border-gray-500">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <a href="#" rel="noopener noreferrer">
+                            <div class="img-containerbox">
+                                <img src="images/logos/HorizontalLogos/LogoRedFilled.png" alt="logo"
+                                    class="img-responsive" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--navbar ends here -->
+
+        <nav class="sidebar " id="sidebar">
+            <header>
+                <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links flex-center flex-column align-items-start">
+                        <li class="nav-link sidebarTabsToggle">
+                            <a href="#" class="flex-center-align mb-2">
+                                <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                <span class="text-dark nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Icons/icon1.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Workload</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Icons/icon2.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Schedule</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon3.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Asset Library</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main mb-2">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Reporting</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link sidebarTabsToggle dropdown-main">
+                            <a href="#" class="flex-center-align d-flex justify-content-between sub-btn pe-3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Icons/icon4.svg" class="icon img-responsive" />
+                                    <span class="text-dark nav-text">Our Standards</span>
+                                </div>
+                                <i class="fas fa-angle-right dropdown dropdown-arrow ms-2 text-dark"></i>
+                            </a>
+                            <ul class="nav-link sub-menu">
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Attachments <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-content flex-center"><a
+                                        class="text-black justify-content-between sub-btn" href="#">Deliverables <i
+                                            class="fa-solid fa-plus gray-100 p-2"></i></a>
+                                    <ul class="nav-link sub-menu submenu-inner">
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                1</a></li>
+                                        <li class="sub-menu dropdown-content-inner flex-center"><a class="text-black"
+                                                href="#">Attachments
+                                                2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu dropdown-content flex-center"><a class="text-black"
+                                        href="#">Activity</a></li>
+                            </ul>
+                        </li>
+                        <li
+                            class="nav-link sidebarTabsToggle d-flex justify-content-center align-items-center menu-links-m0 mt-3">
+                            <a href="../../pages/CreateRequest.html" class="hover-remove" class="align-self-center">
+                                <button class="btn btn-md tb-btn-primary tb-rounded sidebar-btn" type="button">Create
+                                    <span>Request</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--sidebar ends here -->
+        </nav>
+        <!--dashboard ends here ------>
+        <section class="main-section">
+
+            <div class="py-4 d-flex align-items-center justify-content-between">
+                <div class="col-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="#" class="text-decoration-none text-dark">Back</a>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <a href="#" class="tb-gray-400 tb-base-black-hover">Home</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Requests</a>
+                        <i class="fa-solid fa-chevron-right fa-xs text-base-black mx-3"></i>
+                    </div>
+                    <div>
+                        <a href="#" class="text-base-black text-decoration-none">Overview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-4 d-flex justify-content-between">
+                <h1 class="tb-h1 col-7 p-0 text-black">#89349</h1>
+                <ul class="nav  align-items-center me-4">
+                    <li class="nav-item mx-2" data-bs-toggle="modal" href="#commentsModal" role="button">
+                        <button class="btn bg-color-gray pb-2   border-0 rounded-pill"><img
+                                src="images/Icons/icon-comment.svg" alt=""></button>
+                    </li>
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="btn bg-color-gray  border-0 rounded-pill"><img src="images/Icons/icon-time.svg"
+                                alt=""></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn bg-color-gray  border-0 rounded-pill"><img src="images/Icons/icon-albums.svg"
+                                alt=""></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="card-title d-flex align-items-center pb-4 align-items-center">
+                        <h4 class="me-1 mb-0 tb-fs-22">#89349843</h4>
+                        <span
+                            class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-orange-op">
+                            <i class="tb-orange fa-xs fa-sharp fa-solid fa-circle "></i>
+                            <h4 class="tb-h5 mb-0 tb-orange">IN PROGRESS</h4>
+                        </span>
+                        <span
+                            class="common-width-label-6 tb-bg-purple d-flex align-items-center justify-content-around p-2 ms-2 tb-bg-yellow-dark">
+                            <i class="text-white fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <h4 class="tb-h5 mb-0 text-white">L2</h4>
+                        </span>
+                        <span
+                            class="common-width-label-40 gray-100 rounded-circle  d-flex justify-content-center align-items-center  ms-2 me-1 ">
+                            <p class="mb-0 bold-paragraph mt-1">SK</p>
+                        </span>
+                        <h6 class="mb-0">Assignee</h6>
+                        <div class="col-7 d-flex justify-content-end align-items-center image-overflow">
+                            <img id="img-overflow1" src="images/Ellipse 1.svg" alt="">
+                            <img id="img-overflow2" src="images/Ellipse 2.svg" alt="">
+                            <img id="img-overflow3" src="images/Ellipse 3.svg" alt="">
+                            <img id="img-overflow4" src="images/Ellipse 4.svg" alt="">
+                            <h5 class="m-0">Contributors</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-between align-items-center border-bottom">
+                            <div class="col-4 d-flex align-items-center">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Type:</h6>
+                                <h5 class="fw-bold text-black m-0 p-0 pb-2">News</h5>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Date Created:</h6>
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                            </div>
+                            <div class="col-4 d-flex align-items-center me-5">
+                                <h6 class="fw-light mx-2 m-0 p-0 pb-2">Due Date:</h6>
+                                <h6 class="fw-bold text-black m-0 p-0 pb-2">12/06/2020</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="col-4 d-flex align-items-center">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Sector:</h6>
+                                    <h5 class="fw-bold text-black m-0 p-0 pb-2 pt-2">EWAA</h5>
+                                </div>
+                                <div class="col-4 d-flex align-items-center ps-2">
+                                    <h6 class="fw-light mx-2 m-0 p-0 pb-2 pt-2">Requesting Entity:</h6>
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">Abu Dhabi Center...</h6>
+                                </div>
+                                <div class="col-4 d-flex align-items-center ps-3">
+                                    <h6 class="fw-light mx-1 m-0 p-0 pb-2 pt-2">Time Remaining:</h6>
+                                    <img src="images/Icons/timer-icon.svg" alt="timer-icon" class="me-1 mb-1">
+                                    <h6 class="fw-bold text-black m-0 p-0 pb-2 pt-2">2:05:00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-7 py-4">
+                <div class="accordion accordion-bottom-border mt-5" id="accordion-english-0">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-english-1">
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="shadow-none accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-english-0">
+                                    <div class="d-flex justify-content-between w-100">
+                                        <span>
+                                            IG Carousel
+                                        </span>
+                                        <span
+                                            class=" tb-bg-purple d-flex align-items-center justify-content-evenly p-2 status-color-gray-op  me-3">
+                                            <i class="text-base-black fa-xs fa-sharp fa-solid fa-circle me-2"></i>
+                                            <h4 class="tb-h5 mb-0 text-base-black tb-fs-12">UNDER REVIEW</h4>
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                        </h2>
+
+                        <div id="collapse-english-0" class="accordion-collapse collapse show">
+                            <div class="collapse-inner-bg p-5">
+                                <div class="row g-0 mb-4 pt-3">
+                                    <div class="col-4 ps-0">
+                                        <p class="mb-0 text-black">Caption</p>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-start pe-0">
+                                        <img src="images/Ellipse.png" alt="" width="40" class="me-3">
+                                        <div class="">
+                                            <p class="mb-0 text-gray-500">Completed By</p>
+                                            <p class="mb-0 text-gray-300">Cameron Williamson</p>
+                                            <p class="mb-0 text-gray-400">Content</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="collapse-inner-bg border-bottom-5">
+                                            <label class="col-12 input-label" for="links">Caption</label>
+                                            <p class="opacity-50">@dohsocial has partnered with global not-for-profit
+                                                Institute for Healthcare Improvement (IHI) to advance the quality of
+                                                medical services globally. The partnership includes joint research to
+                                                further enhance #AbuDhabi Healthcare Quality Index and will promote
+                                                innovation and knowledge exchange in the sector.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0 mb-4 pt-3 mt-3">
+                                    <div class="col-4 ps-0">
+                                        <p class="mb-0 text-black">Images</p>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-start pe-0">
+                                        <img src="images/Ellipse.png" alt="" width="40" class="me-3">
+                                        <div class="">
+                                            <p class="mb-0 text-gray-500">Completed By</p>
+                                            <p class="mb-0 text-gray-300">Cameron Williamson</p>
+                                            <p class="mb-0 text-gray-400">Content</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0 mt-3">
+                                    <div class="row g-2">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                            <label class="col-12 tb-fs-16 fw-bold" for="patronage-file2">Upload
+                                                Attachment</label>
+                                            <span class="col-12 tb-fs-14 opacity-50" type="text" id="patronage-file2"
+                                                placeholder="Upload Attachment">Upload Attachment</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-2">
+                                            <div class="position-relative">
+                                                <img class="position-relative w-100" src="images/attached1.svg">
+                                                <div
+                                                    class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                                                    <div
+                                                        class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                                                        Sky.jpg</div>
+                                                    <div class="col-4 d-flex justify-content-evenly">
+                                                        <img src="images/Icons/eye-icon.svg" alt="">
+                                                        <img src="images/Icons/pen.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="position-relative">
+                                                <img class="position-relative w-100" src="images/attached2.svg">
+                                                <div
+                                                    class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                                                    <div
+                                                        class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                                                        Sky.jpg</div>
+                                                    <div class="col-4 d-flex justify-content-evenly">
+                                                        <img src="images/Icons/eye-icon.svg" alt="">
+                                                        <img src="images/Icons/pen.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="position-relative">
+                                                <img class="position-relative w-100" src="images/attached3.svg">
+                                                <div
+                                                    class="position-absolute col-12 text-cover-onimage d-flex justify-content-evenly">
+                                                    <div
+                                                        class="bottom-left d-flex justify-content-start col-6 ms-1 tb-fs-10">
+                                                        Sky.jpg</div>
+                                                    <div class="col-4 d-flex justify-content-evenly">
+                                                        <img src="images/Icons/eye-icon.svg" alt="">
+                                                        <img src="images/Icons/pen.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row position-fixed bottom-0 justify-content-center bg-white py-4 w-100 me-3">
+                <div class="col-md-5">
+                    <button type="button" class="btn btn-md tb-btn-primary tb-rounded" data-bs-toggle="modal"
+                        data-bs-target="#approvework">Approve Work</button>
+                    <button class="btn btn-md tb-rounded bg-color-gray " type="button">Revision Needed</button>
+                </div>
+
+            </div>
+            <!-- Modal -->
+            <div class="modal modal-md fade" id="approvework" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content inner-modal-content-box box-shadow-popup">
+                        <div class="modal-header align-items-start p-4">
+                            <div>
+                                <h5 class="modal-title tb-h3 text-black" id="exampleModalLabel">Approve Deliverables
+                                </h5>
+                            </div>
+                            <button type="button" class="btn-close close-dark" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body collapse-inner-bg py-4 px-5">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="tb-input-group p-2 mt-3">
+                                        <label class="col-12 input-label" for="input">Select Label<sup></sup></label>
+                                        <input class="col-11 input" autocomplete="off" role="combobox" id="input"
+                                            name="browsers" placeholder="placeholder..">
+                                        <i class="fa fa-solid fa-angle-down"></i>
+                                        <datalist id="browsers" role="listbox">
+                                            <option value="Brookyln Simmons">Brookyln Simmons</option>
+                                            <option value="Jacob Jones">Jacob Jones</option>
+                                            <option value="Guy Hawkins">Guy Hawkins</option>
+                                        </datalist>
+                                    </div>
+                                    <p class="error-message">• Error message</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="tb-input-group  tb-inp align-items-center p-2 border-0">
+                                        <div>
+                                            <label class="col-12 input-label" for="input2">Add notes</label>
+                                            <textarea class="decline-request border-0 ps-0 w-100" rows="4"
+                                                placeholder="Placeholder text"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="tb-input-group p-2 border">
+                                        <label class="col-12 input-label" for="tags-en">Tags<sup></sup></label>
+                                        <input class="col-12 input-field" id="tags-en" name=""
+                                            placeholder="Placeholder">
+                                    </div>
+                                    <div class="tb-input-group p-2 border">
+                                        <label class="col-12 input-label text-end" for="tags-ar"><sup></sup>
+                                            لیبل</label>
+                                        <input class="col-12 text-end input-field" id="tags-ar" name=""
+                                            placeholder="پلیس ہولڈر">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+
+
+                            <button type="button" class="btn-md tb-btn-primary tb-rounded p-4 border-0">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd modal ends here -->
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js
+"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
